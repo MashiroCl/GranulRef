@@ -1,5 +1,6 @@
 import json
 from Commit import Commit
+from jsonUtils import JsonUtils
 
 class CommitGraph():
     def __init__(self,commits:list):
@@ -110,6 +111,22 @@ class CommitGraph():
 
         return cc_lists
 
+    def processCClist(self,cclist):
+        for i in range(len(cclist)):
+            if i!=len(cclist)-1:
+                for each2 in cclist[i]:
+                    if each2.parent[0] not in cclist[i]:
+                        # print("being removed",each2.commitID," parent id:",each2.parent[0].commitID)
+                        cclist[i].remove(each2)
+            else:
+                for each3 in cclist[i]:
+                    if len(each3.parent)==0:
+                        cclist[i].remove(each3.child[0])
+                        cclist[i].remove(each3)
+        return cclist
+
+
+
 def printCClists(cc_lists):
     num=0
     for each1 in cc_lists:
@@ -119,6 +136,11 @@ def printCClists(cc_lists):
             print(each2.commitID)
     print("_________________________")
     print("in total",num,"commits")
+    # for i in range(6):
+    #     print("_________________________")
+    #     for each in cc_lists[i]:
+    #         print(each.commitID)
+    # print("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
 
 def listSet(l):
     temp=[]
@@ -130,17 +152,25 @@ def listSet(l):
 
 if __name__=="__main__":
     path="/Users/leichen/ResearchAssistant/InteractiveRebase/data/jfinal/test.json"
-    with open(path) as f:
-        data=json.loads("["+f.read()+"]")
+    path="/Users/leichen/ResearchAssistant/InteractiveRebase/data/refactoring-toy-example"
 
-    commits=[]
-    data=data[0]
-    for each in data:
-        commits.append(Commit(each))
+    js=JsonUtils()
+    js.setRepoPath(path)
+    js.createJson()
+    commits=js.jsonToCommit()
+    # with open(path) as f:
+    #     data=json.loads("["+f.read()+"]")
+    #
+    # commits=[]
+    # data=data[0]
+    # for each in data:
+    #     commits.append(Commit(each))
 
     cc_lists = []
 
     cG = CommitGraph(commits)
     head = cG.formGraph()
     cc_lists=cG.getCClist()
+    printCClists(cc_lists)
+    cc_lists=cG.processCClist(cc_lists)
     printCClists(cc_lists)
