@@ -16,7 +16,7 @@ import json
 
 RMSupportedREF="RMSupportedREF.txt"
 RMPath="/Users/leichen/ResearchAssistant/RefactoringMiner_commandline/RefactoringMiner-2.1.0/bin/RefactoringMiner"
-
+CompareResult="./CompareResult.txt"
 
 
 def git_log(path,file_name="git_log.txt")->str:
@@ -140,14 +140,15 @@ if __name__=="__main__":
     #     else:
     #         p_lists.append(each[-1].parent[0])
 
-    num_before=len(commits)
-
-    #RM on all commits in cc_lists
+    #RM on all commits before squash
     rm=RefactoringMiner(RMPath)
 
-    for each1 in cc_lists:
-        for each2 in each1:
-             rm.detect(repo.repoPath,repo.outputPath,each2.commitID)
+    ftemp=git_log(repo.repoPath)
+    commits_before=extract_commit(ftemp)
+    num_before=len(commits_before)
+
+    for each in commits_before:
+        rm.detect(repo.repoPath,repo.outputPath,each)
     f1=repo.combine("/RM_before_squashed.json")
 
     ref_num_before = 0
@@ -199,10 +200,15 @@ if __name__=="__main__":
     #sort result
     dictAdd(dict_after,dict_temp2)
 
-    print("Fine grained", num_before, "commits in total: ", "Total ", ref_num_before, " detected, ",
-          exclude_0_in_dict(dict_before))
-    print("Coarese-grained", num_after, "commits in total: ", "Total ", ref_num_after, " detected, ",
-          exclude_0_in_dict(dict_after))
+    result_before="Fine grained"+str(num_before)+ "commits in total: "+"Total "+str(ref_num_before)+" detected, "+str(exclude_0_in_dict(dict_before))
+    result_after="Coarese-grained"+str(num_after)+ "commits in total: "+ "Total "+str(ref_num_after)+ " detected, "+str(exclude_0_in_dict(dict_after))
+
+    print(result_before)
+    print(result_after)
+
+    with open(CompareResult,"w") as f:
+        f.writelines(result_before+"\n")
+        f.writelines(result_after)
 
 
 
