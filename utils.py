@@ -98,14 +98,19 @@ def exclude_0_in_dict(dict):
             dict2[each]=dict[each]
     return dict2
 
+def step():
+    pass
+
 # repoPath="/Users/leichen/ResearchAssistant/InteractiveRebase/data/jfinal"
-# repoPath="/Users/leichen/ResearchAssistant/InteractiveRebase/data/refactoring-toy-example"
-repoPath="/Users/leichen/ResearchAssistant/InteractiveRebase/data/test/refactoring-toy-example"
+repoPath="/Users/leichen/ResearchAssistant/InteractiveRebase/data/refactoring-toy-example"
+# repoPath="/Users/leichen/ResearchAssistant/InteractiveRebase/data/test/refactoring-toy-example"
 if __name__=="__main__":
+    '''Initialize workspace'''
     #set Repository
     repo = MyRepository(repoPath)
     repo.createWorkSpace()
 
+    '''Obtain git commit info in Json form'''
     #create a json file read json file
     jF=JsonUtils()
     jF.setRepoPath(repoPath)
@@ -118,17 +123,22 @@ if __name__=="__main__":
 
     #Extract cc_lists
     cc_lists = cG.getCClist()
+    initialCommit=cc_lists[-1][-1]
+    print("initial commit is ",initialCommit.commitID)
+
+    #Process cc_lists
+    pcc_lists=cG.processCClist(cc_lists)
     printCClists(cc_lists)
 
-    #parent commit used in git rebase -i
-    p_lists=[]
-    for each in cc_lists:
-        #The most initial commit
-        if len(each[-1].parent)==0:
-            p_lists.append(each[-1])
-            each.remove(each[-1])
-        else:
-            p_lists.append(each[-1].parent[0])
+    # #parent commit used in git rebase -i
+    # p_lists=[]
+    # for each in cc_lists:
+    #     #The most initial commit
+    #     if len(each[-1].parent)==0:
+    #         p_lists.append(each[-1])
+    #         each.remove(each[-1])
+    #     else:
+    #         p_lists.append(each[-1].parent[0])
 
     num_before=len(commits)
 
@@ -151,13 +161,27 @@ if __name__=="__main__":
     dictAdd(dict_before,dict_temp)
 
     '''SQUASH'''
+    # # copy auto_seq_editor.txt to the repository
+    # repo.copy_auto_seq_editor()
+    # # write cc_cluster_info with commits
+    # for i in range(len(cc_lists)):
+    #     #Bug here, why commits will disappear
+    #     #Manually do the squash in the same way and have a check
+    #     if len(cc_lists[i])>1:
+    #         ccCommits=repo.cc_cluster_info(cc_lists[i])
+    #         repo.squashCommits(p_lists[i])
+
     # copy auto_seq_editor.txt to the repository
     repo.copy_auto_seq_editor()
     # write cc_cluster_info with commits
-    for i in range(0,2):
-        ccCommits=repo.cc_cluster_info(cc_lists[i])
-        repo.squashCommits(p_lists[i])
+    pcc_list_temp=[]
+    for each1 in pcc_lists:
+        for each2 in each1:
+            pcc_list_temp.append(each2)
+    repo.cc_cluster_info(pcc_list_temp)
+    repo.squashCommits(initialCommit)
 
+    '''Detect with RM after squash'''
     #obtain commit(Merge excluded) after squash
     f2=git_log(repo.repoPath)
     commits2=extract_commit(f2)

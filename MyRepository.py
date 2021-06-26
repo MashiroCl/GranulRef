@@ -37,15 +37,15 @@ class MyRepository:
 
     #copy auto_seq_editor to repository
     def copy_auto_seq_editor(self):
-        auto_seq_editor = self.repoPath + '/auto-seq-editor.rb'
+        auto_seq_editor = self.repoPath + '/auto-seq-editor.py'
         f2 = open(auto_seq_editor, 'w')
-        f3 = open('./auto-seq-editor.rb')
+        f3 = open('./auto-seq-editor.py')
         lines = f3.readlines()
         for each in lines:
             f2.write(each)
         f2.close()
         f3.close()
-        os.system("chmod 777 " + self.repoPath + "/auto-seq-editor.rb")
+        os.system("chmod 777 " + self.repoPath + "/auto-seq-editor.py")
 
     #Combine multiple RM results which are in output files into one file
     def combine(self,combinedJsonFile)->str:
@@ -58,12 +58,25 @@ class MyRepository:
             json.dump(result, outfile)
         return file
 
+    # # squash the commits specified in the cc_cluster_info.txt
+    # def squashCommits(self,parentCommit:Commit):
+    #     print("start squash")
+    #     cc_cluster_info = self.repoPath + '/cc_cluster_info.txt'
+    #     auto_seq_editor = self.repoPath + '/auto-seq-editor.rb'
+    #     git_rebase = 'git rebase -i ' + parentCommit.commitID
+    #     f1 = open(self.repoPath + "/squash.sh", 'w')
+    #     command = "env " + "CC_CLUSTER_INFO=" + cc_cluster_info + ' ' + 'GIT_SEQUENCE_EDITOR=' + auto_seq_editor + ' ' + git_rebase
+    #     f1.write('cd ' + self.repoPath + '\n' + command)
+    #     f1.close()
+    #     os.system('echo :wq| sh ' + self.repoPath + "/squash.sh")
+
     # squash the commits specified in the cc_cluster_info.txt
-    def squashCommits(self,parentCommit:Commit):
+    #-r option version
+    def squashCommits(self, initialCommit:Commit):
         print("start squash")
         cc_cluster_info = self.repoPath + '/cc_cluster_info.txt'
-        auto_seq_editor = self.repoPath + '/auto-seq-editor.rb'
-        git_rebase = 'git rebase -i ' + parentCommit.commitID
+        auto_seq_editor = self.repoPath + '/auto-seq-editor.py'
+        git_rebase = 'git rebase -r -i ' + initialCommit.commitID
         f1 = open(self.repoPath + "/squash.sh", 'w')
         command = "env " + "CC_CLUSTER_INFO=" + cc_cluster_info + ' ' + 'GIT_SEQUENCE_EDITOR=' + auto_seq_editor + ' ' + git_rebase
         f1.write('cd ' + self.repoPath + '\n' + command)
