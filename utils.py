@@ -103,6 +103,7 @@ def step():
 
 # repoPath="/Users/leichen/ResearchAssistant/InteractiveRebase/data/jfinal"
 repoPath="/Users/leichen/ResearchAssistant/InteractiveRebase/data/refactoring-toy-example"
+repoPath="/Users/leichen/ResearchAssistant/InteractiveRebase/data/mbassador"
 # repoPath="/Users/leichen/ResearchAssistant/InteractiveRebase/data/test/refactoring-toy-example"
 if __name__=="__main__":
     '''Initialize workspace'''
@@ -200,8 +201,8 @@ if __name__=="__main__":
     #sort result
     dictAdd(dict_after,dict_temp2)
 
-    result_before="Fine grained"+str(num_before)+ "commits in total: "+"Total "+str(ref_num_before)+" detected, "+str(exclude_0_in_dict(dict_before))
-    result_after="Coarese-grained"+str(num_after)+ "commits in total: "+ "Total "+str(ref_num_after)+ " detected, "+str(exclude_0_in_dict(dict_after))
+    result_before="Fine grained "+str(num_before)+ " commits in total: "+"Total "+str(ref_num_before)+" detected, "+str(exclude_0_in_dict(dict_before))
+    result_after="Coarese-grained "+str(num_after)+ " commits in total: "+ "Total "+str(ref_num_after)+ " detected, "+str(exclude_0_in_dict(dict_after))
 
     print(result_before)
     print(result_after)
