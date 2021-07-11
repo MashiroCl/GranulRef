@@ -19,11 +19,11 @@ def create_folder(folder):
 class MyRepository:
     def __init__(self,path):
         self.repoPath=path
-        self.outputPath="./output"
+        self.RMoutputPath="./RMoutput"
         self.comparePath="./compare"
 
     def createWorkSpace(self):
-        create_folder(self.outputPath)
+        create_folder(self.RMoutputPath)
         create_folder(self.comparePath)
 
     #copy commits into cc_cluster_info.txt at repository
@@ -32,7 +32,7 @@ class MyRepository:
         f1 = open(cc_cluster_info, "w")
         f1.write("#!/usr/bin/vi\n")
         for each in commits:
-            f1.write(each.commitID)
+            f1.write(each.commitID+"\n")
         f1.close()
 
     #copy auto_seq_editor to repository
@@ -50,7 +50,7 @@ class MyRepository:
     #Combine multiple RM results which are in output files into one file
     def combine(self,combinedJsonFile)->str:
         result = []
-        for f in glob.glob(self.outputPath+ "/" + "*.json"):
+        for f in glob.glob(self.RMoutputPath+ "/" + "*.json"):
             with open(f, "r") as infile:
                 result.append(json.load(infile))
         file=self.comparePath + combinedJsonFile
@@ -70,15 +70,49 @@ class MyRepository:
     #     f1.close()
     #     os.system('echo :wq| sh ' + self.repoPath + "/squash.sh")
 
+
+    '2021/7/9 Discard this version Changed to shi5i git stein https://github.com/sh5i/git-stein'
     # squash the commits specified in the cc_cluster_info.txt
     #-r option version
-    def squashCommits(self, initialCommit:Commit):
-        print("start squash")
-        cc_cluster_info = self.repoPath + '/cc_cluster_info.txt'
-        auto_seq_editor = self.repoPath + '/auto-seq-editor.py'
-        git_rebase = 'git rebase -r -i ' + initialCommit.commitID
-        f1 = open(self.repoPath + "/squash.sh", 'w')
-        command = "env " + "CC_CLUSTER_INFO=" + cc_cluster_info + ' ' + 'GIT_SEQUENCE_EDITOR=' + auto_seq_editor + ' ' + git_rebase
-        f1.write('cd ' + self.repoPath + '\n' + command)
-        f1.close()
-        os.system('echo :wq| sh ' + self.repoPath + "/squash.sh")
+    # def squashCommits(self, initialCommit:Commit):
+    #     print("start squash")
+    #     cc_cluster_info = self.repoPath + '/cc_cluster_info.txt'
+    #     auto_seq_editor = self.repoPath + '/auto-seq-editor.py'
+    #     git_rebase = 'git rebase -r -i ' + initialCommit.commitID
+    #     f1 = open(self.repoPath + "/squash.sh", 'w')
+    #     command = "env " + "CC_CLUSTER_INFO=" + cc_cluster_info + ' ' + 'GIT_SEQUENCE_EDITOR=' + auto_seq_editor + ' ' + git_rebase
+    #     f1.write('cd ' + self.repoPath + '\n' + command)
+    #     f1.close()
+    #     os.system('echo :wq| sh ' + self.repoPath + "/squash.sh")
+
+    'sh5i git stein version https://github.com/sh5i/git-stein'
+    def squashCommits(self,recipe,git_stein,output,repository):
+        '''
+        :param recipe: path for recipe.json
+        :param git_stein: path for git-stein-all.jar
+        :param output:  path for new .git output
+        :param repository: path for being squashed repository
+        :return:
+        '''
+        '''
+        clusters of commits
+        write them into recipel.json
+            All in a single time?
+               squash ----> squashed one ----> record this commit id -----> find them in the log
+        run command
+        compare commit
+            RM on before
+            combine before result
+            RM on after
+            compare before and after
+            make a conclusion new appear RM result, disappear RM result
+        :return:
+        '''
+        print('start squash')
+        recipe=""
+        git_stein="/Users/leichen/Code/git-stein/build/libs/git-stein-all.jar"
+        output=""
+        repository=""
+        command="java -jar "+git_stein+" Clusterer "+"--recipe="+recipe+" -v -o "+output+" "+repository+" >stein.log"
+        os.system(command)
+        pass
