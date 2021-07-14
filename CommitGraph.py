@@ -156,7 +156,7 @@ if __name__=="__main__":
 
     js=JsonUtils()
     js.setRepoPath(path)
-    js.createJson()
+    js.gitJson()
     commits=js.jsonToCommit()
     # with open(path) as f:
     #     data=json.loads("["+f.read()+"]")

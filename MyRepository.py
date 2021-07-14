@@ -22,6 +22,11 @@ class MyRepository:
         self.RMoutputPath="./RMoutput"
         self.comparePath="./compare"
 
+    def setComparePath(self,s:str):
+        self.comparePath=s
+    def setRMoutputPath(self,s:str):
+        self.RMoutputPath=s
+
     def createWorkSpace(self):
         create_folder(self.RMoutputPath)
         create_folder(self.comparePath)
@@ -57,6 +62,10 @@ class MyRepository:
         with open(file, "w") as outfile:
             json.dump(result, outfile)
         return file
+
+    def addRemote(self,path:str):
+        command="(cd "+path+" && git remote add origin https://example.jp/dummy_url.git)"
+        os.system(command)
 
     # # squash the commits specified in the cc_cluster_info.txt
     # def squashCommits(self,parentCommit:Commit):
@@ -109,10 +118,5 @@ class MyRepository:
         :return:
         '''
         print('start squash')
-        recipe=""
-        git_stein="/Users/leichen/Code/git-stein/build/libs/git-stein-all.jar"
-        output=""
-        repository=""
-        command="java -jar "+git_stein+" Clusterer "+"--recipe="+recipe+" -v -o "+output+" "+repository+" >stein.log"
+        command="java -jar "+git_stein+" Clusterer "+"--recipe="+recipe+" -v -o "+output+" "+repository+">"+"./stein.log"
         os.system(command)
-        pass
