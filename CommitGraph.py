@@ -111,21 +111,51 @@ class CommitGraph():
 
         return cc_lists
 
-    def processCClist(self,cclist):
-        for i in range(len(cclist)):
-            if i!=len(cclist)-1:
-                for each2 in cclist[i]:
-                    if each2.parent[0] not in cclist[i]:
-                        # print("being removed",each2.commitID," parent id:",each2.parent[0].commitID)
-                        cclist[i].remove(each2)
+    def getCCListStr(self,cc_lists)->str:
+        cc_lists_str = []
+        for each1 in cc_lists:
+            temp = []
+            for each2 in each1:
+                temp.append(each2.commitID)
+            cc_lists_str.append(temp)
+        return cc_lists_str
+
+    'As the squash method changed to git-stein, this method is discarded'
+    # def processCClist(self,cclist):
+    #     for i in range(len(cclist)):
+    #         if i!=len(cclist)-1:
+    #             for each2 in cclist[i]:
+    #                 if each2.parent[0] not in cclist[i]:
+    #                     # print("being removed",each2.commitID," parent id:",each2.parent[0].commitID)
+    #                     cclist[i].remove(each2)
+    #         else:
+    #             for each3 in cclist[i]:
+    #                 if len(each3.parent)==0:
+    #                     cclist[i].remove(each3.child[0])
+    #                     cclist[i].remove(each3)
+    #     return cclist
+
+    'cluster list of lists according to num input'
+    def clusterList(self,lists:list,num:int):
+        if num<1:
+            print("cluster structured according to commit history")
+            return
+        result=[]
+        for each1 in lists:
+            if len(each1)>num:
+                cluster=len(each1)//num
+                remain=len(each1)-cluster*num
+                for i in range(cluster):
+                    temp=[]
+                    for j in range(num):
+                        temp.append(each1[i*num+j])
+                    result.append(temp)
+                if remain!=0:
+                    temp=each1[-1*remain:]
+                    result.append(temp)
             else:
-                for each3 in cclist[i]:
-                    if len(each3.parent)==0:
-                        cclist[i].remove(each3.child[0])
-                        cclist[i].remove(each3)
-        return cclist
-
-
+                result.append(each1)
+        return result
 
 def printCClists(cc_lists):
     num=0
@@ -158,19 +188,12 @@ if __name__=="__main__":
     js.setRepoPath(path)
     js.gitJson()
     commits=js.jsonToCommit()
-    # with open(path) as f:
-    #     data=json.loads("["+f.read()+"]")
-    #
-    # commits=[]
-    # data=data[0]
-    # for each in data:
-    #     commits.append(Commit(each))
-
     cc_lists = []
 
     cG = CommitGraph(commits)
     head = cG.formGraph()
     cc_lists=cG.getCClist()
     printCClists(cc_lists)
-    cc_lists=cG.processCClist(cc_lists)
-    printCClists(cc_lists)
+
+    result=cG.clusterList(cc_lists,2)
+    printCClists(result)

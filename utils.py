@@ -217,7 +217,7 @@ def exclude_0_in_dict(dict):
 #         f.writelines(result_after)
 
 
-def step(repoPath,recipe,git_stein,squashedOutput):
+def step(repoPath:str,recipe:str,git_stein:str,squashedOutput:str,clusterNum:int):
     '''Initialize workspace'''
     #set Repository
     repo = MyRepository(repoPath)
@@ -236,12 +236,10 @@ def step(repoPath,recipe,git_stein,squashedOutput):
 
     #Extract cc_lists
     cc_lists = cG.getCClist()
-    cc_lists_str=[]
-    for each1 in cc_lists:
-        temp=[]
-        for each2 in each1:
-            temp.append(each2.commitID)
-        cc_lists_str.append(temp)
+
+    #cluster cc lists:
+    cc_lists=cG.clusterList(cc_lists,clusterNum)
+    cc_lists_str=cG.getCCListStr(cc_lists)
 
     'Squash'
     'Write recipe'
@@ -342,6 +340,7 @@ if __name__=="__main__":
     # repoPath="/Users/leichen/ResearchAssistant/InteractiveRebase/data/mbassador"
    #  repoPath="/Users/leichen/ResearchAssistant/InteractiveRebase/data/test/refactoring-toy-example"
    # repoPath = "/Users/leichen/ResearchAssistant/InteractiveRebase/data/jeromq"
+    clusterNum=3
 
     git_stein = "/Users/leichen/Code/git-stein/build/libs/git-stein-all.jar"
     recipe="./recipe.json"
@@ -349,10 +348,12 @@ if __name__=="__main__":
     # squashedOutput = "/Users/leichen/ResearchAssistant/InteractiveRebase/data/experimentResult/refactoring-toy-example"
     squashedOutput = "/Users/leichen/ResearchAssistant/InteractiveRebase/data/experimentResult/jfinal"
 
-
+    squashedOutput+=str(clusterNum)
     CompareResult = squashedOutput+"/compareResult.txt"
 
-    step(repoPath,recipe,git_stein,squashedOutput)
+
+
+    step(repoPath=repoPath,recipe=recipe,git_stein=git_stein,squashedOutput=squashedOutput,clusterNum=clusterNum)
 
 
 
