@@ -14,11 +14,6 @@ from RefactoringMiner import RefactoringMiner
 import os
 import json
 
-RMSupportedREF="RMSupportedREF.txt"
-RMPath="/Users/leichen/ResearchAssistant/RefactoringMiner_commandline/RefactoringMiner-2.1.0/bin/RefactoringMiner"
-CompareResult="./CompareResult.txt"
-
-
 def git_log(path,file_name="git_log.txt")->str:
     os.system('git -C '+path+'/.git log>'+path+"/"+file_name)
     return path+"/"+file_name
@@ -57,11 +52,12 @@ def count_commit(file_path):
     return num
 
 def RM_supported_type():
+    RMSupportedREF = "RMSupportedREF.txt"
     dict={}
     with open(RMSupportedREF) as f:
        lines=f.readlines()
     for each in lines:
-        dict[each.strip()]=0
+        dict[each.lower().strip()]=0
     return dict
 
 def stat_analysis(f_json,dictS):
@@ -77,9 +73,9 @@ def stat_analysis(f_json,dictS):
     for each in list1:
         if len(each["commits"])!=0:
             for each_r in each["commits"][0]["refactorings"]:
-                ref_num=ref_num+1
                 for eachD in dictS:
                     if eachD.lower() == each_r['type'].lower():
+                        ref_num = ref_num + 1
                         dictS[eachD] = dictS[eachD] + 1
     return ref_num,dictS
 
@@ -303,14 +299,13 @@ def step(repoPath,recipe,git_stein,squashedOutput):
                 jsonFBefore=repo.combine("/squashed.json")
 
                 'RM on squashed new commit'
-                print("newlists[j]",newlists[j])
 
                 jsonFAfter=rm.detect(repoNew.repoPath,repo.comparePath,newlists[j])
 
                 'compare RO detected before and after squash for each cluster, find ROs disappear and generated'
                 dictTemp1=RM_supported_type()
                 dictTemp2 = RM_supported_type()
-                refNum1,dictTemp1=stat_analysis(jsonFBefore,dictTemp1)
+                refNum1, dictTemp1 = stat_analysis(jsonFBefore,dictTemp1)
                 refNum2, dictTemp2 = stat_analysis(jsonFAfter, dictTemp2)
                 dictIncrease,dictDecrease=dictCompare(dictTemp1,dictTemp2)
                 dictAdd(genereatRO,dictIncrease)
@@ -322,8 +317,8 @@ def step(repoPath,recipe,git_stein,squashedOutput):
 
     result_before="Fine grained (Merge excluded) "+str(commitNumBefore)+ " commits in total: "+"Total "+str(refNumBefore)+" detected, "+str(exclude_0_in_dict(dictBeforeS))
     result_after="Coarse-grained (Merge excluded)  "+str(commitNumAfter)+ " commits in total: "+ "Total "+str(refNumAfter)+ " detected, "+str(exclude_0_in_dict(dictAfterS))
-    increaseRO="Number of RO generated because of squash is, "+str(dictCount(genereatRO))+" they are"+str(exclude_0_in_dict(genereatRO))
-    decreaseRO="Number of RO disappear because of squash is, "+str(dictCount(disappearRO))+" they are"+str(exclude_0_in_dict(disappearRO))
+    increaseRO="Number of RO generated because of squash is "+str(dictCount(genereatRO))+", they are"+str(exclude_0_in_dict(genereatRO))
+    decreaseRO="Number of RO disappear because of squash is "+str(dictCount(disappearRO))+", they are"+str(exclude_0_in_dict(disappearRO))
 
 
     print(result_before)
@@ -331,17 +326,31 @@ def step(repoPath,recipe,git_stein,squashedOutput):
     print(increaseRO)
     print(decreaseRO)
 
+    with open(CompareResult,"w") as f:
+        f.writelines(result_before+"\n")
+        f.writelines(result_after+"\n")
+        f.writelines(increaseRO+"\n")
+        f.writelines(decreaseRO+"\n")
 
 if __name__=="__main__":
-   # repoPath = "/Users/leichen/ResearchAssistant/InteractiveRebase/data/jfinal"
-    repoPath="/Users/leichen/ResearchAssistant/InteractiveRebase/data/refactoring-toy-example"
-   #  repoPath="/Users/leichen/ResearchAssistant/InteractiveRebase/data/mbassador"
+    RMSupportedREF = "RMSupportedREF.txt"
+    RMPath = "/Users/leichen/ResearchAssistant/RefactoringMiner_commandline/RefactoringMiner-2.1.0/bin/RefactoringMiner"
+    CompareResult = "./CompareResult.txt"
+
+    repoPath = "/Users/leichen/ResearchAssistant/InteractiveRebase/data/jfinal"
+    # repoPath="/Users/leichen/ResearchAssistant/InteractiveRebase/data/refactoring-toy-example"
+    # repoPath="/Users/leichen/ResearchAssistant/InteractiveRebase/data/mbassador"
    #  repoPath="/Users/leichen/ResearchAssistant/InteractiveRebase/data/test/refactoring-toy-example"
    # repoPath = "/Users/leichen/ResearchAssistant/InteractiveRebase/data/jeromq"
 
     git_stein = "/Users/leichen/Code/git-stein/build/libs/git-stein-all.jar"
     recipe="./recipe.json"
-    squashedOutput="/Users/leichen/ResearchAssistant/InteractiveRebase/data/RTEoutput2"
+    # squashedOutput="/Users/leichen/ResearchAssistant/InteractiveRebase/data/experimentResult/mbassador"
+    # squashedOutput = "/Users/leichen/ResearchAssistant/InteractiveRebase/data/experimentResult/refactoring-toy-example"
+    squashedOutput = "/Users/leichen/ResearchAssistant/InteractiveRebase/data/experimentResult/jfinal"
+
+
+    CompareResult = squashedOutput+"/compareResult.txt"
 
     step(repoPath,recipe,git_stein,squashedOutput)
 
