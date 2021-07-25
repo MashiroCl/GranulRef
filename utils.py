@@ -7,7 +7,6 @@
 """
 from jsonUtils import JsonUtils
 from CommitGraph import CommitGraph
-from CommitGraph import printCClists
 from MyRepository import MyRepository
 from MyRepository import create_folder
 from RefactoringMiner import RefactoringMiner
@@ -241,6 +240,12 @@ def step(repoPath:str,recipe:str,git_stein:str,squashedOutput:str,clusterNum:int
     cc_lists=cG.clusterList(cc_lists,clusterNum)
     cc_lists_str=cG.getCCListStr(cc_lists)
 
+    #Count # of commits being squashed
+    squashedCommitNum=0
+    for each in cc_lists_str:
+        if len(each)>1:
+            squashedCommitNum+=len(each)
+
     'Squash'
     'Write recipe'
     jU.writeRecipe(cc_lists_str,recipe)
@@ -317,43 +322,50 @@ def step(repoPath:str,recipe:str,git_stein:str,squashedOutput:str,clusterNum:int
     result_after="Coarse-grained (Merge excluded)  "+str(commitNumAfter)+ " commits in total: "+ "Total "+str(refNumAfter)+ " detected, "+str(exclude_0_in_dict(dictAfterS))
     increaseRO="Number of RO generated because of squash is "+str(dictCount(genereatRO))+", they are"+str(exclude_0_in_dict(genereatRO))
     decreaseRO="Number of RO disappear because of squash is "+str(dictCount(disappearRO))+", they are"+str(exclude_0_in_dict(disappearRO))
+    realSquashedCommit="Number of commits being squashed is "+str(squashedCommitNum)
 
 
     print(result_before)
     print(result_after)
     print(increaseRO)
     print(decreaseRO)
+    print(realSquashedCommit)
 
     with open(CompareResult,"w") as f:
         f.writelines(result_before+"\n")
         f.writelines(result_after+"\n")
         f.writelines(increaseRO+"\n")
         f.writelines(decreaseRO+"\n")
+        f.writelines(realSquashedCommit+"\n")
 
 if __name__=="__main__":
     RMSupportedREF = "RMSupportedREF.txt"
     RMPath = "/Users/leichen/ResearchAssistant/RefactoringMiner_commandline/RefactoringMiner-2.1.0/bin/RefactoringMiner"
     CompareResult = "./CompareResult.txt"
 
-    repoPath = "/Users/leichen/ResearchAssistant/InteractiveRebase/data/jfinal"
+    temp="mbassador"
+
+    repoPath = "/Users/leichen/ResearchAssistant/InteractiveRebase/data/"+temp
     # repoPath="/Users/leichen/ResearchAssistant/InteractiveRebase/data/refactoring-toy-example"
     # repoPath="/Users/leichen/ResearchAssistant/InteractiveRebase/data/mbassador"
    #  repoPath="/Users/leichen/ResearchAssistant/InteractiveRebase/data/test/refactoring-toy-example"
    # repoPath = "/Users/leichen/ResearchAssistant/InteractiveRebase/data/jeromq"
-    clusterNum=3
 
     git_stein = "/Users/leichen/Code/git-stein/build/libs/git-stein-all.jar"
     recipe="./recipe.json"
     # squashedOutput="/Users/leichen/ResearchAssistant/InteractiveRebase/data/experimentResult/mbassador"
     # squashedOutput = "/Users/leichen/ResearchAssistant/InteractiveRebase/data/experimentResult/refactoring-toy-example"
-    squashedOutput = "/Users/leichen/ResearchAssistant/InteractiveRebase/data/experimentResult/jfinal"
-
-    squashedOutput+=str(clusterNum)
-    CompareResult = squashedOutput+"/compareResult.txt"
+    squashedOutput = "/Users/leichen/ResearchAssistant/InteractiveRebase/data/experimentResult/"+temp
 
 
+    for clusterNum in range(2,6):
+        miaomiao=squashedOutput
+        miaomiao += str(clusterNum)
+        CompareResult = miaomiao + "/compareResult.txt"
+        step(repoPath=repoPath,recipe=recipe,git_stein=git_stein,squashedOutput=miaomiao,clusterNum=clusterNum)
 
-    step(repoPath=repoPath,recipe=recipe,git_stein=git_stein,squashedOutput=squashedOutput,clusterNum=clusterNum)
+
+
 
 
 
