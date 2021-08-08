@@ -13,6 +13,10 @@ from RefactoringMiner import RefactoringMiner
 import os
 import json
 
+STEINLOG="./stein.log"
+
+
+
 def git_log(path,file_name="git_log.txt")->str:
     os.system('git -C '+path+'/.git log>'+path+"/"+file_name)
     return path+"/"+file_name
@@ -84,6 +88,11 @@ def dictAdd(dictS,dict2)->dict:
             if each1.lower() == each2.lower():
                 dictS[each1] += dict2[each2]
     return dictS
+
+def dictAverage(d,num)->dict:
+    for each in d:
+        d[each]=d[each]/num
+
 
 def dictCompare(dict1,dict2)->list:
     dictAdd=RM_supported_type()
@@ -215,13 +224,72 @@ def exclude_0_in_dict(dict):
 #         f.writelines(result_before+"\n")
 #         f.writelines(result_after)
 
+'''
+each kind of squash methods->write recipe.json->squash->RM detect->record: RO type, RO num
+loop
 
-def step(repoPath:str,recipe:str,git_stein:str,squashedOutput:str,clusterNum:int):
+rewrite the detecting process from detect whole to part
+'''
+def getPossibleSquash(commitsSequence,num):
+    result=[]
+    if num==0:
+        return commitsSequence
+    if num>len(commitsSequence):
+        result.append(commitsSequence)
+    else:
+        i=0
+        while i+num<=len(commitsSequence):
+            result.append(commitsSequence[i:i+num])
+            i=i+1
+    return result
+
+def squashWithRecipe(jU,repo,cc_lists_str,recipe,git_stein,squashedOutput)->str:
+    'Squash'
+    'Write recipe'
+    jU.writeRecipe(cc_lists_str, recipe)
+    'Squash according to recipe'
+    repo.squashCommits(recipe, git_stein, squashedOutput, repo.repoPath)
+    'Find newly generated commit No.'
+    steinLog=STEINLOG
+    with open(steinLog,"r") as f:
+        lines=f.readlines()
+    result=[]
+    for each in lines:
+        if " Rewrite commit: " in each:
+            temp=each.split("Rewrite commit: ")[1].split(" -> ")
+            'Attention: merge not excluded'
+            if temp[0].strip()==cc_lists_str[0].strip():
+                result.append(temp[1].strip())
+    return result
+
+
+def RMDetectList(rm,commits:list,repo):
+    print("__________________________________________________")
+    for each in commits:
+        print(each)
+        jsonF=rm.detect(repo.repoPath, repo.RMoutputPath, each)
+    return jsonF
+
+def RMDetectOne(rm,commit:str,repo):
+    print("__________________________________________________")
+    jsonF=rm.detect(repo.repoPath, repo.RMoutputPath, commit)
+    return jsonF
+
+def RMDetectlist2(rm,commits:list,repo):
+    print("RMDetectlist2__________________________________________________")
+    print(commits)
+    for each1 in commits:
+            jsonF=rm.detect(repo.repoPath, repo.RMoutputPath, each1)
+            print(jsonF)
+    return jsonF
+
+def step(repoPath:str,recipe:str,git_stein:str,squashedOutput:str,clusterNum:int,compareResult:str):
     '''Initialize workspace'''
     #set Repository
     repo = MyRepository(repoPath)
     repo.createWorkSpace()
 
+    # create_folder(squashedOutput)
     '''Obtain git commit info in Json form'''
     #create a json file read json file
     jU=JsonUtils()
@@ -236,114 +304,168 @@ def step(repoPath:str,recipe:str,git_stein:str,squashedOutput:str,clusterNum:int
     #Extract cc_lists
     cc_lists = cG.getCClist()
 
-    #cluster cc lists:
-    cc_lists=cG.clusterList(cc_lists,clusterNum)
     cc_lists_str=cG.getCCListStr(cc_lists)
 
-    #Count # of commits being squashed
-    squashedCommitNum=0
-    for each in cc_lists_str:
-        if len(each)>1:
-            squashedCommitNum+=len(each)
-
-    'Squash'
-    'Write recipe'
-    jU.writeRecipe(cc_lists_str,recipe)
-    'Squash according to recipe'
-    repo.squashCommits(recipe,git_stein,squashedOutput,repo.repoPath)
-
-    repoNew=MyRepository(squashedOutput)
-    repoNew.createWorkSpace()
-    repoNew.addRemote(repoNew.repoPath)
-    'RM and data analysis'
-    'obtain squashed commit'
-    steinLog="./stein.log"
-    with open(steinLog,"r") as f:
-        lines=f.readlines()
-    oldlists=[]
-    newlists=[]
 
     rm = RefactoringMiner(RMPath)
 
-    for each in lines:
-        if " Rewrite commit: " in each:
-            temp=each.split("Rewrite commit: ")[1].split(" -> ")
-            'Attention: merge not excluded'
-            oldlists.append(temp[0].strip())
-            newlists.append(temp[1].strip())
-
-    print(cc_lists_str)
-    print("oldlists",oldlists)
-    print("newlists",newlists)
-
+    'write recipe and Squash'
     dictBeforeS=RM_supported_type()
     dictAfterS=RM_supported_type()
     disappearRO=RM_supported_type()
     genereatRO=RM_supported_type()
+    refNumBefore,refNumAfter=0,0
+    commitNumBefore,commitNumAfter=0,0
+    squashedCommitNum=0
 
-    refNumBefore=0
-    refNumAfter=0
+    for each in cc_lists_str:
+        commitNumBefore+=len(each)
+        possibleSquashes,commitNumAfterSquash=cG.clusterList3(each,clusterNum)
+        'commitNumAfterSquash < len(each) means the squash occurs'
+        if commitNumAfterSquash!=len(each):
+            print("commitNumAfterSquash",commitNumAfterSquash)
+            print(each)
+            dictTemp1 = RM_supported_type()
+            dictTemp2 = RM_supported_type()
+            squashedCommitNumTemp=0
+            commitNumAfter+=commitNumAfterSquash
+            for possibleSquash in possibleSquashes:
+                tempBefore=[]
+                for each2 in possibleSquash:
+                    if len(each2)>1:
+                        # tempBefore.append(each2)
+                        squashedCommitNumTemp +=len(each2)
+                        print("each2 are",each2)
+                        afterSquashed=squashWithRecipe(jU,repo,each2,recipe,git_stein,squashedOutput)
 
-    commitNumBefore=0
-    commitNumAfter=0
-    for i in range(len(cc_lists_str)):
-        for j in range(len(oldlists)):
-            'commits in cc_lists_str[i] is squashed into newlists[j]'
-            if cc_lists_str[i][0] in oldlists[j]:
-                create_folder(repo.comparePath)
-                create_folder(repo.RMoutputPath)
-                'RM on being squashed old commit'
-                print("__________________________________________________")
-                for each in cc_lists_str[i]:
-                    print(each)
-                    rm.detect(repo.repoPath,repo.RMoutputPath,each)
-                commitNumBefore +=len(cc_lists_str[i])
-                commitNumAfter+=1
-                jsonFBefore=repo.combine("/squashed.json")
+                        repoNew = MyRepository(squashedOutput)
+                        repoNew.createWorkSpace()
+                        repoNew.addRemote(repoNew.repoPath)
 
-                'RM on squashed new commit'
+                        create_folder(repo.comparePath)
+                        create_folder(repo.RMoutputPath)
+                        'RMoutput里是一整个possibleSquash的量，而不是一个each2的量'
+                        RMDetectlist2(rm,each2,repo)
+                        jsonFBefore = repo.combine("/squashed.json")
 
-                jsonFAfter=rm.detect(repoNew.repoPath,repo.comparePath,newlists[j])
+                        print("afterSqashed",afterSquashed)
+                        jsonFAfter = RMDetectList(rm,afterSquashed,repoNew)
+                        print("jsonFAfter",jsonFAfter)
+                        refNum1, dictTemp1 = stat_analysis(jsonFBefore, dictTemp1)
+                        refNum2, dictTemp2 = stat_analysis(jsonFAfter, dictTemp2)
 
-                'compare RO detected before and after squash for each cluster, find ROs disappear and generated'
-                dictTemp1=RM_supported_type()
-                dictTemp2 = RM_supported_type()
-                refNum1, dictTemp1 = stat_analysis(jsonFBefore,dictTemp1)
-                refNum2, dictTemp2 = stat_analysis(jsonFAfter, dictTemp2)
-                dictIncrease,dictDecrease=dictCompare(dictTemp1,dictTemp2)
-                dictAdd(genereatRO,dictIncrease)
-                dictAdd(disappearRO,dictDecrease)
-                dictAdd(dictBeforeS,dictTemp1)
-                dictAdd(dictAfterS,dictTemp2)
-                refNumBefore+=refNum1
-                refNumAfter+=refNum2
+            dictAverage(dictTemp1,len(possibleSquashes))
+            dictAverage(dictTemp2,len(possibleSquashes))
+            squashedCommitNum+=squashedCommitNumTemp/len(possibleSquashes)
+            dictIncrease, dictDecrease = dictCompare(dictTemp1, dictTemp2)
+            dictAdd(genereatRO, dictIncrease)
+            dictAdd(disappearRO, dictDecrease)
+            dictAdd(dictBeforeS, dictTemp1)
+            dictAdd(dictAfterS, dictTemp2)
+        else:
+            commitNumAfter+=len(each)
 
-    result_before="Fine grained (Merge excluded) "+str(commitNumBefore)+ " commits in total: "+"Total "+str(refNumBefore)+" detected, "+str(exclude_0_in_dict(dictBeforeS))
-    result_after="Coarse-grained (Merge excluded)  "+str(commitNumAfter)+ " commits in total: "+ "Total "+str(refNumAfter)+ " detected, "+str(exclude_0_in_dict(dictAfterS))
+    # 'Squash'
+    # 'Write recipe'
+    # jU.writeRecipe(cc_lists_str,recipe)
+    # 'Squash according to recipe'
+    # repo.squashCommits(recipe,git_stein,squashedOutput,repo.repoPath)
+    #
+    # repoNew=MyRepository(squashedOutput)
+    # repoNew.createWorkSpace()
+    # repoNew.addRemote(repoNew.repoPath)
+    # 'RM and data analysis'
+    # 'obtain squashed commit'
+    # steinLog="./stein.log"
+    # with open(steinLog,"r") as f:
+    #     lines=f.readlines()
+    # oldlists=[]
+    # newlists=[]
+    #
+    # rm = RefactoringMiner(RMPath)
+    #
+    # for each in lines:
+    #     if " Rewrite commit: " in each:
+    #         temp=each.split("Rewrite commit: ")[1].split(" -> ")
+    #         'Attention: merge not excluded'
+    #         oldlists.append(temp[0].strip())
+    #         newlists.append(temp[1].strip())
+    #
+    # print(cc_lists_str)
+    # print("oldlists",oldlists)
+    # print("newlists",newlists)
+    #
+    # dictBeforeS=RM_supported_type()
+    # dictAfterS=RM_supported_type()
+    # disappearRO=RM_supported_type()
+    # genereatRO=RM_supported_type()
+    #
+    # refNumBefore=0
+    # refNumAfter=0
+    #
+    # commitNumBefore=0
+    # commitNumAfter=0
+    # for i in range(len(cc_lists_str)):
+    #     for j in range(len(oldlists)):
+    #         'commits in cc_lists_str[i] is squashed into newlists[j]'
+    #         if cc_lists_str[i][0] in oldlists[j]:
+    #             create_folder(repo.comparePath)
+    #             create_folder(repo.RMoutputPath)
+    #             'RM on being squashed old commit'
+    #             print("__________________________________________________")
+    #             for each in cc_lists_str[i]:
+    #                 print(each)
+    #                 rm.detect(repo.repoPath,repo.RMoutputPath,each)
+    #             commitNumBefore +=len(cc_lists_str[i])
+    #             commitNumAfter+=1
+    #             jsonFBefore=repo.combine("/squashed.json")
+    #
+    #             'RM on squashed new commit'
+    #             jsonFAfter=rm.detect(repoNew.repoPath,repo.comparePath,newlists[j])
+    #
+    #             'compare RO detected before and after squash for each cluster, find ROs disappear and generated'
+    #             dictTemp1=RM_supported_type()
+    #             dictTemp2 = RM_supported_type()
+    #             refNum1, dictTemp1 = stat_analysis(jsonFBefore,dictTemp1)
+    #             refNum2, dictTemp2 = stat_analysis(jsonFAfter, dictTemp2)
+    #             dictIncrease,dictDecrease=dictCompare(dictTemp1,dictTemp2)
+    #             dictAdd(genereatRO,dictIncrease)
+    #             dictAdd(disappearRO,dictDecrease)
+    #             dictAdd(dictBeforeS,dictTemp1)
+    #             dictAdd(dictAfterS,dictTemp2)
+    #             refNumBefore+=refNum1
+    #             refNumAfter+=refNum2
+
+    #result_before="Fine grained (Merge excluded) "+str(commitNumBefore)+ " commits in total: "+"Total "+str(refNumBefore)+" detected, "+str(exclude_0_in_dict(dictBeforeS))
+    result_before="Fine grained (Merge excluded) "+str(commitNumBefore)+ " commits in total: "
+    result_after="Coarse-grained (Merge excluded)  "+str(commitNumAfter)+ " commits in total: "
+    realSquashedCommit="Number of commits being squashed is "+str(squashedCommitNum)
     increaseRO="Number of RO generated because of squash is "+str(dictCount(genereatRO))+", they are"+str(exclude_0_in_dict(genereatRO))
     decreaseRO="Number of RO disappear because of squash is "+str(dictCount(disappearRO))+", they are"+str(exclude_0_in_dict(disappearRO))
-    realSquashedCommit="Number of commits being squashed is "+str(squashedCommitNum)
+
 
 
     print(result_before)
     print(result_after)
+    print(realSquashedCommit)
     print(increaseRO)
     print(decreaseRO)
-    print(realSquashedCommit)
 
-    with open(CompareResult,"w") as f:
+
+    with open(compareResult,"w") as f:
         f.writelines(result_before+"\n")
         f.writelines(result_after+"\n")
+        f.writelines(realSquashedCommit+"\n")
         f.writelines(increaseRO+"\n")
         f.writelines(decreaseRO+"\n")
-        f.writelines(realSquashedCommit+"\n")
+
 
 if __name__=="__main__":
     RMSupportedREF = "RMSupportedREF.txt"
     RMPath = "/Users/leichen/ResearchAssistant/RefactoringMiner_commandline/RefactoringMiner-2.1.0/bin/RefactoringMiner"
-    CompareResult = "./CompareResult.txt"
 
     temp="mbassador"
+    # temp="refactoring-toy-example"
 
     repoPath = "/Users/leichen/ResearchAssistant/InteractiveRebase/data/"+temp
     # repoPath="/Users/leichen/ResearchAssistant/InteractiveRebase/data/refactoring-toy-example"
@@ -358,11 +480,11 @@ if __name__=="__main__":
     squashedOutput = "/Users/leichen/ResearchAssistant/InteractiveRebase/data/experimentResult/"+temp
 
 
-    for clusterNum in range(2,6):
+    for clusterNum in range(2,5):
         miaomiao=squashedOutput
         miaomiao += str(clusterNum)
         CompareResult = miaomiao + "/compareResult.txt"
-        step(repoPath=repoPath,recipe=recipe,git_stein=git_stein,squashedOutput=miaomiao,clusterNum=clusterNum)
+        step(repoPath=repoPath,recipe=recipe,git_stein=git_stein,squashedOutput=miaomiao,clusterNum=clusterNum,compareResult=CompareResult)
 
 
 

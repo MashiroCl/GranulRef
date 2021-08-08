@@ -5,7 +5,9 @@ class RefactoringMiner:
         self.RMPath=path
 
     def detect(self,repository,output,commitID:str):
-        command = self.RMPath + ' -c ' + repository + ' ' + commitID + ' -json ' + output + "/" + commitID + ".json"
+        print("commitID is ",commitID)
+        command = self.RMPath + ' -c ' + repository + ' ' + commitID + ' -json ' + output + "/" +commitID+".json"
+
         os.system(command)
         print(command)
         return output + "/" + commitID + ".json"

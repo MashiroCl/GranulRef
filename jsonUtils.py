@@ -32,9 +32,9 @@ class JsonUtils:
     def writeRecipe(self,lists,path):
         recipe={}
         recipe["forcedClusters"]=[]
-        for each in lists:
-            recipe["forcedClusters"].append(each)
-
+        # for each in lists:
+        #     recipe["forcedClusters"].append(each)
+        recipe["forcedClusters"].append(lists)
         with open(path,'w') as output:
            json.dump(recipe,output)
 

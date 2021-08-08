@@ -70,7 +70,7 @@ class CommitGraph():
         self.DFSUtil(node,visited,cc_list,cc_lists)
 
 
-    def getCClist(self):
+    def getCClist(self)->list:
         temp=[]
         for each in self.commits:
             temp.append(each)
@@ -157,6 +157,65 @@ class CommitGraph():
                 result.append(each1)
         return result
 
+    def clusterProcess(self,l:list,num:int):
+        result=[]
+        cluster = len(l) // num
+        remain = len(l) - cluster * num
+        for i in range(cluster):
+            temp = []
+            for j in range(num):
+                temp.append(l[i * num + j])
+            result.append(temp)
+        if remain != 0:
+            temp = l[-1 * remain:]
+            for each in temp:
+                result.append([each])
+        return result
+
+    'cluster list of lists according to num input'
+    'considering different cluster method'
+    def clusterList2(self,l:list,num:int):
+        if num<1:
+            print("cluster structured according to commit history")
+            return
+        result=[]
+        numAfterSquash=0
+        if len(l)>num:
+            for i in range(num):
+                if (i+num)<=len(l):
+                    temp = []
+                    for each in l[:i]:
+                        temp.append([each])
+                        numAfterSquash += 1
+                    for each in self.clusterProcess(l[i:],num):
+                        temp.append(each)
+                        numAfterSquash+=1
+                    result.append(temp)
+        else:
+            numAfterSquash+=len(l)
+        return result,numAfterSquash
+
+    def clusterList3(self,l:list,num:int):
+        if num<1:
+            print("cluster structured according to commit history")
+            return
+        result=[]
+        candidateNum=len(l)%num+1
+        for i in range(candidateNum):
+            temp=[]
+            j=i
+            for each in l[:j]:
+                temp.append([each])
+            while j+num<=len(l):
+                temp.append(l[j:j+num])
+                j=j+num
+            for each in l[j:]:
+                temp.append([each])
+            result.append(temp)
+        numAfterSquash=len(result[0])
+        return result,numAfterSquash
+
+
 def printCClists(cc_lists):
     num=0
     for each1 in cc_lists:
@@ -193,7 +252,24 @@ if __name__=="__main__":
     cG = CommitGraph(commits)
     head = cG.formGraph()
     cc_lists=cG.getCClist()
-    printCClists(cc_lists)
+    max=0
+    a=0
+    for each in range(len(cc_lists)):
+        if len(cc_lists[each])>max:
+            max=len(cc_lists[each])
+            a=each
+    print(max)
+    result=cG.clusterList2(cc_lists[a],3)
+    print(len(result))
+    for each in result:
+        print(each)
 
-    result=cG.clusterList(cc_lists,2)
-    printCClists(result)
+    test=[1,2,3,4,5,6,7,8,9,10]
+    result=cG.clusterList2(test,5)
+    for each in result:
+        print(each)
+
+    test=[1,2,3,4]
+    result,num=cG.clusterList3(test,2)
+    print(num)
+    print(result)

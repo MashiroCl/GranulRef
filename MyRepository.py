@@ -94,7 +94,7 @@ class MyRepository:
     #     f1.close()
     #     os.system('echo :wq| sh ' + self.repoPath + "/squash.sh")
 
-    'sh5i git stein version https://github.com/sh5i/git-stein'
+    'sh5i git stein version https://github.com/sh5i/git-stein, squash according to recipe.json'
     def squashCommits(self,recipe,git_stein,output,repository):
         '''
         :param recipe: path for recipe.json
