@@ -225,11 +225,6 @@ def printCClists(cc_lists):
             print(each2.commitID)
     print("_________________________")
     print("in total",num,"commits")
-    # for i in range(6):
-    #     print("_________________________")
-    #     for each in cc_lists[i]:
-    #         print(each.commitID)
-    # print("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
 
 def listSet(l):
     temp=[]

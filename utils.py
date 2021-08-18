@@ -12,6 +12,8 @@ from MyRepository import create_folder
 from RefactoringMiner import RefactoringMiner
 import os
 import json
+import argparse
+import time
 
 STEINLOG="./stein.log"
 
@@ -39,14 +41,6 @@ def count_commit(file_path):
         lines = f.readlines()
     length = len(lines)
     num=0
-
-    # #Merge not excluded
-    # for i, line in enumerate(lines):
-    #     if "commit" in line:
-    #         if i < length - 1 and ("Merge: " in lines[i + 1] or "Author: " in lines[i + 1]):
-    #             num=num+1
-    # return num
-
     #Merge excluded
     for i, line in enumerate(lines):
         if "commit" in line:
@@ -459,35 +453,60 @@ def step(repoPath:str,recipe:str,git_stein:str,squashedOutput:str,clusterNum:int
         f.writelines(increaseRO+"\n")
         f.writelines(decreaseRO+"\n")
 
-
+def start():
+    parser=argparse.ArgumentParser(description="squash commits and detect refactoring operations")
+    parser.add_argument('RMpath',help='path for refactoring miner')
+    parser.add_argument('git_stein',help='path for git-stein')
+    parser.add_argument('squashedOutput',help='path for experiment output')
+ #   parser.add_argument('repoPath',help='path for repository to be squashed and detected')
+    parsed=parser.parse_args()
+    RMPath=parsed.RMpath
+    git_stein=parsed.git_stein
+    squashedOutput=parsed.squashedOutput
 if __name__=="__main__":
     RMSupportedREF = "RMSupportedREF.txt"
-    RMPath = "/Users/leichen/ResearchAssistant/RefactoringMiner_commandline/RefactoringMiner-2.1.0/bin/RefactoringMiner"
 
+    # RMPath = "/Users/leichen/ResearchAssistant/RefactoringMiner_commandline/RefactoringMiner-2.1.0/bin/RefactoringMiner"
+    RMPath="/zsalab/home/chenlei/ResearchAssistant/RefactoringMiner/RefactoringMiner-2.1.0/bin"
+
+    # tempList=["spring-boot","checkstyle","WordPress-Android","hazelcast"]
+    # for  temp in tempList:
+    #     # temp="refactoring-toy-ex9ample"
+
+    # temp="checkstyle"
     temp="mbassador"
     # temp="refactoring-toy-example"
 
-    repoPath = "/Users/leichen/ResearchAssistant/InteractiveRebase/data/"+temp
+    repoPath="/zsalab/home/chenlei/ResearchAssistant/data"+temp
+
+    # repoPath = "/Users/leichen/ResearchAssistant/InteractiveRebase/data/"+temp
     # repoPath="/Users/leichen/ResearchAssistant/InteractiveRebase/data/refactoring-toy-example"
     # repoPath="/Users/leichen/ResearchAssistant/InteractiveRebase/data/mbassador"
    #  repoPath="/Users/leichen/ResearchAssistant/InteractiveRebase/data/test/refactoring-toy-example"
    # repoPath = "/Users/leichen/ResearchAssistant/InteractiveRebase/data/jeromq"
 
-    git_stein = "/Users/leichen/Code/git-stein/build/libs/git-stein-all.jar"
+    # git_stein = "/Users/leichen/Code/git-stein/build/libs/git-stein-all.jar"
+    git_stein="/zsalab/home/chenlei/ResearchAssistant/git-stein/build/libs/git-stein-all.jar"
     recipe="./recipe.json"
     # squashedOutput="/Users/leichen/ResearchAssistant/InteractiveRebase/data/experimentResult/mbassador"
     # squashedOutput = "/Users/leichen/ResearchAssistant/InteractiveRebase/data/experimentResult/refactoring-toy-example"
-    squashedOutput = "/Users/leichen/ResearchAssistant/InteractiveRebase/data/experimentResult/"+temp
+    # squashedOutput = "/Users/leichen/ResearchAssistant/InteractiveRebase/data/experimentResult/"+temp
 
+    squashedOutput="/zsalab/home/chenlei/ResearchAssistant/output/"+temp
 
+    time_start=time.time()
     for clusterNum in range(2,5):
         miaomiao=squashedOutput
         miaomiao += str(clusterNum)
         CompareResult = miaomiao + "/compareResult.txt"
         step(repoPath=repoPath,recipe=recipe,git_stein=git_stein,squashedOutput=miaomiao,clusterNum=clusterNum,compareResult=CompareResult)
 
-
-
+    time_end=time.time()
+    t=time_end-time_start
+    tResult='time cost:  {:.0f}h {:.0f}min {:.0f}s'.format(t//3600, t // 60, t % 60)
+    print(tResult)
+    with open("./time.txt","w") as f:
+        f.writelines(tResult)
 
 
 
