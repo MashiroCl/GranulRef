@@ -501,35 +501,29 @@ def runServer():
     # RMPath = "/Users/leichen/ResearchAssistant/RefactoringMiner_commandline/RefactoringMiner-2.1.0/bin/RefactoringMiner"
     RMPath = "/home/chenlei/RA/RefactoringMiner/build/distributions/RefactoringMiner-2.1.0/bin/RefactoringMiner"
 
-    # tempList=["spring-boot","checkstyle","WordPress-Android","hazelcast"]
-    # for  temp in tempList:
-    #     # temp="refactoring-toy-ex9ample"
+    tempList=["spring-boot","checkstyle","WordPress-Android","hazelcast"]
+    for  temp in tempList:
+        repoPath = "/home/chenlei/RA/data/" + temp
+        git_stein = "/home/chenlei/RA/git-stein/build/libs/git-stein-all.jar"
+        recipe = "./recipe.json"
+        squashedOutput = "/home/chenlei/RA/output/" + temp
 
-    # temp="checkstyle"
-    temp = "mbassador"
-    # temp="refactoring-toy-example"
+        time_start = time.time()
+        for clusterNum in range(2, 5):
+            miaomiao = squashedOutput
+            miaomiao += str(clusterNum)
+            CompareResult = miaomiao + "/compareResult.txt"
+            step(RMPath=RMPath,repoPath=repoPath, recipe=recipe, git_stein=git_stein, squashedOutput=miaomiao, clusterNum=clusterNum,
+                 compareResult=CompareResult)
 
-    repoPath = "/home/chenlei/RA/data/" + temp
-    git_stein = "/home/chenlei/RA/git-stein/build/libs/git-stein-all.jar"
-    recipe = "./recipe.json"
-    squashedOutput = "/home/chenlei/RA/output/" + temp
-
-    time_start = time.time()
-    for clusterNum in range(2, 5):
-        miaomiao = squashedOutput
-        miaomiao += str(clusterNum)
-        CompareResult = miaomiao + "/compareResult.txt"
-        step(RMPath=RMPath,repoPath=repoPath, recipe=recipe, git_stein=git_stein, squashedOutput=miaomiao, clusterNum=clusterNum,
-             compareResult=CompareResult)
-
-    time_end = time.time()
-    t = time_end - time_start
-    tResult = 'time cost:  {:.0f}h {:.0f}min {:.0f}s'.format(t // 3600, t // 60, t % 60)
-    print(tResult)
-    with open("./time.txt", "w") as f:
-        f.writelines(tResult)
+        time_end = time.time()
+        t = time_end - time_start
+        tResult = 'time cost:  {:.0f}h {:.0f}min {:.0f}s'.format(t // 3600, t // 60, t % 60)
+        print(tResult)
+        with open("./time.txt", "w") as f:
+            f.writelines(tResult)
 
 
 if __name__=="__main__":
-    runLocal()
+  #  runLocal()
     runServer()
