@@ -467,7 +467,7 @@ if __name__=="__main__":
     RMSupportedREF = "RMSupportedREF.txt"
 
     # RMPath = "/Users/leichen/ResearchAssistant/RefactoringMiner_commandline/RefactoringMiner-2.1.0/bin/RefactoringMiner"
-    RMPath="/zsalab/home/chenlei/ResearchAssistant/RefactoringMiner/RefactoringMiner-2.1.0/bin"
+    RMPath="/home/chenlei/RA/RefactoringMiner/build/distributions/RefactoringMiner-2.1.0/bin/RefactoringMiner"
 
     # tempList=["spring-boot","checkstyle","WordPress-Android","hazelcast"]
     # for  temp in tempList:
@@ -477,7 +477,7 @@ if __name__=="__main__":
     temp="mbassador"
     # temp="refactoring-toy-example"
 
-    repoPath="/zsalab/home/chenlei/ResearchAssistant/data"+temp
+    repoPath="/home/chenlei/RA/data"+temp
 
     # repoPath = "/Users/leichen/ResearchAssistant/InteractiveRebase/data/"+temp
     # repoPath="/Users/leichen/ResearchAssistant/InteractiveRebase/data/refactoring-toy-example"
@@ -486,13 +486,13 @@ if __name__=="__main__":
    # repoPath = "/Users/leichen/ResearchAssistant/InteractiveRebase/data/jeromq"
 
     # git_stein = "/Users/leichen/Code/git-stein/build/libs/git-stein-all.jar"
-    git_stein="/zsalab/home/chenlei/ResearchAssistant/git-stein/build/libs/git-stein-all.jar"
+    git_stein="/home/chenlei/RA/git-stein/build/libs/git-stein-all.jar"
     recipe="./recipe.json"
     # squashedOutput="/Users/leichen/ResearchAssistant/InteractiveRebase/data/experimentResult/mbassador"
     # squashedOutput = "/Users/leichen/ResearchAssistant/InteractiveRebase/data/experimentResult/refactoring-toy-example"
     # squashedOutput = "/Users/leichen/ResearchAssistant/InteractiveRebase/data/experimentResult/"+temp
 
-    squashedOutput="/zsalab/home/chenlei/ResearchAssistant/output/"+temp
+    squashedOutput="/home/chenlei/RA/output/"+temp
 
     time_start=time.time()
     for clusterNum in range(2,5):
