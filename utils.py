@@ -277,7 +277,7 @@ def RMDetectlist2(rm,commits:list,repo):
             print(jsonF)
     return jsonF
 
-def step(repoPath:str,recipe:str,git_stein:str,squashedOutput:str,clusterNum:int,compareResult:str):
+def step(RMPath:str,repoPath:str,recipe:str,git_stein:str,squashedOutput:str,clusterNum:int,compareResult:str):
     '''Initialize workspace'''
     #set Repository
     repo = MyRepository(repoPath)
@@ -463,50 +463,73 @@ def start():
     RMPath=parsed.RMpath
     git_stein=parsed.git_stein
     squashedOutput=parsed.squashedOutput
-if __name__=="__main__":
+
+def runLocal():
+    RMSupportedREF = "RMSupportedREF.txt"
+    RMPath = "/Users/leichen/ResearchAssistant/RefactoringMiner_commandline/RefactoringMiner-2.1.0/bin/RefactoringMiner"
+
+    temp = "mbassador"
+
+
+    # repoPath = "/home/chenlei/RA/data/" + temp
+
+    repoPath = "/Users/leichen/ResearchAssistant/InteractiveRebase/data/"+temp
+    git_stein = "/Users/leichen/Code/git-stein/build/libs/git-stein-all.jar"
+    # git_stein = "/home/chenlei/RA/git-stein/build/libs/git-stein-all.jar"
+    recipe = "./recipe.json"
+    squashedOutput = "/Users/leichen/ResearchAssistant/InteractiveRebase/data/experimentResult/"+temp
+
+
+    time_start = time.time()
+    for clusterNum in range(2, 5):
+        miaomiao = squashedOutput
+        miaomiao += str(clusterNum)
+        CompareResult = miaomiao + "/compareResult.txt"
+        step(RMPath=RMPath,repoPath=repoPath, recipe=recipe, git_stein=git_stein, squashedOutput=miaomiao, clusterNum=clusterNum,
+             compareResult=CompareResult)
+
+    time_end = time.time()
+    t = time_end - time_start
+    tResult = 'time cost:  {:.0f}h {:.0f}min {:.0f}s'.format(t // 3600, t // 60, t % 60)
+    print(tResult)
+    with open("./time.txt", "w") as f:
+        f.writelines(tResult)
+
+def runServer():
     RMSupportedREF = "RMSupportedREF.txt"
 
     # RMPath = "/Users/leichen/ResearchAssistant/RefactoringMiner_commandline/RefactoringMiner-2.1.0/bin/RefactoringMiner"
-    RMPath="/home/chenlei/RA/RefactoringMiner/build/distributions/RefactoringMiner-2.1.0/bin/RefactoringMiner"
+    RMPath = "/home/chenlei/RA/RefactoringMiner/build/distributions/RefactoringMiner-2.1.0/bin/RefactoringMiner"
 
     # tempList=["spring-boot","checkstyle","WordPress-Android","hazelcast"]
     # for  temp in tempList:
     #     # temp="refactoring-toy-ex9ample"
 
     # temp="checkstyle"
-    temp="mbassador"
+    temp = "mbassador"
     # temp="refactoring-toy-example"
 
-    repoPath="/home/chenlei/RA/data/"+temp
+    repoPath = "/home/chenlei/RA/data/" + temp
+    git_stein = "/home/chenlei/RA/git-stein/build/libs/git-stein-all.jar"
+    recipe = "./recipe.json"
+    squashedOutput = "/home/chenlei/RA/output/" + temp
 
-    # repoPath = "/Users/leichen/ResearchAssistant/InteractiveRebase/data/"+temp
-    # repoPath="/Users/leichen/ResearchAssistant/InteractiveRebase/data/refactoring-toy-example"
-    # repoPath="/Users/leichen/ResearchAssistant/InteractiveRebase/data/mbassador"
-   #  repoPath="/Users/leichen/ResearchAssistant/InteractiveRebase/data/test/refactoring-toy-example"
-   # repoPath = "/Users/leichen/ResearchAssistant/InteractiveRebase/data/jeromq"
-
-    # git_stein = "/Users/leichen/Code/git-stein/build/libs/git-stein-all.jar"
-    git_stein="/home/chenlei/RA/git-stein/build/libs/git-stein-all.jar"
-    recipe="./recipe.json"
-    # squashedOutput="/Users/leichen/ResearchAssistant/InteractiveRebase/data/experimentResult/mbassador"
-    # squashedOutput = "/Users/leichen/ResearchAssistant/InteractiveRebase/data/experimentResult/refactoring-toy-example"
-    # squashedOutput = "/Users/leichen/ResearchAssistant/InteractiveRebase/data/experimentResult/"+temp
-
-    squashedOutput="/home/chenlei/RA/output/"+temp
-
-    time_start=time.time()
-    for clusterNum in range(2,5):
-        miaomiao=squashedOutput
+    time_start = time.time()
+    for clusterNum in range(2, 5):
+        miaomiao = squashedOutput
         miaomiao += str(clusterNum)
         CompareResult = miaomiao + "/compareResult.txt"
-        step(repoPath=repoPath,recipe=recipe,git_stein=git_stein,squashedOutput=miaomiao,clusterNum=clusterNum,compareResult=CompareResult)
+        step(RMPath=RMPath,repoPath=repoPath, recipe=recipe, git_stein=git_stein, squashedOutput=miaomiao, clusterNum=clusterNum,
+             compareResult=CompareResult)
 
-    time_end=time.time()
-    t=time_end-time_start
-    tResult='time cost:  {:.0f}h {:.0f}min {:.0f}s'.format(t//3600, t // 60, t % 60)
+    time_end = time.time()
+    t = time_end - time_start
+    tResult = 'time cost:  {:.0f}h {:.0f}min {:.0f}s'.format(t // 3600, t // 60, t % 60)
     print(tResult)
-    with open("./time.txt","w") as f:
+    with open("./time.txt", "w") as f:
         f.writelines(tResult)
 
 
-
+if __name__=="__main__":
+    runLocal()
+    runServer()
