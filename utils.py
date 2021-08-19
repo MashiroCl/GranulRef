@@ -477,7 +477,7 @@ if __name__=="__main__":
     temp="mbassador"
     # temp="refactoring-toy-example"
 
-    repoPath="/home/chenlei/RA/data"+temp
+    repoPath="/home/chenlei/RA/data/"+temp
 
     # repoPath = "/Users/leichen/ResearchAssistant/InteractiveRebase/data/"+temp
     # repoPath="/Users/leichen/ResearchAssistant/InteractiveRebase/data/refactoring-toy-example"
