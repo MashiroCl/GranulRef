@@ -501,7 +501,8 @@ def runServer():
     # RMPath = "/Users/leichen/ResearchAssistant/RefactoringMiner_commandline/RefactoringMiner-2.1.0/bin/RefactoringMiner"
     RMPath = "/home/chenlei/RA/RefactoringMiner/build/distributions/RefactoringMiner-2.1.0/bin/RefactoringMiner"
 
-    tempList=["spring-boot","checkstyle","WordPress-Android","hazelcast"]
+    #tempList=["spring-boot","checkstyle","WordPress-Android","hazelcast"]
+    tempList=["spring-boot"]
     for  temp in tempList:
         repoPath = "/home/chenlei/RA/data/" + temp
         git_stein = "/home/chenlei/RA/git-stein/build/libs/git-stein-all.jar"
