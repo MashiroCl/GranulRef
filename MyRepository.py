@@ -103,20 +103,8 @@ class MyRepository:
         :param repository: path for being squashed repository
         :return:
         '''
-        '''
-        clusters of commits
-        write them into recipel.json
-            All in a single time?
-               squash ----> squashed one ----> record this commit id -----> find them in the log
-        run command
-        compare commit
-            RM on before
-            combine before result
-            RM on after
-            compare before and after
-            make a conclusion new appear RM result, disappear RM result
-        :return:
-        '''
         print('start squash')
-        command="java -jar "+git_stein+" Clusterer "+"--recipe="+recipe+" -v -o "+output+" "+repository+">"+"./stein.log"
+       # command="java -jar "+git_stein+" Clusterer "+"--recipe="+recipe+" -v -o "+output+" "+repository+">"+"./stein.log"
+        command="java -jar "+git_stein+" Clusterer "+"--recipe="+recipe+" --clean -v -o "+output+" "+repository+">"+"./stein.log"
+        print("command is ", command)
         os.system(command)
