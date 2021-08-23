@@ -10,7 +10,7 @@ def create_folder(folder):
     try:
         os.mkdir(path)
     except FileExistsError:
-        print("Folder " + folder + " already exists, Directory recreated")
+        # print("Folder " + folder + " already exists, Directory recreated")
         os.system("rm -rf "+folder)
         os.mkdir(path)
     return path
@@ -67,19 +67,6 @@ class MyRepository:
         command="(cd "+path+" && git remote add origin https://example.jp/dummy_url.git)"
         os.system(command)
 
-    # # squash the commits specified in the cc_cluster_info.txt
-    # def squashCommits(self,parentCommit:Commit):
-    #     print("start squash")
-    #     cc_cluster_info = self.repoPath + '/cc_cluster_info.txt'
-    #     auto_seq_editor = self.repoPath + '/auto-seq-editor.rb'
-    #     git_rebase = 'git rebase -i ' + parentCommit.commitID
-    #     f1 = open(self.repoPath + "/squash.sh", 'w')
-    #     command = "env " + "CC_CLUSTER_INFO=" + cc_cluster_info + ' ' + 'GIT_SEQUENCE_EDITOR=' + auto_seq_editor + ' ' + git_rebase
-    #     f1.write('cd ' + self.repoPath + '\n' + command)
-    #     f1.close()
-    #     os.system('echo :wq| sh ' + self.repoPath + "/squash.sh")
-
-
     '2021/7/9 Discard this version Changed to shi5i git stein https://github.com/sh5i/git-stein'
     # squash the commits specified in the cc_cluster_info.txt
     #-r option version
@@ -106,5 +93,5 @@ class MyRepository:
         print('start squash')
        # command="java -jar "+git_stein+" Clusterer "+"--recipe="+recipe+" -v -o "+output+" "+repository+">"+"./stein.log"
         command="java -jar "+git_stein+" Clusterer "+"--recipe="+recipe+" --clean -v -o "+output+" "+repository+">"+"./stein.log"
-        print("command is ", command)
+        # print("command is ", command)
         os.system(command)

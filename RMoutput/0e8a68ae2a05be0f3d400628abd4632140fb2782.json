@@ -1,9 +1,0 @@
-{
-"commits": [
-{
-	"repository": "https://example.jp/dummy_url.git",
-	"sha1": "0e8a68ae2a05be0f3d400628abd4632140fb2782",
-	"url": "https://example.jp/dummy_url/0e8a68ae2a05be0f3d400628abd4632140fb2782",
-	"refactorings": []
-}]
-}

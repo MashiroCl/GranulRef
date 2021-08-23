@@ -153,7 +153,7 @@ def squashWithRecipe(jU,repo,cc_lists_str,recipe,git_stein,squashedOutput)->str:
 
 
 def RMDetectList(rm,commits:list,repo):
-    print("__________________________________________________")
+    print("RM Detect after squash commits_____________________")
     for each in commits:
         print(each)
         jsonF=rm.detect(repo.repoPath, repo.RMoutputPath, each)
@@ -165,11 +165,8 @@ def RMDetectOne(rm,commit:str,repo):
     return jsonF
 
 def RMDetectlist2(rm,commits:list,repo):
-    print("RMDetectlist2__________________________________________________")
-    print(commits)
     for each1 in commits:
             jsonF=rm.detect(repo.repoPath, repo.RMoutputPath, each1)
-            print(jsonF)
     return jsonF
 
 def step(RMPath:str,repoPath:str,recipe:str,git_stein:str,squashedOutput:str,clusterNum:int,compareResult:str):
@@ -212,7 +209,6 @@ def step(RMPath:str,repoPath:str,recipe:str,git_stein:str,squashedOutput:str,clu
         'commitNumAfterSquash < len(each) means the squash occurs'
         if commitNumAfterSquash!=len(each):
             print("commitNumAfterSquash",commitNumAfterSquash)
-            print(each)
             dictTemp1 = RM_supported_type()
             dictTemp2 = RM_supported_type()
             squashedCommitNumTemp=0
@@ -221,7 +217,7 @@ def step(RMPath:str,repoPath:str,recipe:str,git_stein:str,squashedOutput:str,clu
                 for each2 in possibleSquash:
                     if len(each2)>1:
                         squashedCommitNumTemp +=len(each2)
-                        print("each2 are",each2)
+                        print("commits being squashed are",each2)
                         afterSquashed=squashWithRecipe(jU,repo,each2,recipe,git_stein,squashedOutput)
 
                         repoNew = MyRepository(squashedOutput)
@@ -235,7 +231,7 @@ def step(RMPath:str,repoPath:str,recipe:str,git_stein:str,squashedOutput:str,clu
 
                         print("afterSqashed",afterSquashed)
                         jsonFAfter = RMDetectList(rm,afterSquashed,repoNew)
-                        print("jsonFAfter",jsonFAfter)
+                        # print("jsonFAfter",jsonFAfter)
                         refNum1, dictTemp1 = stat_analysis(jsonFBefore, dictTemp1)
                         refNum2, dictTemp2 = stat_analysis(jsonFAfter, dictTemp2)
 
@@ -288,11 +284,7 @@ def runLocal():
     RMSupportedREF = "RMSupportedREF.txt"
     RMPath = "/Users/leichen/ResearchAssistant/RefactoringMiner_commandline/RefactoringMiner-2.1.0/bin/RefactoringMiner"
 
-    temp = "mbassador"
-
-
-    # repoPath = "/home/chenlei/RA/data/" + temp
-
+    temp = "refactoring-toy-example"
     repoPath = "/Users/leichen/ResearchAssistant/InteractiveRebase/data/"+temp
     git_stein = "/Users/leichen/Code/git-stein/build/libs/git-stein-all.jar"
     # git_stein = "/home/chenlei/RA/git-stein/build/libs/git-stein-all.jar"
@@ -301,7 +293,7 @@ def runLocal():
 
 
     time_start = time.time()
-    for clusterNum in range(3, 4):
+    for clusterNum in range(2, 3):
         miaomiao = squashedOutput
         miaomiao += str(clusterNum)
         CompareResult = miaomiao + "/compareResult.txt"
@@ -346,5 +338,5 @@ def runServer():
 
 
 if __name__=="__main__":
-   runLocal()
-    # runServer()
+    #runLocal()
+    runServer()
