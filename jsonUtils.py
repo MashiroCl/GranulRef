@@ -32,12 +32,12 @@ class JsonUtils:
     def writeRecipe(self,lists,path):
         recipe={}
         recipe["forcedClusters"]=[]
-        # for each in lists:
-        #     recipe["forcedClusters"].append(each)
-        recipe["forcedClusters"].append(lists)
+        for each in lists:
+            recipe["forcedClusters"].append(each)
+        # recipe["forcedClusters"].append(lists)
         with open(path,'w') as output:
            json.dump(recipe,output)
-
+        print("recipe is ",recipe)
 
 if __name__ =="__main__":
     s="20:41:56.907 [main] DEBUG jp.ac.titech.c.se.stein.core.RepositoryRewriter - Rewrite commit: 63cbed99a601e79c6a0ae389b2a57acdbd3e1b44 -> aeb568b9437a444043921fd4ce5276684c06b42b"

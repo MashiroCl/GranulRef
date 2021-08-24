@@ -143,20 +143,30 @@ def squashWithRecipe(jU,repo,cc_lists_str,recipe,git_stein,squashedOutput)->str:
     with open(steinLog,"r") as f:
         lines=f.readlines()
     result=[]
-    for each in lines:
-        if " Rewrite commit: " in each:
-            temp=each.split("Rewrite commit: ")[1].split(" -> ")
-            'Attention: merge not excluded'
-            if temp[0].strip()==cc_lists_str[0].strip():
-                result.append(temp[1].strip())
+    for eachList in cc_lists_str:
+        for eachLine in lines:
+            if " Rewrite commit: " in eachLine:
+                temp = eachLine.split("Rewrite commit: ")[1].split(" -> ")
+                'Attention: merge not excluded'
+                if temp[0].strip() == eachList[0].strip():
+                    result.append(temp[1].strip())
     return result
 
+    # for each in lines:
+    #     if " Rewrite commit: " in each:
+    #         temp=each.split("Rewrite commit: ")[1].split(" -> ")
+    #         'Attention: merge not excluded'
+    #         if temp[0].strip()==cc_lists_str[0].strip():
+    #             result.append(temp[1].strip())
+    # return result
 
-def RMDetectList(rm,commits:list,repo):
-    print("RM Detect after squash commits_____________________")
+
+def RMDetectListAfterSquash(rm,commits:list,repo):
+    print("_____________________RM Detect after squash commits_____________________")
     for each in commits:
         print(each)
         jsonF=rm.detect(repo.repoPath, repo.RMoutputPath, each)
+    print("________________________________________________________________________")
     return jsonF
 
 def RMDetectOne(rm,commit:str,repo):
@@ -164,9 +174,18 @@ def RMDetectOne(rm,commit:str,repo):
     jsonF=rm.detect(repo.repoPath, repo.RMoutputPath, commit)
     return jsonF
 
-def RMDetectlist2(rm,commits:list,repo):
+def RMDetectlistBeforeSquash(rm,commits:list,repo):
+    print("_____________________RM Detect before squash commits_____________________")
     for each1 in commits:
             jsonF=rm.detect(repo.repoPath, repo.RMoutputPath, each1)
+    print("________________________________________________________________________")
+    return jsonF
+
+def RMDetect(rm,commits:list,repo):
+    print("_____________________RM Detect commits__________________________________")
+    for each in commits:
+        jsonF = rm.detect(repo.repoPath, repo.RMoutputPath, each)
+    print("________________________________________________________________________")
     return jsonF
 
 def step(RMPath:str,repoPath:str,recipe:str,git_stein:str,squashedOutput:str,clusterNum:int,compareResult:str):
@@ -214,26 +233,55 @@ def step(RMPath:str,repoPath:str,recipe:str,git_stein:str,squashedOutput:str,clu
             squashedCommitNumTemp=0
             commitNumAfter+=commitNumAfterSquash
             for possibleSquash in possibleSquashes:
+                squashableCommitList=[]
                 for each2 in possibleSquash:
-                    if len(each2)>1:
-                        squashedCommitNumTemp +=len(each2)
-                        print("commits being squashed are",each2)
-                        afterSquashed=squashWithRecipe(jU,repo,each2,recipe,git_stein,squashedOutput)
+                    if len(each2) > 1:
+                        squashedCommitNumTemp += len(each2)
+                        squashableCommitList.append(each2)
 
-                        repoNew = MyRepository(squashedOutput)
-                        repoNew.createWorkSpace()
-                        repoNew.addRemote(repoNew.repoPath)
+                'if squash output .git file is already exist, delete it to prohibit .git from becoming too big'
+                if os.path.exists(squashedOutput):
+                    command="rm -rf "+squashedOutput
+                    os.system(command)
 
-                        # create_folder(repo.comparePath)
-                        # create_folder(repo.RMoutputPath)
-                        RMDetectlist2(rm,each2,repo)
-                        jsonFBefore = repo.combine("/squashed.json")
+                afterSquashed = squashWithRecipe(jU, repo, squashableCommitList, recipe, git_stein, squashedOutput)
+                repoNew = MyRepository(squashedOutput)
+                repoNew.createWorkSpace()
+                repoNew.addRemote(repoNew.repoPath)
 
-                        print("afterSqashed",afterSquashed)
-                        jsonFAfter = RMDetectList(rm,afterSquashed,repoNew)
-                        # print("jsonFAfter",jsonFAfter)
-                        refNum1, dictTemp1 = stat_analysis(jsonFBefore, dictTemp1)
-                        refNum2, dictTemp2 = stat_analysis(jsonFAfter, dictTemp2)
+                'RM detect commits after squash'
+                RMDetect(rm, afterSquashed, repoNew)
+                'combine detected results and combined them into a json file'
+                jsonFAfter=repoNew.combine("/squashed.json")
+
+                'RM detect commits before squash'
+                'clean old RMoutput file'
+                repo.createWorkSpace()
+                for eachList in squashableCommitList:
+                    RMDetect(rm,eachList,repo)
+                jsonFBefore=repo.combine("/squashed.json")
+                refNum1, dictTemp1 = stat_analysis(jsonFBefore, dictTemp1)
+                refNum2, dictTemp2 = stat_analysis(jsonFAfter, dictTemp2)
+
+                # for each2 in possibleSquash:
+                #     if len(each2)>1:
+                #         squashedCommitNumTemp +=len(each2)
+                #
+                #         afterSquashed=squashWithRecipe(jU,repo,each2,recipe,git_stein,squashedOutput)
+                #
+                #         repoNew = MyRepository(squashedOutput)
+                #         repoNew.createWorkSpace()
+                #         repoNew.addRemote(repoNew.repoPath)
+                #
+                #
+                #         RMDetectlist2(rm,each2,repo)
+                #         jsonFBefore = repo.combine("/squashed.json")
+                #
+                #         print("afterSqashed",afterSquashed)
+                #         jsonFAfter = RMDetectList(rm,afterSquashed,repoNew)
+                #         # print("jsonFAfter",jsonFAfter)
+                #         refNum1, dictTemp1 = stat_analysis(jsonFBefore, dictTemp1)
+                #         refNum2, dictTemp2 = stat_analysis(jsonFAfter, dictTemp2)
 
             dictAverage(dictTemp1,len(possibleSquashes))
             dictAverage(dictTemp2,len(possibleSquashes))
@@ -285,6 +333,8 @@ def runLocal():
     RMPath = "/Users/leichen/ResearchAssistant/RefactoringMiner_commandline/RefactoringMiner-2.1.0/bin/RefactoringMiner"
 
     temp = "refactoring-toy-example"
+    temp="mbassador"
+    # temp="spring-boot"
     repoPath = "/Users/leichen/ResearchAssistant/InteractiveRebase/data/"+temp
     git_stein = "/Users/leichen/Code/git-stein/build/libs/git-stein-all.jar"
     # git_stein = "/home/chenlei/RA/git-stein/build/libs/git-stein-all.jar"
@@ -338,5 +388,5 @@ def runServer():
 
 
 if __name__=="__main__":
-    #runLocal()
-    runServer()
+    runLocal()
+    # runServer()

@@ -20,7 +20,13 @@ class MyRepository:
     def __init__(self,path):
         self.repoPath=path
         self.RMoutputPath="./RMoutput"
+        self.RMoutputPathBS="./RMoutputBS"
+        self.RMoutputPathAS="./RMoutputAS"
         self.comparePath="./compare"
+
+        self.RMoutputPath=self.repoPath+"/RMoutput"
+        self.comparePath = self.repoPath+"/compare"
+
 
     def setComparePath(self,s:str):
         self.comparePath=s
@@ -58,28 +64,17 @@ class MyRepository:
         for f in glob.glob(self.RMoutputPath+ "/" + "*.json"):
             with open(f, "r") as infile:
                 result.append(json.load(infile))
-        file=self.comparePath + combinedJsonFile
-        with open(file, "w") as outfile:
+        path=self.comparePath + combinedJsonFile
+        with open(path, "w") as outfile:
             json.dump(result, outfile)
-        return file
+        return path
 
     def addRemote(self,path:str):
         command="(cd "+path+" && git remote add origin https://example.jp/dummy_url.git)"
         os.system(command)
 
     '2021/7/9 Discard this version Changed to shi5i git stein https://github.com/sh5i/git-stein'
-    # squash the commits specified in the cc_cluster_info.txt
-    #-r option version
-    # def squashCommits(self, initialCommit:Commit):
-    #     print("start squash")
-    #     cc_cluster_info = self.repoPath + '/cc_cluster_info.txt'
-    #     auto_seq_editor = self.repoPath + '/auto-seq-editor.py'
-    #     git_rebase = 'git rebase -r -i ' + initialCommit.commitID
-    #     f1 = open(self.repoPath + "/squash.sh", 'w')
-    #     command = "env " + "CC_CLUSTER_INFO=" + cc_cluster_info + ' ' + 'GIT_SEQUENCE_EDITOR=' + auto_seq_editor + ' ' + git_rebase
-    #     f1.write('cd ' + self.repoPath + '\n' + command)
-    #     f1.close()
-    #     os.system('echo :wq| sh ' + self.repoPath + "/squash.sh")
+
 
     'sh5i git stein version https://github.com/sh5i/git-stein, squash according to recipe.json'
     def squashCommits(self,recipe,git_stein,output,repository):
