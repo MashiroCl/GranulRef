@@ -87,6 +87,6 @@ class MyRepository:
         '''
         print('start squash')
        # command="java -jar "+git_stein+" Clusterer "+"--recipe="+recipe+" -v -o "+output+" "+repository+">"+"./stein.log"
-        command="java -jar "+git_stein+" Clusterer "+"--recipe="+recipe+" --clean -v -o "+output+" "+repository+">"+"./stein.log"
+        command="java -jar "+git_stein+" Clusterer "+"--recipe="+recipe+" -v -o "+output+" "+repository+">"+"./stein.log"
         # print("command is ", command)
         os.system(command)

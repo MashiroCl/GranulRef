@@ -343,7 +343,7 @@ def runLocal():
 
 
     time_start = time.time()
-    for clusterNum in range(2, 3):
+    for clusterNum in range(2, 5):
         miaomiao = squashedOutput
         miaomiao += str(clusterNum)
         CompareResult = miaomiao + "/compareResult.txt"
