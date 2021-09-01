@@ -363,6 +363,7 @@ def runServer():
     # RMPath = "/Users/leichen/ResearchAssistant/RefactoringMiner_commandline/RefactoringMiner-2.1.0/bin/RefactoringMiner"
     RMPath = "/home/chenlei/RA/RefactoringMiner/build/distributions/RefactoringMiner-2.1.0/bin/RefactoringMiner"
 
+    time_start = time.time()
     #tempList=["spring-boot","checkstyle","WordPress-Android","hazelcast"]
     tempList=["spring-boot"]
     for  temp in tempList:
@@ -371,7 +372,7 @@ def runServer():
         recipe = "./recipe.json"
         squashedOutput = "/home/chenlei/RA/output/" + temp
 
-        time_start = time.time()
+
         for clusterNum in range(2, 3):
             miaomiao = squashedOutput
             miaomiao += str(clusterNum)
@@ -386,7 +387,39 @@ def runServer():
         with open("./time.txt", "w") as f:
             f.writelines(tResult)
 
+def normal_detect(repoPath:str):
+    RMPath="/home/chenlei/RA/RefactoringMiner/build/distributions/RefactoringMiner-2.1.0/bin/RefactoringMiner"
+    '''Initialize workspace'''
+    #set Repository
+    repo = MyRepository(repoPath)
+    repo.createWorkSpace()
+
+    # create_folder(squashedOutput)
+    '''Obtain git commit info in Json form'''
+    #create a json file read json file
+    jU=JsonUtils()
+    jU.setRepoPath(repo.repoPath)
+    jU.gitJson()
+    commits=jU.jsonToCommit()
+
+    rm = RefactoringMiner(RMPath)
+
+    output = repo.repoPath+"/normal_detect"
+    create_folder(output)
+    'RM detect commits after squash'
+    repo.setRMoutputPath(output)
+    time_start = time.time()
+    for each in commits:
+        RMDetect(rm,each.commitID, repo)
+    time_end = time.time()
+    t = time_end - time_start
+    tResult = 'time cost:  {:.0f}h {:.0f}min {:.0f}s'.format(t // 3600, t // 60, t % 60)
+    print(tResult)
+    with open("./time.txt", "w") as f:
+        f.writelines(tResult)
 
 if __name__=="__main__":
-    runLocal()
+    # runLocal()
     # runServer()
+    repoPath="/home/chenlei/RA/data/spring-boot"
+    normal_detect(repoPath)
