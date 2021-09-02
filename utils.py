@@ -415,13 +415,13 @@ def normal_detect(repoPath:str):
         RMDetect(rm,each.commitID, repo)
     time_end = time.time()
     t = time_end - time_start
-    tResult = 'time cost:  {:.0f}h {:.0f}min {:.0f}s'.format(t // 3600, t // 60, t % 60)
+    tResult = 'time cost: {:.0f}min {:.0f}s'.format(t // 60, t % 60)
     print(tResult)
     with open("./time.txt", "w") as f:
         f.writelines(tResult)
 
 if __name__=="__main__":
     # runLocal()
-    runServer()
-    # repoPath="/home/chenlei/RA/data/spring-boot"
-    # normal_detect(repoPath)
+    # runServer()
+    repoPath="/home/chenlei/RA/data/RoboBinding"
+    normal_detect(repoPath)
