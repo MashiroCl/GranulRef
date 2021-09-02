@@ -364,8 +364,8 @@ def runServer():
     RMPath = "/home/chenlei/RA/RefactoringMiner/build/distributions/RefactoringMiner-2.1.0/bin/RefactoringMiner"
 
     time_start = time.time()
-    #tempList=["spring-boot","checkstyle","WordPress-Android","hazelcast"]
-    tempList=["spring-boot"]
+    # tempList=["RoboBinding","goclipse","hydra","bitcoinj"]
+    tempList=["RoboBinding"]
     for  temp in tempList:
         repoPath = "/home/chenlei/RA/data/" + temp
         git_stein = "/home/chenlei/RA/git-stein/build/libs/git-stein-all.jar"
@@ -420,6 +420,6 @@ def normal_detect(repoPath:str):
 
 if __name__=="__main__":
     # runLocal()
-    # runServer()
-    repoPath="/home/chenlei/RA/data/spring-boot"
-    normal_detect(repoPath)
+    runServer()
+    # repoPath="/home/chenlei/RA/data/spring-boot"
+    # normal_detect(repoPath)
