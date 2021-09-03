@@ -1,6 +1,10 @@
+import sys
+sys.path.append('../')
 import time
 from utils2 import step
 from utils import outputTime
+
+
 def runLocal():
     RMSupportedREF = "../RMSupportedREF.txt"
     RMPath = "/Users/leichen/ResearchAssistant/RefactoringMiner_commandline/RefactoringMiner-2.1.0/bin/RefactoringMiner"
@@ -31,4 +35,5 @@ def runLocal():
         f.writelines(tResult)
 
 if __name__ =="__main__":
+
     runLocal()

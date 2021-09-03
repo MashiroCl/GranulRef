@@ -1,3 +1,5 @@
+import sys
+sys.path.append('../')
 import time
 from MyRepository import MyRepository, create_folder
 from RefactoringMiner import RefactoringMiner

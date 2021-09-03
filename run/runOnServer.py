@@ -1,11 +1,8 @@
+import sys
+sys.path.append('../')
 import time
 from utils2 import step
 from utils import outputTime
-import sys
-import os
-curPath = os.path.abspath(os.path.dirname(__file__))
-rootPath = os.path.split(curPath)[0]
-sys.path.append(rootPath)
 def runServer():
     RMSupportedREF = "../RMSupportedREF.txt"
     # RMPath = "/Users/leichen/ResearchAssistant/RefactoringMiner_commandline/RefactoringMiner-2.1.0/bin/RefactoringMiner"
