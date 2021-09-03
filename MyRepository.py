@@ -73,6 +73,9 @@ class MyRepository:
         command="(cd "+path+" && git remote add origin https://example.jp/dummy_url.git)"
         os.system(command)
 
+    def gitGc(self,path:str):
+        command="(cd "+path+" && git gc --aggressive --prune=now)"
+        os.system(command)
     '2021/7/9 Discard this version Changed to shi5i git stein https://github.com/sh5i/git-stein'
 
 

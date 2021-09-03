@@ -18,7 +18,6 @@ import time
 STEINLOG="./stein.log"
 
 
-
 def git_log(path,file_name="git_log.txt")->str:
     os.system('git -C '+path+'/.git log>'+path+"/"+file_name)
     return path+"/"+file_name
@@ -48,8 +47,7 @@ def count_commit(file_path):
                 num=num+1
     return num
 
-def RM_supported_type():
-    RMSupportedREF = "RMSupportedREF.txt"
+def RM_supported_type(RMSupportedREF):
     dict={}
     with open(RMSupportedREF) as f:
        lines=f.readlines()
@@ -88,9 +86,9 @@ def dictAverage(d,num)->dict:
         d[each]=d[each]/num
 
 
-def dictCompare(dict1,dict2)->list:
-    dictAdd=RM_supported_type()
-    dictDecrease=RM_supported_type()
+def dictCompare(dict1,dict2,RMSupportedREF)->list:
+    dictAdd=RM_supported_type(RMSupportedREF)
+    dictDecrease=RM_supported_type(RMSupportedREF)
     for each1 in dict1:
         difference=dict2[each1]-dict1[each1]
         if difference>0:
@@ -151,36 +149,6 @@ def squashWithRecipe(jU,repo,cc_lists_str,recipe,git_stein,squashedOutput)->str:
                 if temp[0].strip() == eachList[0].strip():
                     result.append(temp[1].strip())
     return result
-
-    # for each in lines:
-    #     if " Rewrite commit: " in each:
-    #         temp=each.split("Rewrite commit: ")[1].split(" -> ")
-    #         'Attention: merge not excluded'
-    #         if temp[0].strip()==cc_lists_str[0].strip():
-    #             result.append(temp[1].strip())
-    # return result
-
-
-def RMDetectListAfterSquash(rm,commits:list,repo):
-    print("_____________________RM Detect after squash commits_____________________")
-    for each in commits:
-        print(each)
-        jsonF=rm.detect(repo.repoPath, repo.RMoutputPath, each)
-    print("________________________________________________________________________")
-    return jsonF
-
-def RMDetectOne(rm,commit:str,repo):
-    print("__________________________________________________")
-    jsonF=rm.detect(repo.repoPath, repo.RMoutputPath, commit)
-    return jsonF
-
-def RMDetectlistBeforeSquash(rm,commits:list,repo):
-    print("_____________________RM Detect before squash commits_____________________")
-    for each1 in commits:
-            jsonF=rm.detect(repo.repoPath, repo.RMoutputPath, each1)
-    print("________________________________________________________________________")
-    return jsonF
-
 def RMDetect(rm,commits:list,repo):
     print("_____________________RM Detect commits__________________________________")
     for each in commits:
@@ -188,13 +156,24 @@ def RMDetect(rm,commits:list,repo):
     print("________________________________________________________________________")
     return jsonF
 
-def step(RMPath:str,repoPath:str,recipe:str,git_stein:str,squashedOutput:str,clusterNum:int,compareResult:str):
+def step(RMPath:str,repoPath:str,recipe:str,git_stein:str,squashedOutput:str,clusterNum:int,compareResult:str,RMSupportedREF:str):
+    '''
+    :param RMPath: path for refactoring miner
+    :param repoPath: path for repo being squashed
+    :param recipe: path for recipe
+    :param git_stein: path for git-stin
+    :param squashedOutput: path for squashed repository output
+    :param clusterNum: number of each cluster
+    :param compareResult: path for txt file storing compare result
+    :param RMSupportedREF: path for RMSupportedREF.txt
+    :return:
+    '''
+
     '''Initialize workspace'''
     #set Repository
     repo = MyRepository(repoPath)
     repo.createWorkSpace()
 
-    # create_folder(squashedOutput)
     '''Obtain git commit info in Json form'''
     #create a json file read json file
     jU=JsonUtils()
@@ -215,10 +194,10 @@ def step(RMPath:str,repoPath:str,recipe:str,git_stein:str,squashedOutput:str,clu
     rm = RefactoringMiner(RMPath)
 
     'write recipe and Squash'
-    dictBeforeS=RM_supported_type()
-    dictAfterS=RM_supported_type()
-    disappearRO=RM_supported_type()
-    genereatRO=RM_supported_type()
+    dictBeforeS=RM_supported_type(RMSupportedREF)
+    dictAfterS=RM_supported_type(RMSupportedREF)
+    disappearRO=RM_supported_type(RMSupportedREF)
+    genereatRO=RM_supported_type(RMSupportedREF)
     commitNumBefore,commitNumAfter=0,0
     squashedCommitNum=0
 
@@ -228,8 +207,8 @@ def step(RMPath:str,repoPath:str,recipe:str,git_stein:str,squashedOutput:str,clu
         'commitNumAfterSquash < len(each) means the squash occurs'
         if commitNumAfterSquash!=len(each):
             print("commitNumAfterSquash",commitNumAfterSquash)
-            dictTemp1 = RM_supported_type()
-            dictTemp2 = RM_supported_type()
+            dictTemp1 = RM_supported_type(RMSupportedREF)
+            dictTemp2 = RM_supported_type(RMSupportedREF)
             squashedCommitNumTemp=0
             commitNumAfter+=commitNumAfterSquash
             for possibleSquash in possibleSquashes:
@@ -248,6 +227,7 @@ def step(RMPath:str,repoPath:str,recipe:str,git_stein:str,squashedOutput:str,clu
                 repoNew = MyRepository(squashedOutput)
                 repoNew.createWorkSpace()
                 repoNew.addRemote(repoNew.repoPath)
+                'Using git gc to pack new generated .git'
                 repoNew.gitGc(repoNew.repoPath)
 
                 'RM detect commits after squash'
@@ -264,30 +244,10 @@ def step(RMPath:str,repoPath:str,recipe:str,git_stein:str,squashedOutput:str,clu
                 refNum1, dictTemp1 = stat_analysis(jsonFBefore, dictTemp1)
                 refNum2, dictTemp2 = stat_analysis(jsonFAfter, dictTemp2)
 
-                # for each2 in possibleSquash:
-                #     if len(each2)>1:
-                #         squashedCommitNumTemp +=len(each2)
-                #
-                #         afterSquashed=squashWithRecipe(jU,repo,each2,recipe,git_stein,squashedOutput)
-                #
-                #         repoNew = MyRepository(squashedOutput)
-                #         repoNew.createWorkSpace()
-                #         repoNew.addRemote(repoNew.repoPath)
-                #
-                #
-                #         RMDetectlist2(rm,each2,repo)
-                #         jsonFBefore = repo.combine("/squashed.json")
-                #
-                #         print("afterSqashed",afterSquashed)
-                #         jsonFAfter = RMDetectList(rm,afterSquashed,repoNew)
-                #         # print("jsonFAfter",jsonFAfter)
-                #         refNum1, dictTemp1 = stat_analysis(jsonFBefore, dictTemp1)
-                #         refNum2, dictTemp2 = stat_analysis(jsonFAfter, dictTemp2)
-
             dictAverage(dictTemp1,len(possibleSquashes))
             dictAverage(dictTemp2,len(possibleSquashes))
             squashedCommitNum+=squashedCommitNumTemp/len(possibleSquashes)
-            dictIncrease, dictDecrease = dictCompare(dictTemp1, dictTemp2)
+            dictIncrease, dictDecrease = dictCompare(dictTemp1, dictTemp2,RMSupportedREF)
             dictAdd(genereatRO, dictIncrease)
             dictAdd(disappearRO, dictDecrease)
             dictAdd(dictBeforeS, dictTemp1)
@@ -328,108 +288,3 @@ def start():
     RMPath=parsed.RMpath
     git_stein=parsed.git_stein
     squashedOutput=parsed.squashedOutput
-
-def runLocal():
-    RMSupportedREF = "RMSupportedREF.txt"
-    RMPath = "/Users/leichen/ResearchAssistant/RefactoringMiner_commandline/RefactoringMiner-2.1.0/bin/RefactoringMiner"
-
-    temp = "refactoring-toy-example"
-    temp="mbassador"
-    # temp="spring-boot"
-    repoPath = "/Users/leichen/ResearchAssistant/InteractiveRebase/data/"+temp
-    git_stein = "/Users/leichen/Code/git-stein/build/libs/git-stein-all.jar"
-    # git_stein = "/home/chenlei/RA/git-stein/build/libs/git-stein-all.jar"
-    recipe = "./recipe.json"
-    squashedOutput = "/Users/leichen/ResearchAssistant/InteractiveRebase/data/experimentResult/"+temp
-
-
-    time_start = time.time()
-    for clusterNum in range(2, 5):
-        miaomiao = squashedOutput
-        miaomiao += str(clusterNum)
-        CompareResult = miaomiao + "/compareResult.txt"
-        step(RMPath=RMPath,repoPath=repoPath, recipe=recipe, git_stein=git_stein, squashedOutput=miaomiao, clusterNum=clusterNum,
-             compareResult=CompareResult)
-
-    time_end = time.time()
-    t = time_end - time_start
-    tResult = 'time cost:  {:.0f}h {:.0f}min {:.0f}s'.format(t // 3600, t // 60, t % 60)
-    print(tResult)
-    with open("./time.txt", "w") as f:
-        f.writelines(tResult)
-
-def runServer():
-    RMSupportedREF = "RMSupportedREF.txt"
-
-    # RMPath = "/Users/leichen/ResearchAssistant/RefactoringMiner_commandline/RefactoringMiner-2.1.0/bin/RefactoringMiner"
-    RMPath = "/home/chenlei/RA/RefactoringMiner/build/distributions/RefactoringMiner-2.1.0/bin/RefactoringMiner"
-
-
-    tempList=["RoboBinding","goclipse","hydra","bitcoinj"]
-    # tempList=["RoboBinding"]
-    for  temp in tempList:
-        repoPath = "/home/chenlei/RA/data/" + temp
-        git_stein = "/home/chenlei/RA/git-stein/build/libs/git-stein-all.jar"
-        recipe = "./recipe.json"
-        squashedOutput = "/home/chenlei/RA/output/" + temp
-
-
-        for clusterNum in range(2, 5):
-            time_start = time.time()
-
-            miaomiao = squashedOutput
-            miaomiao += str(clusterNum)
-            CompareResult = miaomiao + "/compareResult.txt"
-            step(RMPath=RMPath,repoPath=repoPath, recipe=recipe, git_stein=git_stein, squashedOutput=miaomiao, clusterNum=clusterNum,
-                 compareResult=CompareResult)
-
-            time_end = time.time()
-            t = time_end - time_start
-            tResult = 'time cost: {:.0f}min {:.0f}s'.format( t // 60, t % 60)
-            print(tResult)
-            with open(CompareResult+"/time.txt", "w") as f:
-                f.writelines(tResult)
-
-def normal_detect(repoPath:str):
-    RMPath="/home/chenlei/RA/RefactoringMiner/build/distributions/RefactoringMiner-2.1.0/bin/RefactoringMiner"
-    '''Initialize workspace'''
-    #set Repository
-    repo = MyRepository(repoPath)
-    repo.createWorkSpace()
-
-    # create_folder(squashedOutput)
-    '''Obtain git commit info in Json form'''
-    #create a json file read json file
-    jU=JsonUtils()
-    jU.setRepoPath(repo.repoPath)
-    jU.gitJson()
-    commits=jU.jsonToCommit()
-
-    rm = RefactoringMiner(RMPath)
-
-    output = repo.repoPath+"/normal_detect"
-    create_folder(output)
-    'RM detect commits after squash'
-    repo.setRMoutputPath(output)
-    time_start = time.time()
-    for each in commits:
-        RMDetect(rm,each.commitID, repo)
-    time_end = time.time()
-    t = time_end - time_start
-    tResult = 'time cost: {:.0f}min {:.0f}s'.format(t // 60, t % 60)
-    print(tResult)
-    with open("./time.txt", "w") as f:
-        f.writelines(tResult)
-
-def outputTime(t)->str:
-    h=t // 3600
-    m=(t-h*3600)//60
-    s=t-h*3600-m*60
-    tResult = 'time cost:  {:.0f}h {:.0f}min {:.0f}s'.format(h,m,s)
-    return tResult
-
-if __name__=="__main__":
-    # runLocal()
-    # runServer()
-    repoPath="/home/chenlei/RA/data/RoboBinding"
-    normal_detect(repoPath)
