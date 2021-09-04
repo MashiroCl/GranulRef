@@ -11,7 +11,7 @@ def runLocal():
 
     temp = "refactoring-toy-example"
     temp="mbassador"
-    # temp="spring-boot"
+    temp="jbpm"
     repoPath = "/Users/leichen/ResearchAssistant/InteractiveRebase/data/"+temp
     git_stein = "/Users/leichen/Code/git-stein/build/libs/git-stein-all.jar"
     # git_stein = "/home/chenlei/RA/git-stein/build/libs/git-stein-all.jar"
