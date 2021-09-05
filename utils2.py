@@ -228,7 +228,7 @@ def step(RMPath:str,repoPath:str,recipe:str,git_stein:str,squashedOutput:str,clu
                 repoNew.createWorkSpace()
                 repoNew.addRemote(repoNew.repoPath)
                 'Using git gc to pack new generated .git'
-                repoNew.gitGc(repoNew.repoPath)
+                # repoNew.gitGc(repoNew.repoPath)
 
                 'RM detect commits after squash'
                 RMDetect(rm, afterSquashed, repoNew)
