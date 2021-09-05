@@ -49,7 +49,7 @@ if __name__ =="__main__":
 
     repoPath = "/home/chenlei/RA/data/RoboBinding"
     # repoPath = "/Users/leichen/ResearchAssistant/InteractiveRebase/data/refactoring-toy-example"
-
+    repoPath = "/home/chenlei/RA/data/mbassador"
     output = repoPath+"/normal_detect"
 
     normal_detect(RMPath=RMPath,repoPath=repoPath,output=output)
