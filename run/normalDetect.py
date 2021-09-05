@@ -43,10 +43,10 @@ if __name__ =="__main__":
     'server'
     RMPath="/home/chenlei/RA/RefactoringMiner/build/distributions/RefactoringMiner-2.1.0/bin/RefactoringMiner"
     'local'
-    RMPath="/Users/leichen/ResearchAssistant/RefactoringMiner_commandline/RefactoringMiner-2.1.0/bin/RefactoringMiner"
+    # RMPath="/Users/leichen/ResearchAssistant/RefactoringMiner_commandline/RefactoringMiner-2.1.0/bin/RefactoringMiner"
 
     repoPath = "/home/chenlei/RA/data/RoboBinding"
-    repoPath = "/Users/leichen/ResearchAssistant/InteractiveRebase/data/refactoring-toy-example"
+    # repoPath = "/Users/leichen/ResearchAssistant/InteractiveRebase/data/refactoring-toy-example"
 
     output = repoPath+"/normal_detect"
 
