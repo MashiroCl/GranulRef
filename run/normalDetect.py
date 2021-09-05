@@ -30,8 +30,10 @@ def normal_detect(RMPath:str,repoPath:str,output:str):
     'RM detect commits after squash'
     repo.setRMoutputPath(output)
     time_start = time.time()
+    temp = []
     for each in commits:
-        RMDetect(rm,each.commitID, repo)
+        temp.append(each.commitID)
+    RMDetect(rm,temp, repo)
     time_end = time.time()
     t = time_end - time_start
     tResult = outputTime(t)
