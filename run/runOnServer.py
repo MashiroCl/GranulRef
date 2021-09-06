@@ -16,7 +16,7 @@ def runServer():
         squashedOutput = "/home/chenlei/RA/output/" + temp
 
 
-        for clusterNum in range(2, 3):
+        for clusterNum in range(3, 5):
             time_start = time.time()
 
             miaomiao = squashedOutput
