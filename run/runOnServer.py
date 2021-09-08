@@ -7,8 +7,8 @@ def runServer():
     RMSupportedREF = "../RMSupportedREF.txt"
     # RMPath = "/Users/leichen/ResearchAssistant/RefactoringMiner_commandline/RefactoringMiner-2.1.0/bin/RefactoringMiner"
     RMPath = "/home/chenlei/RA/RefactoringMiner/build/distributions/RefactoringMiner-2.1.0/bin/RefactoringMiner"
-    # tempList=["RoboBinding","goclipse","hydra","bitcoinj"]
-    tempList=["RoboBinding"]
+    # tempList=["RoboBinding","goclipse","hydra","bitcoinj"]２
+    tempList=["jOOQ"]
     for  temp in tempList:
         repoPath = "/home/chenlei/RA/data/" + temp
         git_stein = "/home/chenlei/RA/git-stein/build/libs/git-stein-all.jar"
@@ -16,7 +16,7 @@ def runServer():
         squashedOutput = "/home/chenlei/RA/output/" + temp
 
 
-        for clusterNum in range(3, 5):
+        for clusterNum in range(2, 5):
             time_start = time.time()
 
             miaomiao = squashedOutput
