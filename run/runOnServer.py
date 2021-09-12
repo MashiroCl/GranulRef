@@ -9,9 +9,11 @@ def runServer(repoPath,squashedOutput,clusterNum):
     git_stein = data["titan"]["git_stein"]
     recipe = data["titan"]["recipe"]
 
+    repoName=repoPath.split("/")[-1]
+
     for num in range(clusterNum[0], clusterNum[1]):
         time_start = timeRecord()
-        outputName = squashedOutput
+        outputName = squashedOutput+"/"+repoName
         outputName += str(num)
         CompareResult = outputName + data["titan"]["CompareResult"]
         step(RMPath=RMPath,repoPath=repoPath, recipe=recipe, git_stein=git_stein, squashedOutput=outputName, clusterNum=num,
