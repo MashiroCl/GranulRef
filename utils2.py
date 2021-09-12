@@ -8,7 +8,6 @@
 from jsonUtils import JsonUtils
 from CommitGraph import CommitGraph
 from MyRepository import MyRepository
-from MyRepository import create_folder
 from RefactoringMiner import RefactoringMiner
 import os
 import json
@@ -288,3 +287,15 @@ def start():
     RMPath=parsed.RMpath
     git_stein=parsed.git_stein
     squashedOutput=parsed.squashedOutput
+
+def getConfig():
+    with open("../config.json") as f:
+        data=json.load(f)
+    return data
+
+def outputTime(t)->str:
+    h=t // 3600
+    m=(t-h*3600)//60
+    s=t-h*3600-m*60
+    tResult = 'time cost:  {:.0f}h {:.0f}min {:.0f}s'.format(h,m,s)
+    return tResult

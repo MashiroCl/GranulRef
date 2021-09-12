@@ -1,39 +1,33 @@
 import sys
 sys.path.append('../')
-import time
-from utils2 import step
-from utils import outputTime
+from utils import step,getConfig,outputTime,timeRecord
 
+def runLocal(repoPath,squashedOutput,clusterNum):
+    data = getConfig()
+    RMSupportedREF = data["local"]["RMSupportedREF"]
+    RMPath = data["local"]["RMPath"]
+    git_stein = data["local"]["git_stein"]
+    recipe = data["local"]["recipe"]
 
-def runLocal():
-    RMSupportedREF = "../RMSupportedREF.txt"
-    RMPath = "/Users/leichen/ResearchAssistant/RefactoringMiner_commandline/RefactoringMiner-2.1.0/bin/RefactoringMiner"
-
-    temp = "refactoring-toy-example"
-    temp="mbassador"
-    temp="jOOQ"
-    repoPath = "/Users/leichen/ResearchAssistant/InteractiveRebase/data/"+temp
-    git_stein = "/Users/leichen/Code/git-stein/build/libs/git-stein-all.jar"
-    # git_stein = "/home/chenlei/RA/git-stein/build/libs/git-stein-all.jar"
-    recipe = "./recipe.json"
-    squashedOutput = "/Users/leichen/ResearchAssistant/InteractiveRebase/data/experimentResult/"+temp
-
-
-    time_start = time.time()
-    for clusterNum in range(2, 3):
+    time_start = timeRecord()
+    for num in range(clusterNum[0], clusterNum[1]):
         miaomiao = squashedOutput
-        miaomiao += str(clusterNum)
-        CompareResult = miaomiao + "/compareResult.txt"
-        step(RMPath=RMPath,repoPath=repoPath, recipe=recipe, git_stein=git_stein, squashedOutput=miaomiao, clusterNum=clusterNum,
+        miaomiao += str(num)
+        CompareResult = miaomiao + data["local"]["CompareResult"]
+        step(RMPath=RMPath,repoPath=repoPath, recipe=recipe, git_stein=git_stein, squashedOutput=miaomiao, clusterNum=num,
              compareResult=CompareResult,RMSupportedREF=RMSupportedREF)
 
-    time_end = time.time()
+    time_end = timeRecord()
     t = time_end - time_start
     tResult = outputTime(t)
     print(tResult)
-    with open("./time.txt", "w") as f:
+    timePath=data["local"]["time"]
+    with open(timePath, "w") as f:
         f.writelines(tResult)
 
 if __name__ =="__main__":
-
-    runLocal()
+    temp="jedis"
+    repoPath = "/Users/leichen/ResearchAssistant/InteractiveRebase/data/"+temp
+    output="/Users/leichen/ResearchAssistant/InteractiveRebase/data/experimentResult/"+temp
+    clusterNum=[2,5]
+    runLocal(repoPath,output,clusterNum)
