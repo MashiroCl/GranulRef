@@ -26,7 +26,7 @@ def runLocal(repoPath,squashedOutput,clusterNum):
         f.writelines(tResult)
 
 if __name__ =="__main__":
-    temp="Signal-Android"
+    temp="jmonkeyengine"
     repoPath = "/Users/leichen/ResearchAssistant/InteractiveRebase/data/"+temp
     output="/Users/leichen/ResearchAssistant/InteractiveRebase/data/experimentResult/"+temp
     clusterNum=[2,5]
