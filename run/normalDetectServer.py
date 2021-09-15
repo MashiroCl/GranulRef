@@ -1,7 +1,7 @@
 import sys
 sys.path.append('../')
 
-from MyRepository import MyRepository, create_folder
+from MyRepository import MyRepository, create_folder,delete_foler
 from RefactoringMiner import RefactoringMiner
 from jsonUtils import JsonUtils
 from utils import outputTime,RMDetect,timeRecord
@@ -14,6 +14,10 @@ def normal_detect(RMPath:str,repoPath:str,output:str):
     repo = MyRepository(repoPath)
     repo.createWorkSpace()
 
+    repoName = repo.repoPath.split("/")[-1]
+    outputPath=output+"/"+repoName
+    create_folder(outputPath)
+
     # create_folder(squashedOutput)
     '''Obtain git commit info in Json form'''
     #create a json file read json file
@@ -23,8 +27,8 @@ def normal_detect(RMPath:str,repoPath:str,output:str):
     commits=jU.jsonToCommit()
 
     rm = RefactoringMiner(RMPath)
-
-
+    repoName=repo.repoPath.split("/")[-1]
+    output+="/"+repoName
     create_folder(output)
     'RM detect commits after squash'
     repo.setRMoutputPath(output)
@@ -32,14 +36,20 @@ def normal_detect(RMPath:str,repoPath:str,output:str):
     temp = []
     for each in commits:
         temp.append(each.commitID)
+    outputJson=output+"/temp"
+    create_folder(outputJson)
+    repo.setRMoutputPath(outputJson)
     RMDetect(rm,temp, repo)
+
 
     time_end = timeRecord()
     t = time_end - time_start
     tResult = outputTime(t)
     print(tResult)
-    with open(output+"./time.txt", "w") as f:
+    with open(output+"/time.txt", "w") as f:
         f.writelines(tResult)
+
+    delete_foler(outputJson)
 
 if __name__ =="__main__":
     'server'
