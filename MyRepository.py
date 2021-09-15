@@ -5,15 +5,19 @@ from Commit import Commit
 
 #create a folder to save information under current script path
 def create_folder(folder):
-    # folder= sys.argv[0]
     path=folder
     try:
         os.mkdir(path)
     except FileExistsError:
-        # print("Folder " + folder + " already exists, Directory recreated")
         os.system("rm -rf "+folder)
         os.mkdir(path)
     return path
+
+def delete_foler(folder):
+    try:
+        os.system("rm -rf "+folder)
+    except FileNotFoundError:
+        print("File not found")
 
 
 class MyRepository:
