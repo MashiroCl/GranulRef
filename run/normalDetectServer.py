@@ -27,16 +27,12 @@ def normal_detect(RMPath:str,repoPath:str,output:str):
     commits=jU.jsonToCommit()
 
     rm = RefactoringMiner(RMPath)
-    repoName=repo.repoPath.split("/")[-1]
-    output+="/"+repoName
-    create_folder(output)
     'RM detect commits after squash'
-    repo.setRMoutputPath(output)
     time_start = timeRecord()
     temp = []
     for each in commits:
         temp.append(each.commitID)
-    outputJson=output+"/temp"
+    outputJson=outputPath+"/temp"
     create_folder(outputJson)
     repo.setRMoutputPath(outputJson)
     RMDetect(rm,temp, repo)
