@@ -42,7 +42,7 @@ def normal_detect(RMPath:str,repoPath:str,output:str):
     t = time_end - time_start
     tResult = outputTime(t)
     print(tResult)
-    with open(output+"/time.txt", "w") as f:
+    with open(outputPath+"/time.txt", "w") as f:
         f.writelines(tResult)
 
     delete_foler(outputJson)
