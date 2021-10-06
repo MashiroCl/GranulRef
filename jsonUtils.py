@@ -19,6 +19,7 @@ class JsonUtils:
         prettyFormat="--pretty=format:\'{%n  \"commit\": \"%H\",%n \"tree\": \"%T\",%n \"parent\": \"%P\",%n \"commit_notes\": \"%N\",%n \"author\": {%n    \"name\": \"%aN\",%n    \"email\": \"%aE\",%n    \"date\": \"%aD\"%n  },%n  \"commiter\": {%n    \"name\": \"%cN\",%n    \"email\": \"%cE\",%n    \"date\": \"%cD\"%n  }%n},\'| sed \"$ s/,$//\""
         os.system('git -C ' + self.repoPath +' log '+prettyFormat +" >"+ self.jsonPath)
 
+
     'Read json file and return commit list'
     def jsonToCommit(self)->list:
         with open(self.jsonPath) as f:
