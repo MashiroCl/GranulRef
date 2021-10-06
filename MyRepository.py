@@ -1,7 +1,7 @@
 import os
 import json
 import glob
-from Commit import Commit
+
 
 #create a folder to save information under current script path
 def create_folder(folder):
