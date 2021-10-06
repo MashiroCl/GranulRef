@@ -6,9 +6,9 @@
 5.RM on remaining all commits (merge excluded)
 """
 from jsonUtils import JsonUtils
-from CommitGraph import CommitGraph
+from commitProcess.CommitGraph import CommitGraph
 from MyRepository import MyRepository
-from RefactoringMiner import RefactoringMiner
+from refactoringMiner.RefactoringMiner import RefactoringMiner
 import os
 import json
 import argparse
@@ -202,7 +202,7 @@ def step(RMPath:str,repoPath:str,recipe:str,git_stein:str,squashedOutput:str,clu
 
     for each in cc_lists_str:
         commitNumBefore+=len(each)
-        possibleSquashes,commitNumAfterSquash=cG.clusterList3(each,clusterNum)
+        possibleSquashes,commitNumAfterSquash=cG.clusterList(each,clusterNum)
         'commitNumAfterSquash < len(each) means the squash occurs'
         if commitNumAfterSquash!=len(each):
             print("commitNumAfterSquash",commitNumAfterSquash)

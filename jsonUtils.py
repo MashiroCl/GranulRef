@@ -1,6 +1,6 @@
 import json
 import os
-from Commit import Commit
+from commitProcess.Commit import Commit
 
 class JsonUtils:
     def __init__(self):

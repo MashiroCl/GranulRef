@@ -1,8 +1,7 @@
 import sys
 sys.path.append('../')
-import time
 from MyRepository import MyRepository, create_folder,delete_foler
-from RefactoringMiner import RefactoringMiner
+from refactoringMiner.RefactoringMiner import RefactoringMiner
 from jsonUtils import JsonUtils
 from utils import outputTime,RMDetect,timeRecord
 
