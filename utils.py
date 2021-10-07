@@ -142,6 +142,10 @@ def step(RMPath:str,repoPath:str,recipe:str,git_stein:str,squashedOutput:str,clu
 
     rm = RefactoringMiner(RMPath)
 
+    # 'RM on all squashable commits in origin repo'
+    for each in cc_lists_str:
+        RMDetect(rm,each,repo)
+
     'write recipe and Squash'
     dictBeforeS=RM_supported_type(RMSupportedREF)
     dictAfterS=RM_supported_type(RMSupportedREF)
@@ -152,6 +156,9 @@ def step(RMPath:str,repoPath:str,recipe:str,git_stein:str,squashedOutput:str,clu
 
     for each in cc_lists_str:
         commitNumBefore+=len(each)
+        "According to cluster num (x) to divide a sequence of commits into 'squash x by x' form"
+        "For a length 5 sequence commit, squash 2 by 2 has 2 possible squashe way,{{1,2}{3,4},{5} & {{1}{2,3}{4,5}}}"
+        'possibleSquashes are 3d lists'
         possibleSquashes,commitNumAfterSquash=cG.clusterList(each,clusterNum)
         'commitNumAfterSquash < len(each) means the squash occurs'
         if commitNumAfterSquash!=len(each):
@@ -160,12 +167,14 @@ def step(RMPath:str,repoPath:str,recipe:str,git_stein:str,squashedOutput:str,clu
             dictTemp2 = RM_supported_type(RMSupportedREF)
             squashedCommitNumTemp=0
             commitNumAfter+=commitNumAfterSquash
+            'For each possible squash way, if length of squashableCandidate(1d list) bigger than 1,' \
+            'it will be added into squashableCommitList (2d list) '
             for possibleSquash in possibleSquashes:
                 squashableCommitList=[]
-                for each2 in possibleSquash:
-                    if len(each2) > 1:
-                        squashedCommitNumTemp += len(each2)
-                        squashableCommitList.append(each2)
+                for squashableCandidate in possibleSquash:
+                    if len(squashableCandidate) > 1:
+                        squashedCommitNumTemp += len(squashableCandidate)
+                        squashableCommitList.append(squashableCandidate)
 
                 'if squash output .git file is already exist, delete it to prohibit .git from becoming too big'
                 if os.path.exists(squashedOutput):
@@ -177,6 +186,7 @@ def step(RMPath:str,repoPath:str,recipe:str,git_stein:str,squashedOutput:str,clu
                 repoNew.createWorkSpace()
                 repoNew.addRemote(repoNew.repoPath)
                 'Using git gc to pack new generated .git'
+                'Deprecated, because it is not useful'
                 # repoNew.gitGc(repoNew.repoPath)
 
                 'RM detect commits after squash'
@@ -186,10 +196,13 @@ def step(RMPath:str,repoPath:str,recipe:str,git_stein:str,squashedOutput:str,clu
 
                 'RM detect commits before squash'
                 'clean old RMoutput file'
-                repo.createWorkSpace()
-                for eachList in squashableCommitList:
-                    RMDetect(rm,eachList,repo)
-                jsonFBefore=repo.combine("/squashed.json")
+
+                beforeSquashCommitJson = []
+                for eachSquashableCommitList in squashableCommitList:
+                    for eachBeforeSquashCommitJson in eachSquashableCommitList:
+                        beforeSquashCommitJson.append(eachBeforeSquashCommitJson)
+                jsonFBefore=repo.combinePart("/squashed.json",beforeSquashCommitJson)
+
                 refNum1, dictTemp1 = stat_analysis(jsonFBefore, dictTemp1)
                 refNum2, dictTemp2 = stat_analysis(jsonFAfter, dictTemp2)
 
