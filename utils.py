@@ -17,35 +17,6 @@ import time
 STEINLOG="./stein.log"
 
 
-def git_log(path,file_name="git_log.txt")->str:
-    os.system('git -C '+path+'/.git log>'+path+"/"+file_name)
-    return path+"/"+file_name
-
-def extract_commit(file_path)->list:
-    with open(file_path) as f1:
-        lines=f1.readlines()
-    commits=[]
-    length=len(lines)
-    for i,line in enumerate(lines):
-        if "commit" in line:
-            if i<length-1 and ("Merge: " in lines[i+1] or "Author: " in lines[i+1]):
-                temp=line.split("commit ")[1]
-                temp=temp.split("\n")[0]
-                commits.append(temp)
-    return commits
-
-def count_commit(file_path):
-    with open(file_path) as f:
-        lines = f.readlines()
-    length = len(lines)
-    num=0
-    #Merge excluded
-    for i, line in enumerate(lines):
-        if "commit" in line:
-            if i < length - 1 and ("Author: " in lines[i + 1]):
-                num=num+1
-    return num
-
 def RM_supported_type(RMSupportedREF):
     dict={}
     with open(RMSupportedREF) as f:
@@ -109,26 +80,6 @@ def exclude_0_in_dict(dict):
             dict2[each]=dict[each]
     return dict2
 
-
-'''
-each kind of squash methods->write recipe.json->squash->RM detect->record: RO type, RO num
-loop
-
-rewrite the detecting process from detect whole to part
-'''
-def getPossibleSquash(commitsSequence,num):
-    result=[]
-    if num==0:
-        return commitsSequence
-    if num>len(commitsSequence):
-        result.append(commitsSequence)
-    else:
-        i=0
-        while i+num<=len(commitsSequence):
-            result.append(commitsSequence[i:i+num])
-            i=i+1
-    return result
-
 def squashWithRecipe(jU,repo,cc_lists_str,recipe,git_stein,squashedOutput)->str:
     'Squash'
     'Write recipe'
@@ -186,7 +137,6 @@ def step(RMPath:str,repoPath:str,recipe:str,git_stein:str,squashedOutput:str,clu
 
     #Extract cc_lists
     cc_lists = cG.getCClist()
-
     cc_lists_str=cG.getCCListStr(cc_lists)
 
 
