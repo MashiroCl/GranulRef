@@ -50,17 +50,6 @@ class MyRepository:
             f1.write(each.commitID+"\n")
         f1.close()
 
-    #copy auto_seq_editor to repository
-    def copy_auto_seq_editor(self):
-        auto_seq_editor = self.repoPath + '/auto-seq-editor.py'
-        f2 = open(auto_seq_editor, 'w')
-        f3 = open('./auto-seq-editor.py')
-        lines = f3.readlines()
-        for each in lines:
-            f2.write(each)
-        f2.close()
-        f3.close()
-        os.system("chmod 777 " + self.repoPath + "/auto-seq-editor.py")
 
     #Combine multiple RM results which are in output files into one file
     def combine(self,combinedJsonFile)->str:
@@ -95,5 +84,5 @@ class MyRepository:
         print('start squash')
        # command="java -jar "+git_stein+" Clusterer "+"--recipe="+recipe+" -v -o "+output+" "+repository+">"+"./stein.log"
         command="java -jar "+git_stein+" Clusterer "+"--recipe="+recipe+" -v -o "+output+" "+repository+">"+"./stein.log"
-        # print("command is ", command)
+        print("command is ", command)
         os.system(command)
