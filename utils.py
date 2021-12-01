@@ -45,6 +45,12 @@ def stat_analysis(f_json,dictS):
     return ref_num,dictS
 
 def dictAdd(dictS,dict2)->dict:
+    '''
+    add all value from dict2 to dict1
+    :param dictS:
+    :param dict2:
+    :return:
+    '''
     for each1 in dictS:
         for each2 in dict2:
             if each1.lower() == each2.lower():
