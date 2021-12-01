@@ -92,8 +92,8 @@ class MyRepository:
         :param repository: path for being squashed repository
         :return:
         '''
-        print('start squash')
+        # print('start squash')
        # command="java -jar "+git_stein+" Clusterer "+"--recipe="+recipe+" -v -o "+output+" "+repository+">"+"./stein.log"
         command="java -jar "+git_stein+" Clusterer "+"--recipe="+recipe+" -v -o "+output+" "+repository+">"+"./stein.log"
-        print("command is ", command)
+        # print("command is ", command)
         os.system(command)

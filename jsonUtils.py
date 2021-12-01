@@ -38,4 +38,4 @@ class JsonUtils:
             recipe["forcedClusters"].append(each)
         with open(path,'w') as output:
            json.dump(recipe,output)
-        print("recipe is ",recipe)
+        # print("recipe is ",recipe)

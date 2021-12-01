@@ -87,7 +87,16 @@ def exclude_0_in_dict(dict):
     return dict2
 
 def squashWithRecipe(jU,repo,cc_lists_str,recipe,git_stein,squashedOutput)->str:
-    'Squash'
+    '''
+    squash commits according to recipe.json using git_stein
+    :param jU: jsonUtil instance
+    :param repo: Reository instance
+    :param cc_lists_str: commit lists
+    :param recipe: path for recipe.json
+    :param git_stein: path for git_stein
+    :param squashedOutput: output json file path
+    :return: list of newly generated commit sha1 because of squash
+    '''
     'Write recipe'
     jU.writeRecipe(cc_lists_str, recipe)
     'Squash according to recipe'
@@ -111,6 +120,11 @@ def RMDetect(rm,commits:list,repo):
         jsonF = rm.detect(repo.repoPath, repo.RMoutputPath, each)
     print("________________________________________________________________________")
     return jsonF
+
+def RMDetectWithOutput(rm,commits:list,repo,output:str):
+    for each in commits:
+        jsonF = rm.detect(repo.repoPath, output, each)
+
 
 def step(RMPath:str,repoPath:str,recipe:str,git_stein:str,squashedOutput:str,clusterNum:int,compareResult:str,RMSupportedREF:str):
     '''
