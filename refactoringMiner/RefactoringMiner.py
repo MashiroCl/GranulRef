@@ -16,6 +16,6 @@ if __name__ =="__main__":
     RMPath = "/Users/leichen/ResearchAssistant/RefactoringMiner_commandline/RefactoringMiner-2.1.0/bin/RefactoringMiner"
     rm = RefactoringMiner(RMPath)
     repository = "/Users/leichen/ResearchAssistant/InteractiveRebase/data/RTE/testsquash"
-    output = "/Users/leichen/Desktop/"
+    output = "/Users/leichen/Desktop"
     commitID = "fd41b95d97e53b8a4725ba0dc72eababedb0f373"
     rm.detect(repository,output,commitID)
