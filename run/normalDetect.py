@@ -6,39 +6,6 @@ from jsonUtils import JsonUtils
 from utils import outputTime,RMDetect,timeRecord
 
 
-# def normal_detect(RMPath:str,repoPath:str,output:str):
-#
-#     '''Initialize workspace'''
-#     #set Repository
-#     repo = MyRepository(repoPath)
-#     repo.createWorkSpace()
-#
-#     # create_folder(squashedOutput)
-#     '''Obtain git commit info in Json form'''
-#     #create a json file read json file
-#     jU=JsonUtils()
-#     jU.setRepoPath(repo.repoPath)
-#     jU.gitJson()
-#     commits=jU.jsonToCommit()
-#
-#     rm = RefactoringMiner(RMPath)
-#
-#
-#     create_folder(output)
-#     'RM detect commits after squash'
-#     repo.setRMoutputPath(output)
-#     time_start = time.time()
-#     temp = []
-#     for each in commits:
-#         temp.append(each.commitID)
-#     RMDetect(rm,temp, repo)
-#     time_end = time.time()
-#     t = time_end - time_start
-#     tResult = outputTime(t)
-#     print(tResult)
-#     with open("./time.txt", "w") as f:
-#         f.writelines(tResult)
-
 def normal_detect(RMPath:str,repoPath:str,output:str):
 
     '''Initialize workspace'''
@@ -77,7 +44,6 @@ def normal_detect(RMPath:str,repoPath:str,output:str):
     with open(outputPath+"/time.txt", "w") as f:
         f.writelines(tResult)
 
-    delete_foler(outputJson)
 
 if __name__ =="__main__":
     'server'
@@ -91,7 +57,7 @@ if __name__ =="__main__":
     output = repoPath+"/normal_detect"
 
     args=sys.argv
-    repoPath=args[1]
-    output=args[2]
+    # repoPath=args[1]
+    # output=args[2]
 
     normal_detect(RMPath=RMPath,repoPath=repoPath,output=output)
