@@ -52,12 +52,23 @@ class MyRepository:
 
 
     #Combine multiple RM results which are in output files into one file
-    def combine(self,combinedJsonFile)->str:
+    def combine(self,combinedJsonFileName)->str:
         result = []
         for f in glob.glob(self.RMoutputPath+ "/" + "*.json"):
             with open(f, "r") as infile:
                 result.append(json.load(infile))
-        path=self.comparePath + combinedJsonFile
+        path=self.comparePath + combinedJsonFileName
+        with open(path, "w") as outfile:
+            json.dump(result, outfile)
+        return path
+
+    def combinePart(self,combinedJsonFileName,beingSquashedFileName)->str:
+        result = []
+        for each in beingSquashedFileName:
+            f = self.RMoutputPath+ "/" +each+ ".json"
+            with open(f, "r") as infile:
+                result.append(json.load(infile))
+        path=self.comparePath + combinedJsonFileName
         with open(path, "w") as outfile:
             json.dump(result, outfile)
         return path

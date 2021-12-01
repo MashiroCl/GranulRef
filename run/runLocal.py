@@ -27,7 +27,8 @@ def runLocal(repoPath,squashedOutput,clusterNum):
 
 if __name__ =="__main__":
     temp="refactoring-toy-example"
+    temp="mbassador"
     repoPath = "/Users/leichen/ResearchAssistant/InteractiveRebase/data/"+temp
     output="/Users/leichen/ResearchAssistant/InteractiveRebase/data/experimentResult/"+temp
-    clusterNum=[2,5]
+    clusterNum=[2,3]
     runLocal(repoPath,output,clusterNum)

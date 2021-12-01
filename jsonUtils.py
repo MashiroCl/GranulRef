@@ -30,6 +30,7 @@ class JsonUtils:
         return commits
 
     'write recipe in json format'
+    'lists is 2d'
     def writeRecipe(self,lists,path):
         recipe={}
         recipe["forcedClusters"]=[]
