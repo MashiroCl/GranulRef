@@ -1,6 +1,3 @@
-from utils import RM_supported_type
-import csv
-
 def getRefacTypeStatistic(filePath):
     with open(filePath,"r") as f:
         lines = f.readlines()
@@ -22,3 +19,6 @@ if __name__=="__main__":
     filePath="/Users/leichen/Code/pythonProject/pythonProject/pythonProject/SCRMDetection/DataVisualize/compareResult2.txt"
     gRT,dRT = getRefacTypeStatistic(filePath)
     gRT=sorted(gRT.items(),key=lambda num:num[1],reverse=True)
+    dRT = sorted(dRT.items(), key=lambda num: num[1], reverse=True)
+    print(gRT)
+    print(dRT)
