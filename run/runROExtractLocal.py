@@ -1,11 +1,11 @@
 import sys
-
+sys.path.append('../')
 from MyRepository import create_folder
 from myLog import logger_config
 from utils import getConfig, outputTime
 import time
 
-sys.path.append('../')
+
 from ROExtract.extractRO import extractRO
 
 
