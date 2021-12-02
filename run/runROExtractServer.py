@@ -38,9 +38,9 @@ def runServer(repoPath, squashedOutput,outputRepoDirectory, clusterNum):
 if __name__ == "__main__":
     clusterNum = [1, 5]
     rootPath = "/home/chenlei/RA/data/"
-    repoName = ["refactoring-toy-example"]
-    outputRepoDirectory = "/Users/leichen/ResearchAssistant/InteractiveRebase/experimentResult/"
-    output = "/Users/leichen/Desktop/RTEnew"
+    repoName = ["jfinal"]
+    outputRepoDirectory = "/home/chenlei/RA/setversion/experimentResult/"
+    output = "/home/chenlei/RA/setversion/gitOutput"
 
 
     for each in repoName:
