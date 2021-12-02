@@ -47,45 +47,57 @@ def extractRO(RMPath:str,repoPath:str,recipe:str,git_stein:str,squashedOutput:st
     squashedCommitNum=0
 
     create_folder(jsonOutputDirectory)
-    for each in cc_lists_str:
-        commitNumBefore+=len(each)
-        "According to cluster num (x) to divide a sequence of commits into 'squash x by x' form"
-        "For a length 5 sequence commit, squash 2 by 2 has 2 possible squashe way,{{1,2}{3,4},{5} & {{1}{2,3}{4,5}}}"
-        'possibleSquashes are 3d lists'
-        possibleSquashes,commitNumAfterSquash=cG.clusterList(each,clusterNum)
-        'commitNumAfterSquash < len(each) means the squash occurs'
-        if commitNumAfterSquash!=len(each):
-            squashedCommitNumTemp=0
-            commitNumAfter+=commitNumAfterSquash
-            'For each possible squash way, if length of squashableCandidate(1d list) bigger than 1,' \
-            'it will be added into squashableCommitList (2d list) '
-            for possibleSquash in possibleSquashes:
-                squashableCommitList=[]
-                for squashableCandidate in possibleSquash:
-                    if len(squashableCandidate) > 1:
-                        squashedCommitNumTemp += len(squashableCandidate)
-                        squashableCommitList.append(squashableCandidate)
 
-                'if squash output .git file is already exist, delete it to prohibit .git from becoming too big'
-                if os.path.exists(squashedOutput):
-                    command="rm -rf "+squashedOutput
-                    os.system(command)
+    if clusterNum ==1:
+        temp = list()
+        for each1 in cc_lists_str:
+            '''a commit between two merge is not considered'''
+            if len(each1)==1:
+                continue
+            for eachCommit in each1:
+                temp.append(eachCommit)
+        'RM detect commits without squash'
+        RMDetectWithOutput(rm, temp, repo, jsonOutputDirectory)
+    else:
+        for each in cc_lists_str:
+            commitNumBefore+=len(each)
+            "According to cluster num (x) to divide a sequence of commits into 'squash x by x' form"
+            "For a length 5 sequence commit, squash 2 by 2 has 2 possible squashe way,{{1,2}{3,4},{5} & {{1}{2,3}{4,5}}}"
+            'possibleSquashes are 3d lists'
+            possibleSquashes,commitNumAfterSquash=cG.clusterList(each,clusterNum)
+            'commitNumAfterSquash < len(each) means the squash occurs'
+            if commitNumAfterSquash!=len(each):
+                squashedCommitNumTemp=0
+                commitNumAfter+=commitNumAfterSquash
+                'For each possible squash way, if length of squashableCandidate(1d list) bigger than 1,' \
+                'it will be added into squashableCommitList (2d list) '
+                for possibleSquash in possibleSquashes:
+                    squashableCommitList=[]
+                    for squashableCandidate in possibleSquash:
+                        if len(squashableCandidate) > 1:
+                            squashedCommitNumTemp += len(squashableCandidate)
+                            squashableCommitList.append(squashableCandidate)
 
-                logger.info("squashable commit list %s"%squashableCommitList)
+                    'if squash output .git file is already exist, delete it to prohibit .git from becoming too big'
+                    if os.path.exists(squashedOutput):
+                        command="rm -rf "+squashedOutput
+                        os.system(command)
 
-                afterSquashed = squashWithRecipe(jU, repo, squashableCommitList, recipe, git_stein, squashedOutput)
+                    logger.info("squashable commit list %s"%squashableCommitList)
 
-                logger.info("squashed commit list %s" % afterSquashed)
+                    afterSquashed = squashWithRecipe(jU, repo, squashableCommitList, recipe, git_stein, squashedOutput)
 
-                repoNew = MyRepository(squashedOutput)
-                repoNew.createWorkSpace()
-                repoNew.addRemote(repoNew.repoPath)
+                    logger.info("squashed commit list %s" % afterSquashed)
 
-                'RM detect commits after squash'
-                RMDetectWithOutput(rm, afterSquashed, repoNew,jsonOutputDirectory)
+                    repoNew = MyRepository(squashedOutput)
+                    repoNew.createWorkSpace()
+                    repoNew.addRemote(repoNew.repoPath)
 
-        else:
-            commitNumAfter+=len(each)
+                    'RM detect commits after squash'
+                    RMDetectWithOutput(rm, afterSquashed, repoNew,jsonOutputDirectory)
+
+            else:
+                commitNumAfter+=len(each)
 
 if __name__ =="__main__":
     data = getConfig()
@@ -94,7 +106,7 @@ if __name__ =="__main__":
     git_stein = data["local"]["git_stein"]
     recipe = data["local"]["recipe"]
 
-    clusterNum = [2, 5]
+    clusterNum = [1, 5]
 
     temp="refactoring-toy-example"
     repoPath = "/Users/leichen/ResearchAssistant/InteractiveRebase/data/" + temp
