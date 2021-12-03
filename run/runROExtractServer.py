@@ -38,7 +38,9 @@ def runServer(repoPath, squashedOutput,outputRepoDirectory, clusterNum):
 if __name__ == "__main__":
     clusterNum = [1, 5]
     rootPath = "/home/chenlei/RA/data/"
-    repoName = ["jfinal"]
+    args = sys.argv
+    repoNameTemp = args[1]
+    repoName = [repoNameTemp]
     outputRepoDirectory = "/home/chenlei/RA/setversion/experimentResult/"
     output = "/home/chenlei/RA/setversion/gitOutput"
 

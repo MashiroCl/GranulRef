@@ -38,7 +38,10 @@ def runServer(repoPath, squashedOutput,outputRepoDirectory, clusterNum):
 if __name__ == "__main__":
     clusterNum = [1, 5]
     rootPath = "/Users/leichen/ResearchAssistant/InteractiveRebase/data/"
-    repoName = ["refactoring-toy-example"]
+    # args = sys.argv
+    # repoNameTemp = args[1]
+    repoNameTemp = "refactoring-toy-example"
+    repoName = [repoNameTemp]
     outputRepoDirectory = "/Users/leichen/ResearchAssistant/InteractiveRebase/experimentResult/"
     output = "/Users/leichen/Desktop/RTEnew"
 
