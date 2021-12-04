@@ -4,5 +4,6 @@ run/recipe.json
 run/stein.log
 run/time.txt
 DataVisualize/.ipynb_checkpoints
-DataAnalysis
+DataAnalysis/data
+DataAnalysis/stein.log
 RMtest.py
