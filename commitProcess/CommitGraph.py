@@ -60,6 +60,9 @@ class CommitGraph():
         for i in range(len(temp)):
             if temp[i].getHead():
                 cc_list=[temp[i]]
+                '''Initial commit has two child commit'''
+                if(len(temp[i].parent)==0):
+                    continue
                 p=temp[i].parent[0]
                 while not (p.getHead()):
                     if len(p.parent)==1:
