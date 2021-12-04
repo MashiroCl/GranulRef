@@ -3,7 +3,7 @@ sys.path.append('../')
 from MyRepository import create_folder
 from myLog import logger_config
 from utils import getConfig, outputTime
-import time
+import time,os
 
 
 from ROExtract.extractRO import extractRO
@@ -19,6 +19,8 @@ def runServer(repoPath, squashedOutput,outputRepoDirectory, clusterNum):
 
     outputRepoDirectory = outputRepoDirectory + "/" + repoName
     create_folder(outputRepoDirectory)
+    squashedOutput = squashedOutput + "/" + repoName
+    create_folder(outputRepoDirectory)
 
     for num in range(clusterNum[0], clusterNum[1]):
         jsonOutputDirectory = outputRepoDirectory + "/" + str(num)
@@ -33,6 +35,8 @@ def runServer(repoPath, squashedOutput,outputRepoDirectory, clusterNum):
                   squashedOutput=squashedOutput,
                   clusterNum=num, jsonOutputDirectory=jsonOutputDirectory, logger=logger)
         logger.info("finish squash " + str(num) + "by" + str(num))
+
+    os.system("rm -rf "+squashedOutput)
 
 
 if __name__ == "__main__":
