@@ -1,5 +1,5 @@
 import json
-from RefactoringOperation import RefactoringOperation
+from RefactoringOperation.RefactoringOperation import RefactoringOperation
 
 class RMcommit:
     def __init__(self,jsonPath):
@@ -16,10 +16,16 @@ class RMcommit:
         '''
         with open(self.jsonPath) as f:
             data = json.load(f)
-        self.commitID = data["commits"][0]["sha1"]
-        refactorings = data["commits"][0]["refactorings"]
-        for each in refactorings:
-            self.refactorings.append(RefactoringOperation(each))
+        try:
+            self.commitID = data["commits"][0]["sha1"]
+            refactorings = data["commits"][0]["refactorings"]
+            for each in refactorings:
+                # print(RefactoringOperation(each))
+                self.refactorings.append(RefactoringOperation(each))
+        except KeyError:
+            pass
+        except IndexError:
+            pass
 
 if __name__ == "__main__":
     filePath1 = "/Users/leichen/Desktop/RTEcommit.json"
@@ -41,5 +47,5 @@ if __name__ == "__main__":
     test2 = set()
     for ro in rMcommitSquashed.refactorings:
         test2.add(ro)
-    test = test-test2
+    test = test.union(test2)
     print(len(test))
