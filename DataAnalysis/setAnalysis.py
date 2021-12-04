@@ -32,25 +32,38 @@ def getSet(repoPath:str):
         setTemp=setTemp.union(_getROSet(filePath))
     return setTemp
 
+def calculateDisappearance():
+    args = sys.argv
+    repoName = args[1]
+    experimentPath = "/home/chenlei/RA/setversion/experimentResult/"
+    # experimentPath = "/Users/leichen/ResearchAssistant/InteractiveRebase/experimentResult/"
 
-if __name__ =="__main__":
-    temp = "refactoring-toy-example"
-    experimentPath = "/Users/leichen/ResearchAssistant/InteractiveRebase/experimentResult/"
-    set1by1 = getSet(experimentPath + temp + "/1/")
-    set2by2 = getSet(experimentPath + temp + "/2/")
-    set3by3 = getSet(experimentPath + temp + "/3/")
-    set4by4 = getSet(experimentPath + temp + "/4/")
-    # print(len(set1by1))
-    # print(len(set2by2.union(set3by3.union(set4by4))))
+    set1by1 = getSet(experimentPath + repoName + "/1/")
+    set2by2 = getSet(experimentPath + repoName + "/2/")
+    set3by3 = getSet(experimentPath + repoName + "/3/")
+    set4by4 = getSet(experimentPath + repoName + "/4/")
     squashedSets = set2by2.union(set3by3.union(set4by4))
     disappear = len(set1by1-squashedSets)/len(set1by1)
     print(disappear)
-    # for each in set1by1:
-    #     print(each)cd .
-    # print("--------------------------------------------------------------------------------------")
-    # for each in squashedSets:
-    #     print(each)
-    # print("--------------------------------------------------------------------------------------")
-    # for each in (set1by1-squashedSets):
-    #     print(each)
 
+if __name__ =="__main__":
+    # temp = "refactoring-toy-example"
+    # experimentPath = "/Users/leichen/ResearchAssistant/InteractiveRebase/experimentResult/"
+    # set1by1 = getSet(experimentPath + temp + "/1/")
+    # set2by2 = getSet(experimentPath + temp + "/2/")
+    # set3by3 = getSet(experimentPath + temp + "/3/")
+    # set4by4 = getSet(experimentPath + temp + "/4/")
+    # # print(len(set1by1))
+    # # print(len(set2by2.union(set3by3.union(set4by4))))
+    # squashedSets = set2by2.union(set3by3.union(set4by4))
+    # disappear = len(set1by1-squashedSets)/len(set1by1)
+    # print(disappear)
+    # # for each in set1by1:
+    # #     print(each)cd .
+    # # print("--------------------------------------------------------------------------------------")
+    # # for each in squashedSets:
+    # #     print(each)
+    # # print("--------------------------------------------------------------------------------------")
+    # # for each in (set1by1-squashedSets):
+    # #     print(each)
+    calculateDisappearance()
