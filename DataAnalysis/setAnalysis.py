@@ -32,19 +32,24 @@ def getSet(repoPath:str):
         setTemp=setTemp.union(_getROSet(filePath))
     return setTemp
 
-def calculateDisappearance():
+def calculate():
     args = sys.argv
     repoName = args[1]
-    experimentPath = "/home/chenlei/RA/setversion/experimentResult/"
-    # experimentPath = "/Users/leichen/ResearchAssistant/InteractiveRebase/experimentResult/"
+    # experimentPath = "/home/chenlei/RA/setversion/experimentResult/"
+    experimentPath = "/Users/leichen/ResearchAssistant/InteractiveRebase/experimentResult/"
 
     set1by1 = getSet(experimentPath + repoName + "/1/")
     set2by2 = getSet(experimentPath + repoName + "/2/")
     set3by3 = getSet(experimentPath + repoName + "/3/")
     set4by4 = getSet(experimentPath + repoName + "/4/")
+
     squashedSets = set2by2.union(set3by3.union(set4by4))
     disappear = len(set1by1-squashedSets)/len(set1by1)
-    print(disappear)
+    print("Disappearance:", disappear)
+
+    all = set1by1.union(set2by2.union(set3by3.union(set4by4)))
+    missingRate = len(all - set1by1)/len(all)
+    print("Missing Rate:", missingRate)
 
 if __name__ =="__main__":
     # temp = "refactoring-toy-example"
@@ -66,4 +71,4 @@ if __name__ =="__main__":
     # # print("--------------------------------------------------------------------------------------")
     # # for each in (set1by1-squashedSets):
     # #     print(each)
-    calculateDisappearance()
+    calculate()
