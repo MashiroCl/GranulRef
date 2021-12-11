@@ -14,7 +14,7 @@ import json
 import argparse
 import time
 
-STEINLOG="./stein.log"
+# STEINLOG="./stein.log"
 
 
 def RM_supported_type(RMSupportedREF):
@@ -86,7 +86,7 @@ def exclude_0_in_dict(dict):
             dict2[each]=dict[each]
     return dict2
 
-def squashWithRecipe(jU,repo,cc_lists_str,recipe,git_stein,squashedOutput)->str:
+def squashWithRecipe(jU,repo,cc_lists_str,recipe,git_stein,squashedOutput,steinOuput)->str:
     '''
     squash commits according to recipe.json using git_stein
     :param jU: jsonUtil instance
@@ -100,9 +100,9 @@ def squashWithRecipe(jU,repo,cc_lists_str,recipe,git_stein,squashedOutput)->str:
     'Write recipe'
     jU.writeRecipe(cc_lists_str, recipe)
     'Squash according to recipe'
-    repo.squashCommits(recipe, git_stein, squashedOutput, repo.repoPath)
+    repo.squashCommits(recipe, git_stein, squashedOutput, repo.repoPath,steinOuput)
     'Find newly generated commit No.'
-    steinLog=STEINLOG
+    steinLog=steinOuput+"/stein.log"
     with open(steinLog,"r") as f:
         lines=f.readlines()
     result=[]

@@ -84,7 +84,7 @@ class MyRepository:
 
 
     'sh5i git stein version https://github.com/sh5i/git-stein, squash according to recipe.json'
-    def squashCommits(self,recipe,git_stein,output,repository):
+    def squashCommits(self,recipe,git_stein,output,repository,steinOutput="."):
         '''
         :param recipe: path for recipe.json
         :param git_stein: path for git-stein-all.jar
@@ -93,7 +93,8 @@ class MyRepository:
         :return:
         '''
         # print('start squash')
+
        # command="java -jar "+git_stein+" Clusterer "+"--recipe="+recipe+" -v -o "+output+" "+repository+">"+"./stein.log"
-        command="java -jar "+git_stein+" Clusterer "+"--recipe="+recipe+" -v -o "+output+" "+repository+">"+"./stein.log"
+        command="java -jar "+git_stein+" Clusterer "+"--recipe="+recipe+" -v -o "+output+" "+repository+">"+steinOutput+"/stein.log"
         # print("command is ", command)
         os.system(command)

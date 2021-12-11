@@ -7,7 +7,7 @@ from myLog import logger_config
 
 from utils import squashWithRecipe, RMDetectWithOutput, getConfig
 
-def extractRO(RMPath:str,repoPath:str,recipe:str,git_stein:str,squashedOutput:str,clusterNum:int,jsonOutputDirectory:str,logger):
+def extractRO(RMPath:str,repoPath:str,recipe:str,git_stein:str,squashedOutput:str,clusterNum:int,jsonOutputDirectory:str,logger,steinOuput):
     '''
     :param RMPath: path for refactoring miner
     :param repoPath: path for repo being squashed
@@ -85,7 +85,7 @@ def extractRO(RMPath:str,repoPath:str,recipe:str,git_stein:str,squashedOutput:st
 
                     logger.info("squashable commit list %s"%squashableCommitList)
 
-                    afterSquashed = squashWithRecipe(jU, repo, squashableCommitList, recipe, git_stein, squashedOutput)
+                    afterSquashed = squashWithRecipe(jU, repo, squashableCommitList, recipe, git_stein, squashedOutput,steinOuput)
 
                     logger.info("squashed commit list %s" % afterSquashed)
 
@@ -125,5 +125,5 @@ if __name__ =="__main__":
              repoPath=repoPath,
              recipe=recipe, git_stein=git_stein,
              squashedOutput=squashedOutput,
-             clusterNum=num,jsonOutputDirectory=jsonOutputDirectory,logger=logger)
+             clusterNum=num,jsonOutputDirectory=jsonOutputDirectory,logger=logger,steinOuput=outputRepoDirectory)
         logger.info("finish squash " + str(num) + "by" + str(num))

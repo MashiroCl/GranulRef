@@ -17,13 +17,13 @@ def runServer(repoPath, squashedOutput,outputRepoDirectory, clusterNum):
 
     repoName = repoPath.split("/")[-1]
 
-    outputRepoDirectory = outputRepoDirectory + "/" + repoName
+    outputRepoDirectory = os.path.join(outputRepoDirectory,repoName)
     create_folder(outputRepoDirectory)
-    squashedOutput = squashedOutput + "/" + repoName
+    squashedOutput = os.path.join(squashedOutput,repoName)
     create_folder(outputRepoDirectory)
 
     for num in range(clusterNum[0], clusterNum[1]):
-        jsonOutputDirectory = outputRepoDirectory + "/" + str(num)
+        jsonOutputDirectory = os.path.join(outputRepoDirectory,str(num))
         create_folder(jsonOutputDirectory)
         logger = logger_config(log_path=outputRepoDirectory + '/log' + str(num) + '.txt',
                                logging_name=repoName + " " + str(num) + "by" + str(num))
@@ -33,7 +33,7 @@ def runServer(repoPath, squashedOutput,outputRepoDirectory, clusterNum):
                   repoPath=repoPath,
                   recipe=recipe, git_stein=git_stein,
                   squashedOutput=squashedOutput,
-                  clusterNum=num, jsonOutputDirectory=jsonOutputDirectory, logger=logger)
+                  clusterNum=num, jsonOutputDirectory=jsonOutputDirectory, logger=logger,steinOuput=outputRepoDirectory)
         logger.info("finish squash " + str(num) + "by" + str(num))
 
     os.system("rm -rf "+squashedOutput)
@@ -44,6 +44,7 @@ if __name__ == "__main__":
     rootPath = "/Users/leichen/ResearchAssistant/InteractiveRebase/data/"
     # args = sys.argv
     # repoNameTemp = args[1]
+    # repoNameTemp = "android-demos"
     repoNameTemp = "refactoring-toy-example"
     repoName = [repoNameTemp]
     outputRepoDirectory = "/Users/leichen/ResearchAssistant/InteractiveRebase/experimentResult/"
