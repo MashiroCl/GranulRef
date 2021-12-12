@@ -1,6 +1,6 @@
 .idea
 temp.py
-run/recipe.json
+recipe.json
 run/stein.log
 run/time.txt
 DataVisualize/.ipynb_checkpoints
