@@ -1,10 +1,11 @@
 import sys
+
 sys.path.append('../')
 from RefactoringOperation.RMcommit import RMcommit
 import glob
 
 
-def _getROSet(filePath:str):
+def _getROSet(filePath: str):
     '''
     use json file of commit to extract refactoring operation set
     :param filePath: path for a Refactoirng Miner result
@@ -16,11 +17,13 @@ def _getROSet(filePath:str):
         ROset.add(ro)
     return ROset
 
-def _getRMResultsFile(repoPath:str):
-    filePaths = glob.glob(repoPath+"*.json")
+
+def _getRMResultsFile(repoPath: str):
+    filePaths = glob.glob(repoPath + "*.json")
     return filePaths
 
-def getSet(repoPath:str):
+
+def getSet(repoPath: str):
     '''
     return refactoring operation set
     :param repoPath: repoName +'xbyx'
@@ -29,8 +32,9 @@ def getSet(repoPath:str):
     setTemp = set()
     filePaths = _getRMResultsFile(repoPath)
     for filePath in filePaths:
-        setTemp=setTemp.union(_getROSet(filePath))
+        setTemp = setTemp.union(_getROSet(filePath))
     return setTemp
+
 
 def calculate():
     args = sys.argv
@@ -44,14 +48,17 @@ def calculate():
     set4by4 = getSet(experimentPath + repoName + "/4/")
 
     squashedSets = set2by2.union(set3by3.union(set4by4))
-    disappear = len(set1by1-squashedSets)/len(set1by1)
+    disappear = len(set1by1 - squashedSets) / len(set1by1)
     print("Disappearance:", disappear)
 
     all = set1by1.union(set2by2.union(set3by3.union(set4by4)))
-    missingRate = len(all - set1by1)/len(all)
+    missingRate = len(all - set1by1) / len(all)
     print("Missing Rate:", missingRate)
 
-if __name__ =="__main__":
+    print(len(set1by1))
+    print(len(squashedSets))
+
+if __name__ == "__main__":
     # temp = "refactoring-toy-example"
     # experimentPath = "/Users/leichen/ResearchAssistant/InteractiveRebase/experimentResult/"
     # set1by1 = getSet(experimentPath + temp + "/1/")
