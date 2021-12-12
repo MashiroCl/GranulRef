@@ -1,7 +1,7 @@
 {
   "local": {
     "RMSupportedREF":"../refactoringMiner/RMSupportedREF.txt",
-    "RMPath": "/Users/leichen/ResearchAssistant/RefactoringMiner_commandline/RefactoringMiner-2.1.0/bin/RefactoringMiner",
+    "RMPath": "/Users/leichen/ResearchAssistant/RefactoringMiner-2.2.0/bin/RefactoringMiner",
     "git_stein": "/Users/leichen/Code/git-stein/build/libs/git-stein-all.jar",
     "recipe": "./recipe.json",
     "CompareResult": "/compareResult.txt",
@@ -9,7 +9,7 @@
   },
   "titan": {
     "RMSupportedREF":"../refactoringMiner/RMSupportedREF.txt",
-    "RMPath": "/home/chenlei/RA/RefactoringMiner/build/distributions/RefactoringMiner-2.1.0/bin/RefactoringMiner",
+    "RMPath": "/home/chenlei/RA/RefactoringMiner/build/distributions/RefactoringMiner-2.2.0/bin/RefactoringMiner",
     "git_stein": "/home/chenlei/RA/git-stein/build/libs/git-stein-all.jar",
      "CompareResult": "/compareResult.txt",
     "recipe": "./recipe.json",
