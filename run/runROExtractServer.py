@@ -13,14 +13,15 @@ def runServer(repoPath, squashedOutput,outputRepoDirectory, clusterNum):
     data = getConfig()
     RMPath = data["titan"]["RMPath"]
     git_stein = data["titan"]["git_stein"]
-    recipe = data["titan"]["recipe"]
+
 
     repoName = repoPath.split("/")[-1]
 
     outputRepoDirectory = os.path.join(outputRepoDirectory, repoName)
     create_folder(outputRepoDirectory)
+    recipe = os.path.join(outputRepoDirectory, "recipe.json")
     squashedOutput = os.path.join(squashedOutput, repoName)
-    create_folder(outputRepoDirectory)
+    # create_folder(outputRepoDirectory)
 
     for num in range(clusterNum[0], clusterNum[1]):
         jsonOutputDirectory = os.path.join(outputRepoDirectory, str(num))

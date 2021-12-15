@@ -13,14 +13,14 @@ def runServer(repoPath, squashedOutput,outputRepoDirectory, clusterNum):
     data = getConfig()
     RMPath = data["local"]["RMPath"]
     git_stein = data["local"]["git_stein"]
-    recipe = data["local"]["recipe"]
 
     repoName = repoPath.split("/")[-1]
 
     outputRepoDirectory = os.path.join(outputRepoDirectory,repoName)
     create_folder(outputRepoDirectory)
+    recipe = os.path.join(outputRepoDirectory,"recipe.json")
     squashedOutput = os.path.join(squashedOutput,repoName)
-    create_folder(outputRepoDirectory)
+    # create_folder(squashedOutput)
 
     for num in range(clusterNum[0], clusterNum[1]):
         jsonOutputDirectory = os.path.join(outputRepoDirectory,str(num))
@@ -42,10 +42,10 @@ def runServer(repoPath, squashedOutput,outputRepoDirectory, clusterNum):
 if __name__ == "__main__":
     clusterNum = [1, 5]
     rootPath = "/Users/leichen/ResearchAssistant/InteractiveRebase/data/"
-    # args = sys.argv
-    # repoNameTemp = args[1]
-    # repoNameTemp = "android-demos"
-    repoNameTemp = "refactoring-toy-example"
+    args = sys.argv
+    repoNameTemp = args[1]
+    # repoNameTemp = "retrolambda"
+    # repoNameTemp = "refactoring-toy-example"
     repoName = [repoNameTemp]
     outputRepoDirectory = "/Users/leichen/ResearchAssistant/InteractiveRebase/experimentResult/"
     output = "/Users/leichen/Desktop/RTEnew"
