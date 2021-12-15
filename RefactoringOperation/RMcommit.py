@@ -20,8 +20,8 @@ class RMcommit:
             self.commitID = data["commits"][0]["sha1"]
             refactorings = data["commits"][0]["refactorings"]
             for each in refactorings:
-                # print(RefactoringOperation(each))
-                self.refactorings.append(RefactoringOperation(each))
+                ro = RefactoringOperation(each,self.commitID)
+                self.refactorings.append(ro)
         except KeyError:
             pass
         except IndexError:

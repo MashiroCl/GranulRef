@@ -1,11 +1,12 @@
 class RefactoringOperation:
-    def __init__(self,refactoringOperation:str):
+    def __init__(self,refactoringOperation:str,belongedCommit:str):
         self.type = refactoringOperation["type"]
         self.description = refactoringOperation["description"]
         self.leftSideStartColumn = refactoringOperation["leftSideLocations"][0]["startColumn"]
         self.leftSideEndColumn = refactoringOperation["leftSideLocations"][0]["endColumn"]
         self.leftFilePath = refactoringOperation["leftSideLocations"][0]["filePath"]
         self.rightFilePath = refactoringOperation["rightSideLocations"][0]["filePath"]
+        self.belongedCommit = belongedCommit
 
     def __key(self):
         return self.type, self.description, self.leftSideStartColumn, self.leftSideEndColumn, self.leftFilePath, self.rightFilePath
