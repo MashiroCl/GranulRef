@@ -1,6 +1,6 @@
 import sys
-import pandas as pd
 sys.path.append('../')
+import pandas as pd
 from DataAnalysis.setAnalysis import getSet
 from DataAnalysis.typeAnalysis import buildRODict, setDivision
 
@@ -18,8 +18,8 @@ def disappearDict(repo:str):
     return buildRODict(set1by1),buildRODict(set1by1 - squashedSets)
 
 def disappearRatio(repos:list, topNum:int):
-    dict1by1s = dict();
-    disappearDicts = dict();
+    dict1by1s = dict()
+    disappearDicts = dict()
     for repo in repos:
         dict1by1Temp,disappearDictTemp = disappearDict(repo)
         dictAdd(dict1by1s, dict1by1Temp)
@@ -47,5 +47,6 @@ def top(num:int):
 
     # return sorted(resDict.items(),key=lambda x:x[1],reverse=True)[:num]
 
-
-top(5)
+if __name__ =="__main__":
+    args = sys.argv
+    top(args[1])
