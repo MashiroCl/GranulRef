@@ -54,14 +54,6 @@ def ROTypeAnalysis():
 
     print("Disappear Ratio: {}".format(disappearDictRatio))
 
-    # for each in squashedSets:
-    #     if each.type == "Move Class":
-    #         print("in squashedSets: ",each.description)
-    # for each in set1by1:
-    #     if each.type == "Move Class":
-    #         # print(each.type)
-    #         print("in set1by1: ",each.description)
-
     all = set1by1.union(set2by2.union(set3by3.union(set4by4)))
     missingRatio = setDivision(buildRODict((all-set1by1)),buildRODict(all))
     print("Missing Ratio: {}".format(missingRatio))
@@ -76,9 +68,9 @@ def ROTypeAnalysis():
         print("commitID:{}, type: {}, description: {}".format(each.belongedCommit,each.type,each.description))
         dataFrame = pd.DataFrame({"commitID":belongedCommits,"type":types,"description":descriptions})
 
-    import os
-    csv_path = os.path.join("/Users/leichen/ResearchAssistant/csv/",repoName)
-    create_folder(csv_path)
-    dataFrame.to_csv(os.path.join(csv_path,"disappear.csv"),index=False,sep=",")
+    # import os
+    # csv_path = os.path.join("/Users/leichen/ResearchAssistant/csv/",repoName)
+    # create_folder(csv_path)
+    # dataFrame.to_csv(os.path.join(csv_path,"disappear.csv"),index=False,sep=",")
 if __name__ == "__main__":
     ROTypeAnalysis()
