@@ -37,7 +37,6 @@ def top(num:int):
                  "sshj", "xabber-android", "android-async-http", "redisson", "giraph", "spring-data-rest",
                  "blue-flood", "byte-buddy", "HikariCP", "goclipse", "atomix", "morphia", "PocketHub"]
     # experimentPath = "/Users/leichen/ResearchAssistant/InteractiveRebase/experimentResult/"
-    # experimentPath = "/Users/leichen/ResearchAssistant/InteractiveRebase/experimentResult/"
     experimentPath = "/home/chenlei/RA/setversion/experimentResult/"
     # resDict = dict()
     # for repoName in repoNames:
@@ -49,4 +48,4 @@ def top(num:int):
 
 if __name__ =="__main__":
     args = sys.argv
-    top(args[1])
+    top(int(args[1]))
