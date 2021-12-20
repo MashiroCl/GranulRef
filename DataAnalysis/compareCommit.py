@@ -37,8 +37,9 @@ def searchRecipe(commitID:str,experimentResultPath:str):
                         if commitID in recipeList:
                             result.append(recipeList)
 
-    for each in result:
-        print(each)
+    # for each in result:
+    #     print("squashable candidate: {}".format(each))
+    return result
 
 def findAfterSquash(steinLog:str,commit):
     with open(steinLog,"r") as f:
@@ -51,20 +52,16 @@ def findAfterSquash(steinLog:str,commit):
                 result.append(temp[1].strip())
     return result
 
-def refactoringMining():
-    pass
-
-def squashAndGetAfterSquashId(repoName,commitID):
+def squashAndGetAfterSquashId(repoName,commitID,list):
     output = "/Users/leichen/Desktop/RTEnew/test"
     if os.path.exists(output):
         command = "rm -rf " + output
         os.system(command)
     stein_output = "."
     git_stein = "/Users/leichen/Code/git-stein/build/libs/git-stein-all.jar"
-    recipe = "/Users/leichen/Code/pythonProject/pythonProject/pythonProject/SCRMDetection/run/recipe.json"
+    recipe = "/Users/leichen/Code/pythonProject/pythonProject/pythonProject/SCRMDetection/DataAnalysis/recipe.json"
     repository = "/Users/leichen/ResearchAssistant/InteractiveRebase/data/" + repoName
 
-    list = ['12b11bf39cb4800e3fa57fb1112c5fbda26de3df', 'b2c7be7001d4833d14d7fee8c7c989279b4ad039']
     writeRecipe(list, recipe)
     # squash(recipe,git_stein,output,repository,stein_output)
     squash(recipe=recipe, git_stein=git_stein, output=output, repository=repository, steinOutput=stein_output)
@@ -72,14 +69,48 @@ def squashAndGetAfterSquashId(repoName,commitID):
         "/Users/leichen/Code/pythonProject/pythonProject/pythonProject/SCRMDetection/DataAnalysis/stein.log", commitID)
     print("Before squash {}\nAfter squash {}".format(list, afterSquash))
 
+
+def findAfterSquashLog(logFile,list):
+    '''
+    find squashed git commit id in logx.txt according to list
+    :param logFile: file path for logx.txt
+    :param list: being squashed commit list
+    :return: squashed commit ID
+    '''
+    with open(logFile) as f:
+        lines = f. readlines()
+    for i in range(len(lines)):
+        if str(list) in lines[i]:
+            squashable_commit_list = lines[i]
+            squashed_commit_list = lines[i+1]
+            # print(squashable_commit_list)
+            # print(squashed_commit_list)
+            break
+    countTemp = squashable_commit_list.split("squashable commit list ")[1].split("], ")
+    for i in range(len(countTemp)):
+        if str(list[-1]) in countTemp[i]:
+            squashed_commit = squashed_commit_list.split("squashed commit list ")[1].split(",")[i]
+            break
+    print("squashed commit is: {}".format(squashed_commit))
+
 if __name__ == "__main__":
     repoName = "retrolambda"
-    commitID = "7aec89a28410bf3f981069eb3d89fad4354000a0"
+    disappearROCommitID = "281aa17f7e8a0b14d332fc903f9a0d67a0b6fd52"
 
     experimentResultPath = "/Users/leichen/ResearchAssistant/InteractiveRebase/experimentResult/"+repoName
     'Analyse disappear commit reason'
     '1. get recipe about how disappeared commit is squashed'
-    # searchRecipe(commitID,experimentResultPath)
+    squashable_commits = searchRecipe(disappearROCommitID,experimentResultPath)
 
-    '2.squash according to the recipe and get after squashed commit id'
-    squashAndGetAfterSquashId(repoName, commitID)
+    'compare git diff: recipe[0]^..recipe[-1] with commitID'
+
+    list = sorted(squashable_commits,key = lambda x:len(x))[0]
+    print(list)
+    # list = ['bc99e75c2fa4b56325910e445283d1b24cb2618d', 'a4bdd6f054c3e3a119c0b8df3d8b5fde5ca5f61d']
+    logFile = experimentResultPath+"/log"+str(len(list))+".txt"
+    'find Squashed commit ID according to logx.txt to get the refactoring miner result'
+    findAfterSquashLog(logFile,list)
+
+    # # '2.squash according to the recipe and get after squashed commit id'
+
+    # squashAndGetAfterSquashId(repoName, commitID,list)
