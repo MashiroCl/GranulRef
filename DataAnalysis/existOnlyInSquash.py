@@ -27,14 +27,15 @@ def dictDivide(dict1,dict2,dict2Is0):
     return resDict
 
 if __name__ =="__main__":
-    # repoName = ["mbassador"]
+    # repoNames = ["retrolambda"]
     repoNames = ["jfinal", "mbassador", "javapoet", "jeromq", "seyren", "retrolambda", "truth",
                  "sshj", "xabber-android", "android-async-http", "redisson", "giraph", "spring-data-rest",
                  "blue-flood", "byte-buddy", "HikariCP", "goclipse", "atomix", "morphia", "PocketHub"]
-    roSquashDict = dict()
-    roNoSquashDict = dict()
+
     # onlyInSquash = dict()
     for each in repoNames:
+        roSquashDict = dict()
+        roNoSquashDict = dict()
         onlyInSquash = dict()
         # repo = "/Users/leichen/ResearchAssistant/InteractiveRebase/experimentResult/"+each+"/"
         repo = "/home/chenlei/RA/setversion/experimentResult/"+each+"/"
