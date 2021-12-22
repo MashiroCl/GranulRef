@@ -21,18 +21,20 @@ def dictAdd(dict1,dict2):
 def dictDivide(dict1,dict2,dict2Is0):
     resDict = dict()
     for each in dict1:
-        resDict[each] = dict1[each]/(dict2.get(each,1)*3)
+        resDict[each] = dict1[each]/(dict2.get(each,1))
         if dict2.get(each) ==None:
             dict2Is0[each]=dict2Is0.get(each,0)+1
     return resDict
 
 if __name__ =="__main__":
-    # repoNames = ["retrolambda"]
+    # repoNames = ["retrolambda","mbassador"]
     repoNames = ["jfinal", "mbassador", "javapoet", "jeromq", "seyren", "retrolambda", "truth",
                  "sshj", "xabber-android", "android-async-http", "redisson", "giraph", "spring-data-rest",
-                 "blue-flood", "byte-buddy", "HikariCP", "goclipse", "atomix", "morphia", "PocketHub"]
+                 "blueflood", "byte-buddy", "HikariCP", "goclipse", "atomix", "morphia", "PocketHub"]
 
-    # onlyInSquash = dict()
+    sumRoSquashDict = dict()
+    sumRONoSquashDict = dict()
+    sumOnlyInSquash = dict()
     for each in repoNames:
         roSquashDict = dict()
         roNoSquashDict = dict()
@@ -40,9 +42,13 @@ if __name__ =="__main__":
         # repo = "/Users/leichen/ResearchAssistant/InteractiveRebase/experimentResult/"+each+"/"
         repo = "/home/chenlei/RA/setversion/experimentResult/"+each+"/"
         roNoSquashDict = dictAdd(roNoSquashDict,getROType(repo+"1"+"/"))
+        sumRONoSquashDict = dictAdd(sumRONoSquashDict, roNoSquashDict)
         for i in range(2,5):
-            roSquashDict = dictAdd(roSquashDict,getROType(repo+str(i)+"/"))
+            dictSquashI = getROType(repo+str(i)+"/")
+            roSquashDict = dictAdd(roSquashDict,dictSquashI)
+        sumRoSquashDict = dictAdd(sumRoSquashDict,roSquashDict)
         res = dictDivide(roSquashDict,roNoSquashDict,onlyInSquash)
         print("repoName: {}, only in squash number: {}".format(each,len(onlyInSquash)))
         print(onlyInSquash)
-    # print(sorted(res.items(),key=lambda x:x[1],reverse=True))
+    res = dictDivide(sumRoSquashDict,sumRONoSquashDict,sumOnlyInSquash)
+    print("RO in squash/RO in no squash:{}".format(sorted(res.items(),key=lambda x:x[1],reverse=True)))
