@@ -2,6 +2,7 @@ import sys
 sys.path.append('../')
 from RefactoringOperation.RMcommit import RMcommit
 import glob
+import json
 
 def getROType(repoPath):
     filePaths = glob.glob(repoPath+"*.json")
@@ -22,7 +23,7 @@ def dictDivide(dict1,dict2,dict2Is0):
     for each in dict1:
         resDict[each] = dict1[each]/(dict2.get(each,1)*3)
         if dict2.get(each) ==None:
-            dict2Is0.append(each)
+            dict2Is0[each]=dict2Is0.get(each,0)+1
     return resDict
 
 if __name__ =="__main__":
@@ -32,14 +33,15 @@ if __name__ =="__main__":
                  "blue-flood", "byte-buddy", "HikariCP", "goclipse", "atomix", "morphia", "PocketHub"]
     roSquashDict = dict()
     roNoSquashDict = dict()
-    onlyInSquash = list()
-    for each in repoName:
+    # onlyInSquash = dict()
+    for each in repoNames:
+        onlyInSquash = dict()
         # repo = "/Users/leichen/ResearchAssistant/InteractiveRebase/experimentResult/"+each+"/"
         repo = "/home/chenlei/RA/setversion/experimentResult/"+each+"/"
         roNoSquashDict = dictAdd(roNoSquashDict,getROType(repo+"1"+"/"))
         for i in range(2,5):
             roSquashDict = dictAdd(roSquashDict,getROType(repo+str(i)+"/"))
-    res = dictDivide(roSquashDict,roNoSquashDict,onlyInSquash)
-    print(sorted(res.items(),key=lambda x:x[1],reverse=True))
-    print(onlyInSquash)
-    "'Change Type Declaration Kind', 'Extract Subclass', 'Push Down Method', 'Push Down Attribute'"
+        res = dictDivide(roSquashDict,roNoSquashDict,onlyInSquash)
+        print("repoName: {}, only in squash number: {}".format(each,len(onlyInSquash)))
+        print(onlyInSquash)
+    # print(sorted(res.items(),key=lambda x:x[1],reverse=True))
