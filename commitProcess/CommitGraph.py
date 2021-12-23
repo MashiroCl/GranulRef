@@ -162,6 +162,6 @@ if __name__=="__main__":
             a=each
     print(max)
 
-    test=[1,2,3,4]
+    test=[1,2,3,4,5]
     result,num=cG.clusterList(test,2)
     print(result)
