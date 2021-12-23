@@ -85,26 +85,51 @@ class CommitGraph():
             cc_lists_str.append(temp)
         return cc_lists_str
 
-    def clusterList(self,l:list,num:int):
-        if num<1:
-            print("cluster structured according to commit history")
-            return
-        result=[]
-        candidateNum=len(l)%num+1
-        for i in range(candidateNum):
-            temp=[]
-            j=i
-            for each in l[:j]:
-                temp.append([each])
-            while j+num<=len(l):
-                temp.append(l[j:j+num])
-                j=j+num
-            for each in l[j:]:
-                temp.append([each])
-            result.append(temp)
-        numAfterSquash=len(result[0])
-        return result,numAfterSquash
+    # def clusterList(self,l:list,num:int):
+    #     if num<1:
+    #         print("cluster structured according to commit history")
+    #         return
+    #     result=[]
+    #     candidateNum=len(l)%num+1
+    #     for i in range(candidateNum):
+    #         temp=[]
+    #         j=i
+    #         for each in l[:j]:
+    #             temp.append([each])
+    #         while j+num<=len(l):
+    #             temp.append(l[j:j+num])
+    #             j=j+num
+    #         for each in l[j:]:
+    #             temp.append([each])
+    #         result.append(temp)
+    #     numAfterSquash=len(result[0])
+    #     return result,numAfterSquash
 
+    def clusterList(self, l: list, num: int):
+        res = list()
+        if (len(l) < num):
+            temp = []
+            for x in l:
+                temp.append([x])
+            res.append(temp)
+        elif (len(l) == num):
+            res.append(l)
+        else:
+            for i in range(num):
+                if i + num > len(l):
+                    break
+                temp = []
+                for each in l[:i]:
+                    temp.append([each])
+                n = len(l[i:]) // num
+                if len(l[i:]) >= num:
+                    for j in range(n):
+                        temp.append(l[i + j * num:i + (j + 1) * num])
+                for each in l[i + n * num:]:
+                    temp.append([each])
+                res.append(temp)
+
+        return res, len(res[0])
 
 def printCClists(cc_lists):
     num=0
@@ -115,8 +140,6 @@ def printCClists(cc_lists):
             print(each2.commitID)
     print("_________________________")
     print("in total",num,"commits")
-
-
 
 if __name__=="__main__":
     path="/Users/leichen/ResearchAssistant/InteractiveRebase/data/jfinal/test.json"
@@ -141,5 +164,4 @@ if __name__=="__main__":
 
     test=[1,2,3,4]
     result,num=cG.clusterList(test,2)
-    print(num)
     print(result)
