@@ -80,24 +80,51 @@ def compare_before_after_squash(squashable_commit_lists, squashed_commit_lists, 
             ROtype_difference = dict_minus(after_squash_ROtype_Dict, before_squash_ROtype_Dict)
             if isEffectiveSquash(ROtype_difference):
                 effectiveSquash += 1
-                if containsRO('Move And Rename Class',ROtype_difference):
-                    print(squashable_commit_lists[i][j])
-                    print(squashed_commit_lists[i][j])
-                # print(sorted(ROtype_difference.items(), key=lambda x: x[1], reverse=True))
+                # if containsRO('Change Method Access Modifier',ROtype_difference):
+                #     print(squashable_commit_lists[i][j])
+                #     print(squashed_commit_lists[i][j])
+                # # print(sorted(ROtype_difference.items(), key=lambda x: x[1], reverse=True))
             generate_ROtype = dict_add(generate_ROtype,ROtype_difference)
 
-    print("Effective squash ratio: {}, effective squash num: {}, squash num: {}".format(effectiveSquash/squashNum,effectiveSquash,squashNum))
-    return generate_ROtype
+    # print("Effective squash ratio: {}, effective squash num: {}, sum squash : {}".format(effectiveSquash/squashNum,effectiveSquash,squashNum))
+    resDict = {}
+    resDict["Effective squash ratio"] = effectiveSquash/squashNum
+    resDict["Effective squash num"] = effectiveSquash
+    resDict["Effective squash num"] = squashNum
+    return generate_ROtype,resDict
+
+def contains(list1,list2):
+    for each in list2:
+        if each not in list1:
+            return False
+    return True
+
+# def filterDuplicate(commitList1,commitList2):
+#     '''
+#     part of effective sqush in 3by3, 4by4 is duplicate with 2by2, filter out this part
+#     :param commitList1: 3by3 or 4by4
+#     :param commitList2: 2by2 or 3by3
+#     :return:
+#     '''
+#     if contains(commitList1,commitList2):
+
 
 
 
 if __name__ == "__main__":
-    repoNames = ["retrolambda"]
-
-    experimentResultPath = "/Users/leichen/ResearchAssistant/InteractiveRebase/experimentResult/"
-    for repoName in repoNames:
-        repoPath = os.path.join(experimentResultPath,repoName)
-        squasable_commit_lists, squashed_commit_lists = get_commit_id_from_log(repoPath+"/log4.txt")
-        generate_ROtype = compare_before_after_squash(squasable_commit_lists, squashed_commit_lists, repoPath)
-        generate_ROtype = sorted(generate_ROtype.items(),key=lambda x:x[1],reverse=True)
-        print(generate_ROtype)
+    # repoNames = ["mbassador","retrolambda"]
+    repoNames = ["jfinal", "mbassador", "javapoet", "jeromq", "seyren", "retrolambda", "truth",
+                 "sshj", "xabber-android", "android-async-http", "giraph", "spring-data-rest",
+                 "blue-flood", "byte-buddy", "HikariCP", "goclipse", "atomix", "morphia", "PocketHub"]
+    # experimentResultPath = "/Users/leichen/ResearchAssistant/InteractiveRebase/experimentResult/"
+    experimentResultPath = "/home/chenlei/RA/setversion/experimentResult/"
+    for i in range(2,5):
+        for repoName in repoNames:
+            repoPath = os.path.join(experimentResultPath,repoName)
+            squasable_commit_lists, squashed_commit_lists = get_commit_id_from_log(repoPath+"/log"+str(i)+".txt")
+            generate_ROtype,resDict = compare_before_after_squash(squasable_commit_lists, squashed_commit_lists, repoPath)
+            resDict["repo"] = repoName
+            resDict["squashNum"] = i
+            print(resDict)
+            generate_ROtype = sorted(generate_ROtype.items(),key=lambda x:x[1],reverse=True)
+            # print(generate_ROtype)
