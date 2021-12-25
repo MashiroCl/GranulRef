@@ -1,5 +1,5 @@
 import sys
-sys.path.append('../')
+sys.path.append('../../')
 from RefactoringOperation.RMcommit import RMcommit
 import os
 
@@ -90,7 +90,7 @@ def compare_before_after_squash(squashable_commit_lists, squashed_commit_lists, 
     resDict = {}
     resDict["Effective squash ratio"] = effectiveSquash/squashNum
     resDict["Effective squash num"] = effectiveSquash
-    resDict["Effective squash num"] = squashNum
+    resDict["sum squash"] = squashNum
     return generate_ROtype,resDict
 
 def contains(list1,list2):
@@ -113,9 +113,9 @@ def contains(list1,list2):
 
 if __name__ == "__main__":
     # repoNames = ["mbassador","retrolambda"]
-    repoNames = ["jfinal", "mbassador", "javapoet", "jeromq", "seyren", "retrolambda", "truth",
+    repoNames = ["jfinal", "mbassador", "javapoet", "jeromq", "seyren", "retrolambda",
                  "sshj", "xabber-android", "android-async-http", "giraph", "spring-data-rest",
-                 "blue-flood", "byte-buddy", "HikariCP", "redisson","goclipse", "atomix", "morphia", "PocketHub"]
+                 "blue-flood", "HikariCP", "redisson","goclipse", "atomix", "morphia", "PocketHub"]
     # experimentResultPath = "/Users/leichen/ResearchAssistant/InteractiveRebase/experimentResult/"
     experimentResultPath = "/home/chenlei/RA/setversion/experimentResult/"
     for i in range(2,5):
