@@ -115,7 +115,7 @@ if __name__ == "__main__":
     # repoNames = ["mbassador","retrolambda"]
     repoNames = ["jfinal", "mbassador", "javapoet", "jeromq", "seyren", "retrolambda", "truth",
                  "sshj", "xabber-android", "android-async-http", "giraph", "spring-data-rest",
-                 "blue-flood", "byte-buddy", "HikariCP", "goclipse", "atomix", "morphia", "PocketHub"]
+                 "blue-flood", "byte-buddy", "HikariCP", "redisson","goclipse", "atomix", "morphia", "PocketHub"]
     # experimentResultPath = "/Users/leichen/ResearchAssistant/InteractiveRebase/experimentResult/"
     experimentResultPath = "/home/chenlei/RA/setversion/experimentResult/"
     for i in range(2,5):
