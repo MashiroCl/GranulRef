@@ -60,6 +60,11 @@ def isEffectiveSquash(dict1):
             return True
     return False
 
+def dict_divide(dict1,num):
+    for each in dict1:
+        dict1[each] = dict1.get(each)/num
+    return dict1
+
 def compare_before_after_squash(squashable_commit_lists, squashed_commit_lists, experimentResultPath):
     sum_before_squash_ROtype_Dict = dict()
     sum_after_squash_ROtype_Dict = dict()
@@ -109,13 +114,17 @@ def contains(list1,list2):
 #     if contains(commitList1,commitList2):
 
 
-
+def filter(d):
+    for each in d.copy():
+        if(d[each]<=0):
+            d.pop(each)
+    return d
 
 if __name__ == "__main__":
     # repoNames = ["mbassador","retrolambda"]
-    repoNames = ["jfinal", "mbassador", "javapoet", "jeromq", "seyren", "retrolambda",
-                 "sshj", "xabber-android", "android-async-http", "giraph", "spring-data-rest",
-                 "blue-flood", "HikariCP", "redisson","goclipse", "atomix", "morphia", "PocketHub"]
+    repoNames = ["jfinal", "mbassador", "javapoet", "jeromq", "seyren", "retrolambda","baasbox"
+                 "sshj", "xabber-android", "android-async-http", "giraph", "spring-data-rest","blueflood"
+                 "HikariCP", "redisson","goclipse", "atomix", "morphia", "PocketHub"]
     # experimentResultPath = "/Users/leichen/ResearchAssistant/InteractiveRebase/experimentResult/"
     experimentResultPath = "/home/chenlei/RA/setversion/experimentResult/"
     for i in range(2,5):
@@ -125,6 +134,9 @@ if __name__ == "__main__":
             generate_ROtype,resDict = compare_before_after_squash(squasable_commit_lists, squashed_commit_lists, repoPath)
             resDict["repo"] = repoName
             resDict["squashNum"] = i
+            # generate_ROtype = sorted(generate_ROtype.items(),key=lambda x:x[1],reverse=True)
+            generate_ROtype = filter(generate_ROtype)
+            # dict_divide(generate_ROtype,resDict["Effective squash num"])
+            resDict["refactoring_result"] = sorted(generate_ROtype.items(), key=lambda x: x[1], reverse=True)
             print(resDict)
-            generate_ROtype = sorted(generate_ROtype.items(),key=lambda x:x[1],reverse=True)
-            # print(generate_ROtype)
+            # print("repoName: {}, squashNum: {}, result: {}".format(repoName,i,sorted(generate_ROtype.items(),key=lambda x:x[1],reverse=True)))
