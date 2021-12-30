@@ -40,7 +40,9 @@ def get_ROType(commit, experimentResultPath, squashNum):
 
 def dict_minus(dict1,dict2):
     for each in dict2:
-        dict1[each] = dict1.get(each,0) - dict2[each]
+        # dict1[each] = dict1.get(each,0) - dict2[each]
+        if dict2[each]>0:
+            dict1[each] = 0
     return dict1
 
 def dict_add(dict1, dict2):
@@ -85,10 +87,10 @@ def compare_before_after_squash(squashable_commit_lists, squashed_commit_lists, 
             ROtype_difference = dict_minus(after_squash_ROtype_Dict, before_squash_ROtype_Dict)
             if isEffectiveSquash(ROtype_difference):
                 effectiveSquash += 1
-                # if containsRO('Change Method Access Modifier',ROtype_difference):
-                #     print(squashable_commit_lists[i][j])
-                #     print(squashed_commit_lists[i][j])
-                # # print(sorted(ROtype_difference.items(), key=lambda x: x[1], reverse=True))
+                if containsRO('Move Source Folder',ROtype_difference):
+                    print(squashable_commit_lists[i][j])
+                    print(squashed_commit_lists[i][j])
+                # print(sorted(ROtype_difference.items(), key=lambda x: x[1], reverse=True))
             generate_ROtype = dict_add(generate_ROtype,ROtype_difference)
 
     # print("Effective squash ratio: {}, effective squash num: {}, sum squash : {}".format(effectiveSquash/squashNum,effectiveSquash,squashNum))
@@ -121,9 +123,9 @@ def filter(d):
     return d
 
 if __name__ == "__main__":
-    # repoNames = ["mbassador","retrolambda"]
-    repoNames = ["jfinal", "mbassador", "javapoet", "jeromq", "seyren", "retrolambda","baasbox"
-                 "sshj", "xabber-android", "android-async-http", "giraph", "spring-data-rest","blueflood"
+    # repoNames = ["seyren"]
+    repoNames = ["jfinal", "mbassador", "javapoet", "jeromq", "seyren", "retrolambda","baasbox",
+                 "sshj", "xabber-android", "android-async-http", "giraph", "spring-data-rest","blueflood",
                  "HikariCP", "redisson","goclipse", "atomix", "morphia", "PocketHub"]
     # experimentResultPath = "/Users/leichen/ResearchAssistant/InteractiveRebase/experimentResult/"
     experimentResultPath = "/home/chenlei/RA/setversion/experimentResult/"
