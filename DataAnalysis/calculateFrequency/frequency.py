@@ -40,9 +40,9 @@ def get_ROType(commit, experimentResultPath, squashNum):
 
 def dict_minus(dict1,dict2):
     for each in dict2:
-        # dict1[each] = dict1.get(each,0) - dict2[each]
-        if dict2[each]>0:
-            dict1[each] = 0
+        dict1[each] = dict1.get(each,0) - dict2[each]
+        # if dict2[each]>0:
+        #     dict1[each] = 0
     return dict1
 
 def dict_add(dict1, dict2):
@@ -58,6 +58,9 @@ def dict_add_ignore_negative(dict1, dict2):
 
 def isEffectiveSquash(dict1):
     for each in dict1:
+        'Move Source Folder cannot be used to judge if a squash is effective or not'
+        if each == "Move Source Folder":
+            continue
         if dict1[each] >0:
             return True
     return False
@@ -123,7 +126,7 @@ def filter(d):
     return d
 
 if __name__ == "__main__":
-    # repoNames = ["seyren"]
+    # repoNames = ["javapoet"]
     repoNames = ["jfinal", "mbassador", "javapoet", "jeromq", "seyren", "retrolambda","baasbox",
                  "sshj", "xabber-android", "android-async-http", "giraph", "spring-data-rest","blueflood",
                  "HikariCP", "redisson","goclipse", "atomix", "morphia", "PocketHub"]
