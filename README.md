@@ -24,4 +24,4 @@ Repository rewrite tool [git-stein](https://github.com/sh5i/git-stein) is used t
 
 ## Procedure
 Procedure is showed below
-![alt text](https://github.com/MashiroCl/SCRMDetection/blob/main/study_procedure.pdf)
+![alt text](https://github.com/MashiroCl/SCRMDetection/blob/main/study_procedure.png)
