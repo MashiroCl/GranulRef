@@ -2,7 +2,17 @@ from utils import JsonUtils,CommitGraph
 from MyRepository import MyRepository
 import json
 
-def obtainRecipe(repoPath,clusterNum,recipePath,git_stein,squashedOutput):
+def obtainRecipe(repoPath, clusterNum, recipePath, git_stein, squashedOutput):
+    """
+    Obtain recipe used in git-stein to squash
+
+    :param repoPath:
+    :param clusterNum: 2-4
+    :param recipePath: path for output
+    :param git_stein: path for git-stein/build/libs/git-stein-all.jar
+    :param squashedOutput:
+    :return:
+    """
     repo = MyRepository(repoPath)
     repo.createWorkSpace()
 
@@ -32,12 +42,4 @@ def obtainRecipe(repoPath,clusterNum,recipePath,git_stein,squashedOutput):
         json.dump(recipe,f)
     print(recipe)
 
-    repo.squashCommits(recipePath,git_stein,squashedOutput,repo.repoPath)
-
-if __name__ =="__main__":
-    temp="refactoring-toy-example"
-    repoPath = "/Users/leichen/ResearchAssistant/InteractiveRebase/data/"+temp
-    outputPath = "/Users/leichen/Desktop/recipe.json"
-    squashedOutput="/Users/leichen/Desktop/newRTF"
-    git_stein="/Users/leichen/Code/git-stein/build/libs/git-stein-all.jar"
-    obtainRecipe(repoPath,2,outputPath,git_stein,squashedOutput)
+    # repo.squashCommits(recipePath,git_stein,squashedOutput,repo.repoPath)
