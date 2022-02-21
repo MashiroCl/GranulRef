@@ -83,8 +83,6 @@ def findAfterSquashLog(logFile,list):
         if str(list) in lines[i]:
             squashable_commit_list = lines[i]
             squashed_commit_list = lines[i+1]
-            # print(squashable_commit_list)
-            # print(squashed_commit_list)
             break
     countTemp = squashable_commit_list.split("squashable commit list ")[1].split("], ")
     for i in range(len(countTemp)):
@@ -110,7 +108,3 @@ if __name__ == "__main__":
     logFile = experimentResultPath+"/log"+str(len(list))+".txt"
     'find Squashed commit ID according to logx.txt to get the refactoring miner result'
     findAfterSquashLog(logFile,list)
-
-    # # '2.squash according to the recipe and get after squashed commit id'
-
-    # squashAndGetAfterSquashId(repoName, commitID,list)
