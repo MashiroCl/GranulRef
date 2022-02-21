@@ -45,7 +45,7 @@ if __name__ == "__main__":
     args = sys.argv
     repoNameTemp = args[1]
     # repoNameTemp = "retrolambda"
-    # repoNameTemp = "refactoring-toy-example"
+    # repoNameTemp = "jfinal"
     repoName = [repoNameTemp]
     outputRepoDirectory = "/Users/leichen/ResearchAssistant/InteractiveRebase/experimentResult/"
     output = "/Users/leichen/Desktop/RTEnew"

@@ -52,3 +52,4 @@ if __name__ =="__main__":
         print(onlyInSquash)
     res = dictDivide(sumRoSquashDict,sumRONoSquashDict,sumOnlyInSquash)
     print("RO in squash/RO in no squash:{}".format(sorted(res.items(),key=lambda x:x[1],reverse=True)))
+    print(sumOnlyInSquash)

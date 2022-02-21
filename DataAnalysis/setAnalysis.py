@@ -39,6 +39,7 @@ def getSet(repoPath: str):
 def calculate():
     args = sys.argv
     repoName = args[1]
+    # repoName = "retrolambda"
     # experimentPath = "/home/chenlei/RA/setversion/experimentResult/"
     experimentPath = "/Users/leichen/ResearchAssistant/InteractiveRebase/experimentResult/"
 
