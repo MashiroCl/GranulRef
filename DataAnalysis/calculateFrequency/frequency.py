@@ -71,8 +71,6 @@ def dict_divide(dict1,num):
     return dict1
 
 def compare_before_after_squash(squashable_commit_lists, squashed_commit_lists, experimentResultPath):
-    sum_before_squash_ROtype_Dict = dict()
-    sum_after_squash_ROtype_Dict = dict()
     generate_ROtype = dict()
     'a effective squash means squash generates new type of RO'
     effectiveSquash = 0
@@ -90,10 +88,9 @@ def compare_before_after_squash(squashable_commit_lists, squashed_commit_lists, 
             ROtype_difference = dict_minus(after_squash_ROtype_Dict, before_squash_ROtype_Dict)
             if isEffectiveSquash(ROtype_difference):
                 effectiveSquash += 1
-                if containsRO('Move Source Folder',ROtype_difference):
+                if containsRO('Move And Rename Class',ROtype_difference):
                     print(squashable_commit_lists[i][j])
                     print(squashed_commit_lists[i][j])
-                # print(sorted(ROtype_difference.items(), key=lambda x: x[1], reverse=True))
             generate_ROtype = dict_add(generate_ROtype,ROtype_difference)
 
     # print("Effective squash ratio: {}, effective squash num: {}, sum squash : {}".format(effectiveSquash/squashNum,effectiveSquash,squashNum))
@@ -109,29 +106,21 @@ def contains(list1,list2):
             return False
     return True
 
-# def filterDuplicate(commitList1,commitList2):
-#     '''
-#     part of effective sqush in 3by3, 4by4 is duplicate with 2by2, filter out this part
-#     :param commitList1: 3by3 or 4by4
-#     :param commitList2: 2by2 or 3by3
-#     :return:
-#     '''
-#     if contains(commitList1,commitList2):
-
-
 def filter(d):
     for each in d.copy():
+        if(each == "Move Source Folder"):
+            d[each] = 0
         if(d[each]<=0):
             d.pop(each)
     return d
 
 if __name__ == "__main__":
-    # repoNames = ["javapoet"]
-    repoNames = ["jfinal", "mbassador", "javapoet", "jeromq", "seyren", "retrolambda","baasbox",
-                 "sshj", "xabber-android", "android-async-http", "giraph", "spring-data-rest","blueflood",
-                 "HikariCP", "redisson","goclipse", "atomix", "morphia", "PocketHub"]
-    # experimentResultPath = "/Users/leichen/ResearchAssistant/InteractiveRebase/experimentResult/"
-    experimentResultPath = "/home/chenlei/RA/setversion/experimentResult/"
+    repoNames = ["retrolambda"]
+    # repoNames = ["jfinal", "mbassador", "javapoet", "jeromq", "seyren", "retrolambda","baasbox",
+    #              "sshj", "xabber-android", "android-async-http", "giraph", "spring-data-rest","blueflood",
+    #              "HikariCP", "redisson","goclipse", "atomix", "morphia", "PocketHub"]
+    experimentResultPath = "/Users/leichen/ResearchAssistant/InteractiveRebase/experimentResult/"
+    # experimentResultPath = "/home/chenlei/RA/setversion/experimentResult/"
     for i in range(2,5):
         for repoName in repoNames:
             repoPath = os.path.join(experimentResultPath,repoName)
