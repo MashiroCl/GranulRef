@@ -1,3 +1,11 @@
+'''
+json data related class
+    extract git log in json from
+    transfer json into Commit
+    write git-stein recipe
+'''
+
+
 import json
 import os
 from commitProcess.Commit import Commit
