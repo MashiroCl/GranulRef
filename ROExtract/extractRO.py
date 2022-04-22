@@ -1,13 +1,17 @@
 from jsonUtils import JsonUtils
 from commitProcess.CommitGraph import CommitGraph
-from MyRepository import MyRepository, create_folder
+from repository import Repository, create_folder
 from refactoringMiner.RefactoringMiner import RefactoringMiner
 import os
 from myLog import logger_config
 
 from utils import squashWithRecipe, RMDetectWithOutput, getConfig
 
-def extractRO(RMPath:str,repoPath:str,recipe:str,git_stein:str,squashedOutput:str,clusterNum:int,jsonOutputDirectory:str,logger,steinOuput):
+
+
+
+def extractRO(RMPath: str, repoPath: str, recipe: str, git_stein: str, squashedOutput: str, clusterNum: int,
+              jsonOutputDirectory: str, logger, steinOuput):
     '''
     :param RMPath: path for refactoring miner
     :param repoPath: path for repo being squashed
@@ -21,38 +25,36 @@ def extractRO(RMPath:str,repoPath:str,recipe:str,git_stein:str,squashedOutput:st
     '''
 
     '''Initialize workspace'''
-    #set Repository
-    repo = MyRepository(repoPath)
+    # set Repository
+    repo = Repository(repoPath)
     repo.createWorkSpace()
 
     '''Obtain git commit info in Json form'''
-    #create a json file read json file
-    jU=JsonUtils()
+    # create a json file read json file
+    jU = JsonUtils()
     jU.setRepoPath(repo.repoPath)
     jU.gitJson()
-    commits=jU.jsonToCommit()
+    commits = jU.jsonToCommit()
 
-    #create commit graph
+    # create commit graph
     cG = CommitGraph(commits)
-    head = cG.formGraph()
+    head = cG.buildGraph()
 
-    #Extract cc_lists
-    cc_lists = cG.getCClist()
-    cc_lists_str=cG.getCCListStr(cc_lists)
-
+    # Extract sc_lists
+    cc_lists = cG.getSClist()
+    cc_lists_str = cG.getSCListStr(cc_lists)
 
     rm = RefactoringMiner(RMPath)
 
-    commitNumBefore,commitNumAfter=0,0
-    squashedCommitNum=0
+    commitNumBefore, commitNumAfter = 0, 0
 
     create_folder(jsonOutputDirectory)
 
-    if clusterNum ==1:
+    if clusterNum == 1:
         temp = list()
         for each1 in cc_lists_str:
             '''a commit between two merge is not considered'''
-            if len(each1)==1:
+            if len(each1) == 1:
                 continue
             for eachCommit in each1:
                 temp.append(eachCommit)
@@ -60,19 +62,22 @@ def extractRO(RMPath:str,repoPath:str,recipe:str,git_stein:str,squashedOutput:st
         RMDetectWithOutput(rm, temp, repo, jsonOutputDirectory)
     else:
         for each in cc_lists_str:
-            commitNumBefore+=len(each)
-            "According to cluster num (x) to divide a sequence of commits into 'squash x by x' form"
-            "For a length 5 sequence commit, squash 2 by 2 has 2 possible squashe way,{{1,2}{3,4},{5} & {{1}{2,3}{4,5}}}"
-            'possibleSquashes are 3d lists'
-            possibleSquashes,commitNumAfterSquash=cG.clusterList(each,clusterNum)
-            'commitNumAfterSquash < len(each) means the squash occurs'
-            if commitNumAfterSquash!=len(each):
-                squashedCommitNumTemp=0
-                commitNumAfter+=commitNumAfterSquash
+            commitNumBefore += len(each)
+            # According to cluster num (x) to divide a sequence of commits into 'squash x by x' form
+            # For a length 5 sequence commit, squash 2 by 2 has 2 possible squashe way,{{1,2}{3,4},{5} & {{1}{2,3}{4,5}}}
+            # possibleSquashes are 3d lists
+            possibleSquashes, commitNumAfterSquash = cG.clusterList(each, clusterNum)
+            if commitNumAfterSquash==len(each):
+            # commitNumAfterSquash == len(each) means no squash occurs
+                commitNumAfter += len(each)
+            # commitNumAfterSquash < len(each) means the squash occurs
+            else:
+                squashedCommitNumTemp = 0
+                commitNumAfter += commitNumAfterSquash
                 'For each possible squash way, if length of squashableCandidate(1d list) bigger than 1,' \
                 'it will be added into squashableCommitList (2d list) '
                 for possibleSquash in possibleSquashes:
-                    squashableCommitList=[]
+                    squashableCommitList = []
                     for squashableCandidate in possibleSquash:
                         if len(squashableCandidate) > 1:
                             squashedCommitNumTemp += len(squashableCandidate)
@@ -80,26 +85,26 @@ def extractRO(RMPath:str,repoPath:str,recipe:str,git_stein:str,squashedOutput:st
 
                     'if squash output .git file is already exist, delete it to prohibit .git from becoming too big'
                     if os.path.exists(squashedOutput):
-                        command="rm -rf "+squashedOutput
+                        command = "rm -rf " + squashedOutput
                         os.system(command)
 
-                    logger.info("squashable commit list %s"%squashableCommitList)
+                    logger.info("squashable commit list %s" % squashableCommitList)
 
-                    afterSquashed = squashWithRecipe(jU, repo, squashableCommitList, recipe, git_stein, squashedOutput,steinOuput)
+                    afterSquashed = squashWithRecipe(jU, repo, squashableCommitList, recipe, git_stein, squashedOutput,
+                                                     steinOuput)
 
                     logger.info("squashed commit list %s" % afterSquashed)
 
-                    repoNew = MyRepository(squashedOutput)
+                    repoNew = Repository(squashedOutput)
                     repoNew.createWorkSpace()
                     repoNew.addRemote(repoNew.repoPath)
 
                     'RM detect commits after squash'
-                    RMDetectWithOutput(rm, afterSquashed, repoNew,jsonOutputDirectory)
+                    RMDetectWithOutput(rm, afterSquashed, repoNew, jsonOutputDirectory)
 
-            else:
-                commitNumAfter+=len(each)
 
-if __name__ =="__main__":
+
+if __name__ == "__main__":
     data = getConfig()
     RMSupportedREF = data["local"]["RMSupportedREF"]
     RMPath = data["local"]["RMPath"]
@@ -108,7 +113,7 @@ if __name__ =="__main__":
 
     clusterNum = [1, 5]
 
-    temp="refactoring-toy-example"
+    temp = "refactoring-toy-example"
     repoPath = "/Users/leichen/ResearchAssistant/InteractiveRebase/data/" + temp
     squashedOutput = "/Users/leichen/Desktop/RTEnew"
 
@@ -116,14 +121,16 @@ if __name__ =="__main__":
     create_folder(outputRepoDirectory)
 
     for num in range(clusterNum[0], clusterNum[1]):
-        jsonOutputDirectory =outputRepoDirectory+ "/" + str(num)
+        jsonOutputDirectory = outputRepoDirectory + "/" + str(num)
         create_folder(jsonOutputDirectory)
-        logger = logger_config(log_path=outputRepoDirectory+'/log'+str(num)+'.txt', logging_name=temp+" "+str(num)+"by"+str(num))
+        logger = logger_config(log_path=outputRepoDirectory + '/log' + str(num) + '.txt',
+                               logging_name=temp + " " + str(num) + "by" + str(num))
 
-        logger.info("start squash " +str(num)+"by"+str(num))
+        logger.info("start squash " + str(num) + "by" + str(num))
         extractRO(RMPath=RMPath,
-             repoPath=repoPath,
-             recipe=recipe, git_stein=git_stein,
-             squashedOutput=squashedOutput,
-             clusterNum=num,jsonOutputDirectory=jsonOutputDirectory,logger=logger,steinOuput=outputRepoDirectory)
+                  repoPath=repoPath,
+                  recipe=recipe, git_stein=git_stein,
+                  squashedOutput=squashedOutput,
+                  clusterNum=num, jsonOutputDirectory=jsonOutputDirectory, logger=logger,
+                  steinOuput=outputRepoDirectory)
         logger.info("finish squash " + str(num) + "by" + str(num))
