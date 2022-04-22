@@ -1,21 +1,24 @@
+'''
+Refactoring Miner class, implement detect method to detect refactoring operations in a commit
+'''
+
+
 import os
 
+
 class RefactoringMiner:
-    def __init__(self,path):
-        self.RMPath=path
+    def __init__(self, path):
+        self.RMPath = path
 
-    def detect(self,repository,output,commitID:str):
-
-        command = self.RMPath + ' -c ' + repository + ' ' + commitID + ' -json ' + output + "/" +commitID+".json"
+    def detect(self, repository, output, commitID: str):
+        '''
+        use RefactoringMiner to detect refactoring operations in a commit
+        :param repository: repository path
+        :param output: output directory
+        :param commitID:
+        :return: output json file path
+        '''
+        command = self.RMPath + ' -c ' + repository + ' ' + commitID + ' -json ' + output + "/" + commitID + ".json"
         os.system(command)
-        # print(command)
         return output + "/" + commitID + ".json"
 
-
-if __name__ =="__main__":
-    RMPath = "/Users/leichen/ResearchAssistant/RefactoringMiner-2.2.0/bin/RefactoringMiner"
-    rm = RefactoringMiner(RMPath)
-    repository = "/Users/leichen/ResearchAssistant/InteractiveRebase/data/retrolambda"
-    output = "/Users/leichen/Desktop"
-    commitID = "bc99e75c2fa4b56325910e445283d1b24cb2618d"
-    rm.detect(repository,output,commitID)
