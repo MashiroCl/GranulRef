@@ -27,7 +27,7 @@ class Repository:
         # self.RMoutputPath = "./RMoutput"
         # self.RMoutputPathBS = "./RMoutputBS"
         # self.RMoutputPathAS = "./RMoutputAS"
-        self.comparePath = "./compare"
+        # self.comparePath = "./compare"
 
         self.RMoutputPath = self.repoPath + "/RMoutput"
         self.comparePath = self.repoPath + "/compare"
@@ -85,10 +85,10 @@ class Repository:
         command = "(cd " + path + " && git gc --aggressive --prune=now)"
         os.system(command)
 
-    'sh5i git stein version https://github.com/sh5i/git-stein, squash according to recipe.json'
-
+    'git-stein version https://github.com/sh5i/git-stein, squash according to recipe.json'
     def squashCommits(self, recipe, git_stein, output, repository, steinOutput="."):
         '''
+        squash commits according to recipe using git-stein
         :param recipe: path for recipe.json
         :param git_stein: path for git-stein-all.jar
         :param output:  path for new .git output
