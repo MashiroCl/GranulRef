@@ -1,109 +1,106 @@
+"""
+commit graph class, contains commits extracted from a repository
+"""
+
 from commitProcess.Commit import Commit
 from jsonUtils import JsonUtils
 
-class CommitGraph():
-    def __init__(self,commits:list):
-        self.commits=commits
-        self.num=len(commits)
 
-    def whichCommit(self,commitID:str)->Commit:
+class CommitGraph():
+    def __init__(self, commits: list):
+        self.commits = commits
+        self.num = len(commits)
+
+    def whichCommit(self, commitID: str) -> Commit:
+        """
+        search a Commit entity using commit id
+        :param commitID:
+        :return:
+        """
         for each in self.commits:
-            if each.commitID==commitID:
+            if each.commitID == commitID:
                 return each
 
-    def formGraph(self)->Commit:
-        head=None
-        tail=None
+    def buildGraph(self) -> Commit:
+        """
+        build commits into a graph using parent/child commit relationship
+        :return: head of commit graph(the latest commit)
+        """
+        head = None
+        tail = None
         for each in self.commits:
-            if head==None:
-                head=each
+            if head == None:
+                head = each
             for eachID in each.parentID:
-                if len(eachID)>3:
+                if len(eachID) > 3:
                     each.setParent(self.whichCommit(eachID))
                     (self.whichCommit(eachID)).setChild(each)
-                else :
-                    tail=each
+                else:
+                    tail = each
         return head
 
-    def add(self,commit,cc_list)->list:
-        if not commit.getAdded():
-            cc_list.append(commit)
-            commit.setAdded()
-        return cc_list
+    # def add(self,commit,cc_list)->list:
+    #     if not commit.getAdded():
+    #         cc_list.append(commit)
+    #         commit.setAdded()
+    #     return cc_list
 
-
-    def getCClist(self)->list:
-        temp=[]
+    def getSClist(self) -> list:
+        '''
+        search straight commit sequences in commit history
+        :return: 2d array of straight commit sequences
+        '''
+        temp = []
         for each in self.commits:
             temp.append(each)
-        # temp.append(each for each in self.commits)
-        #Remove merge
+
+        # Remove merge commit
         for each in temp:
-            if len(each.parent)==2:
+            if len(each.parent) == 2:
                 temp.remove(each)
 
-        #find head
+        # find head
         for i in range(len(temp)):
-            if len(temp[i].child)==0:
+            if len(temp[i].child) == 0:
                 temp[i].setHead()
 
-            elif len(temp[i].child)==1:
-                #child is merge
-                if len(temp[i].child[0].parent)==2:
+            elif len(temp[i].child) == 1:
+                # child is merge
+                if len(temp[i].child[0].parent) == 2:
                     temp[i].setHead()
 
-            elif len(temp[i].child)>1:
+            elif len(temp[i].child) > 1:
                 temp[i].setHead()
 
-        cc_lists=list()
-        #for each head find connected commit sequence
+        sc_lists = list()
+        # for each head find connected commit sequence
         for i in range(len(temp)):
             if temp[i].getHead():
-                cc_list=[temp[i]]
-                '''Initial commit has two child commit'''
-                if(len(temp[i].parent)==0):
+                sc_list = [temp[i]]
+                # Initial commit has two child commit
+                if (len(temp[i].parent) == 0):
                     continue
-                p=temp[i].parent[0]
+                p = temp[i].parent[0]
                 while not (p.getHead()):
-                    if len(p.parent)==1:
-                        cc_list.append(p)
-                    if len(p.parent)==0:
-                        cc_list.append(p)
+                    if len(p.parent) == 1:
+                        sc_list.append(p)
+                    if len(p.parent) == 0:
+                        sc_list.append(p)
                         break
                     else:
-                        p=p.parent[0]
-                cc_lists.append(cc_list)
+                        p = p.parent[0]
+                sc_lists.append(sc_list)
 
-        return cc_lists
+        return sc_lists
 
-    def getCCListStr(self,cc_lists)->str:
-        cc_lists_str = []
-        for each1 in cc_lists:
+    def getSCListStr(self, sc_lists) -> str:
+        sc_lists_str = []
+        for each1 in sc_lists:
             temp = []
             for each2 in each1:
                 temp.append(each2.commitID)
-            cc_lists_str.append(temp)
-        return cc_lists_str
-
-    # def clusterList(self,l:list,num:int):
-    #     if num<1:
-    #         print("cluster structured according to commit history")
-    #         return
-    #     result=[]
-    #     candidateNum=len(l)%num+1
-    #     for i in range(candidateNum):
-    #         temp=[]
-    #         j=i
-    #         for each in l[:j]:
-    #             temp.append([each])
-    #         while j+num<=len(l):
-    #             temp.append(l[j:j+num])
-    #             j=j+num
-    #         for each in l[j:]:
-    #             temp.append([each])
-    #         result.append(temp)
-    #     numAfterSquash=len(result[0])
-    #     return result,numAfterSquash
+            sc_lists_str.append(temp)
+        return sc_lists_str
 
     def clusterList(self, l: list, num: int):
         res = list()
@@ -131,37 +128,38 @@ class CommitGraph():
 
         return res, len(res[0])
 
-def printCClists(cc_lists):
-    num=0
-    for each1 in cc_lists:
+
+    def printSClists(self, sc_lists):
+        num = 0
+        for each1 in sc_lists:
+            print("_________________________")
+            for each2 in each1:
+                num = num + 1
+                print(each2.commitID)
         print("_________________________")
-        for each2 in each1:
-            num=num+1
-            print(each2.commitID)
-    print("_________________________")
-    print("in total",num,"commits")
+        print("in total", num, "commits")
 
-if __name__=="__main__":
-    path="/Users/leichen/ResearchAssistant/InteractiveRebase/data/jfinal/test.json"
-    path="/Users/leichen/ResearchAssistant/InteractiveRebase/data/refactoring-toy-example"
 
-    js=JsonUtils()
+if __name__ == "__main__":
+    path = "/Users/leichen/ResearchAssistant/InteractiveRebase/data/refactoring-toy-example"
+
+    js = JsonUtils()
     js.setRepoPath(path)
     js.gitJson()
-    commits=js.jsonToCommit()
-    cc_lists = []
+    commits = js.jsonToCommit()
+    sc_lists = []
 
     cG = CommitGraph(commits)
-    head = cG.formGraph()
-    cc_lists=cG.getCClist()
-    max=0
-    a=0
-    for each in range(len(cc_lists)):
-        if len(cc_lists[each])>max:
-            max=len(cc_lists[each])
-            a=each
+    head = cG.buildGraph()
+    sc_lists = cG.getSClist()
+    max = 0
+    a = 0
+    for each in range(len(sc_lists)):
+        if len(sc_lists[each]) > max:
+            max = len(sc_lists[each])
+            a = each
     print(max)
 
-    test=[1,2,3,4,5]
-    result,num=cG.clusterList(test,2)
+    test = [1, 2, 3, 4, 5]
+    result, num = cG.clusterList(test, 2)
     print(result)
