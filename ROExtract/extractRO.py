@@ -3,16 +3,45 @@ from commitProcess.CommitGraph import CommitGraph
 from repository import Repository, create_folder
 from refactoringMiner.RefactoringMiner import RefactoringMiner
 import os
-from myLog import logger_config
+from logger import logger_config
 
 from utils import squashWithRecipe, RMDetectWithOutput, getConfig
 
 
+def set_repository(repoPath:str):
+    '''
+    create folder /RMoutput and /compare under target repository path
+    :param reopPath: target repository path
+    :return: repo:Repository
+    '''
+    repo = Repository(repoPath)
+    repo.createWorkSpace()
+    return repo
 
+def extract_commits(repo:Repository):
+    '''
+    extract commit:Commit from repository
+    :param repo: 
+    :return: commits:List[Commit]
+    '''
+    jU = JsonUtils()
+    jU.setRepoPath(repo.repoPath)
+    jU.gitJson()
+    return jU.jsonToCommit()
+
+def remove_file(path):
+    '''
+    remove file of path
+    :return:
+    '''
+    if os.path.exists(path):
+        command = "rm -rf " + path
+        os.system(command)
 
 def extractRO(RMPath: str, repoPath: str, recipe: str, git_stein: str, squashedOutput: str, clusterNum: int,
               jsonOutputDirectory: str, logger, steinOuput):
     '''
+    extract commits, squash commits and detect refactoring operations on both fine-grained and coarse-grained commits
     :param RMPath: path for refactoring miner
     :param repoPath: path for repo being squashed
     :param recipe: path for recipe
@@ -26,24 +55,20 @@ def extractRO(RMPath: str, repoPath: str, recipe: str, git_stein: str, squashedO
 
     '''Initialize workspace'''
     # set Repository
-    repo = Repository(repoPath)
-    repo.createWorkSpace()
+    repo = set_repository(repoPath)
 
-    '''Obtain git commit info in Json form'''
-    # create a json file read json file
-    jU = JsonUtils()
-    jU.setRepoPath(repo.repoPath)
-    jU.gitJson()
-    commits = jU.jsonToCommit()
+    '''extract commits from repository'''
+    commits = extract_commits(repo)
 
     # create commit graph
     cG = CommitGraph(commits)
     head = cG.buildGraph()
 
     # Extract sc_lists
-    cc_lists = cG.getSClist()
-    cc_lists_str = cG.getSCListStr(cc_lists)
+    sc_lists = cG.getSClist()
+    sc_lists_str = cG.getSCListStr(sc_lists)
 
+    # get RefactoringMiner entity
     rm = RefactoringMiner(RMPath)
 
     commitNumBefore, commitNumAfter = 0, 0
@@ -51,52 +76,52 @@ def extractRO(RMPath: str, repoPath: str, recipe: str, git_stein: str, squashedO
     create_folder(jsonOutputDirectory)
 
     if clusterNum == 1:
-        temp = list()
-        for each1 in cc_lists_str:
-            '''a commit between two merge is not considered'''
+        # no squash needed, detect refactoring operations in origin commits
+        origin_commits = list()
+        for each1 in sc_lists_str:
             if len(each1) == 1:
+                # the commits between two merges has no possibility to be squashed, so they needn't to be considered
                 continue
             for eachCommit in each1:
-                temp.append(eachCommit)
+                origin_commits.append(eachCommit)
         'RM detect commits without squash'
-        RMDetectWithOutput(rm, temp, repo, jsonOutputDirectory)
+        RMDetectWithOutput(rm, origin_commits, repo, jsonOutputDirectory)
     else:
-        for each in cc_lists_str:
+        for each in sc_lists_str:
             commitNumBefore += len(each)
+
             # According to cluster num (x) to divide a sequence of commits into 'squash x by x' form
             # For a length 5 sequence commit, squash 2 by 2 has 2 possible squashe way,{{1,2}{3,4},{5} & {{1}{2,3}{4,5}}}
             # possibleSquashes are 3d lists
             possibleSquashes, commitNumAfterSquash = cG.clusterList(each, clusterNum)
+
             if commitNumAfterSquash==len(each):
-            # commitNumAfterSquash == len(each) means no squash occurs
+            # no squash occurs
                 commitNumAfter += len(each)
-            # commitNumAfterSquash < len(each) means the squash occurs
             else:
+                # commitNumAfterSquash < len(each) means squash occurs
                 squashedCommitNumTemp = 0
                 commitNumAfter += commitNumAfterSquash
                 'For each possible squash way, if length of squashableCandidate(1d list) bigger than 1,' \
                 'it will be added into squashableCommitList (2d list) '
                 for possibleSquash in possibleSquashes:
-                    squashableCommitList = []
+                    squashUnitsList = []
                     for squashableCandidate in possibleSquash:
                         if len(squashableCandidate) > 1:
                             squashedCommitNumTemp += len(squashableCandidate)
-                            squashableCommitList.append(squashableCandidate)
+                            squashUnitsList.append(squashableCandidate)
 
                     'if squash output .git file is already exist, delete it to prohibit .git from becoming too big'
-                    if os.path.exists(squashedOutput):
-                        command = "rm -rf " + squashedOutput
-                        os.system(command)
+                    remove_file(squashedOutput)
 
-                    logger.info("squashable commit list %s" % squashableCommitList)
+                    logger.info("squash units list %s" % squashUnitsList)
 
-                    afterSquashed = squashWithRecipe(jU, repo, squashableCommitList, recipe, git_stein, squashedOutput,
+                    afterSquashed = squashWithRecipe(repo, squashUnitsList, recipe, git_stein, squashedOutput,
                                                      steinOuput)
 
-                    logger.info("squashed commit list %s" % afterSquashed)
+                    logger.info("coarse-grained commit list %s" % afterSquashed)
 
-                    repoNew = Repository(squashedOutput)
-                    repoNew.createWorkSpace()
+                    repoNew = set_repository(squashedOutput)
                     repoNew.addRemote(repoNew.repoPath)
 
                     'RM detect commits after squash'
