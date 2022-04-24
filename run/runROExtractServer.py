@@ -1,7 +1,7 @@
 import sys
 sys.path.append('../')
-from MyRepository import create_folder
-from myLog import logger_config
+from repository import create_folder
+from logger import logger_config
 from utils import getConfig, outputTime
 import time,os
 
@@ -21,7 +21,6 @@ def runServer(repoPath, squashedOutput,outputRepoDirectory, clusterNum):
     create_folder(outputRepoDirectory)
     recipe = os.path.join(outputRepoDirectory, "recipe.json")
     squashedOutput = os.path.join(squashedOutput, repoName)
-    # create_folder(outputRepoDirectory)
 
     for num in range(clusterNum[0], clusterNum[1]):
         jsonOutputDirectory = os.path.join(outputRepoDirectory, str(num))

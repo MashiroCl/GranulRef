@@ -1,6 +1,6 @@
 import sys
 sys.path.append('../')
-from MyRepository import MyRepository, create_folder,delete_foler
+from repository import Repository, create_folder,delete_foler
 from refactoringMiner.RefactoringMiner import RefactoringMiner
 from jsonUtils import JsonUtils
 from utils import outputTime,RMDetect,timeRecord
@@ -10,7 +10,7 @@ def normal_detect(RMPath:str,repoPath:str,output:str):
 
     '''Initialize workspace'''
     #set Repository
-    repo = MyRepository(repoPath)
+    repo = Repository(repoPath)
     repo.createWorkSpace()
 
     repoName = repo.repoPath.split("/")[-1]
