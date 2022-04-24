@@ -1,3 +1,7 @@
+'''
+logger config
+'''
+
 import logging
 def logger_config(log_path, logging_name):
     logger = logging.getLogger(logging_name)
@@ -11,11 +15,3 @@ def logger_config(log_path, logging_name):
     logger.addHandler(handler)
     logger.addHandler(console)
     return logger
-
-
-if __name__ == "__main__":
-    logger = logger_config(log_path='log.txt', logging_name='SCRMDetection')
-    logger.info("info")
-    logger.error("error")
-    logger.debug("debug")
-    logger.warning("warning")
