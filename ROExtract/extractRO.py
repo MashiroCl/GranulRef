@@ -1,3 +1,8 @@
+'''
+extract commits, squash commits and detect refactoring operations on both fine-grained and coarse-grained commits
+'''
+
+
 from jsonUtils import JsonUtils
 from commitProcess.CommitGraph import CommitGraph
 from repository import Repository, create_folder
