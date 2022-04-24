@@ -3,7 +3,6 @@ commit graph class, contains commits extracted from a repository
 """
 
 from commitProcess.Commit import Commit
-from jsonUtils import JsonUtils
 
 
 class CommitGraph():
@@ -138,28 +137,3 @@ class CommitGraph():
                 print(each2.commitID)
         print("_________________________")
         print("in total", num, "commits")
-
-
-if __name__ == "__main__":
-    path = "/Users/leichen/ResearchAssistant/InteractiveRebase/data/refactoring-toy-example"
-
-    js = JsonUtils()
-    js.setRepoPath(path)
-    js.gitJson()
-    commits = js.jsonToCommit()
-    sc_lists = []
-
-    cG = CommitGraph(commits)
-    head = cG.buildGraph()
-    sc_lists = cG.getSClist()
-    max = 0
-    a = 0
-    for each in range(len(sc_lists)):
-        if len(sc_lists[each]) > max:
-            max = len(sc_lists[each])
-            a = each
-    print(max)
-
-    test = [1, 2, 3, 4, 5]
-    result, num = cG.clusterList(test, 2)
-    print(result)
