@@ -74,13 +74,13 @@ class CommitGraph():
         sc_lists = list()
         # for each head find connected commit sequence
         for i in range(len(temp)):
-            if temp[i].getHead():
+            if temp[i].isHead():
                 sc_list = [temp[i]]
                 # Initial commit has two child commit
                 if (len(temp[i].parent) == 0):
                     continue
                 p = temp[i].parent[0]
-                while not (p.getHead()):
+                while not (p.isHead()):
                     if len(p.parent) == 1:
                         sc_list.append(p)
                     if len(p.parent) == 0:

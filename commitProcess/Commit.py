@@ -48,7 +48,7 @@ class Commit:
     # def setAdded(self):
     #     self.added=True
 
-    def getHead(self):
+    def isHead(self):
         return self.head
 
     def setHead(self):
