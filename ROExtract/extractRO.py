@@ -2,7 +2,6 @@
 extract commits, squash commits and detect refactoring operations on both fine-grained and coarse-grained commits
 '''
 
-
 from jsonUtils import JsonUtils
 from commitProcess.CommitGraph import CommitGraph
 from repository import Repository, create_folder
@@ -11,9 +10,10 @@ import os
 from logger import logger_config
 
 from utils import squashWithRecipe, RMDetectWithOutput, getConfig
+from typing import List
 
 
-def set_repository(repoPath:str):
+def set_repository(repoPath: str):
     '''
     create folder /RMoutput and /compare under target repository path
     :param reopPath: target repository path
@@ -23,7 +23,8 @@ def set_repository(repoPath:str):
     repo.createWorkSpace()
     return repo
 
-def extract_commits(repo:Repository):
+
+def extract_commits(repo: Repository):
     '''
     extract commit:Commit from repository
     :param repo: 
@@ -34,6 +35,7 @@ def extract_commits(repo:Repository):
     jU.gitJson()
     return jU.jsonToCommit()
 
+
 def remove_file(path):
     '''
     remove file of path
@@ -42,6 +44,28 @@ def remove_file(path):
     if os.path.exists(path):
         command = "rm -rf " + path
         os.system(command)
+
+
+def list3dto2d(l: List[List[List[str]]]) -> List[List[str]]:
+    res = []
+    for each in l:
+        res += each
+    return res
+
+
+def get_recipe_candidates(sc_possible_squashes: List[List[List[List[str]]]], cluster_num: int) -> List[
+    List[List[List[str]]]]:
+    candidates = []
+    for bias in range(cluster_num):
+        # extract the squashable sequence for each bias from the straight commit sequences
+        bias_candidate = []
+        for sc_possible_squash in sc_possible_squashes:
+            if len(sc_possible_squash) > bias:
+                bias_candidate.append(
+                    [squash_l for squash_l in sc_possible_squash[bias] if len(squash_l) == cluster_num])
+        candidates.append(bias_candidate)
+    return candidates
+
 
 def extractRO(RMPath: str, repoPath: str, recipe: str, git_stein: str, squashedOutput: str, clusterNum: int,
               jsonOutputDirectory: str, logger, steinOuput):
@@ -92,6 +116,7 @@ def extractRO(RMPath: str, repoPath: str, recipe: str, git_stein: str, squashedO
         'RM detect commits without squash'
         RMDetectWithOutput(rm, origin_commits, repo, jsonOutputDirectory)
     else:
+        sc_possible_squashes = []
         for each in sc_lists_str:
             commitNumBefore += len(each)
 
@@ -100,38 +125,34 @@ def extractRO(RMPath: str, repoPath: str, recipe: str, git_stein: str, squashedO
             # possibleSquashes are 3d lists
             possibleSquashes, commitNumAfterSquash = cG.clusterList(each, clusterNum)
 
-            if commitNumAfterSquash==len(each):
-            # no squash occurs
+            if commitNumAfterSquash == len(each):
+                # no squash occurs
                 commitNumAfter += len(each)
             else:
                 # commitNumAfterSquash < len(each) means squash occurs
-                squashedCommitNumTemp = 0
                 commitNumAfter += commitNumAfterSquash
-                'For each possible squash way, if length of squashableCandidate(1d list) bigger than 1,' \
-                'it will be added into squashableCommitList (2d list) '
-                for possibleSquash in possibleSquashes:
-                    squashUnitsList = []
-                    for squashableCandidate in possibleSquash:
-                        if len(squashableCandidate) > 1:
-                            squashedCommitNumTemp += len(squashableCandidate)
-                            squashUnitsList.append(squashableCandidate)
+                sc_possible_squashes.append(possibleSquashes)
 
-                    'if squash output .git file is already exist, delete it to prohibit .git from becoming too big'
-                    remove_file(squashedOutput)
+        candidates = get_recipe_candidates(sc_possible_squashes, clusterNum)
 
-                    logger.info("squash units list %s" % squashUnitsList)
+        for bias_candidate in candidates:
+            squash_units = list3dto2d(bias_candidate)
+            if len(squash_units) == 0:
+                break
+            logger.info(f"squash units list {squash_units}")
 
-                    afterSquashed = squashWithRecipe(repo, squashUnitsList, recipe, git_stein, squashedOutput,
-                                                     steinOuput)
+            # if squash output .git file is already exist, delete it to prohibit .git from becoming too big
+            remove_file(squashedOutput)
 
-                    logger.info("coarse-grained commit list %s" % afterSquashed)
+            afterSquashed = squashWithRecipe(repo, squash_units, recipe, git_stein, squashedOutput, steinOuput)
 
-                    repoNew = set_repository(squashedOutput)
-                    repoNew.addRemote(repoNew.repoPath)
+            logger.info("coarse-grained commit list %s" % afterSquashed)
 
-                    'RM detect commits after squash'
-                    RMDetectWithOutput(rm, afterSquashed, repoNew, jsonOutputDirectory)
+            repoNew = set_repository(squashedOutput)
+            repoNew.addRemote(repoNew.repoPath)
 
+            'RM detect commits after squash'
+            RMDetectWithOutput(rm, afterSquashed, repoNew, jsonOutputDirectory)
 
 
 if __name__ == "__main__":
