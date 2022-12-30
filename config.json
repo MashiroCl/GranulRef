@@ -12,5 +12,12 @@
     "git_stein": "/home/chenlei/RA/git-stein/build/libs/git-stein-all.jar",
      "CompareResult": "/compareResult.txt",
     "time": "/time.txt"
+  },
+    "valkyrie": {
+    "RMSupportedREF":"/refactoringMiner/RMSupportedREF.txt",
+    "RMPath": "/home/chenlei/projects/coarse-grained_refactoring/RefactoringMiner",
+    "git_stein": "/home/chenlei/projects/coarse-grained_refactoring/git-stein-all.jar",
+     "CompareResult": "/compareResult.txt",
+    "time": "/time.txt"
   }
 }
