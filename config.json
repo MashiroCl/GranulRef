@@ -15,7 +15,7 @@
   },
     "valkyrie": {
     "RMSupportedREF":"/refactoringMiner/RMSupportedREF.txt",
-    "RMPath": "/home/chenlei/projects/coarse-grained_refactoring/RefactoringMiner",
+    "RMPath": "/home/chenlei/projects/coarse-grained_refactoring/RefactoringMiner-2.2.0/bin/RefactoringMiner",
     "git_stein": "/home/chenlei/projects/coarse-grained_refactoring/git-stein-all.jar",
      "CompareResult": "/compareResult.txt",
     "time": "/time.txt"
