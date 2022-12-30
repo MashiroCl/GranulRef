@@ -20,7 +20,7 @@ def set_repository(repoPath: str):
     :return: repo:Repository
     '''
     repo = Repository(repoPath)
-    repo.createWorkSpace()
+    # repo.createWorkSpace()
     return repo
 
 
