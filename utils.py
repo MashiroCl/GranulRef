@@ -145,6 +145,10 @@ def getConfig():
         data = json.load(f)
     return data
 
+def get_config():
+    with open("config.json") as f:
+        data = json.load(f)
+    return data
 
 def outputTime(t) -> str:
     h = t // 3600
