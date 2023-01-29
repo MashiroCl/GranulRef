@@ -6,9 +6,7 @@
 5.RM on remaining all commits (merge excluded)
 """
 
-
 from jsonUtils import JsonUtils
-import os
 import json
 import time
 
@@ -20,27 +18,6 @@ def RM_supported_type(RMSupportedREF):
     for each in lines:
         dict[each.lower().strip()] = 0
     return dict
-
-
-# def stat_analysis(f_json, dictS):
-#     with open(f_json, "r") as f1:
-#         list1 = json.load(f1)
-#     # ref_num, num_of_each_type
-#     ref_num = 0
-#     if isinstance(list1, list):
-#         pass
-#     else:
-#         list1 = [list1]
-#
-#     for each in list1:
-#         if len(each["commits"]) != 0:
-#             for each_r in each["commits"][0]["refactorings"]:
-#                 for eachD in dictS:
-#                     if eachD.lower() == each_r['type'].lower():
-#                         ref_num = ref_num + 1
-#                         dictS[eachD] = dictS[eachD] + 1
-#     return ref_num, dictS
-
 
 def dictAdd(dictS, dict2) -> dict:
     '''
@@ -160,3 +137,4 @@ def outputTime(t) -> str:
 
 def timeRecord():
     return time.time()
+
