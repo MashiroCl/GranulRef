@@ -5,7 +5,7 @@ extract commits, squash commits and detect refactoring operations on both fine-g
 from jsonUtils import JsonUtils
 from commitProcess.CommitGraph import CommitGraph
 from repository import Repository, create_folder
-from refactoringMiner.RefactoringMiner import RefactoringMiner
+from refactoring_mining.miner import RefactoringMiner
 import os
 from logger import logger_config
 
