@@ -5,7 +5,7 @@ git commit class
 
 class Commit:
     """
-    turn json formatgir commit info into Commit Class
+    turn json format git commit info into Commit Class
     """
     def __init__(self, info: str):
         self.commitID = info["commit"]
