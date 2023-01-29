@@ -22,3 +22,14 @@ class RefactoringMiner:
         os.system(command)
         return output + "/" + commitID + ".json"
 
+
+
+class RefDiff:
+    def __init__(self, path):
+        self.RDpath = path
+
+    def detect(self, repository:str, output, commitID):
+        repo_name = repository.split("/")[-1]
+        repo_root = repository.split(repo_name)[0]
+        command = f"java -jar {self.RDpath} -r {repo_root} -n {repo_name} -o {output} -c {commitID}"
+        os.system(command)
