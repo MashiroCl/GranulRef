@@ -9,7 +9,7 @@ from refactoring_mining.miner import RefactoringMiner
 import os
 from logger import logger_config
 
-from utils import squashWithRecipe, RMDetectWithOutput, getConfig
+from utils import squashWithRecipe, getConfig
 from typing import List
 
 
@@ -185,3 +185,16 @@ if __name__ == "__main__":
                   clusterNum=num, jsonOutputDirectory=jsonOutputDirectory, logger=logger,
                   steinOuput=outputRepoDirectory)
         logger.info("finish squash " + str(num) + "by" + str(num))
+
+
+def RMDetectWithOutput(rm, commits: list, repo, output: str):
+    '''
+
+    :param rm: RefactoringMiner entity
+    :param commits: straight commit sequences
+    :param repo: Repository entity
+    :param output:
+    :return:
+    '''
+    for each in commits:
+        rm.detect(repo.repoPath, output, each)
