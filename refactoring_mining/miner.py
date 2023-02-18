@@ -20,7 +20,6 @@ class RefactoringMiner:
         '''
         command = self.RMPath + ' -c ' + repository + ' ' + commitID + ' -json ' + output + "/" + commitID + ".json"
         os.system(command)
-        return output + "/" + commitID + ".json"
 
 
 
