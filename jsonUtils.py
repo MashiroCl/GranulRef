@@ -31,7 +31,7 @@ class JsonUtils:
 
     'Read json file and return commit list'
     def jsonToCommit(self) -> list:
-        with open(self.jsonPath) as f:
+        with open(self.jsonPath, errors="ignore") as f:
             data = json.loads("[" + f.read() + "]")
         commits = []
         for each in data:
