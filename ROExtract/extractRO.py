@@ -10,7 +10,7 @@ import os
 from logger import logger_config
 
 from utils import squashWithRecipe, getConfig
-from typing import List
+from multiprocessing import Process
 
 
 def set_repository(repoPath: str):
@@ -46,15 +46,15 @@ def remove_file(path):
         os.system(command)
 
 
-def list3dto2d(l: List[List[List[str]]]) -> List[List[str]]:
+def list3dto2d(l: list[list[list[str]]]) -> list[list[str]]:
     res = []
     for each in l:
         res += each
     return res
 
 
-def get_recipe_candidates(sc_possible_squashes: List[List[List[List[str]]]], cluster_num: int) -> List[
-    List[List[List[str]]]]:
+def get_recipe_candidates(sc_possible_squashes: list[list[list[list[str]]]], cluster_num: int) -> list[
+    list[list[list[str]]]]:
     candidates = []
     for bias in range(cluster_num):
         # extract the squashable sequence for each bias from the straight commit sequences
@@ -114,6 +114,7 @@ def extractRO(RMPath: str, repoPath: str, recipe: str, git_stein: str, squashedO
             for eachCommit in each1:
                 origin_commits.append(eachCommit)
         'RM detect commits without squash'
+        # RMDetectWithOutput_multiprocess(rm, origin_commits, repo, jsonOutputDirectory)
         RMDetectWithOutput(rm, origin_commits, repo, jsonOutputDirectory)
     else:
         sc_possible_squashes = []
@@ -152,44 +153,12 @@ def extractRO(RMPath: str, repoPath: str, recipe: str, git_stein: str, squashedO
             repoNew.addRemote(repoNew.repoPath)
 
             'RM detect commits after squash'
-            RMDetectWithOutput(rm, afterSquashed, repoNew, jsonOutputDirectory)
-
-
-if __name__ == "__main__":
-    data = getConfig()
-    RMSupportedREF = data["local"]["RMSupportedREF"]
-    RMPath = data["local"]["RMPath"]
-    git_stein = data["local"]["git_stein"]
-    recipe = data["local"]["recipe"]
-
-    clusterNum = [1, 5]
-
-    temp = "refactoring-toy-example"
-    repoPath = "/Users/leichen/ResearchAssistant/InteractiveRebase/data/" + temp
-    squashedOutput = "/Users/leichen/Desktop/RTEnew"
-
-    outputRepoDirectory = "/Users/leichen/ResearchAssistant/InteractiveRebase/experimentResult/" + temp
-    create_folder(outputRepoDirectory)
-
-    for num in range(clusterNum[0], clusterNum[1]):
-        jsonOutputDirectory = outputRepoDirectory + "/" + str(num)
-        create_folder(jsonOutputDirectory)
-        logger = logger_config(log_path=outputRepoDirectory + '/log' + str(num) + '.txt',
-                               logging_name=temp + " " + str(num) + "by" + str(num))
-
-        logger.info("start squash " + str(num) + "by" + str(num))
-        extractRO(RMPath=RMPath,
-                  repoPath=repoPath,
-                  recipe=recipe, git_stein=git_stein,
-                  squashedOutput=squashedOutput,
-                  clusterNum=num, jsonOutputDirectory=jsonOutputDirectory, logger=logger,
-                  steinOuput=outputRepoDirectory)
-        logger.info("finish squash " + str(num) + "by" + str(num))
-
+            # RMDetectWithOutput(rm, afterSquashed, repoNew, jsonOutputDirectory)
+            RMDetectWithOutput_multiprocess(rm, afterSquashed, repoNew, jsonOutputDirectory)
 
 def RMDetectWithOutput(rm, commits: list, repo, output: str):
     '''
-
+    detect refactorings with RM for a list of commits
     :param rm: RefactoringMiner entity
     :param commits: straight commit sequences
     :param repo: Repository entity
@@ -198,3 +167,24 @@ def RMDetectWithOutput(rm, commits: list, repo, output: str):
     '''
     for each in commits:
         rm.detect(repo.repoPath, output, each)
+
+
+def RMDetectWithOutput_multiprocess(rm, commits: list, repo, output: str):
+    """
+    Detect Refs with multi process
+    :param rm:
+    :param commits:
+    :param repo:
+    :param output:
+    :return:
+    """
+    process_num = int(os.cpu_count()/2)
+    sub_c_num = int(len(commits) / process_num)
+    processes = []
+    for i in range(1, process_num + 1):
+        processes.append(Process(target=RMDetectWithOutput, args=(
+            rm, commits[(i - 1) * sub_c_num:min(i * sub_c_num, len(commits))], repo, output)))
+    for p in processes:
+        p.start()
+    for p in processes:
+        p.join()
