@@ -95,28 +95,6 @@ def squashWithRecipe(repo, cc_lists_str, recipe, git_stein, squashedOutput, stei
     return result
 
 
-def RMDetect(rm, commits: list, repo):
-    print("_____________________RM Detect commits__________________________________")
-    for each in commits:
-        jsonF = rm.detect(repo.repoPath, repo.RMoutputPath, each)
-    print("________________________________________________________________________")
-    return jsonF
-
-
-def RMDetectWithOutput(rm, commits: list, repo, output: str):
-    '''
-
-    :param rm: RefactoringMiner entity
-    :param commits: straight commit sequences
-    :param repo: Repository entity
-    :param output:
-    :return:
-    '''
-    for each in commits:
-        jsonF = rm.detect(repo.repoPath, output, each)
-
-
-
 def getConfig():
     with open("../config.json") as f:
         data = json.load(f)
