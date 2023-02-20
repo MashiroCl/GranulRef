@@ -179,7 +179,7 @@ def RMDetectWithOutput_multiprocess(rm, commits: list, repo, output: str):
     :return:
     """
     process_num = int(os.cpu_count()/2)
-    sub_c_num = int(len(commits) / process_num)
+    sub_c_num = round(len(commits) / process_num)
     processes = []
     for i in range(1, process_num + 1):
         processes.append(Process(target=RMDetectWithOutput, args=(
