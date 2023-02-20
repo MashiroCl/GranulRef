@@ -114,8 +114,8 @@ def extractRO(RMPath: str, repoPath: str, recipe: str, git_stein: str, squashedO
             for eachCommit in each1:
                 origin_commits.append(eachCommit)
         'RM detect commits without squash'
-        # RMDetectWithOutput_multiprocess(rm, origin_commits, repo, jsonOutputDirectory)
-        RMDetectWithOutput(rm, origin_commits, repo, jsonOutputDirectory)
+        RMDetectWithOutput_multiprocess(rm, origin_commits, repo, jsonOutputDirectory)
+        # RMDetectWithOutput(rm, origin_commits, repo, jsonOutputDirectory)
     else:
         sc_possible_squashes = []
         for each in sc_lists_str:
@@ -179,11 +179,11 @@ def RMDetectWithOutput_multiprocess(rm, commits: list, repo, output: str):
     :return:
     """
     process_num = int(os.cpu_count()/2)
-    sub_c_num = round(len(commits) / process_num)
+    step = int(len(commits) / process_num)+1
     processes = []
-    for i in range(1, process_num + 1):
+    for i in range(0, len(commits), step):
         processes.append(Process(target=RMDetectWithOutput, args=(
-            rm, commits[(i - 1) * sub_c_num:min(i * sub_c_num, len(commits))], repo, output)))
+            rm, commits[i:i+step], repo, output)))
     for p in processes:
         p.start()
     for p in processes:
