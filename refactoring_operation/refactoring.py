@@ -58,7 +58,7 @@ class Refactoring:
         :param repo:
         :return:
         """
-        self.refactored_source_location = trace((self.refactored_location.startLine, self.refactored_location.endLine),
+        self.refactored_source_location = trace((self.refactored_location.startLine, self.refactored_location.startLine),
                                                 commit_sha1,
                                                 pathlib.Path(repo.repoPath).joinpath(
                                                     self.refactored_location.file_path).__str__(),
