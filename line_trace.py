@@ -43,7 +43,7 @@ def load_commit_pairs(squash_log_path: str) -> dict[str:tuple]:
     return pairs
 
 
-def get_parent_commit(commit: str, repo: Repository)->str:
+def get_parent_commit(commit: str, repo: Repository) -> str:
     """
     get parent commmit sha1
     :param commit: sha1
@@ -52,7 +52,7 @@ def get_parent_commit(commit: str, repo: Repository)->str:
     """
 
     def parse(output: str):
-        if "parent " not in output:  #  Initial commit doesn't have parent commit
+        if "parent " not in output:  # Initial commit doesn't have parent commit
             return ""
         return [line.split("parent ") for line in output.split("\n") if "parent " in line][0][1]
 
