@@ -9,7 +9,7 @@
   "titan": {
     "RMSupportedREF":"../refactoringMiner/RMSupportedREF.txt",
     "RMPath": "/home/salab/chenlei/RA/RefactoringMiner-2.3.2/bin/RefactoringMiner",
-    "git_stein": "/home/chenlei/RA/git-stein/build/libs/git-stein-all.jar",
+    "git_stein": "/home/salab/chenlei/RA/git-stein/build/libs/git-stein-all.jar",
      "CompareResult": "/compareResult.txt",
     "time": "/time.txt"
   },
