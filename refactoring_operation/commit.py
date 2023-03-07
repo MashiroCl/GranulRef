@@ -2,6 +2,7 @@ import json
 from refactoring_operation.refactoring import Refactoring, RefRM
 import pathlib
 import subprocess
+from refactoring_operation.supported_ref_type import NotSupportedRefType
 
 
 class Commit:
@@ -22,9 +23,12 @@ class Commit:
         return self.refs
 
     def _extrac_refs(self):
-        refs = self.commit_raw[0].get("refactorings", None)
-        if refs:
-            refs = [Refactoring(r) for r in refs]
+        refs_raw = self.commit_raw[0].get("refactorings", None)
+        refs = []
+        if refs_raw:
+            for r in refs_raw:
+                if not r["type"] in [not_supported.value for not_supported in NotSupportedRefType]:
+                    refs.append(Refactoring(r))
         return refs
 
     def dump_refs(self, directory: str):
@@ -71,3 +75,7 @@ class RMCommit(Commit):
 
     def get_refs(self):
         return self.refs
+
+
+def exclude_ref_type():
+    pass
