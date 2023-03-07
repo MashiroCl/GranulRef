@@ -116,12 +116,12 @@ def trace_and_dump_n(cs: list[Commit], process_idx, repo_temp_p: pathlib.Path, r
             coarse_grained_commit.dump_refs(dump_des)
     shutil.rmtree(process_p)
 
-def attach_source_locations(repo_path: str, squash_log_d: str, squash_num_start=2, squash_num_end=5) -> None:
+def attach_source_locations(repo_path: str, squash_res_d: str, squash_num_start=1, squash_num_end=5) -> None:
     '''
     trace source locations for refs in commits in squash_log_d and dump the refs into json files
     Note that only commits contains refactorings will be traced and write into json file.
     :param repo_path: repository where commits belong
-    :param squash_log_d: squash result directory
+    :param squash_res_d: squash result directory
     :param squash_num_start: start squash num
     :param squash_num_end: end squash num
     :return: None
@@ -133,7 +133,7 @@ def attach_source_locations(repo_path: str, squash_log_d: str, squash_num_start=
         :return:
         """
         repo_name = pathlib.Path(repo.repoPath).name
-        repo_temp_d = pathlib.Path(squash_log_d).parent.parent.joinpath("repo_temp")
+        repo_temp_d = pathlib.Path(squash_res_d).parent.parent.joinpath("repo_temp")
         repo_temp_d.mkdir(exist_ok=True)
         p = repo_temp_d.joinpath(repo_name)
         p.mkdir(exist_ok=True)
@@ -183,15 +183,15 @@ def attach_source_locations(repo_path: str, squash_log_d: str, squash_num_start=
         for c in commits:
             c.dump_refs(directory)
 
-    squash_log_d = pathlib.Path(squash_log_d)
+    squash_res_d = pathlib.Path(squash_res_d)
     repo = Repository(repo_path)
 
     repo_temp_p = build_directory()
 
     for squash_num in range(squash_num_start, squash_num_end + 1):
-        squash_log_p = squash_log_d.joinpath(str(squash_num)).joinpath(f"log{squash_num}.txt")
+        squash_log_p = squash_res_d.joinpath(str(squash_num)).joinpath(f"log{squash_num}.txt")
         refs_dir = squash_log_p.parent.joinpath("refs")
-        output_directory = squash_log_d.joinpath(f"o{squash_num}").__str__()
+        output_directory = squash_res_d.joinpath(f"o{squash_num}").__str__()
 
         if squash_num == 1:
             cs = [Commit(file) for file in get_json_files_under_directory(refs_dir)]
