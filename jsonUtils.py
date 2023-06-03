@@ -26,12 +26,14 @@ class JsonUtils:
     def gitJson(self):
         if self.jsonPath == None:
             self.setJsonPath(self.repoPath + "/gitLog.json")
-        prettyFormat = "--pretty=format:\'{%n  \"commit\": \"%H\",%n \"tree\": \"%T\",%n \"parent\": \"%P\",%n \"commit_notes\": \"%N\",%n \"author\": {%n    \"name\": \"%aN\",%n    \"email\": \"%aE\",%n    \"date\": \"%aD\"%n  },%n  \"commiter\": {%n    \"name\": \"%cN\",%n    \"email\": \"%cE\",%n    \"date\": \"%cD\"%n  }%n},\'| sed \"$ s/,$//\""
+        # prettyFormat = "--pretty=format:\'{%n  \"commit\": \"%H\",%n \"tree\": \"%T\",%n \"parent\": \"%P\",%n \"commit_notes\": \"%N\",%n \"author\": {%n    \"name\": \"%aN\",%n    \"email\": \"%aE\",%n    \"date\": \"%aD\"%n  },%n  \"commiter\": {%n    \"name\": \"%cN\",%n    \"email\": \"%cE\",%n    \"date\": \"%cD\"%n  }%n},\'| sed \"$ s/,$//\""
+        prettyFormat = "--pretty=format:\'{%n  \"commit\": \"%H\",%n \"tree\": \"%T\",%n \"parent\": \"%P\",%n \"author\": {%n    \"name\": \"%aN\",%n    \"email\": \"%aE\",%n    \"date\": \"%aD\"%n  },%n  \"commiter\": {%n    \"name\": \"%cN\",%n    \"email\": \"%cE\",%n    \"date\": \"%cD\"%n  }%n},\'| sed \"$ s/,$//\""
         os.system('git -C ' + self.repoPath + ' log ' + prettyFormat + " >" + self.jsonPath)
 
     'Read json file and return commit list'
     def jsonToCommit(self) -> list:
         with open(self.jsonPath, errors="ignore") as f:
+            print(self.jsonPath)
             data = json.loads("[" + f.read() + "]")
         commits = []
         for each in data:
