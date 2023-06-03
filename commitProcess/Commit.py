@@ -11,7 +11,7 @@ class Commit:
         self.commitID = info["commit"]
         self.parentID = info["parent"].split(" ")
         self.suject = None
-        self.commit_notes = info["commit_notes"]
+        # self.commit_notes = info["commit_notes"]
         self.commiter = info["commiter"]
         self.isMerge = True if len(self.parentID) > 1 else False
         self.parent = []
