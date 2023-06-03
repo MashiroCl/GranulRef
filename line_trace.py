@@ -78,6 +78,7 @@ def checkout_latest(repo: Repository):
     :param repo:
     :return:
     """
+    print(f"checkout to the latest commit for {repo.repoPath}")
     res = subprocess.getoutput(f'cd {repo.repoPath} && git checkout $(git log --branches -1 --pretty=format:"%H")')
     if "fatal:" in res:
         raise RuntimeWarning(f"Error occurs when git checkout to the latest commit")
