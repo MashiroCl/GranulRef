@@ -20,6 +20,7 @@ def commands():
 if __name__ == "__main__":
     args = commands().parse_args()
     if args.m == "trace":
-        attach_source_locations(args.r, args.d, args.start, args.end)
+        attach_source_locations(args.r, args.d, int(args.start), int(args.end))
     else:
         run(args.r, args.o, int(args.c), args.p)
+
