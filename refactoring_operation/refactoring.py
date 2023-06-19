@@ -54,6 +54,7 @@ class Refactoring:
     def trace_source_location(self, commit_sha1: str, repo: Repository) -> 'Refactoring':
         """
         Use git blame to trace the refactored code for where the code is firstly introduced
+        trace with only the startLine of the refactored code
         :param commit_sha1:
         :param repo:
         :return:
