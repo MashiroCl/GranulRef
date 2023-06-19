@@ -14,7 +14,11 @@ class Commit:
         with open(file_p) as f:
             data = json.load(f)
         self.sha1 = pathlib.Path(file_p).name.split(".")[0]
-        self.commit_raw = data.get("commits", None)
+        self.commit_raw = None
+        if "commits" in data.keys():
+            self.commit_raw = data.get("commits")
+        elif "sha1" in data.keys():
+            self.commit_raw = data.get("refactorings")
         self.refs = []
         if self.commit_raw:
             self.refs = self._extrac_refs()
@@ -23,11 +27,17 @@ class Commit:
         return self.refs
 
     def _extrac_refs(self):
-        refs_raw = self.commit_raw[0].get("refactorings", None)
+        refs_raw = None
+        if "refactorings" in self.commit_raw[0].keys():
+            refs_raw = self.commit_raw[0].get("refactorings")
+        elif isinstance(self.commit_raw, list):
+            refs_raw = self.commit_raw
+        # refs_raw = self.commit_raw[0].get("refactorings", None)
         refs = []
         if refs_raw:
             for r in refs_raw:
                 if not r["type"] in [not_supported.value for not_supported in NotSupportedRefType]:
+                    # print("r[type]", r["type"])
                     refs.append(Refactoring(r))
         return refs
 
