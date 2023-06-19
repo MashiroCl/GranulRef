@@ -5,7 +5,7 @@ extract commits, squash commits and detect refactoring operations on both fine-g
 from jsonUtils import JsonUtils
 from commitProcess.CommitGraph import CommitGraph
 from repository import Repository, create_folder
-from refactoring_mining.miner import RefactoringMiner
+from refactoring_mining.miner import RefactoringMiner, RefDiff, remove_redundant_git_files
 import os
 from logger import logger_config
 
@@ -71,14 +71,14 @@ def extractRO(RMPath: str, repoPath: str, recipe: str, git_stein: str, squashedO
               jsonOutputDirectory: str, logger, steinOuput):
     '''
     extract commits, squash commits and detect refactoring operations on both fine-grained and coarse-grained commits
+    :param steinOuput:
+    :param jsonOutputDirectory:
     :param RMPath: path for refactoring miner
     :param repoPath: path for repo being squashed
     :param recipe: path for recipe
     :param git_stein: path for git-stin
     :param squashedOutput: path for squashed repository output
     :param clusterNum: number of each cluster
-    :param compareResult: path for txt file storing compare result
-    :param RMSupportedREF: path for RMSupportedREF.txt
     :return:
     '''
 
@@ -99,6 +99,7 @@ def extractRO(RMPath: str, repoPath: str, recipe: str, git_stein: str, squashedO
 
     # get RefactoringMiner entity
     rm = RefactoringMiner(RMPath)
+    # rm = RefDiff(RMPath)
 
     commitNumBefore, commitNumAfter = 0, 0
 
@@ -115,6 +116,7 @@ def extractRO(RMPath: str, repoPath: str, recipe: str, git_stein: str, squashedO
                 origin_commits.append(eachCommit)
         'RM detect commits without squash'
         RMDetectWithOutput_multiprocess(rm, origin_commits, repo, jsonOutputDirectory)
+        remove_redundant_git_files(os.path.dirname(repo.repoPath))
         # RMDetectWithOutput(rm, origin_commits, repo, jsonOutputDirectory)
     else:
         sc_possible_squashes = []
@@ -155,6 +157,9 @@ def extractRO(RMPath: str, repoPath: str, recipe: str, git_stein: str, squashedO
             'RM detect commits after squash'
             # RMDetectWithOutput(rm, afterSquashed, repoNew, jsonOutputDirectory)
             RMDetectWithOutput_multiprocess(rm, afterSquashed, repoNew, jsonOutputDirectory)
+
+    # RefDiff will generate .git-xxx folders, remove them if exist
+    remove_redundant_git_files(os.path.dirname(jsonOutputDirectory))
 
 def RMDetectWithOutput(rm, commits: list, repo, output: str):
     '''
