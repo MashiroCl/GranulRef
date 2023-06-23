@@ -25,6 +25,5 @@ def arg_parser():
 
 
 if __name__ == "__main__":
-    # parser = arg_parser()
-    repo_path = "/Users/leichen/Code/pythonProject/pythonProject/pythonProject/SCRMDetection/experiment/output/result/mbassador"
-    rq_selector(1, repo_path)
+    args = arg_parser().parse_args()
+    rq_selector(args.i, args.p)
