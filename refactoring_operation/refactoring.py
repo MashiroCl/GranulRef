@@ -103,7 +103,6 @@ class RefactoredLocation:
     def __str__(self):
         return f"{self.file_path} {self.startLine}:{self.endLine}"
 
-
 class RefLocation:
     def __init__(self, prop: dict):
         self.filePath = prop.get("filePath", "")
@@ -115,6 +114,20 @@ class RefLocation:
             codeElement = ""
         return self.filePath + "@" + codeElement
 
+    def __key(self):
+        return self.__str__()
+
+    def __hash__(self):
+        return hash(self.__key())
+
+    def __eq__(self, other):
+        if isinstance(other,self.__class__):
+            if self.__key() == other.__key():
+                return True
+            else:
+                return False
+        else:
+            return NotImplemented
 
 class RefRM(Refactoring):
     pass
