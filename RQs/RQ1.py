@@ -5,7 +5,7 @@ How frequently do CGRs appear because of granularity change?
 squash unit is a pair of coarse-grained commit and fine-grained commits which squashed into the coarse one
 frequency is the ratio of the number of squash units that can generate at least one CGR
 """
-from match import get_commit_refdict, extract_coarse_grained_refs
+from match import get_commit_refdict, extract_coarse_grained_refs, extract_coarse_grained_refs_oline_as_supportive
 import pathlib
 from line_trace import load_commit_pairs
 
@@ -23,26 +23,32 @@ def frequency(repo_path: str):
         squash_units_count = len(d)
         for coarse_grained_commit in d.keys():
             fine_grained_commits = d[coarse_grained_commit]
-            fine_grained_refs = get_commit_refdict(squash_log_p, list(fine_grained_commits))
+            fine_grained_refs = get_commit_refdict(squash_log_p, list(fine_grained_commits), coarse_grained_commit)
             coarse_grained_refs = get_commit_refdict(squash_log_p, coarse_grained_commit)
-            CGRs = extract_coarse_grained_refs(coarse_grained_refs, fine_grained_refs)
+            # CGRs = extract_coarse_grained_refs(coarse_grained_refs, fine_grained_refs)
+            CGRs = extract_coarse_grained_refs_oline_as_supportive(coarse_grained_refs, fine_grained_refs,
+                                                                   fine_grained_commits)
             if len(CGRs) > 0:
                 print("*" * 30)
                 print(f"coarse grained commits {coarse_grained_commit}")
                 print(f"fine grained commits {fine_grained_commits}")
-                print(f"CGRS {[each.type for each in CGRs]}")
+                for each in CGRs:
+                    print(each)
                 print("*" * 30)
                 effective_squash_units_count += 1
         return effective_squash_units_count, squash_units_count
 
     squash_units = 0
     effective_squash_units = 0
-    for i in range(1, 3):
+    for i in range(2, 6):
         squash_log_ps = pathlib.Path(repo_path).joinpath(str(i)).joinpath(f"log{i}.txt")
         e_su, su = get_squash_units(squash_log_ps)
         effective_squash_units += e_su
         squash_units += su
+    if effective_squash_units == 0:
+        return 0
     return effective_squash_units / squash_units
+
 
 if __name__ == "__main__":
     repo_path = "/Users/leichen/Code/pythonProject/pythonProject/pythonProject/SCRMDetection/experiment/output/result/mbassador"
