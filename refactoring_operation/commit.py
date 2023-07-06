@@ -49,19 +49,19 @@ class Commit:
         """
         directory = pathlib.Path(directory)
         if not directory.exists():
-            directory.mkdir()
+            directory.mkdir(parents=True)
         file = directory.joinpath(self.sha1 + ".json")
         if len(self.refs):  # exclude commits with no refs
             with open(file, "w") as f:
                 json.dump([ref.get_dict_format() for ref in self.refs], f)
 
-    def trace_refs_source_locations(self, parent_commit_sha1: str, repo: 'Repository') -> 'Commit':
+    def trace_refs_source_locations(self, parent_commit_sha1: str, repo: 'Repository', ignore_commits:'list[Commit]'=None) -> 'Commit':
         """
         trace refs source locations
         :return:
         """
         for ref in self.refs:
-            ref.trace_source_location(parent_commit_sha1, repo)
+            ref.trace_source_location(parent_commit_sha1, repo, ignore_commits)
         return self
 
 

@@ -42,6 +42,13 @@ def load_commit_pairs(squash_log_path: str) -> dict[str:tuple]:
             match(coarse_grained_commits, fine_grained_commits)
     return pairs
 
+def get_normal_grained_ref_map()->dict:
+    """
+    For load each group of normal grained refs in the squash log, and build a hashmap where the key is one of the normal
+    grained ref in the group, the values are the group
+    e.g. [[C1,C2],[C2,C3]] -> {C1:[C1,C2], C2:[C1,C2], C3:[C2,C3]}
+    :return:
+    """
 
 def get_parent_commit(commit: str, repo: Repository) -> str:
     """
@@ -95,11 +102,13 @@ class BlameRes:
     file_name: str  # the filename in the commit that the line is attributed to.
 
 
-def get_blame_res(line_numbers: tuple[str, str], file_path: str) -> list[BlameRes]:
+def get_blame_res(line_numbers: tuple[str, str], file_path: str, ignore_commits: list[str]) -> list[BlameRes]:
     """
     use git-blame to trace the line number when code of line_numbers are firstly introduced
+    :param ignore_commits:
     :param file_path: file path where code change lies
     :param line_numbers: a tuple (start_line, end_line)
+    :param ignore_commits: the commits should be ignore when tracing in git blame api --ignore-rev
     :return:
     """
 
@@ -118,22 +127,34 @@ def get_blame_res(line_numbers: tuple[str, str], file_path: str) -> list[BlameRe
             blameRes_list.append(BlameRes(sha1, oline, file_name))
         return blameRes_list
 
+    def generate_command(path) -> str:
+        command = f"cd {path.parent} && git blame --line-porcelain "
+        for ignore_commit in ignore_commits:
+            command = command + f"--ignore-rev {ignore_commit} "
+        command = command + f"-L {line_numbers[0]},{line_numbers[1]} {path}"
+        print(command)
+        return command
+
     file_path = pathlib.Path(file_path) if not isinstance(file_path, pathlib.Path) else file_path
-    res = subprocess.getoutput(
-        f"cd {file_path.parent} && git blame --line-porcelain -L {line_numbers[0]},{line_numbers[1]} {file_path}")
+    res = subprocess.getoutput(generate_command(file_path))
     return parse(res)
 
 
-def trace(line_numbers: tuple[str, str], commit: str, file_path: str, repo: Repository) -> list[BlameRes]:
+def trace(line_numbers: tuple[str, str], commit: str, file_path: str, repo: Repository, ignore_commits:'list[Commit]'=None) -> list[
+    BlameRes]:
     """
     trace when code of certain lines is initially introduced into repo under certain commit
+    :param ignore_commits:
     :param line_numbers: start & end line numbers of the target trace lines
     :param commit: sha1 of a commit, trace under this parameter (git checkout to this commit   then trace)
     :param file_path: traced file
     :param repo: traced repo
+    :param ignore_commits: the commits should be ignore when tracing in git blame api --ignore-rev
     :return:
     """
+    if ignore_commits is None:
+        ignore_commits = []
     checkout(repo, commit)
-    blameRes_ls = get_blame_res(line_numbers, file_path)
+    blameRes_ls = get_blame_res(line_numbers, file_path, [each.sha1 for each in ignore_commits])
     checkout_latest(repo)
     return blameRes_ls

@@ -55,3 +55,7 @@ class RefDiff(Miner):
         command = f"java -jar {self.RDpath} -r {repo_root} -n {repo_name} -o {output} -c {commitID}"
         os.system(command)
 
+
+if __name__ == "__main__":
+    path = "/Users/leichen/Code/pythonProject/pythonProject/pythonProject/SCRMDetection/experiment/output/result/my-refactoring-toy-example/2/refs"
+    remove_redundant_git_files(os.path.dirname(path))
