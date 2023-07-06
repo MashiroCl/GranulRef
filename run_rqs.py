@@ -7,10 +7,10 @@ def run_rqs():
 
 
 def rq_selector(rq_index, *args):
-    if rq_index == 1:
+    if rq_index == "1":
         res = RQ1.frequency(*args)
         print(res)
-    elif rq_index == 2:
+    elif rq_index == "2":
         res = RQ2.frequency(*args)
         print(res)
     else:
