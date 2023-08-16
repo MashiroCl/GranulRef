@@ -11,9 +11,40 @@ def load_dictref(file_p: Union[str, pathlib.Path]) -> list[Refactoring]:
         return refs
     with open(file_p) as f:
         data = json.load(f)
+    if not isinstance(data, list):  # no refactoring detected in the commit
+        return refs
     for ref_d in data:
         refs.append(Refactoring(ref_d).set_source_location(ref_d))
     return refs
+
+def load_retrace_dictref(file_p, ignored_commit_count) -> list[Refactoring]:
+    refs = []
+    if not pathlib.Path(file_p).exists():
+        return refs
+    with open(file_p) as f:
+        data = json.load(f)[ignored_commit_count]["refs"]
+    if not isinstance(data, list):  # no refactoring detected in the commit
+        return refs
+    for ref_d in data:
+        refs.append(Refactoring(ref_d).set_source_location(ref_d))
+    return refs
+
+
+
+def load_dictref_no_source(file_p: Union[str, pathlib.Path]) -> list[Refactoring]:
+    refs = []
+    if not pathlib.Path(file_p).exists():
+        return refs
+    with open(file_p) as f:
+        data = json.load(f)["commits"]
+    if not len(data):
+        return refs
+    for ref_d in data[0]["refactorings"]:
+        if ref_d["type"] == "Move Source Folder":  # Move Source Folder has no leftSideLocations and rightSideLocations
+            continue
+        refs.append(Refactoring(ref_d))
+    return refs
+
 
 
 def get_commit_refdict(squash_log_p: str, commits: Union[str, list[str]], coarse_grained_commit: str = "") -> list[
@@ -30,6 +61,19 @@ def get_commit_refdict(squash_log_p: str, commits: Union[str, list[str]], coarse
     else:  # coarse grained commits
         coarse_grained_path = refs_d.joinpath(f"o{squash_num}")
         refs.append(load_dictref(coarse_grained_path.joinpath(commits + ".json")))
+    return refs
+
+
+def get_retraced_commit_refdict(squash_log_p: str, coarse_grained_commit, ignored_commit_count) -> list[
+    list[Refactoring]]:
+    refs_d = pathlib.Path(squash_log_p).parent.parent.joinpath("retrace")
+    if not refs_d.exists():
+        raise Exception(f"Retracing not conduct for {refs_d}")
+    squash_num = pathlib.Path(squash_log_p).name.split(".txt")[0].split("log")[1]
+    refs = []
+    coarse_grained_path = refs_d.joinpath(str(squash_num), coarse_grained_commit+".json")
+    if coarse_grained_path.exists():
+        refs.append(load_retrace_dictref(coarse_grained_path, ignored_commit_count))
     return refs
 
 
@@ -50,29 +94,16 @@ def extract_coarse_grained_refs_by_squashlog(squash_log_p: str) -> list[Refactor
             res += cgr
     return res
 
-
-def extract_fine_grained_refs_by_squashlog(squash_log_p: str) -> list[Refactoring]:
-    d = load_commit_pairs(squash_log_p)
-    res = list()
-    for coarse_grained_commit in d.keys():
-        fine_grained_commits = d[coarse_grained_commit]
-        normal_grained_refs = get_commit_refdict(squash_log_p, list(fine_grained_commits))
-        coarse_grained_refs = get_commit_refdict(squash_log_p, coarse_grained_commit)
-        fgr = extract_fine_grained_refs(coarse_grained_refs, normal_grained_refs)
-        if len(fgr) > 0:
-            res += fgr
-    return res
-
-
 def extract_regular_refs_by_squashlog(squash_log_p: str) -> list[Refactoring]:
     squash_log_p = pathlib.Path(squash_log_p)
     refs_d = pathlib.Path(squash_log_p).parent.parent
     if not squash_log_p.name == "log1.txt":
         raise RuntimeError(f"squash log is {squash_log_p}, use log1.txt as the squash log")
+
+    fine_grained_path = refs_d.joinpath("1", "refs")
     refs = []
-    fine_grained_path = refs_d.joinpath("o1")
     for path in fine_grained_path.iterdir():
-        refs += load_dictref(path)
+        refs += load_dictref_no_source(path)
     return refs
 
 
@@ -108,7 +139,7 @@ def extract_fine_grained_refs_through_type(coarse_grained_refs: list[list[Refact
 
 
 def match_oline_as_supportive(coarse_grained_ref: Refactoring, normal_grained_ref: Refactoring,
-                              normal_grained_commit_sha1s: list[str]) -> bool:
+                              ) -> bool:
     """
     :param normal_grained_commit_sha1s:
     :param coarse_grained_ref: squashed coarse-grained ref, which is squashed by normal_grained_refs
@@ -132,8 +163,7 @@ def match_oline_as_supportive(coarse_grained_ref: Refactoring, normal_grained_re
 
 
 def extract_coarse_grained_refs_oline_as_supportive(coarse_grained_refs: list[list[Refactoring]],
-                                                    normal_grained_refs: list[list[Refactoring]],
-                                                    normal_grained_commit_sha1s: list[str]) -> list[Refactoring]:
+                                                    normal_grained_refs: list[list[Refactoring]]) -> list[Refactoring]:
     """
     Extract coarse grained refs through match mechanism
     :param normal_grained_commit_sha1s:
@@ -145,6 +175,14 @@ def extract_coarse_grained_refs_oline_as_supportive(coarse_grained_refs: list[li
     CGR_candidates = coarse_grained_refs[0]
     NGRs = [ref for each in normal_grained_refs for ref in each]
     for CGR_candidate in CGR_candidates:
-        if not any([match_oline_as_supportive(CGR_candidate, NGR, normal_grained_commit_sha1s) for NGR in NGRs]):
+        if not any([match_oline_as_supportive(CGR_candidate, NGR) for NGR in NGRs]):
             res.append(CGR_candidate)
+    return res
+
+
+def load_commit_pairs_all(repo_path):
+    res = dict()
+    for i in range(2, 6):
+        squash_log_ps = pathlib.Path(repo_path).joinpath(str(i)).joinpath(f"log{i}.txt")
+        res.update(load_commit_pairs(squash_log_ps))
     return res
