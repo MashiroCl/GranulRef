@@ -5,7 +5,7 @@ commit graph class, contains commits extracted from a repository
 from commitProcess.Commit import Commit
 
 
-class CommitGraph():
+class CommitGraph:
     def __init__(self, commits: list):
         self.commits = commits
         self.num = len(commits)
