@@ -25,3 +25,43 @@ Repository rewrite tool [git-stein](https://github.com/sh5i/git-stein) is used t
 ## Procedure
 Procedure is showed below
 ![alt text](https://github.com/MashiroCl/SCRMDetection/blob/main/study_procedure.png)
+
+
+# Update: 2024/10/18
+
+## Getting Started
+
+### Prerequisite
+```shell
+python@3.9
+```
+
+### How to use it
+* Remove Comments
+```shell
+python3 remove_comment.py -s <input_repo_path> -t <output_repo_path>
+```
+
+* Mine refactorings for different granularities
+```shell
+nohup python3 command.py -r /Users/leichen/Code/pythonProject/pythonProject/pythonProject/SCRMDetection/experiment/data/refactoring-toy-example_cr -c 5 -o /Users/leichen/Code/pythonProject/pythonProject/pythonProject/SCRMDetection/experiment/output/result/ -p local >run_log/refactoring-toy-example_cr5.log 2>&1 &
+```
+
+* trace
+```shell
+python3 command.py -m trace -r /Users/leichen/Code/pythonProject/pythonProject/pythonProject/SCRMDetection/experiment/data/refactoring-toy-example_cr -d /Users/leichen/Code/pythonProject/pythonProject/pythonProject/SCRMDetection/experiment/output/result/refactoring-toy-example_cr/ --start 2 --end 5 >run_log/so_tr_refactoring-toy-example_cr.log
+```
+
+* retrace
+```shell
+python3 retrace.py -t /Users/leichen/Code/pythonProject/pythonProject/pythonProject/SCRMDetection/experiment/output/result/refactoring-toy-example_cr/ -r /Users/leichen/Code/pythonProject/pythonProject/pythonProject/SCRMDetection/experiment/data/refactoring-toy-example_cr >run_log/retrace_refactoring-toy-example_cr.log
+```
+
+
+trace is for compare refs in fined-grained and coarse-grained
+retrace is for compare refs in different granularities coarse-grained commits
+
+
+### RQs
+* RQ1: How frequently do CGRs appear because of granularity change?
+in `/RQs/RQ1_seperate.py`, 

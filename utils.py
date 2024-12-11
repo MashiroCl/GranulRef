@@ -5,6 +5,7 @@
 4.squash
 5.RM on remaining all commits (merge excluded)
 """
+import pathlib
 
 from jsonUtils import JsonUtils
 import json
@@ -65,7 +66,7 @@ def exclude_0_in_dict(dict):
     return dict2
 
 
-def squashWithRecipe(repo, cc_lists_str, recipe, git_stein, squashedOutput, steinOuput) -> str:
+def squashWithRecipe(repo, cc_lists_str, recipe, git_stein, squashedOutput, steinOuput, coarse_normal_commit_map) -> str:
     '''
     squash commits according to recipe.json using git_stein
     :param jU: jsonUtil instance
@@ -92,6 +93,7 @@ def squashWithRecipe(repo, cc_lists_str, recipe, git_stein, squashedOutput, stei
                 'Attention: merge not excluded'
                 if temp[0].strip() == eachList[0].strip():
                     result.append(temp[1].strip())
+                    coarse_normal_commit_map[temp[1].strip()] = eachList
     return result
 
 
@@ -116,3 +118,18 @@ def outputTime(t) -> str:
 def timeRecord():
     return time.time()
 
+
+def load_coarse_normal_commit_map(path)->dict:
+    if not path.exists():
+        return {}
+    with open(str(path)) as f:
+        data = json.load(f)
+    return dict(data)
+
+
+def load_commit_pairs_all(repo_path):
+    res = dict()
+    for i in range(2, 6):
+        squash_log_ps = pathlib.Path(repo_path).joinpath(str(i)).joinpath(f"coarse_normal_commit_map.json")
+        res.update(load_coarse_normal_commit_map(squash_log_ps))
+    return res

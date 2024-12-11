@@ -1,0 +1,164 @@
+******************************
+coarse grained commits 69971fbeeb1035be4e2edfa699aa58cf7782068f
+fine grained commits ('d26c761a0d03bced354ef4db763ca004aa51f387', '15621441f1479c990d28775558334749bcb8b53d')
+Generation
+Extract Interfacesrc/main/java/com/jfinal/plugin/activerecord/Model.java@com.jfinal.plugin.activerecord.Modelsrc/main/java/com/jfinal/plugin/activerecord/Model.java@com.jfinal.plugin.activerecord.Modelsrc/main/java/com/jfinal/plugin/activerecord/Model.java 25:824
+******************************
+******************************
+coarse grained commits 024f4e214a0119f464d40ebaae3dc19c426ee392
+fine grained commits ('f9df0a16ae66939541e05b12c032c27de9917f21', 'd2c4ac8b10ddaa6f8215618742aa7eeba78841c9')
+Generation
+Rename Parametersrc/main/java/com/jfinal/template/expr/ast/MethodKit.java@extensionClass : Class<?>src/main/java/com/jfinal/kit/ReflectKit.java@clazz : Class<?>src/main/java/com/jfinal/template/expr/ast/MethodKit.java 262:262
+Generation
+Change Method Access Modifiersrc/main/java/com/jfinal/template/expr/ast/MethodKit.java@private newExtensionObject(extensionClass Class<?>) : Objectsrc/main/java/com/jfinal/kit/ReflectKit.java@public newInstance(clazz Class<?>) : Objectsrc/main/java/com/jfinal/template/expr/ast/MethodKit.java 262:265
+Generation
+Move And Rename Methodsrc/main/java/com/jfinal/template/expr/ast/MethodKit.java@private newExtensionObject(extensionClass Class<?>) : Objectsrc/main/java/com/jfinal/kit/ReflectKit.java@public newInstance(clazz Class<?>) : Objectsrc/main/java/com/jfinal/template/expr/ast/MethodKit.java 262:265
+******************************
+******************************
+coarse grained commits 6cab119773e20c0bec665ebadc9eb6fae3a42f86
+fine grained commits ('19df9cf107c03e448965c25ff0fd67ac8db2a46d', '64eaf16d6e38b1663d8991e79f818b308b9de86c')
+Generation
+Change Class Access Modifiersrc/com/jfinal/plugin/activerecord/CaseInsensitiveMapFactory.java@com.jfinal.plugin.activerecord.CaseInsensitiveMapsrc/com/jfinal/plugin/activerecord/CaseInsensitiveContainerFactory.java@com.jfinal.plugin.activerecord.CaseInsensitiveContainerFactory.CaseInsensitiveMapsrc/com/jfinal/plugin/activerecord/CaseInsensitiveMapFactory.java 19:53
+Generation
+Add Class Modifiersrc/com/jfinal/plugin/activerecord/CaseInsensitiveMapFactory.java@com.jfinal.plugin.activerecord.CaseInsensitiveMapsrc/com/jfinal/plugin/activerecord/CaseInsensitiveContainerFactory.java@com.jfinal.plugin.activerecord.CaseInsensitiveContainerFactory.CaseInsensitiveMapsrc/com/jfinal/plugin/activerecord/CaseInsensitiveMapFactory.java 19:53
+******************************
+******************************
+coarse grained commits a8c1237f9f89b30974d74f8a830449694d995faa
+fine grained commits ('e31e4c714777a70ef58f700e903c864681832fe9', '0cf891403dee90328ffb5b4f1b1c90379c062ac3')
+Generation
+Change Method Access Modifiersrc/main/java/com/jfinal/plugin/activerecord/DbPro.java@private getGeneratedKey(pst PreparedStatement, record Record, pKeys String[]) : voidsrc/main/java/com/jfinal/plugin/activerecord/dialect/PostgreSqlDialect.java@public getRecordGeneratedKey(pst PreparedStatement, record Record, pKeys String[]) : voidsrc/main/java/com/jfinal/plugin/activerecord/DbPro.java 438:445
+Generation
+Move And Rename Methodsrc/main/java/com/jfinal/plugin/activerecord/DbPro.java@private getGeneratedKey(pst PreparedStatement, record Record, pKeys String[]) : voidsrc/main/java/com/jfinal/plugin/activerecord/dialect/PostgreSqlDialect.java@public getRecordGeneratedKey(pst PreparedStatement, record Record, pKeys String[]) : voidsrc/main/java/com/jfinal/plugin/activerecord/DbPro.java 438:445
+******************************
+******************************
+coarse grained commits 9ef61fb07f1bc45a0063ab62b6c72abdca1296b6
+fine grained commits ('0b5c7246cce4b9b43f0617a132b849bf0dac3523', 'f5fa8f4ce132664eed62c8504753c09e0cbc9ea5')
+Generation
+Change Variable Typesrc/main/java/com/jfinal/plugin/activerecord/Model.java@colType : Classsrc/main/java/com/jfinal/plugin/activerecord/dialect/Dialect.java@colType : Class<?>src/main/java/com/jfinal/plugin/activerecord/Model.java 304:304
+Generation
+Add Parametersrc/main/java/com/jfinal/plugin/activerecord/Model.java@private getGeneratedKey(pst PreparedStatement, table Table, config Config) : voidsrc/main/java/com/jfinal/plugin/activerecord/dialect/Dialect.java@model : Model<?>src/main/java/com/jfinal/plugin/activerecord/Model.java 298:315
+Generation
+Remove Parametersrc/main/java/com/jfinal/plugin/activerecord/Model.java@config : Configsrc/main/java/com/jfinal/plugin/activerecord/dialect/Dialect.java@public getModelGeneratedKey(model Model<?>, pst PreparedStatement, table Table) : voidsrc/main/java/com/jfinal/plugin/activerecord/Model.java 298:298
+Generation
+Change Method Access Modifiersrc/main/java/com/jfinal/plugin/activerecord/Model.java@private getGeneratedKey(pst PreparedStatement, table Table, config Config) : voidsrc/main/java/com/jfinal/plugin/activerecord/dialect/Dialect.java@public getModelGeneratedKey(model Model<?>, pst PreparedStatement, table Table) : voidsrc/main/java/com/jfinal/plugin/activerecord/Model.java 298:315
+Generation
+Move And Rename Methodsrc/main/java/com/jfinal/plugin/activerecord/Model.java@private getGeneratedKey(pst PreparedStatement, table Table, config Config) : voidsrc/main/java/com/jfinal/plugin/activerecord/dialect/Dialect.java@public getModelGeneratedKey(model Model<?>, pst PreparedStatement, table Table) : voidsrc/main/java/com/jfinal/plugin/activerecord/Model.java 298:315
+******************************
+******************************
+coarse grained commits 26679671dd8aa4849e9619a00c5f550ec12b8773
+fine grained commits ('0cf891403dee90328ffb5b4f1b1c90379c062ac3', '0b5c7246cce4b9b43f0617a132b849bf0dac3523', 'f5fa8f4ce132664eed62c8504753c09e0cbc9ea5')
+Generation
+Change Method Access Modifiersrc/main/java/com/jfinal/plugin/activerecord/DbPro.java@private getGeneratedKey(pst PreparedStatement, record Record, pKeys String[]) : voidsrc/main/java/com/jfinal/plugin/activerecord/dialect/Dialect.java@public getRecordGeneratedKey(pst PreparedStatement, record Record, pKeys String[]) : voidsrc/main/java/com/jfinal/plugin/activerecord/DbPro.java 438:445
+Generation
+Move And Rename Methodsrc/main/java/com/jfinal/plugin/activerecord/DbPro.java@private getGeneratedKey(pst PreparedStatement, record Record, pKeys String[]) : voidsrc/main/java/com/jfinal/plugin/activerecord/dialect/Dialect.java@public getRecordGeneratedKey(pst PreparedStatement, record Record, pKeys String[]) : voidsrc/main/java/com/jfinal/plugin/activerecord/DbPro.java 438:445
+******************************
+******************************
+coarse grained commits 245d241c1c5ef03fb160fed961b818fb127e8b90
+fine grained commits ('e9458b147ed8ebd7b590090cd868666897053ed6', 'e5326ade58bcc270e4445e7e9a650f270e576196', '52585b4fb8f6b1a20e212f6f9b8f265ce23f2a77')
+Generation
+Rename Packagesrc/main/java/com/jfinal/core/typeconverter/IConverter.java@com.jfinal.core.typeconverter.IConvertersrc/main/java/com/jfinal/core/converter/IConverter.java@com.jfinal.core.converter.IConvertersrc/main/java/com/jfinal/core/typeconverter/IConverter.java 5:7
+******************************
+******************************
+coarse grained commits 06ccb9b16cca24ab640ce7020202eaf5c3e6fcab
+fine grained commits ('2ed9de04b9bea6439c8fec4d258b6646e8b37120', '2a4ab6913798e32d6b8ea03cf49adb05da8fd017', 'e7b3be36fc086aef411eccdda7372e6392ff6b9e')
+Generation
+Rename Methodsrc/com/jfinal/core/ModelInjector.java@private injectActiveRecordModel(model Model<?>, modelName String, request HttpServletRequest, skipConvertError boolean) : voidsrc/com/jfinal/core/Injector.java@public injectModel(modelClass Class<T>, modelName String, request HttpServletRequest, skipConvertError boolean) : Tsrc/com/jfinal/core/ModelInjector.java 63:87
+Generation
+Add Parametersrc/com/jfinal/core/ModelInjector.java@public inject(modelClass Class<?>, modelName String, request HttpServletRequest, skipConvertError boolean) : Tsrc/com/jfinal/core/Injector.java@beanClass : Class<T>src/com/jfinal/core/ModelInjector.java 22:37
+Generation
+Change Variable Typesrc/com/jfinal/core/ModelInjector.java@methods : Method[]src/com/jfinal/core/Injector.java@modelName : Stringsrc/com/jfinal/core/ModelInjector.java 40:40
+Generation
+Rename Variablesrc/com/jfinal/core/ModelInjector.java@methods : Method[]src/com/jfinal/core/Injector.java@modelName : Stringsrc/com/jfinal/core/ModelInjector.java 40:40
+Generation
+Remove Method Modifiersrc/com/jfinal/core/ModelInjector.java@private injectCommonModel(model Object, modelName String, request HttpServletRequest, modelClass Class<?>, skipConvertError boolean) : voidsrc/com/jfinal/core/Injector.java@public injectModel(modelClass Class<T>, request HttpServletRequest, skipConvertError boolean) : Tsrc/com/jfinal/core/ModelInjector.java 39:61
+Generation
+Extract Variablesrc/com/jfinal/core/ModelInjector.java@src/com/jfinal/core/Injector.java@attrName : Stringsrc/com/jfinal/core/ModelInjector.java 74:74
+Generation
+Change Variable Typesrc/com/jfinal/core/ModelInjector.java@colType : Classsrc/com/jfinal/core/Injector.java@colType : Class<?>src/com/jfinal/core/ModelInjector.java 74:74
+Generation
+Localize Parametersrc/com/jfinal/core/ModelInjector.java@model : Model<?>src/com/jfinal/core/Injector.java@model : Model<?>src/com/jfinal/core/ModelInjector.java 64:64
+Generation
+Rename Variablesrc/com/jfinal/core/ModelInjector.java@paraKey : Stringsrc/com/jfinal/core/Injector.java@paraName : Stringsrc/com/jfinal/core/ModelInjector.java 71:71
+Generation
+Add Parametersrc/com/jfinal/core/ModelInjector.java@private injectActiveRecordModel(model Model<?>, modelName String, request HttpServletRequest, skipConvertError boolean) : voidsrc/com/jfinal/core/Injector.java@modelClass : Class<T>src/com/jfinal/core/ModelInjector.java 63:87
+Generation
+Modify Method Annotationsrc/com/jfinal/core/ModelInjector.java@@SuppressWarnings("rawtypes")src/com/jfinal/core/Injector.java@@SuppressWarnings("unchecked")src/com/jfinal/core/ModelInjector.java 63:63
+Generation
+Change Method Access Modifiersrc/com/jfinal/core/ModelInjector.java@private injectActiveRecordModel(model Model<?>, modelName String, request HttpServletRequest, skipConvertError boolean) : voidsrc/com/jfinal/core/Injector.java@public injectModel(modelClass Class<T>, modelName String, request HttpServletRequest, skipConvertError boolean) : Tsrc/com/jfinal/core/ModelInjector.java 63:87
+******************************
+******************************
+coarse grained commits ebe464d8ced41ca86d75c160584562d74dbf0f79
+fine grained commits ('8cdb817bc361f24484120a11237e9cd12d7e0c81', '99b6ed0e2c93c03095a91dd0e430551c6bfd4a50', '7e718d9ab08695c70728a39b4b5bca9ca4334ecf')
+Generation
+Extract Methodsrc/main/java/com/jfinal/aop/AopFactory.java@public inject(targetClass Class<?>, targetObject Object, injectDepth int) : voidsrc/main/java/com/jfinal/aop/AopFactory.java@protected doGet(targetClass Class<T>) : Tsrc/main/java/com/jfinal/aop/AopFactory.java 77:109
+Generation
+Change Variable Typesrc/main/java/com/jfinal/aop/AopFactory.java@fieldInjectedClass : Class<?>src/main/java/com/jfinal/aop/AopFactory.java@targetClass : Class<T>src/main/java/com/jfinal/aop/AopFactory.java 94:94
+Generation
+Parameterize Variablesrc/main/java/com/jfinal/aop/AopFactory.java@fieldInjectedClass : Class<?>src/main/java/com/jfinal/aop/AopFactory.java@targetClass : Class<T>src/main/java/com/jfinal/aop/AopFactory.java 94:94
+******************************
+******************************
+coarse grained commits 8b869f6be1c664cb7daffe309cfd3a201c0000a2
+fine grained commits ('e31e4c714777a70ef58f700e903c864681832fe9', '0cf891403dee90328ffb5b4f1b1c90379c062ac3', '0b5c7246cce4b9b43f0617a132b849bf0dac3523')
+Generation
+Change Variable Typesrc/main/java/com/jfinal/plugin/activerecord/Model.java@colType : Classsrc/main/java/com/jfinal/plugin/activerecord/dialect/PostgreSqlDialect.java@colType : Class<?>src/main/java/com/jfinal/plugin/activerecord/Model.java 304:304
+Generation
+Add Parametersrc/main/java/com/jfinal/plugin/activerecord/Model.java@private getGeneratedKey(pst PreparedStatement, table Table, config Config) : voidsrc/main/java/com/jfinal/plugin/activerecord/dialect/PostgreSqlDialect.java@model : Model<?>src/main/java/com/jfinal/plugin/activerecord/Model.java 298:315
+Generation
+Remove Parametersrc/main/java/com/jfinal/plugin/activerecord/Model.java@config : Configsrc/main/java/com/jfinal/plugin/activerecord/dialect/PostgreSqlDialect.java@public getModelGeneratedKey(model Model<?>, pst PreparedStatement, table Table) : voidsrc/main/java/com/jfinal/plugin/activerecord/Model.java 298:298
+Generation
+Change Method Access Modifiersrc/main/java/com/jfinal/plugin/activerecord/Model.java@private getGeneratedKey(pst PreparedStatement, table Table, config Config) : voidsrc/main/java/com/jfinal/plugin/activerecord/dialect/PostgreSqlDialect.java@public getModelGeneratedKey(model Model<?>, pst PreparedStatement, table Table) : voidsrc/main/java/com/jfinal/plugin/activerecord/Model.java 298:315
+Generation
+Move And Rename Methodsrc/main/java/com/jfinal/plugin/activerecord/Model.java@private getGeneratedKey(pst PreparedStatement, table Table, config Config) : voidsrc/main/java/com/jfinal/plugin/activerecord/dialect/PostgreSqlDialect.java@public getModelGeneratedKey(model Model<?>, pst PreparedStatement, table Table) : voidsrc/main/java/com/jfinal/plugin/activerecord/Model.java 298:315
+******************************
+******************************
+coarse grained commits 14be5dea5f1bec904473bbda1eda0d750891ee74
+fine grained commits ('448605657d99deea8bec56c979cfbf050805f259', '23a45fa61cd9a4522a4a168c7000111e6a447ead', 'edbe10d47bc3d1919c9d0f31aeac8f7ed29c1b58', '45f4f76c17c2d7fd32006b37b4a93448bab707ad')
+Generation
+Move And Rename Classsrc/main/java/com/jfinal/aop/Callback.java@com.jfinal.aop.Callbacksrc/main/java/com/jfinal/ext/proxy/CglibCallback.java@com.jfinal.ext.proxy.CglibCallbacksrc/main/java/com/jfinal/aop/Callback.java 11:62
+Generation
+Change Parameter Typesrc/main/java/com/jfinal/aop/Invocation.java@methodProxy : MethodProxysrc/main/java/com/jfinal/aop/Invocation.java@callback : Callbacksrc/main/java/com/jfinal/aop/Invocation.java 36:36
+Generation
+Rename Parametersrc/main/java/com/jfinal/aop/Invocation.java@methodProxy : MethodProxysrc/main/java/com/jfinal/aop/Invocation.java@callback : Callbacksrc/main/java/com/jfinal/aop/Invocation.java 36:36
+Generation
+Reorder Parametersrc/main/java/com/jfinal/aop/Invocation.java@target : Objectsrc/main/java/com/jfinal/aop/Invocation.java@target : Objectsrc/main/java/com/jfinal/aop/Invocation.java 36:36
+Generation
+Rename Attributesrc/main/java/com/jfinal/aop/Invocation.java@methodProxy : MethodProxysrc/main/java/com/jfinal/aop/Invocation.java@callback : Callbacksrc/main/java/com/jfinal/aop/Invocation.java 18:18
+Generation
+Change Attribute Typesrc/main/java/com/jfinal/aop/Invocation.java@methodProxy : MethodProxysrc/main/java/com/jfinal/aop/Invocation.java@callback : Callbacksrc/main/java/com/jfinal/aop/Invocation.java 18:18
+******************************
+******************************
+coarse grained commits 884b5eea953d72cc910d147a4016de204add9977
+fine grained commits ('ca4599670bfcd9a4971c8d980c8a47b11d29743a', 'b2db277f8b46f13ed9dc530576ceb9f5c9f6bc01', 'e7e5a1fd57524657d8c3b7265cd7ac1bc705039c', '3d6fafa4d7b7c0dd62b9f39b73d36b14fcdd29ac')
+Generation
+Move And Inline Methodsrc/main/java/com/jfinal/template/stat/ast/Stat.java@protected write(writer Writer, chars char[]) : voidsrc/main/java/com/jfinal/template/ext/directive/RandomDirective.java@public exec(env Env, scope Scope, writer Writer) : voidsrc/main/java/com/jfinal/template/stat/ast/Stat.java 45:51
+******************************
+******************************
+coarse grained commits 1937883edf203d7b707bf4d23feb2cee5eab9d8e
+fine grained commits ('19df9cf107c03e448965c25ff0fd67ac8db2a46d', '64eaf16d6e38b1663d8991e79f818b308b9de86c', '3418b5628aaac4fc496da3fbb9ba07129049991b', 'd385185bf15495ea16308b2d73a4868b537f1d39')
+Generation
+Split Packagesrc/com/jfinal/util/SessionIdGenerator.java@com.jfinal.util.SessionIdGeneratorsrc/com/jfinal/ext/kit/SessionIdGenerator.java@com.jfinal.ext.kit.SessionIdGeneratorsrc/com/jfinal/util/SessionIdGenerator.java 9:46
+******************************
+******************************
+coarse grained commits 37039b8fbd319c6d7fe368fae105fdabb659419f
+fine grained commits ('6991e8cd00e138f14d5cc740a5130c8f32f91721', '581f925168959ff21a136bde5d483b3439e0ba8f', '2e37bfa1bd0499c8c61fbb5769ec6fe958e4a1f0', 'ca808f16368993db2f830a5fe76cff26748b3975', '115e3ca909cf01517e4d1d31363951cecc54da44')
+Generation
+Change Parameter Typesrc/com/jfinal/plugin/activerecord/Db.java@dataSource : DataSourcesrc/com/jfinal/plugin/activerecord/Db.java@config : Configsrc/com/jfinal/plugin/activerecord/Db.java 503:503
+Generation
+Rename Parametersrc/com/jfinal/plugin/activerecord/Db.java@dataSource : DataSourcesrc/com/jfinal/plugin/activerecord/Db.java@config : Configsrc/com/jfinal/plugin/activerecord/Db.java 503:503
+Generation
+Move Methodsrc/com/jfinal/plugin/activerecord/Db.java@public query(dataSource DataSource, sql String) : List<T>src/com/jfinal/plugin/activerecord/Db.java@public query(configName String, sql String) : List<T>src/com/jfinal/plugin/activerecord/Db.java 71:73
+Generation
+Move Methodsrc/com/jfinal/plugin/activerecord/Db.java@public update(dataSource DataSource, sql String) : intsrc/com/jfinal/plugin/activerecord/Db.java@public update(configName String, sql String) : intsrc/com/jfinal/plugin/activerecord/Db.java 233:235
+Generation
+Move Methodsrc/com/jfinal/plugin/activerecord/Db.java@public find(dataSource DataSource, sql String) : List<Record>src/com/jfinal/plugin/activerecord/Db.java@public find(configName String, sql String) : List<Record>src/com/jfinal/plugin/activerecord/Db.java 287:289
+******************************
+******************************
+coarse grained commits 86529df20799ba7be0b1e962ee6d3c892b3ff6cd
+fine grained commits ('45f4f76c17c2d7fd32006b37b4a93448bab707ad', '156be8e944e55fbb010e27d3bcf71bf136359dcd', '1588ec3ca6139422a4757b62daca304be0003b9c', 'fe9b040dedfd5437050a6d108b066eb5633be4f5', '1ea6b52b53f591e95a25d1b110950f908d64dc55')
+Generation
+Rename Methodsrc/main/java/com/jfinal/aop/AopFactory.java@public setEnhance(enhance boolean) : AopFactorysrc/main/java/com/jfinal/aop/AopFactory.java@public setInjectSuperClass(injectSuperClass boolean) : AopFactorysrc/main/java/com/jfinal/aop/AopFactory.java 148:152
+Generation
+Rename Parametersrc/main/java/com/jfinal/aop/AopFactory.java@enhance : booleansrc/main/java/com/jfinal/aop/AopFactory.java@injectSuperClass : booleansrc/main/java/com/jfinal/aop/AopFactory.java 149:149
+Generation
+Remove Method Annotationsrc/main/java/com/jfinal/aop/AopFactory.java@@Deprecatedsrc/main/java/com/jfinal/aop/AopFactory.java@public setInjectSuperClass(injectSuperClass boolean) : AopFactorysrc/main/java/com/jfinal/aop/AopFactory.java 148:148
+******************************

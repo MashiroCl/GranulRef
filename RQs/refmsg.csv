@@ -1,0 +1,12 @@
+"a9137ef1e5b66f54ca13284610d9816e1843cab7->('fca9c6017cb8210a7dd216388bf66e7af3bfd45e', 'd08470c339d317693d86b3efc356e16b1f16ad97')",Modify Class Annotation,"added support for DeadEvent
+,Changed handler inheritance, added unit tests and docu
+"
+"0362c92af77db27be425b3a0365309e17d043059->('e7a76287cb4e9019a2f977240b6d7aa16fea8fe9', 'eb50dbc96ec8f82cfdddd1a17f4106b62cbc3c53')","Rename Class,Add Class Modifier,Change Method Access Modifier,Add Parameter,Remove Method Modifier,Add Parameter,Move And Rename Method,Rename Parameter,Rename Method,Move And Rename Class","Added FilteredMessage, interface optimization, refactorings
+,added FilteredEvent, interface optimization
+"
+"26c9c80a3f260a3db2067598fee6d4a0f9ed275d->('687fbb72ed2f716332e4ff08229b8566e31d4f91', '95c5d8e535d0dc0c36438defd45f9917f124f713')","Change Variable Type,Change Return Type,Rename Method","release of 1.0.5.RC
+,release of 1.0.4.RC, fixed #8
+"
+"4c0ee6d3a8c905d9eba25954d8288988cab3d908->('9ce3ceb6f4f13ff016ee6c7e24ca6a38eb1c189f', '2ae0e5fae09cb0cf4127a5528b21de0e7b2cf60d')","Change Method Access Modifier,Change Class Access Modifier,Move Class,Move Class,Change Parameter Type,Change Class Access Modifier,Change Class Access Modifier,Move Class,Change Method Access Modifier","refactorings. abstract base class. repackaging
+,introduced specialized subscriptions for better performance and customization options
+"

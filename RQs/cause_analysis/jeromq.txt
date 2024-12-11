@@ -1,0 +1,342 @@
+******************************
+coarse grained commits 8d107b1e13416bce231210aed35f7c26ac940372
+fine grained commits ('16f743e4e62c1977f728fad20b2c56931cbb911b', 'bc325e3e545f254bc08cd6e7ecbea6e15f29a5d9')
+Generation
+Inline Variablesrc/main/java/zmq/io/StreamEngine.java@rc : booleansrc/main/java/zmq/io/StreamEngine.java@src/main/java/zmq/io/StreamEngine.java 477:477
+******************************
+******************************
+coarse grained commits 82d6e321aa8be96e0b85858425e8cb2b581a1d33
+fine grained commits ('480539648dc8349e0a57248d102534139bbfb663', 'fd69e57e0b0be21382a3131fdbf78f349a2fb9ec')
+Generation
+Rename Methodsrc/main/java/zmq/ZError.java@public EAGAIN() : voidsrc/main/java/zmq/ZError.java@public clear() : voidsrc/main/java/zmq/ZError.java 138:140
+******************************
+******************************
+coarse grained commits ff6c6b84197f4115512f6786796ff670faf984a0
+fine grained commits ('72bc67fd0aac68d38cc9358498d7499a529f2c1d', '8b1a36f37d07ad521133bf45448bec6897e3ada6')
+Generation
+Rename Packagesrc/main/java/org/zeromq/ZDecoder.java@org.zeromq.ZDecodersrc/main/java/org/jeromq/ZDecoder.java@org.jeromq.ZDecodersrc/main/java/org/zeromq/ZDecoder.java 8:153
+******************************
+******************************
+coarse grained commits ba12fe78b08fdaace992f7b8b018151d2625af8c
+fine grained commits ('51aaa5992c354853c55e9f835b019b60e64aa21c', '7993ad79fd7a270b319b1ce06ed67ee913547102')
+Generation
+Extract Classsrc/main/java/zmq/Proxy.java@zmq.Proxysrc/main/java/zmq/Proxy.java@zmq.Proxysrc/main/java/zmq/Proxy.java 4:113
+Generation
+Move Methodsrc/main/java/zmq/Proxy.java@protected xsend(msg_ Msg, flags_ int) : booleansrc/main/java/zmq/Sub.java@protected xsend(msg_ Msg, flags_ int) : booleansrc/main/java/zmq/Proxy.java 19:36
+Generation
+Move Methodsrc/main/java/zmq/Proxy.java@protected xhas_out() : booleansrc/main/java/zmq/Sub.java@protected xhas_out() : booleansrc/main/java/zmq/Proxy.java 81:88
+******************************
+******************************
+coarse grained commits f645fc9da3be5b73c685bde8cc73b4dd4ff996ef
+fine grained commits ('b2adccac2e6c4bc7b772efe12177ad56c519a7e8', '488c48bf81b90c8c55b6c674ba0fe197948c210c')
+Generation
+Add Class Modifiersrc/main/java/zmq/FD.java@zmq.FDsrc/test/java/zmq/TestUtil.java@zmq.TestUtil.DummyCtxsrc/main/java/zmq/FD.java 3:5
+******************************
+******************************
+coarse grained commits e621c991925a2a1ad8d828d8896157468e61e2ec
+fine grained commits ('cbb4daf48d4a66a92f2bfc0d6b86cdd97b87be63', '5a7d1af4f30e2def6d16bb74e4f50947c0f73ec8')
+Generation
+Rename Packagesrc/main/java/org/zermq/ZContext.java@org.zermq.ZContextsrc/main/java/org/zeromq/ZContext.java@org.zeromq.ZContextsrc/main/java/org/zermq/ZContext.java 11:103
+Generation
+Move Classsrc/main/java/org/zermq/ZContext.java@org.zermq.ZContextsrc/main/java/org/zeromq/ZContext.java@org.zeromq.ZContextsrc/main/java/org/zermq/ZContext.java 11:103
+Generation
+Move Classsrc/main/java/org/zermq/ZMsg.java@org.zermq.ZMsgsrc/main/java/org/zeromq/ZMsg.java@org.zeromq.ZMsgsrc/main/java/org/zermq/ZMsg.java 17:477
+Generation
+Move Classsrc/main/java/org/zermq/ZFrame.java@org.zermq.ZFramesrc/main/java/org/zeromq/ZFrame.java@org.zeromq.ZFramesrc/main/java/org/zermq/ZFrame.java 8:174
+Generation
+Move Classsrc/main/java/org/zermq/ZMQ.java@org.zermq.ZMQsrc/main/java/org/zeromq/ZMQ.java@org.zeromq.ZMQsrc/main/java/org/zermq/ZMQ.java 8:84
+Generation
+Change Attribute Typesrc/main/java/org/zermq/ZFrame.java@data : byte[]src/main/java/org/zeromq/ZFrame.java@data : ByteBuffersrc/main/java/org/zermq/ZFrame.java 12:12
+Generation
+Change Return Typesrc/main/java/org/zermq/ZFrame.java@byte[]src/main/java/org/zeromq/ZFrame.java@ByteBuffersrc/main/java/org/zermq/ZFrame.java 36:36
+Generation
+Extract Variablesrc/main/java/org/zermq/ZFrame.java@src/main/java/org/zeromq/ZFrame.java@arr : byte[]src/main/java/org/zermq/ZFrame.java 111:111
+Generation
+Change Return Typesrc/main/java/org/zermq/ZFrame.java@byte[]src/main/java/org/zeromq/ZFrame.java@ByteBuffersrc/main/java/org/zermq/ZFrame.java 154:154
+Generation
+Change Return Typesrc/main/java/org/zermq/ZMQ.java@voidsrc/main/java/org/zeromq/ZMQ.java@booleansrc/main/java/org/zermq/ZMQ.java 52:52
+Generation
+Change Return Typesrc/main/java/org/zermq/ZMQ.java@byte[]src/main/java/org/zeromq/ZMQ.java@ByteBuffersrc/main/java/org/zermq/ZMQ.java 60:60
+******************************
+******************************
+coarse grained commits f752b109826983ecdb964337a6ec6b3fa728e551
+fine grained commits ('51b6f2aec190eb979f3bbe027c95a74a11dc32dc', '1c31092459ccd2594fa2923d045ea20fc7013ef7')
+Generation
+Move Attributesrc/main/java/zmq/Command.java@package socket : SocketBasesrc/main/java/zmq/IpcListener.java@private socket : SocketBasesrc/main/java/zmq/Command.java 34:34
+Generation
+Change Attribute Access Modifiersrc/main/java/zmq/Command.java@package socket : SocketBasesrc/main/java/zmq/IpcListener.java@private socket : SocketBasesrc/main/java/zmq/Command.java 34:34
+******************************
+******************************
+coarse grained commits 7dca53d90ed5c9c24c526c2b7b5b058c1480f7c5
+fine grained commits ('359d36bd1d4c2a1f6b7c0628d81b54dd54352279', 'ed4e48482863f911078d2cca1a0ce71711a38581')
+Generation
+Remove Parametersrc/main/java/zmq/ZMQ.java@msg : Msgsrc/main/java/org/zermq/ZMQ.java@public close() : voidsrc/main/java/zmq/ZMQ.java 185:185
+Generation
+Change Method Access Modifiersrc/main/java/zmq/ZMQ.java@private zmq_msg_close(msg Msg) : voidsrc/main/java/org/zermq/ZMQ.java@public close() : voidsrc/main/java/zmq/ZMQ.java 185:187
+Generation
+Remove Method Modifiersrc/main/java/zmq/ZMQ.java@private zmq_msg_close(msg Msg) : voidsrc/main/java/org/zermq/ZMQ.java@public close() : voidsrc/main/java/zmq/ZMQ.java 185:187
+Generation
+Move And Rename Methodsrc/main/java/zmq/ZMQ.java@private zmq_msg_close(msg Msg) : voidsrc/main/java/org/zermq/ZMQ.java@public close() : voidsrc/main/java/zmq/ZMQ.java 185:187
+******************************
+******************************
+coarse grained commits eb80110e4c702fe1eef4bbd831c19723b32c3b73
+fine grained commits ('a8ea374d703ba4dbed36ff2c39b3b6a4a6d25f44', 'a4983cbe3be0038812ae640789dcd628aab83bae')
+Generation
+Change Variable Typesrc/main/java/zmq/SocketBase.java@rc : intsrc/main/java/zmq/SocketBase.java@brc : booleansrc/main/java/zmq/SocketBase.java 106:106
+Generation
+Rename Variablesrc/main/java/zmq/SocketBase.java@rc : intsrc/main/java/zmq/SocketBase.java@brc : booleansrc/main/java/zmq/SocketBase.java 106:106
+******************************
+******************************
+coarse grained commits 7c7497c06829d3749ebee290542d6e0793f81d35
+fine grained commits ('bc325e3e545f254bc08cd6e7ecbea6e15f29a5d9', '2fe65c234b5945771fb893a63b9472d4d9db15bb')
+Generation
+Inline Variablesrc/main/java/zmq/io/StreamEngine.java@rc : booleansrc/main/java/zmq/io/StreamEngine.java@src/main/java/zmq/io/StreamEngine.java 477:477
+******************************
+******************************
+coarse grained commits 2e2052ff2646358bfcdf95b2d5983d220f65950c
+fine grained commits ('d07d0c3181653226c1b5cbd47fa2da10596d9e0b', '72bc67fd0aac68d38cc9358498d7499a529f2c1d')
+Generation
+Remove Method Modifiersrc/main/java/zmq/ZMQ.java@public zmq_poll_stop() : voidsrc/test/java/zmq/TestProxyTcp.java@public wakeup() : voidsrc/main/java/zmq/ZMQ.java 414:420
+Generation
+Move And Rename Methodsrc/main/java/zmq/ZMQ.java@public zmq_poll_stop() : voidsrc/test/java/zmq/TestProxyTcp.java@public wakeup() : voidsrc/main/java/zmq/ZMQ.java 414:420
+******************************
+******************************
+coarse grained commits 970c430f5063433f03182226dace12c946bfcbd2
+fine grained commits ('d2f4b907698672d4c5433d4798cb78be53e40c43', '51aaa5992c354853c55e9f835b019b60e64aa21c')
+Generation
+Push Down Methodsrc/main/java/zmq/ZObject.java@public toString() : Stringsrc/main/java/zmq/Pipe.java@public toString() : Stringsrc/main/java/zmq/ZObject.java 325:328
+******************************
+******************************
+coarse grained commits 5ba85653c0bcb6c1ff0b744489b19330bb898020
+fine grained commits ('7993ad79fd7a270b319b1ce06ed67ee913547102', 'b2adccac2e6c4bc7b772efe12177ad56c519a7e8')
+Generation
+Change Parameter Typesrc/main/java/zmq/Options.java@optval_ : intsrc/main/java/zmq/Options.java@optval_ : Objectsrc/main/java/zmq/Options.java 96:96
+******************************
+******************************
+coarse grained commits b0e32983c75bf26b68801533037e6ccb6db20fac
+fine grained commits ('5a7d1af4f30e2def6d16bb74e4f50947c0f73ec8', '51b6f2aec190eb979f3bbe027c95a74a11dc32dc')
+Generation
+Rename Variablesrc/main/java/zmq/SocketBase.java@address : Stringsrc/main/java/zmq/SocketBase.java@path : Stringsrc/main/java/zmq/SocketBase.java 554:554
+******************************
+******************************
+coarse grained commits 7af0927755504cf1dd6e78bac7d8e80f620169b8
+fine grained commits ('ed4e48482863f911078d2cca1a0ce71711a38581', 'a8ea374d703ba4dbed36ff2c39b3b6a4a6d25f44')
+Generation
+Change Variable Typesrc/test/java/zmq/TestHwm.java@sent : booleansrc/test/java/zmq/TestHwm.java@m : Msgsrc/test/java/zmq/TestHwm.java 34:34
+Generation
+Rename Variablesrc/test/java/zmq/TestHwm.java@sent : booleansrc/test/java/zmq/TestHwm.java@m : Msgsrc/test/java/zmq/TestHwm.java 34:34
+******************************
+******************************
+coarse grained commits 037c0b3aa9faf1d0fd943d6e60ea577a6dc575cb
+fine grained commits ('5a7d1af4f30e2def6d16bb74e4f50947c0f73ec8', '51b6f2aec190eb979f3bbe027c95a74a11dc32dc', '1c31092459ccd2594fa2923d045ea20fc7013ef7')
+Generation
+Move And Rename Methodsrc/main/java/zmq/IpcAddress.java@public resolve(name_ String, local_ boolean, ip4only_ boolean) : voidsrc/main/java/zmq/StreamEngine.java@public accept_event() : voidsrc/main/java/zmq/IpcAddress.java 12:15
+******************************
+******************************
+coarse grained commits 7d769fff121321185133a5a9626d51966ed52553
+fine grained commits ('51c5b6db420c7e4c3aa5c385a775b4d90d21b511', '7a0cf6b01ae0c17ac3b3f8ed81d2c8987a0dc02c', '134d8d272612b9d4f5cc6072a30c43f847c3b06b')
+Generation
+Extract And Move Methodsrc/test/java/org/zeromq/TestZThread.java@public testFork() : voidsrc/main/java/org/zeromq/ZContext.java@public fork(runnable ZThread.IAttachedRunnable, args Object...) : Socketsrc/test/java/org/zeromq/TestZThread.java 42:62
+Generation
+Extract And Move Methodsrc/test/java/org/zeromq/TestZThread.java@public testClosePipe() : voidsrc/main/java/org/zeromq/ZContext.java@public fork(runnable ZThread.IAttachedRunnable, args Object...) : Socketsrc/test/java/org/zeromq/TestZThread.java 64:94
+******************************
+******************************
+coarse grained commits a03bb9f8c6c6eac1ea5189a77a739f5b2c1b67a6
+fine grained commits ('51aaa5992c354853c55e9f835b019b60e64aa21c', '7993ad79fd7a270b319b1ce06ed67ee913547102', 'b2adccac2e6c4bc7b772efe12177ad56c519a7e8')
+Generation
+Move Attributesrc/main/java/zmq/Encoder.java@private bufsize : intsrc/main/java/zmq/DecoderBase.java@private bufsize : intsrc/main/java/zmq/Encoder.java 21:21
+Generation
+Move Attributesrc/main/java/zmq/SessionBase.java@private name : Stringsrc/test/java/zmq/TestProxyTcp.java@private name : Stringsrc/main/java/zmq/SessionBase.java 35:35
+Generation
+Move Attributesrc/main/java/zmq/SocketBase.java@private name : Stringsrc/test/java/zmq/TestProxyTcp.java@private name : Stringsrc/main/java/zmq/SocketBase.java 48:48
+Generation
+Remove Attribute Modifiersrc/main/java/zmq/SessionBase.java@private name : Stringsrc/test/java/zmq/TestProxyTcp.java@private name : Stringsrc/main/java/zmq/SessionBase.java 35:35
+Generation
+Remove Attribute Modifiersrc/main/java/zmq/SocketBase.java@private name : Stringsrc/test/java/zmq/TestProxyTcp.java@private name : Stringsrc/main/java/zmq/SocketBase.java 48:48
+Generation
+Extract Methodsrc/main/java/zmq/Decoder.java@public process_buffer(buf_ ByteBuffer) : intsrc/main/java/zmq/DecoderBase.java@protected state() : Objectsrc/main/java/zmq/Decoder.java 59:96
+******************************
+******************************
+coarse grained commits c5ae83d88fe8b91562b8eefc21f42b82966c6247
+fine grained commits ('ed4e48482863f911078d2cca1a0ce71711a38581', 'a8ea374d703ba4dbed36ff2c39b3b6a4a6d25f44', 'a4983cbe3be0038812ae640789dcd628aab83bae')
+Generation
+Change Return Typesrc/main/java/zmq/Pair.java@intsrc/main/java/zmq/TcpListener.java@voidsrc/main/java/zmq/Pair.java 32:32
+Generation
+Change Return Typesrc/main/java/zmq/XPub.java@intsrc/main/java/zmq/TcpListener.java@voidsrc/main/java/zmq/XPub.java 99:99
+Generation
+Rename Parametersrc/main/java/zmq/Pair.java@flags_ : intsrc/main/java/zmq/TcpListener.java@id_ : intsrc/main/java/zmq/Pair.java 32:32
+Generation
+Rename Parametersrc/main/java/zmq/XPub.java@flags_ : intsrc/main/java/zmq/TcpListener.java@id_ : intsrc/main/java/zmq/XPub.java 99:99
+Generation
+Remove Parametersrc/main/java/zmq/Pair.java@msg_ : Msgsrc/main/java/zmq/TcpListener.java@public timer_event(id_ int) : voidsrc/main/java/zmq/Pair.java 32:32
+Generation
+Change Method Access Modifiersrc/main/java/zmq/Pair.java@protected xrecv(msg_ Msg, flags_ int) : intsrc/main/java/zmq/TcpListener.java@public timer_event(id_ int) : voidsrc/main/java/zmq/Pair.java 31:34
+Generation
+Change Method Access Modifiersrc/main/java/zmq/XPub.java@protected xrecv(msg_ Msg, flags_ int) : intsrc/main/java/zmq/TcpListener.java@public timer_event(id_ int) : voidsrc/main/java/zmq/XPub.java 98:101
+Generation
+Move And Rename Methodsrc/main/java/zmq/Pair.java@protected xrecv(msg_ Msg, flags_ int) : intsrc/main/java/zmq/TcpListener.java@public timer_event(id_ int) : voidsrc/main/java/zmq/Pair.java 31:34
+Generation
+Remove Parametersrc/main/java/zmq/XPub.java@msg_ : Msgsrc/main/java/zmq/TcpListener.java@public timer_event(id_ int) : voidsrc/main/java/zmq/XPub.java 99:99
+Generation
+Move And Rename Methodsrc/main/java/zmq/XPub.java@protected xrecv(msg_ Msg, flags_ int) : intsrc/main/java/zmq/TcpListener.java@public timer_event(id_ int) : voidsrc/main/java/zmq/XPub.java 98:101
+Generation
+Extract And Move Methodsrc/main/java/zmq/PollerBase.java@package execute_timers() : longsrc/main/java/zmq/Clock.java@public now_ms() : longsrc/main/java/zmq/PollerBase.java 38:58
+******************************
+******************************
+coarse grained commits 58f702e133780b54d1f0cb7537358b1f3b20f36d
+fine grained commits ('22fc82230eaa3b6497d03ec0a963773c48bed62e', 'af552c871ddd997a4f052d5794081fa71c195cac', 'bf9c782adcd7f1efb528479b316c0347839134c4')
+Generation
+Move And Rename Methodsrc/test/java/zmq/TestProxyTcp.java@public wakeup() : voidsrc/main/java/org/jeromq/ZMQ.java@public close() : voidsrc/test/java/zmq/TestProxyTcp.java 267:273
+******************************
+******************************
+coarse grained commits f6653b4279791b7a0b58057cf46b94d096a264bd
+fine grained commits ('b2adccac2e6c4bc7b772efe12177ad56c519a7e8', '488c48bf81b90c8c55b6c674ba0fe197948c210c', 'cbb4daf48d4a66a92f2bfc0d6b86cdd97b87be63', '5a7d1af4f30e2def6d16bb74e4f50947c0f73ec8')
+Generation
+Move Classsrc/main/java/org/zermq/ZMQ.java@org.zermq.ZMQ.Contextsrc/main/java/org/zeromq/ZMQ.java@org.zeromq.ZMQ.Contextsrc/main/java/org/zermq/ZMQ.java 13:29
+Generation
+Move Classsrc/main/java/org/zermq/ZMQ.java@org.zermq.ZMQ.Socketsrc/main/java/org/zeromq/ZMQ.java@org.zeromq.ZMQ.Socketsrc/main/java/org/zermq/ZMQ.java 31:77
+Generation
+Move Methodsrc/main/java/org/zermq/ZMQ.java@public context(ioThreads int) : Contextsrc/main/java/org/zeromq/ZMQ.java@public context(ioThreads int) : Contextsrc/main/java/org/zermq/ZMQ.java 80:82
+Generation
+Add Parametersrc/main/java/zmq/Decoder.java@private next_step(buf_ ByteBuffer, read_pos_ int, to_read_ int, next_ Step) : voidsrc/main/java/zmq/DecoderBase.java@state_ : Objectsrc/main/java/zmq/Decoder.java 44:51
+Generation
+Remove Parametersrc/main/java/zmq/Decoder.java@next_ : Stepsrc/main/java/zmq/DecoderBase.java@protected next_step(buf_ ByteBuffer, to_read_ int, state_ Object) : voidsrc/main/java/zmq/Decoder.java 45:45
+******************************
+******************************
+coarse grained commits 9b508d8f2d735eee28c4acfae548bb6a23aec30f
+fine grained commits ('51b6f2aec190eb979f3bbe027c95a74a11dc32dc', '1c31092459ccd2594fa2923d045ea20fc7013ef7', '359d36bd1d4c2a1f6b7c0628d81b54dd54352279', 'ed4e48482863f911078d2cca1a0ce71711a38581')
+Generation
+Move Attributesrc/main/java/zmq/Command.java@package pipe : Pipesrc/main/java/zmq/Router.java@private pipe : Pipesrc/main/java/zmq/Command.java 29:29
+Generation
+Change Attribute Access Modifiersrc/main/java/zmq/Command.java@package pipe : Pipesrc/main/java/zmq/Router.java@private pipe : Pipesrc/main/java/zmq/Command.java 29:29
+******************************
+******************************
+coarse grained commits 70becc41a9c05a06c1c1e2e94258a73f68caf2ce
+fine grained commits ('8afd6db14e245f5094053dd7f1c5e99976286b39', '22fc82230eaa3b6497d03ec0a963773c48bed62e', 'af552c871ddd997a4f052d5794081fa71c195cac', 'bf9c782adcd7f1efb528479b316c0347839134c4')
+Generation
+Merge Parametersrc/main/java/org/jeromq/ZLog.java@mgr : ZLogManagersrc/main/java/org/jeromq/ZLog.java@conf : ZLogManager.ZLogConfigsrc/main/java/org/jeromq/ZLog.java 37:37
+******************************
+******************************
+coarse grained commits 1055969704e272ab0c051380b2ef7cf12596ffd7
+fine grained commits ('716c6f0c313028ec821555040f60afd2fa0c030b', '823ca86a767bbc8fc963532e24c42fec5a659b39', '47f9de4e44142d9ac959b0d818eb0ec3e8ba0d03', '5722a636594fac1935b560538d44b99a248a7db9')
+Generation
+Add Parametersrc/main/java/zmq/Proxy.java@public read() : Msgsrc/main/java/zmq/Pair.java@flags_ : intsrc/main/java/zmq/Proxy.java 38:54
+Generation
+Change Method Access Modifiersrc/main/java/zmq/Proxy.java@public read() : Msgsrc/main/java/zmq/Pair.java@protected xrecv(flags_ int) : Msgsrc/main/java/zmq/Proxy.java 38:54
+Generation
+Move And Rename Methodsrc/main/java/zmq/Proxy.java@public read() : Msgsrc/main/java/zmq/Pair.java@protected xrecv(flags_ int) : Msgsrc/main/java/zmq/Proxy.java 38:54
+******************************
+******************************
+coarse grained commits b56c61f5ad229d0d6f7bb06f77bea1d7b8ef0151
+fine grained commits ('488c48bf81b90c8c55b6c674ba0fe197948c210c', 'cbb4daf48d4a66a92f2bfc0d6b86cdd97b87be63', '5a7d1af4f30e2def6d16bb74e4f50947c0f73ec8', '51b6f2aec190eb979f3bbe027c95a74a11dc32dc')
+Generation
+Move And Rename Methodsrc/main/java/zmq/IpcAddress.java@public resolve(name_ String, local_ boolean, ip4only_ boolean) : voidsrc/main/java/zmq/SessionBase.java@public in_event() : voidsrc/main/java/zmq/IpcAddress.java 12:15
+******************************
+******************************
+coarse grained commits 350e6a56e615196d7c4f74ebe38f71e3c088e837
+fine grained commits ('1c31092459ccd2594fa2923d045ea20fc7013ef7', '359d36bd1d4c2a1f6b7c0628d81b54dd54352279', 'ed4e48482863f911078d2cca1a0ce71711a38581', 'a8ea374d703ba4dbed36ff2c39b3b6a4a6d25f44')
+Generation
+Move And Inline Methodsrc/main/java/zmq/IpcListener.java@public get_address(last_endpoint String) : Stringsrc/main/java/zmq/SocketBase.java@public bind(addr_ String) : intsrc/main/java/zmq/IpcListener.java 13:15
+******************************
+******************************
+coarse grained commits fc942e0305a8c6a21fac434141fd70fedff35124
+fine grained commits ('72bc67fd0aac68d38cc9358498d7499a529f2c1d', '8b1a36f37d07ad521133bf45448bec6897e3ada6', '2e228875ccbea675c8a0b438c819a230f8882943', '716c6f0c313028ec821555040f60afd2fa0c030b')
+Generation
+Rename Packagesrc/main/java/org/zeromq/ZFrame.java@org.zeromq.ZFramesrc/main/java/org/jeromq/ZFrame.java@org.jeromq.ZFramesrc/main/java/org/zeromq/ZFrame.java 8:169
+******************************
+******************************
+coarse grained commits a145051d56b8d5c217af04d0c07b3ae778440b0d
+fine grained commits ('8b1a36f37d07ad521133bf45448bec6897e3ada6', '2e228875ccbea675c8a0b438c819a230f8882943', '716c6f0c313028ec821555040f60afd2fa0c030b', '823ca86a767bbc8fc963532e24c42fec5a659b39')
+Generation
+Add Method Annotationsrc/main/java/zmq/Own.java@protected process_destroy() : voidsrc/main/java/zmq/SessionBase.java@@Overridesrc/main/java/zmq/Own.java 154:157
+******************************
+******************************
+coarse grained commits ec6d4db7cfdb3e071abde65353efccb26fa3ef08
+fine grained commits ('ed4e48482863f911078d2cca1a0ce71711a38581', 'a8ea374d703ba4dbed36ff2c39b3b6a4a6d25f44', 'a4983cbe3be0038812ae640789dcd628aab83bae', '5f03c46802daa92b4f3b18ed604d419c190cec86', 'e379eb95f858271cc3df3316b2b4b3719f205380')
+Generation
+Remove Parametersrc/main/java/zmq/Blob.java@size : intsrc/main/java/zmq/Blob.java@public Blob(data_ byte[])src/main/java/zmq/Blob.java 5:5
+******************************
+******************************
+coarse grained commits e8a54813664ceccf9fd439826b25380ebf8c7034
+fine grained commits ('33cc7a9ae0ce698bcc717e0eae1218f3ddc76db9', '8a56394be66c2a77536ee6e79bc7d593387dde52', '627c81126d86acf07a6f0b4eb6057dd5d803ec96', '8756043d4d38ac8051cd415e6f5fdec52b9c5c2f', '83f17106b7d51c0c77a0158dfa5d1bac447c1c11')
+Generation
+Extract Methodsrc/main/java/zmq/io/mechanism/Mechanism.java@protected addProperty(name String, value String) : byte[]src/main/java/zmq/io/mechanism/Mechanism.java@protected addProperty(msg Msg, name String, value String) : voidsrc/main/java/zmq/io/mechanism/Mechanism.java 79:82
+Generation
+Extract And Move Methodsrc/main/java/zmq/io/mechanism/curve/CurveClientMechanism.java@private produceInitiate(msg Msg) : intsrc/main/java/zmq/io/mechanism/Mechanism.java@protected addProperty(msg Msg, name String, value String) : voidsrc/main/java/zmq/io/mechanism/curve/CurveClientMechanism.java 286:342
+Generation
+Extract And Move Methodsrc/main/java/zmq/io/mechanism/curve/CurveServerMechanism.java@private produceReady(msg Msg) : intsrc/main/java/zmq/io/mechanism/Mechanism.java@protected addProperty(msg Msg, name String, value String) : voidsrc/main/java/zmq/io/mechanism/curve/CurveServerMechanism.java 435:464
+******************************
+******************************
+coarse grained commits b5334c836814ba6b22cfff219b9be9ae0888ab99
+fine grained commits ('5a7d1af4f30e2def6d16bb74e4f50947c0f73ec8', '51b6f2aec190eb979f3bbe027c95a74a11dc32dc', '1c31092459ccd2594fa2923d045ea20fc7013ef7', '359d36bd1d4c2a1f6b7c0628d81b54dd54352279', 'ed4e48482863f911078d2cca1a0ce71711a38581')
+Generation
+Change Return Typesrc/main/java/zmq/Pair.java@intsrc/main/java/zmq/StreamEngine.java@voidsrc/main/java/zmq/Pair.java 34:34
+Generation
+Change Return Typesrc/main/java/zmq/XPub.java@intsrc/main/java/zmq/StreamEngine.java@voidsrc/main/java/zmq/XPub.java 100:100
+Generation
+Rename Parametersrc/main/java/zmq/Pair.java@flags_ : intsrc/main/java/zmq/StreamEngine.java@id_ : intsrc/main/java/zmq/Pair.java 34:34
+Generation
+Rename Parametersrc/main/java/zmq/XPub.java@flags_ : intsrc/main/java/zmq/StreamEngine.java@id_ : intsrc/main/java/zmq/XPub.java 100:100
+Generation
+Remove Parametersrc/main/java/zmq/Pair.java@msg_ : Msgsrc/main/java/zmq/StreamEngine.java@public timer_event(id_ int) : voidsrc/main/java/zmq/Pair.java 34:34
+Generation
+Change Method Access Modifiersrc/main/java/zmq/Pair.java@protected xrecv(msg_ Msg, flags_ int) : intsrc/main/java/zmq/StreamEngine.java@public timer_event(id_ int) : voidsrc/main/java/zmq/Pair.java 33:36
+Generation
+Change Method Access Modifiersrc/main/java/zmq/XPub.java@protected xrecv(msg_ Msg, flags_ int) : intsrc/main/java/zmq/StreamEngine.java@public timer_event(id_ int) : voidsrc/main/java/zmq/XPub.java 99:102
+Generation
+Move And Rename Methodsrc/main/java/zmq/Pair.java@protected xrecv(msg_ Msg, flags_ int) : intsrc/main/java/zmq/StreamEngine.java@public timer_event(id_ int) : voidsrc/main/java/zmq/Pair.java 33:36
+Generation
+Remove Parametersrc/main/java/zmq/XPub.java@msg_ : Msgsrc/main/java/zmq/StreamEngine.java@public timer_event(id_ int) : voidsrc/main/java/zmq/XPub.java 100:100
+Generation
+Move And Rename Methodsrc/main/java/zmq/XPub.java@protected xrecv(msg_ Msg, flags_ int) : intsrc/main/java/zmq/StreamEngine.java@public timer_event(id_ int) : voidsrc/main/java/zmq/XPub.java 99:102
+******************************
+******************************
+coarse grained commits 58ed0aa67ec0e4982249ccf02aa17b2906353a04
+fine grained commits ('51b6f2aec190eb979f3bbe027c95a74a11dc32dc', '1c31092459ccd2594fa2923d045ea20fc7013ef7', '359d36bd1d4c2a1f6b7c0628d81b54dd54352279', 'ed4e48482863f911078d2cca1a0ce71711a38581', 'a8ea374d703ba4dbed36ff2c39b3b6a4a6d25f44')
+Generation
+Move And Rename Methodsrc/main/java/zmq/IpcAddress.java@public resolve(name_ String, local_ boolean, ip4only_ boolean) : voidsrc/main/java/zmq/IOThread.java@public accept_event() : voidsrc/main/java/zmq/IpcAddress.java 12:15
+******************************
+******************************
+coarse grained commits c51a5a1201a7020f53f2187c778f262cfc49e424
+fine grained commits ('1c31092459ccd2594fa2923d045ea20fc7013ef7', '359d36bd1d4c2a1f6b7c0628d81b54dd54352279', 'ed4e48482863f911078d2cca1a0ce71711a38581', 'a8ea374d703ba4dbed36ff2c39b3b6a4a6d25f44', 'a4983cbe3be0038812ae640789dcd628aab83bae')
+Generation
+Move And Rename Classsrc/main/java/zmq/TcpAddressMask.java@zmq.TcpAddressMasksrc/main/java/zmq/Req.java@zmq.Req.ReqSession.Statesrc/main/java/zmq/TcpAddressMask.java 3:5
+Generation
+Remove Parametersrc/main/java/zmq/IpcListener.java@last_endpoint : Stringsrc/main/java/zmq/IpcListener.java@public get_address() : Stringsrc/main/java/zmq/IpcListener.java 13:13
+Generation
+Change Class Access Modifiersrc/main/java/zmq/TcpAddressMask.java@zmq.TcpAddressMasksrc/main/java/zmq/Req.java@zmq.Req.ReqSession.Statesrc/main/java/zmq/TcpAddressMask.java 3:5
+Generation
+Change Type Declaration Kindsrc/main/java/zmq/TcpAddressMask.java@zmq.TcpAddressMasksrc/main/java/zmq/Req.java@zmq.Req.ReqSession.Statesrc/main/java/zmq/TcpAddressMask.java 3:5
+Generation
+Remove Parametersrc/main/java/zmq/TcpListener.java@last_endpoint : Stringsrc/main/java/zmq/TcpListener.java@public get_address() : Stringsrc/main/java/zmq/TcpListener.java 9:9
+******************************
+******************************
+coarse grained commits 69740ce21973bd729cc9735cb65ebac8b23e387b
+fine grained commits ('fd69e57e0b0be21382a3131fdbf78f349a2fb9ec', '83bd5e099e63c0238c2a290fae9442d35ff3a535', '98e324c66c1d880f787377089390f42ef7b5f2a4', 'a5a021e0b0d9424512d335d10c792078c79921c8', '81317d2c9196a8d2a839ce56fbdf3f3159fc414e')
+Generation
+Move And Inline Methodsrc/main/java/zmq/ZError.java@public EAGAIN() : voidsrc/main/java/zmq/FQ.java@public recvpipe(pipe_ Pipe[]) : Msgsrc/main/java/zmq/ZError.java 132:134
+Generation
+Move And Inline Methodsrc/main/java/zmq/ZError.java@public EAGAIN() : voidsrc/main/java/zmq/LB.java@public send(msg_ Msg, flags_ int) : booleansrc/main/java/zmq/ZError.java 132:134
+Generation
+Move And Inline Methodsrc/main/java/zmq/ZError.java@public EAGAIN() : voidsrc/main/java/zmq/Pair.java@protected xsend(msg_ Msg, flags_ int) : booleansrc/main/java/zmq/ZError.java 132:134
+Generation
+Move And Inline Methodsrc/main/java/zmq/ZError.java@public EAGAIN() : voidsrc/main/java/zmq/Pair.java@protected xrecv(flags_ int) : Msgsrc/main/java/zmq/ZError.java 132:134
+Generation
+Move And Inline Methodsrc/main/java/zmq/ZError.java@public EAGAIN() : voidsrc/main/java/zmq/Req.java@public xrecv(flags_ int) : Msgsrc/main/java/zmq/ZError.java 132:134
+Generation
+Move And Inline Methodsrc/main/java/zmq/ZError.java@public EAGAIN() : voidsrc/main/java/zmq/Router.java@protected xsend(msg_ Msg, flags_ int) : booleansrc/main/java/zmq/ZError.java 132:134
+Generation
+Move And Inline Methodsrc/main/java/zmq/ZError.java@public EAGAIN() : voidsrc/main/java/zmq/Router.java@protected xrecv(flags_ int) : Msgsrc/main/java/zmq/ZError.java 132:134
+Generation
+Move And Inline Methodsrc/main/java/zmq/ZError.java@public EAGAIN() : voidsrc/main/java/zmq/SessionBase.java@public read() : Msgsrc/main/java/zmq/ZError.java 132:134
+Generation
+Move And Inline Methodsrc/main/java/zmq/ZError.java@public EAGAIN() : voidsrc/main/java/zmq/SessionBase.java@public write(msg_ Msg) : booleansrc/main/java/zmq/ZError.java 132:134
+Generation
+Move And Inline Methodsrc/main/java/zmq/ZError.java@public EAGAIN() : voidsrc/main/java/zmq/Signaler.java@package wait_event(timeout_ long) : booleansrc/main/java/zmq/ZError.java 132:134
+Generation
+Move And Inline Methodsrc/main/java/zmq/ZError.java@public EAGAIN() : voidsrc/main/java/zmq/SocketBase.java@public send(msg_ Msg, flags_ int) : booleansrc/main/java/zmq/ZError.java 132:134
+Generation
+Move And Inline Methodsrc/main/java/zmq/ZError.java@public EAGAIN() : voidsrc/main/java/zmq/SocketBase.java@public recv(flags_ int) : Msgsrc/main/java/zmq/ZError.java 132:134
+Generation
+Move And Inline Methodsrc/main/java/zmq/ZError.java@public EAGAIN() : voidsrc/main/java/zmq/XPub.java@protected xrecv(flags_ int) : Msgsrc/main/java/zmq/ZError.java 132:134
+******************************

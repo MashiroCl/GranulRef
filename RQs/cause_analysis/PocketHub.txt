@@ -1,0 +1,538 @@
+******************************
+coarse grained commits 44b52ed6b41af31ffa4e5fc87bb93849b1046de4
+fine grained commits ('732eba4fc69d03a28d227658635b85b88e01352c', 'd289face5d19744168a4df222005753e77754ae8')
+Generation
+Move And Inline Methodapp/src/main/java/com/github/pockethub/android/ui/PagedItemFragment.java@public onCreate(savedInstanceState Bundle) : voidapp/src/main/java/com/github/pockethub/android/ui/issue/IssueFragment.java@public onCreate(savedInstanceState Bundle) : voidapp/src/main/java/com/github/pockethub/android/ui/PagedItemFragment.java 27:32
+******************************
+******************************
+coarse grained commits 1f5fb273faa17d428225b756267735c078a6d762
+fine grained commits ('0bb5745848147810fd762c632c8f9b3b1ea2f037', 'd7cd6a74702722f3490ee2fff02b540ca26105bb')
+Generation
+Remove Parameter Modifierapp/src/main/java/com/github/mobile/ui/commit/CommitFileViewActivity.java@name : Stringapp/src/main/java/com/github/mobile/util/MarkdownUtils.java@name : Stringapp/src/main/java/com/github/mobile/ui/commit/CommitFileViewActivity.java 60:60
+Generation
+Remove Parameter Modifierapp/src/main/java/com/github/mobile/ui/ref/BranchFileViewActivity.java@name : Stringapp/src/main/java/com/github/mobile/util/MarkdownUtils.java@name : Stringapp/src/main/java/com/github/mobile/ui/ref/BranchFileViewActivity.java 59:59
+******************************
+******************************
+coarse grained commits 03c4aea58adf5de2026dc070618e66e4e56376bd
+fine grained commits ('60a511821b208becd65d22a47146231b48b10f69', '2e461878448196c9d0387819b52baa0751aaf406')
+Generation
+Move And Rename Classapp/src/main/java/com/github/mobile/ui/RefreshRepsitoryTask.java@com.github.mobile.ui.RefreshRepsitoryTaskapp/src/main/java/com/github/mobile/ui/repo/RefreshRepositoryTask.java@com.github.mobile.ui.repo.RefreshRepositoryTaskapp/src/main/java/com/github/mobile/ui/RefreshRepsitoryTask.java 12:28
+******************************
+******************************
+coarse grained commits 838dbd7b950989ee2a76dfa6fe92d91ecb6d9dd2
+fine grained commits ('a415a63f4403b4187327f7f8d1662ea086f27766', 'f8bdfa9372c4f891a8a779251dbd6b9a64787fbd')
+Generation
+Pull Up Methodapp/src/main/java/com/github/mobile/ui/user/UserNewsFragment.java@protected getLoadingMessage() : intapp/src/main/java/com/github/mobile/ui/NewsFragment.java@protected getLoadingMessage() : intapp/src/main/java/com/github/mobile/ui/user/UserNewsFragment.java 55:58
+******************************
+******************************
+coarse grained commits cde7c3552f7e74ab66299c0df0202c84b15616ff
+fine grained commits ('f014624576c6fb043d4acf48e06d827f95a8d355', '7cf617c8bc56cb5740d81cc43909a004f8d2835c')
+Generation
+Move And Rename Classapp/src/test/java/com/github/mobile/android/util/HtmlTest.java@com.github.mobile.android.util.HtmlTestapp/src/test/java/com/github/mobile/util/HtmlUtilsTest.java@com.github.mobile.util.HtmlUtilsTestapp/src/test/java/com/github/mobile/android/util/HtmlTest.java 10:160
+******************************
+******************************
+coarse grained commits 1632850ae856f20ad99609bd8bf69be1a2629b57
+fine grained commits ('a841a6142376bfeee1e610300f289e203c3875f6', 'ec9c11a097beade0a09527f2e516f055bdd670a0')
+Generation
+Move Methodapp/src/main/java/com/github/mobile/android/issue/DashboardIssueFragment.java@protected getLoadingMessage() : intapp/src/main/java/com/github/mobile/android/gist/MyGistsFragment.java@protected getLoadingMessage() : intapp/src/main/java/com/github/mobile/android/issue/DashboardIssueFragment.java 95:98
+******************************
+******************************
+coarse grained commits a19ea113e79f071e1d7548dcc1742cb86feb68a8
+fine grained commits ('cab0184642a49a4aee2f569d9a09b91da3026eb4', 'f29af2c1c27d2cb78e90c90c0059ea34c7c82762')
+Generation
+Extract Methodapp/src/main/java/com/github/mobile/ui/issue/IssuesViewActivity.java@protected onCreate(savedInstanceState Bundle) : voidapp/src/main/java/com/github/mobile/ui/issue/IssuesViewActivity.java@private configurePager() : voidapp/src/main/java/com/github/mobile/ui/issue/IssuesViewActivity.java 127:173
+******************************
+******************************
+coarse grained commits 2805752613a2c354c9e87e42b955a300cd547f9e
+fine grained commits ('d5cc14edaf9250e318a8c75416bf1a1633b536ee', 'fd0f16a31a279679fdff2e253a600a91c84365c6')
+Generation
+Move Methodapp/src/main/java/com/github/mobile/ui/search/RepositorySearchActivity.java@public onOptionsItemSelected(item MenuItem) : booleanapp/src/main/java/com/github/mobile/ui/search/SearchActivity.java@public onOptionsItemSelected(item MenuItem) : booleanapp/src/main/java/com/github/mobile/ui/search/RepositorySearchActivity.java 31:49
+Generation
+Move Methodapp/src/main/java/com/github/mobile/ui/search/RepositorySearchActivity.java@protected onCreate(savedInstanceState Bundle) : voidapp/src/main/java/com/github/mobile/ui/search/SearchActivity.java@protected onCreate(savedInstanceState Bundle) : voidapp/src/main/java/com/github/mobile/ui/search/RepositorySearchActivity.java 51:65
+Generation
+Move Methodapp/src/main/java/com/github/mobile/ui/search/RepositorySearchActivity.java@protected onNewIntent(intent Intent) : voidapp/src/main/java/com/github/mobile/ui/search/SearchActivity.java@protected onNewIntent(intent Intent) : voidapp/src/main/java/com/github/mobile/ui/search/RepositorySearchActivity.java 67:73
+Generation
+Move Methodapp/src/main/java/com/github/mobile/ui/search/RepositorySearchActivity.java@private handleIntent(intent Intent) : voidapp/src/main/java/com/github/mobile/ui/search/SearchActivity.java@private handleIntent(intent Intent) : voidapp/src/main/java/com/github/mobile/ui/search/RepositorySearchActivity.java 75:78
+Generation
+Move Methodapp/src/main/java/com/github/mobile/ui/search/RepositorySearchActivity.java@private search(query String) : voidapp/src/main/java/com/github/mobile/ui/search/SearchActivity.java@private search(query String) : voidapp/src/main/java/com/github/mobile/ui/search/RepositorySearchActivity.java 80:84
+******************************
+******************************
+coarse grained commits 442c038aa83005eed24c05e852a3e9b6e1203f19
+fine grained commits ('488e9016cdcb07512e050187d3ef73f1632f777a', '5250ea85b31869331e19e2631912af027b6a7c4f')
+Generation
+Extract Superclassapp/src/main/java/com/github/mobile/ui/comment/CreateCommentActivity.java@com.github.mobile.ui.comment.CreateCommentActivityapp/src/main/java/com/github/mobile/ui/comment/CreateCommentActivity.java@com.github.mobile.ui.comment.CreateCommentActivityapp/src/main/java/com/github/mobile/ui/comment/CreateCommentActivity.java 22:74
+******************************
+******************************
+coarse grained commits a6fa2991ca82e9b3d20cc2772d618866244ffee2
+fine grained commits ('75feacc0dddc0bc0510fd987a648f53961a2a12a', '38a84ae7d4ec4176f8651391dc48d1674a6ec297')
+Generation
+Replace Attributeapp/src/main/java/com/github/mobile/ui/user/UserViewActivity.java@private indicator : TitlePageIndicatorapp/src/main/java/com/github/mobile/ui/TabPagerActivity.java@protected host : TabHostapp/src/main/java/com/github/mobile/ui/user/UserViewActivity.java 46:46
+******************************
+******************************
+coarse grained commits bc172ab56827ac83209de4ca54edbf499bc511f7
+fine grained commits ('f2d00d43d8990692cf56a5f0aa6c9fbc09974f73', 'c58659bcfab7e63f781906b781fe51c496b5a299')
+Generation
+Pull Up Attributeapp/src/main/java/com/github/mobile/ui/issue/IssueDashboardActivity.java@private pager : ViewPagerapp/src/main/java/com/github/mobile/ui/TabPagerActivity.java@protected pager : ViewPagerapp/src/main/java/com/github/mobile/ui/issue/IssueDashboardActivity.java 27:27
+Generation
+Change Attribute Access Modifierapp/src/main/java/com/github/mobile/ui/issue/IssueDashboardActivity.java@private pager : ViewPagerapp/src/main/java/com/github/mobile/ui/TabPagerActivity.java@protected pager : ViewPagerapp/src/main/java/com/github/mobile/ui/issue/IssueDashboardActivity.java 27:27
+Generation
+Remove Attribute Annotationapp/src/main/java/com/github/mobile/ui/issue/IssueDashboardActivity.java@@InjectView(id.vp_pages)app/src/main/java/com/github/mobile/ui/TabPagerActivity.java@protected pager : ViewPagerapp/src/main/java/com/github/mobile/ui/issue/IssueDashboardActivity.java 26:26
+******************************
+******************************
+coarse grained commits ccfed41c731826177fc7f3e9dd9e6d06c8384e30
+fine grained commits ('584a134b0bdbee8ffb28f2114b6570fcf585ff99', '6ebffb235d98fa63235877977204cdb3974fe2c9')
+Generation
+Extract Methodapp/src/main/java/com/github/mobile/ui/user/NewsListAdapter.java@private formatCreate(event Event, main StyledText, details StyledText) : voidapp/src/main/java/com/github/mobile/ui/user/NewsListAdapter.java@private boldActor(text StyledText, event Event) : StyledTextapp/src/main/java/com/github/mobile/ui/user/NewsListAdapter.java 156:172
+Generation
+Extract Methodapp/src/main/java/com/github/mobile/ui/user/NewsListAdapter.java@private formatCreate(event Event, main StyledText, details StyledText) : voidapp/src/main/java/com/github/mobile/ui/user/NewsListAdapter.java@private boldRepo(text StyledText, event Event) : StyledTextapp/src/main/java/com/github/mobile/ui/user/NewsListAdapter.java 156:172
+Generation
+Change Variable Typeapp/src/main/java/com/github/mobile/ui/user/NewsListAdapter.java@repoName : Stringapp/src/main/java/com/github/mobile/ui/user/NewsListAdapter.java@repo : EventRepositoryapp/src/main/java/com/github/mobile/ui/user/NewsListAdapter.java 164:164
+Generation
+Rename Variableapp/src/main/java/com/github/mobile/ui/user/NewsListAdapter.java@repoName : Stringapp/src/main/java/com/github/mobile/ui/user/NewsListAdapter.java@repo : EventRepositoryapp/src/main/java/com/github/mobile/ui/user/NewsListAdapter.java 164:164
+******************************
+******************************
+coarse grained commits 4e54a51b62175cfe2947414d594aa0ce1c5324be
+fine grained commits ('32e40a07779b769eb3099590c491802850ff333b', '90feae35a8a97d5803ba1aea8d7f77e345106e41')
+Generation
+Add Parameterapp/src/main/java/com/github/mobile/ui/repo/RepositoryListAdapter.java@protected update(view RecentRepositoryItemView, repository Repository) : voidapp/src/main/java/com/github/mobile/ui/repo/RepositoryListAdapter.java@watchers : intapp/src/main/java/com/github/mobile/ui/repo/RepositoryListAdapter.java 42:66
+Generation
+Add Parameterapp/src/main/java/com/github/mobile/ui/repo/RepositoryListAdapter.java@protected update(view RecentRepositoryItemView, repository Repository) : voidapp/src/main/java/com/github/mobile/ui/repo/RepositoryListAdapter.java@forks : intapp/src/main/java/com/github/mobile/ui/repo/RepositoryListAdapter.java 42:66
+******************************
+******************************
+coarse grained commits 15407439e832363021bd101ca6e6f7846582e3e8
+fine grained commits ('5e60fa0d3f31a00ab7ed8820cd78b7e5bbebbb0f', 'ddc303648afe670e2eafc9cb3d87f2c49a178a6c')
+Generation
+Rename Variableapp/src/main/java/com/github/mobile/ui/repo/UserRepositoryListAdapter.java@id : Stringapp/src/main/java/com/github/mobile/ui/repo/UserRepositoryListAdapter.java@description : Stringapp/src/main/java/com/github/mobile/ui/repo/UserRepositoryListAdapter.java 31:31
+******************************
+******************************
+coarse grained commits 39ab66bb4c5f8ba07669d2171e9795857df615ac
+fine grained commits ('86668517f454d8e7e8efe78a560181e419c749ff', '4d101ac25a80cb4c544d72cb53588e060b439b22')
+Generation
+Move And Rename Classapp/src/main/java/com/github/mobile/guice/GitHubAccountScope.java@com.github.mobile.guice.GitHubAccountScopeapp/src/main/java/com/github/mobile/accounts/AccountScope.java@com.github.mobile.accounts.AccountScopeapp/src/main/java/com/github/mobile/guice/GitHubAccountScope.java 22:83
+Generation
+Merge Packageapp/src/main/java/com/github/mobile/guice/ScopeBase.java@com.github.mobile.guice.ScopeBaseapp/src/main/java/com/github/mobile/accounts/ScopeBase.java@com.github.mobile.accounts.ScopeBaseapp/src/main/java/com/github/mobile/guice/ScopeBase.java 9:42
+******************************
+******************************
+coarse grained commits 46972b5458c14a920b2bfc24f99f33cb7c2d6519
+fine grained commits ('c69b43f03a79b8540dea7bd891775142c63e8f8b', 'a841a6142376bfeee1e610300f289e203c3875f6')
+Generation
+Move Methodapp/src/main/java/com/github/mobile/android/gist/PublicGistsFragment.java@protected getLoadingMessage() : intapp/src/main/java/com/github/mobile/android/ui/gist/GistsFragment.java@protected getLoadingMessage() : intapp/src/main/java/com/github/mobile/android/gist/PublicGistsFragment.java 111:114
+******************************
+******************************
+coarse grained commits 7c3b56dce2bc94e8ea86018870afaed0b6ae4dd5
+fine grained commits ('ed19837f9f25e6858146b63235fe923319c8d1a0', '958987b0a0678665a9d5a836e2123a13fecdc19b')
+Generation
+Extract Methodapp/src/main/java/com/github/mobile/android/ResourcePager.java@public reset() : ResourcePager<E>app/src/main/java/com/github/mobile/android/ResourcePager.java@public clear() : ResourcePager<E>app/src/main/java/com/github/mobile/android/ResourcePager.java 24:30
+******************************
+******************************
+coarse grained commits c3affaa0a6a3727ea1ffa2cec176845772ed8c73
+fine grained commits ('53e8c9465fd331ae1d92ac7ed84fc67d0d660f0f', '99be0e98b0b325c1b7de0f76f0d15c7783258e40')
+Generation
+Extract Superclassapp/src/main/java/com/github/mobile/android/ThrowableLoader.java@com.github.mobile.android.ThrowableLoaderapp/src/main/java/com/github/mobile/android/ThrowableLoader.java@com.github.mobile.android.ThrowableLoaderapp/src/main/java/com/github/mobile/android/ThrowableLoader.java 5:38
+******************************
+******************************
+coarse grained commits 86161c8f9da013b6690d6c151e022bbb80c1112a
+fine grained commits ('e8343015a998933721deb32bad2c67a20d221de1', 'dd023863755cb9a5428ce65d8521c5e77a649725')
+Generation
+Rename Methodapp/src/main/java/com/github/mobile/android/util/Image.java@public roundCorners(bitmap Bitmap, radiusX int, radiusY int) : Bitmapapp/src/main/java/com/github/mobile/android/util/Image.java@public roundCornersAndOverlayOnWhite(source Bitmap, radius int) : Bitmapapp/src/main/java/com/github/mobile/android/util/Image.java 116:135
+Generation
+Remove Parameterapp/src/main/java/com/github/mobile/android/util/Image.java@radiusX : intapp/src/main/java/com/github/mobile/android/util/Image.java@public roundCornersAndOverlayOnWhite(source Bitmap, radius int) : Bitmapapp/src/main/java/com/github/mobile/android/util/Image.java 116:116
+Generation
+Add Parameterapp/src/main/java/com/github/mobile/android/util/Image.java@public roundCorners(bitmap Bitmap, radiusX int, radiusY int) : Bitmapapp/src/main/java/com/github/mobile/android/util/Image.java@radius : intapp/src/main/java/com/github/mobile/android/util/Image.java 116:135
+Generation
+Remove Parameterapp/src/main/java/com/github/mobile/android/util/Image.java@radiusY : intapp/src/main/java/com/github/mobile/android/util/Image.java@public roundCornersAndOverlayOnWhite(source Bitmap, radius int) : Bitmapapp/src/main/java/com/github/mobile/android/util/Image.java 116:116
+******************************
+******************************
+coarse grained commits 97ab18f17210e90a33d2a4fa502b84f8c34ae1ff
+fine grained commits ('b140724bb80b4d5364e65d09e2cf81047c6f6bc2', '2bf2072fc04b913c98d138ff946436cc58485891')
+Generation
+Move Packagegithub-android/src/main/java/com/github/android/app/sync/AccountAuthenticatorService.java@com.github.android.app.sync.AccountAuthenticatorServicegithub-android/src/main/java/com/github/mobile/android/authenticator/AccountAuthenticatorService.java@com.github.mobile.android.authenticator.AccountAuthenticatorServicegithub-android/src/main/java/com/github/android/app/sync/AccountAuthenticatorService.java 18:106
+******************************
+******************************
+coarse grained commits 33e1665e20df78f2a275f737ca2bc85d8f660506
+fine grained commits ('390a1526988965660ebc0a4943f9eb2c02a85d92', 'e5bab4aae5abd3b520b18fdc572b4116ae7fd573', 'ea2ed28da16e4beebc9caa9d0abed7dc2559f104')
+Generation
+Rename Parameterapp/src/main/java/com/github/pockethub/ui/gist/CreateGistActivity.java@options : Menuapp/src/main/java/com/github/pockethub/ui/gist/CreateGistActivity.java@menu : Menuapp/src/main/java/com/github/pockethub/ui/gist/CreateGistActivity.java 80:80
+******************************
+******************************
+coarse grained commits 693665486a3eaedff39b8b74669770ce8ec060e0
+fine grained commits ('44603eb4c5a5a2c90fff8baec3392904e11bd9ed', 'bff14046dcdef0e3c76ff58742284639068b72ae', '02df8022d420368eb4651863622443737205bd4f')
+Generation
+Move Methodgithub-android/src/main/java/com/github/mobile/android/repo/RepoBrowseActivity.java@protected onSaveInstanceState(outState Bundle) : voidgithub-android/src/main/java/com/github/mobile/android/issue/FilterIssuesActivity.java@protected onSaveInstanceState(outState Bundle) : voidgithub-android/src/main/java/com/github/mobile/android/repo/RepoBrowseActivity.java 134:136
+******************************
+******************************
+coarse grained commits a6457815c7f990c484a26b861a4219ba1d220454
+fine grained commits ('d5cc14edaf9250e318a8c75416bf1a1633b536ee', 'fd0f16a31a279679fdff2e253a600a91c84365c6', '7fe1380b419666c6525239aa23d01b6bd89a30b7')
+Generation
+Move Methodapp/src/main/java/com/github/mobile/ui/search/RepositorySearchActivity.java@public onCreateOptionsMenu(options Menu) : booleanapp/src/main/java/com/github/mobile/ui/search/SearchActivity.java@public onCreateOptionsMenu(options Menu) : booleanapp/src/main/java/com/github/mobile/ui/search/RepositorySearchActivity.java 25:29
+******************************
+******************************
+coarse grained commits f3729affd5ceff35ccff415d0bd679113f7e427f
+fine grained commits ('9f994ac39b933d8d0eece19d8ad3a31a33ffb660', '56d86523cffb2df02b75e4f92b445647ca0a3e82', '7107f8a2d5b157971a343c3e75c1a03349fb7770')
+Generation
+Extract And Move Methodapp/src/main/java/com/github/mobile/ui/gist/GistFragment.java@private refreshGist() : voidapp/src/main/java/com/github/mobile/ui/ItemListFragment.java@protected isUsable() : booleanapp/src/main/java/com/github/mobile/ui/gist/GistFragment.java 343:368
+Generation
+Extract And Move Methodapp/src/main/java/com/github/mobile/ui/issue/IssueFragment.java@private refreshIssue() : voidapp/src/main/java/com/github/mobile/ui/ItemListFragment.java@protected isUsable() : booleanapp/src/main/java/com/github/mobile/ui/issue/IssueFragment.java 368:391
+******************************
+******************************
+coarse grained commits 4535ca2d0ed7d3acc4d34b2aa7348f668de46dbf
+fine grained commits ('1a3da6e18e887f08754a5fd50804d1396a9b887c', '4bdad4ce2377d6039bef59d1abc3950b3404852f', '5976fc2c62614f20cbfc1b606983beef508219c3')
+Generation
+Rename Attributeapp/src/main/java/com/github/mobile/ui/issue/LabelDrawableSpan.java@borderColor : intapp/src/main/java/com/github/mobile/ui/issue/LabelDrawableSpan.java@textColor : intapp/src/main/java/com/github/mobile/ui/issue/LabelDrawableSpan.java 62:62
+******************************
+******************************
+coarse grained commits e4cf5c33319f855eec09f3e84d99fcb731f46d20
+fine grained commits ('f37228de340b114571046656ffe3407f692f373e', 'fc61326938db95f5b4e469d387c26c75e120362c', '53ef3a2a4321448d9c9a81591d858a3dc7eb441b')
+Generation
+Rename Variableapp/src/main/java/com/github/mobile/android/util/AvatarHelper.java@bitmap : Bitmapapp/src/main/java/com/github/mobile/android/util/AvatarHelper.java@image : Bitmapapp/src/main/java/com/github/mobile/android/util/AvatarHelper.java 150:150
+Generation
+Rename Variableapp/src/main/java/com/github/mobile/android/util/AvatarHelper.java@bitmap : Bitmapapp/src/main/java/com/github/mobile/android/util/AvatarHelper.java@image : Bitmapapp/src/main/java/com/github/mobile/android/util/AvatarHelper.java 199:199
+******************************
+******************************
+coarse grained commits 278f6930bec660f08d09ed10f9d03d47653dec34
+fine grained commits ('0be56a4eb6dbad7b0f13f243b9e353e3269c52f2', 'c7c199f79853c13bee4d37730d8f24064ad31afc', 'd8e0cd7a74e14906073109e6369739076af56d5b')
+Generation
+Move And Rename Classapp/src/main/java/com/github/pockethub/accounts/TwoFactorAuthException.java@com.github.pockethub.accounts.TwoFactorAuthExceptionapp/src/main/java/com/github/pockethub/core/NoSuchPageException.java@com.github.pockethub.core.NoSuchPageExceptionapp/src/main/java/com/github/pockethub/accounts/TwoFactorAuthException.java 5:27
+Generation
+Remove Method Annotationapp/src/main/java/com/github/pockethub/accounts/TwoFactorAuthException.java@@Overrideapp/src/main/java/com/github/pockethub/core/NoSuchPageException.java@public getMessage() : Stringapp/src/main/java/com/github/pockethub/accounts/TwoFactorAuthException.java 18:18
+Generation
+Remove Method Annotationapp/src/main/java/com/github/pockethub/accounts/TwoFactorAuthException.java@@Overrideapp/src/main/java/com/github/pockethub/core/NoSuchPageException.java@public getCause() : IOExceptionapp/src/main/java/com/github/pockethub/accounts/TwoFactorAuthException.java 23:23
+******************************
+******************************
+coarse grained commits 6e366bcd26bbf9bbce0bdd232bd78bab526fe1dd
+fine grained commits ('38a84ae7d4ec4176f8651391dc48d1674a6ec297', 'f2d00d43d8990692cf56a5f0aa6c9fbc09974f73', 'c58659bcfab7e63f781906b781fe51c496b5a299')
+Generation
+Change Attribute Access Modifierapp/src/main/java/com/github/mobile/ui/user/UserViewActivity.java@private pager : ViewPagerapp/src/main/java/com/github/mobile/ui/TabPagerActivity.java@protected pager : ViewPagerapp/src/main/java/com/github/mobile/ui/user/UserViewActivity.java 40:40
+Generation
+Pull Up Attributeapp/src/main/java/com/github/mobile/ui/user/UserViewActivity.java@private pager : ViewPagerapp/src/main/java/com/github/mobile/ui/TabPagerActivity.java@protected pager : ViewPagerapp/src/main/java/com/github/mobile/ui/user/UserViewActivity.java 40:40
+Generation
+Remove Attribute Annotationapp/src/main/java/com/github/mobile/ui/user/UserViewActivity.java@@InjectView(id.vp_pages)app/src/main/java/com/github/mobile/ui/TabPagerActivity.java@protected pager : ViewPagerapp/src/main/java/com/github/mobile/ui/user/UserViewActivity.java 39:39
+******************************
+******************************
+coarse grained commits 49d1922dbfa724a507e6d05940e05f41aef0dd40
+fine grained commits ('3fb1b0d210bf4e27aa2d9dc2ef428adaa1fe1d1e', 'c71fe61bdaee9ee08984311453f1c938ea1762d2', '339e71916a2096168615629ccd94121a6c02bb63')
+Generation
+Move And Inline Methodapp/src/main/java/com/github/mobile/ui/repo/DefaultRepositoryListAdapter.java@public registerHeader(repository Repository, previous Repository, text String) : DefaultRepositoryListAdapterapp/src/main/java/com/github/mobile/ui/repo/RepositoryListFragment.java@public onCreateLoader(id int, args Bundle) : Loader<List<Repository>>app/src/main/java/com/github/mobile/ui/repo/DefaultRepositoryListAdapter.java 46:51
+******************************
+******************************
+coarse grained commits 3afa1ad2dd774766a6bf09196638fc972fe8d72e
+fine grained commits ('fd490e228f83751740fc88f216f31e5d646ed4e5', '6f7fef3faf557f38760a49c1b9dc4a5d1a124f49', '5fc92cafb8a9159561e1b69f5b796a616549ba68')
+Generation
+Move Attributeapp/src/main/java/com/github/mobile/ui/issue/CreateIssueActivity.java@private milestoneText : TextViewapp/src/main/java/com/github/mobile/ui/issue/EditIssueActivity.java@private milestoneText : TextViewapp/src/main/java/com/github/mobile/ui/issue/CreateIssueActivity.java 92:92
+Generation
+Move Attributeapp/src/main/java/com/github/mobile/ui/issue/CreateIssueActivity.java@private assigneeAvatar : ImageViewapp/src/main/java/com/github/mobile/ui/issue/EditIssueActivity.java@private assigneeAvatar : ImageViewapp/src/main/java/com/github/mobile/ui/issue/CreateIssueActivity.java 86:86
+Generation
+Move Attributeapp/src/main/java/com/github/mobile/ui/issue/CreateIssueActivity.java@private assigneeText : TextViewapp/src/main/java/com/github/mobile/ui/issue/EditIssueActivity.java@private assigneeText : TextViewapp/src/main/java/com/github/mobile/ui/issue/CreateIssueActivity.java 83:83
+Generation
+Move Attributeapp/src/main/java/com/github/mobile/ui/issue/CreateIssueActivity.java@private milestoneService : MilestoneServiceapp/src/main/java/com/github/mobile/ui/issue/EditIssueActivity.java@private milestoneService : MilestoneServiceapp/src/main/java/com/github/mobile/ui/issue/CreateIssueActivity.java 62:62
+Generation
+Move Attributeapp/src/main/java/com/github/mobile/ui/issue/CreateIssueActivity.java@private collaboratorService : CollaboratorServiceapp/src/main/java/com/github/mobile/ui/issue/EditIssueActivity.java@private collaboratorService : CollaboratorServiceapp/src/main/java/com/github/mobile/ui/issue/CreateIssueActivity.java 65:65
+Generation
+Move Attributeapp/src/main/java/com/github/mobile/ui/issue/CreateIssueActivity.java@private labelService : LabelServiceapp/src/main/java/com/github/mobile/ui/issue/EditIssueActivity.java@private labelService : LabelServiceapp/src/main/java/com/github/mobile/ui/issue/CreateIssueActivity.java 59:59
+Generation
+Extract Variableapp/src/main/java/com/github/mobile/ui/issue/CreateIssueActivity.java@app/src/main/java/com/github/mobile/ui/issue/EditIssueActivity.java@assignee : Userapp/src/main/java/com/github/mobile/ui/issue/CreateIssueActivity.java 195:195
+Generation
+Move Methodapp/src/main/java/com/github/mobile/ui/issue/CreateIssueActivity.java@public onDialogResult(requestCode int, resultCode int, arguments Bundle) : voidapp/src/main/java/com/github/mobile/ui/issue/EditIssueActivity.java@public onDialogResult(requestCode int, resultCode int, arguments Bundle) : voidapp/src/main/java/com/github/mobile/ui/issue/CreateIssueActivity.java 176:199
+Generation
+Extract Variableapp/src/main/java/com/github/mobile/ui/issue/CreateIssueActivity.java@app/src/main/java/com/github/mobile/ui/issue/EditIssueActivity.java@milestone : Milestoneapp/src/main/java/com/github/mobile/ui/issue/CreateIssueActivity.java 165:165
+Generation
+Remove Parameterapp/src/main/java/com/github/mobile/ui/issue/CreateIssueActivity.java@issue : Issueapp/src/main/java/com/github/mobile/ui/issue/EditIssueActivity.java@private updateView() : voidapp/src/main/java/com/github/mobile/ui/issue/CreateIssueActivity.java 146:146
+Generation
+Move And Rename Methodapp/src/main/java/com/github/mobile/ui/issue/CreateIssueActivity.java@private updateHeader(issue Issue) : voidapp/src/main/java/com/github/mobile/ui/issue/EditIssueActivity.java@private updateView() : voidapp/src/main/java/com/github/mobile/ui/issue/CreateIssueActivity.java 146:168
+******************************
+******************************
+coarse grained commits a9aa70e45e72b184626f75950582654feb7a5deb
+fine grained commits ('8e1e7e140681e33bba822c93aab9250135927a9c', '6b8319abc40dadbe5a501734f833671710fe6ce8', '9b14385a0b35ba5d61013b798deb7d56a44b7c9b')
+Generation
+Extract And Move Methodapp/src/main/java/com/github/mobile/android/issue/FilterIssuesActivity.java@protected onCreate(savedInstanceState Bundle) : voidapp/src/main/java/com/github/mobile/android/issue/IssueFilter.java@public setOpen(open boolean) : IssueFilterapp/src/main/java/com/github/mobile/android/issue/FilterIssuesActivity.java 68:167
+******************************
+******************************
+coarse grained commits 1a044de4704787eaaebfcdc5e5f5ea9f4365aa0c
+fine grained commits ('58960379b2a1dc26065ab551a23eb07b4a3684a1', '455a747eb4983a4cac5187d0a12777c4979ebc5a', '0d48aac96eea8c1629851406689862629442b4ab', 'd5cc14edaf9250e318a8c75416bf1a1633b536ee')
+Generation
+Move Attributeapp/src/main/java/com/github/mobile/ui/search/RepositorySearchActivity.java@private repoFragment : SearchRepositoryListFragmentapp/src/main/java/com/github/mobile/ui/search/SearchActivity.java@private repoFragment : SearchRepositoryListFragmentapp/src/main/java/com/github/mobile/ui/search/RepositorySearchActivity.java 23:23
+******************************
+******************************
+coarse grained commits 57e2feb18a29f95420a67f41381e4908df4c81b1
+fine grained commits ('45b54fb81eae052282b81ef3654a442b0097cd06', '760b8b7fd1dc5c5a9fe326a57f966db8bd356e0c', '7aa9e796891065b67af7e78c4ec1af932247743b', 'c4b6edebeb57321175fb9443c36b29d7c075d582')
+Generation
+Change Parameter Typeapp/src/main/java/com/github/mobile/ui/gist/OpenGistTask.java@context : Activityapp/src/main/java/com/github/mobile/core/code/RefreshTreeTask.java@context : Contextapp/src/main/java/com/github/mobile/ui/gist/OpenGistTask.java 25:25
+Generation
+Add Parameterapp/src/main/java/com/github/mobile/ui/gist/OpenGistTask.java@public OpenGistTask(context Activity, gistId String)app/src/main/java/com/github/mobile/core/code/RefreshTreeTask.java@repository : Repositoryapp/src/main/java/com/github/mobile/ui/gist/OpenGistTask.java 25:29
+Generation
+Remove Parameterapp/src/main/java/com/github/mobile/ui/gist/OpenGistTask.java@gistId : Stringapp/src/main/java/com/github/mobile/core/code/RefreshTreeTask.java@public RefreshTreeTask(repository Repository, context Context)app/src/main/java/com/github/mobile/ui/gist/OpenGistTask.java 25:25
+Generation
+Move And Rename Methodapp/src/main/java/com/github/mobile/ui/gist/OpenGistTask.java@public OpenGistTask(context Activity, gistId String)app/src/main/java/com/github/mobile/core/code/RefreshTreeTask.java@public RefreshTreeTask(repository Repository, context Context)app/src/main/java/com/github/mobile/ui/gist/OpenGistTask.java 25:29
+Generation
+Move Methodapp/src/main/java/com/github/mobile/ui/gist/OpenGistTask.java@protected onException(e Exception) : voidapp/src/main/java/com/github/mobile/core/code/RefreshTreeTask.java@protected onException(e Exception) : voidapp/src/main/java/com/github/mobile/ui/gist/OpenGistTask.java 45:51
+******************************
+******************************
+coarse grained commits 84377985cf3f93e53d504ba228f382ec4275388c
+fine grained commits ('8f94f366abfd83832c71fc08445375aae8f3f0df', 'b18d1339d9d8cbd531d583dca058710e6448e2bd', '76c67537524d83edce94ffe62d0732988b667f04', '54c7edc33b3119f9146a16441eb98f7f96bc4283')
+Generation
+Move And Inline Methodapp/src/main/java/com/github/mobile/ui/gist/CreateGistActivity.java@public onPrepareOptionsMenu(menu Menu) : booleanapp/src/main/java/com/github/mobile/ui/gist/GistFragment.java@public onPrepareOptionsMenu(menu Menu) : voidapp/src/main/java/com/github/mobile/ui/gist/CreateGistActivity.java 63:68
+******************************
+******************************
+coarse grained commits 2c52b931fea62403ed8e0bb07caa6f86f4986277
+fine grained commits ('b2b21ce21a37df3f435a57498455d7d37bec4577', '436263a0b9e26d9a85fdfb78ae80210a521fc74f', '70473a3e307ed722063e0e364287d20ee69f1086', '732eba4fc69d03a28d227658635b85b88e01352c')
+Generation
+Move And Inline Methodapp/src/main/java/com/github/pockethub/android/ui/PagedItemFragment.java@public onCreate(savedInstanceState Bundle) : voidapp/src/main/java/com/github/pockethub/android/ui/gist/GistFilesViewActivity.java@protected onCreate(savedInstanceState Bundle) : voidapp/src/main/java/com/github/pockethub/android/ui/PagedItemFragment.java 27:32
+Generation
+Move And Inline Methodapp/src/main/java/com/github/pockethub/android/ui/PagedItemFragment.java@public onCreate(savedInstanceState Bundle) : voidapp/src/main/java/com/github/pockethub/android/ui/repo/RepositoryViewActivity.java@protected onCreate(savedInstanceState Bundle) : voidapp/src/main/java/com/github/pockethub/android/ui/PagedItemFragment.java 27:32
+Generation
+Move And Inline Methodapp/src/main/java/com/github/pockethub/android/ui/PagedItemFragment.java@public onCreate(savedInstanceState Bundle) : voidapp/src/main/java/com/github/pockethub/android/ui/user/UserViewActivity.java@protected onCreate(savedInstanceState Bundle) : voidapp/src/main/java/com/github/pockethub/android/ui/PagedItemFragment.java 27:32
+******************************
+******************************
+coarse grained commits 119d039ba095bd8f12ceaa0e79c9a2c75edae6c5
+fine grained commits ('c08c72add8ba74b8b88696dc72ea2f98d149561c', 'dbdeb87439e1d9c44cd481b9313c124555ca0556', '97872cae660215af8db9208a373569cedc5f52d9', 'ad8794ab57469485882511ebb382b070e0dd1bce')
+Generation
+Add Method Annotationapp/src/main/java/com/github/mobile/ui/issue/IssuesViewActivity.java@public onPageScrolled(position int, positionOffset float, positionOffsetPixels int) : voidapp/src/main/java/com/github/mobile/ui/PagerActivity.java@@Overrideapp/src/main/java/com/github/mobile/ui/issue/IssuesViewActivity.java 176:178
+Generation
+Pull Up Methodapp/src/main/java/com/github/mobile/ui/issue/IssuesViewActivity.java@public onPageScrolled(position int, positionOffset float, positionOffsetPixels int) : voidapp/src/main/java/com/github/mobile/ui/PagerActivity.java@public onPageScrolled(position int, positionOffset float, positionOffsetPixels int) : voidapp/src/main/java/com/github/mobile/ui/issue/IssuesViewActivity.java 176:178
+Generation
+Pull Up Methodapp/src/main/java/com/github/mobile/ui/issue/IssuesViewActivity.java@public onPageScrollStateChanged(state int) : voidapp/src/main/java/com/github/mobile/ui/PagerActivity.java@public onPageScrollStateChanged(state int) : voidapp/src/main/java/com/github/mobile/ui/issue/IssuesViewActivity.java 223:224
+******************************
+******************************
+coarse grained commits 7e7de1fb67325164d459bd68dcbaa9084e54930f
+fine grained commits ('192d38d66e467db9bf82b50744f800d70334a92d', '614312ad51caeef74cc730621e535d08d8b3f37d', '2c72f26d1e746141b9530be86b04a9f633dd48b5', 'd9376064667022ce0f88ff6ae39f1624ea127c80')
+Generation
+Extract And Move Methodapp/src/main/java/com/github/mobile/ui/gist/RandomGistTask.java@public start() : voidapp/src/main/java/com/github/mobile/ui/ProgressDialogTask.java@protected showIndeterminate(message CharSequence) : voidapp/src/main/java/com/github/mobile/ui/gist/RandomGistTask.java 40:49
+******************************
+******************************
+coarse grained commits 039b1873c2439e6aa2566d724900782aa5ee398c
+fine grained commits ('c583f0b6bdc024136aaf90b81e323487d8f6f45a', '4782415312be7d88f4bd73df33c66aff3bb53686', '287567dba5b1d15d67338fbf4337a4f7afbfc215', 'acc974e9694a277888f83506a80f166192f10473')
+Generation
+Extract Methodapp/src/main/java/com/github/pockethub/android/ui/ItemListFragment.java@public onViewCreated(view View, savedInstanceState Bundle) : voidapp/src/main/java/com/github/pockethub/android/ui/ItemListFragment.java@protected configureList(recyclerView RecyclerView) : voidapp/src/main/java/com/github/pockethub/android/ui/ItemListFragment.java 79:101
+Generation
+Inline Methodapp/src/main/java/com/github/pockethub/android/ui/ItemListFragment.java@protected configureList(activity Activity, listView ListView) : voidapp/src/main/java/com/github/pockethub/android/ui/ItemListFragment.java@public onViewCreated(view View, savedInstanceState Bundle) : voidapp/src/main/java/com/github/pockethub/android/ui/ItemListFragment.java 103:105
+******************************
+******************************
+coarse grained commits af450d58454f9b0f217305a289582f2f77c3935e
+fine grained commits ('03c3da9b09873884f707716f95d4f2fc3b242a7a', 'be5105b41215617c1f0d725d7c03a47fe199ae27', '49d64a706c346b3a3a425e3e247af785bc8409f0', '892a09ad1408fde2dcb7b33eaf4ea7e0b8f87244')
+Generation
+Extract Methodapp/src/main/java/com/github/mobile/util/AvatarLoader.java@public bind(actionBar ActionBar, userReference AtomicReference<User>) : AvatarLoaderapp/src/main/java/com/github/mobile/util/AvatarLoader.java@private getId(user User) : Stringapp/src/main/java/com/github/mobile/util/AvatarLoader.java 181:222
+Generation
+Extract Methodapp/src/main/java/com/github/mobile/util/AvatarLoader.java@public bind(view ImageView, user User) : AvatarLoaderapp/src/main/java/com/github/mobile/util/AvatarLoader.java@private getId(user User) : Stringapp/src/main/java/com/github/mobile/util/AvatarLoader.java 258:303
+******************************
+******************************
+coarse grained commits 5c853a45248a263dd5aa01eef5a4a8cf75b823ed
+fine grained commits ('ce399ede891e2974dd85965f184fd269d2e77bf4', 'd786780cf6705fce9ac198983a0216c9b83c2b92', '55d825407bae09fdac40a29c007ebe02ca0192d1', 'e493952a0bdb0c73469ecbe4351bfcac8be8c339')
+Generation
+Inline Variableapp/src/main/java/com/github/mobile/ui/NewsFragment.java@uri : Uriapp/src/main/java/com/github/mobile/ui/NewsFragment.java@private openDownload(event Event) : voidapp/src/main/java/com/github/mobile/ui/NewsFragment.java 110:110
+******************************
+******************************
+coarse grained commits 38e8b1e8d5807ce8383d6a526955464a4d3d968c
+fine grained commits ('104cb1d167c981bbdc1a63c4ea8fc6a37ada7edd', 'ed19837f9f25e6858146b63235fe923319c8d1a0', '958987b0a0678665a9d5a836e2123a13fecdc19b', 'e4c215b6806c540b16b229f3018eeae245a816c7')
+Generation
+Pull Up Attributeapp/src/main/java/com/github/mobile/android/ui/user/UserNewsFragment.java@private avatarHelper : AvatarHelperapp/src/main/java/com/github/mobile/android/ui/NewsFragment.java@private avatarHelper : AvatarHelperapp/src/main/java/com/github/mobile/android/ui/user/UserNewsFragment.java 34:34
+******************************
+******************************
+coarse grained commits 9ff26607b4b823cd8a094346916c51faa98dbe2b
+fine grained commits ('e56c5a87f7e8f9d49ceb5db6d6d6f64dee06d5d5', '2af147769e08f5365d646877f57477572e8b22ab', '584a134b0bdbee8ffb28f2114b6570fcf585ff99', '6ebffb235d98fa63235877977204cdb3974fe2c9')
+Generation
+Extract Methodapp/src/main/java/com/github/mobile/ui/user/NewsListAdapter.java@private formatCommitComment(event Event, main StyledText, details StyledText) : voidapp/src/main/java/com/github/mobile/ui/user/NewsListAdapter.java@private boldRepo(text StyledText, event Event) : StyledTextapp/src/main/java/com/github/mobile/ui/user/NewsListAdapter.java 136:143
+Generation
+Extract Methodapp/src/main/java/com/github/mobile/ui/user/NewsListAdapter.java@private formatDownload(event Event, main StyledText, details StyledText) : voidapp/src/main/java/com/github/mobile/ui/user/NewsListAdapter.java@private boldRepo(text StyledText, event Event) : StyledTextapp/src/main/java/com/github/mobile/ui/user/NewsListAdapter.java 145:154
+Generation
+Extract Methodapp/src/main/java/com/github/mobile/ui/user/NewsListAdapter.java@private formatDelete(event Event, main StyledText, details StyledText) : voidapp/src/main/java/com/github/mobile/ui/user/NewsListAdapter.java@private boldRepo(text StyledText, event Event) : StyledTextapp/src/main/java/com/github/mobile/ui/user/NewsListAdapter.java 174:185
+Generation
+Extract Methodapp/src/main/java/com/github/mobile/ui/user/NewsListAdapter.java@private formatFork(event Event, main StyledText, details StyledText) : voidapp/src/main/java/com/github/mobile/ui/user/NewsListAdapter.java@private boldRepo(text StyledText, event Event) : StyledTextapp/src/main/java/com/github/mobile/ui/user/NewsListAdapter.java 193:197
+Generation
+Extract Methodapp/src/main/java/com/github/mobile/ui/user/NewsListAdapter.java@private formatWiki(event Event, main StyledText, details StyledText) : voidapp/src/main/java/com/github/mobile/ui/user/NewsListAdapter.java@private boldRepo(text StyledText, event Event) : StyledTextapp/src/main/java/com/github/mobile/ui/user/NewsListAdapter.java 216:220
+Generation
+Extract Methodapp/src/main/java/com/github/mobile/ui/user/NewsListAdapter.java@private formatIssueComment(event Event, main StyledText, details StyledText) : voidapp/src/main/java/com/github/mobile/ui/user/NewsListAdapter.java@private boldRepo(text StyledText, event Event) : StyledTextapp/src/main/java/com/github/mobile/ui/user/NewsListAdapter.java 222:242
+Generation
+Extract Methodapp/src/main/java/com/github/mobile/ui/user/NewsListAdapter.java@private formatIssues(event Event, main StyledText, details StyledText) : voidapp/src/main/java/com/github/mobile/ui/user/NewsListAdapter.java@private boldRepo(text StyledText, event Event) : StyledTextapp/src/main/java/com/github/mobile/ui/user/NewsListAdapter.java 244:259
+Generation
+Extract Methodapp/src/main/java/com/github/mobile/ui/user/NewsListAdapter.java@private formatAddMember(event Event, main StyledText, details StyledText) : voidapp/src/main/java/com/github/mobile/ui/user/NewsListAdapter.java@private boldRepo(text StyledText, event Event) : StyledTextapp/src/main/java/com/github/mobile/ui/user/NewsListAdapter.java 261:268
+Generation
+Extract Methodapp/src/main/java/com/github/mobile/ui/user/NewsListAdapter.java@private formatPublic(event Event, main StyledText, details StyledText) : voidapp/src/main/java/com/github/mobile/ui/user/NewsListAdapter.java@private boldRepo(text StyledText, event Event) : StyledTextapp/src/main/java/com/github/mobile/ui/user/NewsListAdapter.java 270:274
+Generation
+Extract Methodapp/src/main/java/com/github/mobile/ui/user/NewsListAdapter.java@private formatWatch(event Event, main StyledText, details StyledText) : voidapp/src/main/java/com/github/mobile/ui/user/NewsListAdapter.java@private boldRepo(text StyledText, event Event) : StyledTextapp/src/main/java/com/github/mobile/ui/user/NewsListAdapter.java 276:280
+Generation
+Extract Methodapp/src/main/java/com/github/mobile/ui/user/NewsListAdapter.java@private formatReviewComment(event Event, main StyledText, details StyledText) : voidapp/src/main/java/com/github/mobile/ui/user/NewsListAdapter.java@private boldRepo(text StyledText, event Event) : StyledTextapp/src/main/java/com/github/mobile/ui/user/NewsListAdapter.java 282:289
+Generation
+Extract Methodapp/src/main/java/com/github/mobile/ui/user/NewsListAdapter.java@private formatPullRequest(event Event, main StyledText, details StyledText) : voidapp/src/main/java/com/github/mobile/ui/user/NewsListAdapter.java@private boldRepo(text StyledText, event Event) : StyledTextapp/src/main/java/com/github/mobile/ui/user/NewsListAdapter.java 291:305
+Generation
+Extract Methodapp/src/main/java/com/github/mobile/ui/user/NewsListAdapter.java@private formatPush(event Event, main StyledText, details StyledText) : voidapp/src/main/java/com/github/mobile/ui/user/NewsListAdapter.java@private boldRepo(text StyledText, event Event) : StyledTextapp/src/main/java/com/github/mobile/ui/user/NewsListAdapter.java 307:319
+******************************
+******************************
+coarse grained commits a607933f366f5c929d367c12e2ed6a45064f78a5
+fine grained commits ('5866369d0d723560e80b8df3435ca42a381b1715', '79d4ccf1702993cb60f5f7fe5b7ec89190634457', 'c69b43f03a79b8540dea7bd891775142c63e8f8b', 'a841a6142376bfeee1e610300f289e203c3875f6')
+Generation
+Move And Rename Classapp/src/main/java/com/github/mobile/android/gist/PublicGistsFragment.java@com.github.mobile.android.gist.PublicGistsFragmentapp/src/main/java/com/github/mobile/android/ui/gist/GistsFragment.java@com.github.mobile.android.ui.gist.GistsFragmentapp/src/main/java/com/github/mobile/android/gist/PublicGistsFragment.java 34:115
+Generation
+Add Class Modifierapp/src/main/java/com/github/mobile/android/gist/PublicGistsFragment.java@com.github.mobile.android.gist.PublicGistsFragmentapp/src/main/java/com/github/mobile/android/ui/gist/GistsFragment.java@com.github.mobile.android.ui.gist.GistsFragmentapp/src/main/java/com/github/mobile/android/gist/PublicGistsFragment.java 34:115
+Generation
+Change Attribute Access Modifierapp/src/main/java/com/github/mobile/android/gist/PublicGistsFragment.java@private service : GistServiceapp/src/main/java/com/github/mobile/android/ui/gist/GistsFragment.java@protected service : GistServiceapp/src/main/java/com/github/mobile/android/gist/PublicGistsFragment.java 40:40
+Generation
+Change Attribute Access Modifierapp/src/main/java/com/github/mobile/android/gist/PublicGistsFragment.java@private store : GistStoreapp/src/main/java/com/github/mobile/android/ui/gist/GistsFragment.java@protected store : GistStoreapp/src/main/java/com/github/mobile/android/gist/PublicGistsFragment.java 45:45
+******************************
+******************************
+coarse grained commits 1ec8abcdb9da0fd220bea349de51c37410dd7266
+fine grained commits ('ec9c11a097beade0a09527f2e516f055bdd670a0', 'e9683b8c16a76966e9c81f855db5a70346f7a2fe', 'fca77cbfdfc18191e0d64e6a90f5eea550c7044d', '035abe51e6e1111c8ff080ceb1c71ab005e12097')
+Generation
+Move Classapp/src/main/java/com/github/mobile/android/issue/DashboardIssueFragment.java@com.github.mobile.android.issue.DashboardIssueFragmentapp/src/main/java/com/github/mobile/android/ui/issue/DashboardIssueFragment.java@com.github.mobile.android.ui.issue.DashboardIssueFragmentapp/src/main/java/com/github/mobile/android/issue/DashboardIssueFragment.java 30:99
+Generation
+Change Return Typeapp/src/main/java/com/github/mobile/android/issue/DashboardIssueFragment.java@ResourcePager<Issue>app/src/main/java/com/github/mobile/android/ui/issue/DashboardIssueFragment.java@ResourcePager<RepositoryIssue>app/src/main/java/com/github/mobile/android/issue/DashboardIssueFragment.java 86:86
+Generation
+Extract Superclassapp/src/main/java/com/github/mobile/android/issue/DashboardIssueFragment.java@com.github.mobile.android.issue.DashboardIssueFragmentapp/src/main/java/com/github/mobile/android/ui/issue/DashboardIssueFragment.java@com.github.mobile.android.ui.issue.DashboardIssueFragmentapp/src/main/java/com/github/mobile/android/issue/DashboardIssueFragment.java 30:99
+Generation
+Extract Classapp/src/main/java/com/github/mobile/android/issue/DashboardIssueFragment.java@com.github.mobile.android.issue.DashboardIssueFragmentapp/src/main/java/com/github/mobile/android/ui/issue/DashboardIssueFragment.java@com.github.mobile.android.ui.issue.DashboardIssueFragmentapp/src/main/java/com/github/mobile/android/issue/DashboardIssueFragment.java 30:99
+Generation
+Move Attributeapp/src/main/java/com/github/mobile/android/issue/DashboardIssueFragment.java@private numberView : TextViewapp/src/main/java/com/github/mobile/android/ui/issue/DashboardIssueListAdapter.java@private numberView : TextViewapp/src/main/java/com/github/mobile/android/issue/DashboardIssueFragment.java 47:47
+Generation
+Add Attribute Modifierapp/src/main/java/com/github/mobile/android/issue/DashboardIssueFragment.java@private numberView : TextViewapp/src/main/java/com/github/mobile/android/ui/issue/DashboardIssueListAdapter.java@private numberView : TextViewapp/src/main/java/com/github/mobile/android/issue/DashboardIssueFragment.java 47:47
+******************************
+******************************
+coarse grained commits c7aaf9f9b8fee5cdf380ff1b71d3137b71ff7011
+fine grained commits ('490534c2b27db8ab34cae5f173a47cf119b58a83', '4f5519135b4660348bd8d58f0d8d6ecbdf86748a', 'afa8be1635e430b52347446bef6769e5ab830518', '4d44dbf9233de7b72b240048661098a65050706e')
+Generation
+Rename Variablegithub-android/src/main/java/com/github/mobile/android/issue/FilterIssuesActivity.java@selected : intgithub-android/src/main/java/com/github/mobile/android/issue/MilestoneDialog.java@checked : intgithub-android/src/main/java/com/github/mobile/android/issue/FilterIssuesActivity.java 342:342
+Generation
+Parameterize Variablegithub-android/src/main/java/com/github/mobile/android/issue/FilterIssuesActivity.java@milestone : Milestonegithub-android/src/main/java/com/github/mobile/android/issue/MilestoneDialog.java@selectedMilestone : Milestonegithub-android/src/main/java/com/github/mobile/android/issue/FilterIssuesActivity.java 343:343
+Generation
+Change Method Access Modifiergithub-android/src/main/java/com/github/mobile/android/issue/FilterIssuesActivity.java@private promptForMilestone() : voidgithub-android/src/main/java/com/github/mobile/android/issue/MilestoneDialog.java@public show(selectedMilestone Milestone) : voidgithub-android/src/main/java/com/github/mobile/android/issue/FilterIssuesActivity.java 337:371
+Generation
+Move And Rename Methodgithub-android/src/main/java/com/github/mobile/android/issue/FilterIssuesActivity.java@private promptForMilestone() : voidgithub-android/src/main/java/com/github/mobile/android/issue/MilestoneDialog.java@public show(selectedMilestone Milestone) : voidgithub-android/src/main/java/com/github/mobile/android/issue/FilterIssuesActivity.java 337:371
+Generation
+Extract Methodgithub-android/src/main/java/com/github/mobile/android/issue/FilterIssuesActivity.java@private promptForMilestone() : voidgithub-android/src/main/java/com/github/mobile/android/issue/MilestoneDialog.java@private load(selectedMilestone Milestone) : voidgithub-android/src/main/java/com/github/mobile/android/issue/FilterIssuesActivity.java 337:371
+******************************
+******************************
+coarse grained commits 12f3259b3766ae830608e1f5eb5be7d0dce84b93
+fine grained commits ('81fb13d84bc7118454a0bc41ee03369d4a8bd939', '5bbb9cc28f753affa278d8ed36df5fd61a3dd684', '41ca2388cc9538980c9bc5b54cade904893660c6', '278fb4513b8db0409d489a1231c083ce6041f565', 'e110e4e811e2035b199762a6c67852f08f882ca1')
+Generation
+Change Method Access Modifierapp/src/main/java/com/github/pockethub/android/ui/gist/GistFileFragment.java@public onDestroyView() : voidapp/src/main/java/com/github/pockethub/android/ui/issue/FiltersViewActivity.java@protected onDestroy() : voidapp/src/main/java/com/github/pockethub/android/ui/gist/GistFileFragment.java 88:91
+Generation
+Move And Rename Methodapp/src/main/java/com/github/pockethub/android/ui/gist/GistFileFragment.java@public onDestroyView() : voidapp/src/main/java/com/github/pockethub/android/ui/issue/FiltersViewActivity.java@protected onDestroy() : voidapp/src/main/java/com/github/pockethub/android/ui/gist/GistFileFragment.java 88:91
+******************************
+******************************
+coarse grained commits 875c6002f3172fab7c1ceea48b496072d86955be
+fine grained commits ('acfbb0f3e7f0ae1735b526681dedfd1eccd0da4a', '00de47141af3fbeafe7596bb85232873e70f1ffb', '154260edc42541b494603c3f9188af0e56bf02a2', '654046d7aa19be9969f73bc9fa341fc1ce4cd775', 'f581d7801412d6bab286d7491fe48d0f40161402')
+Generation
+Rename Attributeapp/src/main/java/com/github/pockethub/android/ui/issue/MilestoneDialog.java@repository : Repositoryapp/src/main/java/com/github/pockethub/android/ui/issue/MilestoneDialog.java@milestoneSingle : Single<List<Milestone>>app/src/main/java/com/github/pockethub/android/ui/issue/MilestoneDialog.java 35:35
+Generation
+Change Attribute Typeapp/src/main/java/com/github/pockethub/android/ui/issue/MilestoneDialog.java@repository : Repositoryapp/src/main/java/com/github/pockethub/android/ui/issue/MilestoneDialog.java@milestoneSingle : Single<List<Milestone>>app/src/main/java/com/github/pockethub/android/ui/issue/MilestoneDialog.java 35:35
+******************************
+******************************
+coarse grained commits 71fad41bef48c886f9aa9c853214baf422d2755a
+fine grained commits ('246cf94aa27711bf5c8af7e8fce1f423f4e38759', '9c45b792f9a6a7a795177ff676f61b31184c33e8', '2d01d8cc43cc87236fe0ade8a403cb7c4b7b053d', '0932252abb2c5d5d3a00df8fc4bea33451d0aedd', 'bd3b2f02dda326cfd2ec01969cc0011bcb5fb035')
+Generation
+Move And Inline Methodapp/src/main/java/com/github/mobile/core/gist/FullGist.java@public getFiles() : List<GistFile>app/src/main/java/com/github/mobile/core/gist/GistStore.java@public addGist(gist Gist) : Gistapp/src/main/java/com/github/mobile/core/gist/FullGist.java 40:42
+******************************
+******************************
+coarse grained commits b914bedada54ed0bd783c4dabe77def0a4dafcb3
+fine grained commits ('b723003cd2a6a3fd544a11ed38e03d99321e18fc', '5663743a58171e4fbe6fa92c74d98565536a4ad0', '6241537eda0aef7510bb5d4e9c0f5e4e2d9fe1ad', '51ade9d015e4dfe5c18b45266dde0b71db1f7ca2', '80269d031625a89b55f99c7c36f9f451170a3942')
+Generation
+Rename Methodapp/src/main/java/com/github/mobile/util/AvatarLoader.java@protected getImage(userId String) : BitmapDrawableapp/src/main/java/com/github/mobile/util/AvatarLoader.java@private getImageBy(filename String) : BitmapDrawableapp/src/main/java/com/github/mobile/util/AvatarLoader.java 101:114
+******************************
+******************************
+coarse grained commits b6a3f84ccc668050ac07ae590a4756c85b88d38f
+fine grained commits ('371b55270ee670f74422639ce9d61cdb68894e32', '210428d06b2ca21ec820694de2a4d07432ca9978', 'b002a222cbcf7d91b95d705a938cc3a652408433', '623f3463f67b05008b1fc9d510d4eeb2b43db84e', '88b2f9bc009926d7254fd17009313ef802cb9673')
+Generation
+Move And Rename Classapp/src/main/java/com/github/mobile/android/util/LateAuthenticatedGitHubClient.java@com.github.mobile.android.util.LateAuthenticatedGitHubClientapp/src/main/java/com/github/mobile/util/AccountGitHubClient.java@com.github.mobile.util.AccountGitHubClientapp/src/main/java/com/github/mobile/android/util/LateAuthenticatedGitHubClient.java 13:35
+******************************
+******************************
+coarse grained commits c8d8eabc3bc0719567a2268f6f16fc3ce7886fea
+fine grained commits ('b2b21ce21a37df3f435a57498455d7d37bec4577', '436263a0b9e26d9a85fdfb78ae80210a521fc74f', '70473a3e307ed722063e0e364287d20ee69f1086', '732eba4fc69d03a28d227658635b85b88e01352c', 'd289face5d19744168a4df222005753e77754ae8')
+Generation
+Extract Superclassapp/src/main/java/com/github/pockethub/android/ui/DialogFragment.java@com.github.pockethub.android.ui.DialogFragmentapp/src/main/java/com/github/pockethub/android/ui/DialogFragment.java@com.github.pockethub.android.ui.DialogFragmentapp/src/main/java/com/github/pockethub/android/ui/DialogFragment.java 11:62
+******************************
+******************************
+coarse grained commits bed3506a249887203fdb1a46b720abb081dadff1
+fine grained commits ('b57a925c3e9dc96e202063eacf01f0bd1dcb3d56', '90535d79cb7a1c0a9d9f390814df6a3e0c665995', '33e9ab5c9c354740bd02ade6f64cffc5cb8a6de7', 'b57f380a41d549fdaa31b32a2f243d85647f2d60', 'b723003cd2a6a3fd544a11ed38e03d99321e18fc')
+Generation
+Rename Variableapp/src/main/java/com/github/mobile/util/AvatarLoader.java@loadUrl : Stringapp/src/main/java/com/github/mobile/util/AvatarLoader.java@avatarFilename : Stringapp/src/main/java/com/github/mobile/util/AvatarLoader.java 279:279
+Generation
+Rename Variableapp/src/main/java/com/github/mobile/util/AvatarLoader.java@loadUrl : Stringapp/src/main/java/com/github/mobile/util/AvatarLoader.java@avatarFilename : Stringapp/src/main/java/com/github/mobile/util/AvatarLoader.java 326:326
+******************************
+******************************
+coarse grained commits 9693a97e7981daf12e23e6621485bf30e5c4a1b1
+fine grained commits ('f7fb192f140c4ad5143e7da5a9505223ed1d977d', 'c08c72add8ba74b8b88696dc72ea2f98d149561c', 'dbdeb87439e1d9c44cd481b9313c124555ca0556', '97872cae660215af8db9208a373569cedc5f52d9', 'ad8794ab57469485882511ebb382b070e0dd1bce')
+Generation
+Add Method Annotationapp/src/main/java/com/github/mobile/ui/gist/GistsViewActivity.java@public onPageScrolled(position int, positionOffset float, positionOffsetPixels int) : voidapp/src/main/java/com/github/mobile/ui/PagerActivity.java@@Overrideapp/src/main/java/com/github/mobile/ui/gist/GistsViewActivity.java 132:134
+Generation
+Pull Up Methodapp/src/main/java/com/github/mobile/ui/gist/GistsViewActivity.java@public onPageScrolled(position int, positionOffset float, positionOffsetPixels int) : voidapp/src/main/java/com/github/mobile/ui/PagerActivity.java@public onPageScrolled(position int, positionOffset float, positionOffsetPixels int) : voidapp/src/main/java/com/github/mobile/ui/gist/GistsViewActivity.java 132:134
+Generation
+Pull Up Methodapp/src/main/java/com/github/mobile/ui/gist/GistsViewActivity.java@public onPageScrollStateChanged(state int) : voidapp/src/main/java/com/github/mobile/ui/PagerActivity.java@public onPageScrollStateChanged(state int) : voidapp/src/main/java/com/github/mobile/ui/gist/GistsViewActivity.java 155:156
+******************************
+******************************
+coarse grained commits 320b63f70b41375b23c0d3f1a8ef2aee7208b44e
+fine grained commits ('c3ad47f462045ce8229eebb3ff176c26725e77d1', '192d38d66e467db9bf82b50744f800d70334a92d', '614312ad51caeef74cc730621e535d08d8b3f37d', '2c72f26d1e746141b9530be86b04a9f633dd48b5', 'd9376064667022ce0f88ff6ae39f1624ea127c80')
+Generation
+Extract And Move Methodapp/src/main/java/com/github/mobile/ui/gist/DeleteGistTask.java@public start() : voidapp/src/main/java/com/github/mobile/ui/ProgressDialogTask.java@protected showIndeterminate(message CharSequence) : voidapp/src/main/java/com/github/mobile/ui/gist/DeleteGistTask.java 32:41
+Generation
+Extract And Move Methodapp/src/main/java/com/github/mobile/ui/gist/OpenGistTask.java@public start() : voidapp/src/main/java/com/github/mobile/ui/ProgressDialogTask.java@protected showIndeterminate(message CharSequence) : voidapp/src/main/java/com/github/mobile/ui/gist/OpenGistTask.java 29:39
+Generation
+Extract And Move Methodapp/src/main/java/com/github/mobile/ui/issue/CreateCommentTask.java@public create(comment String) : CreateCommentTaskapp/src/main/java/com/github/mobile/ui/ProgressDialogTask.java@protected showIndeterminate(message CharSequence) : voidapp/src/main/java/com/github/mobile/ui/issue/CreateCommentTask.java 37:49
+Generation
+Extract And Move Methodapp/src/main/java/com/github/mobile/ui/issue/EditAssigneeTask.java@public edit(user String) : EditAssigneeTaskapp/src/main/java/com/github/mobile/ui/ProgressDialogTask.java@protected showIndeterminate(message CharSequence) : voidapp/src/main/java/com/github/mobile/ui/issue/EditAssigneeTask.java 46:58
+Generation
+Extract And Move Methodapp/src/main/java/com/github/mobile/ui/issue/EditIssueTask.java@public edit(title String, body String) : EditIssueTaskapp/src/main/java/com/github/mobile/ui/ProgressDialogTask.java@protected showIndeterminate(message CharSequence) : voidapp/src/main/java/com/github/mobile/ui/issue/EditIssueTask.java 42:55
+Generation
+Extract And Move Methodapp/src/main/java/com/github/mobile/ui/issue/EditLabelsTask.java@public edit(labels String[]) : EditLabelsTaskapp/src/main/java/com/github/mobile/ui/ProgressDialogTask.java@protected showIndeterminate(message CharSequence) : voidapp/src/main/java/com/github/mobile/ui/issue/EditLabelsTask.java 49:61
+Generation
+Extract And Move Methodapp/src/main/java/com/github/mobile/ui/issue/EditMilestoneTask.java@public edit(title String) : EditMilestoneTaskapp/src/main/java/com/github/mobile/ui/ProgressDialogTask.java@protected showIndeterminate(message CharSequence) : voidapp/src/main/java/com/github/mobile/ui/issue/EditMilestoneTask.java 54:70
+Generation
+Extract And Move Methodapp/src/main/java/com/github/mobile/ui/issue/EditStateTask.java@public edit(close boolean) : EditStateTaskapp/src/main/java/com/github/mobile/ui/ProgressDialogTask.java@protected showIndeterminate(message CharSequence) : voidapp/src/main/java/com/github/mobile/ui/issue/EditStateTask.java 58:73
+******************************
+******************************
+coarse grained commits b46d3dd9089e4c0fb3051db8d688ca0cdc9e4570
+fine grained commits ('acc974e9694a277888f83506a80f166192f10473', '7d667ccdea3fab4ac33bd243e99e07e7ea35d153', 'b11ed7faa630dc840bcee3a29a800a41d363f2f9', '5efe73bb23d369e3e892f3fbcc0c7fec36170fbd', 'b2b21ce21a37df3f435a57498455d7d37bec4577')
+Generation
+Add Parameter Annotationapp/src/main/java/com/github/pockethub/android/ui/BaseActivity.java@savedInstanceState : Bundleapp/src/main/java/com/github/pockethub/android/ui/BaseActivity.java@@Nullableapp/src/main/java/com/github/pockethub/android/ui/BaseActivity.java 25:25
+Generation
+Remove Method Annotationapp/src/main/java/com/github/pockethub/android/ui/BaseActivity.java@@CallSuperapp/src/main/java/com/github/pockethub/android/ui/BaseActivity.java@protected onCreate(savedInstanceState Bundle) : voidapp/src/main/java/com/github/pockethub/android/ui/BaseActivity.java 23:23
+Generation
+Add Parameter Annotationapp/src/main/java/com/github/pockethub/android/ui/base/BaseFragment.java@view : Viewapp/src/main/java/com/github/pockethub/android/ui/base/BaseFragment.java@@NonNullapp/src/main/java/com/github/pockethub/android/ui/base/BaseFragment.java 60:60
+Generation
+Add Parameter Annotationapp/src/main/java/com/github/pockethub/android/ui/base/BaseFragment.java@savedInstanceState : Bundleapp/src/main/java/com/github/pockethub/android/ui/base/BaseFragment.java@@Nullableapp/src/main/java/com/github/pockethub/android/ui/base/BaseFragment.java 60:60
+Generation
+Remove Method Annotationapp/src/main/java/com/github/pockethub/android/ui/base/BaseFragment.java@@CallSuperapp/src/main/java/com/github/pockethub/android/ui/base/BaseFragment.java@public onViewCreated(view View, savedInstanceState Bundle) : voidapp/src/main/java/com/github/pockethub/android/ui/base/BaseFragment.java 59:59
+******************************
+******************************
+coarse grained commits e0b65aa8ce85cbe5a8abf1e3ae6be26a1bfd93ff
+fine grained commits ('ff0428954ea55a2c9b50eb6b263780cf75c92f29', 'd5ab7ca30dcec528163132707b46436d5f341cba', '80f91a11ed9df21fda30911bbb969d845253f808', '152ccb1e4af0af660975e08ff1e09df85a80a86b', '1251207452983c0bb9c1c7fa4b68ca2a55d9312d')
+Generation
+Replace Attribute With Variableapp/src/main/java/com/github/mobile/ui/commit/CommitDiffListFragment.java@authorName : TextViewapp/src/main/java/com/github/mobile/ui/commit/CommitDiffListFragment.java@parentIdText : TextViewapp/src/main/java/com/github/mobile/ui/commit/CommitDiffListFragment.java 69:69
+******************************
+******************************
+coarse grained commits 42f5a8c677fd3c98f6aed8a02186c5448fa633b1
+fine grained commits ('d8fa6213684a7d998415f93e5005e94ba05b15cb', '5377d6eef2baf13f6682f70909dc7eb6daf444bb', '55234e6783d1c2606b014c9916392bd1503a1ea0', '6e1a95da1b2793861d56652491a3b2dcaefcb9b0', '32fdc0d270754496ec6421fc228d3b91d5a9c5da')
+Generation
+Change Parameter Typeapp/src/main/java/com/github/mobile/ui/user/NewsListAdapter.java@text : Stringapp/src/main/java/com/github/mobile/ui/StyledText.java@text : CharSequenceapp/src/main/java/com/github/mobile/ui/user/NewsListAdapter.java 139:139
+Generation
+Change Return Typeapp/src/main/java/com/github/mobile/ui/user/NewsListAdapter.java@SpannableStringBuilderapp/src/main/java/com/github/mobile/ui/StyledText.java@StyledTextapp/src/main/java/com/github/mobile/ui/user/NewsListAdapter.java 139:139
+Generation
+Remove Parameterapp/src/main/java/com/github/mobile/ui/user/NewsListAdapter.java@builder : SpannableStringBuilderapp/src/main/java/com/github/mobile/ui/StyledText.java@public append(text CharSequence, span Object) : StyledTextapp/src/main/java/com/github/mobile/ui/user/NewsListAdapter.java 140:140
+Generation
+Change Method Access Modifierapp/src/main/java/com/github/mobile/ui/user/NewsListAdapter.java@private appendSpan(text String, span Object, builder SpannableStringBuilder) : SpannableStringBuilderapp/src/main/java/com/github/mobile/ui/StyledText.java@public append(text CharSequence, span Object) : StyledTextapp/src/main/java/com/github/mobile/ui/user/NewsListAdapter.java 139:148
+Generation
+Remove Method Modifierapp/src/main/java/com/github/mobile/ui/user/NewsListAdapter.java@private appendSpan(text String, span Object, builder SpannableStringBuilder) : SpannableStringBuilderapp/src/main/java/com/github/mobile/ui/StyledText.java@public append(text CharSequence, span Object) : StyledTextapp/src/main/java/com/github/mobile/ui/user/NewsListAdapter.java 139:148
+Generation
+Move And Rename Methodapp/src/main/java/com/github/mobile/ui/user/NewsListAdapter.java@private appendSpan(text String, span Object, builder SpannableStringBuilder) : SpannableStringBuilderapp/src/main/java/com/github/mobile/ui/StyledText.java@public append(text CharSequence, span Object) : StyledTextapp/src/main/java/com/github/mobile/ui/user/NewsListAdapter.java 139:148
+******************************
+******************************
+coarse grained commits 6ad10cd11d731973e6b14605ddcd6f38ff8d32a8
+fine grained commits ('a7f2337914e87144e7c52872224d88959dcad3ae', '841e6e06ad3cdbb7a1192170e99e211356207ae1', '7ede3fff4995afc6fcc5800a2ca622b60ddabf90', '9ab778b31372b9101a0be147b126df3e79155500', '8b22284d60b7f0d62bcccda9ab8e7e89fcfdc3d0')
+Generation
+Extract Superclassapp/src/main/java/com/github/pockethub/ui/issue/AssigneeDialog.java@com.github.pockethub.ui.issue.AssigneeDialogapp/src/main/java/com/github/pockethub/ui/issue/AssigneeDialog.java@com.github.pockethub.ui.issue.AssigneeDialogapp/src/main/java/com/github/pockethub/ui/issue/AssigneeDialog.java 21:99
+******************************
+******************************
+coarse grained commits 206c6caf3d3012694cb34ea031f9fc1d1e6269d4
+fine grained commits ('1093c1649f260bf21b3d4be9a60969067146fa0f', 'a8191203c5bdee1fe7a27d0194286aacfcf79512', 'b48daba2cbeba46c5f4d41f203dbdc54fc69e776', '08f9687e89afc30b63718029884411ec83e5ce39', 'f7002c5d4cce826f860c3e3b280d80f04656e471')
+Generation
+Add Parameter Modifiergithub-android/src/main/java/com/github/mobile/android/util/Avatar.java@db : SQLiteDatabasegithub-android/src/main/java/com/github/mobile/android/AccountDataManager.java@db : SQLiteDatabasegithub-android/src/main/java/com/github/mobile/android/util/Avatar.java 48:48
+Generation
+Add Parameter Modifiergithub-android/src/main/java/com/github/mobile/android/util/Avatar.java@oldVersion : intgithub-android/src/main/java/com/github/mobile/android/AccountDataManager.java@oldVersion : intgithub-android/src/main/java/com/github/mobile/android/util/Avatar.java 48:48
+Generation
+Add Parameter Modifiergithub-android/src/main/java/com/github/mobile/android/util/Avatar.java@newVersion : intgithub-android/src/main/java/com/github/mobile/android/AccountDataManager.java@newVersion : intgithub-android/src/main/java/com/github/mobile/android/util/Avatar.java 48:48
+Generation
+Add Method Annotationgithub-android/src/main/java/com/github/mobile/android/util/Avatar.java@public onUpgrade(db SQLiteDatabase, oldVersion int, newVersion int) : voidgithub-android/src/main/java/com/github/mobile/android/AccountDataManager.java@@Overridegithub-android/src/main/java/com/github/mobile/android/util/Avatar.java 48:51
+Generation
+Move Methodgithub-android/src/main/java/com/github/mobile/android/util/Avatar.java@public onUpgrade(db SQLiteDatabase, oldVersion int, newVersion int) : voidgithub-android/src/main/java/com/github/mobile/android/AccountDataManager.java@public onUpgrade(db SQLiteDatabase, oldVersion int, newVersion int) : voidgithub-android/src/main/java/com/github/mobile/android/util/Avatar.java 48:51
+Generation
+Add Parameter Modifiergithub-android/src/main/java/com/github/mobile/android/util/Avatar.java@login : Stringgithub-android/src/main/java/com/github/mobile/android/AccountDataManager.java@login : Stringgithub-android/src/main/java/com/github/mobile/android/util/Avatar.java 53:53
+Generation
+Move Methodgithub-android/src/main/java/com/github/mobile/android/util/Avatar.java@public getAvatar(login String) : byte[]github-android/src/main/java/com/github/mobile/android/AccountDataManager.java@public getAvatar(login String) : byte[]github-android/src/main/java/com/github/mobile/android/util/Avatar.java 53:67
+******************************

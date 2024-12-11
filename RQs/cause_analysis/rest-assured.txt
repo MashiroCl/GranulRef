@@ -1,0 +1,212 @@
+******************************
+coarse grained commits a895741f8afd666826e522bd395598277d39fdbf
+fine grained commits ('92bee7bbb3ac0bf9879a65059184a22bf05a642f', '7f275b7050bbe4e59e3a88b71bf32340230d25cd')
+Generation
+Add Parameterrest-assured/src/main/java/com/jayway/restassured/authentication/CertificateAuthSettings.java@private CertificateAuthSettings(certType String, port int, keyStoreProvider KeystoreProvider, checkServerHostname boolean)rest-assured/src/main/java/com/jayway/restassured/authentication/CertificateAuthSettings.java@trustStore : KeyStorerest-assured/src/main/java/com/jayway/restassured/authentication/CertificateAuthSettings.java 17:23
+Generation
+Add Parameterrest-assured/src/main/java/com/jayway/restassured/authentication/CertificateAuthSettings.java@private CertificateAuthSettings(certType String, port int, keyStoreProvider KeystoreProvider, checkServerHostname boolean)rest-assured/src/main/java/com/jayway/restassured/authentication/CertificateAuthSettings.java@x509HostnameVerifier : X509HostnameVerifierrest-assured/src/main/java/com/jayway/restassured/authentication/CertificateAuthSettings.java 17:23
+Generation
+Remove Parameterrest-assured/src/main/java/com/jayway/restassured/authentication/CertificateAuthSettings.java@keyStoreProvider : KeystoreProviderrest-assured/src/main/java/com/jayway/restassured/authentication/CertificateAuthSettings.java@private CertificateAuthSettings(certType String, port int, trustStore KeyStore, x509HostnameVerifier X509HostnameVerifier)rest-assured/src/main/java/com/jayway/restassured/authentication/CertificateAuthSettings.java 17:17
+Generation
+Remove Parameterrest-assured/src/main/java/com/jayway/restassured/authentication/CertificateAuthSettings.java@checkServerHostname : booleanrest-assured/src/main/java/com/jayway/restassured/authentication/CertificateAuthSettings.java@private CertificateAuthSettings(certType String, port int, trustStore KeyStore, x509HostnameVerifier X509HostnameVerifier)rest-assured/src/main/java/com/jayway/restassured/authentication/CertificateAuthSettings.java 17:17
+******************************
+******************************
+coarse grained commits 70810d6a1b2ba7211f635d7b7ed394646671e987
+fine grained commits ('8ce51fb166c229591c99a6b19bbadf67dbadadc8', '2badaf48652bb655760b115bef0906053e4a76c4')
+Generation
+Remove Method Annotationrest-assured/src/main/groovy/com/jayway/restassured/internal/encoderregistry/RestAssuredEncoderRegistry.java@@Overriderest-assured/src/main/java/com/jayway/restassured/internal/http/EncoderRegistry.java@public getAt(contentType Object) : Closurerest-assured/src/main/groovy/com/jayway/restassured/internal/encoderregistry/RestAssuredEncoderRegistry.java 10:10
+Generation
+Pull Up Methodrest-assured/src/main/groovy/com/jayway/restassured/internal/encoderregistry/RestAssuredEncoderRegistry.java@public getAt(contentType Object) : Closurerest-assured/src/main/java/com/jayway/restassured/internal/http/EncoderRegistry.java@public getAt(contentType Object) : Closurerest-assured/src/main/groovy/com/jayway/restassured/internal/encoderregistry/RestAssuredEncoderRegistry.java 10:18
+******************************
+******************************
+coarse grained commits 817fce36eed2b3ae50990078ac8c8359591fa6ad
+fine grained commits ('aefbb3f93c177e8ec7e81f182fda9840d488cc1f', '47fbedd7b7601eb176901d04c5611b0fed1b4b19')
+Generation
+Change Return Typerest-assured/src/main/java/com/jayway/restassured/response/Response.java@Map<String,String>rest-assured/src/main/java/com/jayway/restassured/response/Response.java@Headersrest-assured/src/main/java/com/jayway/restassured/response/Response.java 16:16
+Generation
+Change Return Typerest-assured/src/main/java/com/jayway/restassured/response/Response.java@Map<String,String>rest-assured/src/main/java/com/jayway/restassured/response/Response.java@Headersrest-assured/src/main/java/com/jayway/restassured/response/Response.java 18:18
+******************************
+******************************
+coarse grained commits b5db385148ce80d0e9894a2366970a55ad4d4515
+fine grained commits ('b7a9f668e871e6be79769acb06a246d668c557b6', 'b1a117c74dd68776e2e2031201620d781e064a3c')
+Generation
+Change Parameter Typerest-assured/src/main/java/com/jayway/restassured/specification/RequestSender.java@pathParams : Map<String,Object>rest-assured/src/main/java/com/jayway/restassured/specification/RequestSender.java@pathParams : Map<String,?>rest-assured/src/main/java/com/jayway/restassured/specification/RequestSender.java 11:11
+Generation
+Change Parameter Typerest-assured/src/main/java/com/jayway/restassured/specification/RequestSender.java@pathParams : Map<String,Object>rest-assured/src/main/java/com/jayway/restassured/specification/RequestSender.java@pathParams : Map<String,?>rest-assured/src/main/java/com/jayway/restassured/specification/RequestSender.java 15:15
+Generation
+Change Parameter Typerest-assured/src/main/java/com/jayway/restassured/specification/RequestSender.java@pathParams : Map<String,Object>rest-assured/src/main/java/com/jayway/restassured/specification/RequestSender.java@pathParams : Map<String,?>rest-assured/src/main/java/com/jayway/restassured/specification/RequestSender.java 23:23
+Generation
+Change Parameter Typerest-assured/src/main/java/com/jayway/restassured/specification/RequestSender.java@pathParams : Map<String,Object>rest-assured/src/main/java/com/jayway/restassured/specification/RequestSender.java@pathParams : Map<String,?>rest-assured/src/main/java/com/jayway/restassured/specification/RequestSender.java 27:27
+******************************
+******************************
+coarse grained commits 28cb6661b725f0809a8b3195c4b57316cf74da23
+fine grained commits ('568659dddc7c067a2effbda71d0a85fe312f1706', '18eeab7b23b6b996ff5a67f3a8c26cd9e1d37c18')
+Generation
+Rename Methodexamples/rest-assured-itest-java/src/test/java/io/restassured/itest/java/UnicodeITest.java@public unicode_values_works_in_json_content() : voidexamples/rest-assured-itest-java/src/test/java/io/restassured/itest/java/UnicodeITest.java@public unicode_values_works_in_utf8_for_json_content_by_default() : voidexamples/rest-assured-itest-java/src/test/java/io/restassured/itest/java/UnicodeITest.java 48:58
+******************************
+******************************
+coarse grained commits b2796330d803ee13c5d694d574262e1cefa5680c
+fine grained commits ('46f5f78a483c424ae833744e7ace67d5cf38f113', 'eff5f5e01b22c239f35603ec881943da03b274f1')
+Generation
+Move Attributerest-assured/src/main/java/com/jayway/restassured/config/RestAssuredConfig.java@private headerConfig : HeaderConfigmodules/spring-mock-mvc/src/main/java/com/jayway/restassured/module/mockmvc/config/RestAssuredMockMvcConfig.java@private headerConfig : HeaderConfigrest-assured/src/main/java/com/jayway/restassured/config/RestAssuredConfig.java 20:20
+******************************
+******************************
+coarse grained commits c648ac7ae9af7777edfd6436ccf4e5154a1ce9bf
+fine grained commits ('0a0689816bcba9290b87d9c270479ef59f368e9a', '0a532c9b7d70aeac46c8d6f9b8e2eab8d6b6d0bd')
+Generation
+Rename Parameterrest-assured/src/main/java/com/jayway/restassured/RestAssured.java@certType : Stringrest-assured/src/main/java/com/jayway/restassured/RestAssured.java@keystoreType : Stringrest-assured/src/main/java/com/jayway/restassured/RestAssured.java 368:368
+Generation
+Add Method Annotationrest-assured/src/main/java/com/jayway/restassured/RestAssured.java@public certificate(certURL String, password String, certType String, port int) : AuthenticationSchemerest-assured/src/main/java/com/jayway/restassured/RestAssured.java@@Deprecatedrest-assured/src/main/java/com/jayway/restassured/RestAssured.java 368:370
+Generation
+Change Attribute Typerest-assured/src/main/java/com/jayway/restassured/spi/Signature.java@Header : Signaturerest-assured/src/main/java/com/jayway/restassured/authentication/OAuthSignature.java@HEADER : OAuthSignaturerest-assured/src/main/java/com/jayway/restassured/spi/Signature.java 4:4
+******************************
+******************************
+coarse grained commits b5bc6f4e954e09f83173f9030d032891d313992c
+fine grained commits ('d0885ba9effe356f19362c2ea27275b5dcb4de0d', 'a66a58c547c32966feb6ae3f849f5b18b4fbb2ad')
+Generation
+Rename Methodxml-path/src/test/java/com/jayway/restassured/path/xml/XmlPathObjectDeserializationTest.java@public deserializes_list_using_jaxb() : voidxml-path/src/test/java/com/jayway/restassured/path/xml/XmlPathObjectDeserializationTest.java@public cannot_deserialize_list_when_using_getObject() : voidxml-path/src/test/java/com/jayway/restassured/path/xml/XmlPathObjectDeserializationTest.java 75:80
+******************************
+******************************
+coarse grained commits 09dfdc2f5a6ea3db5e1cd860723cbfbd3bf4e51b
+fine grained commits ('ee0bddba0257ec2544a9b271a697319e15e3deb9', '15c62246544d87006c721e600e3e348b7d587c10')
+Generation
+Rename Methodexamples/rest-assured-itest-java/src/test/java/com/jayway/restassured/itest/java/JSONGetITest.java@public supportsExpectingStatusCodeWhenAuthenticationError() : voidexamples/rest-assured-itest-java/src/test/java/com/jayway/restassured/itest/java/JSONGetITest.java@public supportsParsingJsonLists() : voidexamples/rest-assured-itest-java/src/test/java/com/jayway/restassured/itest/java/JSONGetITest.java 522:525
+******************************
+******************************
+coarse grained commits a7111692a82aaa9d4e7aeceabfa7b56d9453853d
+fine grained commits ('1ac53d932540d0d4d3115ee5df04fa69511eb8cf', '23509282887f5a4a60974704c4f3ee31e616e9d8', '54fa7dc74608325beab9efacdeb8ee5ff487646c')
+Generation
+Rename Parametermodules/spring-mock-mvc/src/main/java/com/jayway/restassured/module/mockmvc/internal/MockMvcRequestSpecificationImpl.java@controllers : Object...modules/spring-mock-mvc/src/main/java/com/jayway/restassured/module/mockmvc/internal/MockMvcRequestSpecificationImpl.java@controllerOrMockMvcConfigurer : Object...modules/spring-mock-mvc/src/main/java/com/jayway/restassured/module/mockmvc/internal/MockMvcRequestSpecificationImpl.java 129:129
+Generation
+Rename Parametermodules/spring-mock-mvc/src/main/java/com/jayway/restassured/module/mockmvc/specification/MockMvcRequestSpecification.java@controllers : Object...modules/spring-mock-mvc/src/main/java/com/jayway/restassured/module/mockmvc/specification/MockMvcRequestSpecification.java@controllerOrMockMvcConfigurer : Object...modules/spring-mock-mvc/src/main/java/com/jayway/restassured/module/mockmvc/specification/MockMvcRequestSpecification.java 138:138
+******************************
+******************************
+coarse grained commits 43d0b04fc355f3b0a4756c78491e1d4ed2f16eea
+fine grained commits ('b9edba0bcf4d7b5a1dacf9339aab408d78e28ee7', 'b285492316cdea3bf0057ca0df3460f73f761e0f', 'b1dfc54dbfac1776878d12886b30dbd821ac26e6')
+Generation
+Change Variable Typerest-assured/src/main/java/com/jayway/restassured/path/json/JsonPath.java@type : ObjectMapperTypejson-path/src/main/java/com/jayway/restassured/path/json/JsonPath.java@cfg : JsonPathConfigrest-assured/src/main/java/com/jayway/restassured/path/json/JsonPath.java 195:195
+Generation
+Remove Variable Modifierrest-assured/src/main/java/com/jayway/restassured/path/json/JsonPath.java@type : ObjectMapperTypejson-path/src/main/java/com/jayway/restassured/path/json/JsonPath.java@cfg : JsonPathConfigrest-assured/src/main/java/com/jayway/restassured/path/json/JsonPath.java 195:195
+Generation
+Rename Variablerest-assured/src/main/java/com/jayway/restassured/path/json/JsonPath.java@type : ObjectMapperTypejson-path/src/main/java/com/jayway/restassured/path/json/JsonPath.java@cfg : JsonPathConfigrest-assured/src/main/java/com/jayway/restassured/path/json/JsonPath.java 195:195
+******************************
+******************************
+coarse grained commits 79bddebcedd64691e7f1238266ab4da3c3e3b1c6
+fine grained commits ('cf1d60c830c037ec3f3c0418cbb47e965ef5f527', '24471b780a9f4d51e305990a5dff26ecc854185c', '6230daf4e75aa54c47429604a89fc79023e60fb6')
+Generation
+Move And Rename Methodexamples/rest-assured-itest-java/src/test/java/com/jayway/restassured/itest/java/FilterITest.java@public logErrorsUsingResponseSpec() : voidexamples/rest-assured-itest-java/src/test/java/com/jayway/restassured/itest/java/LoggingITest.java@public logErrorsUsingRequestSpec() : voidexamples/rest-assured-itest-java/src/test/java/com/jayway/restassured/itest/java/FilterITest.java 54:57
+******************************
+******************************
+coarse grained commits 6e29ff5787087af0ae6506cca5db0eb72bb31a82
+fine grained commits ('7bbf415be75e184341868ff090520339157f35ed', 'aefbb3f93c177e8ec7e81f182fda9840d488cc1f', '47fbedd7b7601eb176901d04c5611b0fed1b4b19')
+Generation
+Extract Classexamples/rest-assured-itest-java/src/test/java/com/jayway/restassured/itest/java/JSONGetITest.java@com.jayway.restassured.itest.java.JSONGetITestexamples/rest-assured-itest-java/src/test/java/com/jayway/restassured/itest/java/JSONGetITest.java@com.jayway.restassured.itest.java.JSONGetITestexamples/rest-assured-itest-java/src/test/java/com/jayway/restassured/itest/java/JSONGetITest.java 24:672
+Generation
+Move Methodexamples/rest-assured-itest-java/src/test/java/com/jayway/restassured/itest/java/JSONGetITest.java@public supportsCookieStringMatching() : voidexamples/rest-assured-itest-java/src/test/java/com/jayway/restassured/itest/java/CookieITest.java@public supportsCookieStringMatching() : voidexamples/rest-assured-itest-java/src/test/java/com/jayway/restassured/itest/java/JSONGetITest.java 386:389
+Generation
+Remove Method Annotationexamples/rest-assured-itest-java/src/test/java/com/jayway/restassured/itest/java/JSONGetITest.java@@Testexamples/rest-assured-itest-java/src/test/java/com/jayway/restassured/itest/java/CookieITest.java@public supportsCookieStringMatching() : voidexamples/rest-assured-itest-java/src/test/java/com/jayway/restassured/itest/java/JSONGetITest.java 386:386
+Generation
+Move Methodexamples/rest-assured-itest-java/src/test/java/com/jayway/restassured/itest/java/JSONGetITest.java@public multipleCookiesShortVersionUsingPlainStrings() : voidexamples/rest-assured-itest-java/src/test/java/com/jayway/restassured/itest/java/CookieITest.java@public multipleCookiesShortVersionUsingPlainStrings() : voidexamples/rest-assured-itest-java/src/test/java/com/jayway/restassured/itest/java/JSONGetITest.java 396:399
+******************************
+******************************
+coarse grained commits 19fd9fa862b954504ca88af67d1a1faa103c1cc4
+fine grained commits ('f0825ec1f2222e91ed71db09387fa1770a0a2913', 'fcb0d0ca90b48f832d56b7fc91d619928bc7a02d', '42d19ca69bf919c8569118977f300cdca673b409')
+Generation
+Move And Rename Classrest-assured/src/main/java/com/jayway/restassured/specification/KeyStoreSpec.java@com.jayway.restassured.specification.KeyStoreSpecrest-assured/src/main/groovy/com/jayway/restassured/internal/KeystoreSpec.java@com.jayway.restassured.internal.KeystoreSpecrest-assured/src/main/java/com/jayway/restassured/specification/KeyStoreSpec.java 6:10
+******************************
+******************************
+coarse grained commits 068b395313e5694b99516804bf3dc196c753c891
+fine grained commits ('21f3667dbdfaab79d770736ecf2fe66fafa019bd', '9f6854bffefd3fc2959d7866cda93cbd9d079b3a', '08fd5dcce1baf225d4e8f5cbca2d8f4ac571873f')
+Generation
+Extract And Move Methodmodules/spring-mock-mvc/src/test/java/com/jayway/restassured/module/mockmvc/MockHttpServletRequestBuilderInterceptorTest.java@public mock_http_servlet_request_builder_interceptor_works() : voidmodules/spring-mock-mvc/src/main/java/com/jayway/restassured/module/mockmvc/RestAssuredMockMvc.java@public get(path String, pathParams Object...) : MockMvcResponsemodules/spring-mock-mvc/src/test/java/com/jayway/restassured/module/mockmvc/MockHttpServletRequestBuilderInterceptorTest.java 14:28
+******************************
+******************************
+coarse grained commits 5d19b7743000b9643089339f2c55a003f87fd36b
+fine grained commits ('0a532c9b7d70aeac46c8d6f9b8e2eab8d6b6d0bd', 'e0532ba077828bb11ee0bf6b174c60dfce37c1d0', 'e853968ee4194ca4b94b0b0cb67a159ba2aca868')
+Generation
+Rename Parameterrest-assured/src/main/java/com/jayway/restassured/RestAssured.java@certType : Stringrest-assured/src/main/java/com/jayway/restassured/RestAssured.java@keystoreType : Stringrest-assured/src/main/java/com/jayway/restassured/RestAssured.java 365:365
+Generation
+Add Method Annotationrest-assured/src/main/java/com/jayway/restassured/RestAssured.java@public certificate(certURL String, password String, certType String, port int) : AuthenticationSchemerest-assured/src/main/java/com/jayway/restassured/RestAssured.java@@Deprecatedrest-assured/src/main/java/com/jayway/restassured/RestAssured.java 365:367
+******************************
+******************************
+coarse grained commits 26f3b58d62061732bcb4ca3a4099eb373d729312
+fine grained commits ('8d2d1880c25f1d346b32cd8463699a3a8218e10c', '2195b40497986d1337bea77f8b7d75d2b8ee3a60', '7bbf415be75e184341868ff090520339157f35ed')
+Generation
+Move Methodexamples/rest-assured-itest-java/src/test/java/com/jayway/restassured/itest/java/JSONGetITest.java@public multipleCookiesShortVersionUsingPlainStrings() : voidexamples/rest-assured-itest-java/src/test/java/com/jayway/restassured/itest/java/CookieITest.java@public multipleCookiesShortVersionUsingPlainStrings() : voidexamples/rest-assured-itest-java/src/test/java/com/jayway/restassured/itest/java/JSONGetITest.java 396:399
+******************************
+******************************
+coarse grained commits 47c7e1e07a7bbd0d0ff3c8df9e47b8985b5dbec1
+fine grained commits ('1b4fd270be7d2ff92d6dafa914e4a174a1ae440f', 'aeb19b681876a2ced0afb7b0b9bedd272a35618f', '4ad00ec99092135587571f5d38e70cc393bc3ef3', '02c16701f309d6345c3e39ead5879e3037de69c2')
+Generation
+Split Attributemodules/spring-mock-mvc/src/main/java/com/jayway/restassured/module/mockmvc/RestAssuredMockMvc.java@mockMvc : MockMvcmodules/spring-mock-mvc/src/main/java/com/jayway/restassured/module/mockmvc/RestAssuredMockMvc.java@mockMvcFactory : MockMvcFactorymodules/spring-mock-mvc/src/main/java/com/jayway/restassured/module/mockmvc/RestAssuredMockMvc.java 33:33
+Generation
+Remove Parametermodules/spring-mock-mvc/src/main/java/com/jayway/restassured/module/mockmvc/internal/MockMvcRequestSpecificationImpl.java@mockMvc : MockMvcmodules/spring-mock-mvc/src/main/java/com/jayway/restassured/module/mockmvc/internal/MockMvcRequestSpecificationImpl.java@public MockMvcRequestSpecificationImpl(mockMvcFactory MockMvcFactory, config RestAssuredMockMvcConfig, resultHandlers List<ResultHandler>, requestPostProcessors List<RequestPostProcessor>, basePath String, requestSpecification MockMvcRequestSpecification, responseSpecification ResponseSpecification, authentication MockMvcAuthenticationScheme)modules/spring-mock-mvc/src/main/java/com/jayway/restassured/module/mockmvc/internal/MockMvcRequestSpecificationImpl.java 90:90
+******************************
+******************************
+coarse grained commits 85264cc794538442c3e343a5a8b49ddf4689844b
+fine grained commits ('a6f74944d3fe4ae5b474052174d77b514d6d1f9c', '80b6c9c556bb27be4deb8a328e693eea4f163226', '2f5edda9eb6b10d5862528a8d9306724ea47e30c', 'a639e3133fb75919f47cd136d76fc292d8fe8a4f')
+Generation
+Rename Methodexamples/rest-assured-itest-java/src/test/java/com/jayway/restassured/itest/java/RootPathITest.java@public cannotAppendRootPathToEmptyRootPath() : voidexamples/rest-assured-itest-java/src/test/java/com/jayway/restassured/itest/java/RootPathITest.java@public cannotDetachRootPathToFromRootPath() : voidexamples/rest-assured-itest-java/src/test/java/com/jayway/restassured/itest/java/RootPathITest.java 192:198
+******************************
+******************************
+coarse grained commits 2d78a25ce7b925f1c05c9428a31641d107152ae7
+fine grained commits ('9711cb65ab52fadaecca6a9c7443c12795be5e85', 'bc64bc091fa8c6bd0ef233ccd765c4d789402d1f', 'c4a2ebb20c57b5ccf2079bfe60dc2e010cac329b', '3886d8efc9faccef0edec77685d5d76fcd56113b')
+Generation
+Move And Rename Classmodules/spring-mock-mvc/src/main/java/io/restassured/module/mockmvc/config/MockMvcParamConfig.java@io.restassured.module.mockmvc.config.MockMvcParamConfig.UpdateStrategyexamples/rest-assured-itest-java/src/test/java/io/restassured/itest/java/support/WithJetty.java@io.restassured.itest.java.support.WithJetty.JettyOptionmodules/spring-mock-mvc/src/main/java/io/restassured/module/mockmvc/config/MockMvcParamConfig.java 99:102
+******************************
+******************************
+coarse grained commits 96feff18e9dfb075de584013821d9c155b80f940
+fine grained commits ('801751afbe139bd7f07b425836df9950b146414f', 'd8f31aee50c1ac874e67e8649763c80ac8c85c49', '6327fd21f06904bc818f998d00b4b1a830f8ffed', '1639709fb0dab0e697c62b400664d6678704d818')
+Generation
+Split Attributemodules/spring-mock-mvc/src/main/java/com/jayway/restassured/module/mockmvc/internal/MockMvcRequestSpecificationImpl.java@mockMvcRestAssuredConfig : MockMvcRestAssuredConfigmodules/spring-mock-mvc/src/main/java/com/jayway/restassured/module/mockmvc/internal/MockMvcRequestSpecificationImpl.java@restAssuredConfigMockMvc : RestAssuredConfigMockMvcmodules/spring-mock-mvc/src/main/java/com/jayway/restassured/module/mockmvc/internal/MockMvcRequestSpecificationImpl.java 47:47
+Generation
+Add Parametermodules/spring-mock-mvc/src/main/java/com/jayway/restassured/module/mockmvc/MockMvcRequestSpecificationImpl.java@package MockMvcRequestSpecificationImpl(mockMvc MockMvc)modules/spring-mock-mvc/src/main/java/com/jayway/restassured/module/mockmvc/internal/MockMvcRequestSpecificationImpl.java@config : RestAssuredConfigMockMvcmodules/spring-mock-mvc/src/main/java/com/jayway/restassured/module/mockmvc/MockMvcRequestSpecificationImpl.java 49:52
+Generation
+Change Method Access Modifiermodules/spring-mock-mvc/src/main/java/com/jayway/restassured/module/mockmvc/MockMvcRequestSpecificationImpl.java@package MockMvcRequestSpecificationImpl(mockMvc MockMvc)modules/spring-mock-mvc/src/main/java/com/jayway/restassured/module/mockmvc/internal/MockMvcRequestSpecificationImpl.java@public MockMvcRequestSpecificationImpl(mockMvc MockMvc, config RestAssuredConfigMockMvc)modules/spring-mock-mvc/src/main/java/com/jayway/restassured/module/mockmvc/MockMvcRequestSpecificationImpl.java 49:52
+Generation
+Move Methodmodules/spring-mock-mvc/src/main/java/com/jayway/restassured/module/mockmvc/MockMvcRequestSpecificationImpl.java@package MockMvcRequestSpecificationImpl(mockMvc MockMvc)modules/spring-mock-mvc/src/main/java/com/jayway/restassured/module/mockmvc/internal/MockMvcRequestSpecificationImpl.java@public MockMvcRequestSpecificationImpl(mockMvc MockMvc, config RestAssuredConfigMockMvc)modules/spring-mock-mvc/src/main/java/com/jayway/restassured/module/mockmvc/MockMvcRequestSpecificationImpl.java 49:52
+******************************
+******************************
+coarse grained commits a61449994d5ac9c6e55c9bd6e8a51e7eeb41b764
+fine grained commits ('b1dfc54dbfac1776878d12886b30dbd821ac26e6', 'f52c5f658795a9c7c633f6e2649cc65cfb56fa21', 'd54dacef5c0dec04e793ad498547f22d4b7f0e04', '2d4912580608c52053c4debfe4f303fa8d71b386', '12deac699a5504e785089dc5705aa86b3928a501')
+Generation
+Rename Parameterrest-assured/src/main/java/com/jayway/restassured/path/json/JsonPath.java@objectMapperFactory : ObjectMapperFactory<?>json-path/src/main/java/com/jayway/restassured/path/json/JsonPath.java@jsonPathConfig : JsonPathConfigrest-assured/src/main/java/com/jayway/restassured/path/json/JsonPath.java 56:56
+Generation
+Change Parameter Typerest-assured/src/main/java/com/jayway/restassured/path/json/JsonPath.java@objectMapperFactory : ObjectMapperFactory<?>json-path/src/main/java/com/jayway/restassured/path/json/JsonPath.java@jsonPathConfig : JsonPathConfigrest-assured/src/main/java/com/jayway/restassured/path/json/JsonPath.java 56:56
+******************************
+******************************
+coarse grained commits e642b9819ec49edc1d8fa934d1626367fcea1e1a
+fine grained commits ('ccc54d6993054253704d4d3aa95c667037459d97', 'bb55c5383ccae155e327155de93f2cea7df31686', '8338398814f1af8fda0c0108ddcb8823dbe9cd2f', '11b0a841d3339677ed610f769640b2e08f7ec7e6', 'ee0bddba0257ec2544a9b271a697319e15e3deb9')
+Generation
+Rename Methodexamples/rest-assured-itest-java/src/test/java/com/jayway/restassured/itest/java/JSONGetITest.java@public basicAuthenticationUsingDefault() : voidexamples/rest-assured-itest-java/src/test/java/com/jayway/restassured/itest/java/JSONGetITest.java@public specifyingFullyQualifiedPathOverridesDefaultValues() : voidexamples/rest-assured-itest-java/src/test/java/com/jayway/restassured/itest/java/JSONGetITest.java 495:503
+******************************
+******************************
+coarse grained commits 409fed5df8a8058c0f906c0b6584805b582c1a99
+fine grained commits ('ea6fd7809a65872bbc3302328c37f3af2603e9ee', 'a63d6e3b2ed7f24718bfb9676da496c1253bc580', 'b84692a6c2b43a9715ab996b325a90812ec2e126', '233d67145ba5f29ea9e52272341278229720a5db', 'b2033dc53ad2ef7b8c9c9ac18e0970971f36b775')
+Generation
+Add Method Annotationrest-assured/src/main/java/com/jayway/restassured/RestAssured.java@public certificate(certURL String, password String, certType String, port int, trustStoreProvider KeystoreProvider) : AuthenticationSchemerest-assured/src/main/java/com/jayway/restassured/RestAssured.java@@Deprecatedrest-assured/src/main/java/com/jayway/restassured/RestAssured.java 355:357
+Generation
+Add Method Annotationrest-assured/src/main/java/com/jayway/restassured/RestAssured.java@public certificate(certURL String, password String, certType String, port int) : AuthenticationSchemerest-assured/src/main/java/com/jayway/restassured/RestAssured.java@@Deprecatedrest-assured/src/main/java/com/jayway/restassured/RestAssured.java 370:372
+Generation
+Add Method Annotationrest-assured/src/main/java/com/jayway/restassured/specification/AuthenticationSpecification.java@public certificate(certURL String, password String, certType String, port int) : RequestSpecificationrest-assured/src/main/java/com/jayway/restassured/specification/AuthenticationSpecification.java@@Deprecatedrest-assured/src/main/java/com/jayway/restassured/specification/AuthenticationSpecification.java 18:18
+Generation
+Add Method Annotationrest-assured/src/main/java/com/jayway/restassured/specification/AuthenticationSpecification.java@public certificate(certURL String, password String, certType String, port int, trustStoreProvider KeystoreProvider) : RequestSpecificationrest-assured/src/main/java/com/jayway/restassured/specification/AuthenticationSpecification.java@@Deprecatedrest-assured/src/main/java/com/jayway/restassured/specification/AuthenticationSpecification.java 20:20
+******************************
+******************************
+coarse grained commits 32d9ab2259c6f41124fd8317715f315435b8ede5
+fine grained commits ('eccbb7d8e25e1cbd2cb3bde3315a2990859b5767', '804d7bab2db7eb15f58dc3c36de73f5d03ec1a78', '4d715d1a015db4fac9699ac62d951906a0e49cdf', '4862c576d119ec6033f59033aab63e7fc6f16328', '590d3d4fffc27d62c44b5c68783fda761d0b8606')
+Generation
+Change Variable Typemodules/spring-mock-mvc/src/main/java/com/jayway/restassured/module/mockmvc/internal/MockMvcRequestSenderImpl.java@value : Objectmodules/spring-mock-mvc/src/main/java/com/jayway/restassured/module/mockmvc/internal/MockMvcRequestSenderImpl.java@request : MockHttpServletRequestBuildermodules/spring-mock-mvc/src/main/java/com/jayway/restassured/module/mockmvc/internal/MockMvcRequestSenderImpl.java 157:157
+Generation
+Parameterize Variablemodules/spring-mock-mvc/src/main/java/com/jayway/restassured/module/mockmvc/internal/MockMvcRequestSenderImpl.java@value : Objectmodules/spring-mock-mvc/src/main/java/com/jayway/restassured/module/mockmvc/internal/MockMvcRequestSenderImpl.java@request : MockHttpServletRequestBuildermodules/spring-mock-mvc/src/main/java/com/jayway/restassured/module/mockmvc/internal/MockMvcRequestSenderImpl.java 157:157
+******************************
+******************************
+coarse grained commits a47a6326a54a55f3d85ae50fe50635f073e153d1
+fine grained commits ('4933bccc7f7d7010ad543896faece6080fa61dc3', 'b7bdd8a4a69e6056bc3eacdf9960506c04fb6afb', 'cda3a5fdd8217d5111965ecf88ec14d9bdf7022b', 'f35ea4489a8ca02f524a821dffb502819e272f68', 'b9edba0bcf4d7b5a1dacf9339aab408d78e28ee7')
+Generation
+Extract Interfacerest-assured/src/main/java/com/jayway/restassured/mapper/ObjectMapperDeserializationContext.java@com.jayway.restassured.mapper.ObjectMapperDeserializationContextrest-assured/src/main/java/com/jayway/restassured/mapper/ObjectMapperDeserializationContext.java@com.jayway.restassured.mapper.ObjectMapperDeserializationContextrest-assured/src/main/java/com/jayway/restassured/mapper/ObjectMapperDeserializationContext.java 6:15
+Generation
+Pull Up Methodrest-assured/src/main/java/com/jayway/restassured/mapper/ObjectMapperDeserializationContext.java@public getType() : Class<?>rest-assured-common/src/main/java/com/jayway/restassured/mapper/ObjectDeserializationContext.java@public getType() : Class<?>rest-assured/src/main/java/com/jayway/restassured/mapper/ObjectMapperDeserializationContext.java 10:10
+Generation
+Pull Up Methodrest-assured/src/main/java/com/jayway/restassured/mapper/ObjectMapperDeserializationContext.java@public getCharset() : Stringrest-assured-common/src/main/java/com/jayway/restassured/mapper/ObjectDeserializationContext.java@public getCharset() : Stringrest-assured/src/main/java/com/jayway/restassured/mapper/ObjectMapperDeserializationContext.java 14:14
+******************************

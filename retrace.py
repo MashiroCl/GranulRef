@@ -18,7 +18,7 @@ import subprocess
 import json
 import pathlib
 from refactoring_operation.refactoring import Refactoring
-from match import load_commit_pairs_all
+from utils import load_commit_pairs_all
 from line_trace import BlameRes
 import re
 import argparse
@@ -37,6 +37,7 @@ class RetracedCommitHistory:
 
 def get_parent_sha1(git_path, sha1) -> str:
     command = f'git --git-dir={git_path} log --pretty=format:"%H" -n 1 {sha1}^'
+    # print(command)
     return subprocess.getoutput(command)
 
 
@@ -88,7 +89,11 @@ class RetraceCommit:
             traced_refs = []
             for ref in self.cgc.refs:
                 # if isValidRef(traced_ref):
-                ref.refactored_source_location = trace(ref, git_path, ignored_commits[0], ignored_commits)
+                # ref.refactored_source_location = trace(ref, git_path, ignored_commits[0], ignored_commits)
+                ref.refactored_source_location = trace2((ref.refactored_location.startLine, ref.refactored_location.startLine),
+                                                        ignored_commits[0],
+                                                        file_path=ref.refactored_location.file_path, git_path=git_path,
+                                                        ignore_commits = ignored_commits)
                 traced_refs.append(ref)
             if len(traced_refs):
                 retraced_refs = RetracedRefs(ignored_commits, traced_refs)
@@ -135,7 +140,8 @@ def get_blame_res(git_path, line_numbers: tuple[str, str], file_path: str, check
         blameRes_list = []
         properties = [each for each in output.split("\n") if
                       "filename " in each or is_commit_sha1(each.split(" ")[0].strip())]
-        for i in range(0, len(properties), 2):
+        # print("properties", properties)
+        for i in range(0, min(len(properties), 2), 2):
             sha1, oline = properties[i].split(" ")[:2]
             file_name = properties[i + 1].split("filename ")[1]
             blameRes_list.append(BlameRes(sha1, oline, file_name))
@@ -154,13 +160,72 @@ def get_blame_res(git_path, line_numbers: tuple[str, str], file_path: str, check
     return parse(res)
 
 
-def trace(ref, git_path, checkout_commit, ignored_commits):
-    res = get_blame_res(git_path,
-                        (ref.refactored_location.startLine, ref.refactored_location.startLine),
-                        ref.refactored_location.file_path,
-                        checkout_commit,
-                        ignored_commits)
-    return res
+def get_blame_res_with_checkout(line_numbers: tuple[str, str], checkout_commit:str, file_path: str, ignore_commits: list[str], git_path) -> list[BlameRes]:
+    """
+    use git-blame to trace the line number when code of line_numbers are firstly introduced
+    :param ignore_commits:
+    :param file_path: file path where code change lies
+    :param line_numbers: a tuple (start_line, end_line)
+    :param ignore_commits: the commits should be ignore when tracing in git blame api --ignore-rev
+    :return:
+    """
+
+    def is_commit_sha1(s: str) -> bool:
+        if len(s) != 40:
+            return False
+        return bool(re.compile("[0-9a-f]{40}").match(s))
+
+    def is_file_line(s: str) -> bool:
+        # to find the line that indicates the file path of the blame result
+        if "filename " in s and s.endswith(".java"): # ensure that the line is in the form of filename src/.../StepGraph.java
+            return True
+        return False
+
+    def parse(output) -> list[BlameRes]:
+        print("--------------------start-----------------------")
+        print("output", output)
+        blameRes_list = []
+        properties = [each for each in output.split("\n") if
+                      is_file_line(each.strip()) or is_commit_sha1(each.split(" ")[0].strip())]
+        print("properties", properties)
+        for i in range(0, len(properties), 2):
+            sha1, oline = properties[i].split(" ")[:2]
+            try:
+                file_name = properties[i + 1].split("filename ")[1]
+            except IndexError:
+                print("IndexError")
+                print("properties", properties)
+            blameRes_list.append(BlameRes(sha1, oline, file_name))
+        return blameRes_list
+
+    def generate_command(file_path, git_path, checkout_commit) -> str:
+        command = f"git --git-dir={git_path} blame --line-porcelain {checkout_commit} "
+        for ignore_commit in ignore_commits:
+            command = command + f"--ignore-rev {ignore_commit} "
+        command = command + f"-L {line_numbers[0]},{line_numbers[1]} {file_path}"
+        print("command", command)
+        return command
+
+    file_path = pathlib.Path(file_path) if not isinstance(file_path, pathlib.Path) else file_path
+    res = subprocess.getoutput(generate_command(file_path, git_path, checkout_commit))
+    return parse(res)
+
+# def trace(ref, git_path, checkout_commit, ignored_commits):
+#     res = get_blame_res(git_path,
+#                         (ref.refactored_location.startLine, ref.refactored_location.startLine),
+#                         ref.refactored_location.file_path,
+#                         checkout_commit,
+#                         ignored_commits)
+#     return res
+
+def trace2(line_numbers: tuple[str, str], commit: str, file_path: str, git_path,
+           ignore_commits= None) -> list[
+    BlameRes]:
+    if ignore_commits is None:
+        ignore_commits = []
+    blameRes_ls = get_blame_res_with_checkout(line_numbers, commit, file_path,
+                                              ignore_commits, git_path)
+    return blameRes_ls
 
 
 def load_CGCs(path: str):

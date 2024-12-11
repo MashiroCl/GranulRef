@@ -1,0 +1,196 @@
+******************************
+coarse grained commits ee6db16c4189f70438f5e7f4172274d54ef5a90b
+fine grained commits ('3cd638d3c853c4a2f308eae498cd1c03c74a5810', 'ce920df4f631b431c3a2ece11d7ddcdf40049eb3')
+Generation
+Move Attributesrc/main/java/net/schmizz/sshj/sftp/SFTPClient.java@private pathHelper : PathHelpersrc/main/java/net/schmizz/sshj/sftp/SFTPEngine.java@protected pathHelper : PathHelpersrc/main/java/net/schmizz/sshj/sftp/SFTPClient.java 24:24
+Generation
+Change Attribute Access Modifiersrc/main/java/net/schmizz/sshj/sftp/SFTPClient.java@private pathHelper : PathHelpersrc/main/java/net/schmizz/sshj/sftp/SFTPEngine.java@protected pathHelper : PathHelpersrc/main/java/net/schmizz/sshj/sftp/SFTPClient.java 24:24
+******************************
+******************************
+coarse grained commits b14cd0e759627ea42f4c63f4e9fccf7888fc2371
+fine grained commits ('ff8c98963643ea109cc64a13e5bfd2e0f6a4d949', 'f96e6475c434a9f6b399ea5ca22ee2a4222ee723')
+Generation
+Rename Methodsrc/main/java/net/schmizz/sshj/signature/AbstractSignature.java@public init(publicKey PublicKey, privateKey PrivateKey) : voidsrc/main/java/net/schmizz/sshj/signature/AbstractSignature.java@public initSign(privateKey PrivateKey) : voidsrc/main/java/net/schmizz/sshj/signature/AbstractSignature.java 21:32
+Generation
+Remove Parametersrc/main/java/net/schmizz/sshj/signature/AbstractSignature.java@publicKey : PublicKeysrc/main/java/net/schmizz/sshj/signature/AbstractSignature.java@public initSign(privateKey PrivateKey) : voidsrc/main/java/net/schmizz/sshj/signature/AbstractSignature.java 22:22
+Generation
+Rename Methodsrc/main/java/com/hierynomus/sshj/signature/SignatureEdDSA.java@public init(pubkey PublicKey, prvkey PrivateKey) : voidsrc/main/java/com/hierynomus/sshj/signature/SignatureEdDSA.java@public initSign(prvkey PrivateKey) : voidsrc/main/java/com/hierynomus/sshj/signature/SignatureEdDSA.java 35:48
+Generation
+Remove Parametersrc/main/java/com/hierynomus/sshj/signature/SignatureEdDSA.java@pubkey : PublicKeysrc/main/java/com/hierynomus/sshj/signature/SignatureEdDSA.java@public initSign(prvkey PrivateKey) : voidsrc/main/java/com/hierynomus/sshj/signature/SignatureEdDSA.java 36:36
+Generation
+Rename Methodsrc/main/java/net/schmizz/sshj/signature/Signature.java@public init(pubkey PublicKey, prvkey PrivateKey) : voidsrc/main/java/net/schmizz/sshj/signature/Signature.java@public initSign(prvkey PrivateKey) : voidsrc/main/java/net/schmizz/sshj/signature/Signature.java 8:8
+Generation
+Remove Parametersrc/main/java/net/schmizz/sshj/signature/Signature.java@pubkey : PublicKeysrc/main/java/net/schmizz/sshj/signature/Signature.java@public initSign(prvkey PrivateKey) : voidsrc/main/java/net/schmizz/sshj/signature/Signature.java 8:8
+******************************
+******************************
+coarse grained commits cda8e19e9ada4daee12297277fc91f196981a837
+fine grained commits ('f03832ed403d8fa1d05005c0ed84fc3ac400d125', 'cfb1ef9383659a9ffaa46acd0fe6b0290bdf5460')
+Generation
+Rename Methodsrc/main/java/net/schmizz/sshj/connection/Connection.java@public getTimeout() : intsrc/main/java/net/schmizz/sshj/connection/Connection.java@public getTimeoutMs() : intsrc/main/java/net/schmizz/sshj/connection/Connection.java 47:47
+Generation
+Rename Methodsrc/main/java/net/schmizz/sshj/connection/Connection.java@public setTimeout(timeout int) : voidsrc/main/java/net/schmizz/sshj/connection/Connection.java@public setTimeoutMs(timeout int) : voidsrc/main/java/net/schmizz/sshj/connection/Connection.java 49:49
+******************************
+******************************
+coarse grained commits 2cbb02424b385f681abb7cd34f4f03cfaba7842a
+fine grained commits ('ebe8332dce29538cceb4a2336bbb94817fb535dd', 'a1f1cd945c69e3b94d640d2414272f0435bd1f29')
+Generation
+Rename Parametersrc/main/java/net/schmizz/sshj/sftp/Requester.java@request : Requestsrc/main/java/net/schmizz/sshj/sftp/Requester.java@req : Requestsrc/main/java/net/schmizz/sshj/sftp/Requester.java 16:16
+Generation
+Move And Inline Methodsrc/main/java/net/schmizz/sshj/sftp/Request.java@public getResponsePromise() : Promise<Response,SFTPException>src/main/java/net/schmizz/sshj/sftp/SFTPEngine.java@public request(req Request) : Promise<Response,SFTPException>src/main/java/net/schmizz/sshj/sftp/Request.java 28:30
+******************************
+******************************
+coarse grained commits 03d189bd26045381defce028aa9920b68838037f
+fine grained commits ('4d1e4ecaa7cb4d012e4c358a691625d1e1c22e46', '3cd638d3c853c4a2f308eae498cd1c03c74a5810')
+Generation
+Extract And Move Methodsrc/main/java/net/schmizz/sshj/sftp/RemoteDirectory.java@public scan(filter RemoteResourceFilter) : List<RemoteResourceInfo>src/main/java/net/schmizz/sshj/sftp/PathHelper.java@public getComponents(parent String, name String) : PathComponentssrc/main/java/net/schmizz/sshj/sftp/RemoteDirectory.java 16:45
+******************************
+******************************
+coarse grained commits bdaf5a8faf3676c79002f43088c539e4de80376c
+fine grained commits ('4f891757b168cb5d097a9cae2623363606134f2b', '4fbbbe5a482c27dfa5d5266138670b39eb522335')
+Generation
+Rename Methodsrc/main/java/net/schmizz/sshj/xfer/FileSystemFile.java@public getChildren() : Iterable<LocalFile>src/main/java/net/schmizz/sshj/xfer/FileSystemFile.java@public getOutputStream() : OutputStreamsrc/main/java/net/schmizz/sshj/xfer/FileSystemFile.java 55:58
+Generation
+Rename Methodsrc/main/java/net/schmizz/sshj/xfer/scp/SCPUploadClient.java@private init(target String) : voidsrc/main/java/net/schmizz/sshj/xfer/scp/SCPUploadClient.java@private startCopy(sourceFile LocalSourceFile, targetPath String) : voidsrc/main/java/net/schmizz/sshj/xfer/scp/SCPUploadClient.java 43:51
+Generation
+Rename Parametersrc/main/java/net/schmizz/sshj/xfer/scp/SCPUploadClient.java@target : Stringsrc/main/java/net/schmizz/sshj/xfer/scp/SCPUploadClient.java@targetPath : Stringsrc/main/java/net/schmizz/sshj/xfer/scp/SCPUploadClient.java 43:43
+Generation
+Add Parametersrc/main/java/net/schmizz/sshj/xfer/scp/SCPUploadClient.java@private init(target String) : voidsrc/main/java/net/schmizz/sshj/xfer/scp/SCPUploadClient.java@sourceFile : LocalSourceFilesrc/main/java/net/schmizz/sshj/xfer/scp/SCPUploadClient.java 43:51
+Generation
+Change Thrown Exception Typesrc/main/java/net/schmizz/sshj/xfer/scp/SCPUploadClient.java@SSHExceptionsrc/main/java/net/schmizz/sshj/xfer/scp/SCPUploadClient.java@IOExceptionsrc/main/java/net/schmizz/sshj/xfer/scp/SCPUploadClient.java 44:44
+Generation
+Add Method Modifiersrc/main/java/net/schmizz/sshj/xfer/scp/SCPUploadClient.java@private init(target String) : voidsrc/main/java/net/schmizz/sshj/xfer/scp/SCPUploadClient.java@private startCopy(sourceFile LocalSourceFile, targetPath String) : voidsrc/main/java/net/schmizz/sshj/xfer/scp/SCPUploadClient.java 43:51
+Generation
+Change Return Typesrc/main/java/net/schmizz/sshj/xfer/LocalFile.java@Iterable<LocalFile>src/main/java/net/schmizz/sshj/xfer/LocalSourceFile.java@Iterable<? extends LocalSourceFile>src/main/java/net/schmizz/sshj/xfer/LocalFile.java 21:21
+Generation
+Change Parameter Typesrc/main/java/net/schmizz/sshj/xfer/LocalFile.java@filter : FileFiltersrc/main/java/net/schmizz/sshj/xfer/LocalSourceFile.java@filter : LocalFileFiltersrc/main/java/net/schmizz/sshj/xfer/LocalFile.java 21:21
+Generation
+Rename Classsrc/main/java/net/schmizz/sshj/xfer/LocalFile.java@net.schmizz.sshj.xfer.LocalFilesrc/main/java/net/schmizz/sshj/xfer/LocalSourceFile.java@net.schmizz.sshj.xfer.LocalSourceFilesrc/main/java/net/schmizz/sshj/xfer/LocalFile.java 7:23
+Generation
+Add Thrown Exception Typesrc/main/java/net/schmizz/sshj/xfer/DefaultModeGetter.java@public getLastAccessTime(f LocalFile) : longsrc/main/java/net/schmizz/sshj/xfer/FileSystemFile.java@IOExceptionsrc/main/java/net/schmizz/sshj/xfer/DefaultModeGetter.java 30:33
+Generation
+Add Thrown Exception Typesrc/main/java/net/schmizz/sshj/xfer/InMemoryFile.java@public lastModified() : longsrc/main/java/net/schmizz/sshj/xfer/FileSystemFile.java@IOExceptionsrc/main/java/net/schmizz/sshj/xfer/InMemoryFile.java 61:64
+Generation
+Remove Parametersrc/main/java/net/schmizz/sshj/xfer/DefaultModeGetter.java@f : LocalFilesrc/main/java/net/schmizz/sshj/xfer/FileSystemFile.java@public getLastAccessTime() : longsrc/main/java/net/schmizz/sshj/xfer/DefaultModeGetter.java 31:31
+Generation
+Move Methodsrc/main/java/net/schmizz/sshj/xfer/DefaultModeGetter.java@public getLastAccessTime(f LocalFile) : longsrc/main/java/net/schmizz/sshj/xfer/FileSystemFile.java@public getLastAccessTime() : longsrc/main/java/net/schmizz/sshj/xfer/DefaultModeGetter.java 30:33
+Generation
+Move And Rename Methodsrc/main/java/net/schmizz/sshj/xfer/InMemoryFile.java@public lastModified() : longsrc/main/java/net/schmizz/sshj/xfer/FileSystemFile.java@public getLastAccessTime() : longsrc/main/java/net/schmizz/sshj/xfer/InMemoryFile.java 61:64
+Generation
+Add Thrown Exception Typesrc/main/java/net/schmizz/sshj/xfer/DefaultModeGetter.java@public getLastModifiedTime(f LocalFile) : longsrc/main/java/net/schmizz/sshj/xfer/FileSystemFile.java@IOExceptionsrc/main/java/net/schmizz/sshj/xfer/DefaultModeGetter.java 35:38
+Generation
+Remove Parametersrc/main/java/net/schmizz/sshj/xfer/DefaultModeGetter.java@f : LocalFilesrc/main/java/net/schmizz/sshj/xfer/FileSystemFile.java@public getLastModifiedTime() : longsrc/main/java/net/schmizz/sshj/xfer/DefaultModeGetter.java 36:36
+Generation
+Move Methodsrc/main/java/net/schmizz/sshj/xfer/DefaultModeGetter.java@public getLastModifiedTime(f LocalFile) : longsrc/main/java/net/schmizz/sshj/xfer/FileSystemFile.java@public getLastModifiedTime() : longsrc/main/java/net/schmizz/sshj/xfer/DefaultModeGetter.java 35:38
+Generation
+Move Methodsrc/main/java/net/schmizz/sshj/xfer/InMemoryFile.java@public isDirectory() : booleansrc/main/java/net/schmizz/sshj/xfer/InMemorySourceFile.java@public isDirectory() : booleansrc/main/java/net/schmizz/sshj/xfer/InMemoryFile.java 28:31
+Generation
+Rename Methodsrc/main/java/net/schmizz/sshj/xfer/LocalFile.java@public length() : longsrc/main/java/net/schmizz/sshj/xfer/LocalSourceFile.java@public getLength() : longsrc/main/java/net/schmizz/sshj/xfer/LocalFile.java 14:14
+******************************
+******************************
+coarse grained commits 26a2545e57e2474af93556b688ea578123a083e6
+fine grained commits ('826e45ead1e628deca48c9012254931f81aeb5b6', '6765748f567454929d2a54d21501806050c9154d')
+Generation
+Rename Parametersrc/main/java/net/schmizz/sshj/xfer/scp/SCPUploadClient.java@sourcePath : Stringsrc/main/java/net/schmizz/sshj/xfer/scp/SCPUploadClient.java@sourceFile : LocalFilesrc/main/java/net/schmizz/sshj/xfer/scp/SCPUploadClient.java 40:40
+Generation
+Change Parameter Typesrc/main/java/net/schmizz/sshj/xfer/scp/SCPUploadClient.java@sourcePath : Stringsrc/main/java/net/schmizz/sshj/xfer/scp/SCPUploadClient.java@sourceFile : LocalFilesrc/main/java/net/schmizz/sshj/xfer/scp/SCPUploadClient.java 40:40
+Generation
+Remove Method Annotationsrc/main/java/net/schmizz/sshj/xfer/scp/SCPUploadClient.java@@Overridesrc/main/java/net/schmizz/sshj/xfer/scp/SCPUploadClient.java@private startCopy(sourceFile LocalFile, targetPath String) : voidsrc/main/java/net/schmizz/sshj/xfer/scp/SCPUploadClient.java 39:39
+Generation
+Change Method Access Modifiersrc/main/java/net/schmizz/sshj/xfer/scp/SCPUploadClient.java@protected startCopy(sourcePath String, targetPath String) : voidsrc/main/java/net/schmizz/sshj/xfer/scp/SCPUploadClient.java@private startCopy(sourceFile LocalFile, targetPath String) : voidsrc/main/java/net/schmizz/sshj/xfer/scp/SCPUploadClient.java 39:45
+Generation
+Change Parameter Typesrc/main/java/net/schmizz/sshj/xfer/scp/SCPEngine.java@sourcePath : Stringsrc/main/java/net/schmizz/sshj/xfer/scp/SCPUploadClient.java@sourceFile : LocalFilesrc/main/java/net/schmizz/sshj/xfer/scp/SCPEngine.java 57:57
+Generation
+Rename Parametersrc/main/java/net/schmizz/sshj/xfer/scp/SCPEngine.java@sourcePath : Stringsrc/main/java/net/schmizz/sshj/xfer/scp/SCPUploadClient.java@sourceFile : LocalFilesrc/main/java/net/schmizz/sshj/xfer/scp/SCPEngine.java 57:57
+Generation
+Rename Parametersrc/main/java/net/schmizz/sshj/xfer/scp/SCPEngine.java@targetPath : Stringsrc/main/java/net/schmizz/sshj/xfer/scp/SCPUploadClient.java@remotePath : Stringsrc/main/java/net/schmizz/sshj/xfer/scp/SCPEngine.java 57:57
+Generation
+Add Method Modifiersrc/main/java/net/schmizz/sshj/xfer/scp/SCPEngine.java@public copy(sourcePath String, targetPath String) : intsrc/main/java/net/schmizz/sshj/xfer/scp/SCPUploadClient.java@public copy(sourceFile LocalFile, remotePath String) : intsrc/main/java/net/schmizz/sshj/xfer/scp/SCPEngine.java 57:66
+Generation
+Move Methodsrc/main/java/net/schmizz/sshj/xfer/scp/SCPEngine.java@public copy(sourcePath String, targetPath String) : intsrc/main/java/net/schmizz/sshj/xfer/scp/SCPUploadClient.java@public copy(sourceFile LocalFile, remotePath String) : intsrc/main/java/net/schmizz/sshj/xfer/scp/SCPEngine.java 57:66
+******************************
+******************************
+coarse grained commits fe1c02f73bbd83eb49b65dfc16e6bd4d6133ff32
+fine grained commits ('516d7ebda1b4f05a4168443870683ec1c2b05d32', 'bd4ce30b466b24f67acf67761b837869ec9b9e3f', '304ea45758c273d857265be4b2577b5eed6cf47b')
+Generation
+Extract Variablesrc/test/java/net/schmizz/sshj/userauth/password/TestConsolePasswordFinder.java@src/test/java/net/schmizz/sshj/userauth/password/TestConsolePasswordFinder.java@resource : Resource<?>src/test/java/net/schmizz/sshj/userauth/password/TestConsolePasswordFinder.java 12:13
+******************************
+******************************
+coarse grained commits c0ca33e2d93c010f77054bd595821940d094340d
+fine grained commits ('5c6699dab0b445220966b0d4d677505098c02da5', 'ca8ec7c59c5f0391cfb6034702156794c7ad9788', 'ac656714686913570490adf769bc6417bd840127')
+Generation
+Rename Methodsrc/main/java/net/schmizz/sshj/transport/kex/DH.java@public getE() : BigIntegersrc/main/java/net/schmizz/sshj/transport/kex/DH.java@public getP() : BigIntegersrc/main/java/net/schmizz/sshj/transport/kex/DH.java 52:54
+Generation
+Extract Methodsrc/main/java/net/schmizz/sshj/transport/kex/DH.java@public init(p BigInteger, g BigInteger) : voidsrc/main/java/net/schmizz/sshj/transport/kex/DH.java@public getG() : BigIntegersrc/main/java/net/schmizz/sshj/transport/kex/DH.java 34:42
+******************************
+******************************
+coarse grained commits 8c8a866ef56c24e9464a3dfc23e79d34805f3f89
+fine grained commits ('29a4478ee68fd4619c6d605264b12ec30e3c2551', '2864447c6953f8934850222b6341e6b26a0e2cd0', 'd94c64274252c6624577433b53ee6e0fc6e6c69f')
+Generation
+Rename Classsrc/main/java/net/schmizz/sshj/signature/SignatureRSA.java@net.schmizz.sshj.signature.SignatureRSA.Factorysrc/main/java/net/schmizz/sshj/signature/SignatureRSA.java@net.schmizz.sshj.signature.SignatureRSA.FactorySSHRSAsrc/main/java/net/schmizz/sshj/signature/SignatureRSA.java 15:28
+******************************
+******************************
+coarse grained commits c9709c5eb4d0a688c8f2f2287acf46d39fda726c
+fine grained commits ('8311f6386b4bd28201c0bc5694b8581e9d5c8163', '826e45ead1e628deca48c9012254931f81aeb5b6', '6765748f567454929d2a54d21501806050c9154d')
+Generation
+Change Parameter Typesrc/main/java/net/schmizz/sshj/xfer/scp/SCPUploadClient.java@f : Filesrc/main/java/net/schmizz/sshj/xfer/scp/SCPUploadClient.java@f : LocalFilesrc/main/java/net/schmizz/sshj/xfer/scp/SCPUploadClient.java 65:65
+Generation
+Change Variable Typesrc/main/java/net/schmizz/sshj/xfer/scp/SCPUploadClient.java@child : Filesrc/main/java/net/schmizz/sshj/xfer/scp/SCPUploadClient.java@child : LocalFilesrc/main/java/net/schmizz/sshj/xfer/scp/SCPUploadClient.java 83:83
+Generation
+Change Parameter Typesrc/main/java/net/schmizz/sshj/xfer/scp/SCPUploadClient.java@f : Filesrc/main/java/net/schmizz/sshj/xfer/scp/SCPUploadClient.java@f : LocalFilesrc/main/java/net/schmizz/sshj/xfer/scp/SCPUploadClient.java 79:79
+Generation
+Change Parameter Typesrc/main/java/net/schmizz/sshj/xfer/scp/SCPUploadClient.java@f : Filesrc/main/java/net/schmizz/sshj/xfer/scp/SCPUploadClient.java@f : LocalFilesrc/main/java/net/schmizz/sshj/xfer/scp/SCPUploadClient.java 88:88
+Generation
+Change Parameter Typesrc/main/java/net/schmizz/sshj/xfer/scp/SCPUploadClient.java@f : Filesrc/main/java/net/schmizz/sshj/xfer/scp/SCPUploadClient.java@f : LocalFilesrc/main/java/net/schmizz/sshj/xfer/scp/SCPUploadClient.java 102:102
+Generation
+Change Parameter Typesrc/main/java/net/schmizz/sshj/xfer/scp/SCPUploadClient.java@f : Filesrc/main/java/net/schmizz/sshj/xfer/scp/SCPUploadClient.java@f : LocalFilesrc/main/java/net/schmizz/sshj/xfer/scp/SCPUploadClient.java 108:108
+Generation
+Extract Classsrc/main/java/net/schmizz/sshj/xfer/scp/SCPUploadClient.java@net.schmizz.sshj.xfer.scp.SCPUploadClientsrc/main/java/net/schmizz/sshj/xfer/scp/SCPUploadClient.java@net.schmizz.sshj.xfer.scp.SCPUploadClientsrc/main/java/net/schmizz/sshj/xfer/scp/SCPUploadClient.java 17:113
+Generation
+Move Methodsrc/main/java/net/schmizz/sshj/xfer/scp/SCPUploadClient.java@public setFileFilter(fileFilter FileFilter) : voidsrc/main/java/net/schmizz/sshj/xfer/FileSystemFile.java@public setFileFilter(fileFilter FileFilter) : voidsrc/main/java/net/schmizz/sshj/xfer/scp/SCPUploadClient.java 35:37
+Generation
+Move Attributesrc/main/java/net/schmizz/sshj/xfer/scp/SCPUploadClient.java@private fileFilter : FileFiltersrc/main/java/net/schmizz/sshj/xfer/FileSystemFile.java@private fileFilter : FileFiltersrc/main/java/net/schmizz/sshj/xfer/scp/SCPUploadClient.java 22:22
+Generation
+Rename Variablesrc/main/java/net/schmizz/sshj/xfer/scp/SCPUploadClient.java@files : File[]src/main/java/net/schmizz/sshj/xfer/FileSystemFile.java@childFiles : File[]src/main/java/net/schmizz/sshj/xfer/scp/SCPUploadClient.java 49:49
+Generation
+Change Return Typesrc/main/java/net/schmizz/sshj/xfer/scp/SCPUploadClient.java@File[]src/main/java/net/schmizz/sshj/xfer/FileSystemFile.java@Iterable<LocalFile>src/main/java/net/schmizz/sshj/xfer/scp/SCPUploadClient.java 47:47
+Generation
+Move Methodsrc/main/java/net/schmizz/sshj/xfer/scp/SCPUploadClient.java@private getChildren(f File) : File[]src/main/java/net/schmizz/sshj/xfer/FileSystemFile.java@private getChildren(f File) : Iterable<LocalFile>src/main/java/net/schmizz/sshj/xfer/scp/SCPUploadClient.java 47:53
+******************************
+******************************
+coarse grained commits 1d53893937946f08b8182d1bae7886f03de5248d
+fine grained commits ('4fbbbe5a482c27dfa5d5266138670b39eb522335', '111bb1f6d23252dce9a75e87b88208df0a5cbc31', 'ce1ed1f671d6930a734edea72b0b33e0c54e7590', '624e9f563e621ad800d23ec915e1f66bd135bc83')
+Generation
+Add Thrown Exception Typesrc/main/java/net/schmizz/sshj/xfer/DefaultModeGetter.java@public getLastAccessTime(f LocalFile) : longsrc/main/java/net/schmizz/sshj/xfer/FileSystemFile.java@IOExceptionsrc/main/java/net/schmizz/sshj/xfer/DefaultModeGetter.java 30:33
+Generation
+Remove Parametersrc/main/java/net/schmizz/sshj/xfer/DefaultModeGetter.java@f : LocalFilesrc/main/java/net/schmizz/sshj/xfer/FileSystemFile.java@public getLastAccessTime() : longsrc/main/java/net/schmizz/sshj/xfer/DefaultModeGetter.java 31:31
+Generation
+Move Methodsrc/main/java/net/schmizz/sshj/xfer/DefaultModeGetter.java@public getLastAccessTime(f LocalFile) : longsrc/main/java/net/schmizz/sshj/xfer/FileSystemFile.java@public getLastAccessTime() : longsrc/main/java/net/schmizz/sshj/xfer/DefaultModeGetter.java 30:33
+Generation
+Remove Parametersrc/main/java/net/schmizz/sshj/xfer/DefaultModeGetter.java@f : LocalFilesrc/main/java/net/schmizz/sshj/xfer/FileSystemFile.java@public getPermissions() : intsrc/main/java/net/schmizz/sshj/xfer/DefaultModeGetter.java 41:41
+Generation
+Move Methodsrc/main/java/net/schmizz/sshj/xfer/DefaultModeGetter.java@public getPermissions(f LocalFile) : intsrc/main/java/net/schmizz/sshj/xfer/FileSystemFile.java@public getPermissions() : intsrc/main/java/net/schmizz/sshj/xfer/DefaultModeGetter.java 40:49
+******************************
+******************************
+coarse grained commits 8737079841113f020c837e47bf15f0a16eae56d8
+fine grained commits ('93d11a74ef8385d6839b601257bee91b7970d353', 'bda49d8b626705ece2b0fb1d846046e2e2e2542c', '5c6699dab0b445220966b0d4d677505098c02da5', 'ca8ec7c59c5f0391cfb6034702156794c7ad9788', 'ac656714686913570490adf769bc6417bd840127')
+Generation
+Move Methodsrc/test/java/net/schmizz/sshj/util/BasicFixture.java@public getServer() : SshServersrc/test/java/com/hierynomus/sshj/test/SshFixture.java@public getServer() : SshServersrc/test/java/net/schmizz/sshj/util/BasicFixture.java 89:91
+******************************
+******************************
+coarse grained commits d3365823775d30e4d3d6736f815883b76efc8373
+fine grained commits ('218a8664a500751e94ed7753afc71da387f5a497', 'd861753cd12d030aa9fbc4e0c932dd585ee41480', 'e851ffd393c6689451272b128ae9aa658b035c39', '03d94582ec729c05ba826ae176b63d35233b7b3c', '30f87cbee3c7fae9b484e547d2500086094d551d')
+Generation
+Extract Methodsrc/main/java/net/schmizz/sshj/common/StreamCopier.java@public copy(in InputStream, out OutputStream, bufSize int, keepFlushing boolean, listener Listener) : longsrc/main/java/net/schmizz/sshj/common/StreamCopier.java@private write(buf byte[], count long, read int) : longsrc/main/java/net/schmizz/sshj/common/StreamCopier.java 33:58
+Generation
+Remove Parametersrc/main/java/net/schmizz/sshj/common/StreamCopier.java@listener : Listenersrc/main/java/net/schmizz/sshj/common/StreamCopier.java@public copy() : longsrc/main/java/net/schmizz/sshj/common/StreamCopier.java 33:33
+Generation
+Remove Method Modifiersrc/main/java/net/schmizz/sshj/common/StreamCopier.java@public copy(in InputStream, out OutputStream, bufSize int, keepFlushing boolean, listener Listener) : longsrc/main/java/net/schmizz/sshj/common/StreamCopier.java@public copy() : longsrc/main/java/net/schmizz/sshj/common/StreamCopier.java 33:58
+******************************
+******************************
+coarse grained commits f0b8d043f2442af77222a20b2e123db2d3041091
+fine grained commits ('cfb1ef9383659a9ffaa46acd0fe6b0290bdf5460', '7823957541527aa015de71a7e103d8b9e9a17a07', 'de47d1f23d660420d475fa897583c0c3ec317236', 'a0e3ee0718dd4722d46413054c5a04f6f5764430', 'd836318b935913c15e20dd20781c161f93b710f2')
+Generation
+Rename Methodsrc/main/java/net/schmizz/sshj/connection/Connection.java@public getTimeout() : intsrc/main/java/net/schmizz/sshj/connection/Connection.java@public getTimeoutMs() : intsrc/main/java/net/schmizz/sshj/connection/Connection.java 47:47
+Generation
+Rename Methodsrc/main/java/net/schmizz/sshj/connection/Connection.java@public setTimeout(timeout int) : voidsrc/main/java/net/schmizz/sshj/connection/Connection.java@public setTimeoutMs(timeout int) : voidsrc/main/java/net/schmizz/sshj/connection/Connection.java 49:49
+******************************

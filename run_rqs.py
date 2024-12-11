@@ -1,6 +1,6 @@
 import argparse
 import RQs.RQ1 as RQ1
-import RQs.RQ2 as RQ2
+# import RQs.RQ2 as RQ2
 
 def run_rqs():
     pass

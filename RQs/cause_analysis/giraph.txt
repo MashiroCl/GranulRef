@@ -1,0 +1,1236 @@
+******************************
+coarse grained commits d82a8020d0231df8534588ad873107b45ce37e88
+fine grained commits ('5bca08f04cbfb0f518ef92d96d1d70c9d183c160', '3dacc265dd2fec046ccf4949db14b8605923a294')
+Generation
+Rename Attributegiraph-core/src/main/java/org/apache/giraph/comm/netty/handler/RequestServerHandler.java@limitOpenRequestsPerWorker : booleangiraph-core/src/main/java/org/apache/giraph/comm/netty/handler/RequestServerHandler.java@nettyAutoRead : booleangiraph-core/src/main/java/org/apache/giraph/comm/netty/handler/RequestServerHandler.java 31:31
+******************************
+******************************
+coarse grained commits 93ad8bac03809fd4614127d1b6ce1b62ed45b6cb
+fine grained commits ('f423d70b62f1c37e5ddc542e4fbc4d824828f2a9', 'e47d9b427151b3de789b5ddeb3058ddbb3fc5b6e')
+Generation
+Remove Method Modifiergiraph-hive/src/main/java/org/apache/giraph/hive/input/edge/AbstractHiveToEdge.java@public remove() : voidgiraph-core/src/main/java/org/apache/giraph/comm/SendMessageCache.java@public remove() : voidgiraph-hive/src/main/java/org/apache/giraph/hive/input/edge/AbstractHiveToEdge.java 11:14
+Generation
+Move Methodgiraph-hive/src/main/java/org/apache/giraph/hive/input/edge/AbstractHiveToEdge.java@public remove() : voidgiraph-core/src/main/java/org/apache/giraph/comm/SendMessageCache.java@public remove() : voidgiraph-hive/src/main/java/org/apache/giraph/hive/input/edge/AbstractHiveToEdge.java 11:14
+Generation
+Remove Method Modifiergiraph-hive/src/main/java/org/apache/giraph/hive/input/mapping/AbstractHiveToMapping.java@public remove() : voidgiraph-core/src/main/java/org/apache/giraph/comm/SendMessageCache.java@public remove() : voidgiraph-hive/src/main/java/org/apache/giraph/hive/input/mapping/AbstractHiveToMapping.java 12:15
+Generation
+Move Methodgiraph-hive/src/main/java/org/apache/giraph/hive/input/mapping/AbstractHiveToMapping.java@public remove() : voidgiraph-core/src/main/java/org/apache/giraph/comm/SendMessageCache.java@public remove() : voidgiraph-hive/src/main/java/org/apache/giraph/hive/input/mapping/AbstractHiveToMapping.java 12:15
+Generation
+Remove Method Modifiergiraph-hive/src/main/java/org/apache/giraph/hive/input/vertex/AbstractHiveToVertex.java@public remove() : voidgiraph-core/src/main/java/org/apache/giraph/comm/SendMessageCache.java@public remove() : voidgiraph-hive/src/main/java/org/apache/giraph/hive/input/vertex/AbstractHiveToVertex.java 12:15
+Generation
+Move Methodgiraph-hive/src/main/java/org/apache/giraph/hive/input/vertex/AbstractHiveToVertex.java@public remove() : voidgiraph-core/src/main/java/org/apache/giraph/comm/SendMessageCache.java@public remove() : voidgiraph-hive/src/main/java/org/apache/giraph/hive/input/vertex/AbstractHiveToVertex.java 12:15
+******************************
+******************************
+coarse grained commits 584da5bcc11b0df7377d3d989e7841ff233adc78
+fine grained commits ('46cd48a66abb86e9af878eb03cb0c0ea9edd5082', '1152db45c1e3021acbd89d013fa0967fc3691297')
+Generation
+Extract Classgiraph-core/src/main/java/org/apache/giraph/worker/WorkerProgress.java@org.apache.giraph.worker.WorkerProgressgiraph-core/src/main/java/org/apache/giraph/worker/WorkerProgress.java@org.apache.giraph.worker.WorkerProgressgiraph-core/src/main/java/org/apache/giraph/worker/WorkerProgress.java 19:289
+Generation
+Move Methodgiraph-core/src/main/java/org/apache/giraph/worker/WorkerProgress.java@public readFields(dataInput DataInput) : voidgiraph-examples/src/main/java/org/apache/giraph/examples/scc/SccVertexValue.java@public readFields(in DataInput) : voidgiraph-core/src/main/java/org/apache/giraph/worker/WorkerProgress.java 261:288
+Generation
+Rename Parametergiraph-core/src/main/java/org/apache/giraph/worker/WorkerProgress.java@dataInput : DataInputgiraph-examples/src/main/java/org/apache/giraph/examples/scc/SccVertexValue.java@in : DataInputgiraph-core/src/main/java/org/apache/giraph/worker/WorkerProgress.java 262:262
+Generation
+Remove Method Modifiergiraph-core/src/main/java/org/apache/giraph/worker/WorkerProgress.java@public readFields(dataInput DataInput) : voidgiraph-examples/src/main/java/org/apache/giraph/examples/scc/SccVertexValue.java@public readFields(in DataInput) : voidgiraph-core/src/main/java/org/apache/giraph/worker/WorkerProgress.java 261:288
+Generation
+Move Methodgiraph-core/src/main/java/org/apache/giraph/worker/WorkerProgress.java@public write(dataOutput DataOutput) : voidgiraph-examples/src/main/java/org/apache/giraph/examples/scc/SccVertexValue.java@public write(out DataOutput) : voidgiraph-core/src/main/java/org/apache/giraph/worker/WorkerProgress.java 232:259
+Generation
+Rename Parametergiraph-core/src/main/java/org/apache/giraph/worker/WorkerProgress.java@dataOutput : DataOutputgiraph-examples/src/main/java/org/apache/giraph/examples/scc/SccVertexValue.java@out : DataOutputgiraph-core/src/main/java/org/apache/giraph/worker/WorkerProgress.java 233:233
+Generation
+Remove Method Modifiergiraph-core/src/main/java/org/apache/giraph/worker/WorkerProgress.java@public write(dataOutput DataOutput) : voidgiraph-examples/src/main/java/org/apache/giraph/examples/scc/SccVertexValue.java@public write(out DataOutput) : voidgiraph-core/src/main/java/org/apache/giraph/worker/WorkerProgress.java 232:259
+******************************
+******************************
+coarse grained commits dae66c151585095afbf6102d40e6ab0f91737d50
+fine grained commits ('9e4312db18af78abcf31d8520e03760896d43480', 'a5febbd7365c0f0b7d3884c3d9d3cf686c55186f')
+Generation
+Extract Classgiraph-core/src/main/java/org/apache/giraph/partition/HashPartitionerFactory.java@org.apache.giraph.partition.HashPartitionerFactorygiraph-core/src/main/java/org/apache/giraph/partition/HashPartitionerFactory.java@org.apache.giraph.partition.HashPartitionerFactorygiraph-core/src/main/java/org/apache/giraph/partition/HashPartitionerFactory.java 8:33
+Generation
+Extract Classgiraph-core/src/main/java/org/apache/giraph/partition/HashRangePartitionerFactory.java@org.apache.giraph.partition.HashRangePartitionerFactorygiraph-core/src/main/java/org/apache/giraph/partition/HashRangePartitionerFactory.java@org.apache.giraph.partition.HashRangePartitionerFactorygiraph-core/src/main/java/org/apache/giraph/partition/HashRangePartitionerFactory.java 8:33
+Generation
+Extract Classgiraph-core/src/main/java/org/apache/giraph/partition/SimplePartitionerFactory.java@org.apache.giraph.partition.SimplePartitionerFactorygiraph-core/src/main/java/org/apache/giraph/partition/SimplePartitionerFactory.java@org.apache.giraph.partition.SimplePartitionerFactorygiraph-core/src/main/java/org/apache/giraph/partition/SimplePartitionerFactory.java 8:60
+Generation
+Move Methodgiraph-core/src/main/java/org/apache/giraph/partition/HashPartitionerFactory.java@public setConf(conf ImmutableClassesGiraphConfiguration) : voidgiraph-core/src/main/java/org/apache/giraph/utils/AbstractVertexIdData.java@public setConf(configuration ImmutableClassesGiraphConfiguration) : voidgiraph-core/src/main/java/org/apache/giraph/partition/HashPartitionerFactory.java 29:32
+Generation
+Rename Parametergiraph-core/src/main/java/org/apache/giraph/partition/HashPartitionerFactory.java@conf : ImmutableClassesGiraphConfigurationgiraph-core/src/main/java/org/apache/giraph/utils/AbstractVertexIdData.java@configuration : ImmutableClassesGiraphConfigurationgiraph-core/src/main/java/org/apache/giraph/partition/HashPartitionerFactory.java 30:30
+Generation
+Rename Parametergiraph-core/src/main/java/org/apache/giraph/partition/HashRangePartitionerFactory.java@conf : ImmutableClassesGiraphConfigurationgiraph-core/src/main/java/org/apache/giraph/utils/AbstractVertexIdData.java@configuration : ImmutableClassesGiraphConfigurationgiraph-core/src/main/java/org/apache/giraph/partition/HashRangePartitionerFactory.java 30:30
+Generation
+Rename Parametergiraph-core/src/main/java/org/apache/giraph/partition/SimplePartitionerFactory.java@conf : ImmutableClassesGiraphConfigurationgiraph-core/src/main/java/org/apache/giraph/utils/AbstractVertexIdData.java@configuration : ImmutableClassesGiraphConfigurationgiraph-core/src/main/java/org/apache/giraph/partition/SimplePartitionerFactory.java 36:36
+Generation
+Move Methodgiraph-core/src/main/java/org/apache/giraph/partition/HashRangePartitionerFactory.java@public setConf(conf ImmutableClassesGiraphConfiguration) : voidgiraph-core/src/main/java/org/apache/giraph/utils/AbstractVertexIdData.java@public setConf(configuration ImmutableClassesGiraphConfiguration) : voidgiraph-core/src/main/java/org/apache/giraph/partition/HashRangePartitionerFactory.java 29:32
+Generation
+Move Methodgiraph-core/src/main/java/org/apache/giraph/partition/SimplePartitionerFactory.java@public setConf(conf ImmutableClassesGiraphConfiguration) : voidgiraph-core/src/main/java/org/apache/giraph/utils/AbstractVertexIdData.java@public setConf(configuration ImmutableClassesGiraphConfiguration) : voidgiraph-core/src/main/java/org/apache/giraph/partition/SimplePartitionerFactory.java 35:38
+******************************
+******************************
+coarse grained commits 33ba235ad66d2acc7a8369a5d10b324da869a93b
+fine grained commits ('870902cb4365c45407cf49f509819d69d756f3ca', '301b2aec609c0b744cafce9894792826d2d27b8a')
+Generation
+Move Classgiraph-rexster/src/test/java/org/apache/giraph/rexster/io/formats/TestRexsterLongDoubleFloatVertexInputFormat.java@org.apache.giraph.rexster.io.formats.TestRexsterLongDoubleFloatVertexInputFormat.EmptyComputationgiraph-rexster/giraph-rexster-io/src/test/java/org/apache/giraph/rexster/io/formats/TestRexsterLongDoubleFloatIOFormat.java@org.apache.giraph.rexster.io.formats.TestRexsterLongDoubleFloatIOFormat.EmptyComputationgiraph-rexster/src/test/java/org/apache/giraph/rexster/io/formats/TestRexsterLongDoubleFloatVertexInputFormat.java 125:133
+Generation
+Add Class Annotationgiraph-rexster/src/main/java/org/apache/giraph/rexster/io/RexsterEdgeInputFormat.java@org.apache.giraph.rexster.io.RexsterEdgeInputFormatgiraph-rexster/giraph-rexster-io/src/main/java/org/apache/giraph/rexster/io/RexsterEdgeInputFormat.java@@SuppressWarnings("rawtypes")giraph-rexster/src/main/java/org/apache/giraph/rexster/io/RexsterEdgeInputFormat.java 25:132
+Generation
+Add Class Annotationgiraph-rexster/src/main/java/org/apache/giraph/rexster/io/RexsterVertexInputFormat.java@org.apache.giraph.rexster.io.RexsterVertexInputFormatgiraph-rexster/giraph-rexster-io/src/main/java/org/apache/giraph/rexster/io/RexsterVertexInputFormat.java@@SuppressWarnings("rawtypes")giraph-rexster/src/main/java/org/apache/giraph/rexster/io/RexsterVertexInputFormat.java 25:131
+Generation
+Add Class Annotationgiraph-rexster/src/main/java/org/apache/giraph/rexster/utils/RexsterUtils.java@org.apache.giraph.rexster.utils.RexsterUtilsgiraph-rexster/giraph-rexster-io/src/main/java/org/apache/giraph/rexster/utils/RexsterUtils.java@@SuppressWarnings("rawtypes")giraph-rexster/src/main/java/org/apache/giraph/rexster/utils/RexsterUtils.java 32:258
+Generation
+Rename Methodgiraph-rexster/src/main/java/org/apache/giraph/rexster/utils/RexsterUtils.java@protected openRexsterStream(conf ImmutableClassesGiraphConfiguration, start long, end long, urlSuffix String, gremlinScript String) : BufferedReadergiraph-rexster/giraph-rexster-io/src/main/java/org/apache/giraph/rexster/utils/RexsterUtils.java@public openInputStream(conf ImmutableClassesGiraphConfiguration, start long, end long, type String, gremlinScript String) : BufferedReadergiraph-rexster/src/main/java/org/apache/giraph/rexster/utils/RexsterUtils.java 150:212
+Generation
+Extract Methodgiraph-rexster/src/main/java/org/apache/giraph/rexster/utils/RexsterUtils.java@protected openRexsterStream(conf ImmutableClassesGiraphConfiguration, start long, end long, urlSuffix String, gremlinScript String) : BufferedReadergiraph-rexster/giraph-rexster-io/src/main/java/org/apache/giraph/rexster/utils/RexsterUtils.java@private getHTTPAuthString(username String, password String) : Stringgiraph-rexster/src/main/java/org/apache/giraph/rexster/utils/RexsterUtils.java 150:212
+Generation
+Remove Variable Modifiergiraph-rexster/src/main/java/org/apache/giraph/rexster/utils/RexsterUtils.java@chunks : intgiraph-rexster/giraph-rexster-io/src/main/java/org/apache/giraph/rexster/utils/RexsterUtils.java@chunks : intgiraph-rexster/src/main/java/org/apache/giraph/rexster/utils/RexsterUtils.java 120:120
+Generation
+Remove Variable Modifiergiraph-rexster/src/main/java/org/apache/giraph/rexster/utils/RexsterUtils.java@chunkSize : longgiraph-rexster/giraph-rexster-io/src/main/java/org/apache/giraph/rexster/utils/RexsterUtils.java@chunkSize : longgiraph-rexster/src/main/java/org/apache/giraph/rexster/utils/RexsterUtils.java 121:121
+Generation
+Remove Variable Modifiergiraph-rexster/src/main/java/org/apache/giraph/rexster/utils/RexsterUtils.java@splits : List<InputSplit>giraph-rexster/giraph-rexster-io/src/main/java/org/apache/giraph/rexster/utils/RexsterUtils.java@splits : List<InputSplit>giraph-rexster/src/main/java/org/apache/giraph/rexster/utils/RexsterUtils.java 122:122
+Generation
+Remove Variable Modifiergiraph-rexster/src/main/java/org/apache/giraph/rexster/utils/RexsterUtils.java@split : RexsterInputSplitgiraph-rexster/giraph-rexster-io/src/main/java/org/apache/giraph/rexster/utils/RexsterUtils.java@split : RexsterInputSplitgiraph-rexster/src/main/java/org/apache/giraph/rexster/utils/RexsterUtils.java 130:130
+Generation
+Remove Variable Modifiergiraph-rexster/src/main/java/org/apache/giraph/rexster/utils/RexsterUtils.java@start : longgiraph-rexster/giraph-rexster-io/src/main/java/org/apache/giraph/rexster/utils/RexsterUtils.java@start : longgiraph-rexster/src/main/java/org/apache/giraph/rexster/utils/RexsterUtils.java 131:131
+Generation
+Remove Variable Modifiergiraph-rexster/src/main/java/org/apache/giraph/rexster/utils/RexsterUtils.java@end : longgiraph-rexster/giraph-rexster-io/src/main/java/org/apache/giraph/rexster/utils/RexsterUtils.java@end : longgiraph-rexster/src/main/java/org/apache/giraph/rexster/utils/RexsterUtils.java 132:132
+Generation
+Remove Variable Modifiergiraph-rexster/src/main/java/org/apache/giraph/rexster/utils/RexsterUtils.java@uriScriptFormat : Stringgiraph-rexster/giraph-rexster-io/src/main/java/org/apache/giraph/rexster/utils/RexsterUtils.java@uriScriptFormat : Stringgiraph-rexster/src/main/java/org/apache/giraph/rexster/utils/RexsterUtils.java 155:157
+Generation
+Remove Variable Modifiergiraph-rexster/src/main/java/org/apache/giraph/rexster/utils/RexsterUtils.java@uriFormat : Stringgiraph-rexster/giraph-rexster-io/src/main/java/org/apache/giraph/rexster/utils/RexsterUtils.java@uriFormat : Stringgiraph-rexster/src/main/java/org/apache/giraph/rexster/utils/RexsterUtils.java 158:160
+Generation
+Remove Variable Modifiergiraph-rexster/src/main/java/org/apache/giraph/rexster/utils/RexsterUtils.java@endpoint : Stringgiraph-rexster/giraph-rexster-io/src/main/java/org/apache/giraph/rexster/utils/RexsterUtils.java@endpoint : Stringgiraph-rexster/src/main/java/org/apache/giraph/rexster/utils/RexsterUtils.java 162:162
+Generation
+Remove Variable Modifiergiraph-rexster/src/main/java/org/apache/giraph/rexster/utils/RexsterUtils.java@isSsl : booleangiraph-rexster/giraph-rexster-io/src/main/java/org/apache/giraph/rexster/utils/RexsterUtils.java@isSsl : booleangiraph-rexster/src/main/java/org/apache/giraph/rexster/utils/RexsterUtils.java 169:169
+Generation
+Remove Variable Modifiergiraph-rexster/src/main/java/org/apache/giraph/rexster/utils/RexsterUtils.java@port : intgiraph-rexster/giraph-rexster-io/src/main/java/org/apache/giraph/rexster/utils/RexsterUtils.java@port : intgiraph-rexster/src/main/java/org/apache/giraph/rexster/utils/RexsterUtils.java 170:170
+Generation
+Remove Variable Modifiergiraph-rexster/src/main/java/org/apache/giraph/rexster/utils/RexsterUtils.java@graph : Stringgiraph-rexster/giraph-rexster-io/src/main/java/org/apache/giraph/rexster/utils/RexsterUtils.java@graph : Stringgiraph-rexster/src/main/java/org/apache/giraph/rexster/utils/RexsterUtils.java 171:171
+Generation
+Remove Variable Modifiergiraph-rexster/src/main/java/org/apache/giraph/rexster/utils/RexsterUtils.java@auth : Stringgiraph-rexster/giraph-rexster-io/src/main/java/org/apache/giraph/rexster/utils/RexsterUtils.java@auth : Stringgiraph-rexster/src/main/java/org/apache/giraph/rexster/utils/RexsterUtils.java 176:176
+Generation
+Remove Variable Modifiergiraph-rexster/src/main/java/org/apache/giraph/rexster/utils/RexsterUtils.java@connection : HttpURLConnectiongiraph-rexster/giraph-rexster-io/src/main/java/org/apache/giraph/rexster/utils/RexsterUtils.java@connection : HttpURLConnectiongiraph-rexster/src/main/java/org/apache/giraph/rexster/utils/RexsterUtils.java 179:179
+Generation
+Remove Variable Modifiergiraph-rexster/src/main/java/org/apache/giraph/rexster/utils/RexsterUtils.java@is : InputStreamgiraph-rexster/giraph-rexster-io/src/main/java/org/apache/giraph/rexster/utils/RexsterUtils.java@is : InputStreamgiraph-rexster/src/main/java/org/apache/giraph/rexster/utils/RexsterUtils.java 180:180
+Generation
+Remove Variable Modifiergiraph-rexster/src/main/java/org/apache/giraph/rexster/utils/RexsterUtils.java@isr : InputStreamReadergiraph-rexster/giraph-rexster-io/src/main/java/org/apache/giraph/rexster/utils/RexsterUtils.java@isr : InputStreamReadergiraph-rexster/src/main/java/org/apache/giraph/rexster/utils/RexsterUtils.java 181:181
+Generation
+Rename Parametergiraph-rexster/src/main/java/org/apache/giraph/rexster/utils/RexsterUtils.java@urlSuffix : Stringgiraph-rexster/giraph-rexster-io/src/main/java/org/apache/giraph/rexster/utils/RexsterUtils.java@type : Stringgiraph-rexster/src/main/java/org/apache/giraph/rexster/utils/RexsterUtils.java 152:152
+Generation
+Change Method Access Modifiergiraph-rexster/src/main/java/org/apache/giraph/rexster/utils/RexsterUtils.java@protected openRexsterStream(conf ImmutableClassesGiraphConfiguration, start long, end long, urlSuffix String, gremlinScript String) : BufferedReadergiraph-rexster/giraph-rexster-io/src/main/java/org/apache/giraph/rexster/utils/RexsterUtils.java@public openInputStream(conf ImmutableClassesGiraphConfiguration, start long, end long, type String, gremlinScript String) : BufferedReadergiraph-rexster/src/main/java/org/apache/giraph/rexster/utils/RexsterUtils.java 150:212
+Generation
+Add Parametergiraph-rexster/src/main/java/org/apache/giraph/rexster/utils/RexsterUtils.java@private createConnection(url URL, authValue String) : HttpURLConnectiongiraph-rexster/giraph-rexster-io/src/main/java/org/apache/giraph/rexster/utils/RexsterUtils.java@method : Stringgiraph-rexster/src/main/java/org/apache/giraph/rexster/utils/RexsterUtils.java 214:227
+Generation
+Extract Variablegiraph-rexster/src/main/java/org/apache/giraph/rexster/io/formats/RexsterLongFloatEdgeInputFormat.java@giraph-rexster/giraph-rexster-io/src/main/java/org/apache/giraph/rexster/io/formats/RexsterLongFloatEdgeInputFormat.java@sid : Longgiraph-rexster/src/main/java/org/apache/giraph/rexster/io/formats/RexsterLongFloatEdgeInputFormat.java 49:49
+Generation
+Remove Variable Modifiergiraph-rexster/src/main/java/org/apache/giraph/rexster/io/RexsterEdgeInputFormat.java@rexsterInputSplit : RexsterInputSplitgiraph-rexster/giraph-rexster-io/src/main/java/org/apache/giraph/rexster/io/RexsterEdgeInputFormat.java@rexsterInputSplit : RexsterInputSplitgiraph-rexster/src/main/java/org/apache/giraph/rexster/io/RexsterEdgeInputFormat.java 58:59
+Generation
+Remove Variable Modifiergiraph-rexster/src/main/java/org/apache/giraph/rexster/io/RexsterVertexInputFormat.java@rexsterInputSplit : RexsterInputSplitgiraph-rexster/giraph-rexster-io/src/main/java/org/apache/giraph/rexster/io/RexsterVertexInputFormat.java@rexsterInputSplit : RexsterInputSplitgiraph-rexster/src/main/java/org/apache/giraph/rexster/io/RexsterVertexInputFormat.java 58:59
+Generation
+Remove Variable Modifiergiraph-rexster/src/main/java/org/apache/giraph/rexster/io/RexsterVertexInputFormat.java@vestimated : floatgiraph-rexster/giraph-rexster-io/src/main/java/org/apache/giraph/rexster/io/RexsterVertexInputFormat.java@vestimated : floatgiraph-rexster/src/main/java/org/apache/giraph/rexster/io/RexsterVertexInputFormat.java 112:112
+Generation
+Rename Attributegiraph-rexster/src/main/java/org/apache/giraph/rexster/conf/GiraphRexsterConstants.java@GIRAPH_REXSTER_GRAPH : StrConfOptiongiraph-rexster/giraph-rexster-io/src/main/java/org/apache/giraph/rexster/conf/GiraphRexsterConstants.java@GIRAPH_REXSTER_INPUT_GRAPH : StrConfOptiongiraph-rexster/src/main/java/org/apache/giraph/rexster/conf/GiraphRexsterConstants.java 20:22
+Generation
+Remove Variable Modifiergiraph-rexster/src/test/java/org/apache/giraph/rexster/io/formats/TestAbstractRexsterInputFormat.java@properties : XMLConfigurationgiraph-rexster/giraph-rexster-io/src/test/java/org/apache/giraph/rexster/io/formats/TestRexsterLongDoubleFloatIOFormat.java@properties : XMLConfigurationgiraph-rexster/src/test/java/org/apache/giraph/rexster/io/formats/TestAbstractRexsterInputFormat.java 41:41
+Generation
+Remove Variable Modifiergiraph-rexster/src/test/java/org/apache/giraph/rexster/io/formats/TestAbstractRexsterInputFormat.java@rexsterConf : InputStreamgiraph-rexster/giraph-rexster-io/src/test/java/org/apache/giraph/rexster/io/formats/TestRexsterLongDoubleFloatIOFormat.java@rexsterConf : InputStreamgiraph-rexster/src/test/java/org/apache/giraph/rexster/io/formats/TestAbstractRexsterInputFormat.java 44:44
+Generation
+Remove Variable Modifiergiraph-rexster/src/test/java/org/apache/giraph/rexster/io/formats/TestAbstractRexsterInputFormat.java@graphConfigs : List<HierarchicalConfiguration>giraph-rexster/giraph-rexster-io/src/test/java/org/apache/giraph/rexster/io/formats/TestRexsterLongDoubleFloatIOFormat.java@graphConfigs : List<HierarchicalConfiguration>giraph-rexster/src/test/java/org/apache/giraph/rexster/io/formats/TestAbstractRexsterInputFormat.java 43:43
+Generation
+Remove Variable Modifiergiraph-rexster/src/test/java/org/apache/giraph/rexster/io/formats/TestAbstractRexsterInputFormat.java@application : RexsterApplicationgiraph-rexster/giraph-rexster-io/src/test/java/org/apache/giraph/rexster/io/formats/TestRexsterLongDoubleFloatIOFormat.java@application : RexsterApplicationgiraph-rexster/src/test/java/org/apache/giraph/rexster/io/formats/TestAbstractRexsterInputFormat.java 42:42
+Generation
+Remove Variable Modifiergiraph-rexster/src/test/java/org/apache/giraph/rexster/io/formats/TestAbstractRexsterInputFormat.java@scriptEngineThreshold : intgiraph-rexster/giraph-rexster-io/src/test/java/org/apache/giraph/rexster/io/formats/TestRexsterLongDoubleFloatIOFormat.java@scriptEngineThreshold : intgiraph-rexster/src/test/java/org/apache/giraph/rexster/io/formats/TestAbstractRexsterInputFormat.java 45:45
+Generation
+Remove Variable Modifiergiraph-rexster/src/test/java/org/apache/giraph/rexster/io/formats/TestAbstractRexsterInputFormat.java@scriptEngineInitFile : Stringgiraph-rexster/giraph-rexster-io/src/test/java/org/apache/giraph/rexster/io/formats/TestRexsterLongDoubleFloatIOFormat.java@scriptEngineInitFile : Stringgiraph-rexster/src/test/java/org/apache/giraph/rexster/io/formats/TestAbstractRexsterInputFormat.java 46:46
+Generation
+Remove Variable Modifiergiraph-rexster/src/test/java/org/apache/giraph/rexster/io/formats/TestAbstractRexsterInputFormat.java@scriptEngineNames : List<String>giraph-rexster/giraph-rexster-io/src/test/java/org/apache/giraph/rexster/io/formats/TestRexsterLongDoubleFloatIOFormat.java@scriptEngineNames : List<String>giraph-rexster/src/test/java/org/apache/giraph/rexster/io/formats/TestAbstractRexsterInputFormat.java 47:47
+Generation
+Remove Method Annotationgiraph-rexster/src/test/java/org/apache/giraph/rexster/io/formats/TestAbstractRexsterInputFormat.java@@Beforegiraph-rexster/giraph-rexster-io/src/test/java/org/apache/giraph/rexster/io/formats/TestRexsterLongDoubleFloatIOFormat.java@private startRexsterServer() : voidgiraph-rexster/src/test/java/org/apache/giraph/rexster/io/formats/TestAbstractRexsterInputFormat.java 38:38
+Generation
+Change Method Access Modifiergiraph-rexster/src/test/java/org/apache/giraph/rexster/io/formats/TestAbstractRexsterInputFormat.java@public setUp() : voidgiraph-rexster/giraph-rexster-io/src/test/java/org/apache/giraph/rexster/io/formats/TestRexsterLongDoubleFloatIOFormat.java@private startRexsterServer() : voidgiraph-rexster/src/test/java/org/apache/giraph/rexster/io/formats/TestAbstractRexsterInputFormat.java 38:77
+Generation
+Add Method Modifiergiraph-rexster/src/test/java/org/apache/giraph/rexster/io/formats/TestAbstractRexsterInputFormat.java@public setUp() : voidgiraph-rexster/giraph-rexster-io/src/test/java/org/apache/giraph/rexster/io/formats/TestRexsterLongDoubleFloatIOFormat.java@private startRexsterServer() : voidgiraph-rexster/src/test/java/org/apache/giraph/rexster/io/formats/TestAbstractRexsterInputFormat.java 38:77
+Generation
+Move And Rename Methodgiraph-rexster/src/test/java/org/apache/giraph/rexster/io/formats/TestAbstractRexsterInputFormat.java@public setUp() : voidgiraph-rexster/giraph-rexster-io/src/test/java/org/apache/giraph/rexster/io/formats/TestRexsterLongDoubleFloatIOFormat.java@private startRexsterServer() : voidgiraph-rexster/src/test/java/org/apache/giraph/rexster/io/formats/TestAbstractRexsterInputFormat.java 38:77
+Generation
+Remove Method Annotationgiraph-rexster/src/test/java/org/apache/giraph/rexster/io/formats/TestAbstractRexsterInputFormat.java@@Aftergiraph-rexster/giraph-rexster-io/src/test/java/org/apache/giraph/rexster/io/formats/TestRexsterLongDoubleFloatIOFormat.java@private stopRexsterServer() : voidgiraph-rexster/src/test/java/org/apache/giraph/rexster/io/formats/TestAbstractRexsterInputFormat.java 79:79
+Generation
+Change Thrown Exception Typegiraph-rexster/src/test/java/org/apache/giraph/rexster/io/formats/TestAbstractRexsterInputFormat.java@IOExceptiongiraph-rexster/giraph-rexster-io/src/test/java/org/apache/giraph/rexster/io/formats/TestRexsterLongDoubleFloatIOFormat.java@Exceptiongiraph-rexster/src/test/java/org/apache/giraph/rexster/io/formats/TestAbstractRexsterInputFormat.java 80:80
+Generation
+Change Method Access Modifiergiraph-rexster/src/test/java/org/apache/giraph/rexster/io/formats/TestAbstractRexsterInputFormat.java@public tearDown() : voidgiraph-rexster/giraph-rexster-io/src/test/java/org/apache/giraph/rexster/io/formats/TestRexsterLongDoubleFloatIOFormat.java@private stopRexsterServer() : voidgiraph-rexster/src/test/java/org/apache/giraph/rexster/io/formats/TestAbstractRexsterInputFormat.java 79:90
+Generation
+Add Method Modifiergiraph-rexster/src/test/java/org/apache/giraph/rexster/io/formats/TestAbstractRexsterInputFormat.java@public tearDown() : voidgiraph-rexster/giraph-rexster-io/src/test/java/org/apache/giraph/rexster/io/formats/TestRexsterLongDoubleFloatIOFormat.java@private stopRexsterServer() : voidgiraph-rexster/src/test/java/org/apache/giraph/rexster/io/formats/TestAbstractRexsterInputFormat.java 79:90
+Generation
+Move And Rename Methodgiraph-rexster/src/test/java/org/apache/giraph/rexster/io/formats/TestAbstractRexsterInputFormat.java@public tearDown() : voidgiraph-rexster/giraph-rexster-io/src/test/java/org/apache/giraph/rexster/io/formats/TestRexsterLongDoubleFloatIOFormat.java@private stopRexsterServer() : voidgiraph-rexster/src/test/java/org/apache/giraph/rexster/io/formats/TestAbstractRexsterInputFormat.java 79:90
+******************************
+******************************
+coarse grained commits 831e3ef00aa5a59120095159d5d50f73d68df89d
+fine grained commits ('1e197efe0386b093b5f707bc605f8ef83af029a0', 'a4f6e35b4c42c3ff993627af1305f49b340faa7e')
+Generation
+Extract Superclassgiraph-core/src/main/java/org/apache/giraph/comm/SendPartitionCache.java@org.apache.giraph.comm.SendPartitionCachegiraph-core/src/main/java/org/apache/giraph/comm/SendPartitionCache.java@org.apache.giraph.comm.SendPartitionCachegiraph-core/src/main/java/org/apache/giraph/comm/SendPartitionCache.java 17:74
+Generation
+Move Methodgiraph-core/src/main/java/org/apache/giraph/comm/SendCache.java@public addData(workerInfo WorkerInfo, partitionId int, destVertexId I, data T) : intgiraph-core/src/main/java/org/apache/giraph/comm/SendVertexIdDataCache.java@public addData(workerInfo WorkerInfo, partitionId int, destVertexId I, data T) : intgiraph-core/src/main/java/org/apache/giraph/comm/SendCache.java 67:76
+Generation
+Move Methodgiraph-core/src/main/java/org/apache/giraph/comm/SendCache.java@public addData(workerInfo WorkerInfo, partitionId int, serializedId byte[], idPos int, data T) : intgiraph-core/src/main/java/org/apache/giraph/comm/SendVertexIdDataCache.java@public addData(workerInfo WorkerInfo, partitionId int, serializedId byte[], idPos int, data T) : intgiraph-core/src/main/java/org/apache/giraph/comm/SendCache.java 78:87
+Generation
+Change Variable Typegiraph-core/src/main/java/org/apache/giraph/comm/SendCache.java@partitionData : ByteArrayVertexIdData<I,T>giraph-core/src/main/java/org/apache/giraph/comm/SendVertexIdDataCache.java@partitionData : Bgiraph-core/src/main/java/org/apache/giraph/comm/SendCache.java 91:91
+Generation
+Move Methodgiraph-core/src/main/java/org/apache/giraph/comm/SendCache.java@private getPartitionData(workerInfo WorkerInfo, partitionId int) : ByteArrayVertexIdData<I,T>giraph-core/src/main/java/org/apache/giraph/comm/SendVertexIdDataCache.java@private getPartitionData(workerInfo WorkerInfo, partitionId int) : ByteArrayVertexIdData<I,T>giraph-core/src/main/java/org/apache/giraph/comm/SendCache.java 89:99
+******************************
+******************************
+coarse grained commits 28064bce504c1d35c57a3c65681ec78304c72fbe
+fine grained commits ('15a258902429276153885b728dc9169ee8e31bc9', 'e9acae5c29bf6568d2b6f6f4b33848310767ee88')
+Generation
+Rename Variablegiraph-core/src/main/java/org/apache/giraph/jython/JythonComputationFactory.java@pythonStream : InputStreamgiraph-core/src/main/java/org/apache/giraph/scripting/ScriptLoader.java@stream : InputStreamgiraph-core/src/main/java/org/apache/giraph/jython/JythonComputationFactory.java 43:43
+Generation
+Change Parameter Typegiraph-core/src/main/java/org/apache/giraph/jython/JythonComputationFactory.java@conf : ImmutableClassesGiraphConfigurationgiraph-core/src/main/java/org/apache/giraph/scripting/ScriptLoader.java@conf : Configurationgiraph-core/src/main/java/org/apache/giraph/jython/JythonComputationFactory.java 41:41
+Generation
+Add Parametergiraph-core/src/main/java/org/apache/giraph/jython/JythonComputationFactory.java@public initComputation(conf ImmutableClassesGiraphConfiguration) : voidgiraph-core/src/main/java/org/apache/giraph/scripting/ScriptLoader.java@deployedScript : DeployedScriptgiraph-core/src/main/java/org/apache/giraph/jython/JythonComputationFactory.java 40:58
+Generation
+Remove Method Annotationgiraph-core/src/main/java/org/apache/giraph/jython/JythonComputationFactory.java@@Overridegiraph-core/src/main/java/org/apache/giraph/scripting/ScriptLoader.java@public loadScript(conf Configuration, deployedScript DeployedScript) : voidgiraph-core/src/main/java/org/apache/giraph/jython/JythonComputationFactory.java 40:40
+Generation
+Add Method Modifiergiraph-core/src/main/java/org/apache/giraph/jython/JythonComputationFactory.java@public initComputation(conf ImmutableClassesGiraphConfiguration) : voidgiraph-core/src/main/java/org/apache/giraph/scripting/ScriptLoader.java@public loadScript(conf Configuration, deployedScript DeployedScript) : voidgiraph-core/src/main/java/org/apache/giraph/jython/JythonComputationFactory.java 40:58
+Generation
+Move And Rename Methodgiraph-core/src/main/java/org/apache/giraph/jython/JythonComputationFactory.java@public initComputation(conf ImmutableClassesGiraphConfiguration) : voidgiraph-core/src/main/java/org/apache/giraph/scripting/ScriptLoader.java@public loadScript(conf Configuration, deployedScript DeployedScript) : voidgiraph-core/src/main/java/org/apache/giraph/jython/JythonComputationFactory.java 40:58
+Generation
+Extract Methodgiraph-core/src/main/java/org/apache/giraph/jython/JythonComputationFactory.java@public initComputation(conf ImmutableClassesGiraphConfiguration) : voidgiraph-core/src/main/java/org/apache/giraph/scripting/ScriptLoader.java@private loadJythonScript(stream InputStream) : voidgiraph-core/src/main/java/org/apache/giraph/jython/JythonComputationFactory.java 40:58
+******************************
+******************************
+coarse grained commits 54d95032968417ded7ebe6aee1a229a3ad496e62
+fine grained commits ('dd42772d0e61df638a8fffd4a27515b3a922b26d', '7d69b408f044af4b059273e061402d75095bd987')
+Generation
+Rename Attributegiraph-hive/src/main/java/org/apache/giraph/hive/common/GiraphHiveConstants.java@HIVE_TO_EDGE_CLASS : ClassConfOption<HiveToEdge>giraph-hive/src/main/java/org/apache/giraph/hive/common/GiraphHiveConstants.java@HIVE_EDGE_INPUT : HiveInputOptions<HiveToEdge>giraph-hive/src/main/java/org/apache/giraph/hive/common/GiraphHiveConstants.java 26:28
+Generation
+Change Attribute Typegiraph-hive/src/main/java/org/apache/giraph/hive/common/GiraphHiveConstants.java@HIVE_TO_EDGE_CLASS : ClassConfOption<HiveToEdge>giraph-hive/src/main/java/org/apache/giraph/hive/common/GiraphHiveConstants.java@HIVE_EDGE_INPUT : HiveInputOptions<HiveToEdge>giraph-hive/src/main/java/org/apache/giraph/hive/common/GiraphHiveConstants.java 26:28
+Generation
+Rename Attributegiraph-hive/src/main/java/org/apache/giraph/hive/common/GiraphHiveConstants.java@HIVE_TO_VERTEX_CLASS : ClassConfOption<HiveToVertex>giraph-hive/src/main/java/org/apache/giraph/hive/common/GiraphHiveConstants.java@HIVE_VERTEX_INPUT : HiveInputOptions<HiveToVertex>giraph-hive/src/main/java/org/apache/giraph/hive/common/GiraphHiveConstants.java 12:14
+Generation
+Change Attribute Typegiraph-hive/src/main/java/org/apache/giraph/hive/common/GiraphHiveConstants.java@HIVE_TO_VERTEX_CLASS : ClassConfOption<HiveToVertex>giraph-hive/src/main/java/org/apache/giraph/hive/common/GiraphHiveConstants.java@HIVE_VERTEX_INPUT : HiveInputOptions<HiveToVertex>giraph-hive/src/main/java/org/apache/giraph/hive/common/GiraphHiveConstants.java 12:14
+******************************
+******************************
+coarse grained commits ccaece0eecd4cbc1f02595dff50edbd7172c9b14
+fine grained commits ('56336b35d96f481044ef1467aa711edec3a3ed94', 'd188bfd386ff68fc21ce6dd9d726bced9edd9ccb')
+Generation
+Extract Classgiraph-core/src/main/java/org/apache/giraph/graph/Vertex.java@org.apache.giraph.graph.Vertexgiraph-core/src/main/java/org/apache/giraph/graph/Vertex.java@org.apache.giraph.graph.Vertexgiraph-core/src/main/java/org/apache/giraph/graph/Vertex.java 26:280
+Generation
+Move Methodgiraph-core/src/main/java/org/apache/giraph/graph/Vertex.java@public write(out DataOutput) : voidgiraph-core/src/main/java/org/apache/giraph/edge/IntNullArrayEdges.java@public write(out DataOutput) : voidgiraph-core/src/main/java/org/apache/giraph/graph/Vertex.java 267:273
+Generation
+Move Methodgiraph-core/src/main/java/org/apache/giraph/graph/Vertex.java@public readFields(in DataInput) : voidgiraph-core/src/main/java/org/apache/giraph/edge/IntNullArrayEdges.java@public readFields(in DataInput) : voidgiraph-core/src/main/java/org/apache/giraph/graph/Vertex.java 256:265
+******************************
+******************************
+coarse grained commits 003f890ace1c3916ab0f243beba056f7a21848c7
+fine grained commits ('f1363ac85d83c41112d8c7f0bf6ea4a4a4096f4a', '2c9821dd0360d431841426b0972cd90b4ee9ed4c')
+Generation
+Extract Classgiraph-core/src/main/java/org/apache/giraph/io/formats/PseudoRandomEdgeInputFormat.java@org.apache.giraph.io.formats.PseudoRandomEdgeInputFormatgiraph-core/src/main/java/org/apache/giraph/io/formats/PseudoRandomEdgeInputFormat.java@org.apache.giraph.io.formats.PseudoRandomEdgeInputFormatgiraph-core/src/main/java/org/apache/giraph/io/formats/PseudoRandomEdgeInputFormat.java 25:156
+Generation
+Extract Classgiraph-core/src/main/java/org/apache/giraph/io/formats/PseudoRandomVertexInputFormat.java@org.apache.giraph.io.formats.PseudoRandomVertexInputFormatgiraph-core/src/main/java/org/apache/giraph/io/formats/PseudoRandomVertexInputFormat.java@org.apache.giraph.io.formats.PseudoRandomVertexInputFormatgiraph-core/src/main/java/org/apache/giraph/io/formats/PseudoRandomVertexInputFormat.java 28:152
+Generation
+Move Attributegiraph-core/src/main/java/org/apache/giraph/io/formats/PseudoRandomEdgeInputFormat.java@public AGGREGATE_VERTICES : Stringgiraph-core/src/main/java/org/apache/giraph/io/formats/PseudoRandomInputFormatConstants.java@public AGGREGATE_VERTICES : Stringgiraph-core/src/main/java/org/apache/giraph/io/formats/PseudoRandomEdgeInputFormat.java 27:28
+Generation
+Move Attributegiraph-core/src/main/java/org/apache/giraph/io/formats/PseudoRandomEdgeInputFormat.java@public EDGES_PER_VERTEX : Stringgiraph-core/src/main/java/org/apache/giraph/io/formats/PseudoRandomInputFormatConstants.java@public EDGES_PER_VERTEX : Stringgiraph-core/src/main/java/org/apache/giraph/io/formats/PseudoRandomEdgeInputFormat.java 29:30
+Generation
+Move Attributegiraph-core/src/main/java/org/apache/giraph/io/formats/PseudoRandomVertexInputFormat.java@public AGGREGATE_VERTICES : Stringgiraph-core/src/main/java/org/apache/giraph/io/formats/PseudoRandomInputFormatConstants.java@public AGGREGATE_VERTICES : Stringgiraph-core/src/main/java/org/apache/giraph/io/formats/PseudoRandomVertexInputFormat.java 30:31
+Generation
+Move Attributegiraph-core/src/main/java/org/apache/giraph/io/formats/PseudoRandomVertexInputFormat.java@public EDGES_PER_VERTEX : Stringgiraph-core/src/main/java/org/apache/giraph/io/formats/PseudoRandomInputFormatConstants.java@public EDGES_PER_VERTEX : Stringgiraph-core/src/main/java/org/apache/giraph/io/formats/PseudoRandomVertexInputFormat.java 32:33
+******************************
+******************************
+coarse grained commits 2dd16034548db8f841dd6b9a5482e9de58c092a3
+fine grained commits ('5b5393ec69fb642b3977dd8e0c46d4bfaaddd623', 'c42c5ae557e593e2de9da09597d6425c211c41dd')
+Generation
+Extract Classgiraph/src/main/java/org/apache/giraph/graph/WorkerInfo.java@org.apache.giraph.graph.WorkerInfogiraph/src/main/java/org/apache/giraph/graph/WorkerInfo.java@org.apache.giraph.graph.WorkerInfogiraph/src/main/java/org/apache/giraph/graph/WorkerInfo.java 9:53
+Generation
+Move Methodgiraph/src/main/java/org/apache/giraph/graph/WorkerInfo.java@public readFields(input DataInput) : voidgiraph/src/main/java/org/apache/giraph/graph/EdgeListVertexBase.java@public readFields(in DataInput) : voidgiraph/src/main/java/org/apache/giraph/graph/WorkerInfo.java 41:46
+Generation
+Rename Parametergiraph/src/main/java/org/apache/giraph/graph/WorkerInfo.java@input : DataInputgiraph/src/main/java/org/apache/giraph/graph/EdgeListVertexBase.java@in : DataInputgiraph/src/main/java/org/apache/giraph/graph/WorkerInfo.java 42:42
+Generation
+Add Method Modifiergiraph/src/main/java/org/apache/giraph/graph/WorkerInfo.java@public readFields(input DataInput) : voidgiraph/src/main/java/org/apache/giraph/graph/EdgeListVertexBase.java@public readFields(in DataInput) : voidgiraph/src/main/java/org/apache/giraph/graph/WorkerInfo.java 41:46
+Generation
+Move Methodgiraph/src/main/java/org/apache/giraph/graph/WorkerInfo.java@public write(output DataOutput) : voidgiraph/src/main/java/org/apache/giraph/graph/EdgeListVertexBase.java@public write(out DataOutput) : voidgiraph/src/main/java/org/apache/giraph/graph/WorkerInfo.java 48:52
+Generation
+Rename Parametergiraph/src/main/java/org/apache/giraph/graph/WorkerInfo.java@output : DataOutputgiraph/src/main/java/org/apache/giraph/graph/EdgeListVertexBase.java@out : DataOutputgiraph/src/main/java/org/apache/giraph/graph/WorkerInfo.java 49:49
+Generation
+Add Method Modifiergiraph/src/main/java/org/apache/giraph/graph/WorkerInfo.java@public write(output DataOutput) : voidgiraph/src/main/java/org/apache/giraph/graph/EdgeListVertexBase.java@public write(out DataOutput) : voidgiraph/src/main/java/org/apache/giraph/graph/WorkerInfo.java 48:52
+******************************
+******************************
+coarse grained commits ef625b38c9e15aaa33a768e1c7802d4ffe131dc8
+fine grained commits ('2be3c56ece6eb88ac8d7e60304033867639cd5e2', '85c35635445497e2d238ce01192feece07e38229')
+Generation
+Change Variable Typegiraph/src/test/java/org/apache/giraph/comm/RequestTest.java@request : SendVertexRequest<IntWritable,IntWritable,IntWritable,IntWritable>giraph/src/test/java/org/apache/giraph/comm/RequestTest.java@partition : Partition<IntWritable,IntWritable,IntWritable,IntWritable>giraph/src/test/java/org/apache/giraph/comm/RequestTest.java 89:91
+Generation
+Rename Variablegiraph/src/test/java/org/apache/giraph/comm/RequestTest.java@request : SendVertexRequest<IntWritable,IntWritable,IntWritable,IntWritable>giraph/src/test/java/org/apache/giraph/comm/RequestTest.java@partition : Partition<IntWritable,IntWritable,IntWritable,IntWritable>giraph/src/test/java/org/apache/giraph/comm/RequestTest.java 89:91
+******************************
+******************************
+coarse grained commits 988574baca42258d524e35c49b7c640c2ed4fac5
+fine grained commits ('0cb95964266afc25a01997bf2e6ed4071b4f72a2', 'cbafd0a81f882292c2b0749ca5400a20e8916524')
+Generation
+Move Classsrc/main/java/org/apache/giraph/io/AdjacencyListVertexReader.java@org.apache.giraph.io.AdjacencyListVertexReader.LineSanitizersrc/main/java/org/apache/giraph/io/AdjacencyListTextVertexInputFormat.java@org.apache.giraph.io.AdjacencyListTextVertexInputFormat.LineSanitizersrc/main/java/org/apache/giraph/io/AdjacencyListVertexReader.java 27:29
+Generation
+Move Attributesrc/main/java/org/apache/giraph/io/AdjacencyListVertexReader.java@public LINE_TOKENIZE_VALUE : Stringsrc/main/java/org/apache/giraph/io/AdjacencyListTextVertexOutputFormat.java@public LINE_TOKENIZE_VALUE : Stringsrc/main/java/org/apache/giraph/io/AdjacencyListVertexReader.java 23:23
+Generation
+Move Attributesrc/main/java/org/apache/giraph/io/AdjacencyListVertexReader.java@public LINE_TOKENIZE_VALUE : Stringsrc/main/java/org/apache/giraph/io/IdWithValueTextOutputFormat.java@public LINE_TOKENIZE_VALUE : Stringsrc/main/java/org/apache/giraph/io/AdjacencyListVertexReader.java 23:23
+Generation
+Move Attributesrc/main/java/org/apache/giraph/io/AdjacencyListVertexReader.java@public LINE_TOKENIZE_VALUE_DEFAULT : Stringsrc/main/java/org/apache/giraph/io/AdjacencyListTextVertexOutputFormat.java@public LINE_TOKENIZE_VALUE_DEFAULT : Stringsrc/main/java/org/apache/giraph/io/AdjacencyListVertexReader.java 24:24
+Generation
+Move Attributesrc/main/java/org/apache/giraph/io/AdjacencyListVertexReader.java@public LINE_TOKENIZE_VALUE_DEFAULT : Stringsrc/main/java/org/apache/giraph/io/IdWithValueTextOutputFormat.java@public LINE_TOKENIZE_VALUE_DEFAULT : Stringsrc/main/java/org/apache/giraph/io/AdjacencyListVertexReader.java 24:24
+Generation
+Add Method Modifiersrc/main/java/org/apache/giraph/io/AdjacencyListVertexReader.java@public nextVertex() : booleansrc/main/java/org/apache/giraph/io/TextVertexInputFormat.java@public nextVertex() : booleansrc/main/java/org/apache/giraph/io/AdjacencyListVertexReader.java 53:56
+Generation
+Remove Parametersrc/main/java/org/apache/giraph/io/AdjacencyListVertexReader.java@lineRecordReader : RecordReader<LongWritable,Text>src/main/java/org/apache/giraph/io/AdjacencyListTextVertexInputFormat.java@public AdjacencyListTextVertexReader(sanitizer LineSanitizer)src/main/java/org/apache/giraph/io/AdjacencyListVertexReader.java 40:40
+Generation
+Push Down Methodsrc/main/java/org/apache/giraph/io/AdjacencyListVertexReader.java@public AdjacencyListVertexReader(lineRecordReader RecordReader<LongWritable,Text>, sanitizer LineSanitizer)src/main/java/org/apache/giraph/io/AdjacencyListTextVertexInputFormat.java@public AdjacencyListTextVertexReader(sanitizer LineSanitizer)src/main/java/org/apache/giraph/io/AdjacencyListVertexReader.java 39:44
+Generation
+Push Down Methodsrc/main/java/org/apache/giraph/io/AdjacencyListVertexReader.java@public abstract decodeId(s String, id I) : voidsrc/main/java/org/apache/giraph/io/AdjacencyListTextVertexInputFormat.java@public abstract decodeId(s String, id I) : voidsrc/main/java/org/apache/giraph/io/AdjacencyListVertexReader.java 46:46
+Generation
+Push Down Methodsrc/main/java/org/apache/giraph/io/AdjacencyListVertexReader.java@public abstract decodeValue(s String, value V) : voidsrc/main/java/org/apache/giraph/io/AdjacencyListTextVertexInputFormat.java@public abstract decodeValue(s String, value V) : voidsrc/main/java/org/apache/giraph/io/AdjacencyListVertexReader.java 48:48
+Generation
+Push Down Methodsrc/main/java/org/apache/giraph/io/AdjacencyListVertexReader.java@public abstract decodeEdge(id String, value String, edge Edge<I,E>) : voidsrc/main/java/org/apache/giraph/io/AdjacencyListTextVertexInputFormat.java@public abstract decodeEdge(id String, value String, edge Edge<I,E>) : voidsrc/main/java/org/apache/giraph/io/AdjacencyListVertexReader.java 50:50
+Generation
+Push Down Methodsrc/main/java/org/apache/giraph/io/AdjacencyListVertexReader.java@public nextVertex() : booleansrc/main/java/org/apache/giraph/io/TextVertexInputFormat.java@public nextVertex() : booleansrc/main/java/org/apache/giraph/io/AdjacencyListVertexReader.java 53:56
+Generation
+Add Method Modifiersrc/main/java/org/apache/giraph/io/AdjacencyListVertexReader.java@public nextVertex() : booleansrc/main/java/org/apache/giraph/io/TextVertexInputFormat.java@public nextVertex() : booleansrc/main/java/org/apache/giraph/io/AdjacencyListVertexReader.java 53:56
+Generation
+Push Down Methodsrc/main/java/org/apache/giraph/io/AdjacencyListVertexReader.java@public nextVertex() : booleansrc/main/java/org/apache/giraph/io/TextVertexInputFormat.java@public nextVertex() : booleansrc/main/java/org/apache/giraph/io/AdjacencyListVertexReader.java 53:56
+Generation
+Add Method Modifiersrc/main/java/org/apache/giraph/io/AdjacencyListVertexReader.java@public nextVertex() : booleansrc/main/java/org/apache/giraph/io/TextVertexInputFormat.java@public nextVertex() : booleansrc/main/java/org/apache/giraph/io/AdjacencyListVertexReader.java 53:56
+Generation
+Push Down Methodsrc/main/java/org/apache/giraph/io/AdjacencyListVertexReader.java@public nextVertex() : booleansrc/main/java/org/apache/giraph/io/TextVertexInputFormat.java@public nextVertex() : booleansrc/main/java/org/apache/giraph/io/AdjacencyListVertexReader.java 53:56
+******************************
+******************************
+coarse grained commits 57fc1db542d061dd2af0043c21cd588893f67c03
+fine grained commits ('fdfda15c803f33834ac0fa720b0f0e51b83c06be', '328e8785c1d7ac481812d705cf75c3707b1e1f81')
+Generation
+Rename Classsrc/main/java/org/apache/giraph/graph/Vertex.java@org.apache.giraph.graph.Vertexsrc/main/java/org/apache/giraph/graph/HashMapVertex.java@org.apache.giraph.graph.HashMapVertexsrc/main/java/org/apache/giraph/graph/Vertex.java 18:226
+Generation
+Change Parameter Typesrc/main/java/org/apache/giraph/graph/Vertex.java@messages : List<M>src/main/java/org/apache/giraph/graph/HashMapVertex.java@messages : Iterable<M>src/main/java/org/apache/giraph/graph/Vertex.java 30:30
+******************************
+******************************
+coarse grained commits f4607c27df97329ff98c51be7d15ad3a05c398fd
+fine grained commits ('d2065634002efefe02189e7a56333d60bcdb3735', '046b2ae89dfcb310f6ad554dae569425e413e9c9')
+Generation
+Rename Variablesrc/main/java/org/apache/giraph/comm/BasicRPCCommunications.java@e : Entry<I,MsgList<M>>src/main/java/org/apache/giraph/comm/BasicRPCCommunications.java@entry : Entry<I,MsgList<M>>src/main/java/org/apache/giraph/comm/BasicRPCCommunications.java 129:129
+******************************
+******************************
+coarse grained commits 215e59b1b67355393775ee41ee887564b0d36ad4
+fine grained commits ('19008ad79656fe411fbf2932cfa242e7f4880931', '8a382a21266fa19c80937b1ddfb3098d713c4d94')
+Generation
+Rename Methodsrc/main/java/com/yahoo/hadoop_bsp/HadoopVertex.java@public setConf(conf Configuration) : voidsrc/main/java/com/yahoo/hadoop_bsp/HadoopVertex.java@package setContext(context Mapper<?,?,?,?>.Context) : voidsrc/main/java/com/yahoo/hadoop_bsp/HadoopVertex.java 229:231
+Generation
+Rename Parametersrc/main/java/com/yahoo/hadoop_bsp/HadoopVertex.java@conf : Configurationsrc/main/java/com/yahoo/hadoop_bsp/HadoopVertex.java@context : Mapper<?,?,?,?>.Contextsrc/main/java/com/yahoo/hadoop_bsp/HadoopVertex.java 229:229
+Generation
+Add Method Modifiersrc/main/java/com/yahoo/hadoop_bsp/HadoopVertex.java@public setConf(conf Configuration) : voidsrc/main/java/com/yahoo/hadoop_bsp/HadoopVertex.java@package setContext(context Mapper<?,?,?,?>.Context) : voidsrc/main/java/com/yahoo/hadoop_bsp/HadoopVertex.java 229:231
+******************************
+******************************
+coarse grained commits 697c49afa21f4cff8585bfdd93ccf991f091d01b
+fine grained commits ('f94afee554ad723a7d12bb3e3503a325705f4a6f', 'fba84c2ca0d62d952fd1324f236686e9273993b6')
+Generation
+Rename Attributesrc/main/java/com/yahoo/hadoop_bsp/BspService.java@MASTER_PATH : Stringsrc/main/java/com/yahoo/hadoop_bsp/BspService.java@WORKER_SELECTION_FINISHED_NODE : Stringsrc/main/java/com/yahoo/hadoop_bsp/BspService.java 95:95
+Generation
+Change Attribute Access Modifiersrc/main/java/com/yahoo/hadoop_bsp/BspService.java@private MASTER_PATH : Stringsrc/main/java/com/yahoo/hadoop_bsp/BspService.java@public WORKER_SELECTION_FINISHED_NODE : Stringsrc/main/java/com/yahoo/hadoop_bsp/BspService.java 95:95
+Generation
+Add Attribute Modifiersrc/main/java/com/yahoo/hadoop_bsp/BspService.java@private MASTER_PATH : Stringsrc/main/java/com/yahoo/hadoop_bsp/BspService.java@public WORKER_SELECTION_FINISHED_NODE : Stringsrc/main/java/com/yahoo/hadoop_bsp/BspService.java 95:95
+Generation
+Rename Attributesrc/main/java/com/yahoo/hadoop_bsp/BspService.java@JOB_STATE_PATH : Stringsrc/main/java/com/yahoo/hadoop_bsp/BspService.java@MASTER_JOB_STATE_PATH : Stringsrc/main/java/com/yahoo/hadoop_bsp/BspService.java 98:98
+Generation
+Change Attribute Access Modifiersrc/main/java/com/yahoo/hadoop_bsp/BspService.java@private JOB_STATE_PATH : Stringsrc/main/java/com/yahoo/hadoop_bsp/BspService.java@public MASTER_JOB_STATE_PATH : Stringsrc/main/java/com/yahoo/hadoop_bsp/BspService.java 98:98
+******************************
+******************************
+coarse grained commits c6bacd53d6f8d445aa64a358980d7a42e696ec71
+fine grained commits ('d97ec236e30abc04f54bed056677232aa634b60e', '8e880b43c62c70eb39bece130eb2a7f5294beac4')
+Generation
+Rename Classsrc/main/java/com/yahoo/hadoop_bsp/CommunicationsInterface.java@com.yahoo.hadoop_bsp.CommunicationsInterfacesrc/main/java/com/yahoo/hadoop_bsp/ServerInterface.java@com.yahoo.hadoop_bsp.ServerInterfacesrc/main/java/com/yahoo/hadoop_bsp/CommunicationsInterface.java 13:45
+******************************
+******************************
+coarse grained commits 478b41e3b95a70b2e1cce09a546e21200c67156f
+fine grained commits ('a288153e6136667103a4e43ad00e136b827cb6b5', '9a8c6c58ec3cf2d325245ce5edae2d7538be3e3c')
+Generation
+Replace Attribute With Variablesrc/main/java/com/yahoo/hadoop_bsp/BspService.java@m_currentSuperStep : Integersrc/main/java/com/yahoo/hadoop_bsp/BspService.java@splitArray : byte[]src/main/java/com/yahoo/hadoop_bsp/BspService.java 32:32
+Generation
+Extract And Move Methodsrc/main/java/com/yahoo/hadoop_bsp/BspService.java@public setup() : voidsrc/main/java/com/yahoo/hadoop_bsp/BspInputSplit.java@public readFields(in DataInput) : voidsrc/main/java/com/yahoo/hadoop_bsp/BspService.java 202:257
+******************************
+******************************
+coarse grained commits 3d17fc55ec98676af0f7709e01b376402d77e244
+fine grained commits ('e47d9b427151b3de789b5ddeb3058ddbb3fc5b6e', '4b8091dce94df2ffd20f0a9377d72a353d86b61a')
+Generation
+Move And Rename Classgiraph-hive/src/main/java/org/apache/giraph/hive/jython/JythonHiveIO.java@org.apache.giraph.hive.jython.JythonHiveIOgiraph-block-app/src/main/java/org/apache/giraph/block_app/framework/api/BlockWorkerContextReceiveApi.java@org.apache.giraph.block_app.framework.api.BlockWorkerContextReceiveApigiraph-hive/src/main/java/org/apache/giraph/hive/jython/JythonHiveIO.java 3:4
+Generation
+Move Packagegiraph-hive/src/main/java/org/apache/giraph/hive/jython/JythonHiveIO.java@org.apache.giraph.hive.jython.JythonHiveIOgiraph-block-app/src/main/java/org/apache/giraph/block_app/framework/api/BlockWorkerContextReceiveApi.java@org.apache.giraph.block_app.framework.api.BlockWorkerContextReceiveApigiraph-hive/src/main/java/org/apache/giraph/hive/jython/JythonHiveIO.java 3:4
+******************************
+******************************
+coarse grained commits 4721b43abaac89d60e736e00f8b3df32188e3720
+fine grained commits ('2df520be4d962de9b6bbab1cd467816a1888f53a', '74eb8d27e4e7b4711cf457a74e5beb89a3d7b1f3')
+Generation
+Extract And Move Methodgiraph-core/src/main/java/org/apache/giraph/graph/VertexMutations.java@public readFields(input DataInput) : voidgiraph-core/src/main/java/org/apache/giraph/utils/WritableUtils.java@public readEdge(in DataInput, edge Edge<I,E>) : voidgiraph-core/src/main/java/org/apache/giraph/graph/VertexMutations.java 45:76
+Generation
+Extract And Move Methodgiraph-core/src/main/java/org/apache/giraph/vertex/EdgeListVertexBase.java@public readFields(in DataInput) : voidgiraph-core/src/main/java/org/apache/giraph/utils/WritableUtils.java@public readEdge(in DataInput, edge Edge<I,E>) : voidgiraph-core/src/main/java/org/apache/giraph/vertex/EdgeListVertexBase.java 45:64
+******************************
+******************************
+coarse grained commits 1ec9234a07fbe2efab786ff1fa4853647fcc0113
+fine grained commits ('183c6b8c27433205b4e87af3dd105e4ab3988fc7', 'f9cc9385a20fa31468326e754a24603bd3c04962')
+Generation
+Extract And Move Methodgiraph/src/main/java/org/apache/giraph/graph/MutableVertex.java@public instantiateVertex(vertexId I, vertexValue V, edges Map<I,E>) : Vertex<I,V,E,M>giraph/src/main/java/org/apache/giraph/graph/GraphState.java@public getWorkerClientRequestProcessor() : WorkerClientRequestProcessor<I,V,E,M>giraph/src/main/java/org/apache/giraph/graph/MutableVertex.java 18:25
+******************************
+******************************
+coarse grained commits ed27943f722b183ec7630a421eb8408f1707baa8
+fine grained commits ('d00a94d56efce02d6a54d91d8c49a4a6228826cc', '40408454ecc25c5cd1c59ef0d65c50b2a9359437')
+Generation
+Rename Variablegiraph-formats-contrib/src/main/java/org/apache/giraph/io/hcatalog/HiveGiraphRunner.java@partkeyval : Stringgiraph-formats-contrib/src/main/java/org/apache/giraph/io/hcatalog/HiveUtils.java@keyValStr : Stringgiraph-formats-contrib/src/main/java/org/apache/giraph/io/hcatalog/HiveGiraphRunner.java 258:258
+Generation
+Move Methodgiraph-formats-contrib/src/main/java/org/apache/giraph/io/hcatalog/HiveGiraphRunner.java@public parsePartitionValues(outputTablePartitionString String) : Map<String,String>giraph-formats-contrib/src/main/java/org/apache/giraph/io/hcatalog/HiveUtils.java@public parsePartitionValues(outputTablePartitionString String) : Map<String,String>giraph-formats-contrib/src/main/java/org/apache/giraph/io/hcatalog/HiveGiraphRunner.java 254:270
+******************************
+******************************
+coarse grained commits 6a8ac5d16689018fba5d0e06fcc86a595c2dae47
+fine grained commits ('c51f4f768cbed937535b725750f6d3c0bf401b63', '9a76ca3abd158902ef1fc66bfcc99f96f67e311a')
+Generation
+Move Classgiraph-formats-contrib/src/main/java/org/apache/giraph/format/accumulo/AccumuloVertexInputFormat.java@org.apache.giraph.format.accumulo.AccumuloVertexInputFormat.AccumuloVertexReadergiraph-formats-contrib/src/main/java/org/apache/giraph/io/accumulo/AccumuloVertexInputFormat.java@org.apache.giraph.io.accumulo.AccumuloVertexInputFormat.AccumuloVertexReadergiraph-formats-contrib/src/main/java/org/apache/giraph/format/accumulo/AccumuloVertexInputFormat.java 41:77
+Generation
+Rename Packagegiraph-formats-contrib/src/main/java/org/apache/giraph/format/hcatalog/HCatalogVertexInputFormat.java@org.apache.giraph.format.hcatalog.HCatalogVertexInputFormatgiraph-formats-contrib/src/main/java/org/apache/giraph/io/hcatalog/HCatalogVertexInputFormat.java@org.apache.giraph.io.hcatalog.HCatalogVertexInputFormatgiraph-formats-contrib/src/main/java/org/apache/giraph/format/hcatalog/HCatalogVertexInputFormat.java 25:198
+Generation
+Move Methodgiraph-formats-contrib/src/main/java/org/apache/giraph/format/accumulo/AccumuloVertexInputFormat.java@public getSplits(context JobContext, numWorkers int) : List<InputSplit>giraph-formats-contrib/src/main/java/org/apache/giraph/io/accumulo/AccumuloVertexInputFormat.java@public getSplits(context JobContext, numWorkers int) : List<InputSplit>giraph-formats-contrib/src/main/java/org/apache/giraph/format/accumulo/AccumuloVertexInputFormat.java 79:94
+******************************
+******************************
+coarse grained commits b0e80eb8fa78c978020475db8b3823bfeff5544d
+fine grained commits ('cad66905dac23f8b9fd781d0a2f4251c71bad20a', '0cb95964266afc25a01997bf2e6ed4071b4f72a2')
+Generation
+Move Methodsrc/main/java/org/apache/giraph/io/AdjacencyListVertexReader.java@public nextVertex() : booleangiraph-formats-contrib/src/main/java/org/apache/giraph/format/hcatalog/HCatalogVertexInputFormat.java@public nextVertex() : booleansrc/main/java/org/apache/giraph/io/AdjacencyListVertexReader.java 53:56
+******************************
+******************************
+coarse grained commits 1cf6d1698fae46836ea337afe79854ab54a342df
+fine grained commits ('96746de1d86f9dfa5c1d50ff3e3f39ac28c53e3b', '19008ad79656fe411fbf2932cfa242e7f4880931')
+Generation
+Extract Classsrc/main/java/com/yahoo/hadoop_bsp/HadoopVertex.java@com.yahoo.hadoop_bsp.HadoopVertexsrc/main/java/com/yahoo/hadoop_bsp/HadoopVertex.java@com.yahoo.hadoop_bsp.HadoopVertexsrc/main/java/com/yahoo/hadoop_bsp/HadoopVertex.java 22:264
+Generation
+Move Methodsrc/main/java/com/yahoo/hadoop_bsp/HadoopVertex.java@public getConf() : Configurationsrc/main/java/com/yahoo/hadoop_bsp/BspResolver.java@public getConf() : Configurationsrc/main/java/com/yahoo/hadoop_bsp/HadoopVertex.java 249:251
+Generation
+Move Methodsrc/main/java/com/yahoo/hadoop_bsp/HadoopVertex.java@public setConf(conf Configuration) : voidsrc/main/java/com/yahoo/hadoop_bsp/BspResolver.java@public setConf(conf Configuration) : voidsrc/main/java/com/yahoo/hadoop_bsp/HadoopVertex.java 253:255
+Generation
+Move Attributesrc/main/java/com/yahoo/hadoop_bsp/HadoopVertex.java@private conf : Configurationsrc/main/java/com/yahoo/hadoop_bsp/BspResolver.java@private conf : Configurationsrc/main/java/com/yahoo/hadoop_bsp/HadoopVertex.java 40:40
+Generation
+Extract And Move Methodsrc/main/java/com/yahoo/hadoop_bsp/BspJob.java@public map(key Object, value Object, context Context) : voidsrc/main/java/com/yahoo/hadoop_bsp/HadoopVertex.java@package setNumEdges(numEdges long) : voidsrc/main/java/com/yahoo/hadoop_bsp/BspJob.java 345:471
+******************************
+******************************
+coarse grained commits 57d48f26cd4ebc98a1af25d4cee70ea86e255874
+fine grained commits ('bb8b86b875c08af0f7c801e5ec58979f2fe11fb1', '7e58a7b13dbebc59e97621050fd105b81922c6ba')
+Generation
+Move And Rename Classsrc/main/java/com/yahoo/hadoop_bsp/lib/VISVertexReader.java@com.yahoo.hadoop_bsp.examples.VISVertexReadersrc/main/java/com/yahoo/hadoop_bsp/lib/VISIntVertexReader.java@com.yahoo.hadoop_bsp.lib.VISIntVertexReadersrc/main/java/com/yahoo/hadoop_bsp/lib/VISVertexReader.java 18:61
+Generation
+Change Parameter Typesrc/main/java/com/yahoo/hadoop_bsp/lib/VISVertexReader.java@vertexId : Textsrc/main/java/com/yahoo/hadoop_bsp/lib/VISIntVertexReader.java@vertexId : IntWritablesrc/main/java/com/yahoo/hadoop_bsp/lib/VISVertexReader.java 23:23
+Generation
+Change Parameter Typesrc/main/java/com/yahoo/hadoop_bsp/lib/VISVertexReader.java@destVertexIdEdgeValueMap : Map<Text,Float>src/main/java/com/yahoo/hadoop_bsp/lib/VISIntVertexReader.java@destVertexIdEdgeValueMap : Map<IntWritable,Float>src/main/java/com/yahoo/hadoop_bsp/lib/VISVertexReader.java 25:25
+Generation
+Change Return Typesrc/main/java/com/yahoo/hadoop_bsp/lib/VISVertexReader.java@Textsrc/main/java/com/yahoo/hadoop_bsp/lib/VISIntVertexReader.java@IntWritablesrc/main/java/com/yahoo/hadoop_bsp/lib/VISVertexReader.java 50:50
+******************************
+******************************
+coarse grained commits 455324db19ecfbc8bbfbf5189068dbe6d7db9856
+fine grained commits ('043faf9fc09222af2090cdba87fd9b0b428f99fe', 'a288153e6136667103a4e43ad00e136b827cb6b5')
+Generation
+Replace Attribute With Variablesrc/main/java/com/yahoo/hadoop_bsp/BspService.java@m_currentSuperStep : Integersrc/main/java/com/yahoo/hadoop_bsp/BspService.java@splitArray : byte[]src/main/java/com/yahoo/hadoop_bsp/BspService.java 34:34
+******************************
+******************************
+coarse grained commits 0c9423968529a988c76d62b70f9b2a832e5c2fb5
+fine grained commits ('1f0e9f1f2efd5531a75943ccd071c8f66d918d49', 'ec223a8b9ce208b64015d9db1ac2d53befed75ea')
+Generation
+Remove Method Annotationsrc/main/java/org/apache/giraph/graph/Vertex.java@@Overridesrc/main/java/com/yahoo/hadoop_bsp/HadoopVertex.java@public getVertexValue() : Vsrc/main/java/org/apache/giraph/graph/Vertex.java 97:97
+Generation
+Remove Method Modifiersrc/main/java/org/apache/giraph/graph/Vertex.java@public getVertexValue() : Vsrc/main/java/com/yahoo/hadoop_bsp/HadoopVertex.java@public getVertexValue() : Vsrc/main/java/org/apache/giraph/graph/Vertex.java 97:100
+Generation
+Push Down Methodsrc/main/java/org/apache/giraph/graph/Vertex.java@public getVertexValue() : Vsrc/main/java/com/yahoo/hadoop_bsp/HadoopVertex.java@public getVertexValue() : Vsrc/main/java/org/apache/giraph/graph/Vertex.java 97:100
+Generation
+Remove Method Annotationsrc/main/java/org/apache/giraph/graph/Vertex.java@@Overridesrc/main/java/com/yahoo/hadoop_bsp/HadoopVertex.java@public setVertexValue(vertexValue V) : voidsrc/main/java/org/apache/giraph/graph/Vertex.java 102:102
+Generation
+Remove Method Modifiersrc/main/java/org/apache/giraph/graph/Vertex.java@public setVertexValue(vertexValue V) : voidsrc/main/java/com/yahoo/hadoop_bsp/HadoopVertex.java@public setVertexValue(vertexValue V) : voidsrc/main/java/org/apache/giraph/graph/Vertex.java 102:105
+Generation
+Push Down Methodsrc/main/java/org/apache/giraph/graph/Vertex.java@public setVertexValue(vertexValue V) : voidsrc/main/java/com/yahoo/hadoop_bsp/HadoopVertex.java@public setVertexValue(vertexValue V) : voidsrc/main/java/org/apache/giraph/graph/Vertex.java 102:105
+Generation
+Remove Method Annotationsrc/main/java/org/apache/giraph/graph/Vertex.java@@Overridesrc/main/java/com/yahoo/hadoop_bsp/HadoopVertex.java@public voteToHalt() : voidsrc/main/java/org/apache/giraph/graph/Vertex.java 191:191
+Generation
+Remove Method Modifiersrc/main/java/org/apache/giraph/graph/Vertex.java@public voteToHalt() : voidsrc/main/java/com/yahoo/hadoop_bsp/HadoopVertex.java@public voteToHalt() : voidsrc/main/java/org/apache/giraph/graph/Vertex.java 191:194
+Generation
+Push Down Methodsrc/main/java/org/apache/giraph/graph/Vertex.java@public voteToHalt() : voidsrc/main/java/com/yahoo/hadoop_bsp/HadoopVertex.java@public voteToHalt() : voidsrc/main/java/org/apache/giraph/graph/Vertex.java 191:194
+Generation
+Move Methodsrc/main/java/org/apache/giraph/graph/BasicVertex.java@public getVertexValue() : Vsrc/main/java/com/yahoo/hadoop_bsp/Vertex.java@public getVertexValue() : Vsrc/main/java/org/apache/giraph/graph/BasicVertex.java 33:33
+Generation
+Move Methodsrc/main/java/org/apache/giraph/graph/BasicVertex.java@public setVertexValue(vertexValue V) : voidsrc/main/java/com/yahoo/hadoop_bsp/Vertex.java@public setVertexValue(vertexValue V) : voidsrc/main/java/org/apache/giraph/graph/BasicVertex.java 35:35
+Generation
+Move Methodsrc/main/java/org/apache/giraph/graph/BasicVertex.java@public voteToHalt() : voidsrc/main/java/com/yahoo/hadoop_bsp/Vertex.java@public voteToHalt() : voidsrc/main/java/org/apache/giraph/graph/BasicVertex.java 47:47
+Generation
+Move Methodsrc/test/java/org/apache/giraph/TestBspBasic.java@public suite() : Testsrc/test/java/com/yahoo/hadoop_bsp/AppTest.java@public suite() : Testsrc/test/java/org/apache/giraph/TestBspBasic.java 39:41
+Generation
+Move Methodsrc/test/java/org/apache/giraph/TestAutoCheckpoint.java@public suite() : Testsrc/test/java/com/yahoo/hadoop_bsp/AppTest.java@public suite() : Testsrc/test/java/org/apache/giraph/TestAutoCheckpoint.java 23:25
+Generation
+Move Methodsrc/test/java/org/apache/giraph/TestJsonBase64Format.java@public suite() : Testsrc/test/java/com/yahoo/hadoop_bsp/AppTest.java@public suite() : Testsrc/test/java/org/apache/giraph/TestJsonBase64Format.java 23:25
+Generation
+Move Methodsrc/test/java/org/apache/giraph/TestManualCheckpoint.java@public suite() : Testsrc/test/java/com/yahoo/hadoop_bsp/AppTest.java@public suite() : Testsrc/test/java/org/apache/giraph/TestManualCheckpoint.java 23:25
+Generation
+Move Methodsrc/test/java/org/apache/giraph/TestMutateGraphVertex.java@public suite() : Testsrc/test/java/com/yahoo/hadoop_bsp/AppTest.java@public suite() : Testsrc/test/java/org/apache/giraph/TestMutateGraphVertex.java 19:21
+Generation
+Move Methodsrc/test/java/org/apache/giraph/TestVertexRangeBalancer.java@public suite() : Testsrc/test/java/com/yahoo/hadoop_bsp/AppTest.java@public suite() : Testsrc/test/java/org/apache/giraph/TestVertexRangeBalancer.java 23:25
+******************************
+******************************
+coarse grained commits 14f19175406054a0858d585125f96f77c8234ac9
+fine grained commits ('d9711e3a7b1b5e5277408120195551f9dcb8f40d', 'd6466462c46cb895c3e38296b387c0912df7cf08', 'a63084267295db93907c5693b7cb8ffd971f0329')
+Generation
+Parameterize Variablegiraph-block-app/src/main/java/org/apache/giraph/block_app/framework/BlockUtils.java@immConf : ImmutableClassesGiraphConfigurationgiraph-block-app/src/main/java/org/apache/giraph/block_app/framework/BlockUtils.java@conf : ImmutableClassesGiraphConfigurationgiraph-block-app/src/main/java/org/apache/giraph/block_app/framework/BlockUtils.java 93:94
+******************************
+******************************
+coarse grained commits 7d6171735b2fb0f5095f825232642ac7f0a4d5fd
+fine grained commits ('a5febbd7365c0f0b7d3884c3d9d3cf686c55186f', '64fb75f3b78fa6d8bddc4cb8140bf0b00bc7e2c3', '0dc08b0bec4a81fa6255250fa388e271a9229bc6')
+Generation
+Change Variable Typegiraph-core/src/main/java/org/apache/giraph/edge/EdgeStore.java@vertexIdEdgeIterator : ByteArrayVertexIdEdges<I,E>.VertexIdEdgeIteratorgiraph-core/src/main/java/org/apache/giraph/edge/AbstractEdgeStore.java@vertexIdEdgeIterator : VertexIdEdgeIterator<I,E>giraph-core/src/main/java/org/apache/giraph/edge/EdgeStore.java 62:63
+Generation
+Change Parameter Typegiraph-core/src/main/java/org/apache/giraph/edge/EdgeStore.java@edges : ByteArrayVertexIdEdges<I,E>giraph-core/src/main/java/org/apache/giraph/edge/AbstractEdgeStore.java@edges : VertexIdEdges<I,E>giraph-core/src/main/java/org/apache/giraph/edge/EdgeStore.java 49:49
+Generation
+Move Methodgiraph-core/src/main/java/org/apache/giraph/edge/EdgeStore.java@public addPartitionEdges(partitionId int, edges ByteArrayVertexIdEdges<I,E>) : voidgiraph-core/src/main/java/org/apache/giraph/edge/AbstractEdgeStore.java@public addPartitionEdges(partitionId int, edges VertexIdEdges<I,E>) : voidgiraph-core/src/main/java/org/apache/giraph/edge/EdgeStore.java 48:84
+******************************
+******************************
+coarse grained commits fdf038d9b86fbf1667f34d86eadd621249e46e33
+fine grained commits ('4687112f6cecf35ee4f44b4854f536383194677f', '42be663e2138b8e90b7b93919b1e138918004b35', '304da5aa1df9bc764b015cc42dbefb4f738c723e')
+Generation
+Remove Class Annotationgiraph-core/src/main/java/org/apache/giraph/edge/ConfigurableVertexEdges.java@@SuppressWarnings("unchecked")giraph-core/src/main/java/org/apache/giraph/edge/ConfigurableVertexEdges.java@org.apache.giraph.edge.ConfigurableVertexEdgesgiraph-core/src/main/java/org/apache/giraph/edge/ConfigurableVertexEdges.java 9:9
+******************************
+******************************
+coarse grained commits 0101430d31292445391ad636a065bb8f22164078
+fine grained commits ('774c5731f03110ddfe883c9ed416fc1380060550', '6fc215c21d5b261d776ecd03b0e7d4442153280a', '5b5393ec69fb642b3977dd8e0c46d4bfaaddd623')
+Generation
+Remove Method Annotationgiraph/src/main/java/org/apache/giraph/graph/MasterInfo.java@@Overridegiraph-core/src/main/java/org/apache/giraph/graph/TaskInfo.java@public getTaskId() : intgiraph/src/main/java/org/apache/giraph/graph/MasterInfo.java 8:8
+Generation
+Pull Up Methodgiraph/src/main/java/org/apache/giraph/graph/MasterInfo.java@public getTaskId() : intgiraph-core/src/main/java/org/apache/giraph/graph/TaskInfo.java@public getTaskId() : intgiraph/src/main/java/org/apache/giraph/graph/MasterInfo.java 8:11
+Generation
+Pull Up Methodgiraph/src/main/java/org/apache/giraph/graph/WorkerInfo.java@public toString() : Stringgiraph-core/src/main/java/org/apache/giraph/graph/TaskInfo.java@public toString() : Stringgiraph/src/main/java/org/apache/giraph/graph/WorkerInfo.java 35:39
+******************************
+******************************
+coarse grained commits 15ef103651f56cfa33bc455ef257ebbf86764d4d
+fine grained commits ('655f5e7dbbec14b9dbc2d738dc240ad0303abf04', '100b96a5daad5fe399fdd80879fc74468a9984cd', '7a1ec90082cf3db0acd1212dc351bc27b5f5d60e')
+Generation
+Extract Superclassgiraph/src/main/java/org/apache/giraph/ImmutableClassesGiraphConfiguration.java@org.apache.giraph.ImmutableClassesGiraphConfigurationgiraph/src/main/java/org/apache/giraph/conf/ImmutableClassesGiraphConfiguration.java@org.apache.giraph.conf.ImmutableClassesGiraphConfigurationgiraph/src/main/java/org/apache/giraph/ImmutableClassesGiraphConfiguration.java 40:362
+Generation
+Move Methodgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java@public GiraphConfiguration(conf Configuration)giraph/src/main/java/org/apache/giraph/conf/GiraphConfiguration.java@public GiraphConfiguration(conf Configuration)giraph/src/main/java/org/apache/giraph/GiraphConfiguration.java 366:368
+Generation
+Move Methodgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java@public setVertexClass(vertexClass Class<? extends Vertex>) : voidgiraph/src/main/java/org/apache/giraph/conf/GiraphConfiguration.java@public setVertexClass(vertexClass Class<? extends Vertex>) : voidgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java 370:373
+Generation
+Move Methodgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java@public setVertexInputFormatClass(vertexInputFormatClass Class<? extends VertexInputFormat>) : voidgiraph/src/main/java/org/apache/giraph/conf/GiraphConfiguration.java@public setVertexInputFormatClass(vertexInputFormatClass Class<? extends VertexInputFormat>) : voidgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java 375:380
+Generation
+Move Methodgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java@public setEdgeInputFormatClass(edgeInputFormatClass Class<? extends EdgeInputFormat>) : voidgiraph/src/main/java/org/apache/giraph/conf/GiraphConfiguration.java@public setEdgeInputFormatClass(edgeInputFormatClass Class<? extends EdgeInputFormat>) : voidgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java 382:387
+Generation
+Move Methodgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java@public setMasterComputeClass(masterComputeClass Class<? extends MasterCompute>) : voidgiraph/src/main/java/org/apache/giraph/conf/GiraphConfiguration.java@public setMasterComputeClass(masterComputeClass Class<? extends MasterCompute>) : voidgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java 389:393
+Generation
+Move Methodgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java@public addMasterObserverClass(masterObserverClass Class<? extends MasterObserver>) : voidgiraph/src/main/java/org/apache/giraph/conf/GiraphConfiguration.java@public addMasterObserverClass(masterObserverClass Class<? extends MasterObserver>) : voidgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java 395:399
+Generation
+Move Methodgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java@public addToClasses(name String, klass Class<?>, xface Class<?>) : voidgiraph/src/main/java/org/apache/giraph/conf/GiraphConfiguration.java@public addToClasses(name String, klass Class<?>, xface Class<?>) : voidgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java 401:414
+Generation
+Move Methodgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java@public setClasses(name String, xface Class<?>, klasses Class<?>...) : voidgiraph/src/main/java/org/apache/giraph/conf/GiraphConfiguration.java@public setClasses(name String, xface Class<?>, klasses Class<?>...) : voidgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java 416:428
+Generation
+Move Methodgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java@public getClassesOfType(name String, xface Class<T>, defaultValue Class<? extends T>...) : Class<? extends T>[]giraph/src/main/java/org/apache/giraph/conf/GiraphConfiguration.java@public getClassesOfType(name String, xface Class<T>, defaultValue Class<? extends T>...) : Class<? extends T>[]giraph/src/main/java/org/apache/giraph/GiraphConfiguration.java 430:440
+Generation
+Move Methodgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java@public setVertexOutputFormatClass(vertexOutputFormatClass Class<? extends VertexOutputFormat>) : voidgiraph/src/main/java/org/apache/giraph/conf/GiraphConfiguration.java@public setVertexOutputFormatClass(vertexOutputFormatClass Class<? extends VertexOutputFormat>) : voidgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java 442:447
+Generation
+Move Methodgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java@public setVertexCombinerClass(vertexCombinerClass Class<? extends Combiner>) : voidgiraph/src/main/java/org/apache/giraph/conf/GiraphConfiguration.java@public setVertexCombinerClass(vertexCombinerClass Class<? extends Combiner>) : voidgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java 449:454
+Generation
+Move Methodgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java@public setGraphPartitionerFactoryClass(graphPartitionerFactoryClass Class<?>) : voidgiraph/src/main/java/org/apache/giraph/conf/GiraphConfiguration.java@public setGraphPartitionerFactoryClass(graphPartitionerFactoryClass Class<?>) : voidgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java 456:461
+Generation
+Move Methodgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java@public setVertexResolverClass(vertexResolverClass Class<? extends VertexResolver>) : voidgiraph/src/main/java/org/apache/giraph/conf/GiraphConfiguration.java@public setVertexResolverClass(vertexResolverClass Class<? extends VertexResolver>) : voidgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java 463:468
+Generation
+Move Methodgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java@public setWorkerContextClass(workerContextClass Class<? extends WorkerContext>) : voidgiraph/src/main/java/org/apache/giraph/conf/GiraphConfiguration.java@public setWorkerContextClass(workerContextClass Class<? extends WorkerContext>) : voidgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java 470:475
+Generation
+Move Methodgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java@public setAggregatorWriterClass(aggregatorWriterClass Class<? extends AggregatorWriter>) : voidgiraph/src/main/java/org/apache/giraph/conf/GiraphConfiguration.java@public setAggregatorWriterClass(aggregatorWriterClass Class<? extends AggregatorWriter>) : voidgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java 477:482
+Generation
+Move Methodgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java@public setPartitionClass(partitionClass Class<? extends Partition>) : voidgiraph/src/main/java/org/apache/giraph/conf/GiraphConfiguration.java@public setPartitionClass(partitionClass Class<? extends Partition>) : voidgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java 484:489
+Generation
+Move Methodgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java@public setWorkerConfiguration(minWorkers int, maxWorkers int, minPercentResponded float) : voidgiraph/src/main/java/org/apache/giraph/conf/GiraphConfiguration.java@public setWorkerConfiguration(minWorkers int, maxWorkers int, minPercentResponded float) : voidgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java 491:497
+Generation
+Move Methodgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java@public getMinWorkers() : intgiraph/src/main/java/org/apache/giraph/conf/GiraphConfiguration.java@public getMinWorkers() : intgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java 499:501
+Generation
+Move Methodgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java@public getMaxWorkers() : intgiraph/src/main/java/org/apache/giraph/conf/GiraphConfiguration.java@public getMaxWorkers() : intgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java 503:505
+Generation
+Move Methodgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java@public getMinPercentResponded() : floatgiraph/src/main/java/org/apache/giraph/conf/GiraphConfiguration.java@public getMinPercentResponded() : floatgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java 507:509
+Generation
+Move Methodgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java@public setZooKeeperConfiguration(serverList String) : voidgiraph/src/main/java/org/apache/giraph/conf/GiraphConfiguration.java@public setZooKeeperConfiguration(serverList String) : voidgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java 511:513
+Generation
+Move Methodgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java@public getSplitMasterWorker() : booleangiraph/src/main/java/org/apache/giraph/conf/GiraphConfiguration.java@public getSplitMasterWorker() : booleangiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java 515:517
+Generation
+Move Methodgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java@public getMasterObserverClasses() : Class<? extends MasterObserver>[]giraph/src/main/java/org/apache/giraph/conf/GiraphConfiguration.java@public getMasterObserverClasses() : Class<? extends MasterObserver>[]giraph/src/main/java/org/apache/giraph/GiraphConfiguration.java 519:521
+Generation
+Move Methodgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java@public metricsEnabled() : booleangiraph/src/main/java/org/apache/giraph/conf/GiraphConfiguration.java@public metricsEnabled() : booleangiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java 523:525
+Generation
+Move Methodgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java@public getTaskPartition() : intgiraph/src/main/java/org/apache/giraph/conf/GiraphConfiguration.java@public getTaskPartition() : intgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java 527:529
+Generation
+Move Methodgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java@public getZookeeperList() : Stringgiraph/src/main/java/org/apache/giraph/conf/GiraphConfiguration.java@public getZookeeperList() : Stringgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java 531:533
+Generation
+Move Methodgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java@public getLocalLevel() : Stringgiraph/src/main/java/org/apache/giraph/conf/GiraphConfiguration.java@public getLocalLevel() : Stringgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java 535:537
+Generation
+Move Methodgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java@public useLogThreadLayout() : booleangiraph/src/main/java/org/apache/giraph/conf/GiraphConfiguration.java@public useLogThreadLayout() : booleangiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java 539:541
+Generation
+Move Methodgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java@public getLocalTestMode() : booleangiraph/src/main/java/org/apache/giraph/conf/GiraphConfiguration.java@public getLocalTestMode() : booleangiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java 543:545
+Generation
+Move Methodgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java@public getZooKeeperServerCount() : intgiraph/src/main/java/org/apache/giraph/conf/GiraphConfiguration.java@public getZooKeeperServerCount() : intgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java 547:550
+Generation
+Move Methodgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java@public setZooKeeperJar(classPath String) : voidgiraph/src/main/java/org/apache/giraph/conf/GiraphConfiguration.java@public setZooKeeperJar(classPath String) : voidgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java 552:554
+Generation
+Move Methodgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java@public getZooKeeperSessionTimeout() : intgiraph/src/main/java/org/apache/giraph/conf/GiraphConfiguration.java@public getZooKeeperSessionTimeout() : intgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java 556:559
+Generation
+Move Methodgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java@public getZookeeperOpsMaxAttempts() : intgiraph/src/main/java/org/apache/giraph/conf/GiraphConfiguration.java@public getZookeeperOpsMaxAttempts() : intgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java 561:564
+Generation
+Move Methodgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java@public getZookeeperOpsRetryWaitMsecs() : intgiraph/src/main/java/org/apache/giraph/conf/GiraphConfiguration.java@public getZookeeperOpsRetryWaitMsecs() : intgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java 566:569
+Generation
+Move Methodgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java@public getNettyServerUseExecutionHandler() : booleangiraph/src/main/java/org/apache/giraph/conf/GiraphConfiguration.java@public getNettyServerUseExecutionHandler() : booleangiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java 571:574
+Generation
+Move Methodgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java@public getNettyServerThreads() : intgiraph/src/main/java/org/apache/giraph/conf/GiraphConfiguration.java@public getNettyServerThreads() : intgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java 576:578
+Generation
+Move Methodgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java@public getNettyServerExecutionThreads() : intgiraph/src/main/java/org/apache/giraph/conf/GiraphConfiguration.java@public getNettyServerExecutionThreads() : intgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java 580:583
+Generation
+Move Methodgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java@public getNettyServerExecutionConcurrency() : intgiraph/src/main/java/org/apache/giraph/conf/GiraphConfiguration.java@public getNettyServerExecutionConcurrency() : intgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java 585:591
+Generation
+Move Methodgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java@public getZookeeperConnectionAttempts() : intgiraph/src/main/java/org/apache/giraph/conf/GiraphConfiguration.java@public getZookeeperConnectionAttempts() : intgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java 593:596
+Generation
+Move Methodgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java@public getZooKeeperMinSessionTimeout() : intgiraph/src/main/java/org/apache/giraph/conf/GiraphConfiguration.java@public getZooKeeperMinSessionTimeout() : intgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java 598:601
+Generation
+Move Methodgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java@public getZooKeeperMaxSessionTimeout() : intgiraph/src/main/java/org/apache/giraph/conf/GiraphConfiguration.java@public getZooKeeperMaxSessionTimeout() : intgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java 603:606
+Generation
+Move Methodgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java@public getZooKeeperForceSync() : Stringgiraph/src/main/java/org/apache/giraph/conf/GiraphConfiguration.java@public getZooKeeperForceSync() : Stringgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java 608:610
+Generation
+Move Methodgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java@public getZooKeeperSkipAcl() : Stringgiraph/src/main/java/org/apache/giraph/conf/GiraphConfiguration.java@public getZooKeeperSkipAcl() : Stringgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java 612:614
+Generation
+Move Methodgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java@public getMapTasks() : intgiraph/src/main/java/org/apache/giraph/conf/GiraphConfiguration.java@public getMapTasks() : intgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java 616:623
+Generation
+Move Methodgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java@public authenticate() : booleangiraph/src/main/java/org/apache/giraph/conf/GiraphConfiguration.java@public authenticate() : booleangiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java 625:627
+Generation
+Move Methodgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java@public setNumComputeThreads(numComputeThreads int) : voidgiraph/src/main/java/org/apache/giraph/conf/GiraphConfiguration.java@public setNumComputeThreads(numComputeThreads int) : voidgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java 629:631
+Generation
+Move Methodgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java@public getNumComputeThreads() : intgiraph/src/main/java/org/apache/giraph/conf/GiraphConfiguration.java@public getNumComputeThreads() : intgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java 633:635
+Generation
+Move Methodgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java@public setNumInputSplitsThreads(numInputSplitsThreads int) : voidgiraph/src/main/java/org/apache/giraph/conf/GiraphConfiguration.java@public setNumInputSplitsThreads(numInputSplitsThreads int) : voidgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java 637:639
+Generation
+Move Methodgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java@public getNumInputSplitsThreads() : intgiraph/src/main/java/org/apache/giraph/conf/GiraphConfiguration.java@public getNumInputSplitsThreads() : intgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java 641:643
+Generation
+Move Methodgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java@public getInputSplitMaxVertices() : longgiraph/src/main/java/org/apache/giraph/conf/GiraphConfiguration.java@public getInputSplitMaxVertices() : longgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java 645:647
+Generation
+Move Methodgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java@public getInputSplitMaxEdges() : longgiraph/src/main/java/org/apache/giraph/conf/GiraphConfiguration.java@public getInputSplitMaxEdges() : longgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java 649:651
+Generation
+Move Methodgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java@public useUnsafeSerialization(useUnsafeSerialization boolean) : voidgiraph/src/main/java/org/apache/giraph/conf/GiraphConfiguration.java@public useUnsafeSerialization(useUnsafeSerialization boolean) : voidgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java 653:655
+Generation
+Move Methodgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java@public useMessageSizeEncoding() : booleangiraph/src/main/java/org/apache/giraph/conf/GiraphConfiguration.java@public useMessageSizeEncoding() : booleangiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java 657:660
+Generation
+Move Methodgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java@public setCheckpointFrequency(checkpointFrequency int) : voidgiraph/src/main/java/org/apache/giraph/conf/GiraphConfiguration.java@public setCheckpointFrequency(checkpointFrequency int) : voidgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java 662:664
+Generation
+Move Methodgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java@public getCheckpointFrequency() : intgiraph/src/main/java/org/apache/giraph/conf/GiraphConfiguration.java@public getCheckpointFrequency() : intgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java 666:668
+Generation
+Move Methodgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java@public setMaxTaskAttempts(maxTaskAttempts int) : voidgiraph/src/main/java/org/apache/giraph/conf/GiraphConfiguration.java@public setMaxTaskAttempts(maxTaskAttempts int) : voidgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java 670:672
+Generation
+Move Methodgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java@public getMaxTaskAttempts() : intgiraph/src/main/java/org/apache/giraph/conf/GiraphConfiguration.java@public getMaxTaskAttempts() : intgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java 674:676
+Generation
+Move Methodgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java@public getEventWaitMsecs() : intgiraph/src/main/java/org/apache/giraph/conf/GiraphConfiguration.java@public getEventWaitMsecs() : intgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java 678:680
+Generation
+Move Methodgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java@public setEventWaitMsecs(eventWaitMsecs int) : voidgiraph/src/main/java/org/apache/giraph/conf/GiraphConfiguration.java@public setEventWaitMsecs(eventWaitMsecs int) : voidgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java 682:684
+Generation
+Move Methodgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java@public getMaxMasterSuperstepWaitMsecs() : intgiraph/src/main/java/org/apache/giraph/conf/GiraphConfiguration.java@public getMaxMasterSuperstepWaitMsecs() : intgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java 686:689
+Generation
+Move Methodgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java@public setMaxMasterSuperstepWaitMsecs(maxMasterSuperstepWaitMsecs int) : voidgiraph/src/main/java/org/apache/giraph/conf/GiraphConfiguration.java@public setMaxMasterSuperstepWaitMsecs(maxMasterSuperstepWaitMsecs int) : voidgiraph/src/main/java/org/apache/giraph/GiraphConfiguration.java 691:693
+******************************
+******************************
+coarse grained commits f9f62bb948a796bff78fcd535e2f73d57e96a39b
+fine grained commits ('1b482f09ccb32dcf4614659dfa5a6ddba6b49030', '891c8d291b3ae3d9dfd1ced513e9a857de2c398a', '2be3c56ece6eb88ac8d7e60304033867639cd5e2')
+Generation
+Extract Classgiraph/src/main/java/org/apache/giraph/graph/partition/Partition.java@org.apache.giraph.graph.partition.Partitiongiraph/src/main/java/org/apache/giraph/graph/partition/Partition.java@org.apache.giraph.graph.partition.Partitiongiraph/src/main/java/org/apache/giraph/graph/partition/Partition.java 20:106
+Generation
+Move Methodgiraph/src/main/java/org/apache/giraph/graph/partition/Partition.java@public write(output DataOutput) : voidgiraph/src/main/java/org/apache/giraph/graph/IntNullNullNullVertex.java@public write(out DataOutput) : voidgiraph/src/main/java/org/apache/giraph/graph/partition/Partition.java 98:105
+Generation
+Rename Parametergiraph/src/main/java/org/apache/giraph/graph/partition/Partition.java@output : DataOutputgiraph/src/main/java/org/apache/giraph/graph/IntNullNullNullVertex.java@out : DataOutputgiraph/src/main/java/org/apache/giraph/graph/partition/Partition.java 99:99
+Generation
+Move Methodgiraph/src/main/java/org/apache/giraph/graph/partition/Partition.java@public readFields(input DataInput) : voidgiraph/src/main/java/org/apache/giraph/graph/IntNullNullNullVertex.java@public readFields(in DataInput) : voidgiraph/src/main/java/org/apache/giraph/graph/partition/Partition.java 83:96
+Generation
+Rename Parametergiraph/src/main/java/org/apache/giraph/graph/partition/Partition.java@input : DataInputgiraph/src/main/java/org/apache/giraph/graph/IntNullNullNullVertex.java@in : DataInputgiraph/src/main/java/org/apache/giraph/graph/partition/Partition.java 84:84
+******************************
+******************************
+coarse grained commits 70ae4e412f5ffe51793d4222a50a6d67dbe8798c
+fine grained commits ('cad66905dac23f8b9fd781d0a2f4251c71bad20a', '0cb95964266afc25a01997bf2e6ed4071b4f72a2', 'cbafd0a81f882292c2b0749ca5400a20e8916524')
+Generation
+Move And Rename Classsrc/main/java/org/apache/giraph/examples/SimplePageRankVertex.java@org.apache.giraph.examples.SimplePageRankVertex.SimplePageRankVertexWritergiraph-formats-contrib/src/main/java/org/apache/giraph/format/hcatalog/HCatalogVertexOutputFormat.java@org.apache.giraph.format.hcatalog.HCatalogVertexOutputFormat.SingleRowHCatalogVertexWritersrc/main/java/org/apache/giraph/examples/SimplePageRankVertex.java 191:206
+Generation
+Change Class Access Modifiersrc/main/java/org/apache/giraph/examples/SimplePageRankVertex.java@org.apache.giraph.examples.SimplePageRankVertex.SimplePageRankVertexWritergiraph-formats-contrib/src/main/java/org/apache/giraph/format/hcatalog/HCatalogVertexOutputFormat.java@org.apache.giraph.format.hcatalog.HCatalogVertexOutputFormat.SingleRowHCatalogVertexWritersrc/main/java/org/apache/giraph/examples/SimplePageRankVertex.java 191:206
+Generation
+Add Class Modifiersrc/main/java/org/apache/giraph/examples/SimplePageRankVertex.java@org.apache.giraph.examples.SimplePageRankVertex.SimplePageRankVertexWritergiraph-formats-contrib/src/main/java/org/apache/giraph/format/hcatalog/HCatalogVertexOutputFormat.java@org.apache.giraph.format.hcatalog.HCatalogVertexOutputFormat.SingleRowHCatalogVertexWritersrc/main/java/org/apache/giraph/examples/SimplePageRankVertex.java 191:206
+Generation
+Change Parameter Typesrc/main/java/org/apache/giraph/examples/SimplePageRankVertex.java@vertex : Vertex<LongWritable,DoubleWritable,FloatWritable,?>giraph-formats-contrib/src/main/java/org/apache/giraph/format/hcatalog/HCatalogVertexOutputFormat.java@vertex : Vertexsrc/main/java/org/apache/giraph/examples/SimplePageRankVertex.java 200:200
+Generation
+Add Method Annotationsrc/main/java/org/apache/giraph/examples/SimplePageRankVertex.java@public writeVertex(vertex Vertex<LongWritable,DoubleWritable,FloatWritable,?>) : voidgiraph-formats-contrib/src/main/java/org/apache/giraph/format/hcatalog/HCatalogVertexOutputFormat.java@@SuppressWarnings("unchecked")src/main/java/org/apache/giraph/examples/SimplePageRankVertex.java 198:205
+Generation
+Add Method Modifiersrc/main/java/org/apache/giraph/examples/SimplePageRankVertex.java@public writeVertex(vertex Vertex<LongWritable,DoubleWritable,FloatWritable,?>) : voidgiraph-formats-contrib/src/main/java/org/apache/giraph/format/hcatalog/HCatalogVertexOutputFormat.java@public writeVertex(vertex Vertex) : voidsrc/main/java/org/apache/giraph/examples/SimplePageRankVertex.java 198:205
+Generation
+Extract Superclasssrc/main/java/org/apache/giraph/examples/SimplePageRankVertex.java@org.apache.giraph.examples.SimplePageRankVertex.SimplePageRankVertexWritergiraph-formats-contrib/src/main/java/org/apache/giraph/format/hcatalog/HCatalogVertexOutputFormat.java@org.apache.giraph.format.hcatalog.HCatalogVertexOutputFormat.SingleRowHCatalogVertexWritersrc/main/java/org/apache/giraph/examples/SimplePageRankVertex.java 191:206
+******************************
+******************************
+coarse grained commits 06aac6a09399587411bc4d354f4cd4848afd0c3c
+fine grained commits ('d997e4bd73ce52808c8bd0d3e701158b2bac517f', 'c05656efd7dcd7de8df781839b2dc8beccb37c30', '2fc25d1ee617d968bdb7d361c58fc605a71cc905')
+Generation
+Move Packagesrc/main/java/com/yahoo/hadoop_bsp/lib/MaxAggregator.java@com.yahoo.hadoop_bsp.lib.MaxAggregatorsrc/main/java/org/apache/giraph/examples/MaxAggregator.java@org.apache.giraph.examples.MaxAggregatorsrc/main/java/com/yahoo/hadoop_bsp/lib/MaxAggregator.java 8:31
+Generation
+Split Packagesrc/main/java/com/yahoo/hadoop_bsp/BspInputFormat.java@com.yahoo.hadoop_bsp.BspInputFormatsrc/main/java/org/apache/giraph/bsp/BspInputFormat.java@org.apache.giraph.bsp.BspInputFormatsrc/main/java/com/yahoo/hadoop_bsp/BspInputFormat.java 16:59
+Generation
+Split Packagesrc/main/java/com/yahoo/hadoop_bsp/HadoopVertexList.java@com.yahoo.hadoop_bsp.HadoopVertexListsrc/main/java/org/apache/giraph/comm/VertexList.java@org.apache.giraph.comm.VertexListsrc/main/java/com/yahoo/hadoop_bsp/HadoopVertexList.java 6:32
+******************************
+******************************
+coarse grained commits 3146b6d40f275c49c0bec26d1bd27557669995ad
+fine grained commits ('8e880b43c62c70eb39bece130eb2a7f5294beac4', '061e74b8d54e0a4cab333af98f6ccb203897c0b0', 'bb8b86b875c08af0f7c801e5ec58979f2fe11fb1')
+Generation
+Move And Rename Classsrc/main/java/com/yahoo/hadoop_bsp/examples/VISBspMainTest.java@com.yahoo.hadoop_bsp.examples.VISBspMainTest.TestBspsrc/main/java/com/yahoo/hadoop_bsp/examples/TestCombinerVertex.java@com.yahoo.hadoop_bsp.examples.TestCombinerVertexsrc/main/java/com/yahoo/hadoop_bsp/examples/VISBspMainTest.java 29:47
+Generation
+Remove Class Modifiersrc/main/java/com/yahoo/hadoop_bsp/examples/VISBspMainTest.java@com.yahoo.hadoop_bsp.examples.VISBspMainTest.TestBspsrc/main/java/com/yahoo/hadoop_bsp/examples/TestCombinerVertex.java@com.yahoo.hadoop_bsp.examples.TestCombinerVertexsrc/main/java/com/yahoo/hadoop_bsp/examples/VISBspMainTest.java 29:47
+Generation
+Remove Class Modifiersrc/main/java/com/yahoo/hadoop_bsp/examples/VISBspMainTest.java@com.yahoo.hadoop_bsp.examples.VISBspMainTest.TestBspsrc/main/java/com/yahoo/hadoop_bsp/examples/TestCombinerVertex.java@com.yahoo.hadoop_bsp.examples.TestCombinerVertexsrc/main/java/com/yahoo/hadoop_bsp/examples/VISBspMainTest.java 29:47
+Generation
+Change Variable Typesrc/main/java/com/yahoo/hadoop_bsp/examples/VISBspMainTest.java@sum : doublesrc/main/java/com/yahoo/hadoop_bsp/examples/TestCombinerVertex.java@sum : intsrc/main/java/com/yahoo/hadoop_bsp/examples/VISBspMainTest.java 33:33
+Generation
+Change Parameter Typesrc/main/java/com/yahoo/hadoop_bsp/examples/VISBspMainTest.java@msgIterator : Iterator<DoubleWritable>src/main/java/com/yahoo/hadoop_bsp/examples/TestCombinerVertex.java@msgIterator : Iterator<IntWritable>src/main/java/com/yahoo/hadoop_bsp/examples/VISBspMainTest.java 31:31
+******************************
+******************************
+coarse grained commits db67b5ec732ea91f4c9ee80849c8b6b660fc46ee
+fine grained commits ('a1ce7f754645a3b288295a4c1edea51484f645e2', '5f33598370c2b7d0f204b7ac60e27e7d8db491aa', '5bca08f04cbfb0f518ef92d96d1d70c9d183c160')
+Generation
+Move And Rename Attributegiraph-core/src/main/java/org/apache/giraph/comm/netty/NettyClient.java@public MAX_NUMBER_OF_OPEN_REQUESTS : IntConfOptiongiraph-core/src/main/java/org/apache/giraph/conf/GiraphConstants.java@public WAIT_TIME_BETWEEN_CONNECTION_RETRIES_MS : IntConfOptiongiraph-core/src/main/java/org/apache/giraph/comm/netty/NettyClient.java 84:86
+******************************
+******************************
+coarse grained commits 28d47ece96a3721b2ccc336fb47a27ab4def126c
+fine grained commits ('46cd48a66abb86e9af878eb03cb0c0ea9edd5082', '1152db45c1e3021acbd89d013fa0967fc3691297', '2c7bbab36d59802e45fb20975805e551300fd4b4')
+Generation
+Remove Thrown Exception Typegiraph-core/src/main/java/org/apache/giraph/bsp/CentralizedServiceMaster.java@InterruptedExceptiongiraph-core/src/main/java/org/apache/giraph/graph/JobProgressTrackerClient.java@public cleanup() : voidgiraph-core/src/main/java/org/apache/giraph/bsp/CentralizedServiceMaster.java 56:56
+Generation
+Move Methodgiraph-core/src/main/java/org/apache/giraph/bsp/CentralizedServiceMaster.java@public cleanup() : voidgiraph-core/src/main/java/org/apache/giraph/graph/JobProgressTrackerClient.java@public cleanup() : voidgiraph-core/src/main/java/org/apache/giraph/bsp/CentralizedServiceMaster.java 55:56
+******************************
+******************************
+coarse grained commits 228df52031af7dd4e3c84be55e4a0fba278b8a73
+fine grained commits ('a1990943093bc9ea8ab1944d919799ded4878ef9', 'b4ce85913f4295683ff5bb1400b488820cae4e1c', '1b482f09ccb32dcf4614659dfa5a6ddba6b49030')
+Generation
+Move And Rename Classgiraph/src/main/java/org/apache/giraph/metrics/MetricGroup.java@org.apache.giraph.metrics.MetricGroupgiraph/src/test/java/org/apache/giraph/TestGiraphConfiguration.java@org.apache.giraph.TestGiraphConfiguration.Cgiraph/src/main/java/org/apache/giraph/metrics/MetricGroup.java 4:10
+Generation
+Change Type Declaration Kindgiraph/src/main/java/org/apache/giraph/metrics/MetricGroup.java@org.apache.giraph.metrics.MetricGroupgiraph/src/test/java/org/apache/giraph/TestGiraphConfiguration.java@org.apache.giraph.TestGiraphConfiguration.Cgiraph/src/main/java/org/apache/giraph/metrics/MetricGroup.java 4:10
+Generation
+Extract Interfacegiraph/src/main/java/org/apache/giraph/metrics/MetricGroup.java@org.apache.giraph.metrics.MetricGroupgiraph/src/test/java/org/apache/giraph/TestGiraphConfiguration.java@org.apache.giraph.TestGiraphConfiguration.Cgiraph/src/main/java/org/apache/giraph/metrics/MetricGroup.java 4:10
+******************************
+******************************
+coarse grained commits fc12b8b80641233edd7d4c2b30751fbf0b4900fb
+fine grained commits ('cc22da872c6adb125c3266975508301a0974ff7f', 'd6c1f2b13b9c7fc62561b29a684dadd2ac005ef0', 'e8705842926250897f5df64e33bbcdf950729285')
+Generation
+Replace Attribute With Variablegiraph/src/main/java/org/apache/giraph/graph/GraphMapper.java@communicationTimerContext : TimerContextgiraph/src/main/java/org/apache/giraph/graph/GraphMapper.java@tmp : longgiraph/src/main/java/org/apache/giraph/graph/GraphMapper.java 73:73
+******************************
+******************************
+coarse grained commits 23400c3c5f255b8fa38519c9c11aa382d5991b80
+fine grained commits ('8a0e8928e81663bd7a07f586690ea1b30a185383', 'da8e120ffd8d37e4f428166fe53b2bde1f697e86', '0073b3679769287b88c8ab11d034b8e995a46fa4')
+Generation
+Move Classsrc/test/java/org/apache/giraph/comm/RPCCommunicationsTest.java@org.apache.giraph.comm.RPCCommunicationsTest.IntVertexsrc/test/java/org/apache/giraph/comm/SaslConnectionTest.java@org.apache.giraph.comm.SaslConnectionTest.IntVertexsrc/test/java/org/apache/giraph/comm/RPCCommunicationsTest.java 21:26
+Generation
+Change Class Access Modifiersrc/test/java/org/apache/giraph/comm/RPCCommunicationsTest.java@org.apache.giraph.comm.RPCCommunicationsTest.IntVertexsrc/test/java/org/apache/giraph/comm/SaslConnectionTest.java@org.apache.giraph.comm.SaslConnectionTest.IntVertexsrc/test/java/org/apache/giraph/comm/RPCCommunicationsTest.java 21:26
+Generation
+Add Parametersrc/main/java/org/apache/giraph/comm/SecureRPCCommunications.java@protected createJobToken() : Token<JobTokenIdentifier>src/main/java/org/apache/giraph/comm/netty/SaslNettyClient.java@conf : Configurationsrc/main/java/org/apache/giraph/comm/SecureRPCCommunications.java 50:60
+Generation
+Change Method Access Modifiersrc/main/java/org/apache/giraph/comm/SecureRPCCommunications.java@protected createJobToken() : Token<JobTokenIdentifier>src/main/java/org/apache/giraph/comm/netty/SaslNettyClient.java@private createJobToken(conf Configuration) : Token<JobTokenIdentifier>src/main/java/org/apache/giraph/comm/SecureRPCCommunications.java 50:60
+Generation
+Move Methodsrc/main/java/org/apache/giraph/comm/SecureRPCCommunications.java@protected createJobToken() : Token<JobTokenIdentifier>src/main/java/org/apache/giraph/comm/netty/SaslNettyClient.java@private createJobToken(conf Configuration) : Token<JobTokenIdentifier>src/main/java/org/apache/giraph/comm/SecureRPCCommunications.java 50:60
+Generation
+Extract And Move Methodsrc/main/java/org/apache/giraph/comm/netty/NettyServer.java@public start() : voidsrc/main/java/org/apache/giraph/GiraphConfiguration.java@public authenticate() : booleansrc/main/java/org/apache/giraph/comm/netty/NettyServer.java 114:204
+Generation
+Extract And Move Methodsrc/main/java/org/apache/giraph/graph/BspServiceWorker.java@public loadCheckpoint(superstep long) : voidsrc/main/java/org/apache/giraph/GiraphConfiguration.java@public authenticate() : booleansrc/main/java/org/apache/giraph/graph/BspServiceWorker.java 938:1040
+******************************
+******************************
+coarse grained commits 106fbd852a971d113ecf4f7173c59d2d606a84b0
+fine grained commits ('aab24a92a4faf3aaf58c16ee37ecaef7f5052b0b', '5dd779991bc472956a19308d8bc4b0e21eb6016e', '7be1db90f135d4b049a9ce36cb3fc6875f3f9154')
+Generation
+Rename Methodsrc/main/java/org/apache/giraph/graph/BspUtils.java@public createVertex(conf Configuration, graphState GraphState<I,V,E,M>) : Vertex<I,V,E,M>src/main/java/org/apache/giraph/graph/BspUtils.java@public createWorkerContext(conf Configuration, graphState GraphState<I,V,E,M>) : WorkerContextsrc/main/java/org/apache/giraph/graph/BspUtils.java 133:144
+Generation
+Rename Variablesrc/main/java/org/apache/giraph/graph/BspUtils.java@vertexClass : Class<? extends Vertex<I,V,E,M>>src/main/java/org/apache/giraph/graph/BspUtils.java@workerContextClass : Class<? extends WorkerContext>src/main/java/org/apache/giraph/graph/BspUtils.java 138:139
+Generation
+Rename Variablesrc/main/java/org/apache/giraph/graph/BspUtils.java@vertex : Vertex<I,V,E,M>src/main/java/org/apache/giraph/graph/BspUtils.java@workerContext : WorkerContextsrc/main/java/org/apache/giraph/graph/BspUtils.java 140:141
+******************************
+******************************
+coarse grained commits 32d1899aaf51a1233ec67e2616fd288f5edf9b76
+fine grained commits ('96746de1d86f9dfa5c1d50ff3e3f39ac28c53e3b', '19008ad79656fe411fbf2932cfa242e7f4880931', '8a382a21266fa19c80937b1ddfb3098d713c4d94')
+Generation
+Extract Variablesrc/main/java/com/yahoo/hadoop_bsp/BspServiceMaster.java@src/main/java/com/yahoo/hadoop_bsp/BspServiceMaster.java@vertexAssignmentBytes : byte[]src/main/java/com/yahoo/hadoop_bsp/BspServiceMaster.java 970:975
+Generation
+Extract And Move Methodsrc/main/java/com/yahoo/hadoop_bsp/BspServiceWorker.java@public setup() : voidsrc/main/java/com/yahoo/hadoop_bsp/BspService.java@public setRestartedSuperstep(superstep long) : voidsrc/main/java/com/yahoo/hadoop_bsp/BspServiceWorker.java 372:419
+******************************
+******************************
+coarse grained commits d81d5036e3ab77c774f1bb3a4f26ab15b64c7ff8
+fine grained commits ('18b202d1c05fadbf4259a46b5f87a99d1ea54a6c', '5abf0a2f59625c64b8284978f99bcf2e7e246b93', 'da6a32807c458b710d14d7d8b9fb7d14c2d07528')
+Generation
+Extract Methodgiraph-core/src/main/java/org/apache/giraph/job/DefaultJobProgressTrackerService.java@private jobGotAllMappers() : voidgiraph-core/src/main/java/org/apache/giraph/job/DefaultJobProgressTrackerService.java@protected killJobWithMessage(message String) : booleangiraph-core/src/main/java/org/apache/giraph/job/DefaultJobProgressTrackerService.java 107:127
+******************************
+******************************
+coarse grained commits 2bb2f13bd4fbb8355daea25b9cbaaf8082a7a389
+fine grained commits ('eee572ae5669e790d5f1bdf6c9a4fa6617247c56', '9780021f7e9a37429a89b7b25c237d96d6475ccb', 'a8c33e31052c3ffabe67b61348b23e23c268b47f')
+Generation
+Inline Variablegiraph-core/src/main/java/org/apache/giraph/partition/DiskBackedPartitionStore.java@msg : Stringgiraph-core/src/main/java/org/apache/giraph/ooc/DiskBackedPartitionStore.java@private deletePartitionFiles(id Integer) : voidgiraph-core/src/main/java/org/apache/giraph/partition/DiskBackedPartitionStore.java 438:439
+Generation
+Inline Variablegiraph-core/src/main/java/org/apache/giraph/partition/DiskBackedPartitionStore.java@msg : Stringgiraph-core/src/main/java/org/apache/giraph/ooc/DiskBackedPartitionStore.java@private deletePartitionFiles(id Integer) : voidgiraph-core/src/main/java/org/apache/giraph/partition/DiskBackedPartitionStore.java 446:447
+Generation
+Change Method Access Modifiergiraph-core/src/main/java/org/apache/giraph/partition/DiskBackedPartitionStore.java@public deletePartitionFiles(id Integer) : voidgiraph-core/src/main/java/org/apache/giraph/ooc/DiskBackedPartitionStore.java@private deletePartitionFiles(id Integer) : voidgiraph-core/src/main/java/org/apache/giraph/partition/DiskBackedPartitionStore.java 435:451
+Generation
+Change Variable Typegiraph-core/src/main/java/org/apache/giraph/partition/DiskBackedPartitionStore.java@id : intgiraph-core/src/main/java/org/apache/giraph/ooc/DiskBackedPartitionStore.java@partitionId : Integergiraph-core/src/main/java/org/apache/giraph/partition/DiskBackedPartitionStore.java 306:306
+Generation
+Localize Parametergiraph-core/src/main/java/org/apache/giraph/partition/DiskBackedPartitionStore.java@numVertices : longgiraph-core/src/main/java/org/apache/giraph/ooc/DiskBackedPartitionStore.java@numVertices : longgiraph-core/src/main/java/org/apache/giraph/partition/DiskBackedPartitionStore.java 306:306
+Generation
+Localize Parametergiraph-core/src/main/java/org/apache/giraph/partition/DiskBackedPartitionStore.java@id : intgiraph-core/src/main/java/org/apache/giraph/ooc/DiskBackedPartitionStore.java@partitionId : Integergiraph-core/src/main/java/org/apache/giraph/partition/DiskBackedPartitionStore.java 306:306
+Generation
+Add Parametergiraph-core/src/main/java/org/apache/giraph/partition/DiskBackedPartitionStore.java@private loadPartition(id int, numVertices long) : Partition<I,V,E>giraph-core/src/main/java/org/apache/giraph/ooc/DiskBackedPartitionStore.java@meta : MetaPartitiongiraph-core/src/main/java/org/apache/giraph/partition/DiskBackedPartitionStore.java 306:352
+Generation
+Rename Attributegiraph-core/src/main/java/org/apache/giraph/partition/DiskBackedPartitionStore.java@serviceWorker : CentralizedServiceWorker<I,V,E>giraph-core/src/main/java/org/apache/giraph/ooc/DiskBackedPartitionStore.java@oocEngine : OutOfCoreEnginegiraph-core/src/main/java/org/apache/giraph/partition/DiskBackedPartitionStore.java 62:62
+Generation
+Change Attribute Typegiraph-core/src/main/java/org/apache/giraph/partition/DiskBackedPartitionStore.java@serviceWorker : CentralizedServiceWorker<I,V,E>giraph-core/src/main/java/org/apache/giraph/ooc/DiskBackedPartitionStore.java@oocEngine : OutOfCoreEnginegiraph-core/src/main/java/org/apache/giraph/partition/DiskBackedPartitionStore.java 62:62
+Generation
+Add Attribute Modifiergiraph-core/src/main/java/org/apache/giraph/partition/DiskBackedPartitionStore.java@private serviceWorker : CentralizedServiceWorker<I,V,E>giraph-core/src/main/java/org/apache/giraph/ooc/DiskBackedPartitionStore.java@private oocEngine : OutOfCoreEnginegiraph-core/src/main/java/org/apache/giraph/partition/DiskBackedPartitionStore.java 62:62
+Generation
+Extract Classgiraph-core/src/main/java/org/apache/giraph/partition/DiskBackedPartitionStore.java@org.apache.giraph.partition.DiskBackedPartitionStoregiraph-core/src/main/java/org/apache/giraph/ooc/DiskBackedPartitionStore.java@org.apache.giraph.ooc.DiskBackedPartitionStoregiraph-core/src/main/java/org/apache/giraph/partition/DiskBackedPartitionStore.java 43:901
+Generation
+Change Attribute Access Modifiergiraph-core/src/main/java/org/apache/giraph/comm/ServerData.java@private edgeStore : EdgeStore<I,V,E>giraph-core/src/main/java/org/apache/giraph/partition/PartitionStore.java@protected edgeStore : EdgeStore<I,V,E>giraph-core/src/main/java/org/apache/giraph/comm/ServerData.java 43:43
+Generation
+Move Attributegiraph-core/src/main/java/org/apache/giraph/partition/DiskBackedPartitionStore.java@private conf : ImmutableClassesGiraphConfiguration<I,V,E>giraph-core/src/main/java/org/apache/giraph/ooc/AdaptiveOutOfCoreEngine.java@private conf : ImmutableClassesGiraphConfiguration<I,V,E>giraph-core/src/main/java/org/apache/giraph/partition/DiskBackedPartitionStore.java 56:56
+Generation
+Remove Attribute Modifiergiraph-core/src/main/java/org/apache/giraph/partition/DiskBackedPartitionStore.java@private conf : ImmutableClassesGiraphConfiguration<I,V,E>giraph-core/src/main/java/org/apache/giraph/ooc/AdaptiveOutOfCoreEngine.java@private conf : ImmutableClassesGiraphConfiguration<I,V,E>giraph-core/src/main/java/org/apache/giraph/partition/DiskBackedPartitionStore.java 56:56
+Generation
+Move Attributegiraph-core/src/main/java/org/apache/giraph/partition/DiskBackedPartitionStore.java@private serviceWorker : CentralizedServiceWorker<I,V,E>giraph-core/src/main/java/org/apache/giraph/ooc/AdaptiveOutOfCoreEngine.java@private serviceWorker : CentralizedServiceWorker<I,V,E>giraph-core/src/main/java/org/apache/giraph/partition/DiskBackedPartitionStore.java 62:62
+Generation
+Add Attribute Modifiergiraph-core/src/main/java/org/apache/giraph/partition/DiskBackedPartitionStore.java@private serviceWorker : CentralizedServiceWorker<I,V,E>giraph-core/src/main/java/org/apache/giraph/ooc/AdaptiveOutOfCoreEngine.java@private serviceWorker : CentralizedServiceWorker<I,V,E>giraph-core/src/main/java/org/apache/giraph/partition/DiskBackedPartitionStore.java 62:62
+Generation
+Extract And Move Methodgiraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java@private processGraphPartitions(context Mapper<?,?,?,?>.Context, partitionStatsList List<PartitionStats>, graphState GraphState, messageStore MessageStore<I,Writable>, numPartitions int, numThreads int) : voidgiraph-core/src/main/java/org/apache/giraph/partition/SimplePartitionStore.java@public startIteration() : voidgiraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java 505:549
+Generation
+Extract And Move Methodgiraph-core/src/main/java/org/apache/giraph/worker/BspServiceWorker.java@private saveVertices(numLocalVertices long) : voidgiraph-core/src/main/java/org/apache/giraph/partition/SimplePartitionStore.java@public startIteration() : voidgiraph-core/src/main/java/org/apache/giraph/worker/BspServiceWorker.java 891:1014
+******************************
+******************************
+coarse grained commits 21f3d035eec5d01a3c9a18859151af22de746859
+fine grained commits ('602ea08552dc38757bda1df0d51bd876c7990950', 'f69da07f09cd4030f9e8a24c6b21f16003201d03', '54d84ef1fbabce2920224660d2a9fca127f8199f')
+Generation
+Parameterize Variablegiraph-core/src/main/java/org/apache/giraph/comm/netty/NettyWorkerServer.java@partition : Partition<I,V,E>giraph-core/src/main/java/org/apache/giraph/comm/ServerData.java@partition : Partition<I,V,E>giraph-core/src/main/java/org/apache/giraph/comm/netty/NettyWorkerServer.java 101:102
+Generation
+Parameterize Variablegiraph-core/src/main/java/org/apache/giraph/comm/netty/NettyWorkerServer.java@partition : Partition<I,V,E>giraph-core/src/main/java/org/apache/giraph/comm/ServerData.java@partition : Partition<I,V,E>giraph-core/src/main/java/org/apache/giraph/comm/netty/NettyWorkerServer.java 118:119
+Generation
+Change Method Access Modifiergiraph-core/src/main/java/org/apache/giraph/comm/netty/NettyWorkerServer.java@private resolveMutations() : voidgiraph-core/src/main/java/org/apache/giraph/comm/ServerData.java@public resolvePartitionMutation(partition Partition<I,V,E>) : voidgiraph-core/src/main/java/org/apache/giraph/comm/netty/NettyWorkerServer.java 84:160
+Generation
+Move And Rename Methodgiraph-core/src/main/java/org/apache/giraph/comm/netty/NettyWorkerServer.java@private resolveMutations() : voidgiraph-core/src/main/java/org/apache/giraph/comm/ServerData.java@public resolvePartitionMutation(partition Partition<I,V,E>) : voidgiraph-core/src/main/java/org/apache/giraph/comm/netty/NettyWorkerServer.java 84:160
+******************************
+******************************
+coarse grained commits 02c9534fb6dac5ebada9da2b9f8684d66feda2c1
+fine grained commits ('c5cb5131be5521493eb55bf9826882cc58f3bbf5', '5b225dbcf7bf25a46d13864a8eda7e0dca77b4c5', '04d2276aa40738c29d9fb6323f2132bf142c4c86')
+Generation
+Rename Methodgiraph-core/src/main/java/org/apache/giraph/conf/GiraphClasses.java@public setMessageCombiner(combinerClass Class<? extends MessageCombiner<I,? extends Writable>>) : GiraphClassesgiraph-core/src/main/java/org/apache/giraph/conf/GiraphClasses.java@public setMappingInputFormatClass(mappingInputFormatClass Class<? extends MappingInputFormat<I,V,E,Writable>>) : GiraphClassesgiraph-core/src/main/java/org/apache/giraph/conf/GiraphClasses.java 396:400
+Generation
+Rename Parametergiraph-core/src/main/java/org/apache/giraph/conf/GiraphClasses.java@combinerClass : Class<? extends MessageCombiner<I,? extends Writable>>giraph-core/src/main/java/org/apache/giraph/conf/GiraphClasses.java@mappingInputFormatClass : Class<? extends MappingInputFormat<I,V,E,Writable>>giraph-core/src/main/java/org/apache/giraph/conf/GiraphClasses.java 397:397
+Generation
+Change Parameter Typegiraph-core/src/main/java/org/apache/giraph/conf/GiraphClasses.java@combinerClass : Class<? extends MessageCombiner<I,? extends Writable>>giraph-core/src/main/java/org/apache/giraph/conf/GiraphClasses.java@mappingInputFormatClass : Class<? extends MappingInputFormat<I,V,E,Writable>>giraph-core/src/main/java/org/apache/giraph/conf/GiraphClasses.java 397:397
+******************************
+******************************
+coarse grained commits 8e50d3c940d112440b96a420facea83bbe5b0622
+fine grained commits ('17fa001eaa4a955ae805aee2e0504fba2b761374', 'fe4f13c129cf261c1e9fd5e168db7b417531a35b', '46cd48a66abb86e9af878eb03cb0c0ea9edd5082')
+Generation
+Extract Classgiraph-core/src/main/java/org/apache/giraph/worker/WorkerProgress.java@org.apache.giraph.worker.WorkerProgressgiraph-core/src/main/java/org/apache/giraph/worker/WorkerProgress.java@org.apache.giraph.worker.WorkerProgressgiraph-core/src/main/java/org/apache/giraph/worker/WorkerProgress.java 19:289
+Generation
+Move Methodgiraph-core/src/main/java/org/apache/giraph/worker/WorkerProgress.java@public write(dataOutput DataOutput) : voidgiraph-core/src/main/java/org/apache/giraph/edge/IdAndNullArrayEdges.java@public write(out DataOutput) : voidgiraph-core/src/main/java/org/apache/giraph/worker/WorkerProgress.java 232:259
+Generation
+Rename Parametergiraph-core/src/main/java/org/apache/giraph/worker/WorkerProgress.java@dataOutput : DataOutputgiraph-core/src/main/java/org/apache/giraph/edge/IdAndNullArrayEdges.java@out : DataOutputgiraph-core/src/main/java/org/apache/giraph/worker/WorkerProgress.java 233:233
+Generation
+Remove Method Modifiergiraph-core/src/main/java/org/apache/giraph/worker/WorkerProgress.java@public write(dataOutput DataOutput) : voidgiraph-core/src/main/java/org/apache/giraph/edge/IdAndNullArrayEdges.java@public write(out DataOutput) : voidgiraph-core/src/main/java/org/apache/giraph/worker/WorkerProgress.java 232:259
+Generation
+Move Methodgiraph-core/src/main/java/org/apache/giraph/worker/WorkerProgress.java@public readFields(dataInput DataInput) : voidgiraph-core/src/main/java/org/apache/giraph/edge/IdAndNullArrayEdges.java@public readFields(in DataInput) : voidgiraph-core/src/main/java/org/apache/giraph/worker/WorkerProgress.java 261:288
+Generation
+Rename Parametergiraph-core/src/main/java/org/apache/giraph/worker/WorkerProgress.java@dataInput : DataInputgiraph-core/src/main/java/org/apache/giraph/edge/IdAndNullArrayEdges.java@in : DataInputgiraph-core/src/main/java/org/apache/giraph/worker/WorkerProgress.java 262:262
+Generation
+Remove Method Modifiergiraph-core/src/main/java/org/apache/giraph/worker/WorkerProgress.java@public readFields(dataInput DataInput) : voidgiraph-core/src/main/java/org/apache/giraph/edge/IdAndNullArrayEdges.java@public readFields(in DataInput) : voidgiraph-core/src/main/java/org/apache/giraph/worker/WorkerProgress.java 261:288
+******************************
+******************************
+coarse grained commits 316d06a2b63257239eefacd2d787e92ef0c30d07
+fine grained commits ('0c0141dad220e19d019d012a6d9b24d24270ddd4', '71f005774d375733118719d8d34f49964393453c', '183c6b8c27433205b4e87af3dd105e4ab3988fc7')
+Generation
+Move Attributegiraph/src/main/java/org/apache/giraph/graph/BspServiceWorker.java@private totalVerticesLoaded : longgiraph/src/main/java/org/apache/giraph/graph/InputSplitsCallable.java@private totalVerticesLoaded : longgiraph/src/main/java/org/apache/giraph/graph/BspServiceWorker.java 73:73
+Generation
+Move Attributegiraph/src/main/java/org/apache/giraph/graph/BspServiceWorker.java@private totalEdgesLoaded : longgiraph/src/main/java/org/apache/giraph/graph/InputSplitsCallable.java@private totalEdgesLoaded : longgiraph/src/main/java/org/apache/giraph/graph/BspServiceWorker.java 74:74
+Generation
+Move Attributegiraph/src/main/java/org/apache/giraph/graph/BspServiceWorker.java@private inputSplitMaxVertices : longgiraph/src/main/java/org/apache/giraph/graph/InputSplitsCallable.java@private inputSplitMaxVertices : longgiraph/src/main/java/org/apache/giraph/graph/BspServiceWorker.java 75:75
+Generation
+Remove Thrown Exception Typegiraph/src/main/java/org/apache/giraph/comm/netty/NettyWorkerClientServer.java@IOExceptiongiraph/src/main/java/org/apache/giraph/comm/netty/NettyMasterClientServer.java@public openConnections() : voidgiraph/src/main/java/org/apache/giraph/comm/netty/NettyWorkerClientServer.java 95:95
+Generation
+Move And Rename Methodgiraph/src/main/java/org/apache/giraph/comm/netty/NettyWorkerClientServer.java@public closeConnections() : voidgiraph/src/main/java/org/apache/giraph/comm/netty/NettyMasterClientServer.java@public openConnections() : voidgiraph/src/main/java/org/apache/giraph/comm/netty/NettyWorkerClientServer.java 94:97
+Generation
+Remove Parametergiraph/src/main/java/org/apache/giraph/comm/netty/NettyWorkerClient.java@remoteServerAddress : InetSocketAddressgiraph/src/main/java/org/apache/giraph/comm/netty/NettyWorkerClientRequestProcessor.java@private doRequest(workerInfo WorkerInfo, writableRequest WritableRequest) : voidgiraph/src/main/java/org/apache/giraph/comm/netty/NettyWorkerClient.java 152:152
+******************************
+******************************
+coarse grained commits cc00b51149f726670f0df0e21340ea126befe4e8
+fine grained commits ('0e4b52b7e6ded455cc1f0e525a8da1790c55ef52', '49076a6771de515070a4873dd706ed75cc67f87a', '1ea058acf7908c5e23d741bf6ada8238037c40de')
+Generation
+Move Classsrc/main/java/org/apache/giraph/comm/NettyClient.java@org.apache.giraph.comm.NettyClient.ChannelFutureAddresssrc/main/java/org/apache/giraph/comm/netty/NettyClient.java@org.apache.giraph.comm.netty.NettyClient.ChannelFutureAddresssrc/main/java/org/apache/giraph/comm/NettyClient.java 151:159
+Generation
+Move And Rename Classsrc/main/java/org/apache/giraph/comm/NettyClient.java@org.apache.giraph.comm.NettyClientsrc/main/java/org/apache/giraph/comm/netty/NettyClient.java@org.apache.giraph.comm.netty.NettyClientsrc/main/java/org/apache/giraph/comm/NettyClient.java 35:436
+Generation
+Rename Attributesrc/main/java/org/apache/giraph/comm/NettyServer.java@serverData : ServerData<I,V,E,M>src/main/java/org/apache/giraph/comm/netty/NettyServer.java@requestServerHandlerFactory : RequestServerHandler.Factorysrc/main/java/org/apache/giraph/comm/NettyServer.java 46:46
+Generation
+Change Attribute Typesrc/main/java/org/apache/giraph/comm/NettyServer.java@serverData : ServerData<I,V,E,M>src/main/java/org/apache/giraph/comm/netty/NettyServer.java@requestServerHandlerFactory : RequestServerHandler.Factorysrc/main/java/org/apache/giraph/comm/NettyServer.java 46:46
+Generation
+Move And Rename Classsrc/main/java/org/apache/giraph/comm/NettyServer.java@org.apache.giraph.comm.NettyServersrc/main/java/org/apache/giraph/comm/netty/NettyServer.java@org.apache.giraph.comm.netty.NettyServersrc/main/java/org/apache/giraph/comm/NettyServer.java 31:188
+Generation
+Move And Rename Classsrc/main/java/org/apache/giraph/comm/WritableRequest.java@org.apache.giraph.comm.WritableRequestsrc/main/java/org/apache/giraph/comm/requests/WritableRequest.java@org.apache.giraph.comm.requests.WritableRequestsrc/main/java/org/apache/giraph/comm/WritableRequest.java 13:68
+Generation
+Move Methodsrc/main/java/org/apache/giraph/comm/RequestDecoder.java@public RequestDecoder(conf Configuration, requestRegistry RequestRegistry, byteCounter ByteCounter)src/main/java/org/apache/giraph/comm/netty/handler/RequestDecoder.java@public RequestDecoder(conf Configuration, byteCounter ByteCounter)src/main/java/org/apache/giraph/comm/RequestDecoder.java 25:31
+Generation
+Move Methodsrc/main/java/org/apache/giraph/comm/RequestDecoder.java@protected decode(ctx ChannelHandlerContext, channel Channel, msg Object) : Objectsrc/main/java/org/apache/giraph/comm/netty/handler/RequestDecoder.java@protected decode(ctx ChannelHandlerContext, channel Channel, msg Object) : Objectsrc/main/java/org/apache/giraph/comm/RequestDecoder.java 33:62
+Generation
+Move Methodsrc/main/java/org/apache/giraph/comm/RequestEncoder.java@protected encode(ctx ChannelHandlerContext, channel Channel, msg Object) : Objectsrc/main/java/org/apache/giraph/comm/netty/handler/RequestEncoder.java@protected encode(ctx ChannelHandlerContext, channel Channel, msg Object) : Objectsrc/main/java/org/apache/giraph/comm/RequestEncoder.java 21:47
+Generation
+Move Methodsrc/main/java/org/apache/giraph/comm/RequestInfo.java@public RequestInfo(destinationAddress InetSocketAddress, request WritableRequest<I,V,E,M>)src/main/java/org/apache/giraph/comm/netty/handler/RequestInfo.java@public RequestInfo(destinationAddress InetSocketAddress, request WritableRequest)src/main/java/org/apache/giraph/comm/RequestInfo.java 17:22
+Generation
+Move Methodsrc/main/java/org/apache/giraph/comm/RequestInfo.java@public getDestinationAddress() : InetSocketAddresssrc/main/java/org/apache/giraph/comm/netty/handler/RequestInfo.java@public getDestinationAddress() : InetSocketAddresssrc/main/java/org/apache/giraph/comm/RequestInfo.java 24:26
+Generation
+Move Methodsrc/main/java/org/apache/giraph/comm/RequestInfo.java@public getStartedMsecs() : longsrc/main/java/org/apache/giraph/comm/netty/handler/RequestInfo.java@public getStartedMsecs() : longsrc/main/java/org/apache/giraph/comm/RequestInfo.java 28:30
+Generation
+Move Methodsrc/main/java/org/apache/giraph/comm/RequestInfo.java@public getElapsedMsecs() : longsrc/main/java/org/apache/giraph/comm/netty/handler/RequestInfo.java@public getElapsedMsecs() : longsrc/main/java/org/apache/giraph/comm/RequestInfo.java 32:34
+Generation
+Move Methodsrc/main/java/org/apache/giraph/comm/RequestInfo.java@public setWriteFuture(writeFuture ChannelFuture) : voidsrc/main/java/org/apache/giraph/comm/netty/handler/RequestInfo.java@public setWriteFuture(writeFuture ChannelFuture) : voidsrc/main/java/org/apache/giraph/comm/RequestInfo.java 40:42
+Generation
+Move Methodsrc/main/java/org/apache/giraph/comm/RequestInfo.java@public getWriteFuture() : ChannelFuturesrc/main/java/org/apache/giraph/comm/netty/handler/RequestInfo.java@public getWriteFuture() : ChannelFuturesrc/main/java/org/apache/giraph/comm/RequestInfo.java 44:46
+Generation
+Move Methodsrc/main/java/org/apache/giraph/comm/RequestInfo.java@public toString() : Stringsrc/main/java/org/apache/giraph/comm/netty/handler/RequestInfo.java@public toString() : Stringsrc/main/java/org/apache/giraph/comm/RequestInfo.java 48:56
+Generation
+Move Methodsrc/main/java/org/apache/giraph/comm/RequestServerHandler.java@public RequestServerHandler(serverData ServerData<I,V,E,M>, workerRequestReservedMap WorkerRequestReservedMap, conf Configuration)src/main/java/org/apache/giraph/comm/netty/handler/RequestServerHandler.java@public RequestServerHandler(workerRequestReservedMap WorkerRequestReservedMap, conf Configuration)src/main/java/org/apache/giraph/comm/RequestServerHandler.java 30:40
+Generation
+Move Methodsrc/main/java/org/apache/giraph/comm/RequestServerHandler.java@public messageReceived(ctx ChannelHandlerContext, e MessageEvent) : voidsrc/main/java/org/apache/giraph/comm/netty/handler/RequestServerHandler.java@public messageReceived(ctx ChannelHandlerContext, e MessageEvent) : voidsrc/main/java/org/apache/giraph/comm/RequestServerHandler.java 42:81
+Generation
+Move Methodsrc/main/java/org/apache/giraph/comm/RequestServerHandler.java@public channelConnected(ctx ChannelHandlerContext, e ChannelStateEvent) : voidsrc/main/java/org/apache/giraph/comm/netty/handler/RequestServerHandler.java@public channelConnected(ctx ChannelHandlerContext, e ChannelStateEvent) : voidsrc/main/java/org/apache/giraph/comm/RequestServerHandler.java 83:90
+Generation
+Move Methodsrc/main/java/org/apache/giraph/comm/RequestServerHandler.java@public channelClosed(ctx ChannelHandlerContext, e ChannelStateEvent) : voidsrc/main/java/org/apache/giraph/comm/netty/handler/RequestServerHandler.java@public channelClosed(ctx ChannelHandlerContext, e ChannelStateEvent) : voidsrc/main/java/org/apache/giraph/comm/RequestServerHandler.java 92:100
+Generation
+Move Methodsrc/main/java/org/apache/giraph/comm/RequestServerHandler.java@public exceptionCaught(ctx ChannelHandlerContext, e ExceptionEvent) : voidsrc/main/java/org/apache/giraph/comm/netty/handler/RequestServerHandler.java@public exceptionCaught(ctx ChannelHandlerContext, e ExceptionEvent) : voidsrc/main/java/org/apache/giraph/comm/RequestServerHandler.java 102:106
+******************************
+******************************
+coarse grained commits c2598a0311c7adb7a242a3fd8fb99ab06fb6b300
+fine grained commits ('8c0fc9d9e23df6d4b3632464e4945dc46217d999', '281aeb83bd4ee25e0495b615a0c6c3f5f7b3bb89', '102f8de17b503618434941ad7d4d23eab5de4fce')
+Generation
+Move And Rename Classsrc/main/java/org/apache/giraph/benchmark/PageRankBenchmark.java@org.apache.giraph.benchmark.PageRankBenchmark.PageRankHashMapVertexsrc/main/java/org/apache/giraph/benchmark/HashMapVertexPageRankBenchmark.java@org.apache.giraph.benchmark.HashMapVertexPageRankBenchmarksrc/main/java/org/apache/giraph/benchmark/PageRankBenchmark.java 51:57
+Generation
+Remove Class Modifiersrc/main/java/org/apache/giraph/benchmark/PageRankBenchmark.java@org.apache.giraph.benchmark.PageRankBenchmark.PageRankHashMapVertexsrc/main/java/org/apache/giraph/benchmark/HashMapVertexPageRankBenchmark.java@org.apache.giraph.benchmark.HashMapVertexPageRankBenchmarksrc/main/java/org/apache/giraph/benchmark/PageRankBenchmark.java 51:57
+Generation
+Move Attributesrc/main/java/org/apache/giraph/benchmark/PageRankBenchmark.java@public SUPERSTEP_COUNT : Stringsrc/main/java/org/apache/giraph/benchmark/PageRankComputation.java@public SUPERSTEP_COUNT : Stringsrc/main/java/org/apache/giraph/benchmark/PageRankBenchmark.java 24:24
+******************************
+******************************
+coarse grained commits 6229e72d3f34f204534609635a58515ad79e5d72
+fine grained commits ('a288153e6136667103a4e43ad00e136b827cb6b5', '9a8c6c58ec3cf2d325245ce5edae2d7538be3e3c', '7fb0e1205da28ae4e9d5bd126cbb247d3ea1359d')
+Generation
+Move Methodsrc/test/java/com/yahoo/hadoop_bsp/HadoopBspTest.java@public compute() : voidsrc/test/java/com/yahoo/hadoop_bsp/HadoopBspTest.java@public compute() : voidsrc/test/java/com/yahoo/hadoop_bsp/HadoopBspTest.java 11:15
+******************************
+******************************
+coarse grained commits 2d4eae48541d3db70507ef6beac033eb00ee51fc
+fine grained commits ('3306344fc95b49dd310ebe56737a914171a52bf2', 'ff10b8bbf37007df6fc06397196353732ccacc7a', '1ea1c8559337fbc5f30b45d32ce7873878db225e')
+Generation
+Rename Classsrc/test/java/com/yahoo/hadoop_bsp/AppTest.java@com.yahoo.hadoop_bsp.AppTestsrc/test/java/com/yahoo/hadoop_bsp/HadoopBspTest.java@com.yahoo.hadoop_bsp.HadoopBspTestsrc/test/java/com/yahoo/hadoop_bsp/AppTest.java 7:24
+******************************
+******************************
+coarse grained commits 5b4b0134928439e24801511523d7837cd406c124
+fine grained commits ('c2802ff0f94f45ae01aa2f37d6cdbed7d3eb569e', '91ac93815e3b848215a4f00a8fe7700a6e8a5a32', '79091ea98d1598c1d016867f9431d52cd810fa8d', '623b96b364a9e06986880a7f8f839cf12e848be8')
+Generation
+Extract Classgiraph-core/src/main/java/org/apache/giraph/utils/ByteArrayOneToAllMessages.java@org.apache.giraph.utils.ByteArrayOneToAllMessagesgiraph-core/src/main/java/org/apache/giraph/utils/ByteArrayOneMessageToManyIds.java@org.apache.giraph.utils.ByteArrayOneMessageToManyIdsgiraph-core/src/main/java/org/apache/giraph/utils/ByteArrayOneToAllMessages.java 14:90
+Generation
+Move Methodgiraph-core/src/main/java/org/apache/giraph/utils/ByteArrayOneToAllMessages.java@public readFields(dataInput DataInput) : voidgiraph-examples/src/test/java/org/apache/giraph/TestCheckpointing.java@public readFields(dataInput DataInput) : voidgiraph-core/src/main/java/org/apache/giraph/utils/ByteArrayOneToAllMessages.java 74:80
+Generation
+Move Methodgiraph-core/src/main/java/org/apache/giraph/utils/ByteArrayOneToAllMessages.java@public write(dataOutput DataOutput) : voidgiraph-examples/src/test/java/org/apache/giraph/TestCheckpointing.java@public write(dataOutput DataOutput) : voidgiraph-core/src/main/java/org/apache/giraph/utils/ByteArrayOneToAllMessages.java 67:72
+******************************
+******************************
+coarse grained commits e2706b3f65ea831e3e4825c732c26c6e384b4f12
+fine grained commits ('774c5731f03110ddfe883c9ed416fc1380060550', '6fc215c21d5b261d776ecd03b0e7d4442153280a', '5b5393ec69fb642b3977dd8e0c46d4bfaaddd623', 'c42c5ae557e593e2de9da09597d6425c211c41dd')
+Generation
+Rename Classgiraph/src/main/java/org/apache/giraph/graph/EdgeListVertex.java@org.apache.giraph.graph.EdgeListVertexgiraph-core/src/main/java/org/apache/giraph/graph/EdgeListVertexBase.java@org.apache.giraph.graph.EdgeListVertexBasegiraph/src/main/java/org/apache/giraph/graph/EdgeListVertex.java 17:103
+Generation
+Rename Classgiraph/src/main/java/org/apache/giraph/graph/RepresentativeVertex.java@org.apache.giraph.graph.RepresentativeVertexgiraph-core/src/main/java/org/apache/giraph/graph/RepresentativeVertexBase.java@org.apache.giraph.graph.RepresentativeVertexBasegiraph/src/main/java/org/apache/giraph/graph/RepresentativeVertex.java 14:203
+Generation
+Change Parameter Typegiraph/src/main/java/org/apache/giraph/graph/LongDoubleFloatDoubleEdgeListVertex.java@edges : Map<LongWritable,FloatWritable>giraph-core/src/main/java/org/apache/giraph/graph/LongDoubleFloatDoubleEdgeListVertex.java@edges : Iterable<Edge<LongWritable,FloatWritable>>giraph/src/main/java/org/apache/giraph/graph/LongDoubleFloatDoubleEdgeListVertex.java 24:24
+Generation
+Change Parameter Typegiraph/src/main/java/org/apache/giraph/graph/LongDoubleNullDoubleVertex.java@edges : Map<LongWritable,NullWritable>giraph-core/src/main/java/org/apache/giraph/graph/LongDoubleNullDoubleVertex.java@edges : Iterable<Edge<LongWritable,NullWritable>>giraph/src/main/java/org/apache/giraph/graph/LongDoubleNullDoubleVertex.java 22:22
+Generation
+Change Parameter Typegiraph/src/main/java/org/apache/giraph/graph/EdgeListVertex.java@edges : Map<I,E>giraph-core/src/main/java/org/apache/giraph/graph/EdgeListVertexBase.java@edges : Iterable<Edge<I,E>>giraph/src/main/java/org/apache/giraph/graph/EdgeListVertex.java 25:25
+Generation
+Extract Superclassgiraph/src/main/java/org/apache/giraph/examples/SimpleCheckpointVertex.java@org.apache.giraph.examples.SimpleCheckpointVertex.SimpleCheckpointComputationgiraph-core/src/main/java/org/apache/giraph/examples/SimpleCheckpointVertex.java@org.apache.giraph.examples.SimpleCheckpointVertex.SimpleCheckpointComputationgiraph/src/main/java/org/apache/giraph/examples/SimpleCheckpointVertex.java 38:94
+Generation
+Extract Superclassgiraph/src/test/java/org/apache/giraph/graph/TestMutableVertex.java@org.apache.giraph.graph.TestMutableVertex.IFDLRepresentativeVertexgiraph-core/src/test/java/org/apache/giraph/graph/TestMutableVertex.java@org.apache.giraph.graph.TestMutableVertex.IFDLRepresentativeVertexgiraph/src/test/java/org/apache/giraph/graph/TestMutableVertex.java 52:57
+Generation
+Pull Up Methodgiraph/src/main/java/org/apache/giraph/graph/RepresentativeVertex.java@public removeEdge(targetVertexId I) : Egiraph-core/src/main/java/org/apache/giraph/graph/RepresentativeVertexBase.java@protected removeFirstEdge(targetVertexId I) : booleangiraph/src/main/java/org/apache/giraph/graph/RepresentativeVertex.java 131:150
+Generation
+Move And Rename Methodgiraph/src/main/java/org/apache/giraph/graph/EdgeListVertex.java@public removeEdge(targetVertexId I) : Egiraph-core/src/main/java/org/apache/giraph/graph/MultiGraphEdgeListVertex.java@public removeEdges(targetVertexId I) : intgiraph/src/main/java/org/apache/giraph/graph/EdgeListVertex.java 55:66
+Generation
+Extract And Move Methodgiraph/src/main/java/org/apache/giraph/graph/LongDoubleFloatDoubleEdgeListVertex.java@public initialize(vertexId LongWritable, vertexValue DoubleWritable, edges Map<LongWritable,FloatWritable>) : voidgiraph-core/src/main/java/org/apache/giraph/graph/LongDoubleNullDoubleVertex.java@public setEdges(edges Iterable<Edge<LongWritable,NullWritable>>) : voidgiraph/src/main/java/org/apache/giraph/graph/LongDoubleFloatDoubleEdgeListVertex.java 22:41
+Generation
+Extract Methodgiraph/src/main/java/org/apache/giraph/graph/LongDoubleNullDoubleVertex.java@public initialize(vertexId LongWritable, vertexValue DoubleWritable, edges Map<LongWritable,NullWritable>) : voidgiraph-core/src/main/java/org/apache/giraph/graph/LongDoubleNullDoubleVertex.java@public setEdges(edges Iterable<Edge<LongWritable,NullWritable>>) : voidgiraph/src/main/java/org/apache/giraph/graph/LongDoubleNullDoubleVertex.java 20:32
+******************************
+******************************
+coarse grained commits d61c84c0540b011ce777238f5b3284c63d1df60a
+fine grained commits ('a92ddb8428ba21d613477c89724263a2bdc10d84', 'e4c8f09517f3a8af79208dac4388f305b0a00dd4', 'fdfda15c803f33834ac0fa720b0f0e51b83c06be', '328e8785c1d7ac481812d705cf75c3707b1e1f81')
+Generation
+Rename Methodsrc/main/java/org/apache/giraph/graph/Vertex.java@package setMessages(messages Iterable<M>) : voidsrc/main/java/org/apache/giraph/graph/HashMapVertex.java@package putMessages(messages Iterable<M>) : voidsrc/main/java/org/apache/giraph/graph/Vertex.java 203:209
+******************************
+******************************
+coarse grained commits f9403d80684b69af3d41f2e9a969e61feb238f73
+fine grained commits ('338d594147304a5888aa7604becf8c7f0772d806', '677f0e0ec89d5cca01199530a6d62a432b58fc7e', 'bc705c0f59968ee31fc3478c38f1ca550ff576ed', '87a993240724b42eb03f8f07830af53c3dbe3943')
+Generation
+Change Variable Typesrc/main/java/com/yahoo/hadoop_bsp/BspServiceWorker.java@vertexClass : Class<? extends HadoopVertex>src/main/java/com/yahoo/hadoop_bsp/BspServiceWorker.java@minPerVertexRange : longsrc/main/java/com/yahoo/hadoop_bsp/BspServiceWorker.java 211:214
+Generation
+Remove Variable Annotationsrc/main/java/com/yahoo/hadoop_bsp/BspServiceWorker.java@@SuppressWarnings("rawtypes")src/main/java/com/yahoo/hadoop_bsp/BspServiceWorker.java@minPerVertexRange : longsrc/main/java/com/yahoo/hadoop_bsp/BspServiceWorker.java 210:210
+Generation
+Rename Variablesrc/main/java/com/yahoo/hadoop_bsp/BspServiceWorker.java@vertexClass : Class<? extends HadoopVertex>src/main/java/com/yahoo/hadoop_bsp/BspServiceWorker.java@minPerVertexRange : longsrc/main/java/com/yahoo/hadoop_bsp/BspServiceWorker.java 211:214
+******************************
+******************************
+coarse grained commits 6b963ee1356e80d1456fb37241f568065257aa8c
+fine grained commits ('eee572ae5669e790d5f1bdf6c9a4fa6617247c56', '9780021f7e9a37429a89b7b25c237d96d6475ccb', 'a8c33e31052c3ffabe67b61348b23e23c268b47f', '602ea08552dc38757bda1df0d51bd876c7990950')
+Generation
+Move Attributegiraph-core/src/main/java/org/apache/giraph/partition/SimplePartitionStore.java@private context : Mapper<?,?,?,?>.Contextgiraph-core/src/main/java/org/apache/giraph/comm/ServerData.java@private context : Mapper<?,?,?,?>.Contextgiraph-core/src/main/java/org/apache/giraph/partition/SimplePartitionStore.java 18:18
+******************************
+******************************
+coarse grained commits f290602ca9184f686d3d6f644fe480285163558b
+fine grained commits ('7d69b408f044af4b059273e061402d75095bd987', '1b0b3d4a50e684f532d1ab293b61dd74add8fb93', '3aa654a112b2dd397b956a7070f9a210dc5e7f85', '0b171608bf8062bac950598c98b3bce4b70b9511')
+Generation
+Remove Method Annotationgiraph-core/src/main/java/org/apache/giraph/io/EdgeInputFormat.java@@Overridegiraph-core/src/main/java/org/apache/giraph/io/GiraphInputFormat.java@public abstract getSplits(context JobContext, minSplitCountHint int) : List<InputSplit>giraph-core/src/main/java/org/apache/giraph/io/EdgeInputFormat.java 19:19
+Generation
+Move Methodgiraph-core/src/main/java/org/apache/giraph/io/EdgeInputFormat.java@public abstract getSplits(context JobContext, minSplitCountHint int) : List<InputSplit>giraph-core/src/main/java/org/apache/giraph/io/GiraphInputFormat.java@public abstract getSplits(context JobContext, minSplitCountHint int) : List<InputSplit>giraph-core/src/main/java/org/apache/giraph/io/EdgeInputFormat.java 19:22
+Generation
+Remove Method Annotationgiraph-core/src/main/java/org/apache/giraph/io/VertexInputFormat.java@@Overridegiraph-core/src/main/java/org/apache/giraph/io/GiraphInputFormat.java@public abstract getSplits(context JobContext, minSplitCountHint int) : List<InputSplit>giraph-core/src/main/java/org/apache/giraph/io/VertexInputFormat.java 18:18
+Generation
+Move Methodgiraph-core/src/main/java/org/apache/giraph/io/VertexInputFormat.java@public abstract getSplits(context JobContext, minSplitCountHint int) : List<InputSplit>giraph-core/src/main/java/org/apache/giraph/io/GiraphInputFormat.java@public abstract getSplits(context JobContext, minSplitCountHint int) : List<InputSplit>giraph-core/src/main/java/org/apache/giraph/io/VertexInputFormat.java 18:21
+******************************
+******************************
+coarse grained commits 6b4a1ed30729d029520ece2c6a314edba896a3bc
+fine grained commits ('655f5e7dbbec14b9dbc2d738dc240ad0303abf04', '100b96a5daad5fe399fdd80879fc74468a9984cd', '7a1ec90082cf3db0acd1212dc351bc27b5f5d60e', 'c6d2dfcf6da491d4ed799a58bebc275d221b59a2')
+Generation
+Rename Attributegiraph/src/main/java/org/apache/giraph/graph/BspServiceMaster.java@maxPollAttempts : intgiraph/src/main/java/org/apache/giraph/graph/BspServiceMaster.java@maxSuperstepWaitMsecs : intgiraph/src/main/java/org/apache/giraph/graph/BspServiceMaster.java 95:95
+******************************
+******************************
+coarse grained commits 9c375e14968f3c79ad1bb38565d845433540c5e3
+fine grained commits ('5c6b03cc69161b1a3f80d17c340e7c00e4b1ec43', '5654ac91f5e21981295c6e5dac20600462222e1b', '82b910c980e6733a7ef87be47b0377eb65dc0814', '3b2168aa3a5c481542b7ca3236fa3436f6aae202')
+Generation
+Rename Attributegiraph/src/main/java/org/apache/giraph/graph/InputSplitsCallable.java@inputSplitMaxVertices : longgiraph/src/main/java/org/apache/giraph/graph/InputSplitsCallable.java@inputSplitEvents : InputSplitEventsgiraph/src/main/java/org/apache/giraph/graph/InputSplitsCallable.java 46:46
+Generation
+Change Attribute Typegiraph/src/main/java/org/apache/giraph/graph/InputSplitsCallable.java@inputSplitMaxVertices : longgiraph/src/main/java/org/apache/giraph/graph/InputSplitsCallable.java@inputSplitEvents : InputSplitEventsgiraph/src/main/java/org/apache/giraph/graph/InputSplitsCallable.java 46:46
+******************************
+******************************
+coarse grained commits 0d612f73a78ed75a2ec5b580b648220add046c19
+fine grained commits ('2fbcd9877165c060c569137367830fc8f73cbeb7', '1020dfe81118119fb616af0d23ab643598379dc6', '1a249073ef51dcf89750a21e1eb6bf1b77782d2d', '21bee43f2e8de18b52ba35480d7218fe69647696')
+Generation
+Pull Up Methodsrc/test/java/org/apache/giraph/TestAutoCheckpoint.java@public TestAutoCheckpoint(testName String)giraph-formats-contrib/src/test/java/org/apache/giraph/BspCase.java@public BspCase(testName String)src/test/java/org/apache/giraph/TestAutoCheckpoint.java 19:21
+Generation
+Pull Up Methodsrc/test/java/org/apache/giraph/TestBspBasic.java@public TestBspBasic(testName String)giraph-formats-contrib/src/test/java/org/apache/giraph/BspCase.java@public BspCase(testName String)src/test/java/org/apache/giraph/TestBspBasic.java 48:50
+Generation
+Pull Up Methodsrc/test/java/org/apache/giraph/TestGraphPartitioner.java@public TestGraphPartitioner(testName String)giraph-formats-contrib/src/test/java/org/apache/giraph/BspCase.java@public BspCase(testName String)src/test/java/org/apache/giraph/TestGraphPartitioner.java 22:24
+Generation
+Pull Up Methodsrc/test/java/org/apache/giraph/TestManualCheckpoint.java@public TestManualCheckpoint(testName String)giraph-formats-contrib/src/test/java/org/apache/giraph/BspCase.java@public BspCase(testName String)src/test/java/org/apache/giraph/TestManualCheckpoint.java 19:21
+Generation
+Pull Up Methodsrc/test/java/org/apache/giraph/TestMutateGraphVertex.java@public TestMutateGraphVertex(testName String)giraph-formats-contrib/src/test/java/org/apache/giraph/BspCase.java@public BspCase(testName String)src/test/java/org/apache/giraph/TestMutateGraphVertex.java 16:18
+Generation
+Pull Up Methodsrc/test/java/org/apache/giraph/TestNotEnoughMapTasks.java@public TestNotEnoughMapTasks(testName String)giraph-formats-contrib/src/test/java/org/apache/giraph/BspCase.java@public BspCase(testName String)src/test/java/org/apache/giraph/TestNotEnoughMapTasks.java 16:18
+Generation
+Move And Inline Methodsrc/test/java/org/apache/giraph/BspCase.java@public remove(conf Configuration, path Path) : voidsrc/test/java/org/apache/giraph/TestBspBasic.java@public testBspPageRankWithAggregatorWriter() : voidsrc/test/java/org/apache/giraph/BspCase.java 166:170
+******************************
+******************************
+coarse grained commits 50c8d5c02d9dd3674b18dfaeead80c64613f332f
+fine grained commits ('de702985bdadf819289778602e0d3471efe40afc', 'dbd8ddf22ca3cffd805fbfe2eb90356ea7522355', '8a59c36ff2cbfcbbef2582bc494c9f9864e3515e', 'd997e4bd73ce52808c8bd0d3e701158b2bac517f')
+Generation
+Move Methodsrc/main/java/org/apache/giraph/VertexWriter.java@public close(context TaskAttemptContext) : voidsrc/main/java/org/apache/giraph/graph/VertexWriter.java@public close(context TaskAttemptContext) : voidsrc/main/java/org/apache/giraph/VertexWriter.java 22:23
+******************************
+******************************
+coarse grained commits 9f86a0499e73e0a9f51d35aa52533b6ea48a29ff
+fine grained commits ('1ea1c8559337fbc5f30b45d32ce7873878db225e', 'e040f9d4e12edec393ea193c537393ad8f0f530c', '1f0e9f1f2efd5531a75943ccd071c8f66d918d49', 'ec223a8b9ce208b64015d9db1ac2d53befed75ea')
+Generation
+Remove Parametersrc/main/java/org/apache/giraph/examples/SimpleSuperstepVertex.java@msgIterator : Iterator<IntWritable>src/test/java/com/yahoo/hadoop_bsp/TestBSP.java@public compute() : voidsrc/main/java/org/apache/giraph/examples/SimpleSuperstepVertex.java 28:28
+Generation
+Remove Method Annotationsrc/main/java/org/apache/giraph/examples/SimpleSuperstepVertex.java@@Overridesrc/test/java/com/yahoo/hadoop_bsp/TestBSP.java@public compute() : voidsrc/main/java/org/apache/giraph/examples/SimpleSuperstepVertex.java 27:27
+Generation
+Move Methodsrc/main/java/org/apache/giraph/examples/SimpleSuperstepVertex.java@public compute(msgIterator Iterator<IntWritable>) : voidsrc/test/java/com/yahoo/hadoop_bsp/TestBSP.java@public compute() : voidsrc/main/java/org/apache/giraph/examples/SimpleSuperstepVertex.java 27:32
+******************************
+******************************
+coarse grained commits 6d6019b5fe48f644e81496e6d06373791be29088
+fine grained commits ('1b482f09ccb32dcf4614659dfa5a6ddba6b49030', '891c8d291b3ae3d9dfd1ced513e9a857de2c398a', '2be3c56ece6eb88ac8d7e60304033867639cd5e2', '85c35635445497e2d238ce01192feece07e38229')
+Generation
+Move And Rename Classgiraph/src/main/java/org/apache/giraph/comm/MasterClientServer.java@org.apache.giraph.comm.MasterClientServergiraph/src/test/java/org/apache/giraph/TestGiraphConfiguration.java@org.apache.giraph.TestGiraphConfiguration.Ifgiraph/src/main/java/org/apache/giraph/comm/MasterClientServer.java 4:5
+******************************
+******************************
+coarse grained commits dcff1098fb9dbf92eb02ac9c98c06b4e6aeb7d7c
+fine grained commits ('1ea058acf7908c5e23d741bf6ada8238037c40de', '45440e38d0e533b9af08817ece00867d95a1fb2a', '2513e42aa60384c885e0ea3c981fa231600fb0ce', '974063326d8c81ac689d02e89793385211c25871')
+Generation
+Push Down Methodsrc/main/java/org/apache/giraph/comm/RequestServerHandler.java@public RequestServerHandler(serverData ServerData<I,V,E,M>)src/main/java/org/apache/giraph/comm/WorkerRequestServerHandler.java@public WorkerRequestServerHandler(serverData ServerData<I,V,E,M>, workerRequestReservedMap WorkerRequestReservedMap, conf Configuration)src/main/java/org/apache/giraph/comm/RequestServerHandler.java 23:25
+******************************
+******************************
+coarse grained commits 51a5b153dd1d7a5106a445f8c42e9066b0fe075e
+fine grained commits ('7cc58ae31ca254ad523db00526fa8c029d1b9aeb', 'fc377b1778ff8a9aaff48a3022bb407296573f7d', '7d927731f933e8cc236082eaf36e0c240dd3a5c4', '4f7238ef519527ea869076e9956986c4959f9a0a')
+Generation
+Extract Variablesrc/test/java/org/apache/giraph/TestVertexRangeBalancer.java@src/test/java/org/apache/giraph/TestVertexRangeBalancer.java@correctLen : intsrc/test/java/org/apache/giraph/TestVertexRangeBalancer.java 46:46
+******************************
+******************************
+coarse grained commits 1ca9189c82e4b8ae64ac87d4636d856cd1bc9eaa
+fine grained commits ('ff35e01300f4a18ebcef42ca9fc7686e4d21fa85', 'ea9de1627cdae010d4e743dac75ef4e2f3567b3b', 'bedb9e1fd3e387038915a3e40e831cafb1e0c457', '6cbb58af77960d4b2cc9b416f22dcf3120c3773d')
+Generation
+Rename Variablesrc/test/java/com/yahoo/hadoop_bsp/ManualCheckpointTest.java@idSum : longsrc/test/java/com/yahoo/hadoop_bsp/TestManualCheckpoint.java@idSumRestarted : longsrc/test/java/com/yahoo/hadoop_bsp/ManualCheckpointTest.java 106:109
+Generation
+Move Methodsrc/main/java/com/yahoo/hadoop_bsp/examples/TestCheckpointVertex.java@public preSuperstep() : voidsrc/main/java/com/yahoo/hadoop_bsp/examples/SimpleCheckpointVertex.java@public preSuperstep() : voidsrc/main/java/com/yahoo/hadoop_bsp/examples/TestCheckpointVertex.java 31:34
+Generation
+Move Methodsrc/main/java/com/yahoo/hadoop_bsp/examples/TestCheckpointVertex.java@public compute(msgIterator Iterator<FloatWritable>) : voidsrc/main/java/com/yahoo/hadoop_bsp/examples/SimpleCheckpointVertex.java@public compute(msgIterator Iterator<FloatWritable>) : voidsrc/main/java/com/yahoo/hadoop_bsp/examples/TestCheckpointVertex.java 36:69
+Generation
+Move Methodsrc/main/java/com/yahoo/hadoop_bsp/examples/TestCheckpointVertex.java@public createMsgValue() : FloatWritablesrc/main/java/com/yahoo/hadoop_bsp/examples/SimpleCheckpointVertex.java@public createMsgValue() : FloatWritablesrc/main/java/com/yahoo/hadoop_bsp/examples/TestCheckpointVertex.java 71:73
+******************************
+******************************
+coarse grained commits 1bdf748c9f4d6a4b0face8b8ff0bca889989e6b7
+fine grained commits ('a288153e6136667103a4e43ad00e136b827cb6b5', '9a8c6c58ec3cf2d325245ce5edae2d7538be3e3c', '7fb0e1205da28ae4e9d5bd126cbb247d3ea1359d', 'f97492f1c2e85ff3d623f43f4df5d6519b00d3e5')
+Generation
+Extract And Move Methodsrc/main/java/com/yahoo/hadoop_bsp/BspService.java@public masterCreatePartitions() : voidsrc/main/java/com/yahoo/hadoop_bsp/BspInputSplit.java@public write(out DataOutput) : voidsrc/main/java/com/yahoo/hadoop_bsp/BspService.java 84:156
+******************************
+******************************
+coarse grained commits 496e098bb01325622dbe0b7ee4200a84f10b8fa7
+fine grained commits ('5e8372c03fdd9506ae209f5f891529419ba88d9d', 'ececff97ebe811ef931b221afacc765b4dcb5802', '254bdfb2bac20688fa63448af2c0020a0f6a1fbb', '56336b35d96f481044ef1467aa711edec3a3ed94')
+Generation
+Add Parametergiraph-core/src/main/java/org/apache/giraph/graph/Vertex.java@public readFields(in DataInput) : voidgiraph-core/src/main/java/org/apache/giraph/partition/DiskBackedPartitionStore.java@partition : Partition<I,V,E,M>giraph-core/src/main/java/org/apache/giraph/graph/Vertex.java 256:265
+Generation
+Remove Method Annotationgiraph-core/src/main/java/org/apache/giraph/graph/Vertex.java@@Overridegiraph-core/src/main/java/org/apache/giraph/partition/DiskBackedPartitionStore.java@private readVertexEdges(in DataInput, partition Partition<I,V,E,M>) : voidgiraph-core/src/main/java/org/apache/giraph/graph/Vertex.java 256:256
+Generation
+Change Method Access Modifiergiraph-core/src/main/java/org/apache/giraph/graph/Vertex.java@public readFields(in DataInput) : voidgiraph-core/src/main/java/org/apache/giraph/partition/DiskBackedPartitionStore.java@private readVertexEdges(in DataInput, partition Partition<I,V,E,M>) : voidgiraph-core/src/main/java/org/apache/giraph/graph/Vertex.java 256:265
+Generation
+Move And Rename Methodgiraph-core/src/main/java/org/apache/giraph/graph/Vertex.java@public readFields(in DataInput) : voidgiraph-core/src/main/java/org/apache/giraph/partition/DiskBackedPartitionStore.java@private readVertexEdges(in DataInput, partition Partition<I,V,E,M>) : voidgiraph-core/src/main/java/org/apache/giraph/graph/Vertex.java 256:265
+******************************
+******************************
+coarse grained commits ece32a7a626d80abe4bd7fceadda286e44ed42af
+fine grained commits ('304da5aa1df9bc764b015cc42dbefb4f738c723e', '0346ffec718241580089bacfcfe9d590a0b7369b', 'ec0b6d9191a966d6acd5f98f30471859e935e4a8', 'f15c75d7dea93bcdb54366d8108e9b785b6a79f6')
+Generation
+Extract Classgiraph-core/src/main/java/org/apache/giraph/graph/Vertex.java@org.apache.giraph.graph.Vertexgiraph-core/src/main/java/org/apache/giraph/graph/Vertex.java@org.apache.giraph.graph.Vertexgiraph-core/src/main/java/org/apache/giraph/graph/Vertex.java 27:292
+Generation
+Change Parameter Typegiraph-core/src/main/java/org/apache/giraph/graph/Vertex.java@conf : ImmutableClassesGiraphConfiguration<I,V,E,M>giraph-core/src/main/java/org/apache/giraph/benchmark/GiraphBenchmark.java@conf : Configurationgiraph-core/src/main/java/org/apache/giraph/graph/Vertex.java 283:283
+Generation
+Move Methodgiraph-core/src/main/java/org/apache/giraph/graph/Vertex.java@public setConf(conf ImmutableClassesGiraphConfiguration<I,V,E,M>) : voidgiraph-core/src/main/java/org/apache/giraph/benchmark/GiraphBenchmark.java@public setConf(conf Configuration) : voidgiraph-core/src/main/java/org/apache/giraph/graph/Vertex.java 282:285
+******************************
+******************************
+coarse grained commits 71000e0f0b9815e20e6f8550a5bff53f0aaf6cb6
+fine grained commits ('4b9f0ddd976f0054458758351e4cc0b181bdbe10', 'dcd2b266309090087408eaa1c4c2e15475bbe99d', '1dd69b6de6161adfeb9290e5a969af4da74d0124', 'd578a36b14d92d8744bcbeb8cdcd74c1c54e39c2')
+Generation
+Rename Attributegiraph-hive/src/main/java/org/apache/giraph/hive/input/vertex/HiveVertexReader.java@vertexToReuse : Vertex<I,V,E,M>giraph-hive/src/main/java/org/apache/giraph/hive/input/vertex/HiveVertexReader.java@hiveToVertex : HiveToVertex<I,V,E,M>giraph-hive/src/main/java/org/apache/giraph/hive/input/vertex/HiveVertexReader.java 39:39
+Generation
+Change Attribute Typegiraph-hive/src/main/java/org/apache/giraph/hive/input/vertex/HiveVertexReader.java@vertexToReuse : Vertex<I,V,E,M>giraph-hive/src/main/java/org/apache/giraph/hive/input/vertex/HiveVertexReader.java@hiveToVertex : HiveToVertex<I,V,E,M>giraph-hive/src/main/java/org/apache/giraph/hive/input/vertex/HiveVertexReader.java 39:39
+******************************
+******************************
+coarse grained commits aee1dd9958011a1c833cefbbdead2b4cf01f36ef
+fine grained commits ('62b5c2b7587f9cf8beecadf5f8c7a08e6f490825', '4ac1d70524e4933e6d5c7109703fd9ee291b7c62', '41804c69883ca7f8513bdda0463acd09dd89a92a', '464d91875b89a889425f75626257a86cf59d05a2', '244a641077fd2d7c5479cb961c7f131af38c33a9')
+Generation
+Change Variable Typesrc/main/java/org/apache/giraph/graph/GraphMapper.java@vertexMsgIt : Iterator<M>src/main/java/org/apache/giraph/graph/GraphMapper.java@vertexMsgIt : Iterable<M>src/main/java/org/apache/giraph/graph/GraphMapper.java 491:492
+Generation
+Add Parametersrc/main/java/org/apache/giraph/graph/VertexResolver.java@public resolve(vertexId I, vertex BasicVertex<I,V,E,M>, vertexChanges VertexChanges<I,V,E,M>, messages Iterable<M>) : BasicVertex<I,V,E,M>src/main/java/org/apache/giraph/graph/VertexResolver.java@hasMessages : booleansrc/main/java/org/apache/giraph/graph/VertexResolver.java 21:80
+Generation
+Remove Parametersrc/main/java/org/apache/giraph/graph/VertexResolver.java@messages : Iterable<M>src/main/java/org/apache/giraph/graph/VertexResolver.java@public resolve(vertexId I, vertex Vertex<I,V,E,M>, vertexChanges VertexChanges<I,V,E,M>, hasMessages boolean) : Vertex<I,V,E,M>src/main/java/org/apache/giraph/graph/VertexResolver.java 26:26
+Generation
+Move And Inline Methodsrc/main/java/org/apache/giraph/graph/LongDoubleFloatDoubleVertex.java@public getVertexId() : LongWritablesrc/main/java/org/apache/giraph/comm/NettyWorkerServer.java@public prepareSuperstep() : voidsrc/main/java/org/apache/giraph/graph/LongDoubleFloatDoubleVertex.java 88:91
+******************************
+******************************
+coarse grained commits 1bd33967661bc39fc93e9c085ce3b38cf41322d8
+fine grained commits ('f11a85c91c6632d34e2a0fd9fbb7d43bab61d7d8', '58be6e57a0ff15b85090488ffc1f83595c3f11d0', '6d3397c313c2a7ddec71558129ff40979805e0c8', '01629e0d6856c2baec4aa986ecc65baaa0f4c07e', 'b656a8e503d06c164152ae62a2bcc8a281fdfb62')
+Generation
+Change Type Declaration Kindsrc/main/java/org/apache/giraph/graph/Combiner.java@org.apache.giraph.graph.Combinersrc/main/java/org/apache/giraph/graph/VertexCombiner.java@org.apache.giraph.graph.VertexCombinersrc/main/java/org/apache/giraph/graph/Combiner.java 10:19
+******************************
+******************************
+coarse grained commits a98bd810cf359e52a37207361086a8357629ece0
+fine grained commits ('88cd1577687fe3db06411300d8e638c609d64874', '84a5e8a48eb7287d043c2841ccef40b2c34427ba', '0b29dd41781ef3998bcbb2e7916765bee5435be0', '57ee7aebcb581ecadaf061a7487d21cd4273f43d', '0b8c3927dec2e7a6aac10fc2b4750d4edb8487c7')
+Generation
+Extract Interfacegiraph-core/src/main/java/org/apache/giraph/graph/Computation.java@org.apache.giraph.graph.Computationgiraph-core/src/main/java/org/apache/giraph/graph/Computation.java@org.apache.giraph.graph.Computationgiraph-core/src/main/java/org/apache/giraph/graph/Computation.java 17:62
+Generation
+Add Parametergiraph-core/src/main/java/org/apache/giraph/aggregators/ArrayAggregatorFactory.java@public readFields(in DataInput) : voidgiraph-core/src/main/java/org/apache/giraph/reducers/Reducer.java@conf : ImmutableClassesGiraphConfigurationgiraph-core/src/main/java/org/apache/giraph/aggregators/ArrayAggregatorFactory.java 29:33
+Generation
+Remove Method Annotationgiraph-core/src/main/java/org/apache/giraph/aggregators/ArrayAggregatorFactory.java@@Overridegiraph-core/src/main/java/org/apache/giraph/reducers/Reducer.java@public readFields(in DataInput, conf ImmutableClassesGiraphConfiguration) : voidgiraph-core/src/main/java/org/apache/giraph/aggregators/ArrayAggregatorFactory.java 29:29
+Generation
+Move Methodgiraph-core/src/main/java/org/apache/giraph/aggregators/ArrayAggregatorFactory.java@public readFields(in DataInput) : voidgiraph-core/src/main/java/org/apache/giraph/reducers/Reducer.java@public readFields(in DataInput, conf ImmutableClassesGiraphConfiguration) : voidgiraph-core/src/main/java/org/apache/giraph/aggregators/ArrayAggregatorFactory.java 29:33
+Generation
+Move Methodgiraph-core/src/main/java/org/apache/giraph/aggregators/ArrayAggregatorFactory.java@public write(out DataOutput) : voidgiraph-core/src/main/java/org/apache/giraph/master/AggregatorReduceOperation.java@public write(out DataOutput) : voidgiraph-core/src/main/java/org/apache/giraph/aggregators/ArrayAggregatorFactory.java 35:39
+Generation
+Move Methodgiraph-core/src/main/java/org/apache/giraph/aggregators/ClassAggregatorFactory.java@public readFields(in DataInput) : voidgiraph-core/src/main/java/org/apache/giraph/master/AggregatorReduceOperation.java@public readFields(in DataInput) : voidgiraph-core/src/main/java/org/apache/giraph/aggregators/ClassAggregatorFactory.java 43:46
+Generation
+Rename Parametergiraph-core/src/main/java/org/apache/giraph/master/MasterAggregatorHandler.java@aggregatorFactory : WritableFactory<? extends Aggregator<A>>giraph-core/src/main/java/org/apache/giraph/master/AggregatorToGlobalCommTranslation.java@aggregatorClass : Class<? extends Aggregator<A>>giraph-core/src/main/java/org/apache/giraph/master/MasterAggregatorHandler.java 111:111
+Generation
+Change Parameter Typegiraph-core/src/main/java/org/apache/giraph/master/MasterAggregatorHandler.java@aggregatorFactory : WritableFactory<? extends Aggregator<A>>giraph-core/src/main/java/org/apache/giraph/master/AggregatorToGlobalCommTranslation.java@aggregatorClass : Class<? extends Aggregator<A>>giraph-core/src/main/java/org/apache/giraph/master/MasterAggregatorHandler.java 111:111
+******************************
+******************************
+coarse grained commits 1e4646e24f91c5f65a13aaa485d6788cc4e2085c
+fine grained commits ('f9cc9385a20fa31468326e754a24603bd3c04962', 'ae78b72e39d92c7a85536277b9823aaec7f866b0', '619cf6da74f672ed33327caee3f613f5d2180d43', 'a0130a66ecec677fe139427b687cdc3173d4eb66', '7a5e71524c921810f0d9e5274902954875a925a7')
+Generation
+Extract And Move Methodgiraph/src/main/java/org/apache/giraph/graph/MutableVertex.java@public instantiateVertex(vertexId I, vertexValue V, edges Map<I,E>) : Vertex<I,V,E,M>giraph/src/main/java/org/apache/giraph/graph/Vertex.java@private getWorkerCommunications() : WorkerClientServer<I,V,E,M>giraph/src/main/java/org/apache/giraph/graph/MutableVertex.java 18:25
+******************************
+******************************
+coarse grained commits 77df838df210e4818cc2259be5ebb418715565ac
+fine grained commits ('21bee43f2e8de18b52ba35480d7218fe69647696', '3351dfedcf1bd691a88eeb71dbe2b6bc5ae17061', '90b1f8c0c5bfeeb120c1803b5198d936d0046898', 'af21089bfacb37e1d0e77b1dfbfdf494137c014d', 'd8dd38851a50125d16ba5dd7def56ccdcbb6544f')
+Generation
+Rename Methodsrc/test/java/org/apache/giraph/BspCase.java@package getJobTracker() : Stringsrc/test/java/org/apache/giraph/BspCase.java@private getName() : Stringsrc/test/java/org/apache/giraph/BspCase.java 76:78
+Generation
+Change Method Access Modifiersrc/test/java/org/apache/giraph/BspCase.java@package getJobTracker() : Stringsrc/test/java/org/apache/giraph/BspCase.java@private getName() : Stringsrc/test/java/org/apache/giraph/BspCase.java 76:78
+Generation
+Remove Parametersrc/test/java/org/apache/giraph/TestAutoCheckpoint.java@testName : Stringsrc/test/java/org/apache/giraph/TestAutoCheckpoint.java@public TestAutoCheckpoint()src/test/java/org/apache/giraph/TestAutoCheckpoint.java 19:19
+Generation
+Remove Parametersrc/test/java/org/apache/giraph/TestBspBasic.java@testName : Stringsrc/test/java/org/apache/giraph/TestBspBasic.java@public TestBspBasic()src/test/java/org/apache/giraph/TestBspBasic.java 46:46
+Generation
+Remove Parametersrc/test/java/org/apache/giraph/TestGraphPartitioner.java@testName : Stringsrc/test/java/org/apache/giraph/TestGraphPartitioner.java@public TestGraphPartitioner()src/test/java/org/apache/giraph/TestGraphPartitioner.java 21:21
+Generation
+Remove Parametersrc/test/java/org/apache/giraph/TestManualCheckpoint.java@testName : Stringsrc/test/java/org/apache/giraph/TestManualCheckpoint.java@public TestManualCheckpoint()src/test/java/org/apache/giraph/TestManualCheckpoint.java 19:19
+Generation
+Remove Parametersrc/test/java/org/apache/giraph/TestMutateGraphVertex.java@testName : Stringsrc/test/java/org/apache/giraph/TestMutateGraphVertex.java@public TestMutateGraphVertex()src/test/java/org/apache/giraph/TestMutateGraphVertex.java 16:16
+Generation
+Remove Parametersrc/test/java/org/apache/giraph/TestNotEnoughMapTasks.java@testName : Stringsrc/test/java/org/apache/giraph/TestNotEnoughMapTasks.java@public TestNotEnoughMapTasks()src/test/java/org/apache/giraph/TestNotEnoughMapTasks.java 15:15
+******************************
+******************************
+coarse grained commits acc6965a2306311db1b8f0f04f9f9c97cc01fc6f
+fine grained commits ('9c493fd2a232021f1a9b586118f3db39178540d1', '6ebeefcf80a3f3299b9559326bf58133af254d32', '7124150f2a0bc313cd50f5ee6f035b0d6b3d100b', '96746de1d86f9dfa5c1d50ff3e3f39ac28c53e3b', '19008ad79656fe411fbf2932cfa242e7f4880931')
+Generation
+Remove Variable Annotationsrc/main/java/com/yahoo/hadoop_bsp/BspServiceMaster.java@@SuppressWarnings({"unchecked"})src/main/java/com/yahoo/hadoop_bsp/BspServiceMaster.java@vertexInputFormat : VertexInputFormat<I,V,E>src/main/java/com/yahoo/hadoop_bsp/BspServiceMaster.java 148:148
+Generation
+Rename Variablesrc/main/java/com/yahoo/hadoop_bsp/BspServiceMaster.java@vertexInputFormatClass : Class<VertexInputFormat>src/main/java/com/yahoo/hadoop_bsp/BspServiceMaster.java@vertexInputFormat : VertexInputFormat<I,V,E>src/main/java/com/yahoo/hadoop_bsp/BspServiceMaster.java 149:152
+******************************
+******************************
+coarse grained commits db26d16b95773eb4c37973d7537ace3d71f9e591
+fine grained commits ('4f7238ef519527ea869076e9956986c4959f9a0a', 'b6221edcaea33b665f4b8851364a545f618b613c', 'bd8cea223577dfc898232ac6537b0b8c9c71df7d', '9915d5e88caccb160d6613e25000f86d59c81ac9', 'f4e83949c0bb3367455345d5d53f3eaa624b7cbb')
+Generation
+Rename Variablesrc/main/java/org/apache/giraph/graph/GiraphJob.java@verticesFinished : longsrc/main/java/org/apache/giraph/graph/GraphMapper.java@workerFinishedVertices : longsrc/main/java/org/apache/giraph/graph/GiraphJob.java 563:563
+Generation
+Rename Variablesrc/main/java/org/apache/giraph/graph/GiraphJob.java@edges : longsrc/main/java/org/apache/giraph/graph/GraphMapper.java@workerEdges : longsrc/main/java/org/apache/giraph/graph/GiraphJob.java 564:564
+******************************
+******************************
+coarse grained commits 8ba49afb1d6d999cc9a9a6b7dcebd4aed80199f5
+fine grained commits ('3cd083864665e1209f88a8080d647208efb4837a', 'a5c4d75f01ecaf2f99c377614897f184370716e9', '1ab88e7b6a846fb1aeae9edb7acf9ad1dba7b8a9', 'f2e0674258c5cb0f978e7602aeee4931f6fc8ff1', '3d0e45877e9cfc8560651bd16c16b0918d6e3663')
+Generation
+Rename Methodsrc/main/java/com/yahoo/hadoop_bsp/BspService.java@public getWorkerSelectionFinishedPath(attempt long, superstep long) : Stringsrc/main/java/com/yahoo/hadoop_bsp/BspService.java@public getVertexRangeExchangeFinishedPath(attempt long, superstep long) : Stringsrc/main/java/com/yahoo/hadoop_bsp/BspService.java 132:136
+Generation
+Rename Methodsrc/main/java/com/yahoo/hadoop_bsp/BspService.java@public getVertexRangeStatsPath(attempt long, superstep long) : Stringsrc/main/java/com/yahoo/hadoop_bsp/BspService.java@public getVertexRangeExchangePath(attempt long, superstep long) : Stringsrc/main/java/com/yahoo/hadoop_bsp/BspService.java 143:147
+Generation
+Rename Methodsrc/main/java/com/yahoo/hadoop_bsp/BspService.java@public getCheckpointFilesPath(attempt long, superstep long, hostnamePartitionId String) : Stringsrc/main/java/com/yahoo/hadoop_bsp/BspService.java@public getVertexRangeAssignmentsPath(attempt long, superstep long) : Stringsrc/main/java/com/yahoo/hadoop_bsp/BspService.java 149:155
+Generation
+Remove Parametersrc/main/java/com/yahoo/hadoop_bsp/BspService.java@hostnamePartitionId : Stringsrc/main/java/com/yahoo/hadoop_bsp/BspService.java@public getVertexRangeAssignmentsPath(attempt long, superstep long) : Stringsrc/main/java/com/yahoo/hadoop_bsp/BspService.java 151:151
+Generation
+Rename Attributesrc/main/java/com/yahoo/hadoop_bsp/BspService.java@WORKER_SELECTION_FINISHED_NODE : Stringsrc/main/java/com/yahoo/hadoop_bsp/BspService.java@VERTEX_RANGE_EXCHANGED_FINISHED_NODE : Stringsrc/main/java/com/yahoo/hadoop_bsp/BspService.java 86:87
+Generation
+Encapsulate Attributesrc/main/java/com/yahoo/hadoop_bsp/Partition.java@private m_hostname : Stringsrc/main/java/com/yahoo/hadoop_bsp/VertexRange.java@private m_hostname : Stringsrc/main/java/com/yahoo/hadoop_bsp/Partition.java 8:8
+Generation
+Encapsulate Attributesrc/main/java/com/yahoo/hadoop_bsp/Partition.java@private m_port : intsrc/main/java/com/yahoo/hadoop_bsp/VertexRange.java@private m_port : intsrc/main/java/com/yahoo/hadoop_bsp/Partition.java 9:9
+******************************
+******************************
+coarse grained commits 5998316cc47a6590333353dd7fba07b2e18476c7
+fine grained commits ('342a1f81a8f97b99595022cf4b88fc2084d50084', 'fcfbbecbd75edd040d6fe41ff2b74563e3eef306', '650c1dc61b1da051732ac3d5776deb7fb0ee792e', '4f6607720547f379645cd67fe45614b0b9e56bdd', '64ea2b0fbd9f9ac5994a531736404b930ccb0a0c')
+Generation
+Move Attributesrc/main/java/com/yahoo/hadoop_bsp/examples/TestCheckpointVertex.java@private superstep : longsrc/main/java/com/yahoo/hadoop_bsp/examples/TestFailVertex.java@package superstep : longsrc/main/java/com/yahoo/hadoop_bsp/examples/TestCheckpointVertex.java 18:18
+Generation
+Move Attributesrc/main/java/com/yahoo/hadoop_bsp/examples/TestPageRankVertex.java@private superstep : longsrc/main/java/com/yahoo/hadoop_bsp/examples/TestFailVertex.java@package superstep : longsrc/main/java/com/yahoo/hadoop_bsp/examples/TestPageRankVertex.java 21:21
+Generation
+Change Attribute Access Modifiersrc/main/java/com/yahoo/hadoop_bsp/examples/TestCheckpointVertex.java@private superstep : longsrc/main/java/com/yahoo/hadoop_bsp/examples/TestFailVertex.java@package superstep : longsrc/main/java/com/yahoo/hadoop_bsp/examples/TestCheckpointVertex.java 18:18
+Generation
+Change Attribute Access Modifiersrc/main/java/com/yahoo/hadoop_bsp/examples/TestPageRankVertex.java@private superstep : longsrc/main/java/com/yahoo/hadoop_bsp/examples/TestFailVertex.java@package superstep : longsrc/main/java/com/yahoo/hadoop_bsp/examples/TestPageRankVertex.java 21:21
+******************************
+******************************
+coarse grained commits aebe65252089452c571115e13a014cd7ab6d27fa
+fine grained commits ('b656a8e503d06c164152ae62a2bcc8a281fdfb62', 'de702985bdadf819289778602e0d3471efe40afc', 'dbd8ddf22ca3cffd805fbfe2eb90356ea7522355', '8a59c36ff2cbfcbbef2582bc494c9f9864e3515e', 'd997e4bd73ce52808c8bd0d3e701158b2bac517f')
+Generation
+Move Classsrc/main/java/org/apache/giraph/BspJob.java@org.apache.giraph.BspJob.BspMappersrc/main/java/org/apache/giraph/graph/GiraphJob.java@org.apache.giraph.graph.GiraphJob.BspMappersrc/main/java/org/apache/giraph/BspJob.java 172:562
+Generation
+Move And Rename Classsrc/main/java/org/apache/giraph/Combiner.java@org.apache.giraph.Combinersrc/main/java/org/apache/giraph/graph/VertexCombiner.java@org.apache.giraph.graph.VertexCombinersrc/main/java/org/apache/giraph/Combiner.java 9:18
+******************************
+******************************
+coarse grained commits 0f7840f35685f999a1c845e4abad190b32a2921b
+fine grained commits ('6cbb58af77960d4b2cc9b416f22dcf3120c3773d', '4e7525f00b9dd4da0f710f864ff43fe205ae63e7', '595bcb9fe47433ea736b3619792a4225e2fbb42a', '5f232bc738489cc6a2534c44b89a97c3ef062be0', '3cd083864665e1209f88a8080d647208efb4837a')
+Generation
+Move Methodsrc/test/java/com/yahoo/hadoop_bsp/ManualCheckpointTest.java@public suite() : Testsrc/test/java/com/yahoo/hadoop_bsp/TestManualCheckpoint.java@public suite() : Testsrc/test/java/com/yahoo/hadoop_bsp/ManualCheckpointTest.java 46:48
+Generation
+Move Methodsrc/test/java/com/yahoo/hadoop_bsp/ManualCheckpointTest.java@public testBspCheckpoint() : voidsrc/test/java/com/yahoo/hadoop_bsp/TestManualCheckpoint.java@public testBspCheckpoint() : voidsrc/test/java/com/yahoo/hadoop_bsp/ManualCheckpointTest.java 96:175
+Generation
+Move Methodsrc/test/java/com/yahoo/hadoop_bsp/SimpleBspTest.java@public suite() : Testsrc/test/java/com/yahoo/hadoop_bsp/TestBspBasic.java@public suite() : Testsrc/test/java/com/yahoo/hadoop_bsp/SimpleBspTest.java 52:54
+Generation
+Move Methodsrc/test/java/com/yahoo/hadoop_bsp/SimpleBspTest.java@public testInstantiateVertex() : voidsrc/test/java/com/yahoo/hadoop_bsp/TestBspBasic.java@public testInstantiateVertex() : voidsrc/test/java/com/yahoo/hadoop_bsp/SimpleBspTest.java 102:126
+Generation
+Move Methodsrc/test/java/com/yahoo/hadoop_bsp/SimpleBspTest.java@public testBspFail() : voidsrc/test/java/com/yahoo/hadoop_bsp/TestBspBasic.java@public testBspFail() : voidsrc/test/java/com/yahoo/hadoop_bsp/SimpleBspTest.java 128:165
+Generation
+Move Methodsrc/test/java/com/yahoo/hadoop_bsp/SimpleBspTest.java@public testBspSuperStep() : voidsrc/test/java/com/yahoo/hadoop_bsp/TestBspBasic.java@public testBspSuperStep() : voidsrc/test/java/com/yahoo/hadoop_bsp/SimpleBspTest.java 167:219
+Generation
+Move Methodsrc/test/java/com/yahoo/hadoop_bsp/SimpleBspTest.java@public testBspMsg() : voidsrc/test/java/com/yahoo/hadoop_bsp/TestBspBasic.java@public testBspMsg() : voidsrc/test/java/com/yahoo/hadoop_bsp/SimpleBspTest.java 221:263
+Generation
+Move Methodsrc/test/java/com/yahoo/hadoop_bsp/SimpleBspTest.java@public testBspCombiner() : voidsrc/test/java/com/yahoo/hadoop_bsp/TestBspBasic.java@public testBspCombiner() : voidsrc/test/java/com/yahoo/hadoop_bsp/SimpleBspTest.java 265:310
+Generation
+Move Methodsrc/test/java/com/yahoo/hadoop_bsp/SimpleBspTest.java@public testBspPageRank() : voidsrc/test/java/com/yahoo/hadoop_bsp/TestBspBasic.java@public testBspPageRank() : voidsrc/test/java/com/yahoo/hadoop_bsp/SimpleBspTest.java 312:367
+******************************

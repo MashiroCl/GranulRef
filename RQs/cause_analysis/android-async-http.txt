@@ -1,0 +1,180 @@
+******************************
+coarse grained commits aad94a4e675bb62f9049f7bb28708953d804de88
+fine grained commits ('1f352e6bf572fab13f131116736b7867809b6af8', '131f31ba475e719d48d35035fd2bb1ff7f198ec9')
+Generation
+Parameterize Variablelibrary/src/main/java/com/loopj/android/http/MySSLSocketFactory.java@socket : Socketlibrary/src/main/java/com/loopj/android/http/MySSLSocketFactory.java@socket : Socketlibrary/src/main/java/com/loopj/android/http/MySSLSocketFactory.java 159:159
+******************************
+******************************
+coarse grained commits 99a24bc2498be9b006f36a23053e56394dce4d9f
+fine grained commits ('976fb73c054583b4cff47fd5fcfb370ebd9d4720', '0c6f669f3dcf01bf565c6017b7975a3ec9a15f2a')
+Generation
+Merge Classlibrary/src/main/java/com/loopj/android/http/ArgsUtils.java@com.loopj.android.http.ArgsUtilslibrary/src/main/java/com/loopj/android/http/Utils.java@com.loopj.android.http.Utilslibrary/src/main/java/com/loopj/android/http/ArgsUtils.java 4:15
+Generation
+Move And Rename Methodlibrary/src/main/java/com/loopj/android/http/ArgsUtils.java@private ArgsUtils()library/src/main/java/com/loopj/android/http/Utils.java@private Utils()library/src/main/java/com/loopj/android/http/ArgsUtils.java 6:7
+Generation
+Move Methodlibrary/src/main/java/com/loopj/android/http/ArgsUtils.java@public notNull(argument T, name String) : Tlibrary/src/main/java/com/loopj/android/http/Utils.java@public notNull(argument T, name String) : Tlibrary/src/main/java/com/loopj/android/http/ArgsUtils.java 9:14
+Generation
+Move And Rename Methodlibrary/src/main/java/com/loopj/android/http/AssertUtils.java@private AssertUtils()library/src/main/java/com/loopj/android/http/Utils.java@private Utils()library/src/main/java/com/loopj/android/http/AssertUtils.java 6:7
+Generation
+Move Methodlibrary/src/main/java/com/loopj/android/http/AssertUtils.java@public asserts(expression boolean, failedMessage String) : voidlibrary/src/main/java/com/loopj/android/http/Utils.java@public asserts(expression boolean, failedMessage String) : voidlibrary/src/main/java/com/loopj/android/http/AssertUtils.java 9:13
+******************************
+******************************
+coarse grained commits 39921d4a058f2bd3d157f7b4b6d38f9ba5155e94
+fine grained commits ('fbb8a7a2553df81f2f0c7416bc20346eac9aa9da', '3c4f41bdac01aed72ed51f6adcde878b17b3e68e')
+Generation
+Change Method Access Modifiersample/src/main/java/com/loopj/android/http/sample/CancelAllRequests.java@protected onCancelButtonPressed() : voidsample/src/main/java/com/loopj/android/http/sample/CancelAllRequestsSample.java@public onCancelButtonPressed() : voidsample/src/main/java/com/loopj/android/http/sample/CancelAllRequests.java 5:8
+******************************
+******************************
+coarse grained commits f85c50715a41f4efd2f2c1a1a1bb37135e2547d6
+fine grained commits ('072c3808afe33913ce8087a3fb17da087dec8397', '04b1bc97f069faf0c91cef58a0ca65ebf899ef9c')
+Generation
+Add Method Annotationlibrary/src/main/java/com/loopj/android/http/JsonHttpResponseHandler.java@public onSuccess(response JSONObject) : voidlibrary/src/main/java/com/loopj/android/http/JsonHttpResponseHandler.java@@Overridelibrary/src/main/java/com/loopj/android/http/JsonHttpResponseHandler.java 26:27
+Generation
+Change Parameter Typelibrary/src/main/java/com/loopj/android/http/TextHttpResponseHandler.java@responseBody : Stringlibrary/src/main/java/com/loopj/android/http/TextHttpResponseHandler.java@responseBytes : byte[]library/src/main/java/com/loopj/android/http/TextHttpResponseHandler.java 31:31
+Generation
+Rename Parameterlibrary/src/main/java/com/loopj/android/http/TextHttpResponseHandler.java@responseBody : byte[]library/src/main/java/com/loopj/android/http/TextHttpResponseHandler.java@responseBytes : byte[]library/src/main/java/com/loopj/android/http/TextHttpResponseHandler.java 47:47
+******************************
+******************************
+coarse grained commits 571938f548c3572b537396d668a0a8d133610854
+fine grained commits ('ebff8be95933d89a83d486e48edd9da6a2c21ddb', 'd8bf5ca88342bfe73b54b0fc041c7237a7729bb9')
+Generation
+Rename Methodlibrary/src/com/loopj/android/http/JsonHttpResponseHandler.java@protected sendSuccessMessage(statusCode int, headers Header[], responseBody String) : voidlibrary/src/com/loopj/android/http/JsonHttpResponseHandler.java@public onSuccess(statusCode int, headers Header[], responseBody byte[]) : voidlibrary/src/com/loopj/android/http/JsonHttpResponseHandler.java 66:83
+Generation
+Change Method Access Modifierlibrary/src/com/loopj/android/http/JsonHttpResponseHandler.java@protected sendSuccessMessage(statusCode int, headers Header[], responseBody String) : voidlibrary/src/com/loopj/android/http/JsonHttpResponseHandler.java@public onSuccess(statusCode int, headers Header[], responseBody byte[]) : voidlibrary/src/com/loopj/android/http/JsonHttpResponseHandler.java 66:83
+******************************
+******************************
+coarse grained commits fe04e3e4e0a2a627ac6fabd12342ddca7b354a53
+fine grained commits ('f2c98930ef928c51cf26ed68d0da59c171af5a9f', '78a0a7c2713baa8ce92e111a0273eb98b6909d85')
+Generation
+Add Method Annotationlibrary/src/com/loopj/android/http/AsyncHttpResponseHandler.java@protected sendFailureMessage(e Throwable, responseBody String) : voidlibrary/src/com/loopj/android/http/AsyncHttpResponseHandler.java@@Deprecatedlibrary/src/com/loopj/android/http/AsyncHttpResponseHandler.java 75:77
+Generation
+Add Method Annotationlibrary/src/com/loopj/android/http/AsyncHttpResponseHandler.java@protected sendFailureMessage(e Throwable, responseBody byte[]) : voidlibrary/src/com/loopj/android/http/AsyncHttpResponseHandler.java@@Deprecatedlibrary/src/com/loopj/android/http/AsyncHttpResponseHandler.java 79:81
+Generation
+Extract And Move Methodlibrary/src/com/loopj/android/http/JsonHttpResponseHandler.java@protected sendSuccessMessage(statusCode int, headers Header[], responseBody String) : voidlibrary/src/com/loopj/android/http/AsyncHttpResponseHandler.java@protected sendFailureMessage(statusCode int, headers Header[], e Throwable, responseBody String) : voidlibrary/src/com/loopj/android/http/JsonHttpResponseHandler.java 48:65
+******************************
+******************************
+coarse grained commits 696b863c3e0a124c3f79ff30c6e9b202c19f71ce
+fine grained commits ('1bd6a98e95997996d1312cf05fcde6906664709d', 'fea3948e9965eb6130c20ecedee45c856c319ec1')
+Generation
+Move And Inline Methodsrc/com/loopj/android/http/BinaryHttpResponseHandler.java@protected handleMessage(msg Message) : voidsrc/com/loopj/android/http/JsonHttpResponseHandler.java@protected handleMessage(msg Message) : voidsrc/com/loopj/android/http/BinaryHttpResponseHandler.java 61:76
+******************************
+******************************
+coarse grained commits d6b104db3b8027dcbcb07797b9d79d0cbbe90f6e
+fine grained commits ('6041921ab31f95ec809957e5b47d7c09528cf4d5', '4aa75990fc9c56636fcedf5190c80a4b2f49e28d', '34a2478f79588590f831070b31c5121a9b02d666')
+Generation
+Extract And Move Methodsample/src/main/java/com/loopj/android/http/sample/SampleParentActivity.java@protected onCreate(savedInstanceState Bundle) : voidsample/src/main/java/com/loopj/android/http/sample/FileSample.java@protected isRequestHeadersAllowed() : booleansample/src/main/java/com/loopj/android/http/sample/SampleParentActivity.java 37:58
+******************************
+******************************
+coarse grained commits b58386efaaed28091f3d13cca0523c15309a2be8
+fine grained commits ('73a70a642049d7f2a6e28fe29b9232741063abba', 'fbb8a7a2553df81f2f0c7416bc20346eac9aa9da', '3c4f41bdac01aed72ed51f6adcde878b17b3e68e')
+Generation
+Merge Classsample/src/main/java/com/loopj/android/http/sample/CancelAllRequests.java@com.loopj.android.http.sample.CancelAllRequestssample/src/main/java/com/loopj/android/http/sample/CancelAllRequestsSample.java@com.loopj.android.http.sample.CancelAllRequestsSamplesample/src/main/java/com/loopj/android/http/sample/CancelAllRequests.java 3:9
+Generation
+Move Methodsample/src/main/java/com/loopj/android/http/sample/CancelAllRequests.java@protected onCancelButtonPressed() : voidsample/src/main/java/com/loopj/android/http/sample/CancelAllRequestsSample.java@public onCancelButtonPressed() : voidsample/src/main/java/com/loopj/android/http/sample/CancelAllRequests.java 5:8
+Generation
+Move Methodsample/src/main/java/com/loopj/android/http/sample/CancelRequestHandle.java@protected onCancelButtonPressed() : voidsample/src/main/java/com/loopj/android/http/sample/CancelAllRequestsSample.java@public onCancelButtonPressed() : voidsample/src/main/java/com/loopj/android/http/sample/CancelRequestHandle.java 7:14
+******************************
+******************************
+coarse grained commits 9355364817f5f0761732b9f5ca8cf3476538cbcf
+fine grained commits ('d8bf5ca88342bfe73b54b0fc041c7237a7729bb9', 'f1b30ceb5b4a56950534160d628e2fd649632492', 'a5edfd36230c008e96d1ecd99d52728fea5bbbec')
+Generation
+Rename Methodlibrary/src/com/loopj/android/http/AsyncHttpResponseHandler.java@public setForceSynchronous(value Boolean) : voidlibrary/src/com/loopj/android/http/AsyncHttpResponseHandler.java@public setUseSynchronousMode(value Boolean) : voidlibrary/src/com/loopj/android/http/AsyncHttpResponseHandler.java 52:54
+Generation
+Rename Methodlibrary/src/com/loopj/android/http/AsyncHttpResponseHandler.java@protected handleSuccessMessage(statusCode int, headers Header[], responseBody byte[]) : voidlibrary/src/com/loopj/android/http/AsyncHttpResponseHandler.java@public onSuccess(statusCode int, headers Header[], content String) : voidlibrary/src/com/loopj/android/http/AsyncHttpResponseHandler.java 110:112
+Generation
+Rename Parameterlibrary/src/com/loopj/android/http/AsyncHttpResponseHandler.java@responseBody : byte[]library/src/com/loopj/android/http/AsyncHttpResponseHandler.java@content : Stringlibrary/src/com/loopj/android/http/AsyncHttpResponseHandler.java 110:110
+Generation
+Add Method Annotationlibrary/src/com/loopj/android/http/AsyncHttpResponseHandler.java@protected handleSuccessMessage(statusCode int, headers Header[], responseBody byte[]) : voidlibrary/src/com/loopj/android/http/AsyncHttpResponseHandler.java@@Deprecatedlibrary/src/com/loopj/android/http/AsyncHttpResponseHandler.java 110:112
+Generation
+Add Method Annotationlibrary/src/com/loopj/android/http/AsyncHttpResponseHandler.java@protected handleFailureMessage(statusCode int, headers Header[], responseBody byte[], error Throwable) : voidlibrary/src/com/loopj/android/http/AsyncHttpResponseHandler.java@@Deprecatedlibrary/src/com/loopj/android/http/AsyncHttpResponseHandler.java 114:116
+Generation
+Rename Attributelibrary/src/com/loopj/android/http/AsyncHttpResponseHandler.java@forceSynchronous : Booleanlibrary/src/com/loopj/android/http/AsyncHttpResponseHandler.java@useSynchronousMode : Booleanlibrary/src/com/loopj/android/http/AsyncHttpResponseHandler.java 34:34
+Generation
+Rename Methodlibrary/src/com/loopj/android/http/JsonHttpResponseHandler.java@protected handleSuccessJsonMessage(statusCode int, headers Header[], jsonResponse Object) : voidlibrary/src/com/loopj/android/http/JsonHttpResponseHandler.java@public onSuccess(statusCode int, headers Header[], response JSONObject) : voidlibrary/src/com/loopj/android/http/JsonHttpResponseHandler.java 59:61
+Generation
+Extract Methodlibrary/src/com/loopj/android/http/JsonHttpResponseHandler.java@public onSuccess(statusCode int, headers Header[], responseBody byte[]) : voidlibrary/src/com/loopj/android/http/JsonHttpResponseHandler.java@public onFailure(e Throwable, errorResponse JSONObject) : voidlibrary/src/com/loopj/android/http/JsonHttpResponseHandler.java 22:43
+Generation
+Extract Methodlibrary/src/com/loopj/android/http/JsonHttpResponseHandler.java@public onSuccess(statusCode int, headers Header[], responseBody byte[]) : voidlibrary/src/com/loopj/android/http/JsonHttpResponseHandler.java@public onFailure(e Throwable, errorResponse JSONArray) : voidlibrary/src/com/loopj/android/http/JsonHttpResponseHandler.java 22:43
+Generation
+Add Parameter Modifierlibrary/src/com/loopj/android/http/JsonHttpResponseHandler.java@statusCode : intlibrary/src/com/loopj/android/http/JsonHttpResponseHandler.java@statusCode : intlibrary/src/com/loopj/android/http/JsonHttpResponseHandler.java 23:23
+Generation
+Add Parameter Modifierlibrary/src/com/loopj/android/http/JsonHttpResponseHandler.java@headers : Header[]library/src/com/loopj/android/http/JsonHttpResponseHandler.java@headers : Header[]library/src/com/loopj/android/http/JsonHttpResponseHandler.java 23:23
+Generation
+Add Parameter Modifierlibrary/src/com/loopj/android/http/JsonHttpResponseHandler.java@responseBody : byte[]library/src/com/loopj/android/http/JsonHttpResponseHandler.java@responseBody : byte[]library/src/com/loopj/android/http/JsonHttpResponseHandler.java 23:23
+Generation
+Inline Variablelibrary/src/com/loopj/android/http/JsonHttpResponseHandler.java@responseBodyText : Stringlibrary/src/com/loopj/android/http/JsonHttpResponseHandler.java@library/src/com/loopj/android/http/JsonHttpResponseHandler.java 65:65
+Generation
+Rename Variablelibrary/src/com/loopj/android/http/JsonHttpResponseHandler.java@responseBodyText : Stringlibrary/src/com/loopj/android/http/JsonHttpResponseHandler.java@jsonString : Stringlibrary/src/com/loopj/android/http/JsonHttpResponseHandler.java 65:65
+Generation
+Rename Parameterlibrary/src/com/loopj/android/http/JsonHttpResponseHandler.java@jsonResponse : Objectlibrary/src/com/loopj/android/http/JsonHttpResponseHandler.java@response : JSONObjectlibrary/src/com/loopj/android/http/JsonHttpResponseHandler.java 59:59
+Generation
+Change Method Access Modifierlibrary/src/com/loopj/android/http/JsonHttpResponseHandler.java@protected handleSuccessJsonMessage(statusCode int, headers Header[], jsonResponse Object) : voidlibrary/src/com/loopj/android/http/JsonHttpResponseHandler.java@public onSuccess(statusCode int, headers Header[], response JSONObject) : voidlibrary/src/com/loopj/android/http/JsonHttpResponseHandler.java 59:61
+Generation
+Rename Methodlibrary/src/com/loopj/android/http/TextHttpResponseHandler.java@protected handleSuccessMessage(statusCode int, headers Header[], responseBody byte[]) : voidlibrary/src/com/loopj/android/http/TextHttpResponseHandler.java@public onSuccess(statusCode int, headers Header[], responseBody byte[]) : voidlibrary/src/com/loopj/android/http/TextHttpResponseHandler.java 37:44
+Generation
+Rename Methodlibrary/src/com/loopj/android/http/TextHttpResponseHandler.java@protected handleFailureMessage(statusCode int, headers Header[], responseBody byte[], error Throwable) : voidlibrary/src/com/loopj/android/http/TextHttpResponseHandler.java@public onFailure(statusCode int, headers Header[], responseBody byte[], error Throwable) : voidlibrary/src/com/loopj/android/http/TextHttpResponseHandler.java 46:53
+Generation
+Change Method Access Modifierlibrary/src/com/loopj/android/http/TextHttpResponseHandler.java@protected handleSuccessMessage(statusCode int, headers Header[], responseBody byte[]) : voidlibrary/src/com/loopj/android/http/TextHttpResponseHandler.java@public onSuccess(statusCode int, headers Header[], responseBody byte[]) : voidlibrary/src/com/loopj/android/http/TextHttpResponseHandler.java 37:44
+Generation
+Change Method Access Modifierlibrary/src/com/loopj/android/http/TextHttpResponseHandler.java@protected handleFailureMessage(statusCode int, headers Header[], responseBody byte[], error Throwable) : voidlibrary/src/com/loopj/android/http/TextHttpResponseHandler.java@public onFailure(statusCode int, headers Header[], responseBody byte[], error Throwable) : voidlibrary/src/com/loopj/android/http/TextHttpResponseHandler.java 46:53
+Generation
+Extract And Move Methodlibrary/src/com/loopj/android/http/JsonHttpResponseHandler.java@public onSuccess(statusCode int, headers Header[], responseBody byte[]) : voidlibrary/src/com/loopj/android/http/FileAsyncHttpResponseHandler.java@public onFailure(e Throwable, response File) : voidlibrary/src/com/loopj/android/http/JsonHttpResponseHandler.java 22:43
+Generation
+Extract And Move Methodlibrary/src/com/loopj/android/http/JsonHttpResponseHandler.java@public onSuccess(statusCode int, headers Header[], responseBody byte[]) : voidlibrary/src/com/loopj/android/http/FileAsyncHttpResponseHandler.java@public onSuccess(statusCode int, headers Header[], responseBody byte[]) : voidlibrary/src/com/loopj/android/http/JsonHttpResponseHandler.java 22:43
+Generation
+Extract Methodlibrary/src/com/loopj/android/http/JsonHttpResponseHandler.java@public onSuccess(statusCode int, headers Header[], responseBody byte[]) : voidlibrary/src/com/loopj/android/http/JsonHttpResponseHandler.java@public onSuccess(statusCode int, headers Header[], response JSONArray) : voidlibrary/src/com/loopj/android/http/JsonHttpResponseHandler.java 22:43
+******************************
+******************************
+coarse grained commits 3b15a9475d92adb23b69a63b0cad3658b3534289
+fine grained commits ('6041921ab31f95ec809957e5b47d7c09528cf4d5', '4aa75990fc9c56636fcedf5190c80a4b2f49e28d', '34a2478f79588590f831070b31c5121a9b02d666', '99444cff2ee943eba8a07213ee4b5042a90159e2', '22e54092b0fde94bfe9f8f0919d6c6ff1acdd1a0')
+Generation
+Move Attributelibrary/src/com/loopj/android/http/RequestParams.java@private LOG_TAG : Stringsample/src/main/java/com/loopj/android/http/sample/FileSample.java@private LOG_TAG : Stringlibrary/src/com/loopj/android/http/RequestParams.java 26:26
+******************************
+******************************
+coarse grained commits ead69554366e010d4ab55d5581e26b4834f9c702
+fine grained commits ('d8bf5ca88342bfe73b54b0fc041c7237a7729bb9', 'f1b30ceb5b4a56950534160d628e2fd649632492', 'a5edfd36230c008e96d1ecd99d52728fea5bbbec', 'b11a1d5f860c7015ed06be4e2e8e84214ff7d9bb', '481b95b08ea74e28d8c6f4b0fc55bd5bf30510ea')
+Generation
+Rename Methodlibrary/src/com/loopj/android/http/AsyncHttpResponseHandler.java@public getForceSynchronous() : Booleanlibrary/src/com/loopj/android/http/AsyncHttpResponseHandler.java@public getUseSynchronousMode() : booleanlibrary/src/com/loopj/android/http/AsyncHttpResponseHandler.java 52:54
+Generation
+Change Return Typelibrary/src/com/loopj/android/http/AsyncHttpResponseHandler.java@Booleanlibrary/src/com/loopj/android/http/AsyncHttpResponseHandler.java@booleanlibrary/src/com/loopj/android/http/AsyncHttpResponseHandler.java 52:52
+******************************
+******************************
+coarse grained commits 1ade6858802d7e680b142a03e698eecf45133c35
+fine grained commits ('072c3808afe33913ce8087a3fb17da087dec8397', '04b1bc97f069faf0c91cef58a0ca65ebf899ef9c', '88f603e01fc805a61c889ef845dd5c830a7c5a64', '8486154b5ac25f7005412cae2bf58e596846676d', '8e7aca14accfa95392f6b30b41022469f078b1c3')
+Generation
+Split Parameterlibrary/src/main/java/com/loopj/android/http/JsonHttpResponseHandler.java@errorResponse : JSONObjectlibrary/src/main/java/com/loopj/android/http/TextHttpResponseHandler.java@throwable : Throwablelibrary/src/main/java/com/loopj/android/http/JsonHttpResponseHandler.java 57:57
+Generation
+Rename Parameterlibrary/src/main/java/com/loopj/android/http/FileAsyncHttpResponseHandler.java@e : Throwablelibrary/src/main/java/com/loopj/android/http/TextHttpResponseHandler.java@throwable : Throwablelibrary/src/main/java/com/loopj/android/http/FileAsyncHttpResponseHandler.java 65:65
+Generation
+Add Method Annotationlibrary/src/main/java/com/loopj/android/http/JsonHttpResponseHandler.java@public onFailure(statusCode int, headers Header[], e Throwable, errorResponse JSONObject) : voidlibrary/src/main/java/com/loopj/android/http/TextHttpResponseHandler.java@@Overridelibrary/src/main/java/com/loopj/android/http/JsonHttpResponseHandler.java 57:59
+Generation
+Add Method Annotationlibrary/src/main/java/com/loopj/android/http/JsonHttpResponseHandler.java@public onFailure(statusCode int, headers Header[], e Throwable, errorResponse JSONArray) : voidlibrary/src/main/java/com/loopj/android/http/TextHttpResponseHandler.java@@Overridelibrary/src/main/java/com/loopj/android/http/JsonHttpResponseHandler.java 69:71
+Generation
+Add Method Annotationlibrary/src/main/java/com/loopj/android/http/FileAsyncHttpResponseHandler.java@public onFailure(statusCode int, headers Header[], e Throwable, response File) : voidlibrary/src/main/java/com/loopj/android/http/TextHttpResponseHandler.java@@Overridelibrary/src/main/java/com/loopj/android/http/FileAsyncHttpResponseHandler.java 65:67
+Generation
+Add Method Annotationlibrary/src/main/java/com/loopj/android/http/AsyncHttpResponseHandler.java@public onFailure(statusCode int, headers Header[], error Throwable, content String) : voidlibrary/src/main/java/com/loopj/android/http/TextHttpResponseHandler.java@@Overridelibrary/src/main/java/com/loopj/android/http/AsyncHttpResponseHandler.java 150:153
+Generation
+Pull Up Methodlibrary/src/main/java/com/loopj/android/http/JsonHttpResponseHandler.java@public onFailure(statusCode int, headers Header[], e Throwable, errorResponse JSONObject) : voidlibrary/src/main/java/com/loopj/android/http/TextHttpResponseHandler.java@public onFailure(statusCode int, headers Header[], responseBytes byte[], throwable Throwable) : voidlibrary/src/main/java/com/loopj/android/http/JsonHttpResponseHandler.java 57:59
+Generation
+Split Parameterlibrary/src/main/java/com/loopj/android/http/JsonHttpResponseHandler.java@errorResponse : JSONArraylibrary/src/main/java/com/loopj/android/http/TextHttpResponseHandler.java@throwable : Throwablelibrary/src/main/java/com/loopj/android/http/JsonHttpResponseHandler.java 69:69
+Generation
+Pull Up Methodlibrary/src/main/java/com/loopj/android/http/JsonHttpResponseHandler.java@public onFailure(statusCode int, headers Header[], e Throwable, errorResponse JSONArray) : voidlibrary/src/main/java/com/loopj/android/http/TextHttpResponseHandler.java@public onFailure(statusCode int, headers Header[], responseBytes byte[], throwable Throwable) : voidlibrary/src/main/java/com/loopj/android/http/JsonHttpResponseHandler.java 69:71
+Generation
+Split Parameterlibrary/src/main/java/com/loopj/android/http/FileAsyncHttpResponseHandler.java@response : Filelibrary/src/main/java/com/loopj/android/http/TextHttpResponseHandler.java@throwable : Throwablelibrary/src/main/java/com/loopj/android/http/FileAsyncHttpResponseHandler.java 65:65
+Generation
+Move Methodlibrary/src/main/java/com/loopj/android/http/FileAsyncHttpResponseHandler.java@public onFailure(statusCode int, headers Header[], e Throwable, response File) : voidlibrary/src/main/java/com/loopj/android/http/TextHttpResponseHandler.java@public onFailure(statusCode int, headers Header[], responseBytes byte[], throwable Throwable) : voidlibrary/src/main/java/com/loopj/android/http/FileAsyncHttpResponseHandler.java 65:67
+Generation
+Split Parameterlibrary/src/main/java/com/loopj/android/http/AsyncHttpResponseHandler.java@content : Stringlibrary/src/main/java/com/loopj/android/http/TextHttpResponseHandler.java@throwable : Throwablelibrary/src/main/java/com/loopj/android/http/AsyncHttpResponseHandler.java 151:151
+Generation
+Rename Parameterlibrary/src/main/java/com/loopj/android/http/AsyncHttpResponseHandler.java@error : Throwablelibrary/src/main/java/com/loopj/android/http/TextHttpResponseHandler.java@throwable : Throwablelibrary/src/main/java/com/loopj/android/http/AsyncHttpResponseHandler.java 151:151
+Generation
+Rename Parameterlibrary/src/main/java/com/loopj/android/http/BinaryHttpResponseHandler.java@error : Throwablelibrary/src/main/java/com/loopj/android/http/TextHttpResponseHandler.java@throwable : Throwablelibrary/src/main/java/com/loopj/android/http/BinaryHttpResponseHandler.java 52:52
+Generation
+Remove Method Annotationlibrary/src/main/java/com/loopj/android/http/AsyncHttpResponseHandler.java@@Deprecatedlibrary/src/main/java/com/loopj/android/http/TextHttpResponseHandler.java@public onFailure(statusCode int, headers Header[], responseBytes byte[], throwable Throwable) : voidlibrary/src/main/java/com/loopj/android/http/AsyncHttpResponseHandler.java 150:150
+Generation
+Push Down Methodlibrary/src/main/java/com/loopj/android/http/AsyncHttpResponseHandler.java@public onFailure(statusCode int, headers Header[], error Throwable, content String) : voidlibrary/src/main/java/com/loopj/android/http/TextHttpResponseHandler.java@public onFailure(statusCode int, headers Header[], responseBytes byte[], throwable Throwable) : voidlibrary/src/main/java/com/loopj/android/http/AsyncHttpResponseHandler.java 150:153
+Generation
+Rename Parameterlibrary/src/main/java/com/loopj/android/http/BinaryHttpResponseHandler.java@binaryData : byte[]library/src/main/java/com/loopj/android/http/TextHttpResponseHandler.java@responseBytes : byte[]library/src/main/java/com/loopj/android/http/BinaryHttpResponseHandler.java 52:52
+Generation
+Move Methodlibrary/src/main/java/com/loopj/android/http/BinaryHttpResponseHandler.java@public onFailure(statusCode int, headers Header[], binaryData byte[], error Throwable) : voidlibrary/src/main/java/com/loopj/android/http/TextHttpResponseHandler.java@public onFailure(statusCode int, headers Header[], responseBytes byte[], throwable Throwable) : voidlibrary/src/main/java/com/loopj/android/http/BinaryHttpResponseHandler.java 51:54
+******************************
