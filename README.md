@@ -49,18 +49,8 @@ nohup python3 command.py -r /Users/leichen/Code/pythonProject/pythonProject/pyth
 
 * trace
 ```shell
-python3 command.py -m trace -r /Users/leichen/Code/pythonProject/pythonProject/pythonProject/SCRMDetection/experiment/data/refactoring-toy-example_cr -d /Users/leichen/Code/pythonProject/pythonProject/pythonProject/SCRMDetection/experiment/output/result/refactoring-toy-example_cr/ --start 2 --end 5 >run_log/so_tr_refactoring-toy-example_cr.log
+python3 trace.py -f /Users/leichen/Code/pythonProject/pythonProject/pythonProject/SCRMDetection/experiment/output/result/mbassador_cr -r /Users/leichen/Code/pythonProject/pythonProject/pythonProject/SCRMDetection/experiment/data/mbassador_cr/.git```
 ```
-
-* retrace
-```shell
-python3 retrace.py -t /Users/leichen/Code/pythonProject/pythonProject/pythonProject/SCRMDetection/experiment/output/result/refactoring-toy-example_cr/ -r /Users/leichen/Code/pythonProject/pythonProject/pythonProject/SCRMDetection/experiment/data/refactoring-toy-example_cr >run_log/retrace_refactoring-toy-example_cr.log
-```
-
-
-trace is for compare refs in fined-grained and coarse-grained
-retrace is for compare refs in different granularities coarse-grained commits
-
 
 ### RQs
 * RQ1: How frequently do CGRs appear because of granularity change?
