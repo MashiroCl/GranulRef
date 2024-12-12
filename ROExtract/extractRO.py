@@ -175,8 +175,8 @@ def extractRO(RMPath: str, repoPath: str, recipe: str, git_stein: str, squashedO
             'RM detect commits after squash'
             # RMDetectWithOutput(rm, afterSquashed, repoNew, jsonOutputDirectory)
             RMDetectWithOutput_multiprocess(rm, afterSquashed, repoNew, jsonOutputDirectory)
-    with open(stein_output+"/coarse_normal_commit_map.json", "w") as f:
-        json.dump(coarse_normal_commit_map, f)
+        with open(stein_output+"/coarse_normal_commit_map.json", "w") as f:
+            json.dump(coarse_normal_commit_map, f)
     # RefDiff will generate .git-xxx folders, remove them if exist
     remove_redundant_git_files(os.path.dirname(jsonOutputDirectory))
 
