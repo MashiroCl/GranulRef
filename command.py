@@ -1,5 +1,5 @@
 import argparse
-from extract_refs import run, attach_source_locations
+from extract_refs import run
 
 
 def commands():
