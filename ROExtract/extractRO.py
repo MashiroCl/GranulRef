@@ -8,8 +8,8 @@ from repository import Repository, create_folder
 from refactoring_mining.miner import RefactoringMiner, RefDiff, remove_redundant_git_files
 import os
 
-from utils import squashWithRecipe, getConfig
-from multiprocessing import Process
+from utils import squashWithRecipe
+from multiprocessing import Pool
 
 
 def set_repository(repoPath: str):
@@ -19,7 +19,6 @@ def set_repository(repoPath: str):
     :return: repo:Repository
     '''
     repo = Repository(repoPath)
-    # repo.createWorkSpace()
     return repo
 
 
@@ -127,7 +126,7 @@ def extractRO(RMPath: str, repoPath: str, recipe: str, git_stein: str, squashedO
             for eachCommit in each1:
                 origin_commits.append(eachCommit)
         'RM detect commits without squash'
-        RMDetectWithOutput_multiprocess(rm, origin_commits, repo, jsonOutputDirectory)
+        RMDetectWithOutput_multiprocess(rm, origin_commits, repo, jsonOutputDirectory, logger)
         remove_redundant_git_files(os.path.dirname(repo.repoPath))
 
         # RMDetectWithOutput(rm, origin_commits, repo, jsonOutputDirectory)
@@ -161,11 +160,11 @@ def extractRO(RMPath: str, repoPath: str, recipe: str, git_stein: str, squashedO
             logger.info(f"Number of squash units list {len(squash_units)}")
             logger.info(f"Number of commits involved in squash units list {sum(len(each) for each in squash_units)}")
 
-
             # if squash output .git file is already exist, delete it to prohibit .git from becoming too big
             remove_file(squashedOutput)
 
-            afterSquashed = squashWithRecipe(repo, squash_units, recipe, git_stein, squashedOutput, stein_output, coarse_normal_commit_map)
+            afterSquashed = squashWithRecipe(repo, squash_units, recipe, git_stein, squashedOutput, stein_output,
+                                             coarse_normal_commit_map)
 
             logger.info("coarse-grained commit list %s" % afterSquashed)
 
@@ -174,13 +173,14 @@ def extractRO(RMPath: str, repoPath: str, recipe: str, git_stein: str, squashedO
 
             'RM detect commits after squash'
             # RMDetectWithOutput(rm, afterSquashed, repoNew, jsonOutputDirectory)
-            RMDetectWithOutput_multiprocess(rm, afterSquashed, repoNew, jsonOutputDirectory)
-        with open(stein_output+"/coarse_normal_commit_map.json", "w") as f:
+            RMDetectWithOutput_multiprocess(rm, afterSquashed, repoNew, jsonOutputDirectory, logger)
+        with open(stein_output + "/coarse_normal_commit_map.json", "w") as f:
             json.dump(coarse_normal_commit_map, f)
     # RefDiff will generate .git-xxx folders, remove them if exist
     remove_redundant_git_files(os.path.dirname(jsonOutputDirectory))
 
-def RMDetectWithOutput(rm, commits: list, repo, output: str):
+
+def RMDetectWithOutput(rm, commits: list, repo, output: str, logger):
     '''
     detect refactorings with RM for a list of commits
     :param rm: RefactoringMiner entity
@@ -190,10 +190,18 @@ def RMDetectWithOutput(rm, commits: list, repo, output: str):
     :return:
     '''
     for each in commits:
-        rm.detect(repo.repoPath, output, each)
+        try:
+            rm.detect(repo.repoPath, output, each)
+        except Exception as e:
+            logger.error(f"Refactoring detection error for {each}, error {e}")
 
 
-def RMDetectWithOutput_multiprocess(rm, commits: list, repo, output: str):
+def RMDetectWithOutput_wrapper(args):
+    rm, commits, repo, output, logger = args
+    RMDetectWithOutput(rm, commits, repo, output, logger)
+
+
+def RMDetectWithOutput_multiprocess(rm, commits: list, repo, output: str, logger):
     """
     Detect Refs with multi process
     :param rm:
@@ -202,13 +210,9 @@ def RMDetectWithOutput_multiprocess(rm, commits: list, repo, output: str):
     :param output:
     :return:
     """
-    process_num = int(os.cpu_count()/4*3)
-    step = int(len(commits) / process_num)+1
-    processes = []
-    for i in range(0, len(commits), step):
-        processes.append(Process(target=RMDetectWithOutput, args=(
-            rm, commits[i:i+step], repo, output)))
-    for p in processes:
-        p.start()
-    for p in processes:
-        p.join()
+    process_num = int(os.cpu_count() / 4 * 3)
+    step = int(len(commits) / process_num) + 1
+    args_list = [(rm, commits[i:i + step], repo, output, logger) for i in range(0, len(commits), step)]
+
+    with Pool(process_num) as pool:
+        pool.map(RMDetectWithOutput_wrapper, args_list)
