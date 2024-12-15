@@ -126,7 +126,10 @@ def extractRO(RMPath: str, repoPath: str, recipe: str, git_stein: str, squashedO
             for eachCommit in each1:
                 origin_commits.append(eachCommit)
         'RM detect commits without squash'
-        RMDetectWithOutput_multiprocess(rm, origin_commits, repo, jsonOutputDirectory, logger)
+
+        RMDetectWithOutput(rm, origin_commits, repo, jsonOutputDirectory, logger)
+        # RMDetectWithOutput_multiprocess(rm, origin_commits, repo, jsonOutputDirectory, logger)
+        # RMDetectRepository(rm, repo, jsonOutputDirectory, logger)
         remove_redundant_git_files(os.path.dirname(repo.repoPath))
 
         # RMDetectWithOutput(rm, origin_commits, repo, jsonOutputDirectory)
@@ -172,8 +175,9 @@ def extractRO(RMPath: str, repoPath: str, recipe: str, git_stein: str, squashedO
             repoNew.addRemote(repoNew.repoPath)
 
             'RM detect commits after squash'
-            # RMDetectWithOutput(rm, afterSquashed, repoNew, jsonOutputDirectory)
-            RMDetectWithOutput_multiprocess(rm, afterSquashed, repoNew, jsonOutputDirectory, logger)
+            RMDetectWithOutput(rm, afterSquashed, repoNew, jsonOutputDirectory, logger)
+            # RMDetectWithOutput_multiprocess(rm, afterSquashed, repoNew, jsonOutputDirectory, logger)
+            # RMDetectRepository(rm, repoNew,jsonOutputDirectory, logger)
         with open(stein_output + "/coarse_normal_commit_map.json", "w") as f:
             json.dump(coarse_normal_commit_map, f)
     # RefDiff will generate .git-xxx folders, remove them if exist
@@ -195,6 +199,12 @@ def RMDetectWithOutput(rm, commits: list, repo, output: str, logger):
         except Exception as e:
             logger.error(f"Refactoring detection error for {each}, error {e}")
 
+
+def RMDetectRepository(rm, repo, output: str, logger):
+    try:
+        rm.detectRepository(repo.repoPath, output, logger)
+    except Exception as e:
+        logger.error(f"Refactoring detection error for {repo.repoPath}, error {e}")
 
 def RMDetectWithOutput_wrapper(args):
     rm, commits, repo, output, logger = args
