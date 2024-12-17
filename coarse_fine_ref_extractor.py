@@ -127,17 +127,16 @@ def extract_CGR_contained_CGC(repo_path):
         lower_granularity_refs = load_lower_granularity_refs(repo_path, normal_grained_commits,
                                                              normal_coarse_commit_map)
 
-
         # Extract the coarse grained refs
         # Match ref in cgr_candidates with lower_g_refs, the not matched ones are cgrs
-        if coarse_grained_commit =="ecbbb419f4533cdfccc15924a09dcacd3afa0bc5":
+        if coarse_grained_commit == "ecbbb419f4533cdfccc15924a09dcacd3afa0bc5":
             cgrs = []
             for candidate in cgr_candidates:
                 # print(f"candidate: {candidate}")
                 is_cgr = True
                 for num_of_ignored_commit in lower_granularity_refs.keys():
                     if any([match_with_traced_location(candidate, 0, ref, num_of_ignored_commit) for ref in
-                           lower_granularity_refs[num_of_ignored_commit]]):
+                            lower_granularity_refs[num_of_ignored_commit]]):
                         is_cgr = False
                         continue
                 if is_cgr:
@@ -145,7 +144,6 @@ def extract_CGR_contained_CGC(repo_path):
 
             if len(cgrs):
                 CGRmap[coarse_grained_commit] = cgrs
-
 
         cgrs = []
         for candidate in cgr_candidates:
@@ -166,8 +164,6 @@ def extract_CGR_contained_CGC(repo_path):
 def extract_FGR_contained_NGC(repo_path):
     """
     Extract the FGR which are refs that only exists in NGC but not in any CGC
-    e.g. NGC c1~c10
-    for ref r detected in commit c5, it should be matched with
     :param repo_path:
     :return:
     """
@@ -187,7 +183,7 @@ def extract_FGR_contained_NGC(repo_path):
     straight_commit_sequences = load_straight_commit_sequences()
     # {normal_grained_commit:granularity:[(tuple),ref] }
     FGRmap = {}
-
+    visited_fgr = set()
     for straight_commit_sequence in straight_commit_sequences:
         for normal_grained_commit in straight_commit_sequence:
             fgr_candidates = load_traced_refs(f"{repo_path}/o1/{normal_grained_commit}.json")
@@ -202,28 +198,31 @@ def extract_FGR_contained_NGC(repo_path):
                     granularity_refs[len(commit_tuple)] = {}
                 granularity_refs[len(commit_tuple)][commit_tuple] = higher_granularity_refs[commit_tuple]
 
+            granularities = sorted(granularity_refs.keys())
+            # extract FGR by comparing refs detected from NGC with the refs detected in CGC on each granularity
             for fgr_candidate in fgr_candidates:
-                for granularity in granularity_refs:
-                    is_fgr = False
-                    recorded_tuple = None
+                for granularity in granularities:
+                    if fgr_candidate in visited_fgr:
+                        break
                     # FGR at granularity g refers to ref disappears in any coarse-grained commit at granularity g
                     # e.g. c1,c2,c3   r in c2 disappear in {c2,c3}, appears in {c1,c2}, is a FGR
                     for commit_tuple in granularity_refs[granularity]:
                         if not any(
                                 [match_with_traced_location(fgr_candidate, len(commit_tuple) - list(commit_tuple).index(
-                                        normal_grained_commit) - 1, ref, 0) for ref in
+                                    normal_grained_commit) - 1, ref, 0) for ref in
                                  granularity_refs[granularity][commit_tuple]]):
-                            is_fgr = True
-                            recorded_tuple = commit_tuple
-                            break
+                            visited_fgr.add(fgr_candidate)
 
-                    if is_fgr:
-                        if normal_grained_commit not in FGRmap:
-                            FGRmap[normal_grained_commit] = {}
-                        if granularity not in FGRmap[normal_grained_commit]:
-                            FGRmap[normal_grained_commit][granularity] = []
-                        FGRmap[normal_grained_commit][granularity].append((recorded_tuple, fgr_candidate))
+                            if normal_grained_commit not in FGRmap:
+                                FGRmap[normal_grained_commit] = {}
+                            if granularity not in FGRmap[normal_grained_commit]:
+                                FGRmap[normal_grained_commit][granularity] = []
+                            FGRmap[normal_grained_commit][granularity].append((commit_tuple, fgr_candidate))
+
+                            break
+    print(len(visited_fgr))
     return FGRmap
+
 
 def collect_fgr_according_to_granularity(fgrs):
     res = {}
@@ -234,6 +233,7 @@ def collect_fgr_according_to_granularity(fgrs):
             for commits, ref in fgrs[each][granularity]:
                 res[granularity].append(ref)
     return res
+
 
 if __name__ == '__main__':
     root_path = "/Users/leichen/Code/pythonProject/pythonProject/pythonProject/SCRMDetection/experiment/output/result/"
@@ -246,33 +246,33 @@ if __name__ == '__main__':
     # cgr = extract_CGR_contained_CGC(root_path + "refactoring-toy-example_cr")
     # fgr = extract_FGR_contained_NGC(root_path + "refactoring-toy-example_cr")
 
-
+    # cgrmap = {2: [], 3: [], 4: [], 5: []}
     # print("cgrs are: ")
     # cgr_num = 0
     # for each in cgr:
-    #     print(each)
-    #     print(coarse_normal_commit_map.get(each))
+    #     # print(each)
+    #     # print(coarse_normal_commit_map.get(each))
+    #     cgrmap[len(coarse_normal_commit_map.get(each))] += cgr[each]
     #     cgr_num += len(cgr[each])
     #     for ref in cgr[each]:
     #         print(ref)
-    # print("In total fgr num: " + str(cgr_num))
+    # print("In total cgr num: " + str(cgr_num))
+    # print("cgrmap: ", cgrmap)
 
-    #TODO: there are too many FGRs, there shouldn't be so much, check what is wrong
-    print("fgrs are: ")
-    fgr_num = 0
-    for each in fgr:
-        print(each)
-        for granularity in fgr[each]:
-            print(granularity)
-            fgr_num += len(fgr[each][granularity])
-            for commits, ref in fgr[each][granularity]:
-                print(commits)
-                print(ref)
-    print("In total fgr num: " + str(fgr_num))
+    # print("fgrs are: ")
+    # fgr_num = 0
+    # for each in fgr:
+    #     print(each)
+    #     for granularity in fgr[each]:
+    #         print(granularity)
+    #         fgr_num += len(fgr[each][granularity])
+    #         for commits, ref in fgr[each][granularity]:
+    #             print(commits)
+    #             print(ref)
+    # print("In total fgr num: " + str(fgr_num))
 
     granulrity_fgr = collect_fgr_according_to_granularity(fgr)
     print([(each[0], len(set(each[1]))) for each in granulrity_fgr.items()])
-
 
     # fgr = extract_FGR_contained_NGC(root_path + "mbassador_cr")
     # print(f"find grained refs:\n {fgr}")
