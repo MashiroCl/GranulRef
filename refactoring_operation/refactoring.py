@@ -38,20 +38,7 @@ class Refactoring:
             return NotImplemented
 
     def __key(self):
-        def parse_source_location(source_locations: list[BlameRes]) -> str:
-            res = ""
-            for each in source_locations:
-                res += "#"
-                res += "@".join([each.sha1, each.oline, each.file_name])
-            return res
-
-        # location refactored code (startLine, endLine) cannot be used
-        # as the hash key because it will be affected by commit squash
-        if self.refactored_source_location:
-            return self.type, self.left.__str__(), self.right.__str__(), parse_source_location(
-                self.refactored_source_location)
-        else:
-            return self.type, self.left.__str__(), self.right.__str__()
+        return self.type, str(self.left), str(self.right),
 
     def __str__(self):
         return f"{self.type} {self.left.__str__()} {self.right.__str__()}  {self.refactored_location.__str__()}"
