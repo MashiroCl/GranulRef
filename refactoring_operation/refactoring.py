@@ -38,7 +38,7 @@ class Refactoring:
             return NotImplemented
 
     def __key(self):
-        return self.type, str(self.left), str(self.right),
+        return self.type, str(self.left), str(self.right), str(self.refactored_location)
 
     def __str__(self):
         return f"{self.type} {self.left.__str__()} {self.right.__str__()}  {self.refactored_location.__str__()}"
