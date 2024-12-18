@@ -118,7 +118,7 @@ def get_ignored_commits(normal_grained_commit_sha1: str, granularity, commit_par
     # for a commit with granularity g, the number of commits should be ignored N = [0, min(num_pCommit_in_SCS, (5-g))]
     # in parent_commits, higher index commits are proposed earlier (nearer parent commits for the target commit)
     # range for ignorable commit in parent_commits should be [-N:]
-    return parent_commits[-min(len(parent_commits), 5 - granularity):] if granularity != 5 else []
+    return parent_commits[:min(len(parent_commits), 5 - granularity)] if granularity != 5 else []
 
 
 def trace_for_repository(straight_commit_sequences: list[list[str]], commitRef_path: str, git_path: str) -> None:
