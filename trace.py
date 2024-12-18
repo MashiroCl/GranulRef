@@ -1,5 +1,6 @@
 import argparse
 import json
+import pathlib
 import re
 import subprocess
 from pathlib import Path
@@ -104,8 +105,8 @@ def load_commitRefs(path: str):
     granularity_commit = {}
     for i in range(1, 6):
         granularity_commit[i] = []
-        folder_coarse = Path(path).joinpath(str(i), "refs")
-        for cr_file in folder_coarse.iterdir():
+        folder_granularity = Path(path).joinpath(str(i), "refs")
+        for cr_file in folder_granularity.iterdir():
             cr = CommitRef(cr_file, i)
             if cr.sha1:  # RM result of the initial commit does not contain any information
                 granularity_commit[i].append(cr)
@@ -141,7 +142,6 @@ def trace_for_repository(straight_commit_sequences: list[list[str]], commitRef_p
             ignorable_commits = get_ignored_commits(
                 commitRef.sha1 if commitRef.coarse_granularity == 1 else coarse_normal_commit_map.get(commitRef.sha1)[
                     -1], granularity, commit_parent_map)
-            print(commitRef.sha1, len(ignorable_commits))
             parent_commit_sha1 = get_parent_sha1(git_path, commitRef.sha1 if commitRef.coarse_granularity == 1 else
             coarse_normal_commit_map.get(commitRef.sha1)[-1])
 
