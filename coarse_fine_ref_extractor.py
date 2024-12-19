@@ -211,15 +211,8 @@ def collect_cgr_according_to_granularity(cgcs):
     res = {}
     for i in range(2, 6):
         res[i] = []
-    # TODO: confirm the correctness of the CGRs
     for id, commit in cgcs.items():
         res[commit['granularity']] += set(commit['CGRs'])
-
-        if commit['granularity'] == 5:
-            print(id)
-            for ref in commit['CGRs']:
-                print(ref)
-
     return res
 
 
@@ -231,7 +224,7 @@ def collect_fgr_according_to_granularity(fgrs):
     for i in range(2, 6):
         res[i] = []
     for each in fgrs:
-        for granularity in fgr[each]:
+        for granularity in fgrs[each]:
             for commits, ref in fgrs[each][granularity]:
                 res[granularity].append(ref)
     return res
