@@ -4,6 +4,8 @@ Collect the intermediate data from experiment log and dump into csv files
 import csv
 import pathlib
 
+from coarse_fine_ref_extractor import extract_CGR_contained_CGC, extract_FGR_contained_NGC, \
+    collect_cgr_according_to_granularity, collect_fgr_according_to_granularity
 from trace import load_commitRefs
 
 
@@ -54,26 +56,35 @@ def parse(repo_path: pathlib.Path) -> dict:
            'Number of straight sequences': inter_d[1]['Number of straight sequences'],
            'Number of commits involved in straight sequences': inter_d[1][
                'Number of commits involved in straight sequences'],
-           'Number of NGR': 0}
+           'Number of NGR': sum(count_normal_grained_refs(repo_path).values())}
     for granularity in range(2, 6):
         res[f"Number of squash units(granularity={granularity})"] = inter_d[granularity]['Number of squash units list']
         res[f"Number of commits involved in squash units list(granularity={granularity})"] = inter_d[granularity][
             'Number of commits involved in squash units list']
-        res[f"CGR({granularity})"] = 0
-        res[f"FGR({granularity})"] = 0
     return res
 
 
-def get_CGR_FGR_date():
-    pass
+def get_CGR_FGR_data(repo_path: str):
+    cgrs = extract_CGR_contained_CGC(repo_path)
+    fgrs = extract_FGR_contained_NGC(repo_path)
+    cgr_nums = collect_cgr_according_to_granularity(cgrs)
+    fgr_nums = collect_fgr_according_to_granularity(fgrs)
+    res = {}
+    for granularity in range(2, 6):
+        res[f"CGR({granularity})"] = len(cgr_nums.get(granularity, []))
+
+    for granularity in range(2, 6):
+        res[f"FGR({granularity})"] = len(fgr_nums.get(granularity, []))
+    return res
 
 
 def build_csv(repo_name, repo_path: pathlib.Path, csv_path):
     date_row = parse(repo_path)
     date_row["Repository"] = repo_name
+    cgr_fgr_data = get_CGR_FGR_data(str(repo_path))
+    date_row.update(cgr_fgr_data)
 
-    # TODO: get other data
-    with open(csv_path, "a") as csv_file:
+    with open(csv_path, 'a') as csv_file:
         is_empty = csv_file.tell() == 0
         writer = csv.DictWriter(csv_file, fieldnames=date_row.keys())
 
@@ -87,7 +98,5 @@ if __name__ == "__main__":
     repo = "mbassador_cr"
     repo_path = f"/Users/leichen/Code/pythonProject/pythonProject/pythonProject/SCRMDetection/experiment/output/result/{repo}"
     repo_path = pathlib.Path(repo_path)
-    intermediate_date = parse(repo_path)
-    print(intermediate_date)
-    normal_grained_refs = count_normal_grained_refs(repo_path)
-    print(sum(normal_grained_refs.values()))
+    # res = count_normal_grained_refs(repo_path)
+    build_csv(repo_name="mbassador", repo_path=repo_path, csv_path="./test.csv")
