@@ -77,7 +77,7 @@ def get_blame_res(line_numbers: tuple[int, int], blame_at_commit: str, blamed_fi
         command = f"git --git-dir={git_path} blame --line-porcelain {blame_at_commit} "
         for ignore_commit in ignore_commits:
             command = command + f"--ignore-rev {ignore_commit} "
-        command = command + f"-L {line_numbers[0]},{line_numbers[1]} {file_path}"
+        command = command + f"-L {line_numbers[0]},{line_numbers[1]} '{file_path}'"
         return command
 
     blamed_file_path = Path(blamed_file_path) if not isinstance(blamed_file_path, Path) else blamed_file_path
