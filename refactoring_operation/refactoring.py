@@ -19,7 +19,8 @@ class Refactoring:
                                                           properties.get("leftSideLocations")[0]["endLine"],
                                                           properties.get("leftSideLocations")[0]["filePath"],
                                                           properties.get("leftSideLocations")[0]["codeElement"])
-        except IndexError("Refactoring does not have leftSideLocations property"):
+        except IndexError:
+            print("Refactoring does not have leftSideLocations property")
             self.refactored_location = None
         self.refactored_source_location = {}
 
