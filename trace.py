@@ -29,6 +29,9 @@ class CommitRef:
             if ref[
                 "type"] == "Move Source Folder":  # exclude Move Source Folder because it contains neither leftSideLocation nor rightSideLocation
                 continue
+            if len(ref.get("leftSideLocations",
+                           [])) == 0:  # exclude refactorings which do not have leftSideLocation, theoretically, all refactorings should contain leftSideLocation
+                continue
             self.refs.append(Refactoring(ref))
 
 
