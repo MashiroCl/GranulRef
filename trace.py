@@ -31,6 +31,7 @@ class CommitRef:
                 continue
             if len(ref.get("leftSideLocations",
                            [])) == 0:  # exclude refactorings which do not have leftSideLocation, theoretically, all refactorings should contain leftSideLocation
+                print(f"sha1: {self.sha1}, coarse granularity: {self.coarse_granularity}, refactoring: {ref}")
                 continue
             self.refs.append(Refactoring(ref))
 
