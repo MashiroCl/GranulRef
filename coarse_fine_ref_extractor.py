@@ -149,7 +149,8 @@ def extract_FGR_contained_NGC(repo_path):
     """
     Extract the FGR which are refs that only exists in NGC but not in any CGC
     :param repo_path:
-    :return: dict {normal_grained_commit: granularity: [FGRs]}
+    :return: dict {normal_grained_commit: granularity: [((c1,c2),FGR), ((c1,c2,c3),FGR)]}
+
     """
 
     def load_straight_commit_sequences():
@@ -214,9 +215,6 @@ def collect_cgr_according_to_granularity(cgcs):
     for id, commit in cgcs.items():
         res[commit['granularity']] += set(commit['CGRs'])
     return res
-
-
-# [(2, 18), (3, 22), (4, 19), (5, 17)]
 
 
 def collect_fgr_according_to_granularity(fgrs):
