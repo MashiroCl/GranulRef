@@ -139,7 +139,6 @@ def build_type_csv(cgr_types, fgr_types):
 def collect_CGR_FGR_types(total_cgr_types, total_fgr_types, cgrs, fgrs):
     def collect_types(total_types, types):
         for key in types:
-            print(key, types[key])
             if key not in total_types:
                 total_types[key] = {}
             for granularity in types[key]:
