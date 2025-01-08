@@ -7,6 +7,7 @@ from pathlib import Path
 from utils import load_commit_pairs_all
 from line_trace import BlameRes
 from refactoring_operation.refactoring import Refactoring
+from json import JSONDecodeError
 
 
 class CommitRef:
@@ -19,10 +20,14 @@ class CommitRef:
 
     def _load_ref_file(self):
         with open(self.file) as f:
-            c = json.load(f)
-            if len(c["commits"]):  # exclude the most initial commit
-                self.sha1 = c["commits"][0]["sha1"]
-                self._load_refs(c)
+            try:
+                c = json.load(f)
+                if len(c["commits"]):  # exclude the most initial commit
+                    self.sha1 = c["commits"][0]["sha1"]
+                    self._load_refs(c)
+            except JSONDecodeError:
+                print(
+                    f"Decode json error on sha1: {self.sha1} file: {self.file}  coarse granularity: {self.coarse_granularity}")
 
     def _load_refs(self, c):
         for ref in c["commits"][0]["refactorings"]:
@@ -61,19 +66,16 @@ def get_blame_res(line_numbers: tuple[int, int], blame_at_commit: str, blamed_fi
         return False
 
     def parse(output) -> list[BlameRes]:
-        # print("--------------------start-----------------------")
-        # print("output", output)
         blameRes_list = []
         properties = [each for each in output.split("\n") if
                       is_file_line(each.strip()) or is_commit_sha1(each.split(" ")[0].strip())]
-        # print("properties", properties)
         for i in range(0, len(properties), 2):
             sha1, oline = properties[i].split(" ")[:2]
             try:
                 file_name = properties[i + 1].split("filename ")[1]
             except IndexError:
-                print("IndexError")
-                print("properties", properties)
+                print("IndexError: properties", properties)
+                continue
             blameRes_list.append(BlameRes(sha1, oline, file_name))
         return blameRes_list
 
@@ -96,12 +98,15 @@ def get_parent_sha1(git_path, sha1) -> str:
 
 def trace(commit: CommitRef, parent_commit_sha1, ignored_commits: list[str], git_path):
     for ref in commit.refs:
-        res = get_blame_res(
+        blame_res = get_blame_res(
             line_numbers=(ref.refactored_location.startLine, ref.refactored_location.startLine),
             blame_at_commit=parent_commit_sha1,
             blamed_file_path=ref.refactored_location.file_path,
             ignore_commits=ignored_commits,
-            repo_git_path=git_path)[0].to_dict()
+            repo_git_path=git_path)
+        res = blame_res[0].to_dict() if len(blame_res) else BlameRes(sha1="Trace result missing",
+                                                                     oline="Trace result missing",
+                                                                     file_name="Trace result missing").to_dict()
         ref.traced_location[len(ignored_commits)] = res
 
 
