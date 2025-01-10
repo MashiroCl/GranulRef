@@ -208,6 +208,14 @@ def extract_FGR_contained_NGC(repo_path):
     return FGRmap
 
 
+# NGR
+def extract_NGR(ngr_path: str):
+    refs = []
+    for path in pathlib.Path(ngr_path).iterdir():
+        refs.append(load_traced_refs(str(path)))
+    return refs
+
+
 def collect_cgr_according_to_granularity(cgcs):
     res = {}
     for i in range(2, 6):

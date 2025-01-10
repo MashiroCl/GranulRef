@@ -5,7 +5,7 @@ import csv
 import pathlib
 
 from coarse_fine_ref_extractor import extract_CGR_contained_CGC, extract_FGR_contained_NGC, \
-    collect_cgr_according_to_granularity, collect_fgr_according_to_granularity
+    collect_cgr_according_to_granularity, collect_fgr_according_to_granularity, extract_NGR
 from trace import load_commitRefs
 
 
@@ -117,7 +117,7 @@ def build_count_csv(repo_name, repo_path: pathlib.Path, cgrs, fgrs, csv_path):
         writer.writerow(date_row)
 
 
-def build_type_csv(cgr_types, fgr_types):
+def build_type_csv(cgr_types, fgr_types, ngr_types):
     def build_csv(types, csv_path):
         rows = []
         for key, value_map in types.items():
@@ -131,9 +131,18 @@ def build_type_csv(cgr_types, fgr_types):
             for row in rows:
                 writer.writerow(row)
 
+    def build_ngr_csv(ngr_types, csv_path):
+        rows = [[type, value] for type, value in ngr_types.items()]
+        with open(csv_path, mode='w', newline='') as file:
+            writer = csv.writer(file)
+            writer.writerow(["type", "number"])  # Write the first header row
+            for row in rows:
+                writer.writerow(row)
+
     header_row = ["type\\granularit level", 2, 3, 4, 5]
     build_csv(cgr_types, "./cgr_types.csv")
     build_csv(fgr_types, "./fgr_types.csv")
+    build_ngr_csv(ngr_types, "./ngr_types.csv")
 
 
 def collect_CGR_FGR_types(total_cgr_types, total_fgr_types, cgrs, fgrs):
@@ -149,6 +158,14 @@ def collect_CGR_FGR_types(total_cgr_types, total_fgr_types, cgrs, fgrs):
     total_cgr_types = collect_types(total_cgr_types, cgr_types)
     total_fgr_types = collect_types(total_fgr_types, fgr_types)
     return total_cgr_types, total_fgr_types
+
+
+def collect_NGR_types(output_path, total_ngr_types):
+    refs = extract_NGR(output_path.joinpath("o1"))
+    for i, v in enumerate(refs):
+        for ref in v:
+            total_ngr_types[ref] = total_ngr_types.get(ref, 0) + 1
+    return total_ngr_types
 
 
 if __name__ == "__main__":
@@ -201,13 +218,15 @@ if __name__ == "__main__":
     titan_path = pathlib.Path("/home/salab/chenlei/CGR/experiment/output/")
     total_cgr_types = {}
     total_fgr_types = {}
+    total_ngr_types = {}
     for repo in repos:
         cgrs, fgrs = extract_CGR_FGR_contained_commits(titan_path.joinpath(repo + "_cr"))
         total_cgr_types, total_fgr_types = collect_CGR_FGR_types(total_cgr_types, total_fgr_types, cgrs, fgrs)
+        total_ngr_types = collect_NGR_types(titan_path.joinpath(repo + "_cr"), total_ngr_types)
         build_count_csv(repo_name=repo, repo_path=titan_path.joinpath(repo + "_cr"), cgrs=cgrs, fgrs=fgrs,
                         csv_path="./intermediate.csv")
         print("Processed ref count: " + repo)
 
     print("Building type csv")
-    build_type_csv(total_cgr_types, total_fgr_types)
+    build_type_csv(total_cgr_types, total_fgr_types, total_ngr_types)
     print("Built type csv")
