@@ -164,7 +164,7 @@ def collect_NGR_types(output_path, total_ngr_types):
     refs = extract_NGR(output_path.joinpath("o1"))
     for i, v in enumerate(refs):
         for ref in v:
-            total_ngr_types[ref] = total_ngr_types.get(ref, 0) + 1
+            total_ngr_types[ref.type] = total_ngr_types.get(ref.type, 0) + 1
     return total_ngr_types
 
 
