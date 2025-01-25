@@ -23,7 +23,7 @@ class Refactoring:
             print("Refactoring does not have leftSideLocations property")
             self.refactored_location = None
         self.refactored_source_location = {}
-
+        self.description = None
         self.traced_location = {}
 
     def __hash__(self):
