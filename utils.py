@@ -10,7 +10,7 @@ import pathlib
 from jsonUtils import JsonUtils
 import json
 import time
-
+import subprocess
 
 def RM_supported_type(RMSupportedREF):
     dict = {}
@@ -133,3 +133,26 @@ def load_commit_pairs_all(repo_path):
         squash_log_ps = pathlib.Path(repo_path).joinpath(str(i)).joinpath(f"coarse_normal_commit_map.json")
         res.update(load_coarse_normal_commit_map(squash_log_ps))
     return res
+
+
+def get_orign_gitstein_commit_map(origin_git_path):
+    try:
+        result = subprocess.run(
+            ['git', '-C', origin_git_path, 'log', '--pretty=format:%H %N'],
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+            text=True,
+            check=True
+        )
+        
+        git_log_dict = {}
+        for line in result.stdout.strip().split("\n"):
+            parts = line.split(" ", 1)
+            commit_hash = parts[0]
+            note = parts[1] if len(parts) > 1 else ""
+            git_log_dict[commit_hash] = note
+        
+        return git_log_dict
+    except subprocess.CalledProcessError as e:
+        print(f"Error: {e.stderr}")
+        return {}
