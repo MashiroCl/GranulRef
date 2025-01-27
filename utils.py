@@ -5,12 +5,14 @@
 4.squash
 5.RM on remaining all commits (merge excluded)
 """
+
 import pathlib
 
 from jsonUtils import JsonUtils
 import json
 import time
 import subprocess
+
 
 def RM_supported_type(RMSupportedREF):
     dict = {}
@@ -20,13 +22,14 @@ def RM_supported_type(RMSupportedREF):
         dict[each.lower().strip()] = 0
     return dict
 
+
 def dictAdd(dictS, dict2) -> dict:
-    '''
+    """
     add all value from dict2 to dict1
     :param dictS:
     :param dict2:
     :return:
-    '''
+    """
     for each1 in dictS:
         for each2 in dict2:
             if each1.lower() == each2.lower():
@@ -66,8 +69,16 @@ def exclude_0_in_dict(dict):
     return dict2
 
 
-def squashWithRecipe(repo, cc_lists_str, recipe, git_stein, squashedOutput, steinOuput, coarse_normal_commit_map) -> str:
-    '''
+def squashWithRecipe(
+    repo,
+    cc_lists_str,
+    recipe,
+    git_stein,
+    squashedOutput,
+    steinOuput,
+    coarse_normal_commit_map,
+) -> str:
+    """
     squash commits according to recipe.json using git_stein
     :param jU: jsonUtil instance
     :param repo: Reository instance
@@ -76,12 +87,12 @@ def squashWithRecipe(repo, cc_lists_str, recipe, git_stein, squashedOutput, stei
     :param git_stein: path for git_stein
     :param squashedOutput: output json file path
     :return: list of newly generated commit sha1 because of squash
-    '''
-    'Write recipe'
+    """
+    "Write recipe"
     JsonUtils().writeRecipe(cc_lists_str, recipe)
-    'Squash according to recipe'
+    "Squash according to recipe"
     repo.squashCommits(recipe, git_stein, squashedOutput, repo.repoPath, steinOuput)
-    'Find newly generated commit No.'
+    "Find newly generated commit No."
     steinLog = steinOuput + "/stein.log"
     with open(steinLog, "r") as f:
         lines = f.readlines()
@@ -90,7 +101,7 @@ def squashWithRecipe(repo, cc_lists_str, recipe, git_stein, squashedOutput, stei
         for eachLine in lines:
             if " Rewrite commit: " in eachLine:
                 temp = eachLine.split("Rewrite commit: ")[1].split(" -> ")
-                'Attention: merge not excluded'
+                "Attention: merge not excluded"
                 if temp[0].strip() == eachList[0].strip():
                     result.append(temp[1].strip())
                     coarse_normal_commit_map[temp[1].strip()] = eachList
@@ -102,16 +113,18 @@ def getConfig():
         data = json.load(f)
     return data
 
+
 def get_config():
     with open("config.json") as f:
         data = json.load(f)
     return data
 
+
 def outputTime(t) -> str:
     h = t // 3600
     m = (t - h * 3600) // 60
     s = t - h * 3600 - m * 60
-    tResult = 'time cost:  {:.0f}h {:.0f}min {:.0f}s'.format(h, m, s)
+    tResult = "time cost:  {:.0f}h {:.0f}min {:.0f}s".format(h, m, s)
     return tResult
 
 
@@ -119,7 +132,7 @@ def timeRecord():
     return time.time()
 
 
-def load_coarse_normal_commit_map(path)->dict:
+def load_coarse_normal_commit_map(path) -> dict:
     if not path.exists():
         return {}
     with open(str(path)) as f:
@@ -130,28 +143,32 @@ def load_coarse_normal_commit_map(path)->dict:
 def load_commit_pairs_all(repo_path):
     res = dict()
     for i in range(2, 6):
-        squash_log_ps = pathlib.Path(repo_path).joinpath(str(i)).joinpath(f"coarse_normal_commit_map.json")
+        squash_log_ps = (
+            pathlib.Path(repo_path)
+            .joinpath(str(i))
+            .joinpath(f"coarse_normal_commit_map.json")
+        )
         res.update(load_coarse_normal_commit_map(squash_log_ps))
     return res
 
 
-def get_orign_gitstein_commit_map(origin_git_path):
+def get_convertedCommit_origin_map(origin_git_path):
     try:
         result = subprocess.run(
-            ['git', '-C', origin_git_path, 'log', '--pretty=format:%H %N'],
+            ["git", "-C", origin_git_path, "log", "--pretty=format:%H %N"],
             stdout=subprocess.PIPE,
             stderr=subprocess.PIPE,
             text=True,
-            check=True
+            check=True,
         )
-        
+
         git_log_dict = {}
         for line in result.stdout.strip().split("\n"):
             parts = line.split(" ", 1)
             commit_hash = parts[0]
             note = parts[1] if len(parts) > 1 else ""
             git_log_dict[commit_hash] = note
-        
+
         return git_log_dict
     except subprocess.CalledProcessError as e:
         print(f"Error: {e.stderr}")
