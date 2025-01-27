@@ -1,19 +1,13 @@
-"""
-Extract coarse-grained refactorings & fine-grained refactorings from ]
-1) the refactorings detected from granularity 1~5
-2) the traced result
-3) the retraced result
-"""
-
 import pathlib
 from collections import defaultdict
-from utils import get_orign_gitstein_commit_map
+from utils import get_convertedCommit_origin_map
 from match import (
     load_traced_refs,
     match_with_traced_location,
 )
 from utils import load_commit_pairs_all
 import csv
+import argparse
 
 
 def search_sub_commit_combination(l: list) -> list[str]:
@@ -281,8 +275,8 @@ def collect_fgr_according_to_granularity(fgrs):
     return res
 
 
-def collect_cgr_repos(
-    repo, file_path, coarse_normal_commit_map, orign_gitstein_commit_map
+def collect_cgr_repo(
+    repo, file_path, coarse_normal_commit_map, convertedCommit_origin_map
 ):
     def write_cgr_to_csv(rows, csv_path):
         csv_head = [
@@ -304,7 +298,7 @@ def collect_cgr_repos(
     for c in cgr:
         normal_commitIDs = coarse_normal_commit_map.get(c)
         normal_commitIDs = [
-            orign_gitstein_commit_map.get(each) for each in normal_commitIDs
+            convertedCommit_origin_map.get(each) for each in normal_commitIDs
         ]
         granularity = cgr[c]["granularity"]
 
@@ -327,7 +321,7 @@ def collect_cgr_repos(
     write_cgr_to_csv(ref_csv_rows, f"cgrs/{repo}.csv")
 
 
-def collect_fgr_repos(repo, file_path, orign_gitstein_commit_map):
+def collect_fgr_repo(repo, file_path, convertedCommit_origin_map):
     def write_fgr_to_csv(rows, csv_path):
         csv_head = [
             "repository",
@@ -351,12 +345,12 @@ def collect_fgr_repos(repo, file_path, orign_gitstein_commit_map):
         for granularity in fgr[c]:
             for t in fgr[c][granularity]:
                 ref_csv_row = [repo]
-                ngcs = [orign_gitstein_commit_map.get(each) for each in t[0]]
+                ngcs = [convertedCommit_origin_map.get(each) for each in t[0]]
                 ref = t[1]
 
                 ref_csv_row = [repo]
                 ref_csv_row.append(granularity)
-                ref_csv_row.append(orign_gitstein_commit_map.get(c))
+                ref_csv_row.append(convertedCommit_origin_map.get(c))
                 ref_csv_row.append(ngcs)
                 ref_csv_row.append(ref.type)
                 ref_csv_row.append(
@@ -374,20 +368,37 @@ def collect_fgr_repos(repo, file_path, orign_gitstein_commit_map):
 
 
 if __name__ == "__main__":
-    root_path = "/Users/leichen/Code/pythonProject/pythonProject/pythonProject/SCRMDetection/experiment/output/result/"
-    data_path = "/Users/leichen/data/OSS/comment_removed/"
+    # root_path = "/Users/leichen/Code/pythonProject/pythonProject/pythonProject/SCRMDetection/experiment/output/result/"
+    # data_path = "/Users/leichen/data/OSS/comment_removed/"
 
-    coarse_normal_commit_map = load_commit_pairs_all(root_path + "mbassador_cr")
-    orign_gitstein_commit_map = get_orign_gitstein_commit_map(data_path + "mbassador_cr")
-    # collect_cgr_repos(
+    # coarse_normal_commit_map = load_commit_pairs_all(root_path + "mbassador_cr")
+    # orign_gitstein_commit_map = get_convertedCommit_origin_map(
+    #     data_path + "mbassador_cr"
+    # )
+    # collect_cgr_repo(
     #     "mbassador",
     #     "/Users/leichen/Code/pythonProject/pythonProject/pythonProject/SCRMDetection/experiment/output/result/mbassador_cr",
     #     coarse_normal_commit_map,
     #     orign_gitstein_commit_map,
     # )
 
-    collect_fgr_repos(
-        "mbassador",
-        "/Users/leichen/Code/pythonProject/pythonProject/pythonProject/SCRMDetection/experiment/output/result/mbassador_cr",
-        orign_gitstein_commit_map,
+    # collect_fgr_repo(
+    #     "mbassador",
+    #     "/Users/leichen/Code/pythonProject/pythonProject/pythonProject/SCRMDetection/experiment/output/result/mbassador_cr",
+    #     orign_gitstein_commit_map,
+    # )
+
+    parser = argparse.ArgumentParser(
+        description="collect cgrs & fgrs for repos and write into csv files"
     )
+    parser.add_argument("-p", help="ref path")
+    parser.add_argument("-c", help="convereted repo path")
+    parser.add_argument("-r", help="repo name")
+
+    args = parser.parse_args()
+    coarse_normal_commit_map = load_commit_pairs_all(args.p)
+    convertedCommit_origin_map = get_convertedCommit_origin_map(args.c)
+    collect_cgr_repo(
+        args.r, args.p, coarse_normal_commit_map, convertedCommit_origin_map
+    )
+    collect_fgr_repo(args.r, args.p, convertedCommit_origin_map)
