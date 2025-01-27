@@ -6,14 +6,14 @@ Extract coarse-grained refactorings & fine-grained refactorings from ]
 """
 
 import pathlib
-import json
 from collections import defaultdict
-
+from utils import get_orign_gitstein_commit_map
 from match import (
     load_traced_refs,
     match_with_traced_location,
 )
 from utils import load_commit_pairs_all
+import csv
 
 
 def search_sub_commit_combination(l: list) -> list[str]:
@@ -281,53 +281,113 @@ def collect_fgr_according_to_granularity(fgrs):
     return res
 
 
+def collect_cgr_repos(
+    repo, file_path, coarse_normal_commit_map, orign_gitstein_commit_map
+):
+    def write_cgr_to_csv(rows, csv_path):
+        csv_head = [
+            "repository",
+            "granularity level",
+            "squash unit",
+            "type",
+            "left side" "right side",
+            "description",
+        ]
+
+        with open(csv_path, "w") as f:
+            writer = csv.writer(f)
+            writer.writerow(csv_head)
+            writer.writerows(rows)
+
+    cgr = extract_CGR_contained_CGC(file_path)
+    ref_csv_rows = []
+    for c in cgr:
+        normal_commitIDs = coarse_normal_commit_map.get(c)
+        normal_commitIDs = [
+            orign_gitstein_commit_map.get(each) for each in normal_commitIDs
+        ]
+        granularity = cgr[c]["granularity"]
+
+        for ref in cgr[c]["CGRs"]:
+            ref_csv_row = [repo]
+            ref_csv_row.append(granularity)
+            ref_csv_row.append(normal_commitIDs)
+            ref_csv_row.append(ref.type)
+            ref_csv_row.append(
+                f"{ref.refactored_location.file_path}@{ref.refactored_location.startLine}:{ref.refactored_location.endLine}@{ref.refactored_location.codeElement}"
+            )
+            ref_csv_row.append(
+                f"{ref.refactored_location.file_path}@{ref.refactored_location.codeElement}"
+            )
+            ref_csv_row.append(ref.description)
+            print(ref_csv_row)
+
+            ref_csv_rows.append(ref_csv_row)
+
+    write_cgr_to_csv(ref_csv_rows, f"cgrs/{repo}.csv")
+
+
+def collect_fgr_repos(repo, file_path, orign_gitstein_commit_map):
+    def write_fgr_to_csv(rows, csv_path):
+        csv_head = [
+            "repository",
+            "sha1",
+            "granularity level",
+            "squash unit",
+            "type",
+            "left side",
+            "right side",
+            "description",
+        ]
+
+        with open(csv_path, "w") as f:
+            writer = csv.writer(f)
+            writer.writerow(csv_head)
+            writer.writerows(rows)
+
+    fgr = extract_FGR_contained_NGC(file_path)
+    ref_csv_rows = []
+    for c in fgr:
+        for granularity in fgr[c]:
+            for t in fgr[c][granularity]:
+                ref_csv_row = [repo]
+                ngcs = [orign_gitstein_commit_map.get(each) for each in t[0]]
+                ref = t[1]
+
+                ref_csv_row = [repo]
+                ref_csv_row.append(granularity)
+                ref_csv_row.append(orign_gitstein_commit_map.get(c))
+                ref_csv_row.append(ngcs)
+                ref_csv_row.append(ref.type)
+                ref_csv_row.append(
+                    f"{ref.refactored_location.file_path}@{ref.refactored_location.startLine}:{ref.refactored_location.endLine}"
+                )
+                ref_csv_row.append(
+                    f"{ref.refactored_location.file_path}@{ref.refactored_location.codeElement}"
+                )
+                ref_csv_row.append(ref.description)
+                print(ref_csv_row)
+
+                ref_csv_rows.append(ref_csv_row)
+
+    write_fgr_to_csv(ref_csv_rows, f"fgrs/{repo}.csv")
+
+
 if __name__ == "__main__":
     root_path = "/Users/leichen/Code/pythonProject/pythonProject/pythonProject/SCRMDetection/experiment/output/result/"
+    data_path = "/Users/leichen/data/OSS/comment_removed/"
 
     coarse_normal_commit_map = load_commit_pairs_all(root_path + "mbassador_cr")
-    # coarse_normal_commit_map = load_commit_pairs_all(root_path + "refactoring-toy-example_cr")
-
-    cgr = extract_CGR_contained_CGC(root_path + "mbassador_cr")
-    fgr = extract_FGR_contained_NGC(root_path + "mbassador_cr")
-    # cgr = extract_CGR_contained_CGC(root_path + "refactoring-toy-example_cr")
-    # fgr = extract_FGR_contained_NGC(root_path + "refactoring-toy-example_cr")
-
-    res = collect_cgr_according_to_granularity(cgr)
-    print([(each[0], len(each[1])) for each in res.items()])
-
-    # cgrmap = {2: [], 3: [], 4: [], 5: []}
-    # print("cgrs are: ")
-    # cgr_num = 0
-    # for each in cgr:
-    #     # print(each)
-    #     # print(coarse_normal_commit_map.get(each))
-    #     cgrmap[len(coarse_normal_commit_map.get(each))] += cgr[each]
-    #     cgr_num += len(cgr[each])
-    #     for ref in cgr[each]:
-    #         print(ref)
-    # print("In total cgr num: " + str(cgr_num))
-    # print("cgrmap: ", cgrmap)
-
-    # print("fgrs are: ")
-    # fgr_num = 0
-    # for each in fgr:
-    #     print(each)
-    #     for granularity in fgr[each]:
-    #         print(granularity)
-    #         fgr_num += len(fgr[each][granularity])
-    #         for commits, ref in fgr[each][granularity]:
-    #             print(commits)
-    #             print(ref)
-    # print("In total fgr num: " + str(fgr_num))
-
-    # granulrity_fgr = collect_fgr_according_to_granularity(fgr)
-    # print([(each[0], len(set(each[1]))) for each in granulrity_fgr.items()])
-
-    # fgr = extract_FGR_contained_NGC(root_path + "mbassador_cr")
-    # print(f"find grained refs:\n {fgr}")
-
-    # extract descriptions
-    # descriptions = get_descriptions(
-    # "/Users/leichen/Code/pythonProject/pythonProject/pythonProject/SCRMDetection/experiment/output/result/jfinal_cr/1/refs/98fddd40424bfe6fc10127bb24d116094ffccbf1.json"
+    orign_gitstein_commit_map = get_orign_gitstein_commit_map(data_path + "mbassador_cr")
+    # collect_cgr_repos(
+    #     "mbassador",
+    #     "/Users/leichen/Code/pythonProject/pythonProject/pythonProject/SCRMDetection/experiment/output/result/mbassador_cr",
+    #     coarse_normal_commit_map,
+    #     orign_gitstein_commit_map,
     # )
-    # print(descriptions)
+
+    collect_fgr_repos(
+        "mbassador",
+        "/Users/leichen/Code/pythonProject/pythonProject/pythonProject/SCRMDetection/experiment/output/result/mbassador_cr",
+        orign_gitstein_commit_map,
+    )
