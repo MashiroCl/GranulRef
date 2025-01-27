@@ -43,7 +43,7 @@ def overwrite_add_description(f_d: pathlib.Path, f_no_d: pathlib.Path):
 
 
 def attach_descriptions(repo_path):
-    for i in range(1, 2):
+    for i in range(1, 6):
         traced_directory = pathlib.Path(repo_path).joinpath("o" + str(i))
         for commitIDjson in traced_directory.iterdir():
             origin_path = (
