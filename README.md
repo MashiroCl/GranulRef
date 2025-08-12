@@ -11,3 +11,6 @@ Tool to transform repository commit history into different granularities and det
 ## Refactoring Detection
 
 Refactoring detection tool used is [RefactoringMiner3.0.4](https://github.com/tsantalis/RefactoringMiner)
+
+## Usage
+TODO
