@@ -1,0 +1,1288 @@
+******************************
+coarse grained commits 7aae7a3b552d578efcc1ed5c0b6b0a5b5426bca1
+fine grained commits ('81a6e237f9bd488d7b9e9aa585988757ee700f90', '2369abeab84a2f54acb381304fc1d249b7339037')
+Generation
+Add Parametercascading-nested/src/main/java/cascading/nested/core/NestedGetAllAggregateFunction.java@public NestedGetAllAggregateFunction(nestedCoercibleType NestedCoercibleType<Node,Result>, stringRootPointer String, failOnMissingNode boolean, pointerMap Map<String,NestedAggregateFunction<Node,?>>)cascading-nested/src/main/java/cascading/nested/core/NestedGetAllAggregateFunction.java@streamWrapper : SerFunction<Stream<Node>,Stream<Node>>cascading-nested/src/main/java/cascading/nested/core/NestedGetAllAggregateFunction.java 24:32
+******************************
+******************************
+coarse grained commits 81dcdd9814b49cef5f02123b88bf110e92bafb27
+fine grained commits ('59996a6951b616b4fac5b343cd57ea7343474b93', '542c19e5e0973069b254593429450f172f06c944')
+Generation
+Rename Methodcascading-nested-json/src/main/java/cascading/nested/json/JSONCoercibleType.java@private write(value Object) : Stringcascading-nested-json/src/main/java/cascading/nested/json/JSONCoercibleType.java@private textOrWrite(value JsonNode) : Stringcascading-nested-json/src/main/java/cascading/nested/json/JSONCoercibleType.java 130:140
+Generation
+Extract Methodcascading-nested-json/src/main/java/cascading/nested/json/JSONCoercibleType.java@private write(value Object) : Stringcascading-nested-json/src/main/java/cascading/nested/json/JSONCoercibleType.java@private write(value JsonNode) : Stringcascading-nested-json/src/main/java/cascading/nested/json/JSONCoercibleType.java 130:140
+******************************
+******************************
+coarse grained commits 32d6ff57cae71f0bc76705f6bc3ec070179c5a90
+fine grained commits ('2672c9e052878228666773b2369411ab24ba6932', '77fc94656e449ab784372a707b0e8392fc91b973')
+Generation
+Move And Rename Classcascading-hadoop/src/test/java/cascading/test/HadoopPlatform.java@cascading.test.HadoopPlatformcascading-hadoop2-tez/src/main/java/cascading/stats/tez/TezNodeStats.java@cascading.stats.tez.TezNodeStats.Kindcascading-hadoop/src/test/java/cascading/test/HadoopPlatform.java 4:7
+Generation
+Move Packagecascading-hadoop/src/test/java/cascading/test/HadoopPlatform.java@cascading.test.HadoopPlatformcascading-hadoop2-tez/src/main/java/cascading/stats/tez/TezNodeStats.java@cascading.stats.tez.TezNodeStats.Kindcascading-hadoop/src/test/java/cascading/test/HadoopPlatform.java 4:7
+Generation
+Add Class Modifiercascading-hadoop/src/test/java/cascading/test/HadoopPlatform.java@cascading.test.HadoopPlatformcascading-hadoop2-tez/src/main/java/cascading/stats/tez/TezNodeStats.java@cascading.stats.tez.TezNodeStats.Kindcascading-hadoop/src/test/java/cascading/test/HadoopPlatform.java 4:7
+Generation
+Remove Class Annotationcascading-hadoop/src/test/java/cascading/test/HadoopPlatform.java@@Deprecatedcascading-hadoop2-tez/src/main/java/cascading/stats/tez/TezNodeStats.java@cascading.stats.tez.TezNodeStats.Kindcascading-hadoop/src/test/java/cascading/test/HadoopPlatform.java 4:4
+Generation
+Change Type Declaration Kindcascading-hadoop/src/test/java/cascading/test/HadoopPlatform.java@cascading.test.HadoopPlatformcascading-hadoop2-tez/src/main/java/cascading/stats/tez/TezNodeStats.java@cascading.stats.tez.TezNodeStats.Kindcascading-hadoop/src/test/java/cascading/test/HadoopPlatform.java 4:7
+******************************
+******************************
+coarse grained commits 3607d29bfc3b35000e35c4a25a5d263da3c17da2
+fine grained commits ('5fc9e05e443711db139f884a8f9f1c6ad48711f5', 'ff3479ad95a961d9dfc5c6cbd2908c94d6e67cc2')
+Generation
+Extract And Move Methodcascading-core/src/main/java/cascading/flow/planner/BaseFlowStep.java@public logWarn(message String) : voidcascading-core/src/main/java/cascading/flow/BaseFlow.java@public logWarn(message String, arguments Object...) : voidcascading-core/src/main/java/cascading/flow/planner/BaseFlowStep.java 782:785
+Generation
+Extract And Move Methodcascading-core/src/main/java/cascading/flow/planner/BaseFlowStep.java@public logWarn(message String, throwable Throwable) : voidcascading-core/src/main/java/cascading/flow/BaseFlow.java@public logWarn(message String, arguments Object...) : voidcascading-core/src/main/java/cascading/flow/planner/BaseFlowStep.java 787:790
+******************************
+******************************
+coarse grained commits 69bdb65e59445481d07ebab7e2b63578179b5ddf
+fine grained commits ('750f19ae2342bd5feec5378d83bff1ee37e56f5f', '6ba8af16e61da85c90b029530e2707371bb17118')
+Generation
+Move Classcascading-core/src/main/java/cascading/flow/planner/rule/expressiongraph/NoGroupMergeBoundaryTapExpressionGraph.java@cascading.flow.planner.rule.expressiongraph.NoGroupMergeBoundaryTapExpressionGraphcascading-hadoop2-tez/src/main/java/cascading/flow/tez/planner/rule/expressiongraph/NoGroupMergeBoundaryTapExpressionGraph.java@cascading.flow.tez.planner.rule.expressiongraph.NoGroupMergeBoundaryTapExpressionGraphcascading-core/src/main/java/cascading/flow/planner/rule/expressiongraph/NoGroupMergeBoundaryTapExpressionGraph.java 16:33
+******************************
+******************************
+coarse grained commits 64fe1f6d5acdcde88725d68acd19686fcd91aafb
+fine grained commits ('6928ee420ebee301df6fa3241a5c114a51aaf7bc', '8551e881c2c894374c012b016a2888b689397f82')
+Generation
+Extract Interfacesrc/core/cascading/flow/stream/MergeStage.java@cascading.flow.stream.MergeStagesrc/core/cascading/flow/stream/MergeStage.java@cascading.flow.stream.MergeStagesrc/core/cascading/flow/stream/MergeStage.java 8:14
+******************************
+******************************
+coarse grained commits 75f03db3db98e8864cab1f192737b42399f9bf10
+fine grained commits ('0733d8ff79cd102d8f2fac626358823104d39b73', 'a8b5a9fe6a032ad856f9ba828f9458dd703e1933')
+Generation
+Add Parametersrc/core/cascading/flow/stream/GroupGate.java@public GroupGate(flowProcess FlowProcess, group Group)src/core/cascading/flow/stream/SpliceGate.java@splice : Splicesrc/core/cascading/flow/stream/GroupGate.java 47:51
+Generation
+Add Parametersrc/core/cascading/flow/stream/GroupGate.java@public GroupGate(flowProcess FlowProcess, group Group)src/core/cascading/flow/stream/SpliceGate.java@role : Rolesrc/core/cascading/flow/stream/GroupGate.java 47:51
+Generation
+Remove Parametersrc/core/cascading/flow/stream/GroupGate.java@group : Groupsrc/core/cascading/flow/stream/SpliceGate.java@public SpliceGate(flowProcess FlowProcess, splice Splice, role Role)src/core/cascading/flow/stream/GroupGate.java 47:47
+Generation
+Remove Parametersrc/core/cascading/flow/stream/GroupGate.java@role : Rolesrc/core/cascading/flow/stream/SpliceGate.java@public SpliceGate(flowProcess FlowProcess, splice Splice)src/core/cascading/flow/stream/GroupGate.java 53:53
+Generation
+Move Attributesrc/hadoop/cascading/flow/hadoop/HadoopFlowProcess.java@public SPILL_THRESHOLD : Stringsrc/core/cascading/tuple/SpillableTupleList.java@public SPILL_THRESHOLD : Stringsrc/hadoop/cascading/flow/hadoop/HadoopFlowProcess.java 28:28
+Generation
+Move Attributesrc/hadoop/cascading/flow/hadoop/HadoopFlowProcess.java@public SPILL_COMPRESS : Stringsrc/core/cascading/tuple/SpillableTupleList.java@public SPILL_COMPRESS : Stringsrc/hadoop/cascading/flow/hadoop/HadoopFlowProcess.java 30:30
+Generation
+Move Attributesrc/hadoop/cascading/flow/hadoop/HadoopFlowProcess.java@public SPILL_CODECS : Stringsrc/core/cascading/tuple/SpillableTupleList.java@public SPILL_CODECS : Stringsrc/hadoop/cascading/flow/hadoop/HadoopFlowProcess.java 31:31
+******************************
+******************************
+coarse grained commits 6a6f2d8fcfd0df1ac2d18ad5a5a98ce67862e012
+fine grained commits ('b4003515a11e31f97017c5fddc17ec4922ed2df2', '8be632f6d1149a80507652a5ce9ac64bdd997acd')
+Generation
+Rename Methodsrc/core/cascading/tap/Tap.java@public abstract getPathModified(conf Config) : longsrc/core/cascading/tap/Tap.java@public abstract getModifiedTime(conf Config) : longsrc/core/cascading/tap/Tap.java 181:181
+******************************
+******************************
+coarse grained commits dfd6e50bf787ec24ca10bc000bbcf8e7e610a1b8
+fine grained commits ('44a60773d1e8fa3c65ca4a66e2cdfd8effb730e1', '6113e6883a013d3d1020e3cea1d497687b5a050e')
+Generation
+Move Classsrc/core/cascading/flow/MapReduceFlow.java@cascading.flow.MapReduceFlow.NullSchemesrc/hadoop/cascading/flow/hadoop/ProcessFlow.java@cascading.flow.hadoop.ProcessFlow.NullSchemesrc/core/cascading/flow/MapReduceFlow.java 106:134
+Generation
+Add Class Modifiersrc/core/cascading/flow/MapReduceFlow.java@cascading.flow.MapReduceFlow.NullSchemesrc/hadoop/cascading/flow/hadoop/ProcessFlow.java@cascading.flow.hadoop.ProcessFlow.NullSchemesrc/core/cascading/flow/MapReduceFlow.java 106:134
+Generation
+Add Parametersrc/core/cascading/flow/MapReduceFlow.java@public sink(tupleEntry TupleEntry, outputCollector OutputCollector) : voidsrc/hadoop/cascading/flow/hadoop/ProcessFlow.java@flowProcess : FlowProcesssrc/core/cascading/flow/MapReduceFlow.java 130:133
+Generation
+Add Parametersrc/core/cascading/flow/MapReduceFlow.java@public sink(tupleEntry TupleEntry, outputCollector OutputCollector) : voidsrc/hadoop/cascading/flow/hadoop/ProcessFlow.java@sinkCall : SinkCallsrc/core/cascading/flow/MapReduceFlow.java 130:133
+Generation
+Remove Parametersrc/core/cascading/flow/MapReduceFlow.java@tupleEntry : TupleEntrysrc/hadoop/cascading/flow/hadoop/ProcessFlow.java@public sink(flowProcess FlowProcess, sinkCall SinkCall) : voidsrc/core/cascading/flow/MapReduceFlow.java 130:130
+Generation
+Remove Parametersrc/core/cascading/flow/MapReduceFlow.java@outputCollector : OutputCollectorsrc/hadoop/cascading/flow/hadoop/ProcessFlow.java@public sink(flowProcess FlowProcess, sinkCall SinkCall) : voidsrc/core/cascading/flow/MapReduceFlow.java 130:130
+Generation
+Extract Superclasssrc/core/cascading/flow/MapReduceFlow.java@cascading.flow.MapReduceFlowsrc/hadoop/cascading/flow/hadoop/MapReduceFlow.java@cascading.flow.hadoop.MapReduceFlowsrc/core/cascading/flow/MapReduceFlow.java 21:135
+******************************
+******************************
+coarse grained commits 97d7652cd3a5d64d15f2c68f0ef504f454cd1d0c
+fine grained commits ('80af756be5e0d394e05ef1ad725871297a1bf0dd', '143d5f66da2df2b19c42945335e0007884267b8c')
+Generation
+Add Parametersrc/core/cascading/flow/ProcessFlow.java@public ProcessFlow(name String, object Object)src/core/cascading/flow/ProcessFlow.java@properties : Map<Object,Object>src/core/cascading/flow/ProcessFlow.java 29:38
+Generation
+Add Parametersrc/core/cascading/flow/ProcessFlow.java@public ProcessFlow(name String, object Object)src/core/cascading/flow/ProcessFlow.java@process : Psrc/core/cascading/flow/ProcessFlow.java 29:38
+Generation
+Remove Parametersrc/core/cascading/flow/ProcessFlow.java@object : Objectsrc/core/cascading/flow/ProcessFlow.java@public ProcessFlow(properties Map<Object,Object>, name String, process P)src/core/cascading/flow/ProcessFlow.java 29:29
+******************************
+******************************
+coarse grained commits 0f39974be983f8ac2b4fe1e60b1f714d5e6a3e32
+fine grained commits ('e99e8d85ef6f4d7d3197d51b06ef86f86b03222e', 'e3c16bb7e828021a11f65374073cbd85c7b0364b')
+Generation
+Extract Variablesrc/core/cascading/cascade/CascadeConnector.java@src/core/cascading/cascade/CascadeConnector.java@sourcePath : Stringsrc/core/cascading/cascade/CascadeConnector.java 116:116
+Generation
+Extract Variablesrc/core/cascading/cascade/CascadeConnector.java@src/core/cascading/cascade/CascadeConnector.java@sinkPath : Stringsrc/core/cascading/cascade/CascadeConnector.java 116:116
+******************************
+******************************
+coarse grained commits cab09b4b8f90ea4e4c595596b523a4d206f2fa76
+fine grained commits ('4476ed90bba467d4f4a0b2527afbc1e2137648e7', '78f76de97854a24ff327ed67033d6f5fad5ac336')
+Generation
+Rename Methodsrc/test/cascading/flow/BuildJobsTest.java@public testDupeSourceFail() : voidsrc/test/cascading/flow/BuildJobsTest.java@public testDupeSource() : voidsrc/test/cascading/flow/BuildJobsTest.java 379:412
+******************************
+******************************
+coarse grained commits 25d104ba56ac1f271044e3e90bc48f5cfd2cbebd
+fine grained commits ('f458cc9b420c875aff971fada9625d122ff5c0b2', '310655aad41f903c055b482cd95c6f619720203c')
+Generation
+Extract Superclasssrc/test/cascading/flow/PipeAssemblyTest.java@cascading.flow.PipeAssemblyTest.TestAssemblysrc/test/cascading/flow/SubAssemblyTest.java@cascading.flow.SubAssemblyTest.TestAssemblysrc/test/cascading/flow/PipeAssemblyTest.java 30:40
+Generation
+Pull Up Methodsrc/java/cascading/pipe/PipeAssembly.java@protected setTails(tails Pipe...) : voidsrc/java/cascading/pipe/SubAssembly.java@protected setTails(tails Pipe...) : voidsrc/java/cascading/pipe/PipeAssembly.java 10:13
+Generation
+Pull Up Methodsrc/java/cascading/pipe/PipeAssembly.java@public getTails() : Pipe[]src/java/cascading/pipe/SubAssembly.java@public getTails() : Pipe[]src/java/cascading/pipe/PipeAssembly.java 15:18
+Generation
+Pull Up Methodsrc/java/cascading/pipe/PipeAssembly.java@public getTailNames() : String[]src/java/cascading/pipe/SubAssembly.java@public getTailNames() : String[]src/java/cascading/pipe/PipeAssembly.java 20:28
+Generation
+Pull Up Methodsrc/java/cascading/pipe/PipeAssembly.java@public getName() : Stringsrc/java/cascading/pipe/SubAssembly.java@public getName() : Stringsrc/java/cascading/pipe/PipeAssembly.java 30:34
+Generation
+Pull Up Methodsrc/java/cascading/pipe/PipeAssembly.java@public getPrevious() : Pipe[]src/java/cascading/pipe/SubAssembly.java@public getPrevious() : Pipe[]src/java/cascading/pipe/PipeAssembly.java 36:40
+Generation
+Pull Up Attributesrc/java/cascading/pipe/PipeAssembly.java@private tails : Pipe[]src/java/cascading/pipe/SubAssembly.java@private tails : Pipe[]src/java/cascading/pipe/PipeAssembly.java 8:8
+******************************
+******************************
+coarse grained commits e56f6dfc9a5befa4dd73803cb69d447f88ecc4e1
+fine grained commits ('a9e04f5f302bdeb60708b485bb406a4828e6f3cc', 'b47df281015eb977ab2ba4c732c158dfe9701390')
+Generation
+Change Variable Typesrc/java/cascading/flow/MultiMapReducePlanner.java@group : Groupsrc/java/cascading/flow/MultiMapReducePlanner.java@tap : Tapsrc/java/cascading/flow/MultiMapReducePlanner.java 454:454
+Generation
+Rename Variablesrc/java/cascading/flow/MultiMapReducePlanner.java@group : Groupsrc/java/cascading/flow/MultiMapReducePlanner.java@tap : Tapsrc/java/cascading/flow/MultiMapReducePlanner.java 454:454
+******************************
+******************************
+coarse grained commits 36f376ce52f6d612060ea559f167bae2340173b0
+fine grained commits ('d34b6155893632f8eeea885e5de199d220429406', 'e7d80629b7a1264ddf077cda015c687d378bb5a9')
+Generation
+Rename Classsrc/java/cascading/flow/stack/FlowMapperStackElement.java@cascading.flow.stack.FlowMapperStackElementsrc/java/cascading/flow/stack/MapperStackElement.java@cascading.flow.stack.MapperStackElementsrc/java/cascading/flow/stack/FlowMapperStackElement.java 15:110
+Generation
+Change Attribute Access Modifiersrc/java/cascading/flow/stack/FlowMapperStackElement.java@protected incomingScope : Scopesrc/java/cascading/flow/stack/MapperStackElement.java@package incomingScope : Scopesrc/java/cascading/flow/stack/FlowMapperStackElement.java 20:20
+Generation
+Add Attribute Modifiersrc/java/cascading/flow/stack/FlowMapperStackElement.java@protected incomingScope : Scopesrc/java/cascading/flow/stack/MapperStackElement.java@package incomingScope : Scopesrc/java/cascading/flow/stack/FlowMapperStackElement.java 20:20
+Generation
+Change Attribute Access Modifiersrc/java/cascading/flow/stack/FlowMapperStackElement.java@protected lastOutput : OutputCollectorsrc/java/cascading/flow/stack/MapperStackElement.java@package lastOutput : OutputCollectorsrc/java/cascading/flow/stack/FlowMapperStackElement.java 26:26
+Generation
+Change Parameter Typesrc/java/cascading/flow/stack/FlowMapperStackElement.java@previous : FlowMapperStackElementsrc/java/cascading/flow/stack/MapperStackElement.java@previous : MapperStackElementsrc/java/cascading/flow/stack/FlowMapperStackElement.java 28:28
+Generation
+Change Method Access Modifiersrc/java/cascading/flow/stack/FlowMapperStackElement.java@protected FlowMapperStackElement(previous FlowMapperStackElement, incomingScope Scope)src/java/cascading/flow/stack/MapperStackElement.java@package MapperStackElement(previous MapperStackElement, incomingScope Scope)src/java/cascading/flow/stack/FlowMapperStackElement.java 28:32
+Generation
+Change Method Access Modifiersrc/java/cascading/flow/stack/FlowMapperStackElement.java@public resolveIncomingFields() : Fieldssrc/java/cascading/flow/stack/MapperStackElement.java@package resolveIncomingFields() : Fieldssrc/java/cascading/flow/stack/FlowMapperStackElement.java 59:65
+Generation
+Change Method Access Modifiersrc/java/cascading/flow/stack/FlowMapperStackElement.java@public getIncomingScope() : Scopesrc/java/cascading/flow/stack/MapperStackElement.java@package getIncomingScope() : Scopesrc/java/cascading/flow/stack/FlowMapperStackElement.java 67:70
+Generation
+Change Method Access Modifiersrc/java/cascading/flow/stack/FlowMapperStackElement.java@protected getTupleEntry(tuple Tuple) : TupleEntrysrc/java/cascading/flow/stack/MapperStackElement.java@package getTupleEntry(tuple Tuple) : TupleEntrysrc/java/cascading/flow/stack/FlowMapperStackElement.java 80:88
+Generation
+Add Thrown Exception Typesrc/java/cascading/flow/stack/FlowMapperStackElement.java@public close() : voidsrc/java/cascading/flow/stack/MapperStackElement.java@IOExceptionsrc/java/cascading/flow/stack/FlowMapperStackElement.java 107:109
+Generation
+Extract Superclasssrc/java/cascading/flow/stack/FlowMapperStackElement.java@cascading.flow.stack.FlowMapperStackElementsrc/java/cascading/flow/stack/MapperStackElement.java@cascading.flow.stack.MapperStackElementsrc/java/cascading/flow/stack/FlowMapperStackElement.java 15:110
+******************************
+******************************
+coarse grained commits e4b4c74f3d257ae333990667ebfa8fd390e2c845
+fine grained commits ('366096d6366c99b3ca2c56dbf63138f79c2d57df', 'd98f3c2da55847c92ff3dfe22627d7a94c01b62f')
+Generation
+Move Classsrc/java/cascading/flow/PushFlowReducerStack.java@cascading.flow.PushFlowReducerStack.FlowReducerStackElementsrc/java/cascading/flow/stack/FlowReducerStackElement.java@cascading.flow.stack.FlowReducerStackElementsrc/java/cascading/flow/PushFlowReducerStack.java 116:344
+Generation
+Move And Rename Classsrc/java/cascading/flow/PushFlowMapperStack.java@cascading.flow.PushFlowMapperStacksrc/java/cascading/flow/stack/FlowMapperStack.java@cascading.flow.stack.FlowMapperStacksrc/java/cascading/flow/PushFlowMapperStack.java 23:289
+Generation
+Move And Rename Classsrc/java/cascading/flow/PushFlowReducerStack.java@cascading.flow.PushFlowReducerStacksrc/java/cascading/flow/stack/FlowReducerStack.java@cascading.flow.stack.FlowReducerStacksrc/java/cascading/flow/PushFlowReducerStack.java 27:345
+Generation
+Add Class Modifiersrc/java/cascading/flow/PushFlowReducerStack.java@cascading.flow.PushFlowReducerStack.FlowReducerStackElementsrc/java/cascading/flow/stack/FlowReducerStackElement.java@cascading.flow.stack.FlowReducerStackElementsrc/java/cascading/flow/PushFlowReducerStack.java 116:344
+Generation
+Change Attribute Access Modifiersrc/java/cascading/flow/PushFlowReducerStack.java@private incomingScope : Scopesrc/java/cascading/flow/stack/FlowReducerStackElement.java@protected incomingScope : Scopesrc/java/cascading/flow/PushFlowReducerStack.java 121:121
+Generation
+Change Attribute Access Modifiersrc/java/cascading/flow/PushFlowReducerStack.java@private outGroupingFields : Fieldssrc/java/cascading/flow/stack/FlowReducerStackElement.java@protected outGroupingFields : Fieldssrc/java/cascading/flow/PushFlowReducerStack.java 125:125
+Generation
+Change Attribute Access Modifiersrc/java/cascading/flow/PushFlowReducerStack.java@private lastOutput : OutputCollectorsrc/java/cascading/flow/stack/FlowReducerStackElement.java@protected lastOutput : OutputCollectorsrc/java/cascading/flow/PushFlowReducerStack.java 130:130
+Generation
+Change Method Access Modifiersrc/java/cascading/flow/PushFlowReducerStack.java@private resolveIncomingOperationFields() : Fieldssrc/java/cascading/flow/stack/FlowReducerStackElement.java@protected resolveIncomingOperationFields() : Fieldssrc/java/cascading/flow/PushFlowReducerStack.java 223:231
+Generation
+Change Method Access Modifiersrc/java/cascading/flow/PushFlowReducerStack.java@private getGroupingTupleEntry(tuple Tuple) : TupleEntrysrc/java/cascading/flow/stack/FlowReducerStackElement.java@protected getGroupingTupleEntry(tuple Tuple) : TupleEntrysrc/java/cascading/flow/PushFlowReducerStack.java 259:267
+Generation
+Change Method Access Modifiersrc/java/cascading/flow/PushFlowReducerStack.java@private getTupleEntry(tuple Tuple) : TupleEntrysrc/java/cascading/flow/stack/FlowReducerStackElement.java@protected getTupleEntry(tuple Tuple) : TupleEntrysrc/java/cascading/flow/PushFlowReducerStack.java 269:277
+Generation
+Remove Parametersrc/java/cascading/flow/PushFlowReducerStack.java@everyHandlers : List<Every.EveryHandler>src/java/cascading/flow/stack/FlowReducerStackElement.java@package FlowReducerStackElement(previous FlowReducerStackElement, incomingScope Scope)src/java/cascading/flow/PushFlowReducerStack.java 143:143
+Generation
+Change Method Access Modifiersrc/java/cascading/flow/PushFlowReducerStack.java@public FlowReducerStackElement(previous FlowReducerStackElement, incomingScope Scope, everyHandlers List<Every.EveryHandler>)src/java/cascading/flow/stack/FlowReducerStackElement.java@package FlowReducerStackElement(previous FlowReducerStackElement, incomingScope Scope)src/java/cascading/flow/PushFlowReducerStack.java 143:148
+Generation
+Extract Subclasssrc/java/cascading/flow/PushFlowReducerStack.java@cascading.flow.PushFlowReducerStack.FlowReducerStackElementsrc/java/cascading/flow/stack/FlowReducerStackElement.java@cascading.flow.stack.FlowReducerStackElementsrc/java/cascading/flow/PushFlowReducerStack.java 116:344
+Generation
+Extract Subclasssrc/java/cascading/flow/PushFlowReducerStack.java@cascading.flow.PushFlowReducerStack.FlowReducerStackElementsrc/java/cascading/flow/stack/FlowReducerStackElement.java@cascading.flow.stack.FlowReducerStackElementsrc/java/cascading/flow/PushFlowReducerStack.java 116:344
+Generation
+Extract Subclasssrc/java/cascading/flow/PushFlowReducerStack.java@cascading.flow.PushFlowReducerStack.FlowReducerStackElementsrc/java/cascading/flow/stack/FlowReducerStackElement.java@cascading.flow.stack.FlowReducerStackElementsrc/java/cascading/flow/PushFlowReducerStack.java 116:344
+Generation
+Push Down Methodsrc/java/cascading/flow/PushFlowReducerStack.java@public getFlowElement() : FlowElementsrc/java/cascading/flow/stack/EachReducerStackElement.java@public getFlowElement() : FlowElementsrc/java/cascading/flow/PushFlowReducerStack.java 192:195
+Generation
+Push Down Methodsrc/java/cascading/flow/PushFlowReducerStack.java@private operateEach(key Tuple, values Iterator) : voidsrc/java/cascading/flow/stack/EachReducerStackElement.java@private operateEach(key Tuple, values Iterator) : voidsrc/java/cascading/flow/PushFlowReducerStack.java 310:314
+Generation
+Push Down Methodsrc/java/cascading/flow/PushFlowReducerStack.java@private operateEach(tupleEntry TupleEntry) : voidsrc/java/cascading/flow/stack/EachReducerStackElement.java@private operateEach(tupleEntry TupleEntry) : voidsrc/java/cascading/flow/PushFlowReducerStack.java 316:319
+Generation
+Push Down Methodsrc/java/cascading/flow/PushFlowReducerStack.java@private operateGroup(key Tuple, values Iterator) : voidsrc/java/cascading/flow/stack/GroupReducerStackElement.java@private operateGroup(key Tuple, values Iterator) : voidsrc/java/cascading/flow/PushFlowReducerStack.java 280:287
+Generation
+Push Down Attributesrc/java/cascading/flow/PushFlowReducerStack.java@private incomingScopes : Set<Scope>src/java/cascading/flow/stack/GroupReducerStackElement.java@private incomingScopes : Set<Scope>src/java/cascading/flow/PushFlowReducerStack.java 122:122
+Generation
+Push Down Attributesrc/java/cascading/flow/PushFlowReducerStack.java@private thisScope : Scopesrc/java/cascading/flow/stack/GroupReducerStackElement.java@private thisScope : Scopesrc/java/cascading/flow/PushFlowReducerStack.java 124:124
+Generation
+Push Down Methodsrc/java/cascading/flow/PushFlowReducerStack.java@private operateSink(key Tuple, values Iterator) : voidsrc/java/cascading/flow/stack/TapReducerStackElement.java@private operateSink(key Tuple, values Iterator) : voidsrc/java/cascading/flow/PushFlowReducerStack.java 321:325
+Generation
+Push Down Methodsrc/java/cascading/flow/PushFlowReducerStack.java@private operateSink(tupleEntry TupleEntry) : voidsrc/java/cascading/flow/stack/TapReducerStackElement.java@private operateSink(tupleEntry TupleEntry) : voidsrc/java/cascading/flow/PushFlowReducerStack.java 327:343
+Generation
+Push Down Attributesrc/java/cascading/flow/PushFlowReducerStack.java@private tapCollector : TapCollectorsrc/java/cascading/flow/stack/TapReducerStackElement.java@private tapCollector : TapCollectorsrc/java/cascading/flow/PushFlowReducerStack.java 133:133
+Generation
+Push Down Methodsrc/java/cascading/flow/PushFlowReducerStack.java@private operateEveryHandlers(keyEntry TupleEntry, values Iterator) : voidsrc/java/cascading/flow/stack/EveryHandlersReducerStackElement.java@private operateEveryHandlers(keyEntry TupleEntry, values Iterator) : voidsrc/java/cascading/flow/PushFlowReducerStack.java 289:303
+Generation
+Push Down Methodsrc/java/cascading/flow/PushFlowReducerStack.java@private operateEveryHandler(keyEntry TupleEntry) : voidsrc/java/cascading/flow/stack/EveryHandlerReducerStackElement.java@private operateEveryHandler(keyEntry TupleEntry) : voidsrc/java/cascading/flow/PushFlowReducerStack.java 305:308
+******************************
+******************************
+coarse grained commits f87dbf6909ff5d35139c615f81b18e4f7a582012
+fine grained commits ('66dca1f413a8e783e525a56131c46ba0e678a9c6', '2ae144bcd396d7f3a0a7d51736dec7cf4b5d5369')
+Generation
+Add Parametersrc/java/cascading/tap/Lfs.java@public sourceInit(conf JobConf) : voidsrc/java/cascading/tap/Hfs.java@qualifiedPath : Pathsrc/java/cascading/tap/Lfs.java 65:77
+Generation
+Add Parametersrc/java/cascading/tap/Lfs.java@public sourceInit(conf JobConf) : voidsrc/java/cascading/tap/Hfs.java@infoMessage : Stringsrc/java/cascading/tap/Lfs.java 65:77
+Generation
+Change Method Access Modifiersrc/java/cascading/tap/Lfs.java@public sourceInit(conf JobConf) : voidsrc/java/cascading/tap/Hfs.java@private makeLocal(conf JobConf, qualifiedPath Path, infoMessage String) : voidsrc/java/cascading/tap/Lfs.java 65:77
+Generation
+Pull Up Methodsrc/java/cascading/tap/Lfs.java@public sourceInit(conf JobConf) : voidsrc/java/cascading/tap/Hfs.java@private makeLocal(conf JobConf, qualifiedPath Path, infoMessage String) : voidsrc/java/cascading/tap/Lfs.java 65:77
+******************************
+******************************
+coarse grained commits c21862d7c22c64b810e944d2b468e41b9dc12e32
+fine grained commits ('96515e450c33387bc0fc282c6b4d267bd4483f22', '4035f0486f90210d1378e6740e8c46a9fc8c5622')
+Generation
+Rename Classsrc/java/cascading/tap/TempDfs.java@cascading.tap.TempDfssrc/java/cascading/tap/TempHfs.java@cascading.tap.TempHfssrc/java/cascading/tap/TempDfs.java 12:96
+Generation
+Change Variable Typesrc/java/cascading/tap/TempDfs.java@tempDfs : TempDfssrc/java/cascading/tap/TempHfs.java@tempHfs : TempHfssrc/java/cascading/tap/TempDfs.java 83:83
+Generation
+Rename Variablesrc/java/cascading/tap/TempDfs.java@tempDfs : TempDfssrc/java/cascading/tap/TempHfs.java@tempHfs : TempHfssrc/java/cascading/tap/TempDfs.java 83:83
+******************************
+******************************
+coarse grained commits 6990fc4fd6ac4f57a5016a6b363c57ccfe74aeee
+fine grained commits ('81ef5c6fe03bdd64a8d5d07b6b64aa8f5391cfd5', 'c2d1f3f2ed7c0ef6f961cc568e9c1b5d70768618')
+Generation
+Rename Methodsrc/java/cascading/tap/Tap.java@public isWriteDirect() : booleansrc/java/cascading/tap/Tap.java@public isUseTapCollector() : booleansrc/java/cascading/tap/Tap.java 46:49
+Generation
+Rename Methodsrc/java/cascading/tap/Tap.java@public setWriteDirect(writeDirect boolean) : voidsrc/java/cascading/tap/Tap.java@public setUseTapCollector(useTapCollector boolean) : voidsrc/java/cascading/tap/Tap.java 51:54
+Generation
+Rename Parametersrc/java/cascading/tap/Tap.java@writeDirect : booleansrc/java/cascading/tap/Tap.java@useTapCollector : booleansrc/java/cascading/tap/Tap.java 51:51
+Generation
+Rename Attributesrc/java/cascading/tap/Tap.java@writeDirect : booleansrc/java/cascading/tap/Tap.java@useTapCollector : booleansrc/java/cascading/tap/Tap.java 25:25
+******************************
+******************************
+coarse grained commits a13feae63787cecff78174f74b5d7d2458bb607d
+fine grained commits ('9014238f45e2e68e491b6ff2ee02b457e18b0cc6', '1d901eb9b9fb32c96d2ef24829e0c8e43799929a')
+Generation
+Change Variable Typesrc/java/cascading/cascade/Cascade.java@source : Tapsrc/java/cascading/cascade/Cascade.java@flow : Flowsrc/java/cascading/cascade/Cascade.java 87:87
+Generation
+Rename Variablesrc/java/cascading/cascade/Cascade.java@source : Tapsrc/java/cascading/cascade/Cascade.java@flow : Flowsrc/java/cascading/cascade/Cascade.java 87:87
+******************************
+******************************
+coarse grained commits 0f3080d26e545d25bba1aecda765687231a1b48d
+fine grained commits ('574196d3920c07a887f90712240ef6b14e036605', '5a1d35d72503de23d8d895c53615143da6efc2d3')
+Generation
+Move And Inline Methodsrc/java/cascading/tap/hadoop/ZipSplit.java@public getFile() : Pathsrc/java/cascading/tap/hadoop/ZipInputFormat.java@public getRecordReader(genericSplit InputSplit, job JobConf, reporter Reporter) : RecordReader<LongWritable,Text>src/java/cascading/tap/hadoop/ZipSplit.java 40:43
+******************************
+******************************
+coarse grained commits 7a5b544f53161c3df0d5388bdcd4405e686f02c5
+fine grained commits ('e46ba7b20c65d6e03a97fa0b7133317b2a3e6560', '0ab469cc99daadcca4ebb1508162ad335210b45f')
+Generation
+Change Variable Typesrc/java/cascading/flow/FlowConnector.java@group : Groupsrc/java/cascading/flow/FlowConnector.java@path : GraphPath<FlowElement,Scope>src/java/cascading/flow/FlowConnector.java 399:399
+Generation
+Rename Variablesrc/java/cascading/flow/FlowConnector.java@group : Groupsrc/java/cascading/flow/FlowConnector.java@path : GraphPath<FlowElement,Scope>src/java/cascading/flow/FlowConnector.java 399:399
+******************************
+******************************
+coarse grained commits d5980f45edc487763e9677d4e05e43d10f8d8bb9
+fine grained commits ('078eb886a1e9f04f14f6d74add0e1a6d4c46f8d1', '224e52d31a610ee6947f0e85aac012a891da6305')
+Generation
+Move Attributecascading-core/src/main/java/cascading/pipe/assembly/AggregateBy.java@private functors : Functor[]cascading-core/src/main/java/cascading/pipe/assembly/AggregateByLocally.java@private functors : Functor[]cascading-core/src/main/java/cascading/pipe/assembly/AggregateBy.java 74:74
+Generation
+Remove Attribute Modifiercascading-core/src/main/java/cascading/pipe/assembly/AggregateBy.java@private functors : Functor[]cascading-core/src/main/java/cascading/pipe/assembly/AggregateByLocally.java@private functors : Functor[]cascading-core/src/main/java/cascading/pipe/assembly/AggregateBy.java 74:74
+******************************
+******************************
+coarse grained commits f0f90916e83097eec5b37fb3a12331f5f1d83131
+fine grained commits ('9a2740e3e466d6ca34a61179d9d495c78f8c4b7c', 'bc48ecea1de8973cad28343f0230a48826b4e1b5')
+Generation
+Move Attributecascading-core/src/main/java/cascading/tuple/TupleEntry.java@private LOG : Loggercascading-hadoop/src/main/shared/cascading/tap/hadoop/BaseDistCacheTap.java@private LOG : Loggercascading-core/src/main/java/cascading/tuple/TupleEntry.java 17:17
+******************************
+******************************
+coarse grained commits 29a6add9c52302119ad3f670dc57f9c2f0360133
+fine grained commits ('3b0ffd95978d4ca3a08d623d58b098bca580a898', '84c1a68e1ef499bcaef20e72531055f21352101b')
+Generation
+Rename Variablecascading-core/src/main/java/cascading/flow/planner/iso/subgraph/GraphPartitioner.java@annotations : EnumMultiMapcascading-core/src/main/java/cascading/flow/planner/iso/subgraph/partitioner/ExpressionGraphPartitioner.java@annotationMap : EnumMultiMapcascading-core/src/main/java/cascading/flow/planner/iso/subgraph/GraphPartitioner.java 81:81
+Generation
+Change Method Access Modifiercascading-core/src/main/java/cascading/flow/planner/iso/subgraph/Partitions.java@public getGraphPartitioner() : GraphPartitionercascading-core/src/main/java/cascading/flow/planner/rule/RulePartitioner.java@protected getGraphPartitioner() : GraphPartitionercascading-core/src/main/java/cascading/flow/planner/iso/subgraph/Partitions.java 44:47
+Generation
+Move Methodcascading-core/src/main/java/cascading/flow/planner/iso/subgraph/Partitions.java@public getGraphPartitioner() : GraphPartitionercascading-core/src/main/java/cascading/flow/planner/rule/RulePartitioner.java@protected getGraphPartitioner() : GraphPartitionercascading-core/src/main/java/cascading/flow/planner/iso/subgraph/Partitions.java 44:47
+Generation
+Push Down Methodcascading-core/src/main/java/cascading/flow/planner/rule/RulePartitioner.java@protected RulePartitioner(phase PlanPhase, expressionGraph ExpressionGraph)cascading-core/src/main/java/cascading/flow/planner/rule/partitioner/ExpressionRulePartitioner.java@protected ExpressionRulePartitioner(phase PlanPhase)cascading-core/src/main/java/cascading/flow/planner/rule/RulePartitioner.java 66:70
+******************************
+******************************
+coarse grained commits 7164fb4b550cc6459616672e2c932f19d03a850d
+fine grained commits ('a48b53f87b14fd90c196204ad5b2c9b26aa70d7a', 'eb2dc45e62c9bbc9f4c0ac88a82a462e5a26e224')
+Generation
+Add Method Annotationcascading-core/src/main/java/cascading/util/Util.java@public formatTrace(scheme Scheme, message String) : Stringcascading-core/src/main/java/cascading/util/Util.java@@Deprecatedcascading-core/src/main/java/cascading/util/Util.java 402:413
+Generation
+Add Method Annotationcascading-core/src/main/java/cascading/util/Util.java@public formatTrace(tap Tap, message String) : Stringcascading-core/src/main/java/cascading/util/Util.java@@Deprecatedcascading-core/src/main/java/cascading/util/Util.java 441:452
+Generation
+Add Method Annotationcascading-core/src/main/java/cascading/util/Util.java@public formatTrace(operation Operation, message String) : Stringcascading-core/src/main/java/cascading/util/Util.java@@Deprecatedcascading-core/src/main/java/cascading/util/Util.java 454:465
+Generation
+Rename Parametercascading-core/src/main/java/cascading/util/Util.java@pipe : Pipecascading-core/src/main/java/cascading/util/TraceUtil.java@operation : Operationcascading-core/src/main/java/cascading/util/Util.java 415:415
+Generation
+Change Parameter Typecascading-core/src/main/java/cascading/util/Util.java@pipe : Pipecascading-core/src/main/java/cascading/util/TraceUtil.java@operation : Operationcascading-core/src/main/java/cascading/util/Util.java 415:415
+Generation
+Move And Rename Methodcascading-core/src/main/java/cascading/util/Util.java@public formatRawTrace(pipe Pipe, message String) : Stringcascading-core/src/main/java/cascading/util/TraceUtil.java@public formatTrace(operation Operation, message String) : Stringcascading-core/src/main/java/cascading/util/Util.java 415:426
+******************************
+******************************
+coarse grained commits 2dc42ccb3cd15027173f8af59246fb6020e9d5f6
+fine grained commits ('cc338d993526708a6b28e2ff27a7d241c61cf6b5', '6e6010029e03d234b5e7b02af66b8ab71cd1a449')
+Generation
+Move And Rename Attributecascading-hadoop/src/main/shared/cascading/flow/hadoop/stream/HadoopCoGroupGate.java@private posMap : Map<Duct,Integer>cascading-core/src/main/java/cascading/flow/stream/SpliceGate.java@protected ordinalMap : Map<Duct,Integer>cascading-hadoop/src/main/shared/cascading/flow/hadoop/stream/HadoopCoGroupGate.java 23:23
+Generation
+Change Attribute Access Modifiercascading-hadoop/src/main/shared/cascading/flow/hadoop/stream/HadoopCoGroupGate.java@private posMap : Map<Duct,Integer>cascading-core/src/main/java/cascading/flow/stream/SpliceGate.java@protected ordinalMap : Map<Duct,Integer>cascading-hadoop/src/main/shared/cascading/flow/hadoop/stream/HadoopCoGroupGate.java 23:23
+Generation
+Remove Attribute Modifiercascading-hadoop/src/main/shared/cascading/flow/hadoop/stream/HadoopCoGroupGate.java@private posMap : Map<Duct,Integer>cascading-core/src/main/java/cascading/flow/stream/SpliceGate.java@protected ordinalMap : Map<Duct,Integer>cascading-hadoop/src/main/shared/cascading/flow/hadoop/stream/HadoopCoGroupGate.java 23:23
+Generation
+Remove Method Annotationcascading-core/src/main/java/cascading/flow/stream/Gate.java@@Overridecascading-core/src/main/java/cascading/flow/stream/SpliceGate.java@protected setOrdinalMap(streamGraph StreamGraph) : voidcascading-core/src/main/java/cascading/flow/stream/Gate.java 12:12
+Generation
+Change Method Access Modifiercascading-core/src/main/java/cascading/flow/stream/Gate.java@public bind(streamGraph StreamGraph) : voidcascading-core/src/main/java/cascading/flow/stream/SpliceGate.java@protected setOrdinalMap(streamGraph StreamGraph) : voidcascading-core/src/main/java/cascading/flow/stream/Gate.java 12:18
+Generation
+Add Method Modifiercascading-core/src/main/java/cascading/flow/stream/Gate.java@public bind(streamGraph StreamGraph) : voidcascading-core/src/main/java/cascading/flow/stream/SpliceGate.java@protected setOrdinalMap(streamGraph StreamGraph) : voidcascading-core/src/main/java/cascading/flow/stream/Gate.java 12:18
+Generation
+Extract And Move Methodcascading-hadoop/src/main/shared/cascading/flow/hadoop/stream/HadoopGroupGate.java@public prepare() : voidcascading-hadoop/src/main/shared-mr1/cascading/flow/hadoop/stream/HadoopGroupByGate.java@protected createClosure() : HadoopGroupByClosurecascading-hadoop/src/main/shared/cascading/flow/hadoop/stream/HadoopGroupGate.java 38:42
+******************************
+******************************
+coarse grained commits 58513060f31d859387deb9161a984e72f73305fc
+fine grained commits ('b1e39d9a4149977ffc64e5e8a1b5e3dbdaf050a4', '9613ecbf1d4700cf1734501d6c83a3d030f1854b')
+Generation
+Move And Inline Methodsrc/core/cascading/flow/planner/FlowStep.java@public hasJoins() : booleansrc/hadoop/cascading/flow/hadoop/HadoopFlowStep.java@private getUniqueStreamedSources() : Set<Tap>src/core/cascading/flow/planner/FlowStep.java 193:196
+******************************
+******************************
+coarse grained commits 4c10e17278efd31db5fd9a91a27390afe3992b37
+fine grained commits ('25a1fa9414c4e32bc1f410c936ed3830680011f2', '7ad3fcaf6af987ec451b6ad1c9913c3d361bf94b')
+Generation
+Add Method Annotationsrc/core/cascading/scheme/SinkCall.java@public getOutgoingEntry() : TupleEntrysrc/core/cascading/scheme/ConcreteCall.java@@Overridesrc/core/cascading/scheme/SinkCall.java 10:13
+Generation
+Add Method Annotationsrc/core/cascading/scheme/SourceCall.java@public getIncomingEntry() : TupleEntrysrc/core/cascading/scheme/ConcreteCall.java@@Overridesrc/core/cascading/scheme/SourceCall.java 21:24
+Generation
+Change Parameter Typesrc/core/cascading/scheme/SchemeCall.java@context : Csrc/core/cascading/scheme/ConcreteCall.java@context : Contextsrc/core/cascading/scheme/SchemeCall.java 13:13
+Generation
+Add Method Annotationsrc/core/cascading/scheme/SchemeCall.java@public setContext(context C) : voidsrc/core/cascading/scheme/ConcreteCall.java@@Overridesrc/core/cascading/scheme/SchemeCall.java 13:16
+Generation
+Move Methodsrc/core/cascading/scheme/SchemeCall.java@public setContext(context C) : voidsrc/core/cascading/scheme/ConcreteCall.java@public setContext(context Context) : voidsrc/core/cascading/scheme/SchemeCall.java 13:16
+******************************
+******************************
+coarse grained commits eb1551ebafa23759d5ea8eeb190c9d3cd19c8f97
+fine grained commits ('56e8dfbf97c26a7083429d43ac54c511ab0378d9', '57105fd160bff7c8c02a8d6f838ff1904a0b7816')
+Generation
+Extract Superclasssrc/core/cascading/tuple/hadoop/ReverseTuplePairComparator.java@cascading.tuple.hadoop.ReverseTuplePairComparatorsrc/core/cascading/tuple/hadoop/ReverseGroupingSortingComparator.java@cascading.tuple.hadoop.ReverseGroupingSortingComparatorsrc/core/cascading/tuple/hadoop/ReverseTuplePairComparator.java 6:13
+******************************
+******************************
+coarse grained commits ab6e759c9a8d11863d1292ad3e47e2a96b63cc26
+fine grained commits ('3db15bf9d9bc1a21f2c817b6c6c636daa09a4e83', 'afa16b899a5c28d748d5fcd0bfd8f9e50752dd66')
+Generation
+Extract Methodsrc/core/cascading/tap/hadoop/TapCollector.java@private initalize() : voidsrc/core/cascading/tap/hadoop/TapCollector.java@private getAttemptContext() : TaskAttemptContextsrc/core/cascading/tap/hadoop/TapCollector.java 45:68
+******************************
+******************************
+coarse grained commits 030069cb3af255ba6d6f29509376e545c331d5fb
+fine grained commits ('c1942a6822e122fbf4543018190a2993c21289b8', 'a8896918784e1101e316239e188bb41e13f3bcf8')
+Generation
+Pull Up Methodsrc/java/cascading/operation/AggregatorCall.java@public getContext() : Csrc/java/cascading/operation/OperationCall.java@public getContext() : Csrc/java/cascading/operation/AggregatorCall.java 9:9
+Generation
+Pull Up Methodsrc/java/cascading/operation/AggregatorCall.java@public setContext(context C) : voidsrc/java/cascading/operation/OperationCall.java@public setContext(context C) : voidsrc/java/cascading/operation/AggregatorCall.java 11:11
+Generation
+Pull Up Methodsrc/java/cascading/operation/GroupAssertionCall.java@public getContext() : Csrc/java/cascading/operation/OperationCall.java@public getContext() : Csrc/java/cascading/operation/GroupAssertionCall.java 8:8
+Generation
+Pull Up Methodsrc/java/cascading/operation/GroupAssertionCall.java@public setContext(context C) : voidsrc/java/cascading/operation/OperationCall.java@public setContext(context C) : voidsrc/java/cascading/operation/GroupAssertionCall.java 10:10
+******************************
+******************************
+coarse grained commits 253b5b117b7a3cb949377dcf055cd65c964ac8ae
+fine grained commits ('c51fc77f981666a3dfaf6776b4dd55e560b53723', '9cde24785a9da0ef15b16aef2bd6ee4adf6ac33f')
+Generation
+Add Parametersrc/java/cascading/operation/assertion/AssertMatches.java@public doAssert(flowSession FlowSession, assertionCall ValueAssertionCall) : voidsrc/java/cascading/operation/assertion/AssertMatches.java@flowProcess : FlowProcesssrc/java/cascading/operation/assertion/AssertMatches.java 24:30
+Generation
+Remove Parametersrc/java/cascading/operation/assertion/AssertMatches.java@flowSession : FlowSessionsrc/java/cascading/operation/assertion/AssertMatches.java@public doAssert(flowProcess FlowProcess, assertionCall ValueAssertionCall) : voidsrc/java/cascading/operation/assertion/AssertMatches.java 24:24
+Generation
+Add Parametersrc/java/cascading/operation/assertion/AssertMatchesAll.java@public doAssert(flowSession FlowSession, assertionCall ValueAssertionCall) : voidsrc/java/cascading/operation/assertion/AssertMatchesAll.java@flowProcess : FlowProcesssrc/java/cascading/operation/assertion/AssertMatchesAll.java 24:32
+Generation
+Remove Parametersrc/java/cascading/operation/assertion/AssertMatchesAll.java@flowSession : FlowSessionsrc/java/cascading/operation/assertion/AssertMatchesAll.java@public doAssert(flowProcess FlowProcess, assertionCall ValueAssertionCall) : voidsrc/java/cascading/operation/assertion/AssertMatchesAll.java 24:24
+Generation
+Add Parametersrc/java/cascading/operation/regex/RegexFilter.java@public isRemove(flowSession FlowSession, filterCall FilterCall) : booleansrc/java/cascading/operation/regex/RegexFilter.java@flowProcess : FlowProcesssrc/java/cascading/operation/regex/RegexFilter.java 31:37
+Generation
+Remove Parametersrc/java/cascading/operation/regex/RegexFilter.java@flowSession : FlowSessionsrc/java/cascading/operation/regex/RegexFilter.java@public isRemove(flowProcess FlowProcess, filterCall FilterCall) : booleansrc/java/cascading/operation/regex/RegexFilter.java 31:31
+Generation
+Add Parametersrc/java/cascading/operation/regex/RegexParser.java@public operate(flowSession FlowSession, functionCall FunctionCall) : voidsrc/java/cascading/operation/regex/RegexParser.java@flowProcess : FlowProcess<Matcher>src/java/cascading/operation/regex/RegexParser.java 54:72
+Generation
+Remove Parametersrc/java/cascading/operation/regex/RegexParser.java@flowSession : FlowSessionsrc/java/cascading/operation/regex/RegexParser.java@public operate(flowProcess FlowProcess<Matcher>, functionCall FunctionCall) : voidsrc/java/cascading/operation/regex/RegexParser.java 54:54
+******************************
+******************************
+coarse grained commits eb85a8cef920402f84206b5e4dde7b93c14d10cd
+fine grained commits ('a601bd797baabe347f51f631b2f1a3bb1aa2666f', '8a01b07d56822cc1cd9952b4ceef438fd9200f92')
+Generation
+Extract Interfacesrc/java/cascading/operation/OperationCall.java@cascading.operation.OperationCallsrc/java/cascading/operation/OperationCall.java@cascading.operation.OperationCallsrc/java/cascading/operation/OperationCall.java 7:64
+Generation
+Move Methodsrc/java/cascading/operation/ReducerCall.java@public getGroup() : TupleEntrysrc/java/cascading/operation/BufferCall.java@public getGroup() : TupleEntrysrc/java/cascading/operation/ReducerCall.java 13:13
+Generation
+Move Methodsrc/java/cascading/operation/ReducerCall.java@public getOutputCollector() : TupleCollectorsrc/java/cascading/operation/BufferCall.java@public getOutputCollector() : TupleCollectorsrc/java/cascading/operation/ReducerCall.java 17:17
+******************************
+******************************
+coarse grained commits 21ba04cbbd1d39a974e4966c2a2dabf7f333007c
+fine grained commits ('f12cef8efd317b58c5d4133e2e8cdb5ee238c376', '5ce1d7713eec34981cd8f532db3660e7439e2094')
+Generation
+Move And Rename Methodsrc/test/cascading/ArrivalUseCaseTest.java@public testArrivalRate() : voidsrc/test/cascading/TrapTest.java@public testTrapNone() : voidsrc/test/cascading/ArrivalUseCaseTest.java 31:53
+Generation
+Move And Rename Methodsrc/test/cascading/ArrivalUseCaseTest.java@public testArrivalRateNames() : voidsrc/test/cascading/TrapTest.java@public testTrapEachAll() : voidsrc/test/cascading/ArrivalUseCaseTest.java 55:77
+******************************
+******************************
+coarse grained commits 8b7726bbebaf3a80739494a33852a76ab37e48bb
+fine grained commits ('e7d80629b7a1264ddf077cda015c687d378bb5a9', '366096d6366c99b3ca2c56dbf63138f79c2d57df')
+Generation
+Move And Rename Classsrc/java/cascading/flow/PushFlowReducerStack.java@cascading.flow.PushFlowReducerStack.FlowReducerStackElementsrc/java/cascading/flow/stack/ReducerStackElement.java@cascading.flow.stack.ReducerStackElementsrc/java/cascading/flow/PushFlowReducerStack.java 116:344
+Generation
+Change Parameter Typesrc/java/cascading/flow/PushFlowReducerStack.java@previous : FlowReducerStackElementsrc/java/cascading/flow/stack/ReducerStackElement.java@previous : StackElementsrc/java/cascading/flow/PushFlowReducerStack.java 143:143
+Generation
+Change Method Access Modifiersrc/java/cascading/flow/PushFlowReducerStack.java@public resolveIncomingFields() : Fieldssrc/java/cascading/flow/stack/ReducerStackElement.java@package resolveIncomingFields() : Fieldssrc/java/cascading/flow/PushFlowReducerStack.java 197:203
+Generation
+Change Method Access Modifiersrc/java/cascading/flow/PushFlowReducerStack.java@public getIncomingScope() : Scopesrc/java/cascading/flow/stack/ReducerStackElement.java@package getIncomingScope() : Scopesrc/java/cascading/flow/PushFlowReducerStack.java 210:213
+Generation
+Add Class Modifiersrc/java/cascading/flow/PushFlowReducerStack.java@cascading.flow.PushFlowReducerStack.FlowReducerStackElementsrc/java/cascading/flow/stack/ReducerStackElement.java@cascading.flow.stack.ReducerStackElementsrc/java/cascading/flow/PushFlowReducerStack.java 116:344
+Generation
+Change Attribute Access Modifiersrc/java/cascading/flow/PushFlowReducerStack.java@private incomingScope : Scopesrc/java/cascading/flow/stack/ReducerStackElement.java@package incomingScope : Scopesrc/java/cascading/flow/PushFlowReducerStack.java 121:121
+Generation
+Change Attribute Access Modifiersrc/java/cascading/flow/PushFlowReducerStack.java@private lastOutput : OutputCollectorsrc/java/cascading/flow/stack/ReducerStackElement.java@package lastOutput : OutputCollectorsrc/java/cascading/flow/PushFlowReducerStack.java 130:130
+Generation
+Change Method Access Modifiersrc/java/cascading/flow/PushFlowReducerStack.java@private resolveIncomingOperationFields() : Fieldssrc/java/cascading/flow/stack/ReducerStackElement.java@package resolveIncomingOperationFields() : Fieldssrc/java/cascading/flow/PushFlowReducerStack.java 223:231
+Generation
+Change Method Access Modifiersrc/java/cascading/flow/PushFlowReducerStack.java@private getGroupingTupleEntry(tuple Tuple) : TupleEntrysrc/java/cascading/flow/stack/ReducerStackElement.java@package getGroupingTupleEntry(tuple Tuple) : TupleEntrysrc/java/cascading/flow/PushFlowReducerStack.java 259:267
+Generation
+Change Method Access Modifiersrc/java/cascading/flow/PushFlowReducerStack.java@private getTupleEntry(tuple Tuple) : TupleEntrysrc/java/cascading/flow/stack/ReducerStackElement.java@package getTupleEntry(tuple Tuple) : TupleEntrysrc/java/cascading/flow/PushFlowReducerStack.java 269:277
+Generation
+Remove Parametersrc/java/cascading/flow/PushFlowReducerStack.java@everyHandlers : List<Every.EveryHandler>src/java/cascading/flow/stack/ReducerStackElement.java@package ReducerStackElement(previous StackElement, incomingScope Scope)src/java/cascading/flow/PushFlowReducerStack.java 143:143
+Generation
+Change Method Access Modifiersrc/java/cascading/flow/PushFlowReducerStack.java@public FlowReducerStackElement(previous FlowReducerStackElement, incomingScope Scope, everyHandlers List<Every.EveryHandler>)src/java/cascading/flow/stack/ReducerStackElement.java@package ReducerStackElement(previous StackElement, incomingScope Scope)src/java/cascading/flow/PushFlowReducerStack.java 143:148
+******************************
+******************************
+coarse grained commits 9cd177128a5e676205152febbb57b14c101508af
+fine grained commits ('d05582fb0c5e92f13ebda77ee5651533cd11f7c6', '81ef5c6fe03bdd64a8d5d07b6b64aa8f5391cfd5')
+Generation
+Move And Rename Methodsrc/test/cascading/EndPipesTest.java@public EndPipesTest()src/test/cascading/UseTapCollectorTest.java@public UseTapCollectorTest()src/test/cascading/EndPipesTest.java 38:41
+Generation
+Move And Rename Methodsrc/test/cascading/EndPipesTest.java@public testSimpleGroup() : voidsrc/test/cascading/UseTapCollectorTest.java@public testViaEndPipe() : voidsrc/test/cascading/EndPipesTest.java 48:76
+******************************
+******************************
+coarse grained commits dd6f417a90dbbae6464988af1e01a641f9d1fc6c
+fine grained commits ('6bc35ee8851baeaf66597282d7d4f3e76c3003d9', '89201d0b2804fc97fe5084f75c97207158e3582f')
+Generation
+Remove Parametersrc/java/cascading/pipe/cogroup/CoGroupClosure.java@pipePos : Map<String,Integer>src/java/cascading/pipe/cogroup/CoGroupClosure.java@public build(jobConf JobConf, repeat int) : voidsrc/java/cascading/pipe/cogroup/CoGroupClosure.java 42:42
+******************************
+******************************
+coarse grained commits 7af6958d1b53fae912dc6fcf041ad501ea75bcc0
+fine grained commits ('0c4bc1c6261c2a9b0a6af2b0c0c67e0c1b91ec84', '527d68c7d44f8278ad46dfffffebb356819cc14a')
+Generation
+Add Method Annotationsrc/java/cascading/tap/hadoop/HttpFileSystem.java@public create(path Path, fsPermission FsPermission, b boolean, i int, i1 short, l long, progressable Progressable) : FSDataOutputStreamsrc/java/cascading/tap/hadoop/StreamedFileSystem.java@@Overridesrc/java/cascading/tap/hadoop/HttpFileSystem.java 96:99
+Generation
+Add Method Annotationsrc/java/cascading/tap/hadoop/S3HttpFileSystem.java@public create(path Path, fsPermission FsPermission, b boolean, i int, i1 short, l long, progressable Progressable) : FSDataOutputStreamsrc/java/cascading/tap/hadoop/StreamedFileSystem.java@@Overridesrc/java/cascading/tap/hadoop/S3HttpFileSystem.java 84:87
+Generation
+Add Method Annotationsrc/java/cascading/tap/hadoop/HttpFileSystem.java@public rename(path Path, path1 Path) : booleansrc/java/cascading/tap/hadoop/StreamedFileSystem.java@@Overridesrc/java/cascading/tap/hadoop/HttpFileSystem.java 101:104
+Generation
+Add Method Annotationsrc/java/cascading/tap/hadoop/S3HttpFileSystem.java@public rename(path Path, path1 Path) : booleansrc/java/cascading/tap/hadoop/StreamedFileSystem.java@@Overridesrc/java/cascading/tap/hadoop/S3HttpFileSystem.java 89:92
+Generation
+Add Method Annotationsrc/java/cascading/tap/hadoop/HttpFileSystem.java@public delete(path Path) : booleansrc/java/cascading/tap/hadoop/StreamedFileSystem.java@@Overridesrc/java/cascading/tap/hadoop/HttpFileSystem.java 106:109
+Generation
+Add Method Annotationsrc/java/cascading/tap/hadoop/S3HttpFileSystem.java@public delete(path Path) : booleansrc/java/cascading/tap/hadoop/StreamedFileSystem.java@@Overridesrc/java/cascading/tap/hadoop/S3HttpFileSystem.java 94:97
+Generation
+Add Method Annotationsrc/java/cascading/tap/hadoop/HttpFileSystem.java@public getWorkingDirectory() : Pathsrc/java/cascading/tap/hadoop/StreamedFileSystem.java@@Overridesrc/java/cascading/tap/hadoop/HttpFileSystem.java 135:138
+Generation
+Add Method Annotationsrc/java/cascading/tap/hadoop/S3HttpFileSystem.java@public getWorkingDirectory() : Pathsrc/java/cascading/tap/hadoop/StreamedFileSystem.java@@Overridesrc/java/cascading/tap/hadoop/S3HttpFileSystem.java 114:117
+Generation
+Rename Parametersrc/java/cascading/tap/hadoop/HttpFileSystem.java@path : Pathsrc/java/cascading/tap/hadoop/StreamedFileSystem.java@f : Pathsrc/java/cascading/tap/hadoop/HttpFileSystem.java 130:130
+Generation
+Rename Parametersrc/java/cascading/tap/hadoop/S3HttpFileSystem.java@path : Pathsrc/java/cascading/tap/hadoop/StreamedFileSystem.java@f : Pathsrc/java/cascading/tap/hadoop/S3HttpFileSystem.java 109:109
+Generation
+Add Method Annotationsrc/java/cascading/tap/hadoop/HttpFileSystem.java@public setWorkingDirectory(path Path) : voidsrc/java/cascading/tap/hadoop/StreamedFileSystem.java@@Overridesrc/java/cascading/tap/hadoop/HttpFileSystem.java 130:133
+Generation
+Add Method Annotationsrc/java/cascading/tap/hadoop/S3HttpFileSystem.java@public setWorkingDirectory(path Path) : voidsrc/java/cascading/tap/hadoop/StreamedFileSystem.java@@Overridesrc/java/cascading/tap/hadoop/S3HttpFileSystem.java 109:112
+Generation
+Add Method Annotationsrc/java/cascading/tap/hadoop/HttpFileSystem.java@public mkdirs(path Path, fsPermission FsPermission) : booleansrc/java/cascading/tap/hadoop/StreamedFileSystem.java@@Overridesrc/java/cascading/tap/hadoop/HttpFileSystem.java 140:143
+Generation
+Add Method Annotationsrc/java/cascading/tap/hadoop/S3HttpFileSystem.java@public mkdirs(path Path, fsPermission FsPermission) : booleansrc/java/cascading/tap/hadoop/StreamedFileSystem.java@@Overridesrc/java/cascading/tap/hadoop/S3HttpFileSystem.java 119:122
+Generation
+Add Method Annotationsrc/java/cascading/tap/hadoop/HttpFileSystem.java@public listStatus(path Path) : FileStatus[]src/java/cascading/tap/hadoop/StreamedFileSystem.java@@Overridesrc/java/cascading/tap/hadoop/HttpFileSystem.java 125:128
+Generation
+Add Method Annotationsrc/java/cascading/tap/hadoop/S3HttpFileSystem.java@public listStatus(path Path) : FileStatus[]src/java/cascading/tap/hadoop/StreamedFileSystem.java@@Overridesrc/java/cascading/tap/hadoop/S3HttpFileSystem.java 104:107
+******************************
+******************************
+coarse grained commits c0fa442a64f661776e92f892cc0ecb0008e0f42d
+fine grained commits ('6e1641808db8f13a13908bd96c7a1c7539945739', 'f85d22677c0e02288870208259c377eca432c492', 'ca94b2edd3506515df3fc8818a72c812639249da')
+Generation
+Add Method Annotationcascading-core/src/main/java/cascading/flow/planner/graph/ElementDirectedGraph.java@protected createDirectedSpecifics() : DirectedSpecificscascading-core/src/main/java/cascading/flow/planner/graph/ElementDirectedGraph.java@@Overridecascading-core/src/main/java/cascading/flow/planner/graph/ElementDirectedGraph.java 61:64
+******************************
+******************************
+coarse grained commits 63413d6d987f06bf101acd4364dcd19513aacd94
+fine grained commits ('de3c417b495ba944f4f1270e053eea813eceac3c', '3b0ffd95978d4ca3a08d623d58b098bca580a898', '84c1a68e1ef499bcaef20e72531055f21352101b')
+Generation
+Change Variable Typecascading-core/src/main/java/cascading/flow/planner/iso/subgraph/GraphPartitioner.java@next : ElementSubGraphcascading-core/src/main/java/cascading/flow/planner/iso/subgraph/partitioner/ExpressionGraphPartitioner.java@next : ElementGraphcascading-core/src/main/java/cascading/flow/planner/iso/subgraph/GraphPartitioner.java 79:79
+******************************
+******************************
+coarse grained commits e1d552d9d40e9d2e8043ff2ed73a57f2c54ff5e8
+fine grained commits ('772b5fa5b983f45a5c1459625f3c091aae2ff092', 'c9efc2c8ffb19e026ae0f3aad43624a71699fcd6', 'ff9f2fe6ef2e840f2b49976956981be721609194')
+Generation
+Rename Methodcascading-core/src/main/java/cascading/flow/planner/rule/RuleExec.java@private performNodePartitions(phase PlanPhase, partitionRuleNum int, plannerContext PlannerContext, elementGraph FlowElementGraph, stepSubGraphs List<ElementGraph>, priorResults Map<ElementGraph,List<ElementGraph>>, partitioner RulePartitioner) : Map<ElementGraph,List<ElementGraph>>cascading-core/src/main/java/cascading/flow/planner/rule/RuleExec.java@private handleParentPartitioning(plannerContext PlannerContext, ruleResult RuleResult, phase PlanPhase, rule Rule, partitioner RulePartitioner) : voidcascading-core/src/main/java/cascading/flow/planner/rule/RuleExec.java 356:379
+Generation
+Change Variable Typecascading-core/src/main/java/cascading/flow/planner/rule/RuleExec.java@nodeSubGraphs : Map<ElementGraph,List<ElementGraph>>cascading-core/src/main/java/cascading/flow/planner/rule/RuleExec.java@subGraphs : Map<ElementGraph,List<? extends ElementGraph>>cascading-core/src/main/java/cascading/flow/planner/rule/RuleExec.java 358:358
+Generation
+Change Variable Typecascading-core/src/main/java/cascading/flow/planner/rule/RuleExec.java@priorResultElementGraphs : List<ElementGraph>cascading-core/src/main/java/cascading/flow/planner/rule/RuleExec.java@children : List<? extends ElementGraph>cascading-core/src/main/java/cascading/flow/planner/rule/RuleExec.java 364:364
+Generation
+Rename Variablecascading-core/src/main/java/cascading/flow/planner/rule/RuleExec.java@nodeSubGraphs : Map<ElementGraph,List<ElementGraph>>cascading-core/src/main/java/cascading/flow/planner/rule/RuleExec.java@subGraphs : Map<ElementGraph,List<? extends ElementGraph>>cascading-core/src/main/java/cascading/flow/planner/rule/RuleExec.java 358:358
+Generation
+Rename Variablecascading-core/src/main/java/cascading/flow/planner/rule/RuleExec.java@priorResultElementGraphs : List<ElementGraph>cascading-core/src/main/java/cascading/flow/planner/rule/RuleExec.java@children : List<? extends ElementGraph>cascading-core/src/main/java/cascading/flow/planner/rule/RuleExec.java 364:364
+Generation
+Merge Parametercascading-core/src/main/java/cascading/flow/planner/rule/RuleExec.java@elementGraph : FlowElementGraphcascading-core/src/main/java/cascading/flow/planner/rule/RuleExec.java@ruleResult : RuleResultcascading-core/src/main/java/cascading/flow/planner/rule/RuleExec.java 356:356
+Generation
+Change Return Typecascading-core/src/main/java/cascading/flow/planner/rule/RuleExec.java@Map<ElementGraph,List<ElementGraph>>cascading-core/src/main/java/cascading/flow/planner/rule/RuleExec.java@voidcascading-core/src/main/java/cascading/flow/planner/rule/RuleExec.java 356:356
+Generation
+Add Parametercascading-core/src/main/java/cascading/flow/planner/rule/RuleExec.java@private performNodePartitions(phase PlanPhase, partitionRuleNum int, plannerContext PlannerContext, elementGraph FlowElementGraph, stepSubGraphs List<ElementGraph>, priorResults Map<ElementGraph,List<ElementGraph>>, partitioner RulePartitioner) : Map<ElementGraph,List<ElementGraph>>cascading-core/src/main/java/cascading/flow/planner/rule/RuleExec.java@rule : Rulecascading-core/src/main/java/cascading/flow/planner/rule/RuleExec.java 356:379
+Generation
+Remove Parametercascading-core/src/main/java/cascading/flow/planner/rule/RuleExec.java@partitionRuleNum : intcascading-core/src/main/java/cascading/flow/planner/rule/RuleExec.java@private handleParentPartitioning(plannerContext PlannerContext, ruleResult RuleResult, phase PlanPhase, rule Rule, partitioner RulePartitioner) : voidcascading-core/src/main/java/cascading/flow/planner/rule/RuleExec.java 356:356
+Generation
+Remove Parametercascading-core/src/main/java/cascading/flow/planner/rule/RuleExec.java@stepSubGraphs : List<ElementGraph>cascading-core/src/main/java/cascading/flow/planner/rule/RuleExec.java@private handleParentPartitioning(plannerContext PlannerContext, ruleResult RuleResult, phase PlanPhase, rule Rule, partitioner RulePartitioner) : voidcascading-core/src/main/java/cascading/flow/planner/rule/RuleExec.java 356:356
+Generation
+Reorder Parametercascading-core/src/main/java/cascading/flow/planner/rule/RuleExec.java@phase : PlanPhasecascading-core/src/main/java/cascading/flow/planner/rule/RuleExec.java@plannerContext : PlannerContextcascading-core/src/main/java/cascading/flow/planner/rule/RuleExec.java 356:356
+******************************
+******************************
+coarse grained commits 0fc9b7ae188cdd55b003fc7ef65574edb22457bd
+fine grained commits ('3f609678a4dc8097e70154bf8fd1a1923fd51438', '0c7feee7399aaa45c73310872f48d60b74b4d868', 'efb60093f78ed66edc8c0ddc0f9da509736cdea2')
+Generation
+Add Parametercascading-core/src/main/java/cascading/flow/planner/rule/RulePartitioner.java@public RulePartitioner(phase PlanPhase, contractionGraph ExpressionGraph, expressionGraph ExpressionGraph)cascading-core/src/main/java/cascading/flow/planner/rule/RulePartitioner.java@annotations : ElementAnnotation...cascading-core/src/main/java/cascading/flow/planner/rule/RulePartitioner.java 16:20
+Generation
+Move And Inline Methodcascading-core/src/main/java/cascading/flow/planner/FlowNode.java@public getSuccessors(flowElement FlowElement) : List<FlowElement>cascading-core/src/main/java/cascading/flow/stream/NodeStreamGraph.java@protected handleDuct(lhsElement FlowElement, lhsDuct Duct) : voidcascading-core/src/main/java/cascading/flow/planner/FlowNode.java 345:348
+******************************
+******************************
+coarse grained commits 1c43122c45ee82b7c4e4952d5b0266b87a905452
+fine grained commits ('d6ede999f22e9aebb7b8c21ef07f65f1f1c9715c', '8ca308811a6559c37191ff56f858780d9a2d0d83', '2ccb364a2df082189df2db1f375550f046fa8f4f')
+Generation
+Extract Subclasscascading-hadoop-shared/src/test/shared/cascading/platform/hadoop/HadoopPlatform.java@cascading.platform.hadoop.HadoopPlatformcascading-hadoop/src/test/shared/cascading/platform/hadoop/BaseHadoopPlatform.java@cascading.platform.hadoop.BaseHadoopPlatformcascading-hadoop-shared/src/test/shared/cascading/platform/hadoop/HadoopPlatform.java 43:324
+Generation
+Push Down Methodcascading-hadoop-shared/src/test/shared/cascading/platform/hadoop/HadoopPlatform.java@public getFlowConnector(properties Map<Object,Object>) : FlowConnectorcascading-hadoop/src/test/java/cascading/hadoop/platform/HadoopPlatform.java@public getFlowConnector(properties Map<Object,Object>) : FlowConnectorcascading-hadoop-shared/src/test/shared/cascading/platform/hadoop/HadoopPlatform.java 174:178
+******************************
+******************************
+coarse grained commits 19cd6598eeeb1ec8f1210f3b32d7c8a2f9e28d0a
+fine grained commits ('a4d3cdc84c329613d5a7862daf6c02f3773c661b', 'a601bd797baabe347f51f631b2f1a3bb1aa2666f', '8a01b07d56822cc1cd9952b4ceef438fd9200f92')
+Generation
+Move And Rename Methodsrc/test/cascading/ReducerPipesTest.java@public TestReducer(fieldDeclaration Fields, value String)src/test/cascading/TestBuffer.java@public TestBuffer(fieldDeclaration Fields, value String)src/test/cascading/ReducerPipesTest.java 54:58
+******************************
+******************************
+coarse grained commits 1570f905f02e9c8f194bcc5e7a72f5afcee23b35
+fine grained commits ('7b56a25bfed23bc11811bfc39a8856370593c07d', 'd023a2c95e58ba3a59b282f1c1f5e6bb45da3056', '277fb1de1ae5f5a187a8382bc0b18388b2961b93')
+Generation
+Change Class Access Modifiersrc/java/cascading/flow/MultiMapReducePlanner.java@cascading.flow.MultiMapReducePlanner.Extentsrc/java/cascading/flow/ElementGraph.java@cascading.flow.ElementGraph.Extentsrc/java/cascading/flow/MultiMapReducePlanner.java 894:912
+Generation
+Remove Parametersrc/java/cascading/flow/MultiMapReducePlanner.java@pipeGraph : SimpleDirectedGraph<FlowElement,Scope>src/java/cascading/flow/ElementGraph.java@public makeTapGraph() : SimpleDirectedGraph<Tap,Integer>src/java/cascading/flow/MultiMapReducePlanner.java 745:745
+Generation
+Change Method Access Modifiersrc/java/cascading/flow/MultiMapReducePlanner.java@private makeTapGraph(pipeGraph SimpleDirectedGraph<FlowElement,Scope>) : SimpleDirectedGraph<Tap,Integer>src/java/cascading/flow/ElementGraph.java@public makeTapGraph() : SimpleDirectedGraph<Tap,Integer>src/java/cascading/flow/MultiMapReducePlanner.java 745:786
+Generation
+Move Methodsrc/java/cascading/flow/MultiMapReducePlanner.java@private makeTapGraph(pipeGraph SimpleDirectedGraph<FlowElement,Scope>) : SimpleDirectedGraph<Tap,Integer>src/java/cascading/flow/ElementGraph.java@public makeTapGraph() : SimpleDirectedGraph<Tap,Integer>src/java/cascading/flow/MultiMapReducePlanner.java 745:786
+******************************
+******************************
+coarse grained commits 21cbbf0045469f5c5617a4a9164cab9c872badbf
+fine grained commits ('4f30a72d31f7c9d7bd2bfd06daa9c1f32a228575', 'bcb4d7ab12bcf7e39bd87c78dffd954f1deece84', 'cc338d993526708a6b28e2ff27a7d241c61cf6b5')
+Generation
+Move Attributecascading-hadoop/src/main/shared-mr1/cascading/flow/hadoop/stream/HadoopCoGroupGate.java@private ordinalMap : Map<Duct,Integer>cascading-core/src/main/java/cascading/flow/stream/GroupingSpliceGate.java@protected ordinalMap : Map<Duct,Integer>cascading-hadoop/src/main/shared-mr1/cascading/flow/hadoop/stream/HadoopCoGroupGate.java 19:19
+******************************
+******************************
+coarse grained commits efea6166f392bdaa9d01e591e82a2d43edbc3a85
+fine grained commits ('705734a1a344fb8d66b5379bed1c13fa0d06ae4d', '8bf95044ac61af231faabee72026e3e56828f2ab', '3f609678a4dc8097e70154bf8fd1a1923fd51438')
+Generation
+Extract Classcascading-core/src/main/java/cascading/flow/planner/iso/subgraph/GraphPartitioner.java@cascading.flow.planner.iso.subgraph.GraphPartitionercascading-core/src/main/java/cascading/flow/planner/iso/subgraph/GraphPartitioner.java@cascading.flow.planner.iso.subgraph.GraphPartitionercascading-core/src/main/java/cascading/flow/planner/iso/subgraph/GraphPartitioner.java 20:90
+******************************
+******************************
+coarse grained commits 85d246d00926770b6ff2563e67afffe452948e3a
+fine grained commits ('ea6d27650bba5fb073ba31b01172f2d01a7691ca', 'f1008cde27e4afc40370583f2d43808f72783254', 'ae0a3b3074018c0a4c77315ddc638b37c7214795')
+Generation
+Extract Methodsrc/core/cascading/flow/stream/StepStreamGraph.java@private createDuctFor(element FlowElement) : Ductsrc/core/cascading/flow/stream/StepStreamGraph.java@protected createMergeStage(merge Merge) : Ductsrc/core/cascading/flow/stream/StepStreamGraph.java 62:103
+******************************
+******************************
+coarse grained commits 9ec3b13a3649cc52a45eee55d244b63c58960a9d
+fine grained commits ('3c411cdeb61308359e40a28c6f8d7992c97dd181', '9edfa55bef52862a52807dcd3e3290ccd6c59543', '75fdc79f4f7515860badd5dd66929da1013073e8')
+Generation
+Merge Parametersrc/hadoop/cascading/flow/hadoop/HadoopFlow.java@name : Stringsrc/hadoop/cascading/flow/hadoop/HadoopFlow.java@flowDef : FlowDefsrc/hadoop/cascading/flow/hadoop/HadoopFlow.java 60:60
+Generation
+Remove Parametersrc/local/cascading/flow/local/LocalPlanner.java@sources : Map<String,Tap>src/local/cascading/flow/local/LocalPlanner.java@public buildFlow(flowDef FlowDef) : Flowsrc/local/cascading/flow/local/LocalPlanner.java 32:32
+Generation
+Remove Parametersrc/local/cascading/flow/local/LocalPlanner.java@sinks : Map<String,Tap>src/local/cascading/flow/local/LocalPlanner.java@public buildFlow(flowDef FlowDef) : Flowsrc/local/cascading/flow/local/LocalPlanner.java 32:32
+Generation
+Remove Parametersrc/core/cascading/flow/planner/FlowPlanner.java@sources : Map<String,Tap>src/core/cascading/flow/planner/FlowPlanner.java@public abstract buildFlow(flowDef FlowDef) : Flowsrc/core/cascading/flow/planner/FlowPlanner.java 49:49
+Generation
+Remove Parametersrc/core/cascading/flow/planner/FlowPlanner.java@sinks : Map<String,Tap>src/core/cascading/flow/planner/FlowPlanner.java@public abstract buildFlow(flowDef FlowDef) : Flowsrc/core/cascading/flow/planner/FlowPlanner.java 49:49
+******************************
+******************************
+coarse grained commits e00c11932687bd6742abc49f0e38f7f96d9042c0
+fine grained commits ('d34b6155893632f8eeea885e5de199d220429406', 'e7d80629b7a1264ddf077cda015c687d378bb5a9', '366096d6366c99b3ca2c56dbf63138f79c2d57df')
+Generation
+Merge Classsrc/java/cascading/flow/PushFlowReducerStack.java@cascading.flow.PushFlowReducerStack.FlowReducerStackElementsrc/java/cascading/flow/stack/ReducerStackElement.java@cascading.flow.stack.ReducerStackElementsrc/java/cascading/flow/PushFlowReducerStack.java 116:344
+Generation
+Move And Rename Methodsrc/java/cascading/flow/PushFlowReducerStack.java@public FlowReducerStackElement(incomingScopes Set<Scope>, group Group, thisScope Scope, outGroupingFields Fields)src/java/cascading/flow/stack/ReducerStackElement.java@package ReducerStackElement(previous StackElement, incomingScope Scope)src/java/cascading/flow/PushFlowReducerStack.java 135:141
+Generation
+Change Parameter Typesrc/java/cascading/flow/PushFlowReducerStack.java@incomingScopes : Set<Scope>src/java/cascading/flow/stack/ReducerStackElement.java@previous : StackElementsrc/java/cascading/flow/PushFlowReducerStack.java 135:135
+Generation
+Rename Parametersrc/java/cascading/flow/PushFlowReducerStack.java@incomingScopes : Set<Scope>src/java/cascading/flow/stack/ReducerStackElement.java@previous : StackElementsrc/java/cascading/flow/PushFlowReducerStack.java 135:135
+Generation
+Rename Parametersrc/java/cascading/flow/PushFlowReducerStack.java@thisScope : Scopesrc/java/cascading/flow/stack/ReducerStackElement.java@incomingScope : Scopesrc/java/cascading/flow/PushFlowReducerStack.java 135:135
+Generation
+Change Method Access Modifiersrc/java/cascading/flow/PushFlowReducerStack.java@public FlowReducerStackElement(incomingScopes Set<Scope>, group Group, thisScope Scope, outGroupingFields Fields)src/java/cascading/flow/stack/ReducerStackElement.java@package ReducerStackElement(previous StackElement, incomingScope Scope)src/java/cascading/flow/PushFlowReducerStack.java 135:141
+Generation
+Move And Rename Methodsrc/java/cascading/flow/PushFlowReducerStack.java@public FlowReducerStackElement(incomingScopes Set<Scope>, group Group, thisScope Scope, outGroupingFields Fields)src/java/cascading/flow/stack/ReducerStackElement.java@package ReducerStackElement(outGroupingFields Fields)src/java/cascading/flow/PushFlowReducerStack.java 135:141
+Generation
+Remove Parametersrc/java/cascading/flow/PushFlowReducerStack.java@incomingScopes : Set<Scope>src/java/cascading/flow/stack/ReducerStackElement.java@package ReducerStackElement(outGroupingFields Fields)src/java/cascading/flow/PushFlowReducerStack.java 135:135
+Generation
+Remove Parametersrc/java/cascading/flow/PushFlowReducerStack.java@group : Groupsrc/java/cascading/flow/stack/ReducerStackElement.java@package ReducerStackElement(outGroupingFields Fields)src/java/cascading/flow/PushFlowReducerStack.java 135:135
+Generation
+Remove Parametersrc/java/cascading/flow/PushFlowReducerStack.java@thisScope : Scopesrc/java/cascading/flow/stack/ReducerStackElement.java@package ReducerStackElement(outGroupingFields Fields)src/java/cascading/flow/PushFlowReducerStack.java 135:135
+Generation
+Change Method Access Modifiersrc/java/cascading/flow/PushFlowReducerStack.java@public FlowReducerStackElement(incomingScopes Set<Scope>, group Group, thisScope Scope, outGroupingFields Fields)src/java/cascading/flow/stack/ReducerStackElement.java@package ReducerStackElement(outGroupingFields Fields)src/java/cascading/flow/PushFlowReducerStack.java 135:141
+Generation
+Move Methodsrc/java/cascading/flow/PushFlowReducerStack.java@public getFlowElement() : FlowElementsrc/java/cascading/flow/stack/ReducerStackElement.java@protected abstract getFlowElement() : FlowElementsrc/java/cascading/flow/PushFlowReducerStack.java 192:195
+Generation
+Change Method Access Modifiersrc/java/cascading/flow/PushFlowReducerStack.java@public getFlowElement() : FlowElementsrc/java/cascading/flow/stack/ReducerStackElement.java@protected abstract getFlowElement() : FlowElementsrc/java/cascading/flow/PushFlowReducerStack.java 192:195
+Generation
+Add Method Modifiersrc/java/cascading/flow/PushFlowReducerStack.java@public getFlowElement() : FlowElementsrc/java/cascading/flow/stack/ReducerStackElement.java@protected abstract getFlowElement() : FlowElementsrc/java/cascading/flow/PushFlowReducerStack.java 192:195
+Generation
+Move Methodsrc/java/cascading/flow/PushFlowReducerStack.java@public resolveIncomingFields() : Fieldssrc/java/cascading/flow/stack/ReducerStackElement.java@package resolveIncomingFields() : Fieldssrc/java/cascading/flow/PushFlowReducerStack.java 197:203
+Generation
+Move Methodsrc/java/cascading/flow/PushFlowReducerStack.java@public setLastOutput(lastOutput OutputCollector) : voidsrc/java/cascading/flow/stack/ReducerStackElement.java@public setLastOutput(lastOutput OutputCollector) : voidsrc/java/cascading/flow/PushFlowReducerStack.java 205:208
+Generation
+Move Methodsrc/java/cascading/flow/PushFlowReducerStack.java@public getIncomingScope() : Scopesrc/java/cascading/flow/stack/ReducerStackElement.java@package getIncomingScope() : Scopesrc/java/cascading/flow/PushFlowReducerStack.java 210:213
+Generation
+Move Methodsrc/java/cascading/flow/PushFlowReducerStack.java@private resolveIncomingOperationFields() : Fieldssrc/java/cascading/flow/stack/ReducerStackElement.java@package resolveIncomingOperationFields() : Fieldssrc/java/cascading/flow/PushFlowReducerStack.java 223:231
+Generation
+Move Methodsrc/java/cascading/flow/PushFlowReducerStack.java@public collect(key Tuple, values Iterator) : voidsrc/java/cascading/flow/stack/ReducerStackElement.java@public collect(key Tuple, values Iterator) : voidsrc/java/cascading/flow/PushFlowReducerStack.java 233:245
+Generation
+Move Methodsrc/java/cascading/flow/PushFlowReducerStack.java@public collect(tuple Tuple) : voidsrc/java/cascading/flow/stack/ReducerStackElement.java@public collect(tuple Tuple) : voidsrc/java/cascading/flow/PushFlowReducerStack.java 247:257
+Generation
+Move Methodsrc/java/cascading/flow/PushFlowReducerStack.java@public getOutGroupingFields() : Fieldssrc/java/cascading/flow/stack/ReducerStackElement.java@public getOutGroupingFields() : Fieldssrc/java/cascading/flow/PushFlowReducerStack.java 215:221
+Generation
+Move Methodsrc/java/cascading/flow/PushFlowReducerStack.java@private getGroupingTupleEntry(tuple Tuple) : TupleEntrysrc/java/cascading/flow/stack/ReducerStackElement.java@package getGroupingTupleEntry(tuple Tuple) : TupleEntrysrc/java/cascading/flow/PushFlowReducerStack.java 259:267
+Generation
+Move Methodsrc/java/cascading/flow/PushFlowReducerStack.java@private getTupleEntry(tuple Tuple) : TupleEntrysrc/java/cascading/flow/stack/ReducerStackElement.java@package getTupleEntry(tuple Tuple) : TupleEntrysrc/java/cascading/flow/PushFlowReducerStack.java 269:277
+Generation
+Move Attributesrc/java/cascading/flow/PushFlowReducerStack.java@private incomingScope : Scopesrc/java/cascading/flow/stack/ReducerStackElement.java@package incomingScope : Scopesrc/java/cascading/flow/PushFlowReducerStack.java 121:121
+Generation
+Move Attributesrc/java/cascading/flow/PushFlowReducerStack.java@private incomingFields : Fieldssrc/java/cascading/flow/stack/ReducerStackElement.java@private incomingFields : Fieldssrc/java/cascading/flow/PushFlowReducerStack.java 131:131
+Generation
+Move Attributesrc/java/cascading/flow/PushFlowReducerStack.java@private outGroupingFields : Fieldssrc/java/cascading/flow/stack/ReducerStackElement.java@private outGroupingFields : Fieldssrc/java/cascading/flow/PushFlowReducerStack.java 125:125
+Generation
+Move Attributesrc/java/cascading/flow/PushFlowReducerStack.java@private groupingTupleEntry : TupleEntrysrc/java/cascading/flow/stack/ReducerStackElement.java@private groupingTupleEntry : TupleEntrysrc/java/cascading/flow/PushFlowReducerStack.java 129:129
+Generation
+Move Attributesrc/java/cascading/flow/PushFlowReducerStack.java@private tupleEntry : TupleEntrysrc/java/cascading/flow/stack/ReducerStackElement.java@private tupleEntry : TupleEntrysrc/java/cascading/flow/PushFlowReducerStack.java 132:132
+Generation
+Move Attributesrc/java/cascading/flow/PushFlowReducerStack.java@private lastOutput : OutputCollectorsrc/java/cascading/flow/stack/ReducerStackElement.java@package lastOutput : OutputCollectorsrc/java/cascading/flow/PushFlowReducerStack.java 130:130
+Generation
+Move And Rename Methodsrc/java/cascading/flow/stack/FlowReducerStackElement.java@package FlowReducerStackElement(previous FlowReducerStackElement, incomingScope Scope)src/java/cascading/flow/stack/ReducerStackElement.java@package ReducerStackElement(previous StackElement, incomingScope Scope)src/java/cascading/flow/stack/FlowReducerStackElement.java 28:32
+Generation
+Move And Rename Methodsrc/java/cascading/flow/stack/FlowReducerStackElement.java@package FlowReducerStackElement(previous FlowReducerStackElement, incomingScope Scope)src/java/cascading/flow/stack/ReducerStackElement.java@package ReducerStackElement(outGroupingFields Fields)src/java/cascading/flow/stack/FlowReducerStackElement.java 28:32
+Generation
+Move Methodsrc/java/cascading/flow/stack/FlowReducerStackElement.java@public abstract getFlowElement() : FlowElementsrc/java/cascading/flow/stack/ReducerStackElement.java@protected abstract getFlowElement() : FlowElementsrc/java/cascading/flow/stack/FlowReducerStackElement.java 57:57
+Generation
+Move Methodsrc/java/cascading/flow/stack/FlowReducerStackElement.java@public resolveIncomingFields() : Fieldssrc/java/cascading/flow/stack/ReducerStackElement.java@package resolveIncomingFields() : Fieldssrc/java/cascading/flow/stack/FlowReducerStackElement.java 59:65
+Generation
+Move Methodsrc/java/cascading/flow/stack/FlowReducerStackElement.java@public setLastOutput(lastOutput OutputCollector) : voidsrc/java/cascading/flow/stack/ReducerStackElement.java@public setLastOutput(lastOutput OutputCollector) : voidsrc/java/cascading/flow/stack/FlowReducerStackElement.java 67:70
+Generation
+Move Methodsrc/java/cascading/flow/stack/FlowReducerStackElement.java@public getIncomingScope() : Scopesrc/java/cascading/flow/stack/ReducerStackElement.java@package getIncomingScope() : Scopesrc/java/cascading/flow/stack/FlowReducerStackElement.java 72:75
+Generation
+Move Methodsrc/java/cascading/flow/stack/FlowReducerStackElement.java@protected resolveIncomingOperationFields() : Fieldssrc/java/cascading/flow/stack/ReducerStackElement.java@package resolveIncomingOperationFields() : Fieldssrc/java/cascading/flow/stack/FlowReducerStackElement.java 77:80
+Generation
+Move Methodsrc/java/cascading/flow/stack/FlowReducerStackElement.java@public collect(key Tuple, values Iterator) : voidsrc/java/cascading/flow/stack/ReducerStackElement.java@public collect(key Tuple, values Iterator) : voidsrc/java/cascading/flow/stack/FlowReducerStackElement.java 82:85
+Generation
+Move Methodsrc/java/cascading/flow/stack/FlowReducerStackElement.java@public collect(tuple Tuple) : voidsrc/java/cascading/flow/stack/ReducerStackElement.java@public collect(tuple Tuple) : voidsrc/java/cascading/flow/stack/FlowReducerStackElement.java 87:90
+Generation
+Move Methodsrc/java/cascading/flow/stack/FlowReducerStackElement.java@public getOutGroupingFields() : Fieldssrc/java/cascading/flow/stack/ReducerStackElement.java@public getOutGroupingFields() : Fieldssrc/java/cascading/flow/stack/FlowReducerStackElement.java 92:98
+Generation
+Move Methodsrc/java/cascading/flow/stack/FlowReducerStackElement.java@protected getGroupingTupleEntry(tuple Tuple) : TupleEntrysrc/java/cascading/flow/stack/ReducerStackElement.java@package getGroupingTupleEntry(tuple Tuple) : TupleEntrysrc/java/cascading/flow/stack/FlowReducerStackElement.java 100:108
+Generation
+Move Methodsrc/java/cascading/flow/stack/FlowReducerStackElement.java@protected getTupleEntry(tuple Tuple) : TupleEntrysrc/java/cascading/flow/stack/ReducerStackElement.java@package getTupleEntry(tuple Tuple) : TupleEntrysrc/java/cascading/flow/stack/FlowReducerStackElement.java 110:118
+Generation
+Move Methodsrc/java/cascading/flow/stack/FlowReducerStackElement.java@public close() : voidsrc/java/cascading/flow/stack/ReducerStackElement.java@public close() : voidsrc/java/cascading/flow/stack/FlowReducerStackElement.java 120:122
+Generation
+Move Attributesrc/java/cascading/flow/stack/FlowReducerStackElement.java@protected incomingScope : Scopesrc/java/cascading/flow/stack/ReducerStackElement.java@package incomingScope : Scopesrc/java/cascading/flow/stack/FlowReducerStackElement.java 20:20
+Generation
+Move Attributesrc/java/cascading/flow/stack/FlowReducerStackElement.java@private incomingFields : Fieldssrc/java/cascading/flow/stack/ReducerStackElement.java@private incomingFields : Fieldssrc/java/cascading/flow/stack/FlowReducerStackElement.java 25:25
+Generation
+Move Attributesrc/java/cascading/flow/stack/FlowReducerStackElement.java@protected outGroupingFields : Fieldssrc/java/cascading/flow/stack/ReducerStackElement.java@private outGroupingFields : Fieldssrc/java/cascading/flow/stack/FlowReducerStackElement.java 21:21
+Generation
+Move Attributesrc/java/cascading/flow/stack/FlowReducerStackElement.java@private groupingTupleEntry : TupleEntrysrc/java/cascading/flow/stack/ReducerStackElement.java@private groupingTupleEntry : TupleEntrysrc/java/cascading/flow/stack/FlowReducerStackElement.java 23:23
+Generation
+Move Attributesrc/java/cascading/flow/stack/FlowReducerStackElement.java@private tupleEntry : TupleEntrysrc/java/cascading/flow/stack/ReducerStackElement.java@private tupleEntry : TupleEntrysrc/java/cascading/flow/stack/FlowReducerStackElement.java 26:26
+Generation
+Move Attributesrc/java/cascading/flow/stack/FlowReducerStackElement.java@protected lastOutput : OutputCollectorsrc/java/cascading/flow/stack/ReducerStackElement.java@package lastOutput : OutputCollectorsrc/java/cascading/flow/stack/FlowReducerStackElement.java 24:24
+******************************
+******************************
+coarse grained commits 84c7ee12accf4f78d9ebdcc29be26fb7e6334fe5
+fine grained commits ('bdfe4433b89704601dddf338b1746d4dfbf7124b', 'b377a55f51f85c356daea15075fafa0cedf97b51', '37f98300e880574009459f2d185c9bb24ac41cab')
+Generation
+Extract Methodcascading-local-s3/src/main/java/cascading/local/tap/aws/s3/S3Tap.java@public withChildIdentifier(identifier String) : TapWith<Properties,InputStream,OutputStream>cascading-local-s3/src/main/java/cascading/local/tap/aws/s3/S3Tap.java@protected create(scheme Scheme<Properties,InputStream,OutputStream,?,?>, s3Client AmazonS3, identifier URI, sinkMode SinkMode) : TapWith<Properties,InputStream,OutputStream>cascading-local-s3/src/main/java/cascading/local/tap/aws/s3/S3Tap.java 399:412
+Generation
+Extract Methodcascading-local-s3/src/main/java/cascading/local/tap/aws/s3/S3Tap.java@public withScheme(scheme Scheme<Properties,InputStream,OutputStream,?,?>) : TapWith<Properties,InputStream,OutputStream>cascading-local-s3/src/main/java/cascading/local/tap/aws/s3/S3Tap.java@protected create(scheme Scheme<Properties,InputStream,OutputStream,?,?>, s3Client AmazonS3, bucketName String, key String, delimiter String, filter Predicate<String>, sinkMode SinkMode) : TapWith<Properties,InputStream,OutputStream>cascading-local-s3/src/main/java/cascading/local/tap/aws/s3/S3Tap.java 393:397
+Generation
+Extract Methodcascading-local-s3/src/main/java/cascading/local/tap/aws/s3/S3Tap.java@public withSinkMode(sinkMode SinkMode) : TapWith<Properties,InputStream,OutputStream>cascading-local-s3/src/main/java/cascading/local/tap/aws/s3/S3Tap.java@protected create(scheme Scheme<Properties,InputStream,OutputStream,?,?>, s3Client AmazonS3, bucketName String, key String, delimiter String, filter Predicate<String>, sinkMode SinkMode) : TapWith<Properties,InputStream,OutputStream>cascading-local-s3/src/main/java/cascading/local/tap/aws/s3/S3Tap.java 414:418
+******************************
+******************************
+coarse grained commits 2cd09233ca2aa354dcb7b256a2469c4a9ce8613e
+fine grained commits ('efb60093f78ed66edc8c0ddc0f9da509736cdea2', '3b3f8cc446e4180729e3a197290284353a64083a', '193f3836bd0b66dea3d6770a24dc10012e5908e3')
+Generation
+Split Parametercascading-hadoop/src/main/shared/cascading/flow/hadoop/stream/HadoopReduceStreamGraph.java@step : HadoopFlowStepcascading-hadoop/src/main/shared/cascading/flow/hadoop/stream/HadoopReduceStreamGraph.java@sourceElement : FlowElementcascading-hadoop/src/main/shared/cascading/flow/hadoop/stream/HadoopReduceStreamGraph.java 22:22
+Generation
+Split Attributecascading-core/src/main/java/cascading/flow/stream/StepStreamGraph.java@step : BaseFlowStepcascading-core/src/main/java/cascading/flow/stream/NodeStreamGraph.java@elementGraph : ElementGraphcascading-core/src/main/java/cascading/flow/stream/StepStreamGraph.java 30:30
+******************************
+******************************
+coarse grained commits cfd28fd42bafecfd1750f27b46d6624381d11102
+fine grained commits ('f7b3faae609a4752f6d40cc6eda1540aed66c50d', 'c5afa0acf2cd93f7cd7c5a8b3abd3325f5c170e5', 'e41f897097c35619e8cfd2bd604100bea28c52b8')
+Generation
+Push Down Methodsrc/core/cascading/flow/Flow.java@public getFlowStats() : FlowStatssrc/core/cascading/flow/BaseFlow.java@public getFlowStats() : FlowStatssrc/core/cascading/flow/Flow.java 346:349
+Generation
+Add Method Annotationsrc/core/cascading/flow/Flow.java@public getFlowStats() : FlowStatssrc/core/cascading/flow/BaseFlow.java@@Overridesrc/core/cascading/flow/Flow.java 346:349
+Generation
+Push Down Methodsrc/core/cascading/flow/Flow.java@public getStats() : FlowStatssrc/core/cascading/flow/BaseFlow.java@public getStats() : FlowStatssrc/core/cascading/flow/Flow.java 351:355
+Generation
+Push Down Attributesrc/core/cascading/flow/Flow.java@protected flowStats : FlowStatssrc/core/cascading/flow/BaseFlow.java@protected flowStats : FlowStatssrc/core/cascading/flow/Flow.java 67:67
+******************************
+******************************
+coarse grained commits 12edb6e34ac9344e5aa5d0384fc487f39c90c63c
+fine grained commits ('27282c3a7b66b4222daaef671287aca7b3e656ae', '77cb477f7289e8057d18ce9738999635d496a3aa', 'ddeac2a99001ae383b5236f620bf3bf5dabe05cc')
+Generation
+Rename Attributesrc/core/cascading/tuple/hadoop/DeserializerComparator.java@groupStreamComparators : StreamComparator<TupleInputStream>[]src/core/cascading/tuple/hadoop/DeserializerComparator.java@streamGroupComparators : Comparator[]src/core/cascading/tuple/hadoop/DeserializerComparator.java 27:27
+Generation
+Change Attribute Typesrc/core/cascading/tuple/hadoop/DeserializerComparator.java@groupStreamComparators : StreamComparator<TupleInputStream>[]src/core/cascading/tuple/hadoop/DeserializerComparator.java@streamGroupComparators : Comparator[]src/core/cascading/tuple/hadoop/DeserializerComparator.java 27:27
+Generation
+Rename Attributesrc/core/cascading/tuple/hadoop/GroupingSortingComparator.java@sortStreamComparators : StreamComparator<TupleInputStream>[]src/core/cascading/tuple/hadoop/GroupingSortingComparator.java@streamSortComparators : Comparator[]src/core/cascading/tuple/hadoop/GroupingSortingComparator.java 16:16
+Generation
+Change Attribute Typesrc/core/cascading/tuple/hadoop/GroupingSortingComparator.java@sortStreamComparators : StreamComparator<TupleInputStream>[]src/core/cascading/tuple/hadoop/GroupingSortingComparator.java@streamSortComparators : Comparator[]src/core/cascading/tuple/hadoop/GroupingSortingComparator.java 16:16
+******************************
+******************************
+coarse grained commits c804081db63019f3fea892b5f95c371f657a107e
+fine grained commits ('a8896918784e1101e316239e188bb41e13f3bcf8', 'c51fc77f981666a3dfaf6776b4dd55e560b53723', '9cde24785a9da0ef15b16aef2bd6ee4adf6ac33f')
+Generation
+Add Parametersrc/java/cascading/flow/stack/FlowMapperStack.java@public FlowMapperStack(jobConf JobConf, flowSession FlowSession)src/java/cascading/flow/stack/FlowMapperStack.java@flowProcess : HadoopFlowProcesssrc/java/cascading/flow/stack/FlowMapperStack.java 43:60
+Generation
+Add Parametersrc/java/cascading/flow/stack/FlowReducerStack.java@public FlowReducerStack(jobConf JobConf, flowSession FlowSession)src/java/cascading/flow/stack/FlowReducerStack.java@flowProcess : HadoopFlowProcesssrc/java/cascading/flow/stack/FlowReducerStack.java 40:52
+Generation
+Add Parametersrc/java/cascading/operation/regex/RegexGenerator.java@public operate(flowSession FlowSession, functionCall FunctionCall) : voidsrc/java/cascading/operation/regex/RegexGenerator.java@flowProcess : FlowProcesssrc/java/cascading/operation/regex/RegexGenerator.java 35:46
+Generation
+Remove Parametersrc/java/cascading/operation/regex/RegexGenerator.java@flowSession : FlowSessionsrc/java/cascading/operation/regex/RegexGenerator.java@public operate(flowProcess FlowProcess, functionCall FunctionCall<Matcher>) : voidsrc/java/cascading/operation/regex/RegexGenerator.java 35:35
+Generation
+Add Parametersrc/java/cascading/operation/regex/RegexReplace.java@public operate(flowSession FlowSession, functionCall FunctionCall) : voidsrc/java/cascading/operation/regex/RegexReplace.java@flowProcess : FlowProcesssrc/java/cascading/operation/regex/RegexReplace.java 29:46
+Generation
+Remove Parametersrc/java/cascading/operation/regex/RegexReplace.java@flowSession : FlowSessionsrc/java/cascading/operation/regex/RegexReplace.java@public operate(flowProcess FlowProcess, functionCall FunctionCall<Matcher>) : voidsrc/java/cascading/operation/regex/RegexReplace.java 29:29
+******************************
+******************************
+coarse grained commits 4616f28ed6578764492023b1fe0c7fd87008d288
+fine grained commits ('5ba4e2d052943633f89b7a1e3ed1b30293641816', '55ca3f00d00440977c8b81bea191bc15e5a2d324', 'fdec5b374894a5e784bc57fd3d6e0f84eab9cbf4')
+Generation
+Add Parametersrc/java/cascading/operation/Operation.java@protected Operation(numArgs int)src/java/cascading/operation/BaseOperation.java@fieldDeclaration : Fieldssrc/java/cascading/operation/Operation.java 31:35
+******************************
+******************************
+coarse grained commits befbb913d2f8fa02a470a20985033c72310cdf98
+fine grained commits ('e7d80629b7a1264ddf077cda015c687d378bb5a9', '366096d6366c99b3ca2c56dbf63138f79c2d57df', 'd98f3c2da55847c92ff3dfe22627d7a94c01b62f')
+Generation
+Add Attribute Modifiersrc/java/cascading/flow/PushFlowMapperStack.java@private step : FlowStepsrc/java/cascading/flow/stack/FlowMapperStack.java@private step : FlowStepsrc/java/cascading/flow/PushFlowMapperStack.java 27:27
+Generation
+Add Attribute Modifiersrc/java/cascading/flow/PushFlowMapperStack.java@private currentSource : Tapsrc/java/cascading/flow/stack/FlowMapperStack.java@private currentSource : Tapsrc/java/cascading/flow/PushFlowMapperStack.java 28:28
+Generation
+Change Attribute Typesrc/java/cascading/flow/PushFlowMapperStack.java@stackHead : FlowMapperStackElementsrc/java/cascading/flow/stack/FlowMapperStack.java@stackHead : MapperStackElementsrc/java/cascading/flow/PushFlowMapperStack.java 31:31
+Generation
+Change Attribute Typesrc/java/cascading/flow/PushFlowMapperStack.java@stackTail : FlowMapperStackElementsrc/java/cascading/flow/stack/FlowMapperStack.java@stackTail : MapperStackElementsrc/java/cascading/flow/PushFlowMapperStack.java 32:32
+Generation
+Remove Thrown Exception Typesrc/java/cascading/flow/PushFlowMapperStack.java@IOExceptionsrc/java/cascading/flow/stack/FlowMapperStack.java@public map(key WritableComparable, value Writable, output OutputCollector) : voidsrc/java/cascading/flow/PushFlowMapperStack.java 89:89
+Generation
+Add Thrown Exception Typesrc/java/cascading/flow/PushFlowMapperStack.java@public close() : voidsrc/java/cascading/flow/stack/FlowMapperStack.java@IOExceptionsrc/java/cascading/flow/PushFlowMapperStack.java 108:112
+Generation
+Add Attribute Modifiersrc/java/cascading/flow/PushFlowReducerStack.java@private step : FlowStepsrc/java/cascading/flow/stack/FlowReducerStack.java@private step : FlowStepsrc/java/cascading/flow/PushFlowReducerStack.java 31:31
+Generation
+Change Attribute Typesrc/java/cascading/flow/PushFlowReducerStack.java@stackHead : FlowReducerStackElementsrc/java/cascading/flow/stack/FlowReducerStack.java@stackHead : ReducerStackElementsrc/java/cascading/flow/PushFlowReducerStack.java 34:34
+Generation
+Change Attribute Typesrc/java/cascading/flow/PushFlowReducerStack.java@stackTail : FlowReducerStackElementsrc/java/cascading/flow/stack/FlowReducerStack.java@stackTail : ReducerStackElementsrc/java/cascading/flow/PushFlowReducerStack.java 35:35
+Generation
+Remove Thrown Exception Typesrc/java/cascading/flow/PushFlowReducerStack.java@IOExceptionsrc/java/cascading/flow/stack/FlowReducerStack.java@public reduce(key WritableComparable, values Iterator, output OutputCollector) : voidsrc/java/cascading/flow/PushFlowReducerStack.java 98:98
+Generation
+Add Thrown Exception Typesrc/java/cascading/flow/PushFlowReducerStack.java@public close() : voidsrc/java/cascading/flow/stack/FlowReducerStack.java@IOExceptionsrc/java/cascading/flow/PushFlowReducerStack.java 110:114
+Generation
+Extract Superclasssrc/java/cascading/flow/PushFlowReducerStack.java@cascading.flow.PushFlowReducerStack.FlowReducerStackElementsrc/java/cascading/flow/stack/ReducerStackElement.java@cascading.flow.stack.ReducerStackElementsrc/java/cascading/flow/PushFlowReducerStack.java 116:344
+Generation
+Extract Classsrc/java/cascading/flow/PushFlowMapperStack.java@cascading.flow.PushFlowMapperStack.FlowMapperStackElementsrc/java/cascading/flow/stack/FlowMapperStackElement.java@cascading.flow.stack.FlowMapperStackElementsrc/java/cascading/flow/PushFlowMapperStack.java 114:288
+Generation
+Extract Classsrc/java/cascading/flow/PushFlowMapperStack.java@cascading.flow.PushFlowMapperStack.FlowMapperStackElementsrc/java/cascading/flow/stack/FlowMapperStackElement.java@cascading.flow.stack.FlowMapperStackElementsrc/java/cascading/flow/PushFlowMapperStack.java 114:288
+Generation
+Extract Classsrc/java/cascading/flow/PushFlowMapperStack.java@cascading.flow.PushFlowMapperStack.FlowMapperStackElementsrc/java/cascading/flow/stack/FlowMapperStackElement.java@cascading.flow.stack.FlowMapperStackElementsrc/java/cascading/flow/PushFlowMapperStack.java 114:288
+Generation
+Extract Classsrc/java/cascading/flow/PushFlowReducerStack.java@cascading.flow.PushFlowReducerStack.FlowReducerStackElementsrc/java/cascading/flow/stack/ReducerStackElement.java@cascading.flow.stack.ReducerStackElementsrc/java/cascading/flow/PushFlowReducerStack.java 116:344
+Generation
+Move Methodsrc/java/cascading/flow/PushFlowMapperStack.java@private getFlowElement() : FlowElementsrc/java/cascading/flow/stack/EachMapperStackElement.java@protected getFlowElement() : FlowElementsrc/java/cascading/flow/PushFlowMapperStack.java 180:188
+Generation
+Move Methodsrc/java/cascading/flow/PushFlowMapperStack.java@private operateEach(tupleEntry TupleEntry) : voidsrc/java/cascading/flow/stack/EachMapperStackElement.java@private operateEach(tupleEntry TupleEntry) : voidsrc/java/cascading/flow/PushFlowMapperStack.java 241:244
+Generation
+Move Attributesrc/java/cascading/flow/PushFlowMapperStack.java@private each : Eachsrc/java/cascading/flow/stack/EachMapperStackElement.java@private each : Eachsrc/java/cascading/flow/PushFlowMapperStack.java 120:120
+Generation
+Add Attribute Modifiersrc/java/cascading/flow/PushFlowMapperStack.java@private each : Eachsrc/java/cascading/flow/stack/EachMapperStackElement.java@private each : Eachsrc/java/cascading/flow/PushFlowMapperStack.java 120:120
+Generation
+Move Methodsrc/java/cascading/flow/PushFlowMapperStack.java@private operateGroup(tupleEntry TupleEntry) : voidsrc/java/cascading/flow/stack/GroupMapperStackElement.java@private operateGroup(tupleEntry TupleEntry) : voidsrc/java/cascading/flow/PushFlowMapperStack.java 246:263
+Generation
+Move Attributesrc/java/cascading/flow/PushFlowMapperStack.java@private group : Groupsrc/java/cascading/flow/stack/GroupMapperStackElement.java@private group : Groupsrc/java/cascading/flow/PushFlowMapperStack.java 121:121
+Generation
+Add Attribute Modifiersrc/java/cascading/flow/PushFlowMapperStack.java@private group : Groupsrc/java/cascading/flow/stack/GroupMapperStackElement.java@private group : Groupsrc/java/cascading/flow/PushFlowMapperStack.java 121:121
+Generation
+Move Attributesrc/java/cascading/flow/PushFlowMapperStack.java@private outgoingScope : Scopesrc/java/cascading/flow/stack/GroupMapperStackElement.java@private outgoingScope : Scopesrc/java/cascading/flow/PushFlowMapperStack.java 122:122
+Generation
+Add Attribute Modifiersrc/java/cascading/flow/PushFlowMapperStack.java@private outgoingScope : Scopesrc/java/cascading/flow/stack/GroupMapperStackElement.java@private outgoingScope : Scopesrc/java/cascading/flow/PushFlowMapperStack.java 122:122
+Generation
+Move Methodsrc/java/cascading/flow/PushFlowMapperStack.java@private operateSink(tupleEntry TupleEntry) : voidsrc/java/cascading/flow/stack/TapMapperStackElement.java@private operateSink(tupleEntry TupleEntry) : voidsrc/java/cascading/flow/PushFlowMapperStack.java 265:281
+Generation
+Move Attributesrc/java/cascading/flow/PushFlowMapperStack.java@private sink : Tapsrc/java/cascading/flow/stack/TapMapperStackElement.java@private sink : Tapsrc/java/cascading/flow/PushFlowMapperStack.java 129:129
+Generation
+Add Attribute Modifiersrc/java/cascading/flow/PushFlowMapperStack.java@private sink : Tapsrc/java/cascading/flow/stack/TapMapperStackElement.java@private sink : Tapsrc/java/cascading/flow/PushFlowMapperStack.java 129:129
+Generation
+Move Attributesrc/java/cascading/flow/PushFlowMapperStack.java@private tapCollector : TapCollectorsrc/java/cascading/flow/stack/TapMapperStackElement.java@private tapCollector : TapCollectorsrc/java/cascading/flow/PushFlowMapperStack.java 130:130
+Generation
+Move Methodsrc/java/cascading/flow/PushFlowReducerStack.java@public getFlowElement() : FlowElementsrc/java/cascading/flow/stack/EachMapperStackElement.java@protected getFlowElement() : FlowElementsrc/java/cascading/flow/PushFlowReducerStack.java 192:195
+Generation
+Change Method Access Modifiersrc/java/cascading/flow/PushFlowReducerStack.java@public getFlowElement() : FlowElementsrc/java/cascading/flow/stack/EachMapperStackElement.java@protected getFlowElement() : FlowElementsrc/java/cascading/flow/PushFlowReducerStack.java 192:195
+Generation
+Move Methodsrc/java/cascading/flow/PushFlowReducerStack.java@private operateEach(tupleEntry TupleEntry) : voidsrc/java/cascading/flow/stack/EachMapperStackElement.java@private operateEach(tupleEntry TupleEntry) : voidsrc/java/cascading/flow/PushFlowReducerStack.java 316:319
+Generation
+Add Attribute Modifiersrc/java/cascading/flow/PushFlowReducerStack.java@private incomingScopes : Set<Scope>src/java/cascading/flow/stack/GroupReducerStackElement.java@private incomingScopes : Set<Scope>src/java/cascading/flow/PushFlowReducerStack.java 122:122
+Generation
+Add Attribute Modifiersrc/java/cascading/flow/PushFlowReducerStack.java@private thisScope : Scopesrc/java/cascading/flow/stack/GroupReducerStackElement.java@private thisScope : Scopesrc/java/cascading/flow/PushFlowReducerStack.java 124:124
+Generation
+Move Methodsrc/java/cascading/flow/PushFlowReducerStack.java@private operateEveryHandlers(keyEntry TupleEntry, values Iterator) : voidsrc/java/cascading/flow/stack/EveryHandlersReducerStackElement.java@private operateEveryHandlers(keyEntry TupleEntry, values Iterator) : voidsrc/java/cascading/flow/PushFlowReducerStack.java 289:303
+Generation
+Move Methodsrc/java/cascading/flow/PushFlowReducerStack.java@private operateEveryHandler(keyEntry TupleEntry) : voidsrc/java/cascading/flow/stack/EveryHandlerReducerStackElement.java@private operateEveryHandler(keyEntry TupleEntry) : voidsrc/java/cascading/flow/PushFlowReducerStack.java 305:308
+Generation
+Move Methodsrc/java/cascading/flow/PushFlowReducerStack.java@private operateEach(key Tuple, values Iterator) : voidsrc/java/cascading/flow/stack/EachReducerStackElement.java@private operateEach(key Tuple, values Iterator) : voidsrc/java/cascading/flow/PushFlowReducerStack.java 310:314
+******************************
+******************************
+coarse grained commits 6cb9bf378ee94e6d7237fb45c25c2d2dfcb7800c
+fine grained commits ('72abc682e6569e5b9a7acf2d5b42c062d9925df7', '4403d450c22e60cc70bed6172e3d7e651816492b', 'e533c7bb155981e5e2d18645296c52f53534fbc4')
+Generation
+Rename Classsrc/java/cascading/pipe/cogroup/Join.java@cascading.pipe.cogroup.Joinsrc/java/cascading/pipe/cogroup/InnerJoin.java@cascading.pipe.cogroup.InnerJoinsrc/java/cascading/pipe/cogroup/Join.java 9:100
+******************************
+******************************
+coarse grained commits ba70285613ad47fa32c332c684af6153f5aaace4
+fine grained commits ('881bce14cf242c734ae56a817a44e6923aec705e', '67ab68f5d49600251d76eb671d7f926ab6afd63b', '0616f908b209be34b952f85447a9aa4e0c8af508', '58d506454fe9f6b121d65a5f861f517716398431')
+Generation
+Split Classcascading-hadoop/src/main/shared/cascading/tuple/hadoop/io/IndexTupleDeserializer.java@cascading.tuple.hadoop.io.IndexTupleDeserializercascading-hadoop/src/main/shared-io/cascading/tuple/hadoop/io/KeyIndexTupleDeserializer.java@cascading.tuple.hadoop.io.KeyIndexTupleDeserializercascading-hadoop/src/main/shared/cascading/tuple/hadoop/io/IndexTupleDeserializer.java 9:23
+Generation
+Split Classcascading-hadoop/src/main/shared/cascading/tuple/hadoop/io/IndexTupleSerializer.java@cascading.tuple.hadoop.io.IndexTupleSerializercascading-hadoop/src/main/shared-io/cascading/tuple/hadoop/io/KeyIndexTupleSerializer.java@cascading.tuple.hadoop.io.KeyIndexTupleSerializercascading-hadoop/src/main/shared/cascading/tuple/hadoop/io/IndexTupleSerializer.java 9:20
+******************************
+******************************
+coarse grained commits d481f2f101a79ac0f161db742451f6aeff0c6d01
+fine grained commits ('2672c9e052878228666773b2369411ab24ba6932', '77fc94656e449ab784372a707b0e8392fc91b973', '3a2bc93b3b69b0362512f1078002e9c87f9ba65a', '45a3907174ffb15c21751c1e67f1b434c436a67e')
+Generation
+Move And Rename Classcascading-core/src/main/java/cascading/pipe/assembly/AggregateBy.java@cascading.pipe.assembly.AggregateBy.Flushcascading-hadoop2-tez/src/main/java/cascading/stats/tez/TezNodeStats.java@cascading.stats.tez.TezNodeStats.Kindcascading-core/src/main/java/cascading/pipe/assembly/AggregateBy.java 61:65
+Generation
+Add Class Modifiercascading-core/src/main/java/cascading/pipe/assembly/AggregateBy.java@cascading.pipe.assembly.AggregateBy.Flushcascading-hadoop2-tez/src/main/java/cascading/stats/tez/TezNodeStats.java@cascading.stats.tez.TezNodeStats.Kindcascading-core/src/main/java/cascading/pipe/assembly/AggregateBy.java 61:65
+Generation
+Remove Class Annotationcascading-core/src/main/java/cascading/pipe/assembly/AggregateBy.java@@Deprecatedcascading-hadoop2-tez/src/main/java/cascading/stats/tez/TezNodeStats.java@cascading.stats.tez.TezNodeStats.Kindcascading-core/src/main/java/cascading/pipe/assembly/AggregateBy.java 61:61
+Generation
+Move And Inline Methodcascading-core/src/main/java/cascading/tuple/TupleEntry.java@public set(fieldName Comparable, value Object) : voidcascading-hadoop2-tez/src/test/java/cascading/platform/tez/Hadoop2TezPlatform.java@public setUp() : voidcascading-core/src/main/java/cascading/tuple/TupleEntry.java 299:303
+******************************
+******************************
+coarse grained commits 40af36b36e6dcd74d92a646bf8ed1c8c5b30ea7c
+fine grained commits ('929ca42ad5170067566cfa5b303d18104573ad60', '4ddd2718f061342e73536fd66b945717da26a0bc', '5fc9e05e443711db139f884a8f9f1c6ad48711f5', 'ff3479ad95a961d9dfc5c6cbd2908c94d6e67cc2')
+Generation
+Move Attributecascading-core/src/main/java/cascading/flow/planner/BaseFlowStep.java@private LOG : Loggercascading-hadoop2-mr1/src/main/java/cascading/stats/hadoop/HadoopStepStats.java@private LOG : Loggercascading-core/src/main/java/cascading/flow/planner/BaseFlowStep.java 50:50
+******************************
+******************************
+coarse grained commits 96cb1216c298250db6409ed6554048584ec42a41
+fine grained commits ('09785036afee02348cb12874685fe380653dd004', '2a77b79853740077307852bcdef116847b35e8c5', '9d11b4ea98ef5bb7ab0c7b4e5dc2ccbe2a9cf9bc', '858b1d0c903430553f6576327f6be1ca52edfed8')
+Generation
+Inline Methodparquet-cascading/src/main/java/parquet/cascading/TupleReadSupport.java@private parseFieldsString(fieldsString String) : Fieldsparquet-cascading/src/main/java/parquet/cascading/TupleReadSupport.java@protected getRequestedFields(configuration Configuration) : Fieldsparquet-cascading/src/main/java/parquet/cascading/TupleReadSupport.java 28:30
+******************************
+******************************
+coarse grained commits f145676cf460b4d327cff753a502f1ddccdd935f
+fine grained commits ('18dfcbf8c5d6be2e52cf3aea0aee2ebad3d25f8c', '08037c9a44c8f1c46d1255cf613b21f6acff25d6', '51fe8b1d622a75771931154ff476fface211a9ed', '46d3c6a510dee87fdea30705a218072f0dfba311')
+Generation
+Move Methodsrc/hadoop/cascading/tap/hadoop/HadoopTupleEntrySchemeCollector.java@public close() : voidsrc/hadoop/cascading/tap/hadoop/TapOutputCollector.java@public close() : voidsrc/hadoop/cascading/tap/hadoop/HadoopTupleEntrySchemeCollector.java 94:128
+Generation
+Remove Method Annotationsrc/hadoop/cascading/tap/hadoop/HadoopTupleEntrySchemeCollector.java@@Overridesrc/hadoop/cascading/tap/hadoop/TapOutputCollector.java@public close() : voidsrc/hadoop/cascading/tap/hadoop/HadoopTupleEntrySchemeCollector.java 94:94
+******************************
+******************************
+coarse grained commits f473902e1a12b84a9f6b239d57e06ff2fbb217e4
+fine grained commits ('8a609b5984cbb2244ba74618e2b0704d29f8456f', 'f869051bbb1986ebc3a15c1f7395b30c66be9b00', '48d0467f24ad4ae2a45f5db9461df99fc8959991', '95b7d58a9a89289fca3bcfe3ed331a25cee8d292')
+Generation
+Move And Inline Methodsrc/core/cascading/tap/Tap.java@public openForWrite(flowProcess Process, output Output) : TupleEntryCollectorsrc/hadoop/cascading/tap/hadoop/Hfs.java@public openForWrite(flowProcess FlowProcess<JobConf>, output OutputCollector) : TupleEntryCollectorsrc/core/cascading/tap/Tap.java 100:106
+******************************
+******************************
+coarse grained commits 98740b61cc067c0a6ec66426dcc690b4a1b0f614
+fine grained commits ('6bc57c79d2795fca21badd54dbc832bfe69b4773', '85257e7842a5d45f18e6789ba5891d3877ed036b', '44a60773d1e8fa3c65ca4a66e2cdfd8effb730e1', '6113e6883a013d3d1020e3cea1d497687b5a050e')
+Generation
+Inline Variablesrc/core/cascading/scheme/SequenceFile.java@result : Tuplesrc/hadoop/cascading/scheme/hadoop/SequenceFile.java@src/core/cascading/scheme/SequenceFile.java 55:55
+******************************
+******************************
+coarse grained commits cc1fc447edd43e82f716bb09d69ee776a47406e6
+fine grained commits ('6e0954712fe0c0e3eea72891688c640dc4926a4e', 'ee1e0977198932575fee0badb0c37fb5ae7d424d', '51497e597257a130d8bc97e1ea3520a887c95e10', '7afb55c530ad9f516b2f6052ceebc86538dd26b0')
+Generation
+Rename Parametersrc/java/cascading/operation/aggregator/Max.java@type : Classsrc/java/cascading/operation/aggregator/Max.java@ignoreValues : Object...src/java/cascading/operation/aggregator/Max.java 34:34
+Generation
+Change Parameter Typesrc/java/cascading/operation/aggregator/Max.java@type : Classsrc/java/cascading/operation/aggregator/Max.java@ignoreValues : Object...src/java/cascading/operation/aggregator/Max.java 34:34
+Generation
+Rename Parametersrc/java/cascading/operation/aggregator/Min.java@type : Classsrc/java/cascading/operation/aggregator/Min.java@ignoreValues : Object...src/java/cascading/operation/aggregator/Min.java 34:34
+Generation
+Change Parameter Typesrc/java/cascading/operation/aggregator/Min.java@type : Classsrc/java/cascading/operation/aggregator/Min.java@ignoreValues : Object...src/java/cascading/operation/aggregator/Min.java 34:34
+******************************
+******************************
+coarse grained commits 921c82b16eb9d5d286a3362674d189a4838ed7db
+fine grained commits ('398bd36e8e54a0a3542a27b5d2b0e9323ae8dab2', '60ec5203b8906d67b77521626784654204eaaee7', '9014238f45e2e68e491b6ff2ee02b457e18b0cc6', '1d901eb9b9fb32c96d2ef24829e0c8e43799929a')
+Generation
+Move Classsrc/test/cascading/CascadeTest.java@cascading.CascadeTestsrc/test/cascading/cascade/CascadeTest.java@cascading.cascade.CascadeTestsrc/test/cascading/CascadeTest.java 22:91
+Generation
+Rename Attributesrc/test/cascading/CascadeTest.java@inputFileApache : Stringsrc/test/cascading/cascade/CascadeTest.java@inputFile : Stringsrc/test/cascading/CascadeTest.java 24:24
+Generation
+Remove Method Annotationsrc/java/cascading/Cascade.java@@Overridesrc/java/cascading/cascade/Cascade.java@public getName() : Stringsrc/java/cascading/Cascade.java 137:137
+Generation
+Move And Rename Methodsrc/java/cascading/Cascade.java@public toString() : Stringsrc/java/cascading/cascade/Cascade.java@public getName() : Stringsrc/java/cascading/Cascade.java 137:141
+******************************
+******************************
+coarse grained commits 6f44ae500e299ad3743f66f0aeb4ed5f9079068a
+fine grained commits ('8bf95044ac61af231faabee72026e3e56828f2ab', '3f609678a4dc8097e70154bf8fd1a1923fd51438', '0c7feee7399aaa45c73310872f48d60b74b4d868', 'efb60093f78ed66edc8c0ddc0f9da509736cdea2')
+Generation
+Rename Variablecascading-core/src/main/java/cascading/flow/planner/rule/RuleExec.java@nodeSubGraphs : Map<ElementGraph,List<ElementGraph>>cascading-core/src/main/java/cascading/flow/planner/rule/RuleExec.java@priorResults : Map<ElementGraph,List<ElementGraph>>cascading-core/src/main/java/cascading/flow/planner/rule/RuleExec.java 234:234
+******************************
+******************************
+coarse grained commits 3d8a0969ba3f55acf5c51ee3c25a0cd7502f228d
+fine grained commits ('2af9868e705b138559a640221ff2b0ac09db70cf', '328590e14f776f14bd96afe0136922e822e2f0f6', '0ea69423439220b4fa63e900cd58f16e477dfc18', 'cdf285bf6bd44b890eb71a8cb03161c2565efe40')
+Generation
+Inline Methodparquet-cascading/src/main/java/parquet/cascading/TupleReadSupport.java@private parseFieldsString(fieldsString String) : Fieldsparquet-cascading/src/main/java/parquet/cascading/TupleReadSupport.java@protected getRequestedFields(configuration Configuration) : Fieldsparquet-cascading/src/main/java/parquet/cascading/TupleReadSupport.java 28:30
+******************************
+******************************
+coarse grained commits d837ecc52d86c5534b54354dcfcb8e813fae3c9d
+fine grained commits ('bc60757ceaad7a009709da7126579cd4c4a0a13f', '5ba4e2d052943633f89b7a1e3ed1b30293641816', '55ca3f00d00440977c8b81bea191bc15e5a2d324', 'fdec5b374894a5e784bc57fd3d6e0f84eab9cbf4')
+Generation
+Add Parametersrc/java/cascading/operation/Operation.java@protected Operation(fieldDeclaration Fields)src/java/cascading/operation/BaseOperation.java@numArgs : intsrc/java/cascading/operation/Operation.java 25:29
+******************************
+******************************
+coarse grained commits e94c5f2534a581b4a6653863f9c507d604102aee
+fine grained commits ('d8230062eace4dec94476ca152b6da2df385a6cd', 'fbb8fe278844ba07e61cd499503f41eddb5e148f', '487d351a662114f7105ccd5f0a1935fc2a564e0f', 'b729b813665020f59294af22113cd508ddd74a64')
+Generation
+Inline Methodcascading-core/src/main/java/cascading/operation/regex/RegexParser.java@private isDeclaredFieldsUnknown() : booleancascading-core/src/main/java/cascading/operation/regex/RegexParser.java@private onFoundGroups(functionCall FunctionCall<Pair<Matcher,TupleEntry>>, matcher Matcher, output TupleEntry) : voidcascading-core/src/main/java/cascading/operation/regex/RegexParser.java 175:178
+******************************
+******************************
+coarse grained commits 307b7246f509b9692da79ff04793574392e88242
+fine grained commits ('193f3836bd0b66dea3d6770a24dc10012e5908e3', '87c88e08569432a41e92791f20472bf36d158d8e', '5b03e82754c6c1391b32468e08502142b15a99cd', 'ee46f5b25a8697472b05a5740cfddd1d335396a1')
+Generation
+Change Parameter Typecascading-hadoop/src/main/shared/cascading/tap/hadoop/Dfs.java@fields : Fieldscascading-hadoop/src/main/shared/cascading/tap/hadoop/Hfs.java@scheme : Scheme<Configuration,RecordReader,OutputCollector,?,?>cascading-hadoop/src/main/shared/cascading/tap/hadoop/Dfs.java 47:47
+Generation
+Change Parameter Typecascading-hadoop/src/main/shared/cascading/tap/hadoop/Dfs.java@fields : Fieldscascading-hadoop/src/main/shared/cascading/tap/hadoop/Hfs.java@scheme : Scheme<Configuration,RecordReader,OutputCollector,?,?>cascading-hadoop/src/main/shared/cascading/tap/hadoop/Dfs.java 61:61
+Generation
+Rename Parametercascading-hadoop/src/main/shared/cascading/tap/hadoop/Dfs.java@fields : Fieldscascading-hadoop/src/main/shared/cascading/tap/hadoop/Hfs.java@scheme : Scheme<Configuration,RecordReader,OutputCollector,?,?>cascading-hadoop/src/main/shared/cascading/tap/hadoop/Dfs.java 47:47
+Generation
+Rename Parametercascading-hadoop/src/main/shared/cascading/tap/hadoop/Dfs.java@fields : Fieldscascading-hadoop/src/main/shared/cascading/tap/hadoop/Hfs.java@scheme : Scheme<Configuration,RecordReader,OutputCollector,?,?>cascading-hadoop/src/main/shared/cascading/tap/hadoop/Dfs.java 61:61
+Generation
+Remove Method Annotationcascading-hadoop/src/main/shared/cascading/tap/hadoop/Dfs.java@@Deprecatedcascading-hadoop/src/main/shared/cascading/tap/hadoop/Hfs.java@public Hfs(scheme Scheme<Configuration,RecordReader,OutputCollector,?,?>, stringPath String, sinkMode SinkMode)cascading-hadoop/src/main/shared/cascading/tap/hadoop/Dfs.java 46:46
+Generation
+Modify Method Annotationcascading-hadoop/src/main/shared/cascading/tap/hadoop/Dfs.java@@ConstructorProperties({"fields","stringPath"})cascading-hadoop/src/main/shared/cascading/tap/hadoop/Hfs.java@@ConstructorProperties({"scheme","stringPath","sinkMode"})cascading-hadoop/src/main/shared/cascading/tap/hadoop/Dfs.java 45:45
+Generation
+Pull Up Methodcascading-hadoop/src/main/shared/cascading/tap/hadoop/Dfs.java@public Dfs(fields Fields, stringPath String)cascading-hadoop/src/main/shared/cascading/tap/hadoop/Hfs.java@public Hfs(scheme Scheme<Configuration,RecordReader,OutputCollector,?,?>, stringPath String, sinkMode SinkMode)cascading-hadoop/src/main/shared/cascading/tap/hadoop/Dfs.java 45:50
+Generation
+Remove Method Annotationcascading-hadoop/src/main/shared/cascading/tap/hadoop/Dfs.java@@Deprecatedcascading-hadoop/src/main/shared/cascading/tap/hadoop/Hfs.java@public Hfs(scheme Scheme<Configuration,RecordReader,OutputCollector,?,?>, stringPath String, sinkMode SinkMode)cascading-hadoop/src/main/shared/cascading/tap/hadoop/Dfs.java 60:60
+Generation
+Modify Method Annotationcascading-hadoop/src/main/shared/cascading/tap/hadoop/Dfs.java@@ConstructorProperties({"fields","stringPath","sinkMode"})cascading-hadoop/src/main/shared/cascading/tap/hadoop/Hfs.java@@ConstructorProperties({"scheme","stringPath","sinkMode"})cascading-hadoop/src/main/shared/cascading/tap/hadoop/Dfs.java 59:59
+Generation
+Pull Up Methodcascading-hadoop/src/main/shared/cascading/tap/hadoop/Dfs.java@public Dfs(fields Fields, stringPath String, sinkMode SinkMode)cascading-hadoop/src/main/shared/cascading/tap/hadoop/Hfs.java@public Hfs(scheme Scheme<Configuration,RecordReader,OutputCollector,?,?>, stringPath String, sinkMode SinkMode)cascading-hadoop/src/main/shared/cascading/tap/hadoop/Dfs.java 59:64
+Generation
+Change Parameter Typecascading-hadoop/src/main/shared/cascading/tap/hadoop/Dfs.java@scheme : Schemecascading-hadoop/src/main/shared/cascading/tap/hadoop/Hfs.java@scheme : Scheme<Configuration,RecordReader,OutputCollector,?,?>cascading-hadoop/src/main/shared/cascading/tap/hadoop/Dfs.java 67:67
+Generation
+Change Parameter Typecascading-hadoop/src/main/shared/cascading/tap/hadoop/Lfs.java@scheme : Schemecascading-hadoop/src/main/shared/cascading/tap/hadoop/Hfs.java@scheme : Scheme<Configuration,RecordReader,OutputCollector,?,?>cascading-hadoop/src/main/shared/cascading/tap/hadoop/Lfs.java 37:37
+Generation
+Add Parametercascading-hadoop/src/main/shared/cascading/tap/hadoop/Dfs.java@package Dfs(scheme Scheme)cascading-hadoop/src/main/shared/cascading/tap/hadoop/Hfs.java@stringPath : Stringcascading-hadoop/src/main/shared/cascading/tap/hadoop/Dfs.java 66:70
+Generation
+Modify Method Annotationcascading-hadoop/src/main/shared/cascading/tap/hadoop/Dfs.java@@ConstructorProperties({"scheme"})cascading-hadoop/src/main/shared/cascading/tap/hadoop/Hfs.java@@ConstructorProperties({"scheme","stringPath"})cascading-hadoop/src/main/shared/cascading/tap/hadoop/Dfs.java 66:66
+Generation
+Change Method Access Modifiercascading-hadoop/src/main/shared/cascading/tap/hadoop/Dfs.java@package Dfs(scheme Scheme)cascading-hadoop/src/main/shared/cascading/tap/hadoop/Hfs.java@public Hfs(scheme Scheme<Configuration,RecordReader,OutputCollector,?,?>, stringPath String)cascading-hadoop/src/main/shared/cascading/tap/hadoop/Dfs.java 66:70
+Generation
+Pull Up Methodcascading-hadoop/src/main/shared/cascading/tap/hadoop/Dfs.java@package Dfs(scheme Scheme)cascading-hadoop/src/main/shared/cascading/tap/hadoop/Hfs.java@public Hfs(scheme Scheme<Configuration,RecordReader,OutputCollector,?,?>, stringPath String)cascading-hadoop/src/main/shared/cascading/tap/hadoop/Dfs.java 66:70
+Generation
+Rename Parametercascading-hadoop/src/main/shared/cascading/tap/hadoop/Lfs.java@fields : Fieldscascading-hadoop/src/main/shared/cascading/tap/hadoop/Hfs.java@scheme : Scheme<Configuration,RecordReader,OutputCollector,?,?>cascading-hadoop/src/main/shared/cascading/tap/hadoop/Lfs.java 24:24
+Generation
+Change Parameter Typecascading-hadoop/src/main/shared/cascading/tap/hadoop/Lfs.java@fields : Fieldscascading-hadoop/src/main/shared/cascading/tap/hadoop/Hfs.java@scheme : Scheme<Configuration,RecordReader,OutputCollector,?,?>cascading-hadoop/src/main/shared/cascading/tap/hadoop/Lfs.java 24:24
+Generation
+Remove Method Annotationcascading-hadoop/src/main/shared/cascading/tap/hadoop/Lfs.java@@Deprecatedcascading-hadoop/src/main/shared/cascading/tap/hadoop/Hfs.java@public Hfs(scheme Scheme<Configuration,RecordReader,OutputCollector,?,?>, stringPath String)cascading-hadoop/src/main/shared/cascading/tap/hadoop/Lfs.java 23:23
+Generation
+Modify Method Annotationcascading-hadoop/src/main/shared/cascading/tap/hadoop/Lfs.java@@ConstructorProperties({"fields","stringPath"})cascading-hadoop/src/main/shared/cascading/tap/hadoop/Hfs.java@@ConstructorProperties({"scheme","stringPath"})cascading-hadoop/src/main/shared/cascading/tap/hadoop/Lfs.java 22:22
+Generation
+Pull Up Methodcascading-hadoop/src/main/shared/cascading/tap/hadoop/Lfs.java@public Lfs(fields Fields, stringPath String)cascading-hadoop/src/main/shared/cascading/tap/hadoop/Hfs.java@public Hfs(scheme Scheme<Configuration,RecordReader,OutputCollector,?,?>, stringPath String)cascading-hadoop/src/main/shared/cascading/tap/hadoop/Lfs.java 22:27
+Generation
+Remove Parametercascading-hadoop/src/main/shared/cascading/tap/hadoop/Lfs.java@replace : booleancascading-hadoop/src/main/shared/cascading/tap/hadoop/Hfs.java@public Hfs(scheme Scheme<Configuration,RecordReader,OutputCollector,?,?>, stringPath String)cascading-hadoop/src/main/shared/cascading/tap/hadoop/Lfs.java 37:37
+Generation
+Remove Method Annotationcascading-hadoop/src/main/shared/cascading/tap/hadoop/Lfs.java@@Deprecatedcascading-hadoop/src/main/shared/cascading/tap/hadoop/Hfs.java@public Hfs(scheme Scheme<Configuration,RecordReader,OutputCollector,?,?>, stringPath String)cascading-hadoop/src/main/shared/cascading/tap/hadoop/Lfs.java 36:36
+Generation
+Modify Method Annotationcascading-hadoop/src/main/shared/cascading/tap/hadoop/Lfs.java@@ConstructorProperties({"scheme","stringPath","replace"})cascading-hadoop/src/main/shared/cascading/tap/hadoop/Hfs.java@@ConstructorProperties({"scheme","stringPath"})cascading-hadoop/src/main/shared/cascading/tap/hadoop/Lfs.java 35:35
+Generation
+Pull Up Methodcascading-hadoop/src/main/shared/cascading/tap/hadoop/Lfs.java@public Lfs(scheme Scheme, stringPath String, replace boolean)cascading-hadoop/src/main/shared/cascading/tap/hadoop/Hfs.java@public Hfs(scheme Scheme<Configuration,RecordReader,OutputCollector,?,?>, stringPath String)cascading-hadoop/src/main/shared/cascading/tap/hadoop/Lfs.java 35:40
+******************************
+******************************
+coarse grained commits 1f97ccda78a9061367faf28d7ce1a3aeaa23c221
+fine grained commits ('4f30a72d31f7c9d7bd2bfd06daa9c1f32a228575', 'bcb4d7ab12bcf7e39bd87c78dffd954f1deece84', 'cc338d993526708a6b28e2ff27a7d241c61cf6b5', '6e6010029e03d234b5e7b02af66b8ab71cd1a449')
+Generation
+Pull Up Attributecascading-core/src/main/java/cascading/flow/stream/MemorySpliceGate.java@private LOG : Loggercascading-core/src/main/java/cascading/flow/stream/GroupingSpliceGate.java@private LOG : Loggercascading-core/src/main/java/cascading/flow/stream/MemorySpliceGate.java 30:30
+Generation
+Move Methodcascading-core/src/main/java/cascading/flow/stream/Gate.java@public bind(streamGraph StreamGraph) : voidcascading-hadoop/src/main/shared-mr1/cascading/flow/hadoop/stream/HadoopCoGroupGate.java@public bind(streamGraph StreamGraph) : voidcascading-core/src/main/java/cascading/flow/stream/Gate.java 12:18
+Generation
+Extract Variablecascading-core/src/main/java/cascading/flow/stream/SpliceGate.java@cascading-core/src/main/java/cascading/flow/stream/GroupingSpliceGate.java@ordinal : intcascading-core/src/main/java/cascading/flow/stream/SpliceGate.java 320:320
+Generation
+Remove Parametercascading-core/src/main/java/cascading/flow/stream/SpliceGate.java@streamGraph : StreamGraphcascading-core/src/main/java/cascading/flow/stream/GroupingSpliceGate.java@public initialize() : voidcascading-core/src/main/java/cascading/flow/stream/SpliceGate.java 314:314
+Generation
+Add Method Annotationcascading-core/src/main/java/cascading/flow/stream/SpliceGate.java@protected orderDucts(streamGraph StreamGraph) : voidcascading-core/src/main/java/cascading/flow/stream/GroupingSpliceGate.java@@Overridecascading-core/src/main/java/cascading/flow/stream/SpliceGate.java 314:326
+Generation
+Change Method Access Modifiercascading-core/src/main/java/cascading/flow/stream/SpliceGate.java@protected orderDucts(streamGraph StreamGraph) : voidcascading-core/src/main/java/cascading/flow/stream/GroupingSpliceGate.java@public initialize() : voidcascading-core/src/main/java/cascading/flow/stream/SpliceGate.java 314:326
+Generation
+Remove Method Modifiercascading-core/src/main/java/cascading/flow/stream/SpliceGate.java@protected orderDucts(streamGraph StreamGraph) : voidcascading-core/src/main/java/cascading/flow/stream/GroupingSpliceGate.java@public initialize() : voidcascading-core/src/main/java/cascading/flow/stream/SpliceGate.java 314:326
+******************************
+******************************
+coarse grained commits a27bd5e231dcf8928c65dedafa7bc3d9d89cc74b
+fine grained commits ('22e113d133a221fcac63ad752bd3a213a941ad46', 'cbc84752a43dd3d1d764a245a122964705374fc3', '975317d1913632d17b8cbe486eddec5d04c6c964', '809eb8c8ec333c5621d9c83d3ac084771fd25366')
+Generation
+Extract Methodcascading-hadoop/src/main/java/cascading/scheme/hadoop/TextDelimited.java@public sinkPrepare(flowProcess FlowProcess<JobConf>, sinkCall SinkCall<Object[],OutputCollector>) : voidcascading-hadoop/src/main/java/cascading/scheme/hadoop/TextDelimited.java@private write(sinkCall SinkCall<Object[],OutputCollector>, value Iterable) : voidcascading-hadoop/src/main/java/cascading/scheme/hadoop/TextDelimited.java 353:371
+Generation
+Extract Methodcascading-hadoop/src/main/java/cascading/scheme/hadoop/TextDelimited.java@public sink(flowProcess FlowProcess<JobConf>, sinkCall SinkCall<Object[],OutputCollector>) : voidcascading-hadoop/src/main/java/cascading/scheme/hadoop/TextDelimited.java@private write(sinkCall SinkCall<Object[],OutputCollector>, value Iterable) : voidcascading-hadoop/src/main/java/cascading/scheme/hadoop/TextDelimited.java 373:386
+Generation
+Extract Variablecascading-hadoop/src/main/java/cascading/scheme/hadoop/TextDelimited.java@cascading-hadoop/src/main/java/cascading/scheme/hadoop/TextDelimited.java@line : StringBuildercascading-hadoop/src/main/java/cascading/scheme/hadoop/TextDelimited.java 377:377
+Generation
+Change Variable Typecascading-hadoop/src/main/java/cascading/scheme/hadoop/TextDelimited.java@fields : Fieldscascading-hadoop/src/main/java/cascading/scheme/hadoop/TextDelimited.java@value : Iterablecascading-hadoop/src/main/java/cascading/scheme/hadoop/TextDelimited.java 360:360
+Generation
+Parameterize Variablecascading-hadoop/src/main/java/cascading/scheme/hadoop/TextDelimited.java@fields : Fieldscascading-hadoop/src/main/java/cascading/scheme/hadoop/TextDelimited.java@value : Iterablecascading-hadoop/src/main/java/cascading/scheme/hadoop/TextDelimited.java 360:360
+Generation
+Change Variable Typecascading-hadoop/src/main/java/cascading/scheme/hadoop/TextDelimited.java@tuple : Tuplecascading-hadoop/src/main/java/cascading/scheme/hadoop/TextDelimited.java@value : Iterablecascading-hadoop/src/main/java/cascading/scheme/hadoop/TextDelimited.java 376:376
+Generation
+Parameterize Variablecascading-hadoop/src/main/java/cascading/scheme/hadoop/TextDelimited.java@tuple : Tuplecascading-hadoop/src/main/java/cascading/scheme/hadoop/TextDelimited.java@value : Iterablecascading-hadoop/src/main/java/cascading/scheme/hadoop/TextDelimited.java 376:376
+******************************
+******************************
+coarse grained commits d7f206b05fa7cb7ccf2636bc83e5ba0bd4c7cc1e
+fine grained commits ('80998f29f3fca8d35b9b637cdedaa69a7961bd61', 'cc9a47754247cbbd8298cb79b64f0ae8ba487d86', '56e8dfbf97c26a7083429d43ac54c511ab0378d9', '57105fd160bff7c8c02a8d6f838ff1904a0b7816')
+Generation
+Move Attributesrc/core/cascading/tuple/hadoop/CoGroupingComparator.java@private comparator : Comparatorsrc/core/cascading/tuple/hadoop/TupleElementComparator.java@package comparator : Comparatorsrc/core/cascading/tuple/hadoop/CoGroupingComparator.java 15:22
+Generation
+Move Attributesrc/core/cascading/tuple/hadoop/GroupingComparator.java@private comparator : Comparatorsrc/core/cascading/tuple/hadoop/TupleElementComparator.java@package comparator : Comparatorsrc/core/cascading/tuple/hadoop/GroupingComparator.java 15:22
+Generation
+Move Attributesrc/core/cascading/tuple/hadoop/IndexTupleCoGroupingComparator.java@private comparator : Comparatorsrc/core/cascading/tuple/hadoop/TupleElementComparator.java@package comparator : Comparatorsrc/core/cascading/tuple/hadoop/IndexTupleCoGroupingComparator.java 16:23
+Generation
+Move Attributesrc/core/cascading/tuple/hadoop/TupleComparator.java@private comparator : Comparatorsrc/core/cascading/tuple/hadoop/TupleElementComparator.java@package comparator : Comparatorsrc/core/cascading/tuple/hadoop/TupleComparator.java 15:22
+Generation
+Change Attribute Access Modifiersrc/core/cascading/tuple/hadoop/CoGroupingComparator.java@private comparator : Comparatorsrc/core/cascading/tuple/hadoop/TupleElementComparator.java@package comparator : Comparatorsrc/core/cascading/tuple/hadoop/CoGroupingComparator.java 15:22
+Generation
+Change Attribute Access Modifiersrc/core/cascading/tuple/hadoop/GroupingComparator.java@private comparator : Comparatorsrc/core/cascading/tuple/hadoop/TupleElementComparator.java@package comparator : Comparatorsrc/core/cascading/tuple/hadoop/GroupingComparator.java 15:22
+Generation
+Change Attribute Access Modifiersrc/core/cascading/tuple/hadoop/IndexTupleCoGroupingComparator.java@private comparator : Comparatorsrc/core/cascading/tuple/hadoop/TupleElementComparator.java@package comparator : Comparatorsrc/core/cascading/tuple/hadoop/IndexTupleCoGroupingComparator.java 16:23
+Generation
+Change Attribute Access Modifiersrc/core/cascading/tuple/hadoop/TupleComparator.java@private comparator : Comparatorsrc/core/cascading/tuple/hadoop/TupleElementComparator.java@package comparator : Comparatorsrc/core/cascading/tuple/hadoop/TupleComparator.java 15:22
+******************************
+******************************
+coarse grained commits 6ef386db874acd2f7e0032bd34e9b67ebdb2a659
+fine grained commits ('ac1997119f25d904b14e17f75b4fe3fb0e0a9ccf', '04a069b88ad9263e94050f4b4b047b632a4f4dd5', '550578ead5253c3124bda53d2893ddbaf37ee963', '278292e87410bbd276154cdf882c06c5fd3020f7')
+Generation
+Rename Classsrc/java/cascading/operation/assertion/AssertionBase.java@cascading.operation.assertion.AssertionBasesrc/java/cascading/operation/assertion/BaseAssertion.java@cascading.operation.assertion.BaseAssertionsrc/java/cascading/operation/assertion/AssertionBase.java 8:58
+******************************
+******************************
+coarse grained commits 862796204ff95dd5bfea496ea37b45a2749104b8
+fine grained commits ('8a609b5984cbb2244ba74618e2b0704d29f8456f', 'f869051bbb1986ebc3a15c1f7395b30c66be9b00', '48d0467f24ad4ae2a45f5db9461df99fc8959991', '95b7d58a9a89289fca3bcfe3ed331a25cee8d292', '3aabdde04d41016b331d258fbde4a0495ebc8b74')
+Generation
+Rename Methodsrc/core/cascading/flow/BaseFlow.java@public setStopJobsOnExit(properties Map<Object,Object>, stopJobsOnExit boolean) : voidsrc/core/cascading/flow/BaseFlow.java@protected presentSourceFields() : voidsrc/core/cascading/flow/BaseFlow.java 88:91
+Generation
+Remove Parametersrc/core/cascading/flow/BaseFlow.java@properties : Map<Object,Object>src/core/cascading/flow/BaseFlow.java@protected presentSourceFields() : voidsrc/core/cascading/flow/BaseFlow.java 88:88
+Generation
+Remove Parametersrc/core/cascading/flow/BaseFlow.java@stopJobsOnExit : booleansrc/core/cascading/flow/BaseFlow.java@protected presentSourceFields() : voidsrc/core/cascading/flow/BaseFlow.java 88:88
+Generation
+Change Method Access Modifiersrc/core/cascading/flow/BaseFlow.java@public setStopJobsOnExit(properties Map<Object,Object>, stopJobsOnExit boolean) : voidsrc/core/cascading/flow/BaseFlow.java@protected presentSourceFields() : voidsrc/core/cascading/flow/BaseFlow.java 88:91
+Generation
+Remove Method Modifiersrc/core/cascading/flow/BaseFlow.java@public setStopJobsOnExit(properties Map<Object,Object>, stopJobsOnExit boolean) : voidsrc/core/cascading/flow/BaseFlow.java@protected presentSourceFields() : voidsrc/core/cascading/flow/BaseFlow.java 88:91
+******************************
+******************************
+coarse grained commits dba95d37f1ef51242774ee1a6e95f2be97940ea8
+fine grained commits ('9095638d8dc2c49cfa260a111ba7d7dbec3e2c27', '1d030ac6ab49550ea8490a4584a5944c5f7b2dc9', '9cc3444511bb12acce3d0f6a5ba66c33eaf29c57', '9c6ba5b96a4422fc2c686c1f8e712b7937aa9339', 'cdc8529204220eef6e6b81947110f389274a1782')
+Generation
+Rename Variablesrc/test/cascading/FieldedPipesTest.java@countFlow : Flowsrc/test/cascading/flow/FlowTest.java@flow : Flowsrc/test/cascading/FieldedPipesTest.java 270:270
+Generation
+Rename Variablesrc/test/cascading/FieldedPipesTest.java@countFlow : Flowsrc/test/cascading/flow/FlowTest.java@flow : Flowsrc/test/cascading/FieldedPipesTest.java 352:352
+Generation
+Move And Rename Methodsrc/test/cascading/FieldedPipesTest.java@public testCoGroup() : voidsrc/test/cascading/flow/FlowTest.java@public testFailedSerialization() : voidsrc/test/cascading/FieldedPipesTest.java 245:283
+Generation
+Move And Rename Methodsrc/test/cascading/FieldedPipesTest.java@public testCoGroupSelf() : voidsrc/test/cascading/flow/FlowTest.java@public testFailedSerialization() : voidsrc/test/cascading/FieldedPipesTest.java 327:365
+Generation
+Rename Variablesrc/test/cascading/FieldedPipesTest.java@splitterLower : Functionsrc/test/cascading/flow/FlowTest.java@splitter : Functionsrc/test/cascading/FieldedPipesTest.java 663:663
+Generation
+Rename Variablesrc/test/cascading/FieldedPipesTest.java@splitterLower : Functionsrc/test/cascading/flow/FlowTest.java@splitter : Functionsrc/test/cascading/FieldedPipesTest.java 704:704
+Generation
+Move And Rename Methodsrc/test/cascading/FieldedPipesTest.java@public testCoGroupDiffFields() : voidsrc/test/cascading/flow/FlowTest.java@public testFailedSerialization() : voidsrc/test/cascading/FieldedPipesTest.java 647:686
+Generation
+Move And Rename Methodsrc/test/cascading/FieldedPipesTest.java@public testCoGroupGroupBy() : voidsrc/test/cascading/flow/FlowTest.java@public testFailedSerialization() : voidsrc/test/cascading/FieldedPipesTest.java 688:730
+Generation
+Rename Variablesrc/test/cascading/FieldedPipesTest.java@source : Tapsrc/test/cascading/flow/FlowTest.java@sourceLower : Tapsrc/test/cascading/FieldedPipesTest.java 739:739
+Generation
+Move And Rename Methodsrc/test/cascading/FieldedPipesTest.java@public testCoGroupSamePipe() : voidsrc/test/cascading/flow/FlowTest.java@public testFailedSerialization() : voidsrc/test/cascading/FieldedPipesTest.java 732:766
+******************************
+******************************
+coarse grained commits 9d323e272621ee5e722e027abe2070bd9604df41
+fine grained commits ('edcc2ca5b3743460f836e70831ca19644a113157', '6bc57c79d2795fca21badd54dbc832bfe69b4773', '85257e7842a5d45f18e6789ba5891d3877ed036b', '44a60773d1e8fa3c65ca4a66e2cdfd8effb730e1', '6113e6883a013d3d1020e3cea1d497687b5a050e')
+Generation
+Remove Thrown Exception Typesrc/core/cascading/tap/TemplateTap.java@IOExceptionsrc/hadoop/cascading/tap/hadoop/TemplateTap.java@public sourceConfInit(flowProcess HadoopFlowProcess, tap Tap, conf JobConf) : voidsrc/core/cascading/tap/TemplateTap.java 194:194
+Generation
+Remove Thrown Exception Typesrc/core/cascading/tap/TemplateTap.java@IOExceptionsrc/hadoop/cascading/tap/hadoop/TemplateTap.java@public sinkConfInit(flowProcess HadoopFlowProcess, tap Tap, conf JobConf) : voidsrc/core/cascading/tap/TemplateTap.java 199:199
+******************************
+******************************
+coarse grained commits 6d777e15eeb9fe1801d1cf691ed39545b0a6684d
+fine grained commits ('8037013e107ec497a7d4a015be26dfe454546d28', '010997b8c49689c299a9534a319114503d75527f', 'a4b64f27951487ae3072997983fbfc70b47c7c44', '3c411cdeb61308359e40a28c6f8d7992c97dd181', '9edfa55bef52862a52807dcd3e3290ccd6c59543')
+Generation
+Add Parametersrc/core/cascading/util/ServiceUtil.java@public loadServiceFrom(properties Map<Object,Object>, property String) : CascadingServicesrc/core/cascading/util/ServiceUtil.java@defaultProperties : Propertiessrc/core/cascading/util/ServiceUtil.java 17:20
+******************************
+******************************
+coarse grained commits 9449eb8b1575f3261d0f74bd997caf6b5dd2cf10
+fine grained commits ('d34b6155893632f8eeea885e5de199d220429406', 'e7d80629b7a1264ddf077cda015c687d378bb5a9', '366096d6366c99b3ca2c56dbf63138f79c2d57df', 'd98f3c2da55847c92ff3dfe22627d7a94c01b62f', '66dca1f413a8e783e525a56131c46ba0e678a9c6')
+Generation
+Move And Rename Classsrc/java/cascading/flow/PushFlowMapperStack.java@cascading.flow.PushFlowMapperStack.FlowMapperStackElementsrc/java/cascading/flow/stack/MapperStackElement.java@cascading.flow.stack.MapperStackElementsrc/java/cascading/flow/PushFlowMapperStack.java 85:223
+Generation
+Add Attribute Modifiersrc/java/cascading/flow/PushFlowMapperStack.java@private incomingScope : Scopesrc/java/cascading/flow/stack/MapperStackElement.java@package incomingScope : Scopesrc/java/cascading/flow/PushFlowMapperStack.java 90:90
+Generation
+Change Method Access Modifiersrc/java/cascading/flow/PushFlowMapperStack.java@public resolveIncomingFields() : Fieldssrc/java/cascading/flow/stack/MapperStackElement.java@package resolveIncomingFields() : Fieldssrc/java/cascading/flow/PushFlowMapperStack.java 147:153
+Generation
+Change Method Access Modifiersrc/java/cascading/flow/PushFlowMapperStack.java@public getIncomingScope() : Scopesrc/java/cascading/flow/stack/MapperStackElement.java@package getIncomingScope() : Scopesrc/java/cascading/flow/PushFlowMapperStack.java 155:158
+Generation
+Change Parameter Typesrc/java/cascading/flow/PushFlowMapperStack.java@previous : FlowMapperStackElementsrc/java/cascading/flow/stack/MapperStackElement.java@previous : MapperStackElementsrc/java/cascading/flow/PushFlowMapperStack.java 101:101
+Generation
+Extract Superclasssrc/java/cascading/flow/PushFlowMapperStack.java@cascading.flow.PushFlowMapperStack.FlowMapperStackElementsrc/java/cascading/flow/stack/MapperStackElement.java@cascading.flow.stack.MapperStackElementsrc/java/cascading/flow/PushFlowMapperStack.java 85:223
+******************************
+******************************
+coarse grained commits 2274ef8363c8cf7572acb894868fca640b34a720
+fine grained commits ('398bd36e8e54a0a3542a27b5d2b0e9323ae8dab2', '60ec5203b8906d67b77521626784654204eaaee7', '9014238f45e2e68e491b6ff2ee02b457e18b0cc6', '1d901eb9b9fb32c96d2ef24829e0c8e43799929a', '91ff94f55e34fec8d3409ed4c45996f4e46044cb')
+Generation
+Move Classsrc/java/cascading/CascadeConnector.java@cascading.CascadeConnector.RootTapsrc/java/cascading/cascade/CascadeConnector.java@cascading.cascade.CascadeConnector.RootTapsrc/java/cascading/CascadeConnector.java 83:111
+Generation
+Move Classsrc/java/cascading/CascadeException.java@cascading.CascadeExceptionsrc/java/cascading/cascade/CascadeException.java@cascading.cascade.CascadeExceptionsrc/java/cascading/CascadeException.java 4:24
+Generation
+Move Classsrc/java/cascading/Cascades.java@cascading.Cascadessrc/java/cascading/cascade/Cascades.java@cascading.cascade.Cascadessrc/java/cascading/Cascades.java 10:41
+Generation
+Move Classsrc/java/cascading/Cascade.java@cascading.Cascadesrc/java/cascading/cascade/Cascade.java@cascading.cascade.Cascadesrc/java/cascading/Cascade.java 14:142
+Generation
+Change Variable Typesrc/java/cascading/Cascade.java@iterator : TopologicalOrderIterator<Tap,Flow.FlowHolder>src/java/cascading/cascade/Cascade.java@topoIterator : TopologicalOrderIterator<Flow,Integer>src/java/cascading/Cascade.java 82:82
+Generation
+Change Variable Typesrc/java/cascading/Cascade.java@source : Tapsrc/java/cascading/cascade/Cascade.java@flow : Flowsrc/java/cascading/Cascade.java 86:86
+Generation
+Rename Variablesrc/java/cascading/Cascade.java@iterator : TopologicalOrderIterator<Tap,Flow.FlowHolder>src/java/cascading/cascade/Cascade.java@topoIterator : TopologicalOrderIterator<Flow,Integer>src/java/cascading/Cascade.java 82:82
+Generation
+Rename Variablesrc/java/cascading/Cascade.java@source : Tapsrc/java/cascading/cascade/Cascade.java@flow : Flowsrc/java/cascading/Cascade.java 86:86
+Generation
+Merge Parametersrc/java/cascading/Cascade.java@rootTap : Tapsrc/java/cascading/cascade/Cascade.java@jobGraph : SimpleDirectedGraph<Flow,Integer>src/java/cascading/Cascade.java 24:24
+Generation
+Change Method Access Modifiersrc/java/cascading/Cascade.java@package Cascade(name String, rootTap Tap, graph SimpleDirectedGraph<Tap,Flow.FlowHolder>)src/java/cascading/cascade/Cascade.java@public Cascade(name String, jobGraph SimpleDirectedGraph<Flow,Integer>)src/java/cascading/Cascade.java 24:29
+Generation
+Merge Attributesrc/java/cascading/Cascade.java@rootTap : Tapsrc/java/cascading/cascade/Cascade.java@jobGraph : SimpleDirectedGraph<Flow,Integer>src/java/cascading/Cascade.java 19:19
+Generation
+Move Methodsrc/java/cascading/CascadeConnector.java@public connect(flows Flow...) : Cascadesrc/java/cascading/cascade/CascadeConnector.java@public connect(flows Flow...) : Cascadesrc/java/cascading/CascadeConnector.java 18:21
+Generation
+Move Methodsrc/java/cascading/CascadeConnector.java@private makeName(flows Flow[]) : Stringsrc/java/cascading/cascade/CascadeConnector.java@private makeName(flows Flow[]) : Stringsrc/java/cascading/CascadeConnector.java 35:43
+Generation
+Move Methodsrc/java/cascading/CascadeConnector.java@private getRoots(graph SimpleDirectedGraph<Tap,Flow.FlowHolder>) : Tapsrc/java/cascading/cascade/CascadeConnector.java@private getRoots(graph SimpleDirectedGraph<Tap,Flow.FlowHolder>) : Tapsrc/java/cascading/CascadeConnector.java 45:60
+Generation
+Rename Parametersrc/java/cascading/CascadeConnector.java@graph : SimpleDirectedGraph<Tap,Flow.FlowHolder>src/java/cascading/cascade/CascadeConnector.java@tapGraph : SimpleDirectedGraph<Tap,Flow.FlowHolder>src/java/cascading/CascadeConnector.java 62:62
+Generation
+Move And Rename Methodsrc/java/cascading/CascadeConnector.java@private makeGraph(graph SimpleDirectedGraph<Tap,Flow.FlowHolder>, flows Flow[]) : voidsrc/java/cascading/cascade/CascadeConnector.java@private makeTapGraph(tapGraph SimpleDirectedGraph<Tap,Flow.FlowHolder>, flows Flow[]) : voidsrc/java/cascading/CascadeConnector.java 62:81
+******************************
+******************************
+coarse grained commits 1462adf4d0dbb91939da1258190d73ac7bd88d8d
+fine grained commits ('705734a1a344fb8d66b5379bed1c13fa0d06ae4d', '8bf95044ac61af231faabee72026e3e56828f2ab', '3f609678a4dc8097e70154bf8fd1a1923fd51438', '0c7feee7399aaa45c73310872f48d60b74b4d868', 'efb60093f78ed66edc8c0ddc0f9da509736cdea2')
+Generation
+Move And Rename Classcascading-core/src/main/java/cascading/flow/planner/BoundElementGraph.java@cascading.flow.planner.BoundElementGraphcascading-core/src/main/java/cascading/flow/planner/graph/BoundedElementMultiGraph.java@cascading.flow.planner.graph.BoundedElementMultiGraphcascading-core/src/main/java/cascading/flow/planner/BoundElementGraph.java 13:53
+Generation
+Move Attributecascading-core/src/main/java/cascading/flow/planner/iso/subgraph/Partitions.java@private elementGraph : ElementGraphcascading-core/src/main/java/cascading/flow/planner/PlannerException.java@package elementGraph : ElementGraphcascading-core/src/main/java/cascading/flow/planner/iso/subgraph/Partitions.java 15:15
+Generation
+Change Attribute Access Modifiercascading-core/src/main/java/cascading/flow/planner/iso/subgraph/Partitions.java@private elementGraph : ElementGraphcascading-core/src/main/java/cascading/flow/planner/PlannerException.java@package elementGraph : ElementGraphcascading-core/src/main/java/cascading/flow/planner/iso/subgraph/Partitions.java 15:15
+Generation
+Remove Attribute Modifiercascading-core/src/main/java/cascading/flow/planner/iso/subgraph/Partitions.java@private elementGraph : ElementGraphcascading-core/src/main/java/cascading/flow/planner/PlannerException.java@package elementGraph : ElementGraphcascading-core/src/main/java/cascading/flow/planner/iso/subgraph/Partitions.java 15:15
+******************************
+******************************
+coarse grained commits 7e0826e10730e3d202aaf36623437f3189e63268
+fine grained commits ('809eb8c8ec333c5621d9c83d3ac084771fd25366', '3370d11c84e15623f07775a193fbf6e3f67a809b', 'f90af368b69bae25fcaec7a31eac280cc0a244f1', '6bdc1c12a942bf8714020f5e957c0fa5f3ea8dd4', 'c085c45799b8892125a91983a94f8714ac246b8b')
+Generation
+Extract Methodcascading-hadoop/src/main/java/cascading/scheme/hadoop/TextDelimited.java@public sinkPrepare(flowProcess FlowProcess<JobConf>, sinkCall SinkCall<Object[],OutputCollector>) : voidcascading-hadoop/src/main/java/cascading/scheme/hadoop/TextDelimited.java@private write(sinkCall SinkCall<Object[],OutputCollector>, value Iterable) : voidcascading-hadoop/src/main/java/cascading/scheme/hadoop/TextDelimited.java 353:371
+Generation
+Extract Variablecascading-hadoop/src/main/java/cascading/scheme/hadoop/TextDelimited.java@cascading-hadoop/src/main/java/cascading/scheme/hadoop/TextDelimited.java@line : StringBuildercascading-hadoop/src/main/java/cascading/scheme/hadoop/TextDelimited.java 361:361
+Generation
+Change Variable Typecascading-hadoop/src/main/java/cascading/scheme/hadoop/TextDelimited.java@fields : Fieldscascading-hadoop/src/main/java/cascading/scheme/hadoop/TextDelimited.java@value : Iterablecascading-hadoop/src/main/java/cascading/scheme/hadoop/TextDelimited.java 360:360
+Generation
+Parameterize Variablecascading-hadoop/src/main/java/cascading/scheme/hadoop/TextDelimited.java@fields : Fieldscascading-hadoop/src/main/java/cascading/scheme/hadoop/TextDelimited.java@value : Iterablecascading-hadoop/src/main/java/cascading/scheme/hadoop/TextDelimited.java 360:360
+******************************
+******************************
+coarse grained commits 70ff0ba104145cbfe664f1f79727030e0504c14e
+fine grained commits ('598d8531a01985e08195d4292b724792692f3f16', '326fe430812addf38c35ec8afbb311063a796fd5', '67ab68da12dbb6dfc5d4908535ac2a44798dad25', '3a8cbf58b13f4cfbe1f526eaaf8e2214be83e5c5', 'bd73836364ee0f4d74d28502bc18c85d97257741')
+Generation
+Extract Superclasssrc/core/cascading/cascade/planner/TapGraph.java@cascading.cascade.planner.TapGraphcascading-core/src/main/java/cascading/cascade/planner/TapGraph.java@cascading.cascade.planner.TapGraphsrc/core/cascading/cascade/planner/TapGraph.java 7:13
+Generation
+Remove Parametersrc/core/cascading/cascade/CascadeConnector.java@tapGraph : SimpleDirectedGraph<String,BaseFlow.FlowHolder>cascading-core/src/main/java/cascading/cascade/planner/TopologyGraph.java@private makeGraph(flows Flow[]) : voidsrc/core/cascading/cascade/CascadeConnector.java 107:107
+Generation
+Move And Rename Methodsrc/core/cascading/cascade/CascadeConnector.java@private makeTapGraph(tapGraph SimpleDirectedGraph<String,BaseFlow.FlowHolder>, flows Flow[]) : voidcascading-core/src/main/java/cascading/cascade/planner/TopologyGraph.java@private makeGraph(flows Flow[]) : voidsrc/core/cascading/cascade/CascadeConnector.java 107:131
+Generation
+Remove Parametersrc/core/cascading/cascade/CascadeConnector.java@tapGraph : SimpleDirectedGraph<String,BaseFlow.FlowHolder>cascading-core/src/main/java/cascading/cascade/planner/TopologyGraph.java@private addEdgeFor(flow Flow, source Tap, sink Tap) : voidsrc/core/cascading/cascade/CascadeConnector.java 133:133
+Generation
+Move Methodsrc/core/cascading/cascade/CascadeConnector.java@private addEdgeFor(tapGraph SimpleDirectedGraph<String,BaseFlow.FlowHolder>, flow Flow, source Tap, sink Tap) : voidcascading-core/src/main/java/cascading/cascade/planner/TopologyGraph.java@private addEdgeFor(flow Flow, source Tap, sink Tap) : voidsrc/core/cascading/cascade/CascadeConnector.java 133:143
+Generation
+Change Method Access Modifiersrc/core/cascading/cascade/CascadeConnector.java@private getFullPath(flow Flow, tap Tap) : Stringcascading-core/src/main/java/cascading/cascade/planner/IdentifierGraph.java@protected getVertex(flow Flow, tap Tap) : Stringsrc/core/cascading/cascade/CascadeConnector.java 145:148
+Generation
+Move And Rename Methodsrc/core/cascading/cascade/CascadeConnector.java@private getFullPath(flow Flow, tap Tap) : Stringcascading-core/src/main/java/cascading/cascade/planner/IdentifierGraph.java@protected getVertex(flow Flow, tap Tap) : Stringsrc/core/cascading/cascade/CascadeConnector.java 145:148
+Generation
+Move Methodsrc/core/cascading/cascade/CascadeConnector.java@private unwrapCompositeTaps(taps LinkedList<Tap>) : voidcascading-core/src/main/java/cascading/cascade/planner/TopologyGraph.java@private unwrapCompositeTaps(taps LinkedList<Tap>) : voidsrc/core/cascading/cascade/CascadeConnector.java 150:171
+******************************
+******************************
+coarse grained commits 94eee6d5de125a8fd90e3c9a6b7011951320e489
+fine grained commits ('315e9cf52dbc5223d151a914ad8d34506ba3d1ef', '2a9f91fa31e0e62bf771d3a43f812bf7e3239401', 'f3cd5dff4c231e035c8d44a68a12053b45377c6f', '25a1fa9414c4e32bc1f410c936ed3830680011f2', '7ad3fcaf6af987ec451b6ad1c9913c3d361bf94b')
+Generation
+Change Parameter Typesrc/core/cascading/scheme/SourceCall.java@input : Inputsrc/core/cascading/scheme/ConcreteCall.java@input : IOsrc/core/cascading/scheme/SourceCall.java 36:36
+Generation
+Push Down Methodsrc/core/cascading/scheme/SourceCall.java@public setInput(input Input) : voidsrc/core/cascading/scheme/ConcreteCall.java@public setInput(input IO) : voidsrc/core/cascading/scheme/SourceCall.java 36:39
+******************************
+******************************
+coarse grained commits ccb68d6c856df25c8dc505fc26473a35e8e884e7
+fine grained commits ('2a5790e9f2a6205a269ddb93c7849d27ba6c888d', '233e50371352b70c0063d6ea30212fd8da2f476d', '41867838ce1ccb0ffc78abc85f9e5b016f41abdf', 'c86273fef49bc0e4be94b27b496f7a4cf75cb458', '4cccdf42f39852e5824a47b58a6c54a1cd7ed59e')
+Generation
+Split Classcascading-local-kafka/src/test/java/cascading/local/tap/kafka/KafkaTapTest.java@cascading.local.tap.kafka.KafkaTapTestcascading-local-kafka/src/test/java/cascading/local/tap/kafka/KafkaTapIntegrationTest.java@cascading.local.tap.kafka.KafkaTapIntegrationTestcascading-local-kafka/src/test/java/cascading/local/tap/kafka/KafkaTapTest.java 13:67
+******************************
+******************************
+coarse grained commits 489ad7685ae0574094d7f98a70adf51d3b7e1fbe
+fine grained commits ('193f3836bd0b66dea3d6770a24dc10012e5908e3', '87c88e08569432a41e92791f20472bf36d158d8e', '5b03e82754c6c1391b32468e08502142b15a99cd', 'ee46f5b25a8697472b05a5740cfddd1d335396a1', 'bff4072f6c7cf2ee2185a83772e58a38f33e48cb')
+Generation
+Change Variable Typecascading-hadoop/src/main/shared/cascading/tap/hadoop/util/TempHfs.java@tempHfs : TempHfscascading-core/src/main/java/cascading/flow/planner/FlowNode.java@flowNode : FlowNodecascading-hadoop/src/main/shared/cascading/tap/hadoop/util/TempHfs.java 139:139
+Generation
+Rename Variablecascading-hadoop/src/main/shared/cascading/tap/hadoop/util/TempHfs.java@tempHfs : TempHfscascading-core/src/main/java/cascading/flow/planner/FlowNode.java@flowNode : FlowNodecascading-hadoop/src/main/shared/cascading/tap/hadoop/util/TempHfs.java 139:139
+Generation
+Move Methodcascading-hadoop/src/main/shared/cascading/tap/hadoop/util/TempHfs.java@public equals(object Object) : booleancascading-core/src/main/java/cascading/flow/planner/FlowNode.java@public equals(object Object) : booleancascading-hadoop/src/main/shared/cascading/tap/hadoop/util/TempHfs.java 128:145
+******************************
+******************************
+coarse grained commits 2e33f8bdbf5801e30ae59036e3cca4e0f711f2d3
+fine grained commits ('c335507e96bb5f71caff0bad12bff2291d59a875', 'c722fb82b4df4cbf5104e6c0b87b8c8732834106', '16d0a8365223dad0773043a4ad4d23ba438aaf74', '2b534bbd8f0b545350b5e1bae498ed538faed9f1', '4954bce45962446a6bc0f85a51f3de0055c4dc3e')
+Generation
+Change Parameter Typesrc/hadoop/cascading/tap/hadoop/TempHfs.java@schemeClass : Classsrc/hadoop/cascading/tap/hadoop/util/TempHfs.java@schemeClass : Class<? extends Scheme>src/hadoop/cascading/tap/hadoop/TempHfs.java 74:74
+Generation
+Add Parametersrc/hadoop/cascading/tap/hadoop/TempHfs.java@public TempHfs(name String, schemeClass Class)src/hadoop/cascading/tap/hadoop/util/TempHfs.java@conf : JobConfsrc/hadoop/cascading/tap/hadoop/TempHfs.java 74:82
+Generation
+Move Methodsrc/hadoop/cascading/tap/hadoop/TempHfs.java@public TempHfs(name String, schemeClass Class)src/hadoop/cascading/tap/hadoop/util/TempHfs.java@public TempHfs(conf JobConf, name String, schemeClass Class<? extends Scheme>)src/hadoop/cascading/tap/hadoop/TempHfs.java 74:82
+Generation
+Change Variable Typesrc/hadoop/cascading/flow/hadoop/ProcessFlow.java@that : ProcessTapsrc/core/cascading/tap/BaseTemplateTap.java@that : BaseTemplateTapsrc/hadoop/cascading/flow/hadoop/ProcessFlow.java 299:299
+Generation
+Move Methodsrc/hadoop/cascading/flow/hadoop/ProcessFlow.java@public equals(object Object) : booleansrc/core/cascading/tap/BaseTemplateTap.java@public equals(object Object) : booleansrc/hadoop/cascading/flow/hadoop/ProcessFlow.java 289:305
+Generation
+Move Methodsrc/hadoop/cascading/flow/hadoop/ProcessFlow.java@public hashCode() : intsrc/core/cascading/tap/BaseTemplateTap.java@public hashCode() : intsrc/hadoop/cascading/flow/hadoop/ProcessFlow.java 307:313
+Generation
+Change Variable Typesrc/hadoop/cascading/tap/hadoop/Hfs.java@hfs : Hfssrc/core/cascading/tap/BaseTemplateTap.java@that : BaseTemplateTapsrc/hadoop/cascading/tap/hadoop/Hfs.java 476:476
+Generation
+Rename Variablesrc/hadoop/cascading/tap/hadoop/Hfs.java@hfs : Hfssrc/core/cascading/tap/BaseTemplateTap.java@that : BaseTemplateTapsrc/hadoop/cascading/tap/hadoop/Hfs.java 476:476
+Generation
+Move Methodsrc/hadoop/cascading/tap/hadoop/Hfs.java@public equals(object Object) : booleansrc/core/cascading/tap/BaseTemplateTap.java@public equals(object Object) : booleansrc/hadoop/cascading/tap/hadoop/Hfs.java 466:482
+Generation
+Move Methodsrc/hadoop/cascading/tap/hadoop/Hfs.java@public hashCode() : intsrc/core/cascading/tap/BaseTemplateTap.java@public hashCode() : intsrc/hadoop/cascading/tap/hadoop/Hfs.java 484:490
+Generation
+Change Variable Typesrc/local/cascading/tap/local/FileTap.java@fileTap : FileTapsrc/core/cascading/tap/BaseTemplateTap.java@that : BaseTemplateTapsrc/local/cascading/tap/local/FileTap.java 122:122
+Generation
+Rename Variablesrc/local/cascading/tap/local/FileTap.java@fileTap : FileTapsrc/core/cascading/tap/BaseTemplateTap.java@that : BaseTemplateTapsrc/local/cascading/tap/local/FileTap.java 122:122
+Generation
+Move Methodsrc/local/cascading/tap/local/FileTap.java@public equals(object Object) : booleansrc/core/cascading/tap/BaseTemplateTap.java@public equals(object Object) : booleansrc/local/cascading/tap/local/FileTap.java 112:128
+Generation
+Move Methodsrc/local/cascading/tap/local/FileTap.java@public hashCode() : intsrc/core/cascading/tap/BaseTemplateTap.java@public hashCode() : intsrc/local/cascading/tap/local/FileTap.java 130:136
+******************************
+******************************
+coarse grained commits 33f0bbd7efb8be0af56b02582b22acaa227a0308
+fine grained commits ('a8b5a9fe6a032ad856f9ba828f9458dd703e1933', '21b127c4fa5ee81a67d1ab9c72a7363c1230bfda', 'f5eb579cb9a3d3acd43e3c5a6ddbbe3721c0f819', 'a9237e942992d453b1db1cc2724137b7934a60e2', '367f209c7ea2a68cdd0ece567d30effe94d698b4')
+Generation
+Extract Superclasssrc/local/cascading/flow/local/LocalGroupByGate.java@cascading.flow.local.LocalGroupByGatesrc/local/cascading/flow/local/LocalGroupByGate.java@cascading.flow.local.LocalGroupByGatesrc/local/cascading/flow/local/LocalGroupByGate.java 16:86
+Generation
+Change Variable Typesrc/core/cascading/flow/planner/ElementGraph.java@path : GraphPath<FlowElement,Scope>src/core/cascading/flow/stream/StreamGraph.java@path : GraphPath<Duct,Integer>src/core/cascading/flow/planner/ElementGraph.java 303:303
+Generation
+Change Parameter Typesrc/core/cascading/flow/planner/ElementGraph.java@paths : List<GraphPath<FlowElement,Scope>>src/core/cascading/flow/stream/StreamGraph.java@paths : List<GraphPath<Duct,Integer>>src/core/cascading/flow/planner/ElementGraph.java 296:296
+Generation
+Change Variable Typesrc/core/cascading/flow/planner/ElementGraph.java@results : List<List<FlowElement>>src/core/cascading/flow/stream/StreamGraph.java@results : LinkedList<List<Duct>>src/core/cascading/flow/planner/ElementGraph.java 298:298
+Generation
+Change Return Typesrc/core/cascading/flow/planner/ElementGraph.java@List<List<FlowElement>>src/core/cascading/flow/stream/StreamGraph.java@LinkedList<List<Duct>>src/core/cascading/flow/planner/ElementGraph.java 296:296
+Generation
+Move Methodsrc/local/cascading/flow/local/LocalGroupGate.java@public initialize() : voidsrc/core/cascading/flow/stream/MemorySpliceGate.java@public initialize() : voidsrc/local/cascading/flow/local/LocalGroupGate.java 31:64
+Generation
+Move And Rename Methodsrc/local/cascading/flow/local/LocalGroupGate.java@protected initNewKeySet() : Set<Tuple>src/core/cascading/flow/stream/MemorySpliceGate.java@protected createKeySet() : Set<Tuple>src/local/cascading/flow/local/LocalGroupGate.java 66:69
+******************************

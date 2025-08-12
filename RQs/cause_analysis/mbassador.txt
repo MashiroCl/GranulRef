@@ -1,0 +1,120 @@
+******************************
+coarse grained commits d097609f51114bf7c4e15d8366c4cb8fef77ebb6
+fine grained commits ('b1d8782ee9b3bad008e6270eb7886093f0f66c71', '8ec0e3c2979c66610a913b61aab7624230a01f63')
+Generation
+Move And Rename Classsrc/main/java/net/engio/mbassy/dispatch/MessagingContext.java@net.engio.mbassy.dispatch.MessagingContextsrc/main/java/net/engio/mbassy/subscription/SubscriptionContext.java@net.engio.mbassy.subscription.SubscriptionContextsrc/main/java/net/engio/mbassy/dispatch/MessagingContext.java 6:26
+Generation
+Rename Methodsrc/main/java/net/engio/mbassy/common/DeadEvent.java@public getEvent() : Objectsrc/main/java/net/engio/mbassy/common/PublicationEvent.java@public getMessage() : Objectsrc/main/java/net/engio/mbassy/common/DeadEvent.java 11:13
+******************************
+******************************
+coarse grained commits ecbbb419f4533cdfccc15924a09dcacd3afa0bc5
+fine grained commits ('3409f92b86c7606706b4920dd5ed7f47be484959', 'a989f6e28d4b78379785f33c841fc15a0f52d8cf')
+Generation
+Move Classsrc/main/java/org/mbassy/MBassador.java@org.mbassy.MBassador.FilteredAsynchronousSubscriptionsrc/main/java/org/mbassy/subscription/FilteredAsynchronousSubscription.java@org.mbassy.subscription.FilteredAsynchronousSubscriptionsrc/main/java/org/mbassy/MBassador.java 436:446
+Generation
+Move Classsrc/main/java/org/mbassy/MBassador.java@org.mbassy.MBassador.FilteredSubscriptionsrc/main/java/org/mbassy/subscription/FilteredSubscription.java@org.mbassy.subscription.FilteredSubscriptionsrc/main/java/org/mbassy/MBassador.java 383:416
+Generation
+Move Classsrc/main/java/org/mbassy/MBassador.java@org.mbassy.MBassador.FilteredSynchronousSubscriptionsrc/main/java/org/mbassy/subscription/FilteredSynchronousSubscription.java@org.mbassy.subscription.FilteredSynchronousSubscriptionsrc/main/java/org/mbassy/MBassador.java 418:434
+Generation
+Change Class Access Modifiersrc/main/java/org/mbassy/MBassador.java@org.mbassy.MBassador.FilteredAsynchronousSubscriptionsrc/main/java/org/mbassy/subscription/FilteredAsynchronousSubscription.java@org.mbassy.subscription.FilteredAsynchronousSubscriptionsrc/main/java/org/mbassy/MBassador.java 436:446
+Generation
+Change Class Access Modifiersrc/main/java/org/mbassy/MBassador.java@org.mbassy.MBassador.FilteredSubscriptionsrc/main/java/org/mbassy/subscription/FilteredSubscription.java@org.mbassy.subscription.FilteredSubscriptionsrc/main/java/org/mbassy/MBassador.java 383:416
+Generation
+Change Method Access Modifiersrc/main/java/org/mbassy/MBassador.java@protected publish(message Object) : voidsrc/main/java/org/mbassy/subscription/FilteredSubscription.java@public publish(message Object) : voidsrc/main/java/org/mbassy/MBassador.java 406:415
+Generation
+Change Parameter Typesrc/main/java/org/mbassy/MBassador.java@messageHandler : Methodsrc/main/java/org/mbassy/subscription/FilteredSubscription.java@messageHandler : MessageHandlerMetadatasrc/main/java/org/mbassy/MBassador.java 388:388
+Generation
+Change Method Access Modifiersrc/main/java/org/mbassy/MBassador.java@private FilteredSubscription(messageHandler Method, filter MessageFilter[])src/main/java/org/mbassy/subscription/FilteredSubscription.java@public FilteredSubscription(mBassador IMessageBus, messageHandler MessageHandlerMetadata)src/main/java/org/mbassy/MBassador.java 388:391
+Generation
+Change Class Access Modifiersrc/main/java/org/mbassy/MBassador.java@org.mbassy.MBassador.FilteredSynchronousSubscriptionsrc/main/java/org/mbassy/subscription/FilteredSynchronousSubscription.java@org.mbassy.subscription.FilteredSynchronousSubscriptionsrc/main/java/org/mbassy/MBassador.java 418:434
+******************************
+******************************
+coarse grained commits 14fc25b93fce233428b8d4998eba3561340a65ad
+fine grained commits ('3409f92b86c7606706b4920dd5ed7f47be484959', 'a989f6e28d4b78379785f33c841fc15a0f52d8cf', '34e07c1db2d839065430364b82844714d8646242')
+Generation
+Move Classsrc/main/java/org/mbassy/MBassador.java@org.mbassy.MBassador.Subscriptionsrc/main/java/org/mbassy/subscription/Subscription.java@org.mbassy.subscription.Subscriptionsrc/main/java/org/mbassy/MBassador.java 268:334
+Generation
+Move Classsrc/main/java/org/mbassy/MBassador.java@org.mbassy.MBassador.UnfilteredSubscriptionsrc/main/java/org/mbassy/subscription/UnfilteredSubscription.java@org.mbassy.subscription.UnfilteredSubscriptionsrc/main/java/org/mbassy/MBassador.java 336:351
+Generation
+Move Classsrc/main/java/org/mbassy/MBassador.java@org.mbassy.MBassador.UnfilteredAsynchronousSubscriptionsrc/main/java/org/mbassy/subscription/UnfilteredAsynchronousSubscription.java@org.mbassy.subscription.UnfilteredAsynchronousSubscriptionsrc/main/java/org/mbassy/MBassador.java 353:369
+Generation
+Move Classsrc/main/java/org/mbassy/MBassador.java@org.mbassy.MBassador.UnfilteredSynchronousSubscriptionsrc/main/java/org/mbassy/subscription/UnfilteredSynchronousSubscription.java@org.mbassy.subscription.UnfilteredSynchronousSubscriptionsrc/main/java/org/mbassy/MBassador.java 371:381
+Generation
+Change Class Access Modifiersrc/main/java/org/mbassy/MBassador.java@org.mbassy.MBassador.Subscriptionsrc/main/java/org/mbassy/subscription/Subscription.java@org.mbassy.subscription.Subscriptionsrc/main/java/org/mbassy/MBassador.java 268:334
+Generation
+Change Method Access Modifiersrc/main/java/org/mbassy/MBassador.java@protected abstract publish(message Object) : voidsrc/main/java/org/mbassy/subscription/Subscription.java@public abstract publish(message Object) : voidsrc/main/java/org/mbassy/MBassador.java 281:281
+Generation
+Change Parameter Typesrc/main/java/org/mbassy/MBassador.java@messageHandler : Methodsrc/main/java/org/mbassy/subscription/Subscription.java@messageHandler : MessageHandlerMetadatasrc/main/java/org/mbassy/MBassador.java 276:276
+Generation
+Add Parametersrc/main/java/org/mbassy/MBassador.java@private Subscription(messageHandler Method)src/main/java/org/mbassy/subscription/Subscription.java@owningBus : IMessageBussrc/main/java/org/mbassy/MBassador.java 276:279
+Generation
+Change Method Access Modifiersrc/main/java/org/mbassy/MBassador.java@private Subscription(messageHandler Method)src/main/java/org/mbassy/subscription/Subscription.java@public Subscription(owningBus IMessageBus, messageHandler MessageHandlerMetadata)src/main/java/org/mbassy/MBassador.java 276:279
+Generation
+Rename Attributesrc/main/java/org/mbassy/MBassador.java@messageHandler : Methodsrc/main/java/org/mbassy/subscription/Subscription.java@handler : Methodsrc/main/java/org/mbassy/MBassador.java 270:270
+Generation
+Change Class Access Modifiersrc/main/java/org/mbassy/MBassador.java@org.mbassy.MBassador.UnfilteredSubscriptionsrc/main/java/org/mbassy/subscription/UnfilteredSubscription.java@org.mbassy.subscription.UnfilteredSubscriptionsrc/main/java/org/mbassy/MBassador.java 336:351
+Generation
+Change Parameter Typesrc/main/java/org/mbassy/MBassador.java@messageHandler : Methodsrc/main/java/org/mbassy/subscription/UnfilteredSubscription.java@messageHandler : MessageHandlerMetadatasrc/main/java/org/mbassy/MBassador.java 339:339
+Generation
+Add Parametersrc/main/java/org/mbassy/MBassador.java@private UnfilteredSubscription(messageHandler Method)src/main/java/org/mbassy/subscription/UnfilteredSubscription.java@mBassador : IMessageBussrc/main/java/org/mbassy/MBassador.java 339:341
+Generation
+Change Method Access Modifiersrc/main/java/org/mbassy/MBassador.java@private UnfilteredSubscription(messageHandler Method)src/main/java/org/mbassy/subscription/UnfilteredSubscription.java@public UnfilteredSubscription(mBassador IMessageBus, messageHandler MessageHandlerMetadata)src/main/java/org/mbassy/MBassador.java 339:341
+Generation
+Change Class Access Modifiersrc/main/java/org/mbassy/MBassador.java@org.mbassy.MBassador.UnfilteredAsynchronousSubscriptionsrc/main/java/org/mbassy/subscription/UnfilteredAsynchronousSubscription.java@org.mbassy.subscription.UnfilteredAsynchronousSubscriptionsrc/main/java/org/mbassy/MBassador.java 353:369
+Generation
+Change Parameter Typesrc/main/java/org/mbassy/MBassador.java@messageHandler : Methodsrc/main/java/org/mbassy/subscription/UnfilteredAsynchronousSubscription.java@messageHandler : MessageHandlerMetadatasrc/main/java/org/mbassy/MBassador.java 356:356
+Generation
+Add Parametersrc/main/java/org/mbassy/MBassador.java@private UnfilteredAsynchronousSubscription(messageHandler Method)src/main/java/org/mbassy/subscription/UnfilteredAsynchronousSubscription.java@mBassador : IMessageBussrc/main/java/org/mbassy/MBassador.java 356:358
+Generation
+Change Method Access Modifiersrc/main/java/org/mbassy/MBassador.java@private UnfilteredAsynchronousSubscription(messageHandler Method)src/main/java/org/mbassy/subscription/UnfilteredAsynchronousSubscription.java@public UnfilteredAsynchronousSubscription(mBassador IMessageBus, messageHandler MessageHandlerMetadata)src/main/java/org/mbassy/MBassador.java 356:358
+Generation
+Change Class Access Modifiersrc/main/java/org/mbassy/MBassador.java@org.mbassy.MBassador.UnfilteredSynchronousSubscriptionsrc/main/java/org/mbassy/subscription/UnfilteredSynchronousSubscription.java@org.mbassy.subscription.UnfilteredSynchronousSubscriptionsrc/main/java/org/mbassy/MBassador.java 371:381
+Generation
+Change Parameter Typesrc/main/java/org/mbassy/MBassador.java@messageHandler : Methodsrc/main/java/org/mbassy/subscription/UnfilteredSynchronousSubscription.java@messageHandler : MessageHandlerMetadatasrc/main/java/org/mbassy/MBassador.java 374:374
+Generation
+Add Parametersrc/main/java/org/mbassy/MBassador.java@private UnfilteredSynchronousSubscription(messageHandler Method)src/main/java/org/mbassy/subscription/UnfilteredSynchronousSubscription.java@mBassador : IMessageBussrc/main/java/org/mbassy/MBassador.java 374:376
+Generation
+Change Method Access Modifiersrc/main/java/org/mbassy/MBassador.java@private UnfilteredSynchronousSubscription(messageHandler Method)src/main/java/org/mbassy/subscription/UnfilteredSynchronousSubscription.java@public UnfilteredSynchronousSubscription(mBassador IMessageBus, messageHandler MessageHandlerMetadata)src/main/java/org/mbassy/MBassador.java 374:376
+******************************
+******************************
+coarse grained commits 53c550eb4c6017a48adf6c2f94b2d3cc5964eff5
+fine grained commits ('758fc362242e7ca16c9a919b8bb10457bb5dfff0', 'fe4a17752ceab6aa9c870887dc55d209f596fdc4', 'bb72e950874def640f52ca8dee99e0d1d507d6d7', '0a0dc8eda1051c5ccc3a4ae6c1351998cf4c9eec')
+Generation
+Modify Method Annotationsrc/test/java/org/mbassy/MBassadorTest.java@@Listener(priority = 10, dispatch = Mode.Synchronous, filters = {@Filter(MessageFilter.None.class),@Filter(MessageFilter.All.class)})src/test/java/org/mbassy/listeners/EventingTestBean.java@@Listener(priority = 10, dispatch = Mode.Synchronous, filters = {@Filter(IMessageFilter.None.class),@Filter(IMessageFilter.All.class)})src/test/java/org/mbassy/MBassadorTest.java 188:191
+Generation
+Extract And Move Methodsrc/test/java/org/mbassy/ConcurrentSetTest.java@public testRemove2() : voidsrc/test/java/org/mbassy/UnitTest.java@public assertTrue(condition Boolean) : voidsrc/test/java/org/mbassy/ConcurrentSetTest.java 144:179
+Generation
+Extract And Move Methodsrc/test/java/org/mbassy/ConcurrentSetTest.java@public testIterator() : voidsrc/test/java/org/mbassy/UnitTest.java@public assertTrue(condition Boolean) : voidsrc/test/java/org/mbassy/ConcurrentSetTest.java 18:54
+Generation
+Extract And Move Methodsrc/test/java/org/mbassy/ConcurrentSetTest.java@public testInsert() : voidsrc/test/java/org/mbassy/UnitTest.java@public assertTrue(condition Boolean) : voidsrc/test/java/org/mbassy/ConcurrentSetTest.java 57:96
+Generation
+Extract And Move Methodsrc/test/java/org/mbassy/ConcurrentSetTest.java@public testInsert() : voidsrc/test/java/org/mbassy/UnitTest.java@public assertEquals(expected Object, actual Object) : voidsrc/test/java/org/mbassy/ConcurrentSetTest.java 57:96
+******************************
+******************************
+coarse grained commits 0e444840589694944f20f2c6b835855579cb08ba
+fine grained commits ('34e07c1db2d839065430364b82844714d8646242', 'a5f53cf81c3eb448290f27339393cc19e50fb01a', '24c3a241d882ecdd72b38ddd39160717705ee3fe', '5ae50093ad63dd5bf3d8b0baf8314fc1153646c7')
+Generation
+Change Parameter Typesrc/main/java/org/mbassy/MBassador.java@messageHandler : Methodsrc/main/java/org/mbassy/subscription/Subscription.java@messageHandler : MessageHandlerMetadatasrc/main/java/org/mbassy/MBassador.java 238:238
+Generation
+Change Method Access Modifiersrc/main/java/org/mbassy/MBassador.java@private Subscription(messageHandler Method, filter MessageFilter[])src/main/java/org/mbassy/subscription/Subscription.java@public Subscription(owningBus IMessageBus, messageHandler MessageHandlerMetadata)src/main/java/org/mbassy/MBassador.java 238:243
+Generation
+Move Methodsrc/main/java/org/mbassy/MBassador.java@private Subscription(messageHandler Method, filter MessageFilter[])src/main/java/org/mbassy/subscription/Subscription.java@public Subscription(owningBus IMessageBus, messageHandler MessageHandlerMetadata)src/main/java/org/mbassy/MBassador.java 238:243
+******************************
+******************************
+coarse grained commits cf1ca6ee93167e51d673a4fbfe7f965908a32f26
+fine grained commits ('ad8153d16aada544a3e1e9c07a36c236e5e3e0ee', '33d5811ec67bcc5be270a7438b07aee8ab67c9e7', 'a484ee721a27d66f0dd02f62c0c111c43e71c72e', '758fc362242e7ca16c9a919b8bb10457bb5dfff0')
+Generation
+Rename Parametersrc/main/java/org/mbassy/subscription/SubscriptionFactory.java@messageHandlerMetadata : MessageHandlerMetadatasrc/main/java/org/mbassy/subscription/SubscriptionFactory.java@context : MessagingContextsrc/main/java/org/mbassy/subscription/SubscriptionFactory.java 18:18
+Generation
+Change Parameter Typesrc/main/java/org/mbassy/subscription/SubscriptionFactory.java@messageHandlerMetadata : MessageHandlerMetadatasrc/main/java/org/mbassy/subscription/SubscriptionFactory.java@context : MessagingContextsrc/main/java/org/mbassy/subscription/SubscriptionFactory.java 18:18
+Generation
+Parameterize Attributesrc/main/java/org/mbassy/subscription/SubscriptionFactory.java@owner : IMessageBussrc/main/java/org/mbassy/subscription/SubscriptionFactory.java@context : MessagingContextsrc/main/java/org/mbassy/subscription/SubscriptionFactory.java 11:11
+Generation
+Rename Methodsrc/test/java/org/mbassy/ConcurrentSetTest.java@public testRemove1() : voidsrc/test/java/org/mbassy/ConcurrentSetTest.java@public testRemoval() : voidsrc/test/java/org/mbassy/ConcurrentSetTest.java 100:142
+******************************
+******************************
+coarse grained commits 7c1cbeb86273e40330db22bd986ce6ce7495c75e
+fine grained commits ('3afe92eb662c57f362882df54c107ef0894c35c9', '80a451c3b52d97953161d35a9b757a247d7f9011', '6b895c2cdc074f282f44b3c8835770207b0c80f8', '8d4c4442a4b8167510ee01969f0fc53ef2f8f468', 'be6d84bffbbf13ee38f4a92c3e69a3403d97ec70')
+Generation
+Extract Superclasssrc/test/java/org/mbassy/MetadataReaderTest.java@org.mbassy.MetadataReaderTest.EventListener3src/test/java/net/engio/mbassy/MetadataReaderTest.java@net.engio.mbassy.MetadataReaderTest.EventListener3src/test/java/org/mbassy/MetadataReaderTest.java 127:138
+******************************

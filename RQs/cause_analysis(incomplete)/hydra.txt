@@ -1,0 +1,904 @@
+******************************
+coarse grained commits ef8367942c0cb22ca7b037d31e13ac6f90d1c70d
+fine grained commits ('e9176e7700fc00bac88f1cf38d63d5d945be20d3', '1cc137702401717194db4bb14354b4fd8cc200d1')
+Generation
+Replace Anonymous With Lambdahydra-main/src/main/java/com/addthis/hydra/job/spawn/balancer/SpawnBalancer.java@com.addthis.hydra.job.spawn.balancer.SpawnBalancer.SpawnBalancer.newGauge.new Gauge<Long>hydra-main/src/main/java/com/addthis/hydra/job/spawn/balancer/SpawnBalancer.java@() -> avgDiskFreeDiffhydra-main/src/main/java/com/addthis/hydra/job/spawn/balancer/SpawnBalancer.java 150:154
+Generation
+Remove Parameterhydra-main/src/main/java/com/addthis/hydra/job/spawn/balancer/SpawnBalancer.java@spawn : Spawnhydra-main/src/main/java/com/addthis/hydra/job/spawn/balancer/SpawnBalancer.java@private initMetrics() : voidhydra-main/src/main/java/com/addthis/hydra/job/spawn/balancer/SpawnBalancer.java 108:108
+Generation
+Remove Parameterhydra-main/src/main/java/com/addthis/hydra/job/spawn/balancer/SpawnBalancer.java@hostManager : HostManagerhydra-main/src/main/java/com/addthis/hydra/job/spawn/balancer/SpawnBalancer.java@private initMetrics() : voidhydra-main/src/main/java/com/addthis/hydra/job/spawn/balancer/SpawnBalancer.java 108:108
+Generation
+Change Method Access Modifierhydra-main/src/main/java/com/addthis/hydra/job/spawn/balancer/SpawnBalancer.java@public SpawnBalancer(spawn Spawn, hostManager HostManager)hydra-main/src/main/java/com/addthis/hydra/job/spawn/balancer/SpawnBalancer.java@private initMetrics() : voidhydra-main/src/main/java/com/addthis/hydra/job/spawn/balancer/SpawnBalancer.java 108:180
+Generation
+Replace Anonymous With Lambdahydra-main/src/main/java/com/addthis/hydra/job/spawn/balancer/SpawnBalancer.java@com.addthis.hydra.job.spawn.balancer.SpawnBalancer.SpawnBalancer.newGauge.new Gauge<Long>hydra-main/src/main/java/com/addthis/hydra/job/spawn/balancer/SpawnBalancer.java@() -> minDiskFreeDiffhydra-main/src/main/java/com/addthis/hydra/job/spawn/balancer/SpawnBalancer.java 155:159
+Generation
+Replace Anonymous With Lambdahydra-main/src/main/java/com/addthis/hydra/job/spawn/balancer/SpawnBalancer.java@com.addthis.hydra.job.spawn.balancer.SpawnBalancer.SpawnBalancer.newGauge.new Gauge<Long>hydra-main/src/main/java/com/addthis/hydra/job/spawn/balancer/SpawnBalancer.java@() -> maxDiskFreeDiffhydra-main/src/main/java/com/addthis/hydra/job/spawn/balancer/SpawnBalancer.java 160:164
+Generation
+Replace Anonymous With Lambdahydra-main/src/main/java/com/addthis/hydra/job/spawn/balancer/SpawnBalancer.java@com.addthis.hydra.job.spawn.balancer.SpawnBalancer.SpawnBalancer.newGauge.new Gauge<Double>hydra-main/src/main/java/com/addthis/hydra/job/spawn/balancer/SpawnBalancer.java@() -> minTaskPercentDiffhydra-main/src/main/java/com/addthis/hydra/job/spawn/balancer/SpawnBalancer.java 170:174
+******************************
+******************************
+coarse grained commits d997d92276f6a06d99278413e5a0f3d1209e7205
+fine grained commits ('577f69c72b97951e6eab1e03d3f4942772fa5ab7', '72374fcbb26386941903bf68da93ec5ebfd5e0a6')
+Generation
+Replace Variable With Attributehydra-main/src/main/java/com/addthis/hydra/job/mq/HostState.java@type : Stringhydra-main/src/main/java/com/addthis/hydra/job/mq/HostState.java@minionTypes : Stringhydra-main/src/main/java/com/addthis/hydra/job/mq/HostState.java 166:166
+Generation
+Parameterize Attributehydra-main/src/main/java/com/addthis/hydra/job/mq/HostState.java@minionTypes : Stringhydra-main/src/main/java/com/addthis/hydra/job/mq/HostState.java@typeString : Stringhydra-main/src/main/java/com/addthis/hydra/job/mq/HostState.java 54:54
+******************************
+******************************
+coarse grained commits 7d52a1fb94b22b9f0dfcf3cf02dc317320b7841b
+fine grained commits ('96cf381972770f73d587724800b4028dc2c49c2d', '132ba9791b4cbb2b1bee8aa165c0aec505110626')
+Generation
+Move Attributehydra-main/src/main/java/com/addthis/hydra/job/spawn/search/JobInfo.java@protected description : Stringhydra-main/src/main/java/com/addthis/hydra/job/spawn/search/SearchResult.java@private description : Stringhydra-main/src/main/java/com/addthis/hydra/job/spawn/search/JobInfo.java 5:5
+Generation
+Move Attributehydra-main/src/main/java/com/addthis/hydra/job/spawn/search/JobInfo.java@protected id : Stringhydra-main/src/main/java/com/addthis/hydra/job/spawn/search/SearchResult.java@private id : Stringhydra-main/src/main/java/com/addthis/hydra/job/spawn/search/JobInfo.java 4:4
+Generation
+Change Attribute Access Modifierhydra-main/src/main/java/com/addthis/hydra/job/spawn/search/JobInfo.java@protected description : Stringhydra-main/src/main/java/com/addthis/hydra/job/spawn/search/SearchResult.java@private description : Stringhydra-main/src/main/java/com/addthis/hydra/job/spawn/search/JobInfo.java 5:5
+Generation
+Add Attribute Modifierhydra-main/src/main/java/com/addthis/hydra/job/spawn/search/JobInfo.java@protected description : Stringhydra-main/src/main/java/com/addthis/hydra/job/spawn/search/SearchResult.java@private description : Stringhydra-main/src/main/java/com/addthis/hydra/job/spawn/search/JobInfo.java 5:5
+Generation
+Add Attribute Annotationhydra-main/src/main/java/com/addthis/hydra/job/spawn/search/JobInfo.java@protected description : Stringhydra-main/src/main/java/com/addthis/hydra/job/spawn/search/SearchResult.java@@JsonPropertyhydra-main/src/main/java/com/addthis/hydra/job/spawn/search/JobInfo.java 5:5
+Generation
+Change Attribute Access Modifierhydra-main/src/main/java/com/addthis/hydra/job/spawn/search/JobInfo.java@protected id : Stringhydra-main/src/main/java/com/addthis/hydra/job/spawn/search/SearchResult.java@private id : Stringhydra-main/src/main/java/com/addthis/hydra/job/spawn/search/JobInfo.java 4:4
+Generation
+Add Attribute Modifierhydra-main/src/main/java/com/addthis/hydra/job/spawn/search/JobInfo.java@protected id : Stringhydra-main/src/main/java/com/addthis/hydra/job/spawn/search/SearchResult.java@private id : Stringhydra-main/src/main/java/com/addthis/hydra/job/spawn/search/JobInfo.java 4:4
+Generation
+Add Attribute Annotationhydra-main/src/main/java/com/addthis/hydra/job/spawn/search/JobInfo.java@protected id : Stringhydra-main/src/main/java/com/addthis/hydra/job/spawn/search/SearchResult.java@@JsonPropertyhydra-main/src/main/java/com/addthis/hydra/job/spawn/search/JobInfo.java 4:4
+******************************
+******************************
+coarse grained commits eff9dcb1ea0f2a58fbde64eca824eff5e13cb9cb
+fine grained commits ('5847293d24fd71b2eaa311c3b6de86ce30489d30', '85c1e72c4a98390a18bc1a25ad6d2b5f42bfd491')
+Generation
+Change Attribute Access Modifierhydra-data/src/main/java/com/addthis/hydra/data/tree/AbstractTreeNode.java@protected name : Stringhydra-data/src/main/java/com/addthis/hydra/data/tree/nonconcurrent/NonConcurrentTreeNode.java@private name : Stringhydra-data/src/main/java/com/addthis/hydra/data/tree/AbstractTreeNode.java 37:37
+******************************
+******************************
+coarse grained commits a8d742776ba956589a4ffa9ea224509d086824f0
+fine grained commits ('4a3f67285795191505e6e64736b143dfddda31d6', 'a326919f83aaba572161e95193e1508a7136ad8f')
+Generation
+Rename Variablehydra-main/src/main/java/com/addthis/hydra/query/MeshQueryMaster.java@alias : Stringhydra-main/src/main/java/com/addthis/hydra/query/MeshQueryMaster.java@resolved : Stringhydra-main/src/main/java/com/addthis/hydra/query/MeshQueryMaster.java 192:192
+Generation
+Rename Variablehydra-main/src/main/java/com/addthis/hydra/query/MeshQueryMaster.java@aliasJobId : Stringhydra-main/src/main/java/com/addthis/hydra/query/MeshQueryMaster.java@resolvedJobId : Stringhydra-main/src/main/java/com/addthis/hydra/query/MeshQueryMaster.java 193:193
+******************************
+******************************
+coarse grained commits a4f51226ef7763116d762d3e2eae22b95d4aff45
+fine grained commits ('81885ae260abe4eef04ad95809bab365c109b7e0', '98b1ac7c5eef1337ac7beec571f384d0e1f40cea')
+Generation
+Extract Variablehydra-main/src/main/java/com/addthis/hydra/query/MeshQueryMaster.java@hydra-main/src/main/java/com/addthis/hydra/query/MeshQueryMaster.java@allowPartial : booleanhydra-main/src/main/java/com/addthis/hydra/query/MeshQueryMaster.java 186:187
+Generation
+Rename Variablehydra-main/src/main/java/com/addthis/hydra/query/MeshQueryMaster.java@subdirectory : Stringhydra-main/src/main/java/com/addthis/hydra/query/MeshQueryMaster.java@combinedJob : Stringhydra-main/src/main/java/com/addthis/hydra/query/MeshQueryMaster.java 185:185
+******************************
+******************************
+coarse grained commits 24332a3df1a542876e407464b9c3743ac2c402e2
+fine grained commits ('49676843cf6c67a20f7edf4ee09e3c3fe0d62f14', 'd933bbd1aa91c4c6294bcb44786b4ed4fd4d6bf0')
+Generation
+Extract Superclasshydra-filters/src/main/java/com/addthis/hydra/data/filter/value/AbstractMatchStringFilter.java@com.addthis.hydra.data.filter.value.AbstractMatchStringFilterhydra-filters/src/main/java/com/addthis/hydra/data/filter/value/AbstractMatchStringFilter.java@com.addthis.hydra.data.filter.value.AbstractMatchStringFilterhydra-filters/src/main/java/com/addthis/hydra/data/filter/value/AbstractMatchStringFilter.java 13:229
+******************************
+******************************
+coarse grained commits 44a1c562686bdd2ad032f5dc53ff72efad922c06
+fine grained commits ('98224823166f55c4694c48ea50a766a325a3e5cd', '8817501efbeede17e553d1cd257c1f2005d42cd3')
+Generation
+Add Class Annotationhydra-main/src/main/java/com/addthis/hydra/job/alert/JobAlert.java@com.addthis.hydra.job.alert.JobAlerthydra-main/src/main/java/com/addthis/hydra/job/alert/AbstractJobAlert.java@@Pluggable("job alerts")hydra-main/src/main/java/com/addthis/hydra/job/alert/JobAlert.java 41:312
+******************************
+******************************
+coarse grained commits 71b01d4bdbec917decd091d36cd1c94e0c141660
+fine grained commits ('bbc503f599e059fa0a8adeb5f66fb0b4d949be40', '46214783e05718148d4b2b59cc4d5d18a4265580')
+Generation
+Move And Rename Methodhydra-filters/src/test/java/com/addthis/hydra/data/filter/value/TestValueFilterRequire.java@public negateMatch() : voidhydra-filters/src/test/java/com/addthis/hydra/data/filter/value/TestValueFilterExclude.java@public matchEmptyString() : voidhydra-filters/src/test/java/com/addthis/hydra/data/filter/value/TestValueFilterRequire.java 47:55
+******************************
+******************************
+coarse grained commits 07b61c10a921b0f0595ca8a1173c33a159c93a65
+fine grained commits ('8fd1bb65854840e18dc5114487ac5a81b8f14c0d', 'cc90bf77484be6f00256adbcbcdca773f793412f')
+Generation
+Rename Attributehydra-task/src/main/java/com/addthis/hydra/task/output/tree/PathQuery.java@accumulate : booleanhydra-task/src/main/java/com/addthis/hydra/task/output/tree/PathQuery.java@childMatch : booleanhydra-task/src/main/java/com/addthis/hydra/task/output/tree/PathQuery.java 34:34
+******************************
+******************************
+coarse grained commits 8e7350b1d1c345c6d672f6857336b5adc2bb4fb5
+fine grained commits ('960bc8a45a3ae785ba26ef1b2b6272fe9a7ae506', 'd54942eae4ac38972fe3d5a5fd393f8dddbc90da')
+Generation
+Add Attribute Annotationhydra-main/src/main/java/com/addthis/hydra/job/web/resources/SystemResource.java@private systemManager : SystemManagerhydra-main/src/main/java/com/addthis/hydra/job/web/resources/SystemResource.java@@Nonnullhydra-main/src/main/java/com/addthis/hydra/job/web/resources/SystemResource.java 30:30
+Generation
+Add Parameterhydra-main/src/main/java/com/addthis/hydra/job/web/resources/SystemResource.java@public SystemResource(systemManager SystemManager)hydra-main/src/main/java/com/addthis/hydra/job/web/resources/SystemResource.java@spawnBalancer : SpawnBalancerhydra-main/src/main/java/com/addthis/hydra/job/web/resources/SystemResource.java 32:34
+Generation
+Add Parameterhydra-main/src/main/java/com/addthis/hydra/job/web/resources/SystemResource.java@public SystemResource(systemManager SystemManager)hydra-main/src/main/java/com/addthis/hydra/job/web/resources/SystemResource.java@hostFailWorker : HostFailWorkerhydra-main/src/main/java/com/addthis/hydra/job/web/resources/SystemResource.java 32:34
+******************************
+******************************
+coarse grained commits a155ebeef622be2213daa2f361847dc9efe56b11
+fine grained commits ('0985c77186690b922f523bf8b33a00b58e1d6ed4', '8493fa97157ff740e5e7dcdf6d6f1d90aef05b2c')
+Generation
+Move And Inline Methodhydra-main/src/main/java/com/addthis/hydra/job/spawn/Settings.java@public getQuiesced() : booleanhydra-main/src/main/java/com/addthis/hydra/job/spawn/SystemManagerImpl.java@public quiesceCluster(quiesce boolean, username String) : booleanhydra-main/src/main/java/com/addthis/hydra/job/spawn/Settings.java 47:49
+Generation
+Move And Inline Methodhydra-main/src/main/java/com/addthis/hydra/job/spawn/Settings.java@public setQuiesced(quiesced boolean) : voidhydra-main/src/main/java/com/addthis/hydra/job/spawn/SystemManagerImpl.java@public quiesceCluster(quiesce boolean, username String) : booleanhydra-main/src/main/java/com/addthis/hydra/job/spawn/Settings.java 51:58
+******************************
+******************************
+coarse grained commits def64ef60d8871bfbed02866a9bced3e93c7d210
+fine grained commits ('411e958b27833545d1d40d477dbf648ea1bbf2c3', '11d0733e2a3d8d84bd4d80ddb3b6f6688932be97')
+Generation
+Rename Attributehydra-main/src/main/java/com/addthis/hydra/query/MeshFileRefCache.java@meshy : MeshyServerhydra-main/src/main/java/com/addthis/hydra/query/MeshFileRefCache.java@loader : FileRefCacheLoaderhydra-main/src/main/java/com/addthis/hydra/query/MeshFileRefCache.java 57:57
+Generation
+Change Attribute Typehydra-main/src/main/java/com/addthis/hydra/query/MeshFileRefCache.java@meshy : MeshyServerhydra-main/src/main/java/com/addthis/hydra/query/MeshFileRefCache.java@loader : FileRefCacheLoaderhydra-main/src/main/java/com/addthis/hydra/query/MeshFileRefCache.java 57:57
+Generation
+Move Attributehydra-main/src/main/java/com/addthis/hydra/query/MeshFileRefCache.java@private meshy : MeshyServerhydra-main/src/main/java/com/addthis/hydra/query/FileRefCacheLoader.java@private meshy : MeshyServerhydra-main/src/main/java/com/addthis/hydra/query/MeshFileRefCache.java 57:57
+******************************
+******************************
+coarse grained commits c73cdb643618b2e603e18748b91938dc1c2ab94e
+fine grained commits ('dd177838ae8db7a76d75ab69d2d8ccb1bac7b136', '8cb843833dce59384ec78bae5784e2bc29a978b3')
+Generation
+Extract Classhydra-task/src/main/java/com/addthis/hydra/task/output/OutputWrapperFactory.java@com.addthis.hydra.task.output.OutputWrapperFactoryhydra-task/src/main/java/com/addthis/hydra/task/output/OutputWrapperFactory.java@com.addthis.hydra.task.output.OutputWrapperFactoryhydra-task/src/main/java/com/addthis/hydra/task/output/OutputWrapperFactory.java 28:274
+Generation
+Move Methodhydra-task/src/main/java/com/addthis/hydra/task/output/OutputWrapperFactory.java@public openWriteStream(target String, outputFlags OutputStreamFlags, logLineOutput OutputStreamEmitter) : OutputWrapperhydra-hdfs/src/main/java/com/addthis/hydra/task/output/HDFSOutputWrapperFactory.java@public openWriteStream(target String, outputFlags OutputStreamFlags, streamEmitter OutputStreamEmitter) : OutputWrapperhydra-task/src/main/java/com/addthis/hydra/task/output/OutputWrapperFactory.java 62:110
+Generation
+Change Variable Typehydra-task/src/main/java/com/addthis/hydra/task/output/OutputWrapperFactory.java@targetOut : Filehydra-hdfs/src/main/java/com/addthis/hydra/task/output/HDFSOutputWrapperFactory.java@targetPath : Pathhydra-task/src/main/java/com/addthis/hydra/task/output/OutputWrapperFactory.java 68:68
+Generation
+Change Variable Typehydra-task/src/main/java/com/addthis/hydra/task/output/OutputWrapperFactory.java@outputStream : OutputStreamhydra-hdfs/src/main/java/com/addthis/hydra/task/output/HDFSOutputWrapperFactory.java@outputStream : FSDataOutputStreamhydra-task/src/main/java/com/addthis/hydra/task/output/OutputWrapperFactory.java 74:74
+Generation
+Rename Variablehydra-task/src/main/java/com/addthis/hydra/task/output/OutputWrapperFactory.java@targetOut : Filehydra-hdfs/src/main/java/com/addthis/hydra/task/output/HDFSOutputWrapperFactory.java@targetPath : Pathhydra-task/src/main/java/com/addthis/hydra/task/output/OutputWrapperFactory.java 68:68
+Generation
+Add Method Annotationhydra-task/src/main/java/com/addthis/hydra/task/output/OutputWrapperFactory.java@public openWriteStream(target String, outputFlags OutputStreamFlags, logLineOutput OutputStreamEmitter) : OutputWrapperhydra-hdfs/src/main/java/com/addthis/hydra/task/output/HDFSOutputWrapperFactory.java@@Overridehydra-task/src/main/java/com/addthis/hydra/task/output/OutputWrapperFactory.java 62:110
+Generation
+Move Methodhydra-task/src/main/java/com/addthis/hydra/task/output/OutputWrapperFactory.java@private getModifiedTarget(target String, outputFlags OutputStreamFlags) : Stringhydra-hdfs/src/main/java/com/addthis/hydra/task/output/HDFSOutputWrapperFactory.java@private getModifiedTarget(target String, outputFlags OutputStreamFlags) : Stringhydra-task/src/main/java/com/addthis/hydra/task/output/OutputWrapperFactory.java 141:157
+Generation
+Change Variable Typehydra-task/src/main/java/com/addthis/hydra/task/output/OutputWrapperFactory.java@test : Filehydra-hdfs/src/main/java/com/addthis/hydra/task/output/HDFSOutputWrapperFactory.java@test : Pathhydra-task/src/main/java/com/addthis/hydra/task/output/OutputWrapperFactory.java 147:147
+Generation
+Change Variable Typehydra-task/src/main/java/com/addthis/hydra/task/output/OutputWrapperFactory.java@testTmp : Filehydra-hdfs/src/main/java/com/addthis/hydra/task/output/HDFSOutputWrapperFactory.java@testTmp : Pathhydra-task/src/main/java/com/addthis/hydra/task/output/OutputWrapperFactory.java 148:148
+Generation
+Add Thrown Exception Typehydra-task/src/main/java/com/addthis/hydra/task/output/OutputWrapperFactory.java@private getModifiedTarget(target String, outputFlags OutputStreamFlags) : Stringhydra-hdfs/src/main/java/com/addthis/hydra/task/output/HDFSOutputWrapperFactory.java@IOExceptionhydra-task/src/main/java/com/addthis/hydra/task/output/OutputWrapperFactory.java 141:157
+Generation
+Move Methodhydra-task/src/main/java/com/addthis/hydra/task/output/OutputWrapperFactory.java@protected setDir(dir String) : voidhydra-hdfs/src/main/java/com/addthis/hydra/task/output/HDFSOutputWrapperFactory.java@public setDir(dir String) : voidhydra-task/src/main/java/com/addthis/hydra/task/output/OutputWrapperFactory.java 137:139
+Generation
+Change Method Access Modifierhydra-task/src/main/java/com/addthis/hydra/task/output/OutputWrapperFactory.java@protected setDir(dir String) : voidhydra-hdfs/src/main/java/com/addthis/hydra/task/output/HDFSOutputWrapperFactory.java@public setDir(dir String) : voidhydra-task/src/main/java/com/addthis/hydra/task/output/OutputWrapperFactory.java 137:139
+Generation
+Move Attributehydra-task/src/main/java/com/addthis/hydra/task/output/OutputWrapperFactory.java@private log : Loggerhydra-hdfs/src/main/java/com/addthis/hydra/task/output/HDFSOutputWrapperFactory.java@private log : Loggerhydra-task/src/main/java/com/addthis/hydra/task/output/OutputWrapperFactory.java 30:30
+Generation
+Move Attributehydra-task/src/main/java/com/addthis/hydra/task/output/OutputWrapperFactory.java@private dir : Stringhydra-hdfs/src/main/java/com/addthis/hydra/task/output/HDFSOutputWrapperFactory.java@private dir : Stringhydra-task/src/main/java/com/addthis/hydra/task/output/OutputWrapperFactory.java 38:38
+Generation
+Change Method Access Modifierhydra-task/src/main/java/com/addthis/hydra/task/output/OutputWrapperFactory.java@private wrapOutputStream(outputFlags OutputStreamFlags, exists boolean, outputStream OutputStream) : OutputStreamhydra-task/src/main/java/com/addthis/hydra/task/output/DefaultOutputWrapperFactory.java@protected wrapOutputStream(outputFlags OutputStreamFlags, exists boolean, outputStream OutputStream) : OutputStreamhydra-task/src/main/java/com/addthis/hydra/task/output/OutputWrapperFactory.java 112:135
+Generation
+Change Method Access Modifierhydra-task/src/main/java/com/addthis/hydra/task/output/OutputWrapperFactory.java@private getFileName(target String, partitionData PartitionData, outputFlags OutputStreamFlags, fileVersion int) : Stringhydra-task/src/main/java/com/addthis/hydra/task/output/DefaultOutputWrapperFactory.java@protected getFileName(target String, partitionData PartitionData, outputFlags OutputStreamFlags, fileVersion int) : Stringhydra-task/src/main/java/com/addthis/hydra/task/output/OutputWrapperFactory.java 159:203
+Generation
+Change Method Access Modifierhydra-task/src/main/java/com/addthis/hydra/task/output/OutputWrapperFactory.java@private getPartitionData(target String) : PartitionDatahydra-task/src/main/java/com/addthis/hydra/task/output/DefaultOutputWrapperFactory.java@protected getPartitionData(target String) : PartitionDatahydra-task/src/main/java/com/addthis/hydra/task/output/OutputWrapperFactory.java 226:241
+******************************
+******************************
+coarse grained commits 4526c4a6f3a62a98fb4b5be6744907736624d931
+fine grained commits ('fa8045e323fd89ae3dbcb88807ea5a9974edad76', '901b560384341913d7db1621e49306214d56c119')
+Generation
+Move Attributehydra-main/src/main/java/com/addthis/hydra/job/minion/Minion.java@private useMacFriendlyPSCommands : booleanhydra-main/src/main/java/com/addthis/hydra/job/minion/MacUtils.java@package useMacFriendlyPSCommands : booleanhydra-main/src/main/java/com/addthis/hydra/job/minion/Minion.java 199:199
+******************************
+******************************
+coarse grained commits ac8bcd7ddc2cf965b583d6971b067efd7f803a61
+fine grained commits ('bc7b94167e41aa81e06b451ff976dcf428bd10bb', '9b7695d1268d59b398fa4f70f1bb18dae513752f')
+Generation
+Merge Variablehydra-data/src/main/java/com/addthis/hydra/data/tree/prop/DataReservoir.java@targetEpoch : longhydra-data/src/main/java/com/addthis/hydra/data/tree/prop/DataReservoir.java@value : DataReservoirValuehydra-data/src/main/java/com/addthis/hydra/data/tree/prop/DataReservoir.java 220:220
+******************************
+******************************
+coarse grained commits dc16bbcc774ea048063c2849b028ef2fd898377c
+fine grained commits ('5e73aac1d81d2a13eeaaf8542f6d348ef178b646', 'a7289db73a8bb539b25e4645f97eb2dce02a7fa2')
+Generation
+Change Variable Typehydra-main/src/main/java/com/addthis/hydra/job/SpawnMQImpl.java@connection : Connectionhydra-main/src/main/java/com/addthis/hydra/job/SpawnMQImpl.java@connection : Connectionhydra-main/src/main/java/com/addthis/hydra/job/SpawnMQImpl.java 62:62
+******************************
+******************************
+coarse grained commits 5bc42c1eb4222259ec159c114f40124fe0ef5324
+fine grained commits ('184fdd87559aaf96c454911ec697c68e50640a98', 'bd5cf4774f16f49e10002d30d7c69ebf03b777a9')
+Generation
+Remove Parameterhydra-main/src/main/java/com/addthis/hydra/query/web/QueryServlet.java@response : HttpServletResponsehydra-main/src/main/java/com/addthis/hydra/query/web/QueryServlet.java@public handleQuery(querySource QuerySource, query Query, kv KVPairs, request HttpRequest, ctx ChannelHandlerContext) : voidhydra-main/src/main/java/com/addthis/hydra/query/web/QueryServlet.java 124:124
+******************************
+******************************
+coarse grained commits f87e674a61419e562d148a354f10c6d4153c0a61
+fine grained commits ('6f070868bc77e40fb5afe47f1a84613a069042eb', 'a19e6c7c63e7f5a6eb6169ad41c54f77f48c5aa9')
+Generation
+Replace Variable With Attributehydra-data/src/main/java/com/addthis/hydra/data/query/op/OpGather.java@op : MergeOphydra-data/src/main/java/com/addthis/hydra/data/query/op/OpGather.java@mergeConfig : MergeConfighydra-data/src/main/java/com/addthis/hydra/data/query/op/OpGather.java 84:84
+Generation
+Replace Variable With Attributehydra-data/src/main/java/com/addthis/hydra/data/query/op/OpMerge.java@merge : MergedRowhydra-data/src/main/java/com/addthis/hydra/data/query/op/OpMerge.java@lastRow : MergedRowhydra-data/src/main/java/com/addthis/hydra/data/query/op/OpMerge.java 167:167
+Generation
+Change Type Declaration Kindhydra-data/src/main/java/com/addthis/hydra/data/query/AbstractQueryOp.java@com.addthis.hydra.data.query.AbstractQueryOp.BundleMapConfhydra-data/src/main/java/com/addthis/hydra/data/query/op/merge/MergedValue.java@com.addthis.hydra.data.query.op.merge.MergedValuehydra-data/src/main/java/com/addthis/hydra/data/query/AbstractQueryOp.java 128:157
+Generation
+Move And Rename Classhydra-data/src/main/java/com/addthis/hydra/data/query/AbstractQueryOp.java@com.addthis.hydra.data.query.AbstractQueryOp.BundleMapConfhydra-data/src/main/java/com/addthis/hydra/data/query/op/merge/MergedValue.java@com.addthis.hydra.data.query.op.merge.MergedValuehydra-data/src/main/java/com/addthis/hydra/data/query/AbstractQueryOp.java 128:157
+Generation
+Change Class Access Modifierhydra-data/src/main/java/com/addthis/hydra/data/query/op/MergeOp.java@com.addthis.hydra.data.query.op.MergeOphydra-data/src/main/java/com/addthis/hydra/data/query/op/merge/MergeConfig.java@com.addthis.hydra.data.query.op.merge.MergeConfighydra-data/src/main/java/com/addthis/hydra/data/query/op/MergeOp.java 4:6
+Generation
+Change Type Declaration Kindhydra-data/src/main/java/com/addthis/hydra/data/query/op/MergeOp.java@com.addthis.hydra.data.query.op.MergeOphydra-data/src/main/java/com/addthis/hydra/data/query/op/merge/MergeConfig.java@com.addthis.hydra.data.query.op.merge.MergeConfighydra-data/src/main/java/com/addthis/hydra/data/query/op/MergeOp.java 4:6
+Generation
+Move And Rename Classhydra-data/src/main/java/com/addthis/hydra/data/query/op/MergeOp.java@com.addthis.hydra.data.query.op.MergeOphydra-data/src/main/java/com/addthis/hydra/data/query/op/merge/MergeConfig.java@com.addthis.hydra.data.query.op.merge.MergeConfighydra-data/src/main/java/com/addthis/hydra/data/query/op/MergeOp.java 4:6
+Generation
+Extract Subclasshydra-data/src/main/java/com/addthis/hydra/data/query/AbstractQueryOp.java@com.addthis.hydra.data.query.AbstractQueryOp.BundleMapConfhydra-data/src/main/java/com/addthis/hydra/data/query/op/merge/MergedValue.java@com.addthis.hydra.data.query.op.merge.MergedValuehydra-data/src/main/java/com/addthis/hydra/data/query/AbstractQueryOp.java 128:157
+Generation
+Push Down Methodhydra-data/src/main/java/com/addthis/hydra/data/query/AbstractQueryOp.java@public getFrom() : BundleFieldhydra-data/src/main/java/com/addthis/hydra/data/query/op/merge/AbstractMergedValue.java@public getFrom() : BundleFieldhydra-data/src/main/java/com/addthis/hydra/data/query/AbstractQueryOp.java 142:144
+Generation
+Add Method Annotationhydra-data/src/main/java/com/addthis/hydra/data/query/AbstractQueryOp.java@public getFrom() : BundleFieldhydra-data/src/main/java/com/addthis/hydra/data/query/op/merge/AbstractMergedValue.java@@Overridehydra-data/src/main/java/com/addthis/hydra/data/query/AbstractQueryOp.java 142:144
+Generation
+Push Down Methodhydra-data/src/main/java/com/addthis/hydra/data/query/AbstractQueryOp.java@public setFrom(from BundleField) : voidhydra-data/src/main/java/com/addthis/hydra/data/query/op/merge/AbstractMergedValue.java@public setFrom(from BundleField) : voidhydra-data/src/main/java/com/addthis/hydra/data/query/AbstractQueryOp.java 146:148
+Generation
+Add Method Annotationhydra-data/src/main/java/com/addthis/hydra/data/query/AbstractQueryOp.java@public setFrom(from BundleField) : voidhydra-data/src/main/java/com/addthis/hydra/data/query/op/merge/AbstractMergedValue.java@@Overridehydra-data/src/main/java/com/addthis/hydra/data/query/AbstractQueryOp.java 146:148
+Generation
+Push Down Methodhydra-data/src/main/java/com/addthis/hydra/data/query/AbstractQueryOp.java@public getTo() : BundleFieldhydra-data/src/main/java/com/addthis/hydra/data/query/op/merge/AbstractMergedValue.java@public getTo() : BundleFieldhydra-data/src/main/java/com/addthis/hydra/data/query/AbstractQueryOp.java 150:152
+Generation
+Add Method Annotationhydra-data/src/main/java/com/addthis/hydra/data/query/AbstractQueryOp.java@public getTo() : BundleFieldhydra-data/src/main/java/com/addthis/hydra/data/query/op/merge/AbstractMergedValue.java@@Overridehydra-data/src/main/java/com/addthis/hydra/data/query/AbstractQueryOp.java 150:152
+Generation
+Push Down Methodhydra-data/src/main/java/com/addthis/hydra/data/query/AbstractQueryOp.java@public setTo(to BundleField) : voidhydra-data/src/main/java/com/addthis/hydra/data/query/op/merge/AbstractMergedValue.java@public setTo(to BundleField) : voidhydra-data/src/main/java/com/addthis/hydra/data/query/AbstractQueryOp.java 154:156
+Generation
+Add Method Annotationhydra-data/src/main/java/com/addthis/hydra/data/query/AbstractQueryOp.java@public setTo(to BundleField) : voidhydra-data/src/main/java/com/addthis/hydra/data/query/op/merge/AbstractMergedValue.java@@Overridehydra-data/src/main/java/com/addthis/hydra/data/query/AbstractQueryOp.java 154:156
+Generation
+Push Down Attributehydra-data/src/main/java/com/addthis/hydra/data/query/AbstractQueryOp.java@private from : BundleFieldhydra-data/src/main/java/com/addthis/hydra/data/query/op/merge/AbstractMergedValue.java@protected from : BundleFieldhydra-data/src/main/java/com/addthis/hydra/data/query/AbstractQueryOp.java 131:131
+Generation
+Change Attribute Access Modifierhydra-data/src/main/java/com/addthis/hydra/data/query/AbstractQueryOp.java@private from : BundleFieldhydra-data/src/main/java/com/addthis/hydra/data/query/op/merge/AbstractMergedValue.java@protected from : BundleFieldhydra-data/src/main/java/com/addthis/hydra/data/query/AbstractQueryOp.java 131:131
+Generation
+Push Down Attributehydra-data/src/main/java/com/addthis/hydra/data/query/AbstractQueryOp.java@private to : BundleFieldhydra-data/src/main/java/com/addthis/hydra/data/query/op/merge/AbstractMergedValue.java@protected to : BundleFieldhydra-data/src/main/java/com/addthis/hydra/data/query/AbstractQueryOp.java 132:132
+Generation
+Change Attribute Access Modifierhydra-data/src/main/java/com/addthis/hydra/data/query/AbstractQueryOp.java@private to : BundleFieldhydra-data/src/main/java/com/addthis/hydra/data/query/op/merge/AbstractMergedValue.java@protected to : BundleFieldhydra-data/src/main/java/com/addthis/hydra/data/query/AbstractQueryOp.java 132:132
+Generation
+Extract And Move Methodhydra-data/src/main/java/com/addthis/hydra/data/query/op/OpMerge.java@public send(bundle Bundle) : voidhydra-data/src/main/java/com/addthis/hydra/data/query/op/merge/MergeConfig.java@public handleBindAndGetKey(row Bundle, format ListBundleFormat) : Stringhydra-data/src/main/java/com/addthis/hydra/data/query/op/OpMerge.java 139:194
+******************************
+******************************
+coarse grained commits 40eea00bd5adf5ff630b5d19ebb9f0f3f9aa5563
+fine grained commits ('7b68bdfdb20d1b23388f19b8e6019eb6bb78f281', '2d88cfb5e0c162455d0b35c3ecc717b07ec656a1')
+Generation
+Extract Variablehydra-main/src/main/java/com/addthis/hydra/job/spawn/JobAlert.java@hydra-main/src/main/java/com/addthis/hydra/job/spawn/JobAlert.java@finalPath : Stringhydra-main/src/main/java/com/addthis/hydra/job/spawn/JobAlert.java 269:269
+******************************
+******************************
+coarse grained commits e2009350e87fd9ae1c8caee9cced71ed5f097e57
+fine grained commits ('1b07c67abbb4ce5bdffc1bf9667d9a3dff6013b9', '9115cfa3c6758f0b1575da50a1ea996eb09635da')
+Generation
+Rename Parameterhydra-data/src/main/java/com/addthis/hydra/data/tree/DataTreeNode.java@begin : Stringhydra-data/src/main/java/com/addthis/hydra/data/tree/DataTreeNode.java@prefix : Stringhydra-data/src/main/java/com/addthis/hydra/data/tree/DataTreeNode.java 44:44
+******************************
+******************************
+coarse grained commits 0c7e0c11ca693852e710de2e3a668cae2307c117
+fine grained commits ('c7572c80921155c538f559a47f1d81286bbc84cf', '67c21d5cde425720a5a1af1b18dc3f54bdd81e89')
+Generation
+Move And Inline Methodhydra-filters/src/main/java/com/addthis/hydra/data/filter/bundle/BundleFilterContains.java@package setFrom(from String) : BundleFilterContainshydra-filters/src/test/java/com/addthis/hydra/data/filter/bundle/TestBundleFilterMapExtract.java@public fieldTest() : voidhydra-filters/src/main/java/com/addthis/hydra/data/filter/bundle/BundleFilterContains.java 64:67
+Generation
+Move And Inline Methodhydra-filters/src/main/java/com/addthis/hydra/data/filter/bundle/BundleFilterContains.java@package setFrom(from String) : BundleFilterContainshydra-filters/src/test/java/com/addthis/hydra/data/filter/bundle/TestBundleFilterMapExtract.java@public fieldTestMissing() : voidhydra-filters/src/main/java/com/addthis/hydra/data/filter/bundle/BundleFilterContains.java 64:67
+Generation
+Move And Inline Methodhydra-filters/src/main/java/com/addthis/hydra/data/filter/bundle/BundleFilterContains.java@package setFrom(from String) : BundleFilterContainshydra-filters/src/test/java/com/addthis/hydra/data/filter/bundle/TestBundleFilterMapExtract.java@public fieldTestNullValue() : voidhydra-filters/src/main/java/com/addthis/hydra/data/filter/bundle/BundleFilterContains.java 64:67
+Generation
+Move And Inline Methodhydra-filters/src/main/java/com/addthis/hydra/data/filter/bundle/BundleFilterContains.java@package setFrom(from String) : BundleFilterContainshydra-filters/src/test/java/com/addthis/hydra/data/filter/bundle/TestBundleFilterMapExtract.java@public indirectionTest() : voidhydra-filters/src/main/java/com/addthis/hydra/data/filter/bundle/BundleFilterContains.java 64:67
+Generation
+Move And Inline Methodhydra-filters/src/main/java/com/addthis/hydra/data/filter/bundle/BundleFilterContains.java@package setFrom(from String) : BundleFilterContainshydra-filters/src/test/java/com/addthis/hydra/data/filter/bundle/TestBundleFilterMapExtract.java@public indirectionMissingTest() : voidhydra-filters/src/main/java/com/addthis/hydra/data/filter/bundle/BundleFilterContains.java 64:67
+******************************
+******************************
+coarse grained commits 464e8d5f7f3ba4c0e6a8f3a82fadf530a5c99c8d
+fine grained commits ('e89cbff80ecae72ccd87ca62ed695f701f0bc33f', 'b564a310ee773b5595834b24abebdb57346d2bc0')
+Generation
+Rename Methodhydra-data/src/test/java/com/addthis/hydra/data/query/TestOpDateFormat.java@public testOpDateFormat() : voidhydra-data/src/test/java/com/addthis/hydra/data/query/TestOpDateFormat.java@public testConvertDatesInPlace() : voidhydra-data/src/test/java/com/addthis/hydra/data/query/TestOpDateFormat.java 7:27
+******************************
+******************************
+coarse grained commits 096e6e76f8324c19976e9794af067a0b6f3fe16c
+fine grained commits ('91ba53d9c02b6d69e30062d20a09b7c2faedd1e7', '3882ad93a576761765020e0c490841937bf14b66')
+Generation
+Move Attributehydra-main/src/main/java/com/addthis/hydra/job/minion/Minion.java@package meshQueue : booleanhydra-main/src/main/java/com/addthis/hydra/job/minion/TaskRunner.java@private meshQueue : booleanhydra-main/src/main/java/com/addthis/hydra/job/minion/Minion.java 105:105
+Generation
+Change Attribute Access Modifierhydra-main/src/main/java/com/addthis/hydra/job/minion/Minion.java@package meshQueue : booleanhydra-main/src/main/java/com/addthis/hydra/job/minion/TaskRunner.java@private meshQueue : booleanhydra-main/src/main/java/com/addthis/hydra/job/minion/Minion.java 105:105
+Generation
+Remove Attribute Modifierhydra-main/src/main/java/com/addthis/hydra/job/minion/Minion.java@package meshQueue : booleanhydra-main/src/main/java/com/addthis/hydra/job/minion/TaskRunner.java@private meshQueue : booleanhydra-main/src/main/java/com/addthis/hydra/job/minion/Minion.java 105:105
+******************************
+******************************
+coarse grained commits fd25f85c0645f163f0f640114347b94c304e9c86
+fine grained commits ('ce5b652811079dc555f071def61b7b28805d0d18', 'c5e988a17c1960d921d2975e94bda58031161721')
+Generation
+Rename Attributehydra-main/src/main/java/com/addthis/hydra/job/mq/HostState.java@backingUp : JobKey[]hydra-main/src/main/java/com/addthis/hydra/job/mq/HostState.java@backingup : JobKey[]hydra-main/src/main/java/com/addthis/hydra/job/mq/HostState.java 33:33
+******************************
+******************************
+coarse grained commits 3f78cdcb0418117ddc1587bfa76c7169b3688eb6
+fine grained commits ('72963fc8afa860652e0af976d017ddb2be269b32', 'b6a7f6b78113094d308f06c572921c8a47806b40')
+Generation
+Move Classhydra-essentials/src/main/java/com/addthis/hydra/common/hash/PluggableHashFunction.java@com.addthis.hydra.common.hash.PluggableHashFunction.StringAndByteHashFunctionhydra-essentials/src/main/java/com/addthis/hydra/common/hash/StringAndByteHashFunction.java@com.addthis.hydra.common.hash.StringAndByteHashFunctionhydra-essentials/src/main/java/com/addthis/hydra/common/hash/PluggableHashFunction.java 33:38
+Generation
+Add Class Annotationhydra-essentials/src/main/java/com/addthis/hydra/common/hash/PluggableHashFunction.java@com.addthis.hydra.common.hash.PluggableHashFunction.StringAndByteHashFunctionhydra-essentials/src/main/java/com/addthis/hydra/common/hash/StringAndByteHashFunction.java@@Pluggable("hash function")hydra-essentials/src/main/java/com/addthis/hydra/common/hash/PluggableHashFunction.java 33:38
+******************************
+******************************
+coarse grained commits 2b35d738ca252f98100e79acd5fec5115135baa9
+fine grained commits ('60d402055274844f89c6a4b950787b84f3d424b3', 'd11959008dfbbeb8abba322fb31496967b834c9b')
+Generation
+Change Parameter Typehydra-main/src/main/java/com/addthis/hydra/query/web/HttpQueryCallHandler.java@meshQueryMaster : MeshQueryMasterhydra-main/src/main/java/com/addthis/hydra/query/loadbalance/HttpQueryCallHandler.java@queryToQueryResultsEncoder : ChannelHandlerhydra-main/src/main/java/com/addthis/hydra/query/web/HttpQueryCallHandler.java 56:56
+Generation
+Rename Parameterhydra-main/src/main/java/com/addthis/hydra/query/web/HttpQueryCallHandler.java@meshQueryMaster : MeshQueryMasterhydra-main/src/main/java/com/addthis/hydra/query/loadbalance/HttpQueryCallHandler.java@queryToQueryResultsEncoder : ChannelHandlerhydra-main/src/main/java/com/addthis/hydra/query/web/HttpQueryCallHandler.java 56:56
+******************************
+******************************
+coarse grained commits 285eca14f175fbada66841f26d682f5ea18e14b6
+fine grained commits ('f8f543c847043df6c8b67dcd648e535911ce4a4a', 'cb834544ffce2f5e60517e3f799eeeac15f54fa7')
+Generation
+Rename Attributehydra-main/src/main/java/com/addthis/hydra/query/tracker/QueryEntry.java@queryTracker : QueryTrackerhydra-main/src/main/java/com/addthis/hydra/query/tracker/QueryEntry.java@queryPromise : ChannelPromisehydra-main/src/main/java/com/addthis/hydra/query/tracker/QueryEntry.java 20:20
+Generation
+Change Attribute Typehydra-main/src/main/java/com/addthis/hydra/query/tracker/QueryEntry.java@queryTracker : QueryTrackerhydra-main/src/main/java/com/addthis/hydra/query/tracker/QueryEntry.java@queryPromise : ChannelPromisehydra-main/src/main/java/com/addthis/hydra/query/tracker/QueryEntry.java 20:20
+Generation
+Extract Classhydra-main/src/main/java/com/addthis/hydra/query/tracker/QueryEntry.java@com.addthis.hydra.query.tracker.QueryEntryhydra-main/src/main/java/com/addthis/hydra/query/tracker/QueryEntry.java@com.addthis.hydra.query.tracker.QueryEntryhydra-main/src/main/java/com/addthis/hydra/query/tracker/QueryEntry.java 18:165
+******************************
+******************************
+coarse grained commits 38e7af9d3bcf896ffa8a810206f5143b971406e9
+fine grained commits ('f92df5b441ee83fe5a44cbf1954ab2f500f49bd9', '184fdd87559aaf96c454911ec697c68e50640a98')
+Generation
+Add Attribute Modifierhydra-main/src/main/java/com/addthis/hydra/query/web/QueryServlet.java@private jsonp : Stringhydra-main/src/main/java/com/addthis/hydra/query/web/OutputJson.java@private jsonp : Stringhydra-main/src/main/java/com/addthis/hydra/query/web/QueryServlet.java 294:294
+Generation
+Change Parameter Typehydra-main/src/main/java/com/addthis/hydra/query/web/QueryServlet.java@response : HttpServletResponsehydra-main/src/main/java/com/addthis/hydra/query/web/OutputDelimited.java@ctx : ChannelHandlerContexthydra-main/src/main/java/com/addthis/hydra/query/web/QueryServlet.java 379:379
+Generation
+Rename Parameterhydra-main/src/main/java/com/addthis/hydra/query/web/QueryServlet.java@response : HttpServletResponsehydra-main/src/main/java/com/addthis/hydra/query/web/OutputDelimited.java@ctx : ChannelHandlerContexthydra-main/src/main/java/com/addthis/hydra/query/web/QueryServlet.java 379:379
+Generation
+Remove Thrown Exception Typehydra-main/src/main/java/com/addthis/hydra/query/web/QueryServlet.java@IOExceptionhydra-main/src/main/java/com/addthis/hydra/query/web/OutputDelimited.java@public create(ctx ChannelHandlerContext, filename String, format String) : OutputDelimitedhydra-main/src/main/java/com/addthis/hydra/query/web/QueryServlet.java 379:379
+Generation
+Remove Thrown Exception Typehydra-main/src/main/java/com/addthis/hydra/query/web/QueryServlet.java@InterruptedExceptionhydra-main/src/main/java/com/addthis/hydra/query/web/OutputDelimited.java@public create(ctx ChannelHandlerContext, filename String, format String) : OutputDelimitedhydra-main/src/main/java/com/addthis/hydra/query/web/QueryServlet.java 379:379
+Generation
+Rename Parameterhydra-main/src/main/java/com/addthis/hydra/query/web/QueryServlet.java@response : HttpServletResponsehydra-main/src/main/java/com/addthis/hydra/query/web/OutputHTML.java@ctx : ChannelHandlerContexthydra-main/src/main/java/com/addthis/hydra/query/web/QueryServlet.java 449:449
+Generation
+Change Parameter Typehydra-main/src/main/java/com/addthis/hydra/query/web/QueryServlet.java@response : HttpServletResponsehydra-main/src/main/java/com/addthis/hydra/query/web/OutputHTML.java@ctx : ChannelHandlerContexthydra-main/src/main/java/com/addthis/hydra/query/web/QueryServlet.java 449:449
+Generation
+Remove Thrown Exception Typehydra-main/src/main/java/com/addthis/hydra/query/web/QueryServlet.java@IOExceptionhydra-main/src/main/java/com/addthis/hydra/query/web/OutputHTML.java@package OutputHTML(ctx ChannelHandlerContext)hydra-main/src/main/java/com/addthis/hydra/query/web/QueryServlet.java 449:449
+Generation
+Remove Thrown Exception Typehydra-main/src/main/java/com/addthis/hydra/query/web/QueryServlet.java@InterruptedExceptionhydra-main/src/main/java/com/addthis/hydra/query/web/OutputHTML.java@package OutputHTML(ctx ChannelHandlerContext)hydra-main/src/main/java/com/addthis/hydra/query/web/QueryServlet.java 449:449
+Generation
+Extract Superclasshydra-main/src/main/java/com/addthis/hydra/query/web/QueryServlet.java@com.addthis.hydra.query.web.QueryServlet.OutputDelimitedhydra-main/src/main/java/com/addthis/hydra/query/web/OutputDelimited.java@com.addthis.hydra.query.web.OutputDelimitedhydra-main/src/main/java/com/addthis/hydra/query/web/QueryServlet.java 368:445
+******************************
+******************************
+coarse grained commits aaf9fab722a7eb95ed31f0ce7c31214631e0cdb1
+fine grained commits ('68c56e8fb4fa339d2c8a2b05f26af46e1a76d66a', '7165dea52f3bac7d81177cef478d321a72ea8930')
+Generation
+Change Variable Typehydra-main/src/main/java/com/addthis/hydra/query/util/MeshSourceAggregator.java@err : DataChannelErrorhydra-main/src/main/java/com/addthis/hydra/query/util/MeshSourceAggregator.java@io : IOExceptionhydra-main/src/main/java/com/addthis/hydra/query/util/MeshSourceAggregator.java 472:472
+Generation
+Rename Variablehydra-main/src/main/java/com/addthis/hydra/query/util/MeshSourceAggregator.java@err : DataChannelErrorhydra-main/src/main/java/com/addthis/hydra/query/util/MeshSourceAggregator.java@io : IOExceptionhydra-main/src/main/java/com/addthis/hydra/query/util/MeshSourceAggregator.java 472:472
+******************************
+******************************
+coarse grained commits a7d0e4a015902edaace02893ff6eb80ecbc42fe1
+fine grained commits ('abf34e29990bf58b9b5b10d317d2a3085181caf3', '0c083a90371d88718a90fd8872182958bfb0a79e', '06e28065101e8528392b89fba6f6f0263ea10046')
+Generation
+Remove Parameter Annotationhydra-main/src/main/java/com/addthis/hydra/job/web/resources/JobsResource.java@@QueryParam("select")hydra-main/src/main/java/com/addthis/hydra/job/web/resources/JobsResource.java@taskId : inthydra-main/src/main/java/com/addthis/hydra/job/web/resources/JobsResource.java 945:945
+Generation
+Remove Parameter Annotationhydra-main/src/main/java/com/addthis/hydra/job/web/resources/JobsResource.java@@QueryParam("select")hydra-main/src/main/java/com/addthis/hydra/job/web/resources/JobsResource.java@taskId : inthydra-main/src/main/java/com/addthis/hydra/job/web/resources/JobsResource.java 946:946
+Generation
+Remove Parameter Annotationhydra-main/src/main/java/com/addthis/hydra/job/web/resources/JobsResource.java@@DefaultValue("-1")hydra-main/src/main/java/com/addthis/hydra/job/web/resources/JobsResource.java@taskId : inthydra-main/src/main/java/com/addthis/hydra/job/web/resources/JobsResource.java 945:945
+Generation
+Remove Parameter Annotationhydra-main/src/main/java/com/addthis/hydra/job/web/resources/JobsResource.java@@DefaultValue("-1")hydra-main/src/main/java/com/addthis/hydra/job/web/resources/JobsResource.java@taskId : inthydra-main/src/main/java/com/addthis/hydra/job/web/resources/JobsResource.java 946:946
+Generation
+Rename Parameterhydra-main/src/main/java/com/addthis/hydra/job/web/resources/JobsResource.java@select : inthydra-main/src/main/java/com/addthis/hydra/job/web/resources/JobsResource.java@taskId : inthydra-main/src/main/java/com/addthis/hydra/job/web/resources/JobsResource.java 945:945
+Generation
+Rename Parameterhydra-main/src/main/java/com/addthis/hydra/job/web/resources/JobsResource.java@select : inthydra-main/src/main/java/com/addthis/hydra/job/web/resources/JobsResource.java@taskId : inthydra-main/src/main/java/com/addthis/hydra/job/web/resources/JobsResource.java 946:946
+Generation
+Parameterize Variablehydra-main/src/main/java/com/addthis/hydra/job/web/resources/JobsResource.java@aJob : Stringhydra-main/src/main/java/com/addthis/hydra/job/web/resources/JobsResource.java@jobId : Stringhydra-main/src/main/java/com/addthis/hydra/job/web/resources/JobsResource.java 960:960
+Generation
+Inline Variablehydra-main/src/main/java/com/addthis/hydra/job/web/resources/JobsResource.java@success : List<String>hydra-main/src/main/java/com/addthis/hydra/job/web/resources/JobsResource.java@public startJob(jobIds Optional<String>, select int, id Optional<String>, task int, priority int, user String, token String, sudo String) : Responsehydra-main/src/main/java/com/addthis/hydra/job/web/resources/JobsResource.java 953:953
+Generation
+Inline Variablehydra-main/src/main/java/com/addthis/hydra/job/web/resources/JobsResource.java@error : List<String>hydra-main/src/main/java/com/addthis/hydra/job/web/resources/JobsResource.java@public startJob(jobIds Optional<String>, select int, id Optional<String>, task int, priority int, user String, token String, sudo String) : Responsehydra-main/src/main/java/com/addthis/hydra/job/web/resources/JobsResource.java 954:954
+Generation
+Inline Variablehydra-main/src/main/java/com/addthis/hydra/job/web/resources/JobsResource.java@disabled : List<String>hydra-main/src/main/java/com/addthis/hydra/job/web/resources/JobsResource.java@public startJob(jobIds Optional<String>, select int, id Optional<String>, task int, priority int, user String, token String, sudo String) : Responsehydra-main/src/main/java/com/addthis/hydra/job/web/resources/JobsResource.java 955:955
+Generation
+Inline Variablehydra-main/src/main/java/com/addthis/hydra/job/web/resources/JobsResource.java@unauthorized : List<String>hydra-main/src/main/java/com/addthis/hydra/job/web/resources/JobsResource.java@public startJob(jobIds Optional<String>, select int, id Optional<String>, task int, priority int, user String, token String, sudo String) : Responsehydra-main/src/main/java/com/addthis/hydra/job/web/resources/JobsResource.java 956:956
+******************************
+******************************
+coarse grained commits b39a581a945fe48e5b9c1fc25c7bb1c3a6570fce
+fine grained commits ('64583d76d2b2ef7ee484038f2f262c2621ee0b7a', '9ff858117559e7f21bd90a30b1872a09a2a7bc68', '71edd85fcaefb313b7b79fcf35f703cc8ecb3b60')
+Generation
+Add Method Annotationhydra-main/src/main/java/com/addthis/hydra/job/spawn/balancer/SpawnBalancer.java@private findActiveJobIDs() : Set<String>hydra-main/src/main/java/com/addthis/hydra/job/spawn/balancer/SpawnBalancer.java@@VisibleForTestinghydra-main/src/main/java/com/addthis/hydra/job/spawn/balancer/SpawnBalancer.java 865:882
+Generation
+Change Method Access Modifierhydra-main/src/main/java/com/addthis/hydra/job/spawn/balancer/SpawnBalancer.java@private findActiveJobIDs() : Set<String>hydra-main/src/main/java/com/addthis/hydra/job/spawn/balancer/SpawnBalancer.java@package updateActiveJobIDs() : voidhydra-main/src/main/java/com/addthis/hydra/job/spawn/balancer/SpawnBalancer.java 865:882
+******************************
+******************************
+coarse grained commits 1b8914d2ab52b5c9721c8662d1a11ba4a910ff5f
+fine grained commits ('ff3d4fcce01a4e209650a800512446cc45b73f80', '0308c3b012fe06dbf62290ba27dfe03dd6c42070', '3ed8b2cb18148a8913cc7280d5a550354917ea9e')
+Generation
+Add Parameterhydra-main/src/main/java/com/addthis/hydra/job/auth/AuthenticationManagerNested.java@package logout(user User) : voidhydra-main/src/main/java/com/addthis/hydra/job/auth/AuthenticationManagerNested.java@secret : Stringhydra-main/src/main/java/com/addthis/hydra/job/auth/AuthenticationManagerNested.java 85:90
+******************************
+******************************
+coarse grained commits e1036c617fc159912b677ae970120c796e867837
+fine grained commits ('9468c3f57a0ce92d6371ef37a76bf51cf469d8b1', '49676843cf6c67a20f7edf4ee09e3c3fe0d62f14', 'd933bbd1aa91c4c6294bcb44786b4ed4fd4d6bf0')
+Generation
+Pull Up Methodhydra-filters/src/main/java/com/addthis/hydra/data/filter/value/ValueFilterIndex.java@public filterValue(value ValueObject) : ValueObjecthydra-filters/src/main/java/com/addthis/hydra/data/filter/value/AbstractValueFilterContextual.java@public filterValue(value ValueObject) : ValueObjecthydra-filters/src/main/java/com/addthis/hydra/data/filter/value/ValueFilterIndex.java 45:48
+Generation
+Add Parameter Annotationhydra-filters/src/main/java/com/addthis/hydra/data/filter/value/ValueFilterIndex.java@value : ValueObjecthydra-filters/src/main/java/com/addthis/hydra/data/filter/value/AbstractValueFilterContextual.java@@Nullablehydra-filters/src/main/java/com/addthis/hydra/data/filter/value/ValueFilterIndex.java 46:46
+Generation
+Add Method Annotationhydra-filters/src/main/java/com/addthis/hydra/data/filter/value/ValueFilterIndex.java@public filterValue(value ValueObject) : ValueObjecthydra-filters/src/main/java/com/addthis/hydra/data/filter/value/AbstractValueFilterContextual.java@@Nullablehydra-filters/src/main/java/com/addthis/hydra/data/filter/value/ValueFilterIndex.java 45:48
+Generation
+Add Method Modifierhydra-filters/src/main/java/com/addthis/hydra/data/filter/value/ValueFilterIndex.java@public filterValue(value ValueObject) : ValueObjecthydra-filters/src/main/java/com/addthis/hydra/data/filter/value/AbstractValueFilterContextual.java@public filterValue(value ValueObject) : ValueObjecthydra-filters/src/main/java/com/addthis/hydra/data/filter/value/ValueFilterIndex.java 45:48
+******************************
+******************************
+coarse grained commits c23f80c65fcfa3c3809ce4cb6cd75d8a4698871f
+fine grained commits ('8f30a8a0a80b9a6e924a2777b0bf70b5e21cc75a', '941c018e89e7f28dfc550fc65dd661e886774e47', '6b2b05716812c1d2a94ed4351e4ccf029b8fde83')
+Generation
+Extract And Move Methodhydra-store/src/main/java/com/addthis/hydra/store/kv/ReadExternalPagedStore.java@private pageDecode(page byte[]) : TreePagehydra-store/src/main/java/com/addthis/hydra/store/kv/PageEncodeType.java@public readInt(in InputStream, dis DataInputStream) : inthydra-store/src/main/java/com/addthis/hydra/store/kv/ReadExternalPagedStore.java 144:214
+Generation
+Extract And Move Methodhydra-store/src/main/java/com/addthis/hydra/store/kv/ReadExternalPagedStore.java@private pageDecode(page byte[]) : TreePagehydra-store/src/main/java/com/addthis/hydra/store/kv/PageEncodeType.java@public readBytes(in InputStream, dis DataInputStream) : byte[]hydra-store/src/main/java/com/addthis/hydra/store/kv/ReadExternalPagedStore.java 144:214
+Generation
+Extract And Move Methodhydra-store/src/main/java/com/addthis/hydra/store/kv/ReadExternalPagedStore.java@private pageDecode(page byte[]) : TreePagehydra-store/src/main/java/com/addthis/hydra/store/kv/PageEncodeType.java@public nextFirstKey(in InputStream, dis DataInputStream) : byte[]hydra-store/src/main/java/com/addthis/hydra/store/kv/ReadExternalPagedStore.java 144:214
+******************************
+******************************
+coarse grained commits 3cbfad2c31066514114cc266627e3d75d00ce577
+fine grained commits ('0a54211064eca745e5b2acd73556d0500cde0ca1', 'e42feadfc54c1ed8d154b4b0a6e10cdf4165b401', '531075886274ec6789c862c54626df16c0cb0352')
+Generation
+Change Variable Typehydra-main/src/main/java/com/addthis/hydra/job/spawn/balancer/SpawnBalancer.java@freeDisk : longhydra-main/src/main/java/com/addthis/hydra/job/spawn/balancer/SpawnBalancer.java@diskPercentUsed : doublehydra-main/src/main/java/com/addthis/hydra/job/spawn/balancer/SpawnBalancer.java 987:987
+Generation
+Rename Variablehydra-main/src/main/java/com/addthis/hydra/job/spawn/balancer/SpawnBalancer.java@freeDisk : longhydra-main/src/main/java/com/addthis/hydra/job/spawn/balancer/SpawnBalancer.java@diskPercentUsed : doublehydra-main/src/main/java/com/addthis/hydra/job/spawn/balancer/SpawnBalancer.java 987:987
+******************************
+******************************
+coarse grained commits 9a297783325fbaf398d2b270a10644e945a5c25d
+fine grained commits ('7aa36eae337fbedc836b44e087d56e8fca6321ed', '36d368e806838d15303621f47e4ca34e924bb762', '8efc0ef920328700a8add1f3a5ab5f45775a96f7')
+Generation
+Rename Methodhydra-main/src/main/java/com/addthis/hydra/job/store/MysqlDataStore.java@private runSetupDbCommand(jdbcUrl String, dbName String, properties Properties) : voidhydra-main/src/main/java/com/addthis/hydra/job/store/MysqlDataStore.java@protected runSetupDatabaseCommand(dbName String, jdbcUrl String, properties Properties) : voidhydra-main/src/main/java/com/addthis/hydra/job/store/MysqlDataStore.java 100:108
+Generation
+Add Parameter Modifierhydra-main/src/main/java/com/addthis/hydra/job/store/MysqlDataStore.java@jdbcUrl : Stringhydra-main/src/main/java/com/addthis/hydra/job/store/MysqlDataStore.java@jdbcUrl : Stringhydra-main/src/main/java/com/addthis/hydra/job/store/MysqlDataStore.java 100:100
+Generation
+Add Parameter Modifierhydra-main/src/main/java/com/addthis/hydra/job/store/MysqlDataStore.java@dbName : Stringhydra-main/src/main/java/com/addthis/hydra/job/store/MysqlDataStore.java@dbName : Stringhydra-main/src/main/java/com/addthis/hydra/job/store/MysqlDataStore.java 100:100
+Generation
+Add Parameter Modifierhydra-main/src/main/java/com/addthis/hydra/job/store/MysqlDataStore.java@properties : Propertieshydra-main/src/main/java/com/addthis/hydra/job/store/MysqlDataStore.java@properties : Propertieshydra-main/src/main/java/com/addthis/hydra/job/store/MysqlDataStore.java 100:100
+Generation
+Reorder Parameterhydra-main/src/main/java/com/addthis/hydra/job/store/MysqlDataStore.java@jdbcUrl : Stringhydra-main/src/main/java/com/addthis/hydra/job/store/MysqlDataStore.java@dbName : Stringhydra-main/src/main/java/com/addthis/hydra/job/store/MysqlDataStore.java 100:100
+Generation
+Add Method Annotationhydra-main/src/main/java/com/addthis/hydra/job/store/MysqlDataStore.java@private runSetupDbCommand(jdbcUrl String, dbName String, properties Properties) : voidhydra-main/src/main/java/com/addthis/hydra/job/store/MysqlDataStore.java@@Overridehydra-main/src/main/java/com/addthis/hydra/job/store/MysqlDataStore.java 100:108
+Generation
+Change Method Access Modifierhydra-main/src/main/java/com/addthis/hydra/job/store/MysqlDataStore.java@private runSetupDbCommand(jdbcUrl String, dbName String, properties Properties) : voidhydra-main/src/main/java/com/addthis/hydra/job/store/MysqlDataStore.java@protected runSetupDatabaseCommand(dbName String, jdbcUrl String, properties Properties) : voidhydra-main/src/main/java/com/addthis/hydra/job/store/MysqlDataStore.java 100:108
+******************************
+******************************
+coarse grained commits ec79c92b7041d6836fa33a1e98d007b24686a3af
+fine grained commits ('d04be635eb0eca0a402bd791a89e4216d2f7d522', '867796c924d4101ef1ae2e14a2d74df0d8dfdadc', '42ca711a2986e0b1751cd369f5b6339190cf1f87')
+Generation
+Parameterize Attributehydra-task/src/main/java/com/addthis/hydra/task/output/tree/TreeMapper.java@postRate : inthydra-task/src/main/java/com/addthis/hydra/task/output/tree/TreeMapper.java@rate : inthydra-task/src/main/java/com/addthis/hydra/task/output/tree/TreeMapper.java 79:79
+Generation
+Parameterize Attributehydra-task/src/main/java/com/addthis/hydra/task/output/tree/TreeMapper.java@post : PathElement[]hydra-task/src/main/java/com/addthis/hydra/task/output/tree/TreeMapper.java@op : PathElement[]hydra-task/src/main/java/com/addthis/hydra/task/output/tree/TreeMapper.java 73:73
+******************************
+******************************
+coarse grained commits 2e8f370c6abcc579edeec466bfbce3ee4bb63707
+fine grained commits ('dcfa0da1d2d9cfc0b2fe948ac73f80f8fddc6b26', 'fa8045e323fd89ae3dbcb88807ea5a9974edad76', '901b560384341913d7db1621e49306214d56c119')
+Generation
+Modify Attribute Annotationhydra-main/src/main/java/com/addthis/hydra/job/minion/Minion.java@@FieldConfig(codable = true, required = true)hydra-main/src/main/java/com/addthis/hydra/job/minion/JobTask.java@@FieldConfig(required = true)hydra-main/src/main/java/com/addthis/hydra/job/minion/Minion.java 1107:1107
+Generation
+Modify Attribute Annotationhydra-main/src/main/java/com/addthis/hydra/job/minion/Minion.java@@FieldConfig(codable = true, required = true)hydra-main/src/main/java/com/addthis/hydra/job/minion/JobTask.java@@FieldConfig(required = true)hydra-main/src/main/java/com/addthis/hydra/job/minion/Minion.java 1109:1109
+Generation
+Modify Attribute Annotationhydra-main/src/main/java/com/addthis/hydra/job/minion/Minion.java@@FieldConfig(codable = true)hydra-main/src/main/java/com/addthis/hydra/job/minion/JobTask.java@@FieldConfighydra-main/src/main/java/com/addthis/hydra/job/minion/Minion.java 1111:1111
+Generation
+Modify Attribute Annotationhydra-main/src/main/java/com/addthis/hydra/job/minion/Minion.java@@FieldConfig(codable = true)hydra-main/src/main/java/com/addthis/hydra/job/minion/JobTask.java@@FieldConfighydra-main/src/main/java/com/addthis/hydra/job/minion/Minion.java 1113:1113
+Generation
+Modify Attribute Annotationhydra-main/src/main/java/com/addthis/hydra/job/minion/Minion.java@@FieldConfig(codable = true, required = true)hydra-main/src/main/java/com/addthis/hydra/job/minion/JobTask.java@@FieldConfig(required = true)hydra-main/src/main/java/com/addthis/hydra/job/minion/Minion.java 1115:1115
+Generation
+Modify Attribute Annotationhydra-main/src/main/java/com/addthis/hydra/job/minion/Minion.java@@FieldConfig(codable = true, required = true)hydra-main/src/main/java/com/addthis/hydra/job/minion/JobTask.java@@FieldConfig(required = true)hydra-main/src/main/java/com/addthis/hydra/job/minion/Minion.java 1117:1117
+Generation
+Modify Attribute Annotationhydra-main/src/main/java/com/addthis/hydra/job/minion/Minion.java@@FieldConfig(codable = true)hydra-main/src/main/java/com/addthis/hydra/job/minion/JobTask.java@@FieldConfighydra-main/src/main/java/com/addthis/hydra/job/minion/Minion.java 1119:1119
+Generation
+Modify Attribute Annotationhydra-main/src/main/java/com/addthis/hydra/job/minion/Minion.java@@FieldConfig(codable = true)hydra-main/src/main/java/com/addthis/hydra/job/minion/JobTask.java@@FieldConfighydra-main/src/main/java/com/addthis/hydra/job/minion/Minion.java 1121:1121
+Generation
+Modify Attribute Annotationhydra-main/src/main/java/com/addthis/hydra/job/minion/Minion.java@@FieldConfig(codable = true)hydra-main/src/main/java/com/addthis/hydra/job/minion/JobTask.java@@FieldConfighydra-main/src/main/java/com/addthis/hydra/job/minion/Minion.java 1123:1123
+Generation
+Modify Attribute Annotationhydra-main/src/main/java/com/addthis/hydra/job/minion/Minion.java@@FieldConfig(codable = true)hydra-main/src/main/java/com/addthis/hydra/job/minion/JobTask.java@@FieldConfighydra-main/src/main/java/com/addthis/hydra/job/minion/Minion.java 1125:1125
+Generation
+Modify Attribute Annotationhydra-main/src/main/java/com/addthis/hydra/job/minion/Minion.java@@FieldConfig(codable = true)hydra-main/src/main/java/com/addthis/hydra/job/minion/JobTask.java@@FieldConfighydra-main/src/main/java/com/addthis/hydra/job/minion/Minion.java 1127:1127
+Generation
+Modify Attribute Annotationhydra-main/src/main/java/com/addthis/hydra/job/minion/Minion.java@@FieldConfig(codable = true)hydra-main/src/main/java/com/addthis/hydra/job/minion/JobTask.java@@FieldConfighydra-main/src/main/java/com/addthis/hydra/job/minion/Minion.java 1129:1129
+Generation
+Modify Attribute Annotationhydra-main/src/main/java/com/addthis/hydra/job/minion/Minion.java@@FieldConfig(codable = true)hydra-main/src/main/java/com/addthis/hydra/job/minion/JobTask.java@@FieldConfighydra-main/src/main/java/com/addthis/hydra/job/minion/Minion.java 1131:1131
+Generation
+Modify Attribute Annotationhydra-main/src/main/java/com/addthis/hydra/job/minion/Minion.java@@FieldConfig(codable = true)hydra-main/src/main/java/com/addthis/hydra/job/minion/JobTask.java@@FieldConfighydra-main/src/main/java/com/addthis/hydra/job/minion/Minion.java 1137:1137
+Generation
+Modify Attribute Annotationhydra-main/src/main/java/com/addthis/hydra/job/minion/Minion.java@@FieldConfig(codable = true)hydra-main/src/main/java/com/addthis/hydra/job/minion/JobTask.java@@FieldConfighydra-main/src/main/java/com/addthis/hydra/job/minion/Minion.java 1139:1139
+Generation
+Modify Attribute Annotationhydra-main/src/main/java/com/addthis/hydra/job/minion/Minion.java@@FieldConfig(codable = true)hydra-main/src/main/java/com/addthis/hydra/job/minion/JobTask.java@@FieldConfighydra-main/src/main/java/com/addthis/hydra/job/minion/Minion.java 1142:1142
+Generation
+Modify Attribute Annotationhydra-main/src/main/java/com/addthis/hydra/job/minion/Minion.java@@FieldConfig(codable = true)hydra-main/src/main/java/com/addthis/hydra/job/minion/JobTask.java@@FieldConfighydra-main/src/main/java/com/addthis/hydra/job/minion/Minion.java 1144:1144
+******************************
+******************************
+coarse grained commits d2b80469ff533752955a3b3468af51362a3d356b
+fine grained commits ('f8f543c847043df6c8b67dcd648e535911ce4a4a', 'cb834544ffce2f5e60517e3f799eeeac15f54fa7', 'd0f1683f21bad3c13835b7eed74f91107d186cd9')
+Generation
+Rename Methodhydra-main/src/main/java/com/addthis/hydra/query/QueryTracker.java@public toStat() : QueryEntryInfohydra-main/src/main/java/com/addthis/hydra/query/tracker/QueryEntry.java@public getStat() : QueryEntryInfohydra-main/src/main/java/com/addthis/hydra/query/QueryTracker.java 266:281
+Generation
+Remove Attribute Modifierhydra-main/src/main/java/com/addthis/hydra/query/QueryTracker.java@private runTime : longhydra-main/src/main/java/com/addthis/hydra/query/tracker/QueryEntry.java@package runTime : longhydra-main/src/main/java/com/addthis/hydra/query/QueryTracker.java 239:239
+Generation
+Remove Attribute Modifierhydra-main/src/main/java/com/addthis/hydra/query/QueryTracker.java@private startTime : longhydra-main/src/main/java/com/addthis/hydra/query/tracker/QueryEntry.java@package startTime : longhydra-main/src/main/java/com/addthis/hydra/query/QueryTracker.java 240:240
+Generation
+Split Parameterhydra-main/src/main/java/com/addthis/hydra/query/QueryTracker.java@queryOpProcessor : QueryOpProcessorhydra-main/src/main/java/com/addthis/hydra/query/tracker/QueryEntry.java@queryPromise : ChannelPromisehydra-main/src/main/java/com/addthis/hydra/query/QueryTracker.java 244:244
+Generation
+Remove Parameterhydra-main/src/main/java/com/addthis/hydra/query/QueryTracker.java@queryHandle : QueryHandlehydra-main/src/main/java/com/addthis/hydra/query/tracker/QueryEntry.java@package queryStart() : voidhydra-main/src/main/java/com/addthis/hydra/query/QueryTracker.java 261:261
+Generation
+Split Attributehydra-main/src/main/java/com/addthis/hydra/query/QueryTracker.java@queryOpProcessor : QueryOpProcessorhydra-main/src/main/java/com/addthis/hydra/query/tracker/QueryEntry.java@queryPromise : ChannelPromisehydra-main/src/main/java/com/addthis/hydra/query/QueryTracker.java 236:236
+Generation
+Rename Attributehydra-main/src/main/java/com/addthis/hydra/query/QueryTracker.java@lines : AtomicIntegerhydra-main/src/main/java/com/addthis/hydra/query/tracker/QueryEntry.java@preOpLines : AtomicIntegerhydra-main/src/main/java/com/addthis/hydra/query/QueryTracker.java 231:231
+Generation
+Inline Methodhydra-main/src/main/java/com/addthis/hydra/query/QueryTracker.java@public cancelRunning(key String, reason String) : booleanhydra-main/src/main/java/com/addthis/hydra/query/tracker/QueryTracker.java@public cancelRunning(key String) : booleanhydra-main/src/main/java/com/addthis/hydra/query/QueryTracker.java 142:154
+Generation
+Add Method Modifierhydra-main/src/main/java/com/addthis/hydra/query/QueryTracker.java@private sendTimeout(entry QueryEntry, timeout long) : voidhydra-main/src/main/java/com/addthis/hydra/query/tracker/TimeoutWatcher.java@package sendTimeout(entry QueryEntry, timeout long) : voidhydra-main/src/main/java/com/addthis/hydra/query/QueryTracker.java 496:509
+Generation
+Rename Attributehydra-main/src/main/java/com/addthis/hydra/query/QueryTracker.java@queryHandle : QueryHandlehydra-main/src/main/java/com/addthis/hydra/query/tracker/QueryEntry.java@queryPromise : ChannelPromisehydra-main/src/main/java/com/addthis/hydra/query/QueryTracker.java 241:241
+Generation
+Change Attribute Typehydra-main/src/main/java/com/addthis/hydra/query/QueryTracker.java@queryHandle : QueryHandlehydra-main/src/main/java/com/addthis/hydra/query/tracker/QueryEntry.java@queryPromise : ChannelPromisehydra-main/src/main/java/com/addthis/hydra/query/QueryTracker.java 241:241
+Generation
+Add Attribute Modifierhydra-main/src/main/java/com/addthis/hydra/query/QueryTracker.java@private queryHandle : QueryHandlehydra-main/src/main/java/com/addthis/hydra/query/tracker/QueryEntry.java@package queryPromise : ChannelPromisehydra-main/src/main/java/com/addthis/hydra/query/QueryTracker.java 241:241
+Generation
+Remove Attribute Modifierhydra-main/src/main/java/com/addthis/hydra/query/QueryTracker.java@private queryHandle : QueryHandlehydra-main/src/main/java/com/addthis/hydra/query/tracker/QueryEntry.java@package queryPromise : ChannelPromisehydra-main/src/main/java/com/addthis/hydra/query/QueryTracker.java 241:241
+Generation
+Move Attributehydra-main/src/main/java/com/addthis/hydra/query/aggregate/AggregateHandle.java@package query : Queryhydra-main/src/main/java/com/addthis/hydra/query/aggregate/MeshSourceAggregator.java@package query : Queryhydra-main/src/main/java/com/addthis/hydra/query/aggregate/AggregateHandle.java 31:31
+Generation
+Move Methodhydra-main/src/main/java/com/addthis/hydra/query/aggregate/AggregateHandle.java@package getMeanRuntime() : doublehydra-main/src/main/java/com/addthis/hydra/query/aggregate/StragglerCheckTask.java@package getMeanRuntime() : doublehydra-main/src/main/java/com/addthis/hydra/query/aggregate/AggregateHandle.java 199:213
+******************************
+******************************
+coarse grained commits cbd945a18e2fe771022eb190b7c57fe97559a187
+fine grained commits ('857a33f4cddab4989b38e90fa4e7325519d8781c', 'd04bffe8eac289002a9e1d9a69e31dc2d847951a', '5b8448d4f9546de4ea8f6a9b680d46dc2d38b615')
+Generation
+Move Methodhydra-main/src/main/java/com/addthis/hydra/query/util/MeshSourceAggregator.java@public allocateQueryTaskLegacy(queryPerHostCountMap Map<String,Integer>, queryDataSet Set<QueryData>, hostMap Map<String,Boolean>) : QueryDatahydra-main/src/main/java/com/addthis/hydra/query/aggregate/TaskAllocator.java@public allocateQueryTaskLegacy(queryPerHostCountMap Map<String,Integer>, queryDataSet Set<QueryData>, hostMap Map<String,Boolean>) : QueryDatahydra-main/src/main/java/com/addthis/hydra/query/util/MeshSourceAggregator.java 682:733
+******************************
+******************************
+coarse grained commits ae5376c011faf5b15a5e0c9efecbe848f10af6d2
+fine grained commits ('04cf87d3ad390626dfa9fd60c81a2692f8eb3217', '71531f1e8570842036fd36e7fb3a845b9a04d440', '8fa14e04a3096a7140c045b23f65f836eb1f5b3c')
+Generation
+Move Attributehydra-main/src/main/java/com/addthis/hydra/job/store/JdbcDataStore.java@private cpds : ComboPooledDataSourcehydra-main/src/main/java/com/addthis/hydra/job/store/MysqlDataStore.java@private cpds : ComboPooledDataSourcehydra-main/src/main/java/com/addthis/hydra/job/store/JdbcDataStore.java 48:48
+Generation
+Move Attributehydra-main/src/main/java/com/addthis/hydra/job/store/JdbcDataStore.java@protected pathKey : Stringhydra-main/src/main/java/com/addthis/hydra/job/store/MysqlDataStore.java@protected pathKey : Stringhydra-main/src/main/java/com/addthis/hydra/job/store/JdbcDataStore.java 35:35
+Generation
+Move Attributehydra-main/src/main/java/com/addthis/hydra/job/store/JdbcDataStore.java@private insertTimer : Timerhydra-main/src/main/java/com/addthis/hydra/job/store/MysqlDataStore.java@private insertTimer : Timerhydra-main/src/main/java/com/addthis/hydra/job/store/JdbcDataStore.java 44:44
+Generation
+Remove Method Annotationhydra-main/src/main/java/com/addthis/hydra/job/store/PostgresqlDataStore.java@@Overridehydra-main/src/main/java/com/addthis/hydra/job/store/MysqlDataStore.java@private runStartupCommand() : voidhydra-main/src/main/java/com/addthis/hydra/job/store/PostgresqlDataStore.java 24:24
+Generation
+Change Method Access Modifierhydra-main/src/main/java/com/addthis/hydra/job/store/PostgresqlDataStore.java@protected runStartupCommand() : voidhydra-main/src/main/java/com/addthis/hydra/job/store/MysqlDataStore.java@private runStartupCommand() : voidhydra-main/src/main/java/com/addthis/hydra/job/store/PostgresqlDataStore.java 24:35
+Generation
+Move Methodhydra-main/src/main/java/com/addthis/hydra/job/store/PostgresqlDataStore.java@protected runStartupCommand() : voidhydra-main/src/main/java/com/addthis/hydra/job/store/MysqlDataStore.java@private runStartupCommand() : voidhydra-main/src/main/java/com/addthis/hydra/job/store/PostgresqlDataStore.java 24:35
+Generation
+Add Method Modifierhydra-main/src/main/java/com/addthis/hydra/job/store/JdbcDataStore.java@private executeAndTimeQuery(preparedStatement PreparedStatement) : ResultSethydra-main/src/main/java/com/addthis/hydra/job/store/MysqlDataStore.java@private executeAndTimeQuery(preparedStatement PreparedStatement) : ResultSethydra-main/src/main/java/com/addthis/hydra/job/store/JdbcDataStore.java 85:92
+Generation
+Move Methodhydra-main/src/main/java/com/addthis/hydra/job/store/JdbcDataStore.java@private executeAndTimeQuery(preparedStatement PreparedStatement) : ResultSethydra-main/src/main/java/com/addthis/hydra/job/store/MysqlDataStore.java@private executeAndTimeQuery(preparedStatement PreparedStatement) : ResultSethydra-main/src/main/java/com/addthis/hydra/job/store/JdbcDataStore.java 85:92
+Generation
+Rename Variablehydra-main/src/main/java/com/addthis/hydra/job/store/JdbcDataStore.java@connection : Connectionhydra-main/src/main/java/com/addthis/hydra/job/store/MysqlDataStore.java@conn : Connectionhydra-main/src/main/java/com/addthis/hydra/job/store/JdbcDataStore.java 125:125
+Generation
+Rename Variablehydra-main/src/main/java/com/addthis/hydra/job/store/JdbcDataStore.java@query : Stringhydra-main/src/main/java/com/addthis/hydra/job/store/MysqlDataStore.java@command : Stringhydra-main/src/main/java/com/addthis/hydra/job/store/JdbcDataStore.java 124:124
+Generation
+Move Methodhydra-main/src/main/java/com/addthis/hydra/job/store/JdbcDataStore.java@public get(paths String[]) : Map<String,String>hydra-main/src/main/java/com/addthis/hydra/job/store/MysqlDataStore.java@public get(paths String[]) : Map<String,String>hydra-main/src/main/java/com/addthis/hydra/job/store/JdbcDataStore.java 118:147
+Generation
+Move And Rename Methodhydra-main/src/main/java/com/addthis/hydra/job/store/MysqlInsertPickLastDataStore.java@private query(path String, childId String) : Stringhydra-main/src/main/java/com/addthis/hydra/job/store/MysqlDataStore.java@private querySingleResult(path String, childId String) : Stringhydra-main/src/main/java/com/addthis/hydra/job/store/MysqlInsertPickLastDataStore.java 141:156
+Generation
+Change Return Typehydra-main/src/main/java/com/addthis/hydra/job/store/JdbcDataStore.java@voidhydra-main/src/main/java/com/addthis/hydra/job/store/MysqlDataStore.java@booleanhydra-main/src/main/java/com/addthis/hydra/job/store/JdbcDataStore.java 149:149
+Generation
+Add Parameterhydra-main/src/main/java/com/addthis/hydra/job/store/JdbcDataStore.java@private insert(path String, value String, childId String) : voidhydra-main/src/main/java/com/addthis/hydra/job/store/MysqlDataStore.java@preparedStatement : PreparedStatementhydra-main/src/main/java/com/addthis/hydra/job/store/JdbcDataStore.java 149:159
+Generation
+Remove Parameterhydra-main/src/main/java/com/addthis/hydra/job/store/JdbcDataStore.java@path : Stringhydra-main/src/main/java/com/addthis/hydra/job/store/MysqlDataStore.java@private executeAndTimeInsert(preparedStatement PreparedStatement) : booleanhydra-main/src/main/java/com/addthis/hydra/job/store/JdbcDataStore.java 149:149
+Generation
+Remove Parameterhydra-main/src/main/java/com/addthis/hydra/job/store/JdbcDataStore.java@value : Stringhydra-main/src/main/java/com/addthis/hydra/job/store/MysqlDataStore.java@private executeAndTimeInsert(preparedStatement PreparedStatement) : booleanhydra-main/src/main/java/com/addthis/hydra/job/store/JdbcDataStore.java 149:149
+Generation
+Remove Parameterhydra-main/src/main/java/com/addthis/hydra/job/store/JdbcDataStore.java@childId : Stringhydra-main/src/main/java/com/addthis/hydra/job/store/MysqlDataStore.java@private executeAndTimeInsert(preparedStatement PreparedStatement) : booleanhydra-main/src/main/java/com/addthis/hydra/job/store/JdbcDataStore.java 149:149
+Generation
+Add Method Modifierhydra-main/src/main/java/com/addthis/hydra/job/store/JdbcDataStore.java@private insert(path String, value String, childId String) : voidhydra-main/src/main/java/com/addthis/hydra/job/store/MysqlDataStore.java@private executeAndTimeInsert(preparedStatement PreparedStatement) : booleanhydra-main/src/main/java/com/addthis/hydra/job/store/JdbcDataStore.java 149:159
+Generation
+Move And Rename Methodhydra-main/src/main/java/com/addthis/hydra/job/store/JdbcDataStore.java@private insert(path String, value String, childId String) : voidhydra-main/src/main/java/com/addthis/hydra/job/store/MysqlDataStore.java@private executeAndTimeInsert(preparedStatement PreparedStatement) : booleanhydra-main/src/main/java/com/addthis/hydra/job/store/JdbcDataStore.java 149:159
+******************************
+******************************
+coarse grained commits f9e20612c5e2b47a658d7f91c7d9cc5b132eab0c
+fine grained commits ('bd5cf4774f16f49e10002d30d7c69ebf03b777a9', 'dc0cce09585fd2996cc62995598ef6d9fd9d7879', 'e879e388f2ad6806a4f1737c6af441189e5b2986')
+Generation
+Move Attributehydra-main/src/main/java/com/addthis/hydra/query/web/QueryServer.java@private webDir : Stringhydra-main/src/main/java/com/addthis/hydra/query/web/HttpStaticFileHandler.java@private webDir : Stringhydra-main/src/main/java/com/addthis/hydra/query/web/QueryServer.java 64:64
+Generation
+Change Parameter Typehydra-main/src/main/java/com/addthis/hydra/query/web/QueryServer.java@writer : PrintWriterhydra-main/src/main/java/com/addthis/hydra/query/web/QueryHandler.java@writer : Writerhydra-main/src/main/java/com/addthis/hydra/query/web/QueryServer.java 186:186
+******************************
+******************************
+coarse grained commits 6741c9bca54e86d4a57f93a6838652dfbac02d51
+fine grained commits ('cad3625841f799f7ca88ea7a575a4bec5e93ce82', '1fede49f4e5e13e3956e5a7e4df7b4f9d117e55b', 'ee9d124b48cfdb6976734761db2f04a33993d47d')
+Generation
+Extract And Move Methodhydra-data/src/main/java/com/addthis/hydra/data/tree/AbstractTreeNode.java@public bytesEncode() : byte[]hydra-data/src/main/java/com/addthis/hydra/data/tree/prop/DataKeyTop.java@public bytesEncode() : byte[]hydra-data/src/main/java/com/addthis/hydra/data/tree/AbstractTreeNode.java 29:73
+******************************
+******************************
+coarse grained commits fcb7a9e4edeb31b86cabbe78b6cc26fdfd8010ce
+fine grained commits ('279f8e40e2ddf2e3b2383c90469798373155c308', '2cc9e4e8ec392a35b45270bb5101b80cb4080b8c', '5847293d24fd71b2eaa311c3b6de86ce30489d30')
+Generation
+Change Method Access Modifierhydra-data/src/main/java/com/addthis/hydra/data/tree/AbstractTreeNode.java@package isBitSet(bitcheck int) : booleanhydra-data/src/main/java/com/addthis/hydra/data/tree/concurrent/ConcurrentTreeNode.java@public isBitSet(bitcheck int) : booleanhydra-data/src/main/java/com/addthis/hydra/data/tree/AbstractTreeNode.java 147:149
+Generation
+Change Method Access Modifierhydra-data/src/main/java/com/addthis/hydra/data/tree/AbstractTreeNode.java@protected bitSet(set int) : voidhydra-data/src/main/java/com/addthis/hydra/data/tree/concurrent/ConcurrentTreeNode.java@private bitSet(set int) : voidhydra-data/src/main/java/com/addthis/hydra/data/tree/AbstractTreeNode.java 155:157
+Generation
+Change Method Access Modifierhydra-data/src/main/java/com/addthis/hydra/data/tree/AbstractTreeNode.java@protected bitUnset(set int) : voidhydra-data/src/main/java/com/addthis/hydra/data/tree/concurrent/ConcurrentTreeNode.java@private bitUnset(set int) : voidhydra-data/src/main/java/com/addthis/hydra/data/tree/AbstractTreeNode.java 159:161
+Generation
+Change Method Access Modifierhydra-data/src/main/java/com/addthis/hydra/data/tree/AbstractTreeNode.java@public nodeDB() : longhydra-data/src/main/java/com/addthis/hydra/data/tree/concurrent/ConcurrentTreeNode.java@protected nodeDB() : longhydra-data/src/main/java/com/addthis/hydra/data/tree/AbstractTreeNode.java 212:214
+******************************
+******************************
+coarse grained commits bcb99459c5b288f9eafa532355d1b71f96bfd9e2
+fine grained commits ('4aef6db1d100f2808c25e2f20394447fbfec75ed', '020709ceb0a1941685a64ba491196f899a92759f', 'dbd30a72de1027e08df599f271b9a84d4921ba55')
+Generation
+Rename Methodhydra-data/src/test/java/com/addthis/hydra/data/tree/prop/DataCMSUpperBoundTest.java@public countMinSketch() : voidhydra-data/src/test/java/com/addthis/hydra/data/tree/prop/DataCMSUpperBoundTest.java@public upperBound() : voidhydra-data/src/test/java/com/addthis/hydra/data/tree/prop/DataCMSUpperBoundTest.java 17:51
+******************************
+******************************
+coarse grained commits 97faeb83536e9a310fdfb2646a1f2225fba1caf3
+fine grained commits ('f92df5b441ee83fe5a44cbf1954ab2f500f49bd9', '184fdd87559aaf96c454911ec697c68e50640a98', 'bd5cf4774f16f49e10002d30d7c69ebf03b777a9')
+Generation
+Extract Classhydra-main/src/main/java/com/addthis/hydra/query/web/QueryServer.java@com.addthis.hydra.query.web.QueryServerhydra-main/src/main/java/com/addthis/hydra/query/web/QueryServer.java@com.addthis.hydra.query.web.QueryServerhydra-main/src/main/java/com/addthis/hydra/query/web/QueryServer.java 36:134
+Generation
+Move Methodhydra-main/src/main/java/com/addthis/hydra/query/web/QueryHandler.java@package endResponse(writer PrintWriter, cbf String) : voidhydra-main/src/main/java/com/addthis/hydra/query/web/HttpUtils.java@package endResponse(writer Writer, cbf String) : voidhydra-main/src/main/java/com/addthis/hydra/query/web/QueryHandler.java 282:286
+Generation
+Move Methodhydra-main/src/main/java/com/addthis/hydra/query/web/QueryServlet.java@public handleQuery(querySource QuerySource, kv KVPairs, request HttpServletRequest, response HttpServletResponse) : voidhydra-main/src/main/java/com/addthis/hydra/query/web/HttpQueryCallHandler.java@public handleQuery(querySource QuerySource, kv KVPairs, request HttpRequest, ctx ChannelHandlerContext) : voidhydra-main/src/main/java/com/addthis/hydra/query/web/QueryServlet.java 116:122
+Generation
+Rename Parameterhydra-main/src/main/java/com/addthis/hydra/query/web/QueryServlet.java@response : HttpServletResponsehydra-main/src/main/java/com/addthis/hydra/query/web/HttpQueryCallHandler.java@ctx : ChannelHandlerContexthydra-main/src/main/java/com/addthis/hydra/query/web/QueryServlet.java 124:124
+Generation
+Move Methodhydra-main/src/main/java/com/addthis/hydra/query/web/QueryServlet.java@public handleQuery(querySource QuerySource, query Query, kv KVPairs, request HttpServletRequest, response HttpServletResponse) : voidhydra-main/src/main/java/com/addthis/hydra/query/web/HttpQueryCallHandler.java@public handleQuery(querySource QuerySource, query Query, kv KVPairs, request HttpRequest, ctx ChannelHandlerContext) : voidhydra-main/src/main/java/com/addthis/hydra/query/web/QueryServlet.java 124:218
+Generation
+Move Methodhydra-main/src/main/java/com/addthis/hydra/query/web/QueryServlet.java@private handleError(source QuerySource, query Query) : voidhydra-main/src/main/java/com/addthis/hydra/query/web/HttpQueryCallHandler.java@private handleError(source QuerySource, query Query) : voidhydra-main/src/main/java/com/addthis/hydra/query/web/QueryServlet.java 220:224
+******************************
+******************************
+coarse grained commits befb74278053f223289c2fbc20d868fd991764cf
+fine grained commits ('6f070868bc77e40fb5afe47f1a84613a069042eb', 'a19e6c7c63e7f5a6eb6169ad41c54f77f48c5aa9', '670acb97c555465f60bac5e8ce84a90c6e803f70')
+Generation
+Change Class Access Modifierhydra-data/src/main/java/com/addthis/hydra/data/query/op/OpGather.java@com.addthis.hydra.data.query.op.OpGather.MergeOphydra-data/src/main/java/com/addthis/hydra/data/query/op/merge/MergeConfig.java@com.addthis.hydra.data.query.op.merge.MergeConfighydra-data/src/main/java/com/addthis/hydra/data/query/op/OpGather.java 39:41
+Generation
+Change Type Declaration Kindhydra-data/src/main/java/com/addthis/hydra/data/query/op/OpGather.java@com.addthis.hydra.data.query.op.OpGather.MergeOphydra-data/src/main/java/com/addthis/hydra/data/query/op/merge/MergeConfig.java@com.addthis.hydra.data.query.op.merge.MergeConfighydra-data/src/main/java/com/addthis/hydra/data/query/op/OpGather.java 39:41
+Generation
+Move And Rename Classhydra-data/src/main/java/com/addthis/hydra/data/query/op/OpGather.java@com.addthis.hydra.data.query.op.OpGather.MergeOphydra-data/src/main/java/com/addthis/hydra/data/query/op/merge/MergeConfig.java@com.addthis.hydra.data.query.op.merge.MergeConfighydra-data/src/main/java/com/addthis/hydra/data/query/op/OpGather.java 39:41
+******************************
+******************************
+coarse grained commits 61c48001b25ecdc029a5d2d7cf7678792b237c5b
+fine grained commits ('85a0362894d938b3b70c9d05d82ab09db1e490eb', 'a525667c1961487cba9e8026f8178591ba3a3020', 'b83db6643a226d21640f448309e186b6e30ec549')
+Generation
+Rename Variablehydra-main/src/main/java/com/addthis/hydra/job/Spawn.java@host : HostStatehydra-main/src/main/java/com/addthis/hydra/job/Spawn.java@bestHost : HostStatehydra-main/src/main/java/com/addthis/hydra/job/Spawn.java 3066:3066
+Generation
+Rename Variablehydra-main/src/main/java/com/addthis/hydra/job/Spawn.java@liveHost : HostStatehydra-main/src/main/java/com/addthis/hydra/job/Spawn.java@possibleHost : HostStatehydra-main/src/main/java/com/addthis/hydra/job/Spawn.java 3052:3052
+******************************
+******************************
+coarse grained commits 6152cd611ecca281a24c831130bfccae0c6c766b
+fine grained commits ('bc589beccfe3ac7c5b22d487f93abe0d47858a4b', 'f096aa72b081aa0df60a0fba34ee3faaeb05c895', '80aa3f03acf87f29ed4e710efc2afaaf19339d18')
+Generation
+Move Attributehydra-main/src/main/java/com/addthis/hydra/job/spawn/JobAlertRunner.java@private MINUTE : inthydra-main/src/main/java/com/addthis/hydra/job/spawn/JobAlert.java@private MINUTE : inthydra-main/src/main/java/com/addthis/hydra/job/spawn/JobAlertRunner.java 45:45
+******************************
+******************************
+coarse grained commits e8a03a47cfb21504db4e6604ee6164311ac1aacd
+fine grained commits ('0c6803647e4f638d626553d6a54dd8969d99cf50', '25840f86ef6bc24c07a6f021e770fca869056faa', 'c17fc85659be135aacdf70c87910bcbc41f1055d', 'b290a080f96744ff7aa574ef09349fd5d7f40e2a')
+Generation
+Move Attributehydra-main/src/main/java/com/addthis/hydra/job/spawn/Spawn.java@private groupManager : GroupManagerhydra-main/src/main/java/com/addthis/hydra/job/alert/JobAlertManagerImpl.java@private groupManager : GroupManagerhydra-main/src/main/java/com/addthis/hydra/job/spawn/Spawn.java 217:217
+Generation
+Remove Attribute Annotationhydra-main/src/main/java/com/addthis/hydra/job/spawn/Spawn.java@@Nonnullhydra-main/src/main/java/com/addthis/hydra/job/alert/JobAlertManagerImpl.java@private groupManager : GroupManagerhydra-main/src/main/java/com/addthis/hydra/job/spawn/Spawn.java 217:217
+******************************
+******************************
+coarse grained commits 4bc951ff1e32c8ec326ac0e05b5bfeb41a8171b3
+fine grained commits ('8a2c51b8b50cbfdfe7caaca43e62663a428f1161', 'dcfa0da1d2d9cfc0b2fe948ac73f80f8fddc6b26', 'fa8045e323fd89ae3dbcb88807ea5a9974edad76', '901b560384341913d7db1621e49306214d56c119')
+Generation
+Move Methodhydra-main/src/main/java/com/addthis/hydra/job/minion/Minion.java@private getTaskBaseDir(baseDir String, id String, node int) : Stringhydra-main/src/main/java/com/addthis/hydra/job/minion/ProcessUtils.java@package getTaskBaseDir(baseDir String, id String, node int) : Stringhydra-main/src/main/java/com/addthis/hydra/job/minion/Minion.java 939:941
+Generation
+Add Method Modifierhydra-main/src/main/java/com/addthis/hydra/job/minion/Minion.java@private getTaskBaseDir(baseDir String, id String, node int) : Stringhydra-main/src/main/java/com/addthis/hydra/job/minion/ProcessUtils.java@package getTaskBaseDir(baseDir String, id String, node int) : Stringhydra-main/src/main/java/com/addthis/hydra/job/minion/Minion.java 939:941
+Generation
+Move Methodhydra-main/src/main/java/com/addthis/hydra/job/minion/Minion.java@private activeProcessExistsWithPid(pid Integer, directory File) : booleanhydra-main/src/main/java/com/addthis/hydra/job/minion/ProcessUtils.java@package activeProcessExistsWithPid(pid Integer, directory File) : booleanhydra-main/src/main/java/com/addthis/hydra/job/minion/Minion.java 2765:2767
+Generation
+Move Methodhydra-main/src/main/java/com/addthis/hydra/job/minion/Minion.java@private findActiveRsync(id String, node int) : Integerhydra-main/src/main/java/com/addthis/hydra/job/minion/ProcessUtils.java@package findActiveRsync(id String, node int) : Integerhydra-main/src/main/java/com/addthis/hydra/job/minion/Minion.java 2769:2771
+******************************
+******************************
+coarse grained commits 958587aaa81ab1b4023edc0d06509a003276fe3e
+fine grained commits ('04cf87d3ad390626dfa9fd60c81a2692f8eb3217', '71531f1e8570842036fd36e7fb3a845b9a04d440', '8fa14e04a3096a7140c045b23f65f836eb1f5b3c', '5a7650744e8c4b4e434835fa11a8bd95fd6957da')
+Generation
+Change Method Access Modifierhydra-main/src/main/java/com/addthis/hydra/job/store/MysqlInsertPickLastDataStore.java@public cleanUp() : voidhydra-main/src/main/java/com/addthis/hydra/job/store/MysqlDataStore.java@private runStartupCommand() : voidhydra-main/src/main/java/com/addthis/hydra/job/store/MysqlInsertPickLastDataStore.java 84:88
+Generation
+Move And Rename Methodhydra-main/src/main/java/com/addthis/hydra/job/store/MysqlInsertPickLastDataStore.java@public cleanUp() : voidhydra-main/src/main/java/com/addthis/hydra/job/store/MysqlDataStore.java@private runStartupCommand() : voidhydra-main/src/main/java/com/addthis/hydra/job/store/MysqlInsertPickLastDataStore.java 84:88
+******************************
+******************************
+coarse grained commits 0f600f13fd96e9ab99c98649b91d4583bb48c4a3
+fine grained commits ('dd5e895337e3bb0c771f2f4f78d2ce865d33c098', 'a3a06c6c47df94f903cbd34f7199853a380595f7', '0a91ad29eb910eec4ad92e308d01ef2ac092808c', '9dfc3c23377ed0f8be370055950b76bc77b44079')
+Generation
+Remove Thrown Exception Typehydra-main/src/main/java/com/addthis/hydra/job/SpawnManager.java@Exceptionhydra-main/src/main/java/com/addthis/hydra/job/SpawnManager.java@public httpService(link HTTPLink) : voidhydra-main/src/main/java/com/addthis/hydra/job/SpawnManager.java 571:571
+******************************
+******************************
+coarse grained commits 7ea53c71dd6b0270ef3061611a09e20d7e79cade
+fine grained commits ('d0f1683f21bad3c13835b7eed74f91107d186cd9', '857a33f4cddab4989b38e90fa4e7325519d8781c', 'd04bffe8eac289002a9e1d9a69e31dc2d847951a', '5b8448d4f9546de4ea8f6a9b680d46dc2d38b615')
+Generation
+Remove Attribute Modifierhydra-main/src/main/java/com/addthis/hydra/query/util/MeshSourceAggregator.java@private error : DataChannelErrorhydra-main/src/main/java/com/addthis/hydra/query/aggregate/AggregateHandle.java@package error : DataChannelErrorhydra-main/src/main/java/com/addthis/hydra/query/util/MeshSourceAggregator.java 184:184
+Generation
+Change Attribute Typehydra-main/src/main/java/com/addthis/hydra/query/util/MeshSourceAggregator.java@canceled : AtomicBooleanhydra-main/src/main/java/com/addthis/hydra/query/aggregate/AggregateHandle.java@canceled : booleanhydra-main/src/main/java/com/addthis/hydra/query/util/MeshSourceAggregator.java 186:186
+Generation
+Remove Attribute Modifierhydra-main/src/main/java/com/addthis/hydra/query/util/MeshSourceAggregator.java@private canceled : AtomicBooleanhydra-main/src/main/java/com/addthis/hydra/query/aggregate/AggregateHandle.java@package canceled : booleanhydra-main/src/main/java/com/addthis/hydra/query/util/MeshSourceAggregator.java 186:186
+Generation
+Change Attribute Typehydra-main/src/main/java/com/addthis/hydra/query/util/MeshSourceAggregator.java@completed : Set<Integer>hydra-main/src/main/java/com/addthis/hydra/query/aggregate/AggregateHandle.java@completed : inthydra-main/src/main/java/com/addthis/hydra/query/util/MeshSourceAggregator.java 187:187
+Generation
+Remove Attribute Modifierhydra-main/src/main/java/com/addthis/hydra/query/util/MeshSourceAggregator.java@private completed : Set<Integer>hydra-main/src/main/java/com/addthis/hydra/query/aggregate/AggregateHandle.java@package completed : inthydra-main/src/main/java/com/addthis/hydra/query/util/MeshSourceAggregator.java 187:187
+Generation
+Add Parameter Modifierhydra-main/src/main/java/com/addthis/hydra/query/util/MeshSourceAggregator.java@message : Stringhydra-main/src/main/java/com/addthis/hydra/query/aggregate/AggregateHandle.java@message : Stringhydra-main/src/main/java/com/addthis/hydra/query/util/MeshSourceAggregator.java 220:220
+Generation
+Change Variable Typehydra-main/src/main/java/com/addthis/hydra/query/util/MeshSourceAggregator.java@e : DataChannelErrorhydra-main/src/main/java/com/addthis/hydra/query/aggregate/AggregateHandle.java@e : Exceptionhydra-main/src/main/java/com/addthis/hydra/query/util/MeshSourceAggregator.java 251:251
+Generation
+Add Parameter Modifierhydra-main/src/main/java/com/addthis/hydra/query/util/MeshSourceAggregator.java@er : DataChannelErrorhydra-main/src/main/java/com/addthis/hydra/query/aggregate/AggregateHandle.java@er : DataChannelErrorhydra-main/src/main/java/com/addthis/hydra/query/util/MeshSourceAggregator.java 288:288
+Generation
+Change Variable Typehydra-main/src/main/java/com/addthis/hydra/query/util/MeshSourceAggregator.java@e : DataChannelErrorhydra-main/src/main/java/com/addthis/hydra/query/aggregate/AggregateHandle.java@e : Exceptionhydra-main/src/main/java/com/addthis/hydra/query/util/MeshSourceAggregator.java 301:301
+Generation
+Change Return Typehydra-main/src/main/java/com/addthis/hydra/query/util/MeshSourceAggregator.java@DataChannelErrorhydra-main/src/main/java/com/addthis/hydra/query/aggregate/AggregateHandle.java@voidhydra-main/src/main/java/com/addthis/hydra/query/util/MeshSourceAggregator.java 308:308
+Generation
+Split Parameterhydra-main/src/main/java/com/addthis/hydra/query/util/MeshSourceAggregator.java@sourcesByTaskID : Map<Integer,Set<QueryData>>hydra-main/src/main/java/com/addthis/hydra/query/aggregate/AggregateHandle.java@meshSourceAggregator : MeshSourceAggregatorhydra-main/src/main/java/com/addthis/hydra/query/util/MeshSourceAggregator.java 193:193
+Generation
+Rename Attributehydra-main/src/main/java/com/addthis/hydra/query/util/MeshSourceAggregator.java@_totalTasks : inthydra-main/src/main/java/com/addthis/hydra/query/aggregate/AggregateHandle.java@totalTasks : inthydra-main/src/main/java/com/addthis/hydra/query/util/MeshSourceAggregator.java 190:190
+Generation
+Rename Attributehydra-main/src/main/java/com/addthis/hydra/query/util/MeshSourceAggregator.java@started : Set<Integer>hydra-main/src/main/java/com/addthis/hydra/query/aggregate/AggregateHandle.java@taskSources : QueryTaskSource[]hydra-main/src/main/java/com/addthis/hydra/query/util/MeshSourceAggregator.java 188:188
+Generation
+Change Attribute Typehydra-main/src/main/java/com/addthis/hydra/query/util/MeshSourceAggregator.java@started : Set<Integer>hydra-main/src/main/java/com/addthis/hydra/query/aggregate/AggregateHandle.java@taskSources : QueryTaskSource[]hydra-main/src/main/java/com/addthis/hydra/query/util/MeshSourceAggregator.java 188:188
+Generation
+Change Attribute Typehydra-main/src/main/java/com/addthis/hydra/query/util/MeshSourceAggregator.java@sourcesByTaskID : Map<Integer,Set<QueryData>>hydra-main/src/main/java/com/addthis/hydra/query/aggregate/MeshSourceAggregator.java@sourcesByTaskID : QueryTaskSource[]hydra-main/src/main/java/com/addthis/hydra/query/util/MeshSourceAggregator.java 92:92
+Generation
+Extract Classhydra-main/src/main/java/com/addthis/hydra/query/util/MeshSourceAggregator.java@com.addthis.hydra.query.util.MeshSourceAggregatorhydra-main/src/main/java/com/addthis/hydra/query/aggregate/MeshSourceAggregator.java@com.addthis.hydra.query.aggregate.MeshSourceAggregatorhydra-main/src/main/java/com/addthis/hydra/query/util/MeshSourceAggregator.java 53:867
+Generation
+Move Attributehydra-main/src/main/java/com/addthis/hydra/query/util/MeshSourceAggregator.java@private enableStragglerCheck : booleanhydra-main/src/main/java/com/addthis/hydra/query/aggregate/AggregateConfig.java@package enableStragglerCheck : booleanhydra-main/src/main/java/com/addthis/hydra/query/util/MeshSourceAggregator.java 75:75
+Generation
+Move Attributehydra-main/src/main/java/com/addthis/hydra/query/util/MeshSourceAggregator.java@private stragglerCheckPeriod : inthydra-main/src/main/java/com/addthis/hydra/query/aggregate/AggregateConfig.java@package stragglerCheckPeriod : inthydra-main/src/main/java/com/addthis/hydra/query/util/MeshSourceAggregator.java 76:76
+Generation
+Move Attributehydra-main/src/main/java/com/addthis/hydra/query/util/MeshSourceAggregator.java@private stragglerCheckHostPercentage : doublehydra-main/src/main/java/com/addthis/hydra/query/aggregate/AggregateConfig.java@package stragglerCheckHostPercentage : doublehydra-main/src/main/java/com/addthis/hydra/query/util/MeshSourceAggregator.java 77:77
+Generation
+Move Attributehydra-main/src/main/java/com/addthis/hydra/query/util/MeshSourceAggregator.java@private useStdDevStragglers : booleanhydra-main/src/main/java/com/addthis/hydra/query/aggregate/AggregateConfig.java@package useStdDevStragglers : booleanhydra-main/src/main/java/com/addthis/hydra/query/util/MeshSourceAggregator.java 78:78
+Generation
+Move Attributehydra-main/src/main/java/com/addthis/hydra/query/util/MeshSourceAggregator.java@private stragglerCheckMeanRuntimeFactor : doublehydra-main/src/main/java/com/addthis/hydra/query/aggregate/AggregateConfig.java@package stragglerCheckMeanRuntimeFactor : doublehydra-main/src/main/java/com/addthis/hydra/query/util/MeshSourceAggregator.java 79:79
+Generation
+Move Attributehydra-main/src/main/java/com/addthis/hydra/query/util/MeshSourceAggregator.java@private MULTIPLE_STD_DEVS : doublehydra-main/src/main/java/com/addthis/hydra/query/aggregate/AggregateConfig.java@package MULTIPLE_STD_DEVS : doublehydra-main/src/main/java/com/addthis/hydra/query/util/MeshSourceAggregator.java 83:83
+Generation
+Move Attributehydra-main/src/main/java/com/addthis/hydra/query/util/MeshSourceAggregator.java@private exiting : AtomicBooleanhydra-main/src/main/java/com/addthis/hydra/query/aggregate/AggregateConfig.java@package exiting : AtomicBooleanhydra-main/src/main/java/com/addthis/hydra/query/util/MeshSourceAggregator.java 86:86
+Generation
+Move Attributehydra-main/src/main/java/com/addthis/hydra/query/util/MeshSourceAggregator.java@private totalQueries : Counterhydra-main/src/main/java/com/addthis/hydra/query/aggregate/AggregateConfig.java@package totalQueries : Counterhydra-main/src/main/java/com/addthis/hydra/query/util/MeshSourceAggregator.java 88:88
+Generation
+Move Attributehydra-main/src/main/java/com/addthis/hydra/query/util/MeshSourceAggregator.java@private totalStragglerCheckerRequests : Counterhydra-main/src/main/java/com/addthis/hydra/query/aggregate/AggregateConfig.java@package totalStragglerCheckerRequests : Counterhydra-main/src/main/java/com/addthis/hydra/query/util/MeshSourceAggregator.java 89:89
+Generation
+Move Attributehydra-main/src/main/java/com/addthis/hydra/query/util/MeshSourceAggregator.java@private totalRetryRequests : Counterhydra-main/src/main/java/com/addthis/hydra/query/aggregate/AggregateConfig.java@package totalRetryRequests : Counterhydra-main/src/main/java/com/addthis/hydra/query/util/MeshSourceAggregator.java 90:90
+******************************
+******************************
+coarse grained commits bc17d64446364cae549fe5107c835afc068309d9
+fine grained commits ('e4d467d8c880872bc2ecdb5712014526a63b2739', 'cdc86f06527d16f3df77eab3f909bd31d6d84541', 'fe0b90169af1e929ea340907319d0762d46a21fc', '85a0362894d938b3b70c9d05d82ab09db1e490eb')
+Generation
+Extract Methodhydra-main/src/main/java/com/addthis/hydra/job/Spawn.java@public kickOnExistingHosts(job Job, task JobTask, config String, timeOnQueue long, allowSwap boolean, ignoreQuiesce boolean) : booleanhydra-main/src/main/java/com/addthis/hydra/job/Spawn.java@private getHostStatesHousingTask(task JobTask, allowReplicas boolean) : List<HostState>hydra-main/src/main/java/com/addthis/hydra/job/Spawn.java 3035:3066
+Generation
+Rename Variablehydra-main/src/main/java/com/addthis/hydra/job/Spawn.java@possibleHosts : List<HostState>hydra-main/src/main/java/com/addthis/hydra/job/Spawn.java@rv : List<HostState>hydra-main/src/main/java/com/addthis/hydra/job/Spawn.java 3039:3039
+******************************
+******************************
+coarse grained commits 8cf520fbcd37c60ffd3238e0355da7f521b556ad
+fine grained commits ('5db5b7f2b903fbac1dc9484ddf5945ea1475d396', '8f30a8a0a80b9a6e924a2777b0bf70b5e21cc75a', '941c018e89e7f28dfc550fc65dd661e886774e47', '6b2b05716812c1d2a94ed4351e4ccf029b8fde83')
+Generation
+Push Down Attributehydra-store/src/main/java/com/addthis/hydra/store/skiplist/Page.java@protected FLAGS_IS_SPARSE : inthydra-data/src/test/java/com/addthis/hydra/store/skiplist/SparsePage.java@protected FLAGS_IS_SPARSE : inthydra-store/src/main/java/com/addthis/hydra/store/skiplist/Page.java 93:93
+******************************
+******************************
+coarse grained commits 8df433832f0715cffd40e83b739ab92def92f580
+fine grained commits ('0985c77186690b922f523bf8b33a00b58e1d6ed4', '8493fa97157ff740e5e7dcdf6d6f1d90aef05b2c', 'd31f6ed167b4ab8bc5ad8921a5b7e90b5b5d44ac', '7abe5dbb8f79de05a7c0306680b3b05447517339')
+Generation
+Rename Parameterhydra-main/src/main/java/com/addthis/hydra/job/spawn/Settings.java@quiesced : booleanhydra-main/src/main/java/com/addthis/hydra/job/spawn/SystemManagerImpl.java@quiesce : booleanhydra-main/src/main/java/com/addthis/hydra/job/spawn/Settings.java 51:51
+Generation
+Change Return Typehydra-main/src/main/java/com/addthis/hydra/job/spawn/Settings.java@voidhydra-main/src/main/java/com/addthis/hydra/job/spawn/SystemManagerImpl.java@booleanhydra-main/src/main/java/com/addthis/hydra/job/spawn/Settings.java 51:51
+Generation
+Add Parameterhydra-main/src/main/java/com/addthis/hydra/job/spawn/Settings.java@public setQuiesced(quiesced boolean) : voidhydra-main/src/main/java/com/addthis/hydra/job/spawn/SystemManagerImpl.java@username : Stringhydra-main/src/main/java/com/addthis/hydra/job/spawn/Settings.java 51:58
+Generation
+Add Method Annotationhydra-main/src/main/java/com/addthis/hydra/job/spawn/Settings.java@public setQuiesced(quiesced boolean) : voidhydra-main/src/main/java/com/addthis/hydra/job/spawn/SystemManagerImpl.java@@Overridehydra-main/src/main/java/com/addthis/hydra/job/spawn/Settings.java 51:58
+******************************
+******************************
+coarse grained commits b216707bfc109cf901cd950341cc78af3928b696
+fine grained commits ('b47c119b987de4cf41976a5771c19d2cc732e865', '9ade163260e7684edb00f74af05d7147477cc8e4', 'fdc64f0faa10bb083e67e37dcae116bd2cb05105', '68fa206a540a94904e0459fffaa9a5c86b9a783e')
+Generation
+Merge Parameterhydra-main/src/main/java/com/addthis/hydra/job/spawn/Spawn.java@uuid : Stringhydra-main/src/main/java/com/addthis/hydra/job/spawn/Spawn.java@stateFile : Filehydra-main/src/main/java/com/addthis/hydra/job/spawn/Spawn.java 343:343
+Generation
+Merge Attributehydra-main/src/main/java/com/addthis/hydra/job/spawn/Spawn.java@uuid : Stringhydra-main/src/main/java/com/addthis/hydra/job/spawn/Spawn.java@stateFile : Filehydra-main/src/main/java/com/addthis/hydra/job/spawn/Spawn.java 265:265
+******************************
+******************************
+coarse grained commits 736f7462e2c80234f142c094ef00ab3b1733105a
+fine grained commits ('4390e0d059c3c10e035ccfaa8c4d781e5a8c3e83', 'a83b8494d3899ddce2daf016d110224d95326b67', '5713a0eb496da845a21b2d7459716d60ab9dd0be', 'f92df5b441ee83fe5a44cbf1954ab2f500f49bd9')
+Generation
+Move Methodhydra-main/src/main/java/com/addthis/hydra/query/web/OutputDelimited.java@public send(bundles List<Bundle>) : voidhydra-main/src/main/java/com/addthis/hydra/query/web/AbstractHttpOutput.java@public send(bundles List<Bundle>) : voidhydra-main/src/main/java/com/addthis/hydra/query/web/OutputDelimited.java 78:85
+Generation
+Move Methodhydra-main/src/main/java/com/addthis/hydra/query/web/OutputHTML.java@public send(bundles List<Bundle>) : voidhydra-main/src/main/java/com/addthis/hydra/query/web/AbstractHttpOutput.java@public send(bundles List<Bundle>) : voidhydra-main/src/main/java/com/addthis/hydra/query/web/OutputHTML.java 31:38
+Generation
+Move Methodhydra-main/src/main/java/com/addthis/hydra/query/web/OutputJson.java@public send(bundles List<Bundle>) : voidhydra-main/src/main/java/com/addthis/hydra/query/web/AbstractHttpOutput.java@public send(bundles List<Bundle>) : voidhydra-main/src/main/java/com/addthis/hydra/query/web/OutputJson.java 72:79
+******************************
+******************************
+coarse grained commits 79e7ec25c5b0afee2a17af5c619277f3cf8f6313
+fine grained commits ('0507e39a78e3334a34382105986d2d8fcc8db249', 'fc0823f9154e356f55faab489cab686fd3be5930', '279f8e40e2ddf2e3b2383c90469798373155c308', '2cc9e4e8ec392a35b45270bb5101b80cb4080b8c', '5847293d24fd71b2eaa311c3b6de86ce30489d30')
+Generation
+Change Attribute Access Modifierhydra-data/src/main/java/com/addthis/hydra/data/tree/AbstractTreeNode.java@protected name : Stringhydra-data/src/main/java/com/addthis/hydra/data/tree/nonconcurrent/NonConcurrentTreeNode.java@private name : Stringhydra-data/src/main/java/com/addthis/hydra/data/tree/AbstractTreeNode.java 37:37
+******************************
+******************************
+coarse grained commits 6eb117b498822f38ee0f3d46f14280e0b2e2f816
+fine grained commits ('6ff2f2c7e6a20b68e7df1475db76e3e572f7382a', 'a7bc9576289687f261b14abad3fd50beee7df1f7', 'cc3eb0998453a55f75337d6ccc1cc7a8ed00b410', 'cde6cc6dfff0772d60786a3e2da30ad172e6e996', '4390e0d059c3c10e035ccfaa8c4d781e5a8c3e83')
+Generation
+Extract Classhydra-main/src/main/java/com/addthis/hydra/query/web/OutputDelimited.java@com.addthis.hydra.query.web.OutputDelimitedhydra-main/src/main/java/com/addthis/hydra/query/web/OutputDelimited.java@com.addthis.hydra.query.web.OutputDelimitedhydra-main/src/main/java/com/addthis/hydra/query/web/OutputDelimited.java 14:89
+Generation
+Move Methodhydra-main/src/main/java/com/addthis/hydra/query/web/OutputDelimited.java@public send(bundles List<Bundle>) : voidhydra-main/src/main/java/com/addthis/hydra/query/web/DataChannelOutputToNettyBridge.java@public send(bundles List<Bundle>) : voidhydra-main/src/main/java/com/addthis/hydra/query/web/OutputDelimited.java 75:82
+Generation
+Move Methodhydra-main/src/main/java/com/addthis/hydra/query/web/OutputDelimited.java@public sendComplete() : voidhydra-main/src/main/java/com/addthis/hydra/query/web/DataChannelOutputToNettyBridge.java@public sendComplete() : voidhydra-main/src/main/java/com/addthis/hydra/query/web/OutputDelimited.java 84:88
+Generation
+Extract And Move Methodhydra-main/src/main/java/com/addthis/hydra/query/web/OutputHTML.java@public sendComplete() : voidhydra-main/src/main/java/com/addthis/hydra/query/web/AbstractHttpOutput.java@public sendComplete(ctx ChannelHandlerContext) : voidhydra-main/src/main/java/com/addthis/hydra/query/web/OutputHTML.java 44:49
+Generation
+Extract And Move Methodhydra-main/src/main/java/com/addthis/hydra/query/web/OutputJson.java@public sendComplete() : voidhydra-main/src/main/java/com/addthis/hydra/query/web/AbstractHttpOutput.java@public sendComplete(ctx ChannelHandlerContext) : voidhydra-main/src/main/java/com/addthis/hydra/query/web/OutputJson.java 88:96
+******************************
+******************************
+coarse grained commits 9dc57b9400d128c687d32c229ceda706d0d57212
+fine grained commits ('d54942eae4ac38972fe3d5a5fd393f8dddbc90da', '0985c77186690b922f523bf8b33a00b58e1d6ed4', '8493fa97157ff740e5e7dcdf6d6f1d90aef05b2c', 'd31f6ed167b4ab8bc5ad8921a5b7e90b5b5d44ac', '7abe5dbb8f79de05a7c0306680b3b05447517339')
+Generation
+Extract Classhydra-main/src/main/java/com/addthis/hydra/job/spawn/Spawn.java@com.addthis.hydra.job.spawn.Spawnhydra-main/src/main/java/com/addthis/hydra/job/spawn/Spawn.java@com.addthis.hydra.job.spawn.Spawnhydra-main/src/main/java/com/addthis/hydra/job/spawn/Spawn.java 138:2873
+Generation
+Move Attributehydra-main/src/main/java/com/addthis/hydra/job/spawn/Settings.java@private spawn : Spawnhydra-main/src/main/java/com/addthis/hydra/job/spawn/SystemManagerImpl.java@private spawn : Spawnhydra-main/src/main/java/com/addthis/hydra/job/spawn/Settings.java 13:13
+Generation
+Move Methodhydra-main/src/main/java/com/addthis/hydra/job/spawn/Spawn.java@public getSettings() : Settingshydra-main/src/main/java/com/addthis/hydra/job/spawn/SystemManagerImpl.java@public getSettings() : Settingshydra-main/src/main/java/com/addthis/hydra/job/spawn/Spawn.java 485:487
+Generation
+Add Method Annotationhydra-main/src/main/java/com/addthis/hydra/job/spawn/Spawn.java@public getSettings() : Settingshydra-main/src/main/java/com/addthis/hydra/job/spawn/SystemManagerImpl.java@@Overridehydra-main/src/main/java/com/addthis/hydra/job/spawn/Spawn.java 485:487
+Generation
+Move And Rename Methodhydra-main/src/main/java/com/addthis/hydra/job/spawn/Settings.java@public Settings(spawn Spawn)hydra-main/src/main/java/com/addthis/hydra/job/web/resources/SystemResource.java@public SystemResource(spawn Spawn)hydra-main/src/main/java/com/addthis/hydra/job/spawn/Settings.java 15:17
+******************************
+******************************
+coarse grained commits 292693b0d03cf44f86b7f68f2f208dfa369573ae
+fine grained commits ('6e51702f1338b24a9f0a7f87dbdd4b7b1e3fe771', '7b3ef63f856466dfb41accfbd04779d34857fab6', '85f34e25848b3562180a496ee0807a344db273bb', 'e9c642eccdde35b5a8ca7093581c23df8f8c2d30', '6ff2f2c7e6a20b68e7df1475db76e3e572f7382a')
+Generation
+Change Class Access Modifierhydra-main/src/main/java/com/addthis/hydra/query/web/AbstractHttpOutput.java@com.addthis.hydra.query.web.AbstractHttpOutputhydra-main/src/main/java/com/addthis/hydra/query/web/DataChannelOutputToNettyBridge.java@com.addthis.hydra.query.web.DataChannelOutputToNettyBridgehydra-main/src/main/java/com/addthis/hydra/query/web/AbstractHttpOutput.java 28:88
+Generation
+Remove Class Modifierhydra-main/src/main/java/com/addthis/hydra/query/web/AbstractHttpOutput.java@com.addthis.hydra.query.web.AbstractHttpOutputhydra-main/src/main/java/com/addthis/hydra/query/web/DataChannelOutputToNettyBridge.java@com.addthis.hydra.query.web.DataChannelOutputToNettyBridgehydra-main/src/main/java/com/addthis/hydra/query/web/AbstractHttpOutput.java 28:88
+Generation
+Inline Methodhydra-main/src/main/java/com/addthis/hydra/query/web/AbstractHttpOutput.java@protected writeStart() : voidhydra-main/src/main/java/com/addthis/hydra/query/web/DataChannelOutputToNettyBridge.java@public send(bundle Bundle) : voidhydra-main/src/main/java/com/addthis/hydra/query/web/AbstractHttpOutput.java 47:49
+Generation
+Change Method Access Modifierhydra-main/src/main/java/com/addthis/hydra/query/web/AbstractHttpOutput.java@package AbstractHttpOutput(ctx ChannelHandlerContext)hydra-main/src/main/java/com/addthis/hydra/query/web/DataChannelOutputToNettyBridge.java@public DataChannelOutputToNettyBridge(ctx ChannelHandlerContext)hydra-main/src/main/java/com/addthis/hydra/query/web/AbstractHttpOutput.java 40:45
+Generation
+Parameterize Attributehydra-main/src/main/java/com/addthis/hydra/query/web/AbstractHttpOutput.java@response : HttpResponsehydra-main/src/main/java/com/addthis/hydra/query/web/DataChannelOutputToNettyBridge.java@bundle : Bundlehydra-main/src/main/java/com/addthis/hydra/query/web/AbstractHttpOutput.java 34:34
+Generation
+Extract Superclasshydra-main/src/main/java/com/addthis/hydra/query/web/OutputDelimited.java@com.addthis.hydra.query.web.OutputDelimitedhydra-main/src/main/java/com/addthis/hydra/query/web/DelimitedBundleEncoder.java@com.addthis.hydra.query.web.DelimitedBundleEncoderhydra-main/src/main/java/com/addthis/hydra/query/web/OutputDelimited.java 13:80
+Generation
+Move Attributehydra-main/src/main/java/com/addthis/hydra/query/web/AbstractHttpOutput.java@protected response : HttpResponsehydra-main/src/main/java/com/addthis/hydra/query/web/AbstractHttpBundleEncoder.java@protected response : HttpResponsehydra-main/src/main/java/com/addthis/hydra/query/web/AbstractHttpOutput.java 34:34
+Generation
+Move Attributehydra-main/src/main/java/com/addthis/hydra/query/web/AbstractHttpOutput.java@protected startTime : longhydra-main/src/main/java/com/addthis/hydra/query/web/AbstractHttpBundleEncoder.java@protected startTime : longhydra-main/src/main/java/com/addthis/hydra/query/web/AbstractHttpOutput.java 35:35
+Generation
+Move Attributehydra-main/src/main/java/com/addthis/hydra/query/web/AbstractHttpOutput.java@protected writeStarted : booleanhydra-main/src/main/java/com/addthis/hydra/query/web/AbstractHttpBundleEncoder.java@protected writeStarted : booleanhydra-main/src/main/java/com/addthis/hydra/query/web/AbstractHttpOutput.java 38:38
+Generation
+Move Methodhydra-main/src/main/java/com/addthis/hydra/query/web/OutputHTML.java@public sendComplete() : voidhydra-main/src/main/java/com/addthis/hydra/query/web/HtmlBundleEncoder.java@public sendComplete(ctx ChannelHandlerContext) : voidhydra-main/src/main/java/com/addthis/hydra/query/web/OutputHTML.java 35:40
+Generation
+Move Methodhydra-main/src/main/java/com/addthis/hydra/query/web/OutputDelimited.java@public sendComplete() : voidhydra-main/src/main/java/com/addthis/hydra/query/web/AbstractHttpBundleEncoder.java@public sendComplete(ctx ChannelHandlerContext) : voidhydra-main/src/main/java/com/addthis/hydra/query/web/OutputDelimited.java 75:79
+******************************
+******************************
+coarse grained commits 9a6b6135a9be7d847ca3bd4bb036097a358132f0
+fine grained commits ('cdc86f06527d16f3df77eab3f909bd31d6d84541', 'fe0b90169af1e929ea340907319d0762d46a21fc', '85a0362894d938b3b70c9d05d82ab09db1e490eb', 'a525667c1961487cba9e8026f8178591ba3a3020', 'b83db6643a226d21640f448309e186b6e30ec549')
+Generation
+Rename Methodhydra-main/src/main/java/com/addthis/hydra/job/Spawn.java@public kickOnExistingHosts(job Job, task JobTask, config String, timeOnQueue long, allowSwap boolean, ignoreQuiesce boolean) : booleanhydra-main/src/main/java/com/addthis/hydra/job/Spawn.java@private jobTaskCanKick(job Job, task JobTask) : booleanhydra-main/src/main/java/com/addthis/hydra/job/Spawn.java 3035:3062
+Generation
+Rename Methodhydra-main/src/main/java/com/addthis/hydra/job/Spawn.java@private attemptKickTaskUsingSwap(job Job, task JobTask, isNewTask boolean, ignoreQuiesce boolean, timeOnQueue long) : booleanhydra-main/src/main/java/com/addthis/hydra/job/Spawn.java@public kickOnExistingHosts(job Job, task JobTask, config String, timeOnQueue long, allowSwap boolean) : booleanhydra-main/src/main/java/com/addthis/hydra/job/Spawn.java 3064:3089
+Generation
+Change Method Access Modifierhydra-main/src/main/java/com/addthis/hydra/job/Spawn.java@public kickOnExistingHosts(job Job, task JobTask, config String, timeOnQueue long, allowSwap boolean, ignoreQuiesce boolean) : booleanhydra-main/src/main/java/com/addthis/hydra/job/Spawn.java@private jobTaskCanKick(job Job, task JobTask) : booleanhydra-main/src/main/java/com/addthis/hydra/job/Spawn.java 3035:3062
+Generation
+Rename Parameterhydra-main/src/main/java/com/addthis/hydra/job/Spawn.java@isNewTask : booleanhydra-main/src/main/java/com/addthis/hydra/job/Spawn.java@allowSwap : booleanhydra-main/src/main/java/com/addthis/hydra/job/Spawn.java 3064:3064
+Generation
+Add Parameterhydra-main/src/main/java/com/addthis/hydra/job/Spawn.java@private attemptKickTaskUsingSwap(job Job, task JobTask, isNewTask boolean, ignoreQuiesce boolean, timeOnQueue long) : booleanhydra-main/src/main/java/com/addthis/hydra/job/Spawn.java@config : Stringhydra-main/src/main/java/com/addthis/hydra/job/Spawn.java 3064:3089
+Generation
+Change Method Access Modifierhydra-main/src/main/java/com/addthis/hydra/job/Spawn.java@private attemptKickTaskUsingSwap(job Job, task JobTask, isNewTask boolean, ignoreQuiesce boolean, timeOnQueue long) : booleanhydra-main/src/main/java/com/addthis/hydra/job/Spawn.java@public kickOnExistingHosts(job Job, task JobTask, config String, timeOnQueue long, allowSwap boolean) : booleanhydra-main/src/main/java/com/addthis/hydra/job/Spawn.java 3064:3089
+******************************
+******************************
+coarse grained commits e310d14d5a5ce5490995ce9cfc95b7af9df06796
+fine grained commits ('04f8f9bd35ae47589e8b30e373dc27ed1df92c5f', '740bcc13e2114dcff5b526eab8c66384245298ab', '3cb8f73390d006d1c3bf83b56e2c515eb4b68001', '9f17dcfbeb08a691f54ffab3b769566e266a68f9', 'ab400c5a668548a431e9d59704bc8fea9a37d104')
+Generation
+Move Attributehydra-task/src/main/java/com/addthis/hydra/task/source/AbstractStreamFileDataSource.java@private errored : AtomicBooleanhydra-task/src/main/java/com/addthis/hydra/task/source/AbstractStreamFileDataSource.java@protected errored : AtomicBooleanhydra-task/src/main/java/com/addthis/hydra/task/source/AbstractStreamFileDataSource.java 611:611
+Generation
+Move Attributehydra-task/src/main/java/com/addthis/hydra/task/source/DataSourceStreamList.java@package errored : AtomicBooleanhydra-task/src/main/java/com/addthis/hydra/task/source/AbstractStreamFileDataSource.java@protected errored : AtomicBooleanhydra-task/src/main/java/com/addthis/hydra/task/source/DataSourceStreamList.java 434:434
+Generation
+Change Attribute Access Modifierhydra-task/src/main/java/com/addthis/hydra/task/source/AbstractStreamFileDataSource.java@private errored : AtomicBooleanhydra-task/src/main/java/com/addthis/hydra/task/source/AbstractStreamFileDataSource.java@protected errored : AtomicBooleanhydra-task/src/main/java/com/addthis/hydra/task/source/AbstractStreamFileDataSource.java 611:611
+Generation
+Change Attribute Access Modifierhydra-task/src/main/java/com/addthis/hydra/task/source/DataSourceStreamList.java@package errored : AtomicBooleanhydra-task/src/main/java/com/addthis/hydra/task/source/AbstractStreamFileDataSource.java@protected errored : AtomicBooleanhydra-task/src/main/java/com/addthis/hydra/task/source/DataSourceStreamList.java 434:434
+******************************
+******************************
+coarse grained commits 5183839d52e559a27d4c2e33b3af95734dff1d4f
+fine grained commits ('f92df5b441ee83fe5a44cbf1954ab2f500f49bd9', '184fdd87559aaf96c454911ec697c68e50640a98', 'bd5cf4774f16f49e10002d30d7c69ebf03b777a9', 'dc0cce09585fd2996cc62995598ef6d9fd9d7879', 'e879e388f2ad6806a4f1737c6af441189e5b2986')
+Generation
+Change Thrown Exception Typehydra-main/src/main/java/com/addthis/hydra/query/web/QueryServer.java@Exceptionhydra-main/src/main/java/com/addthis/hydra/query/web/HttpUtils.java@IOExceptionhydra-main/src/main/java/com/addthis/hydra/query/web/QueryServer.java 186:186
+******************************
+******************************
+coarse grained commits 056e880572b19f1ec7c58bd6a82e6288a0e087e0
+fine grained commits ('cb4e22f369668fe512a58d23fdf89c0a88ce64f4', '117461970e79a88970a60bf42933112aa5e3a330', '78b34c7d34783c75a87365cbfa6e511cf84c8340', '0ced9f737de7b441a76cd0044107ea40dd67656c', '9706dc4cdedb749bd2d1dccc7824383bf657b7c8')
+Generation
+Extract And Move Methodhydra-main/src/main/java/com/addthis/hydra/job/Spawn.java@private stopTask(jobUUID String, taskID int, force boolean, onlyIfQueued boolean) : voidhydra-main/src/main/java/com/addthis/hydra/job/Minion.java@public setRebalanceSource(rebalanceSource String) : voidhydra-main/src/main/java/com/addthis/hydra/job/Spawn.java 1838:1887
+Generation
+Extract And Move Methodhydra-main/src/main/java/com/addthis/hydra/job/Spawn.java@private stopTask(jobUUID String, taskID int, force boolean, onlyIfQueued boolean) : voidhydra-main/src/main/java/com/addthis/hydra/job/Minion.java@public setRebalanceTarget(rebalanceTarget String) : voidhydra-main/src/main/java/com/addthis/hydra/job/Spawn.java 1838:1887
+******************************
+******************************
+coarse grained commits a823b7edf17d823157c224bb3d54293a68954803
+fine grained commits ('cb834544ffce2f5e60517e3f799eeeac15f54fa7', 'd0f1683f21bad3c13835b7eed74f91107d186cd9', '857a33f4cddab4989b38e90fa4e7325519d8781c', 'd04bffe8eac289002a9e1d9a69e31dc2d847951a', '5b8448d4f9546de4ea8f6a9b680d46dc2d38b615')
+Generation
+Extract Classhydra-main/src/main/java/com/addthis/hydra/query/util/MeshSourceAggregator.java@com.addthis.hydra.query.util.MeshSourceAggregator.AggregateHandlehydra-main/src/main/java/com/addthis/hydra/query/aggregate/AggregateHandle.java@com.addthis.hydra.query.aggregate.AggregateHandlehydra-main/src/main/java/com/addthis/hydra/query/util/MeshSourceAggregator.java 177:418
+******************************
+******************************
+coarse grained commits 0730bf2f99ef0623d6d17be14a3afc60632801e4
+fine grained commits ('117461970e79a88970a60bf42933112aa5e3a330', '78b34c7d34783c75a87365cbfa6e511cf84c8340', '0ced9f737de7b441a76cd0044107ea40dd67656c', '9706dc4cdedb749bd2d1dccc7824383bf657b7c8', 'f22d19503badf2984cb6b1bfa3a1e3af8d0924be')
+Generation
+Extract And Move Methodhydra-main/src/main/java/com/addthis/hydra/job/Spawn.java@private stopTask(jobUUID String, taskID int, force boolean, onlyIfQueued boolean) : voidhydra-main/src/main/java/com/addthis/hydra/job/JobTask.java@public setRebalanceTarget(rebalanceTarget String) : voidhydra-main/src/main/java/com/addthis/hydra/job/Spawn.java 1836:1881
+Generation
+Extract And Move Methodhydra-main/src/main/java/com/addthis/hydra/job/Spawn.java@private stopTask(jobUUID String, taskID int, force boolean, onlyIfQueued boolean) : voidhydra-main/src/main/java/com/addthis/hydra/job/JobTask.java@public setRebalanceSource(rebalanceSource String) : voidhydra-main/src/main/java/com/addthis/hydra/job/Spawn.java 1836:1881
+******************************
+******************************
+coarse grained commits 9c2bb8a3f9886e9ffe98bb27f5198a36295e581a
+fine grained commits ('4390e0d059c3c10e035ccfaa8c4d781e5a8c3e83', 'a83b8494d3899ddce2daf016d110224d95326b67', '5713a0eb496da845a21b2d7459716d60ab9dd0be', 'f92df5b441ee83fe5a44cbf1954ab2f500f49bd9', '184fdd87559aaf96c454911ec697c68e50640a98')
+Generation
+Move And Rename Classhydra-main/src/main/java/com/addthis/hydra/query/web/QueryServlet.java@com.addthis.hydra.query.web.QueryServlet.ServletConsumerhydra-main/src/main/java/com/addthis/hydra/query/web/AbstractHttpOutput.java@com.addthis.hydra.query.web.AbstractHttpOutputhydra-main/src/main/java/com/addthis/hydra/query/web/QueryServlet.java 230:289
+Generation
+Change Attribute Typehydra-main/src/main/java/com/addthis/hydra/query/web/QueryServlet.java@response : HttpServletResponsehydra-main/src/main/java/com/addthis/hydra/query/web/AbstractHttpOutput.java@response : HttpResponsehydra-main/src/main/java/com/addthis/hydra/query/web/QueryServlet.java 232:232
+Generation
+Change Attribute Access Modifierhydra-main/src/main/java/com/addthis/hydra/query/web/QueryServlet.java@package response : HttpServletResponsehydra-main/src/main/java/com/addthis/hydra/query/web/AbstractHttpOutput.java@protected response : HttpResponsehydra-main/src/main/java/com/addthis/hydra/query/web/QueryServlet.java 232:232
+Generation
+Add Attribute Modifierhydra-main/src/main/java/com/addthis/hydra/query/web/QueryServlet.java@package response : HttpServletResponsehydra-main/src/main/java/com/addthis/hydra/query/web/AbstractHttpOutput.java@protected response : HttpResponsehydra-main/src/main/java/com/addthis/hydra/query/web/QueryServlet.java 232:232
+Generation
+Change Attribute Access Modifierhydra-main/src/main/java/com/addthis/hydra/query/web/QueryServlet.java@package format : ListBundleFormathydra-main/src/main/java/com/addthis/hydra/query/web/AbstractHttpOutput.java@protected format : ListBundleFormathydra-main/src/main/java/com/addthis/hydra/query/web/QueryServlet.java 236:236
+Generation
+Change Attribute Access Modifierhydra-main/src/main/java/com/addthis/hydra/query/web/QueryServlet.java@package startTime : longhydra-main/src/main/java/com/addthis/hydra/query/web/AbstractHttpOutput.java@protected startTime : longhydra-main/src/main/java/com/addthis/hydra/query/web/QueryServlet.java 237:237
+Generation
+Change Variable Typehydra-main/src/main/java/com/addthis/hydra/query/web/QueryServlet.java@e : IOExceptionhydra-main/src/main/java/com/addthis/hydra/query/web/AbstractHttpOutput.java@e : Exceptionhydra-main/src/main/java/com/addthis/hydra/query/web/QueryServlet.java 274:274
+Generation
+Rename Attributehydra-main/src/main/java/com/addthis/hydra/query/web/QueryServlet.java@writer : PrintWriterhydra-main/src/main/java/com/addthis/hydra/query/web/AbstractHttpOutput.java@ctx : ChannelHandlerContexthydra-main/src/main/java/com/addthis/hydra/query/web/QueryServlet.java 233:233
+Generation
+Change Attribute Typehydra-main/src/main/java/com/addthis/hydra/query/web/QueryServlet.java@writer : PrintWriterhydra-main/src/main/java/com/addthis/hydra/query/web/AbstractHttpOutput.java@ctx : ChannelHandlerContexthydra-main/src/main/java/com/addthis/hydra/query/web/QueryServlet.java 233:233
+Generation
+Change Attribute Access Modifierhydra-main/src/main/java/com/addthis/hydra/query/web/QueryServlet.java@package writer : PrintWriterhydra-main/src/main/java/com/addthis/hydra/query/web/AbstractHttpOutput.java@protected ctx : ChannelHandlerContexthydra-main/src/main/java/com/addthis/hydra/query/web/QueryServlet.java 233:233
+Generation
+Add Attribute Modifierhydra-main/src/main/java/com/addthis/hydra/query/web/QueryServlet.java@package writer : PrintWriterhydra-main/src/main/java/com/addthis/hydra/query/web/AbstractHttpOutput.java@protected ctx : ChannelHandlerContexthydra-main/src/main/java/com/addthis/hydra/query/web/QueryServlet.java 233:233
+Generation
+Move Methodhydra-main/src/main/java/com/addthis/hydra/query/web/QueryServlet.java@public send(bundles List<Bundle>) : voidhydra-main/src/main/java/com/addthis/hydra/query/web/AbstractHttpOutput.java@public send(bundles List<Bundle>) : voidhydra-main/src/main/java/com/addthis/hydra/query/web/QueryServlet.java 348:355
+Generation
+Move Methodhydra-main/src/main/java/com/addthis/hydra/query/web/QueryServlet.java@public send(bundles List<Bundle>) : voidhydra-main/src/main/java/com/addthis/hydra/query/web/AbstractHttpOutput.java@public send(bundles List<Bundle>) : voidhydra-main/src/main/java/com/addthis/hydra/query/web/QueryServlet.java 431:438
+Generation
+Move Methodhydra-main/src/main/java/com/addthis/hydra/query/web/QueryServlet.java@public send(bundles List<Bundle>) : voidhydra-main/src/main/java/com/addthis/hydra/query/web/AbstractHttpOutput.java@public send(bundles List<Bundle>) : voidhydra-main/src/main/java/com/addthis/hydra/query/web/QueryServlet.java 463:470
+******************************

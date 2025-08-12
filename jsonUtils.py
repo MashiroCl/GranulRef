@@ -23,6 +23,7 @@ class JsonUtils:
         self.jsonPath = path
 
     'Get json format git commit info'
+
     def gitJson(self):
         if self.jsonPath == None:
             self.setJsonPath(self.repoPath + "/gitLog.json")
@@ -31,17 +32,19 @@ class JsonUtils:
         os.system('git -C ' + self.repoPath + ' log ' + prettyFormat + " >" + self.jsonPath)
 
     'Read json file and return commit list'
+
     def jsonToCommit(self) -> list:
         with open(self.jsonPath, errors="ignore") as f:
             print(self.jsonPath)
-            data = json.loads("[" + f.read() + "]")
+            data = json.loads("[" + f.read().replace("\\", "\\\\") + "]", strict=False)
         commits = []
         for each in data:
             commits.append(Commit(each))
         return commits
 
     'write recipe in json format'
-    def writeRecipe(self, lists:List[List[str]], path):
+
+    def writeRecipe(self, lists: List[List[str]], path):
         recipe = {}
         recipe["forcedClusters"] = []
         for each in lists:

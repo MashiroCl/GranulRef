@@ -5,7 +5,7 @@ commit graph class, contains commits extracted from a repository
 from commitProcess.Commit import Commit
 
 
-class CommitGraph():
+class CommitGraph:
     def __init__(self, commits: list):
         self.commits = commits
         self.num = len(commits)
@@ -103,12 +103,12 @@ class CommitGraph():
 
     def clusterList(self, l: list, num: int):
         res = list()
-        if (len(l) < num):
+        if len(l) < num:
             temp = []
             for x in l:
                 temp.append([x])
             res.append(temp)
-        elif (len(l) == num):
+        elif len(l) == num:
             res.append(l)
         else:
             for i in range(num):

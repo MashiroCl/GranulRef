@@ -1,0 +1,28 @@
+******************************
+coarse grained commits 9c49a38f9af5141ffc54755363416d6da69a21b9
+fine grained commits ('2569560e87fb20b08e2578489e123dee5aed8e0d', 'beb0a16d4b4bb24d0fb23873a96c6a85eedde0ac')
+Generation
+Rename Attributesrc/main/java/com/squareup/javawriter/AnonymousClassWriter.java@methodWriters : List<MethodWriter>src/main/java/com/squareup/javawriter/AnonymousClassWriter.java@body : ClassBodyWritersrc/main/java/com/squareup/javawriter/AnonymousClassWriter.java 27:27
+Generation
+Change Attribute Typesrc/main/java/com/squareup/javawriter/AnonymousClassWriter.java@methodWriters : List<MethodWriter>src/main/java/com/squareup/javawriter/AnonymousClassWriter.java@body : ClassBodyWritersrc/main/java/com/squareup/javawriter/AnonymousClassWriter.java 27:27
+Generation
+Replace Variable With Attributesrc/main/java/com/squareup/javawriter/AnonymousClassWriter.java@methodWriter : MethodWritersrc/main/java/com/squareup/javawriter/AnonymousClassWriter.java@body : ClassBodyWritersrc/main/java/com/squareup/javawriter/AnonymousClassWriter.java 117:117
+Generation
+Change Variable Typesrc/main/java/com/squareup/javawriter/AnonymousClassWriter.java@methodWriter : MethodWritersrc/main/java/com/squareup/javawriter/AnonymousClassWriter.java@body : ClassBodyWritersrc/main/java/com/squareup/javawriter/AnonymousClassWriter.java 117:117
+******************************
+******************************
+coarse grained commits 7779023aeac0fc9aec5cf84ea5f70398cc3c1619
+fine grained commits ('4abdcb67702047de9e8cde306a79ad0c9d4a2877', 'c4c105f2cf5536ee4f9756a82c6f4af303fbf442', '7f3ac27d7369f263a583f275bf6ecdaa601815d2')
+Generation
+Pull Up Attributecompiler/src/main/java/dagger/internal/codegen/writer/InterfaceWriter.java@private nestedTypeWriters : List<TypeWriter>compiler/src/main/java/dagger/internal/codegen/writer/TypeWriter.java@package nestedTypeWriters : List<TypeWriter>compiler/src/main/java/dagger/internal/codegen/writer/InterfaceWriter.java 15:15
+Generation
+Change Attribute Access Modifiercompiler/src/main/java/dagger/internal/codegen/writer/InterfaceWriter.java@private nestedTypeWriters : List<TypeWriter>compiler/src/main/java/dagger/internal/codegen/writer/TypeWriter.java@package nestedTypeWriters : List<TypeWriter>compiler/src/main/java/dagger/internal/codegen/writer/InterfaceWriter.java 15:15
+******************************
+******************************
+coarse grained commits b141774e0020f0423c946179ff32692cf56d44bc
+fine grained commits ('838c38dfd1732c5d7022176f7c2a34faf9c24e02', '8ecd4aaa510622230f7ee5fd876027e7de48e9c4', '5cbd956726291293cb507de56ad673669cd9e994', 'e0893f5759a5d6fe83847d869a3978a4b5ff53ab', '26c62c91f4ab60bf33bc1337c4b7705a9b114494')
+Generation
+Pull Up Attributecompiler/src/main/java/dagger/internal/codegen/writer/InterfaceWriter.java@private methodWriters : List<MethodWriter>compiler/src/main/java/dagger/internal/codegen/writer/TypeWriter.java@package methodWriters : List<MethodWriter>compiler/src/main/java/dagger/internal/codegen/writer/InterfaceWriter.java 14:14
+Generation
+Change Attribute Access Modifiercompiler/src/main/java/dagger/internal/codegen/writer/InterfaceWriter.java@private methodWriters : List<MethodWriter>compiler/src/main/java/dagger/internal/codegen/writer/TypeWriter.java@package methodWriters : List<MethodWriter>compiler/src/main/java/dagger/internal/codegen/writer/InterfaceWriter.java 14:14
+******************************

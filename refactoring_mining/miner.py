@@ -10,7 +10,11 @@ import shutil
 class Miner:
     def __init__(self, path):
         self.path = path
+
     def detect(self, repository, output, commitID: str):
+        pass
+
+    def detectRepository(self, repository, output, logger):
         pass
 
 
@@ -28,6 +32,18 @@ class RefactoringMiner(Miner):
         :return: output json file path
         '''
         command = self.RMPath + ' -c ' + repository + ' ' + commitID + ' -json ' + output + "/" + commitID + ".json"
+        os.system(command)
+
+    def detectRepository(self, repository, output, logger):
+        '''
+        use RefactoringMiner to detect refactoring in all commits in repository
+        :param repository:
+        :param output:
+        :return:
+        '''
+        "-a <git-repo-folder> <branch> -json <path-to-json-file>	"
+        command = self.RMPath + ' -a ' + repository + ' ' + ' -json ' + output + "/" + "refs.json"
+        logger.info(command)
         os.system(command)
 
 
@@ -55,3 +71,7 @@ class RefDiff(Miner):
         command = f"java -jar {self.RDpath} -r {repo_root} -n {repo_name} -o {output} -c {commitID}"
         os.system(command)
 
+
+if __name__ == "__main__":
+    path = "/Users/leichen/Code/pythonProject/pythonProject/pythonProject/SCRMDetection/experiment/output/result/my-refactoring-toy-example/2/refs"
+    remove_redundant_git_files(os.path.dirname(path))

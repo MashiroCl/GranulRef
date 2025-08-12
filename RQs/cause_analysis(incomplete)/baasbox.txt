@@ -1,0 +1,66 @@
+******************************
+coarse grained commits a6221520da787c7208ec19849d20c98aef019eef
+fine grained commits ('90bbac06f9fd727654593d26dd1f52478f3f351b', 'bba3c5366e1633c61547b3b9f89db730787280a4')
+Generation
+Rename Attributeapp/com/baasbox/controllers/CustomHttpCode.java@PUSH_PROFILE_ARRAY_EXCEPTION : CustomHttpCodeapp/com/baasbox/controllers/CustomHttpCode.java@PUSH_PROFILE_FORMAT_INVALID : CustomHttpCodeapp/com/baasbox/controllers/CustomHttpCode.java 18:18
+******************************
+******************************
+coarse grained commits ee08c5840f1e51d09c40a2d8a18b30189b8493a7
+fine grained commits ('572f72377ec96ab4947033883d925e9d8cdcbc6d', 'f9dd3effcc9c0d65010d11bc0929a418105d0bc7')
+Generation
+Rename Methodapp/com/baasbox/configuration/PushProfile.java@public PushProfile(iprofileName String, iPush Push)app/com/baasbox/configuration/PushProfile.java@public addElement(iprofileName String, iPush Push) : voidapp/com/baasbox/configuration/PushProfile.java 23:29
+Generation
+Add Method Modifierapp/com/baasbox/configuration/PushProfile.java@public PushProfile(iprofileName String, iPush Push)app/com/baasbox/configuration/PushProfile.java@public addElement(iprofileName String, iPush Push) : voidapp/com/baasbox/configuration/PushProfile.java 23:29
+******************************
+******************************
+coarse grained commits 759647128704e8ad1bdd464c0dd6e946afdb8d6c
+fine grained commits ('3e2c831ad0751cf43f3250149a22fc24f8fea4cb', '9690794a0cfb58604a85742ae44aece111b98889')
+Generation
+Extract And Move Methodapp/com/baasbox/controllers/Social.java@public loginWith(socialNetwork String) : Resultapp/com/baasbox/service/sociallogin/FacebookLoginService.java@public getPrefix() : Stringapp/com/baasbox/controllers/Social.java 58:131
+Generation
+Extract And Move Methodapp/com/baasbox/controllers/Social.java@public loginWith(socialNetwork String) : Resultapp/com/baasbox/service/sociallogin/UserInfo.java@public setGeneratedUsername(generatedUsername boolean) : voidapp/com/baasbox/controllers/Social.java 58:131
+******************************
+******************************
+coarse grained commits 79dd7cbd098968398747622124242d98e847469e
+fine grained commits ('9c174757cf1a9ca033847c8bf39811274058e8f7', '79c123683ac36392da776cc1df4b970b757bfabe')
+Generation
+Rename Methodtest/RoleFunctionalTest.java@public getRouteForObjects() : Stringtest/RoleFunctionalTest.java@public getFakeUserAddress() : Stringtest/RoleFunctionalTest.java 51:53
+Generation
+Rename Methodtest/RoleFunctionalTest.java@public testDropCollectionCreate() : voidtest/RoleFunctionalTest.java@public testRoleCreate() : voidtest/RoleFunctionalTest.java 61:135
+Generation
+Rename Variabletest/RoleFunctionalTest.java@sFakeCollection : Stringtest/RoleFunctionalTest.java@sFakeRole : Stringtest/RoleFunctionalTest.java 69:69
+Generation
+Rename Variabletest/RoleFunctionalTest.java@sFakeCollectionCount : Stringtest/RoleFunctionalTest.java@sFakeCheckUser : Stringtest/RoleFunctionalTest.java 88:88
+Generation
+Extract Variabletest/RoleFunctionalTest.java@test/RoleFunctionalTest.java@sFakeCheckUser : Stringtest/RoleFunctionalTest.java 65:134
+******************************
+******************************
+coarse grained commits 3991ce8a02d99d25db20b3c7c1adb4bf32afcbac
+fine grained commits ('3788cedc6efe0aa23b7f6ff0dcb891a79a4d1f81', 'c4822525b1d8a1690a4fb732aad3c60192f625cf', '514effbabf0383aa0cbfa9956930ffddc4449c8f')
+Generation
+Change Variable Typeapp/com/baasbox/db/DbHelper.java@dbg : OGraphDatabaseapp/com/baasbox/db/DbHelper.java@db : ODatabaseRecordTxapp/com/baasbox/db/DbHelper.java 324:324
+Generation
+Rename Variableapp/com/baasbox/db/DbHelper.java@dbg : OGraphDatabaseapp/com/baasbox/db/DbHelper.java@db : ODatabaseRecordTxapp/com/baasbox/db/DbHelper.java 324:324
+******************************
+******************************
+coarse grained commits 02597e7e86c921af1f21a4d3bd1e3e065da47c7f
+fine grained commits ('82ffa02395530d95def4bffc9e57b39402028f45', '9c174757cf1a9ca033847c8bf39811274058e8f7', '79c123683ac36392da776cc1df4b970b757bfabe')
+Generation
+Change Variable Typetest/RoleFunctionalTest.java@e : JsonProcessingExceptiontest/RoleFunctionalTest.java@e : Exceptiontest/RoleFunctionalTest.java 126:126
+Generation
+Rename Variabletest/RoleFunctionalTest.java@sFakeInsertObjects : Stringtest/RoleFunctionalTest.java@sFakeCreateUser : Stringtest/RoleFunctionalTest.java 76:76
+Generation
+Rename Variabletest/RoleFunctionalTest.java@payload : JsonNodetest/RoleFunctionalTest.java@actualObj : JsonNodetest/RoleFunctionalTest.java 77:77
+******************************
+******************************
+coarse grained commits ad465df9d57e5d83cc4357a4b58b701539a12027
+fine grained commits ('154b3741bb04ee5ab6a64872e8ba88dc5c85ce4d', 'b233ee3bece22ac044484a94f7569323cab3a2c0', '4376b6c37a6c5c84e30e42445a41876d90732dce', '378733cb3f3fd5b59d7e3a251263d1d511ee50a3')
+Generation
+Rename Classapp/com/baasbox/controllers/actions/filters/AdminLogin.java@com.baasbox.controllers.actions.filters.AdminLoginapp/com/baasbox/controllers/actions/filters/CheckAdminRoleFilter.java@com.baasbox.controllers.actions.filters.CheckAdminRoleFilterapp/com/baasbox/controllers/actions/filters/AdminLogin.java 14:34
+Generation
+Rename Classapp/com/baasbox/controllers/actions/filters/BasicAuthHeader.java@com.baasbox.controllers.actions.filters.BasicAuthHeaderapp/com/baasbox/controllers/actions/filters/AdminCredentialWrapFilter.java@com.baasbox.controllers.actions.filters.AdminCredentialWrapFilterapp/com/baasbox/controllers/actions/filters/BasicAuthHeader.java 12:52
+Generation
+Split Classapp/com/baasbox/controllers/actions/filters/CheckAPPCode.java@com.baasbox.controllers.actions.filters.CheckAPPCodeapp/com/baasbox/controllers/actions/filters/AnonymousCredentialWrapFilter.java@com.baasbox.controllers.actions.filters.AnonymousCredentialWrapFilterapp/com/baasbox/controllers/actions/filters/CheckAPPCode.java 15:39
+Generation
+Rename Variableapp/com/baasbox/controllers/actions/filters/BasicAuthHeader.java@password : Stringapp/com/baasbox/controllers/actions/filters/AdminCredentialWrapFilter.java@adminPassword : Stringapp/com/baasbox/controllers/actions/filters/BasicAuthHeader.java 24:24
+******************************

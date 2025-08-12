@@ -1,0 +1,392 @@
+******************************
+coarse grained commits 9d692740ac589c719ee3ca1c2534d1590d3e5624
+fine grained commits ('ee60b3ae84685cdd76890a45698f88ded7d28d03', 'e6a2c4f7b64f76d478b6ebfe02b8a3a5f078598b')
+Generation
+Merge Parameterzuul-core/src/main/java/com/netflix/zuul/netty/connectionpool/DefaultClientChannelManager.java@stats : ServerStatszuul-core/src/main/java/com/netflix/zuul/netty/connectionpool/DefaultClientChannelManager.java@originServer : OriginServerzuul-core/src/main/java/com/netflix/zuul/netty/connectionpool/DefaultClientChannelManager.java 339:339
+Generation
+Merge Parameterzuul-core/src/main/java/com/netflix/zuul/netty/connectionpool/PerServerConnectionPool.java@stats : ServerStatszuul-core/src/main/java/com/netflix/zuul/netty/connectionpool/PerServerConnectionPool.java@server : OriginServerzuul-core/src/main/java/com/netflix/zuul/netty/connectionpool/PerServerConnectionPool.java 59:59
+Generation
+Merge Attributezuul-core/src/main/java/com/netflix/zuul/netty/connectionpool/PerServerConnectionPool.java@stats : ServerStatszuul-core/src/main/java/com/netflix/zuul/netty/connectionpool/PerServerConnectionPool.java@server : OriginServerzuul-core/src/main/java/com/netflix/zuul/netty/connectionpool/PerServerConnectionPool.java 36:36
+Generation
+Change Variable Typezuul-core/src/main/java/com/netflix/zuul/niws/RequestAttempt.java@instanceInfo : InstanceInfozuul-core/src/main/java/com/netflix/zuul/niws/RequestAttempt.java@server : OriginServerzuul-core/src/main/java/com/netflix/zuul/niws/RequestAttempt.java 91:91
+Generation
+Add Parameter Modifierzuul-core/src/main/java/com/netflix/zuul/niws/RequestAttempt.java@instanceInfo : InstanceInfozuul-core/src/main/java/com/netflix/zuul/niws/RequestAttempt.java@server : OriginServerzuul-core/src/main/java/com/netflix/zuul/niws/RequestAttempt.java 91:91
+Generation
+Parameterize Variablezuul-core/src/main/java/com/netflix/zuul/niws/RequestAttempt.java@instanceInfo : InstanceInfozuul-core/src/main/java/com/netflix/zuul/niws/RequestAttempt.java@server : OriginServerzuul-core/src/main/java/com/netflix/zuul/niws/RequestAttempt.java 91:91
+******************************
+******************************
+coarse grained commits affa98ba771df51a9c0b4913eb2d5c12d6838c7f
+fine grained commits ('6893d5fec84abb9581998b48e227793361a57302', '03712c383c0be149effd3a68cf0debd9c027a081')
+Generation
+Move And Rename Classzuul-guice/src/test/java/com/netflix/zuul/guice/BaseInjectionTest.java@com.netflix.zuul.guice.BaseInjectionTestzuul-guice/src/test/java/com/netflix/zuul/BaseInjectionIntegTest.java@com.netflix.zuul.BaseInjectionIntegTestzuul-guice/src/test/java/com/netflix/zuul/guice/BaseInjectionTest.java 21:28
+Generation
+Add Class Modifierzuul-guice/src/test/java/com/netflix/zuul/guice/BaseInjectionTest.java@com.netflix.zuul.guice.BaseInjectionTestzuul-guice/src/test/java/com/netflix/zuul/BaseInjectionIntegTest.java@com.netflix.zuul.BaseInjectionIntegTestzuul-guice/src/test/java/com/netflix/zuul/guice/BaseInjectionTest.java 21:28
+******************************
+******************************
+coarse grained commits 88cc536b1ea2822b8a885b7e4eb23fe9dd244df4
+fine grained commits ('2d30802e7f9684e79f601ff806d4eb3a2c309445', 'bb99d80646d8905778b3bbd43645c0dec5624edb')
+Generation
+Push Down Methodzuul-core/src/main/java/com/netflix/zuul/FilterLoader.java@public getFilter(sCode String, sName String) : ZuulFilter<?,?>zuul-core/src/main/java/com/netflix/zuul/DynamicFilterLoader.java@public getFilter(sourceCode String, filterName String) : ZuulFilter<?,?>zuul-core/src/main/java/com/netflix/zuul/FilterLoader.java 47:64
+******************************
+******************************
+coarse grained commits 3fa9b342304c244a862b0946ca17042e7a04e2ed
+fine grained commits ('d14a82dc1c0d4a4f756ae5708362d661ff2c3b2f', 'e2ecb56155541c97cfc97da40372b98ce4d06250')
+Generation
+Remove Parameterzuul-core/src/main/java/com/netflix/zuul/message/http/HttpRequestMessageImpl.java@clientRemoteAddress : SocketAddresszuul-core/src/main/java/com/netflix/zuul/message/http/HttpRequestMessageImpl.java@public HttpRequestMessageImpl(context SessionContext, protocol String, method String, path String, queryParams HttpQueryParams, headers Headers, clientIp String, scheme String, port int, serverName String)zuul-core/src/main/java/com/netflix/zuul/message/http/HttpRequestMessageImpl.java 79:79
+******************************
+******************************
+coarse grained commits 7127382ed035b1929dcbc913f6903986a8492584
+fine grained commits ('3628e148b1a49dc8213bb460886eaace133e379b', '4a0785b9eca72b5fd566317c280a79c293fbb838')
+Generation
+Extract And Move Methodzuul-sample/src/main/java/com/netflix/zuul/sample/SampleServerStartup.java@protected choosePortsAndChannels(clientChannels ChannelGroup) : Map<Integer,ChannelInitializer>zuul-core/src/main/java/com/netflix/zuul/netty/server/BaseServerStartup.java@protected logPortConfigured(port int) : voidzuul-sample/src/main/java/com/netflix/zuul/sample/SampleServerStartup.java 67:165
+******************************
+******************************
+coarse grained commits 079be62e993d09b3961d544891626d58157345b4
+fine grained commits ('d63b05e83ea8d0a171d41a7082de3d7deead5214', 'cb3f37dd4355957ade32cfcc1d562ea4098594db')
+Generation
+Extract Classzuul-core/src/main/java/com/netflix/zuul/context/HttpResponseInfo.java@com.netflix.zuul.context.HttpResponseInfozuul-core/src/main/java/com/netflix/zuul/context/HttpResponseInfo.java@com.netflix.zuul.context.HttpResponseInfozuul-core/src/main/java/com/netflix/zuul/context/HttpResponseInfo.java 3:23
+Generation
+Move Attributezuul-core/src/main/java/com/netflix/zuul/context/HttpResponseInfo.java@private headers : Headerszuul-core/src/main/java/com/netflix/zuul/context/ZuulMessageImpl.java@protected headers : Headerszuul-core/src/main/java/com/netflix/zuul/context/HttpResponseInfo.java 6:6
+Generation
+Change Attribute Access Modifierzuul-core/src/main/java/com/netflix/zuul/context/HttpResponseInfo.java@private headers : Headerszuul-core/src/main/java/com/netflix/zuul/context/ZuulMessageImpl.java@protected headers : Headerszuul-core/src/main/java/com/netflix/zuul/context/HttpResponseInfo.java 6:6
+Generation
+Remove Attribute Modifierzuul-core/src/main/java/com/netflix/zuul/context/HttpResponseInfo.java@private headers : Headerszuul-core/src/main/java/com/netflix/zuul/context/ZuulMessageImpl.java@protected headers : Headerszuul-core/src/main/java/com/netflix/zuul/context/HttpResponseInfo.java 6:6
+Generation
+Move Methodzuul-core/src/main/java/com/netflix/zuul/context/HttpResponseInfo.java@public getHeaders() : Headerszuul-core/src/main/java/com/netflix/zuul/context/HttpResponseMessageImpl.java@public getHeaders() : Headerszuul-core/src/main/java/com/netflix/zuul/context/HttpResponseInfo.java 19:22
+Generation
+Add Method Annotationzuul-core/src/main/java/com/netflix/zuul/context/HttpResponseInfo.java@public getHeaders() : Headerszuul-core/src/main/java/com/netflix/zuul/context/HttpResponseMessageImpl.java@@Overridezuul-core/src/main/java/com/netflix/zuul/context/HttpResponseInfo.java 19:22
+Generation
+Move Methodzuul-core/src/main/java/com/netflix/zuul/context/HttpResponseInfo.java@public getStatus() : intzuul-core/src/main/java/com/netflix/zuul/context/HttpResponseMessageImpl.java@public getStatus() : intzuul-core/src/main/java/com/netflix/zuul/context/HttpResponseInfo.java 14:17
+Generation
+Add Method Annotationzuul-core/src/main/java/com/netflix/zuul/context/HttpResponseInfo.java@public getStatus() : intzuul-core/src/main/java/com/netflix/zuul/context/HttpResponseMessageImpl.java@@Overridezuul-core/src/main/java/com/netflix/zuul/context/HttpResponseInfo.java 14:17
+Generation
+Move Attributezuul-core/src/main/java/com/netflix/zuul/context/HttpResponseInfo.java@private status : intzuul-core/src/main/java/com/netflix/zuul/context/HttpResponseMessageImpl.java@private status : intzuul-core/src/main/java/com/netflix/zuul/context/HttpResponseInfo.java 5:5
+Generation
+Remove Attribute Modifierzuul-core/src/main/java/com/netflix/zuul/context/HttpResponseInfo.java@private status : intzuul-core/src/main/java/com/netflix/zuul/context/HttpResponseMessageImpl.java@private status : intzuul-core/src/main/java/com/netflix/zuul/context/HttpResponseInfo.java 5:5
+Generation
+Add Parameterzuul-core/src/main/java/com/netflix/zuul/context/HttpRequestMessage.java@public storeOriginalRequestInfo() : voidzuul-core/src/main/java/com/netflix/zuul/context/HttpRequestMessageImpl.java@clientIp : Stringzuul-core/src/main/java/com/netflix/zuul/context/HttpRequestMessage.java 169:172
+Generation
+Add Parameterzuul-core/src/main/java/com/netflix/zuul/context/HttpRequestMessage.java@public storeOriginalRequestInfo() : voidzuul-core/src/main/java/com/netflix/zuul/context/HttpRequestMessageImpl.java@serverName : Stringzuul-core/src/main/java/com/netflix/zuul/context/HttpRequestMessage.java 169:172
+Generation
+Add Parameterzuul-core/src/main/java/com/netflix/zuul/context/HttpRequestMessage.java@public storeOriginalRequestInfo() : voidzuul-core/src/main/java/com/netflix/zuul/context/HttpRequestMessageImpl.java@method : Stringzuul-core/src/main/java/com/netflix/zuul/context/HttpRequestMessage.java 169:172
+Generation
+Add Parameterzuul-core/src/main/java/com/netflix/zuul/context/HttpRequestMessage.java@public storeOriginalRequestInfo() : voidzuul-core/src/main/java/com/netflix/zuul/context/HttpRequestMessageImpl.java@path : Stringzuul-core/src/main/java/com/netflix/zuul/context/HttpRequestMessage.java 169:172
+Generation
+Add Parameterzuul-core/src/main/java/com/netflix/zuul/context/HttpRequestMessage.java@public storeOriginalRequestInfo() : voidzuul-core/src/main/java/com/netflix/zuul/context/HttpRequestMessageImpl.java@scheme : Stringzuul-core/src/main/java/com/netflix/zuul/context/HttpRequestMessage.java 169:172
+Generation
+Add Parameterzuul-core/src/main/java/com/netflix/zuul/context/HttpRequestMessage.java@public storeOriginalRequestInfo() : voidzuul-core/src/main/java/com/netflix/zuul/context/HttpRequestMessageImpl.java@protocol : Stringzuul-core/src/main/java/com/netflix/zuul/context/HttpRequestMessage.java 169:172
+Generation
+Add Parameterzuul-core/src/main/java/com/netflix/zuul/context/HttpRequestMessage.java@public storeOriginalRequestInfo() : voidzuul-core/src/main/java/com/netflix/zuul/context/HttpRequestMessageImpl.java@port : intzuul-core/src/main/java/com/netflix/zuul/context/HttpRequestMessage.java 169:172
+Generation
+Push Down Methodzuul-core/src/main/java/com/netflix/zuul/context/HttpResponseMessage.java@public HttpResponseMessage(context SessionContext, request HttpRequestMessage, defaultStatus int)zuul-core/src/main/java/com/netflix/zuul/context/HttpResponseMessageImpl.java@public HttpResponseMessageImpl(context SessionContext, request HttpRequestMessage, defaultStatus int)zuul-core/src/main/java/com/netflix/zuul/context/HttpResponseMessage.java 20:25
+Generation
+Push Down Methodzuul-core/src/main/java/com/netflix/zuul/context/HttpResponseMessage.java@public HttpResponseMessage(context SessionContext, headers Headers, request HttpRequestMessage, status int)zuul-core/src/main/java/com/netflix/zuul/context/HttpResponseMessageImpl.java@public HttpResponseMessageImpl(context SessionContext, headers Headers, request HttpRequestMessage, status int)zuul-core/src/main/java/com/netflix/zuul/context/HttpResponseMessage.java 27:31
+Generation
+Add Parameterzuul-core/src/main/java/com/netflix/zuul/context/HttpResponseMessage.java@public storeOriginalResponseInfo() : voidzuul-core/src/main/java/com/netflix/zuul/context/HttpResponseMessageImpl.java@status : intzuul-core/src/main/java/com/netflix/zuul/context/HttpResponseMessage.java 109:112
+Generation
+Remove Parameterzuul-core/src/main/java/com/netflix/zuul/context/ZuulMessage.java@headers : Headerszuul-core/src/main/java/com/netflix/zuul/context/ZuulMessageImpl.java@public ZuulMessageImpl(context SessionContext)zuul-core/src/main/java/com/netflix/zuul/context/ZuulMessage.java 33:33
+******************************
+******************************
+coarse grained commits c9eaab89094fbec6d496f997aa27b89631e93fcd
+fine grained commits ('9c6ed6d0b95b0293bc978c7f31832e1cef6179ee', '79163dbfb5e4e38a95678a3295255cb52be86139')
+Generation
+Move And Inline Methodzuul-core/src/main/java/com/netflix/zuul/context/ZuulMessage.java@public getAttributes() : Attributeszuul-core/src/main/java/com/netflix/zuul/FilterProcessor.java@public applyEndpointFilter(chain Observable<ZuulMessage>) : Observable<ZuulMessage>zuul-core/src/main/java/com/netflix/zuul/context/ZuulMessage.java 28:30
+******************************
+******************************
+coarse grained commits 921b25e5ddeb26064f82501ca55a2dff10fc36f6
+fine grained commits ('a74099c4107dfb7258e13776a0ea324dfa8f67a5', '1240ebc83afd39e7dbc8f654a60b9f3df4c34144')
+Generation
+Move Classzuul-servlet-api/src/main/java/com/netflix/zuul/http/HttpServletResponseWrapper.java@com.netflix.zuul.http.HttpServletResponseWrapperzuul-servlet-api/src/main/java/com/netflix/zuul/servlet/HttpServletResponseWrapper.java@com.netflix.zuul.servlet.HttpServletResponseWrapperzuul-servlet-api/src/main/java/com/netflix/zuul/http/HttpServletResponseWrapper.java 5:27
+Generation
+Merge Packagezuul-servlet-api/src/main/java/com/netflix/zuul/http/HttpServletResponseWrapper.java@com.netflix.zuul.http.HttpServletResponseWrapperzuul-servlet-api/src/main/java/com/netflix/zuul/servlet/HttpServletResponseWrapper.java@com.netflix.zuul.servlet.HttpServletResponseWrapperzuul-servlet-api/src/main/java/com/netflix/zuul/http/HttpServletResponseWrapper.java 5:27
+******************************
+******************************
+coarse grained commits 030878b2c854ac30542cd18d41e3a9961dfad46f
+fine grained commits ('593217a40bdd64946c590fe72a3a1a5374aaa43e', '1afe7c29da5e33cab2738759d0194fd0b4f9dae9')
+Generation
+Add Method Annotationzuul-core/src/main/java/com/netflix/zuul/FilterProcessor.java@public notifyUsage(filter ZuulFilter, status ExecutionStatus) : voidzuul-core/src/main/java/com/netflix/zuul/FilterProcessor.java@@Overridezuul-core/src/main/java/com/netflix/zuul/FilterProcessor.java 155:158
+Generation
+Move And Rename Methodzuul-core/src/main/java/com/netflix/zuul/FilterProcessor.java@public notifyUsage(filter ZuulFilter, status ExecutionStatus) : voidzuul-core/src/main/java/com/netflix/zuul/FilterProcessor.java@public notify(filter ZuulFilter, status ExecutionStatus) : voidzuul-core/src/main/java/com/netflix/zuul/FilterProcessor.java 155:158
+******************************
+******************************
+coarse grained commits d4cf25751f23d41b57a89588266028a87850a449
+fine grained commits ('7e90aa76fcf942fbff2aa030e7cfff51082a209d', '6fef98046c64a9fb267b49aff1ef08e18650ece7')
+Generation
+Extract Variablezuul-core/src/main/java/com/netflix/zuul/passport/CurrentPassport.java@zuul-core/src/main/java/com/netflix/zuul/passport/CurrentPassport.java@ownerStack : Stringzuul-core/src/main/java/com/netflix/zuul/passport/CurrentPassport.java 68:70
+******************************
+******************************
+coarse grained commits ef04914f5880f954626e63dcbf7452f0b33429b1
+fine grained commits ('c33be8b86be6c6361a30e9a581d8c18c3187f2cb', 'bd22c0ad49a92b42ae8bf8d17606bfdb85b392fe')
+Generation
+Push Down Methodzuul-core/src/main/java/io/netty/handler/codec/http2/Http2FrameLogger.java@public logPing(direction Direction, ctx ChannelHandlerContext, data ByteBuf) : voidzuul-core/src/main/java/com/netflix/netty/common/http2/DynamicHttp2FrameLogger.java@public logPing(direction Direction, ctx ChannelHandlerContext, data long) : voidzuul-core/src/main/java/io/netty/handler/codec/http2/Http2FrameLogger.java 101:106
+Generation
+Push Down Methodzuul-core/src/main/java/io/netty/handler/codec/http2/Http2FrameLogger.java@public logPingAck(direction Direction, ctx ChannelHandlerContext, data ByteBuf) : voidzuul-core/src/main/java/com/netflix/netty/common/http2/DynamicHttp2FrameLogger.java@public logPingAck(direction Direction, ctx ChannelHandlerContext, data long) : voidzuul-core/src/main/java/io/netty/handler/codec/http2/Http2FrameLogger.java 108:113
+******************************
+******************************
+coarse grained commits aba0023f5a3292b4b48d0c91551f2a9625817718
+fine grained commits ('df6aba2488383539cb75ed014288a51cf741060f', '227eb7eea762ab4364d28a9ccd91bf2afe97f6bd')
+Generation
+Extract Methodzuul-core/src/main/java/com/netflix/zuul/FilterProcessor.java@public applyFilterChain(msg ZuulMessage) : Observable<ZuulMessage>zuul-core/src/main/java/com/netflix/zuul/FilterProcessorImpl.java@protected chainFilters(msg ZuulMessage, filterChainIterator Iterator<ZuulFilter>, phase String) : Observable<ZuulMessage>zuul-core/src/main/java/com/netflix/zuul/FilterProcessor.java 42:51
+Generation
+Extract Variablezuul-core/src/main/java/com/netflix/zuul/FilterProcessor.java@zuul-core/src/main/java/com/netflix/zuul/FilterProcessorImpl.java@input : ZuulMessagezuul-core/src/main/java/com/netflix/zuul/FilterProcessor.java 197:197
+Generation
+Add Parameterzuul-core/src/main/java/com/netflix/zuul/ExperimentalFilterProcessor2.java@public chainFilters(msg ZuulMessage, filterChainIterator Iterator<ZuulFilter>) : Observable<ZuulMessage>zuul-core/src/main/java/com/netflix/zuul/FilterProcessorImpl.java@phase : Stringzuul-core/src/main/java/com/netflix/zuul/ExperimentalFilterProcessor2.java 43:62
+Generation
+Move Methodzuul-core/src/main/java/com/netflix/zuul/ExperimentalFilterProcessor2.java@public chainFilters(msg ZuulMessage, filterChainIterator Iterator<ZuulFilter>) : Observable<ZuulMessage>zuul-core/src/main/java/com/netflix/zuul/FilterProcessorImpl.java@protected chainFilters(msg ZuulMessage, filterChainIterator Iterator<ZuulFilter>, phase String) : Observable<ZuulMessage>zuul-core/src/main/java/com/netflix/zuul/ExperimentalFilterProcessor2.java 43:62
+Generation
+Extract Variablezuul-core/src/main/java/com/netflix/zuul/ExperimentalFilterProcessor2.java@zuul-core/src/main/java/com/netflix/zuul/FilterProcessorImpl.java@input : ZuulMessagezuul-core/src/main/java/com/netflix/zuul/ExperimentalFilterProcessor2.java 88:88
+******************************
+******************************
+coarse grained commits b3648052615a29629f37b7c306ec86deb09cbb05
+fine grained commits ('7260634d98f82bb19172301767524592f4933419', 'd63b05e83ea8d0a171d41a7082de3d7deead5214')
+Generation
+Rename Methodzuul-core/src/main/java/com/netflix/zuul/context/HttpResponseMessage.java@public getRequest() : HttpRequestMessagezuul-core/src/main/java/com/netflix/zuul/context/HttpResponseMessage.java@public getOutboundRequest() : HttpRequestMessagezuul-core/src/main/java/com/netflix/zuul/context/HttpResponseMessage.java 9:9
+Generation
+Rename Methodzuul-core/src/main/java/com/netflix/zuul/context/HttpResponseMessage.java@public getOriginalResponseInfo() : HttpResponseInfozuul-core/src/main/java/com/netflix/zuul/context/HttpResponseMessage.java@public getInboundResponse() : HttpResponseInfozuul-core/src/main/java/com/netflix/zuul/context/HttpResponseMessage.java 35:35
+******************************
+******************************
+coarse grained commits 0a7c6fd642769968e718f6978e817b0da6fff72f
+fine grained commits ('1240ebc83afd39e7dbc8f654a60b9f3df4c34144', '25ac22d9508f470d956e450a4cf2e78cafacbf0e')
+Generation
+Move And Rename Classzuul-servlet-api/src/main/java/com/netflix/zuul/http/HttpServletResponseWrapper.java@com.netflix.zuul.http.HttpServletResponseWrapperzuul-core/src/main/java/com/netflix/zuul/context/HttpResponseMessage.java@com.netflix.zuul.context.HttpResponseMessagezuul-servlet-api/src/main/java/com/netflix/zuul/http/HttpServletResponseWrapper.java 5:27
+Generation
+Rename Packagezuul-servlet-api/src/main/java/com/netflix/zuul/http/HttpServletResponseWrapper.java@com.netflix.zuul.http.HttpServletResponseWrapperzuul-core/src/main/java/com/netflix/zuul/context/HttpResponseMessage.java@com.netflix.zuul.context.HttpResponseMessagezuul-servlet-api/src/main/java/com/netflix/zuul/http/HttpServletResponseWrapper.java 5:27
+Generation
+Merge Packagezuul-servlet-api/src/main/java/com/netflix/zuul/filters/ZuulServletFilter.java@com.netflix.zuul.filters.ZuulServletFilterzuul-servlet-api/src/main/java/com/netflix/zuul/servlet/ZuulServletFilter.java@com.netflix.zuul.servlet.ZuulServletFilterzuul-servlet-api/src/main/java/com/netflix/zuul/filters/ZuulServletFilter.java 28:238
+Generation
+Rename Parameterzuul-servlet-api/src/main/java/com/netflix/zuul/http/HttpServletResponseWrapper.java@sc : intzuul-core/src/main/java/com/netflix/zuul/context/HttpResponseMessage.java@status : intzuul-servlet-api/src/main/java/com/netflix/zuul/http/HttpServletResponseWrapper.java 13:13
+Generation
+Remove Method Annotationzuul-servlet-api/src/main/java/com/netflix/zuul/http/HttpServletResponseWrapper.java@@Overridezuul-core/src/main/java/com/netflix/zuul/context/HttpResponseMessage.java@public setStatus(status int) : voidzuul-servlet-api/src/main/java/com/netflix/zuul/http/HttpServletResponseWrapper.java 12:12
+Generation
+Extract Superclasszuul-servlet-api/src/main/java/com/netflix/zuul/http/HttpServletResponseWrapper.java@com.netflix.zuul.http.HttpServletResponseWrapperzuul-core/src/main/java/com/netflix/zuul/context/HttpResponseMessage.java@com.netflix.zuul.context.HttpResponseMessagezuul-servlet-api/src/main/java/com/netflix/zuul/http/HttpServletResponseWrapper.java 5:27
+******************************
+******************************
+coarse grained commits b6f4fa42e0145114b4773d54177c33ba43f6250c
+fine grained commits ('ec3ac70d1931bb819ea8c5c42716c5ef1807f75b', 'b8cfd299ae952168ea51181c92df46874c377fbb', 'ee60b3ae84685cdd76890a45698f88ded7d28d03')
+Generation
+Merge Parameterzuul-core/src/main/java/com/netflix/zuul/netty/connectionpool/DefaultClientChannelManager.java@originServer : OriginServerzuul-core/src/main/java/com/netflix/zuul/netty/connectionpool/DefaultClientChannelManager.java@discoveryResult : DiscoveryResultzuul-core/src/main/java/com/netflix/zuul/netty/connectionpool/DefaultClientChannelManager.java 338:338
+Generation
+Change Variable Typezuul-core/src/main/java/com/netflix/zuul/niws/RequestAttempt.java@instanceInfo : InstanceInfozuul-core/src/main/java/com/netflix/zuul/niws/RequestAttempt.java@server : DiscoveryResultzuul-core/src/main/java/com/netflix/zuul/niws/RequestAttempt.java 91:91
+Generation
+Add Parameter Modifierzuul-core/src/main/java/com/netflix/zuul/niws/RequestAttempt.java@instanceInfo : InstanceInfozuul-core/src/main/java/com/netflix/zuul/niws/RequestAttempt.java@server : DiscoveryResultzuul-core/src/main/java/com/netflix/zuul/niws/RequestAttempt.java 91:91
+Generation
+Parameterize Variablezuul-core/src/main/java/com/netflix/zuul/niws/RequestAttempt.java@instanceInfo : InstanceInfozuul-core/src/main/java/com/netflix/zuul/niws/RequestAttempt.java@server : DiscoveryResultzuul-core/src/main/java/com/netflix/zuul/niws/RequestAttempt.java 91:91
+******************************
+******************************
+coarse grained commits 19259be78a3b6472c6c8717e9bc217ab14e9852d
+fine grained commits ('f8ee2a206e6b97a39b25281b0a6b98dcd63b6ffa', 'f73b86d325f11deb15ef923bf58c5d60821ee938', '47b7edc48fad2da9628d13e52d37f0a3213e76d2')
+Generation
+Change Method Access Modifierzuul-core/src/main/java/com/netflix/zuul/FilterProcessor.java@public processZuulFilter(ctx SessionContext, filter ZuulFilter) : SessionContextzuul-core/src/main/java/com/netflix/zuul/FilterProcessor.java@protected processFilterWithSyncType(input Observable<SessionContext>, filter ZuulFilter, additionalShouldFilter ShouldFilter, syncType String) : Observable<SessionContext>zuul-core/src/main/java/com/netflix/zuul/FilterProcessor.java 106:164
+Generation
+Move Attributezuul-core/src/main/java/com/netflix/zuul/FilterProcessor.java@protected logger : Loggerzuul-netty/src/main/java/com/netflix/zuul/accesslog/AccessLogPublisher.java@private logger : Loggerzuul-core/src/main/java/com/netflix/zuul/FilterProcessor.java 27:27
+Generation
+Change Attribute Access Modifierzuul-core/src/main/java/com/netflix/zuul/FilterProcessor.java@protected logger : Loggerzuul-netty/src/main/java/com/netflix/zuul/accesslog/AccessLogPublisher.java@private logger : Loggerzuul-core/src/main/java/com/netflix/zuul/FilterProcessor.java 27:27
+******************************
+******************************
+coarse grained commits 6c2abaa8e42875af4f334683818d2b10cead5a0d
+fine grained commits ('a74099c4107dfb7258e13776a0ea324dfa8f67a5', '1240ebc83afd39e7dbc8f654a60b9f3df4c34144', '25ac22d9508f470d956e450a4cf2e78cafacbf0e')
+Generation
+Move Classzuul-servlet-api/src/main/java/com/netflix/zuul/ZuulRunner.java@com.netflix.zuul.ZuulRunner.UnitTestzuul-servlet-api/src/main/java/com/netflix/zuul/servlet/ZuulServletFilter.java@com.netflix.zuul.servlet.ZuulServletFilter.UnitTestzuul-servlet-api/src/main/java/com/netflix/zuul/ZuulRunner.java 52:106
+Generation
+Change Attribute Typezuul-servlet-api/src/main/java/com/netflix/zuul/ZuulRunner.java@filter : ZuulFilterzuul-servlet-api/src/main/java/com/netflix/zuul/servlet/ZuulServletFilter.java@filter : ZuulServletFilterzuul-servlet-api/src/main/java/com/netflix/zuul/ZuulRunner.java 56:56
+Generation
+Remove Attribute Annotationzuul-servlet-api/src/main/java/com/netflix/zuul/ZuulRunner.java@@Mockzuul-servlet-api/src/main/java/com/netflix/zuul/servlet/ZuulServletFilter.java@package filter : ZuulServletFilterzuul-servlet-api/src/main/java/com/netflix/zuul/ZuulRunner.java 55:55
+Generation
+Add Thrown Exception Typezuul-servlet-api/src/main/java/com/netflix/zuul/ZuulRunner.java@public before() : voidzuul-servlet-api/src/main/java/com/netflix/zuul/servlet/ZuulServletFilter.java@Exceptionzuul-servlet-api/src/main/java/com/netflix/zuul/ZuulRunner.java 70:73
+Generation
+Rename Attributezuul-servlet-api/src/main/java/com/netflix/zuul/ZuulRunner.java@processor : FilterProcessorzuul-servlet-api/src/main/java/com/netflix/zuul/servlet/ZuulServletFilter.java@zuulRunner : ZuulRunnerzuul-servlet-api/src/main/java/com/netflix/zuul/ZuulRunner.java 65:65
+Generation
+Change Attribute Typezuul-servlet-api/src/main/java/com/netflix/zuul/ZuulRunner.java@processor : FilterProcessorzuul-servlet-api/src/main/java/com/netflix/zuul/servlet/ZuulServletFilter.java@zuulRunner : ZuulRunnerzuul-servlet-api/src/main/java/com/netflix/zuul/ZuulRunner.java 65:65
+******************************
+******************************
+coarse grained commits f6f4919e11de52f96a14d550c18c099e688a75b6
+fine grained commits ('1db22db53945891ac5a0709203e345d7353c0291', 'df6aba2488383539cb75ed014288a51cf741060f', '227eb7eea762ab4364d28a9ccd91bf2afe97f6bd')
+Generation
+Move Methodzuul-core/src/main/java/com/netflix/zuul/FilterProcessor.java@protected applyFilterPhase(chain Observable<ZuulMessage>, filterType String, shouldSendErrorResponse boolean) : Observable<ZuulMessage>zuul-core/src/main/java/com/netflix/zuul/OriginalFilterProcessorImpl.java@protected applyFilterPhase(chain Observable<ZuulMessage>, filterType FilterType, defaultFilterResultChooser Func1<ZuulMessage,ZuulMessage>) : Observable<ZuulMessage>zuul-core/src/main/java/com/netflix/zuul/FilterProcessor.java 159:166
+******************************
+******************************
+coarse grained commits 84f9e7985c6cf859c1da9fd7c770affb6e1aa876
+fine grained commits ('b0d2ee8dce4c10f4fe2f5c61b45295b5f198d839', 'a74099c4107dfb7258e13776a0ea324dfa8f67a5', '1240ebc83afd39e7dbc8f654a60b9f3df4c34144')
+Generation
+Move Classzuul-servlet-api/src/main/java/com/netflix/zuul/filters/ZuulServletFilter.java@com.netflix.zuul.filters.ZuulServletFilter.UnitTestzuul-servlet-api/src/main/java/com/netflix/zuul/servlet/ZuulServlet.java@com.netflix.zuul.servlet.ZuulServlet.UnitTestzuul-servlet-api/src/main/java/com/netflix/zuul/filters/ZuulServletFilter.java 105:236
+Generation
+Extract Classzuul-servlet-api/src/main/java/com/netflix/zuul/filters/ZuulServletFilter.java@com.netflix.zuul.filters.ZuulServletFilter.UnitTestzuul-servlet-api/src/main/java/com/netflix/zuul/servlet/ZuulServlet.java@com.netflix.zuul.servlet.ZuulServlet.UnitTestzuul-servlet-api/src/main/java/com/netflix/zuul/filters/ZuulServletFilter.java 105:236
+Generation
+Move Methodzuul-servlet-api/src/main/java/com/netflix/zuul/filters/ZuulServletFilter.java@public testRoutingException() : voidzuul-servlet-api/src/main/java/com/netflix/zuul/servlet/ZuulServletFilter.java@public testRoutingException() : voidzuul-servlet-api/src/main/java/com/netflix/zuul/filters/ZuulServletFilter.java 126:151
+Generation
+Move Methodzuul-servlet-api/src/main/java/com/netflix/zuul/filters/ZuulServletFilter.java@public testPreException() : voidzuul-servlet-api/src/main/java/com/netflix/zuul/servlet/ZuulServletFilter.java@public testPreException() : voidzuul-servlet-api/src/main/java/com/netflix/zuul/filters/ZuulServletFilter.java 153:179
+Generation
+Move Methodzuul-servlet-api/src/main/java/com/netflix/zuul/filters/ZuulServletFilter.java@public testPostException() : voidzuul-servlet-api/src/main/java/com/netflix/zuul/servlet/ZuulServletFilter.java@public testPostException() : voidzuul-servlet-api/src/main/java/com/netflix/zuul/filters/ZuulServletFilter.java 182:206
+******************************
+******************************
+coarse grained commits d7150c6d8bb40c6b288a7b958a4b5a9c74e1bee9
+fine grained commits ('938ac9e6a116bb82de7b2e4d5f5ef449be547864', 'daf482b379aa9e3ed111dfbc7e6f2d2e08870c36', '3b007f3311de8a48af613666e92fa252c29a6b6e', '113bc3ce9e9a30aeed4bf74c3e6db7140e81f1f5')
+Generation
+Remove Parameterzuul-core/src/main/java/com/netflix/netty/common/Http2ConnectionCloseHandler.java@gracefulCloseDelay : intzuul-core/src/main/java/com/netflix/netty/common/Http2ConnectionCloseHandler.java@public Http2ConnectionCloseHandler(registry Registry)zuul-core/src/main/java/com/netflix/netty/common/Http2ConnectionCloseHandler.java 40:40
+Generation
+Add Method Annotationzuul-core/src/main/java/com/netflix/netty/common/Http2ConnectionCloseHandler.java@public Http2ConnectionCloseHandler(gracefulCloseDelay int, registry Registry)zuul-core/src/main/java/com/netflix/netty/common/Http2ConnectionCloseHandler.java@@Injectzuul-core/src/main/java/com/netflix/netty/common/Http2ConnectionCloseHandler.java 40:44
+Generation
+Rename Attributezuul-core/src/main/java/com/netflix/netty/common/Http2ConnectionCloseHandler.java@gracefulCloseDelay : intzuul-core/src/main/java/com/netflix/netty/common/Http2ConnectionCloseHandler.java@counterBaseId : Idzuul-core/src/main/java/com/netflix/netty/common/Http2ConnectionCloseHandler.java 36:36
+Generation
+Change Attribute Typezuul-core/src/main/java/com/netflix/netty/common/Http2ConnectionCloseHandler.java@gracefulCloseDelay : intzuul-core/src/main/java/com/netflix/netty/common/Http2ConnectionCloseHandler.java@counterBaseId : Idzuul-core/src/main/java/com/netflix/netty/common/Http2ConnectionCloseHandler.java 36:36
+******************************
+******************************
+coarse grained commits 8779d9fd2925f5db84f499b6f0d33faa3aa2e5b0
+fine grained commits ('e4b6aa5132f8ac7327f3240d84c3c904000c7138', '4c784ab4e13e938803063c916d2212093a936d66', '9505a319cdb6553ed36bef5143a8da8890694386', '2414a51be9ff6e09d645a2846c263d61fe81bebe')
+Generation
+Move Attributezuul-core/src/main/java/com/netflix/netty/common/CloseOnIdleStateHandler.java@private registry : Registryzuul-core/src/test/java/com/netflix/netty/common/throttle/MaxInboundConnectionsHandlerTest.java@private registry : Registryzuul-core/src/main/java/com/netflix/netty/common/CloseOnIdleStateHandler.java 11:11
+Generation
+Remove Attribute Modifierzuul-core/src/main/java/com/netflix/netty/common/CloseOnIdleStateHandler.java@private registry : Registryzuul-core/src/test/java/com/netflix/netty/common/throttle/MaxInboundConnectionsHandlerTest.java@private registry : Registryzuul-core/src/main/java/com/netflix/netty/common/CloseOnIdleStateHandler.java 11:11
+Generation
+Add Attribute Annotationzuul-core/src/main/java/com/netflix/netty/common/CloseOnIdleStateHandler.java@private registry : Registryzuul-core/src/test/java/com/netflix/netty/common/throttle/MaxInboundConnectionsHandlerTest.java@@Mockzuul-core/src/main/java/com/netflix/netty/common/CloseOnIdleStateHandler.java 11:11
+******************************
+******************************
+coarse grained commits d99a179f60b97f2d2165e80d0c87505b1328567e
+fine grained commits ('32c6b059dda303b0c543e760cd6672a573b929de', '38e8730016b518c915616b2196aa118fe0f58e68', '15633783f24ffa3f7908f8153ebe95d7a919f25f', 'f4912e53f7541fb8ca764e1a0772fac356e1673a')
+Generation
+Change Attribute Access Modifierzuul-core/src/main/java/com/netflix/zuul/scriptManager/FilterVerifier.java@package sGoodGroovyScriptFilter : Stringzuul-core/src/test/java/com/netflix/zuul/scriptManager/FilterVerifierTest.java@private sGoodGroovyScriptFilter : Stringzuul-core/src/main/java/com/netflix/zuul/scriptManager/FilterVerifier.java 51:-1
+Generation
+Add Attribute Modifierzuul-core/src/main/java/com/netflix/zuul/scriptManager/FilterVerifier.java@package sGoodGroovyScriptFilter : Stringzuul-core/src/test/java/com/netflix/zuul/scriptManager/FilterVerifierTest.java@private sGoodGroovyScriptFilter : Stringzuul-core/src/main/java/com/netflix/zuul/scriptManager/FilterVerifier.java 51:-1
+Generation
+Change Attribute Access Modifierzuul-core/src/main/java/com/netflix/zuul/scriptManager/FilterVerifier.java@package sNotZuulFilterGroovy : Stringzuul-core/src/test/java/com/netflix/zuul/scriptManager/FilterVerifierTest.java@private sNotZuulFilterGroovy : Stringzuul-core/src/main/java/com/netflix/zuul/scriptManager/FilterVerifier.java 101:-1
+Generation
+Add Attribute Modifierzuul-core/src/main/java/com/netflix/zuul/scriptManager/FilterVerifier.java@package sNotZuulFilterGroovy : Stringzuul-core/src/test/java/com/netflix/zuul/scriptManager/FilterVerifierTest.java@private sNotZuulFilterGroovy : Stringzuul-core/src/main/java/com/netflix/zuul/scriptManager/FilterVerifier.java 101:-1
+Generation
+Change Attribute Access Modifierzuul-core/src/main/java/com/netflix/zuul/scriptManager/FilterVerifier.java@package sCompileFailCode : Stringzuul-core/src/test/java/com/netflix/zuul/scriptManager/FilterVerifierTest.java@private sCompileFailCode : Stringzuul-core/src/main/java/com/netflix/zuul/scriptManager/FilterVerifier.java 151:-1
+Generation
+Add Attribute Modifierzuul-core/src/main/java/com/netflix/zuul/scriptManager/FilterVerifier.java@package sCompileFailCode : Stringzuul-core/src/test/java/com/netflix/zuul/scriptManager/FilterVerifierTest.java@private sCompileFailCode : Stringzuul-core/src/main/java/com/netflix/zuul/scriptManager/FilterVerifier.java 151:-1
+Generation
+Change Variable Typezuul-core/src/main/java/com/netflix/zuul/scriptManager/FilterVerifier.java@filterClass : Classzuul-core/src/test/java/com/netflix/zuul/scriptManager/FilterVerifierTest.java@filterClass : Class<?>zuul-core/src/main/java/com/netflix/zuul/scriptManager/FilterVerifier.java 209:209
+Generation
+Change Variable Typezuul-core/src/main/java/com/netflix/zuul/scriptManager/FilterVerifier.java@filterClass : Classzuul-core/src/test/java/com/netflix/zuul/scriptManager/FilterVerifierTest.java@filterClass : Class<?>zuul-core/src/main/java/com/netflix/zuul/scriptManager/FilterVerifier.java 224:224
+Generation
+Rename Variablezuul-core/src/main/java/com/netflix/zuul/scriptManager/FilterVerifier.java@filter : Objectzuul-core/src/test/java/com/netflix/zuul/scriptManager/FilterVerifierTest.java@filter1 : Objectzuul-core/src/main/java/com/netflix/zuul/scriptManager/FilterVerifier.java 227:227
+Generation
+Rename Variablezuul-core/src/main/java/com/netflix/zuul/scriptManager/FilterVerifier.java@filter : Objectzuul-core/src/test/java/com/netflix/zuul/scriptManager/FilterVerifierTest.java@filter2 : Objectzuul-core/src/main/java/com/netflix/zuul/scriptManager/FilterVerifier.java 245:245
+Generation
+Add Thrown Exception Typezuul-core/src/main/java/com/netflix/zuul/scriptManager/FilterVerifier.java@public testZuulFilterInstance() : voidzuul-core/src/test/java/com/netflix/zuul/scriptManager/FilterVerifierTest.java@Exceptionzuul-core/src/main/java/com/netflix/zuul/scriptManager/FilterVerifier.java 222:260
+Generation
+Inline Variablezuul-core/src/main/java/com/netflix/zuul/scriptManager/FilterVerifier.java@filterInfo : FilterInfozuul-core/src/test/java/com/netflix/zuul/scriptManager/FilterVerifierTest.java@public testVerify() : voidzuul-core/src/main/java/com/netflix/zuul/scriptManager/FilterVerifier.java 285:285
+Generation
+Inline Variablezuul-core/src/main/java/com/netflix/zuul/scriptManager/FilterVerifier.java@filterInfo : FilterInfozuul-core/src/test/java/com/netflix/zuul/scriptManager/FilterVerifierTest.java@public testVerify() : voidzuul-core/src/main/java/com/netflix/zuul/scriptManager/FilterVerifier.java 296:296
+Generation
+Rename Variablezuul-core/src/main/java/com/netflix/zuul/scriptManager/FilterVerifier.java@filterInfo : FilterInfozuul-core/src/test/java/com/netflix/zuul/scriptManager/FilterVerifierTest.java@filterInfo1 : FilterInfozuul-core/src/main/java/com/netflix/zuul/scriptManager/FilterVerifier.java 267:267
+Generation
+Add Thrown Exception Typezuul-core/src/main/java/com/netflix/zuul/scriptManager/FilterVerifier.java@public testVerify() : voidzuul-core/src/test/java/com/netflix/zuul/scriptManager/FilterVerifierTest.java@Exceptionzuul-core/src/main/java/com/netflix/zuul/scriptManager/FilterVerifier.java 263:308
+******************************
+******************************
+coarse grained commits 202f43c3c9b777438515e0eae88014cbb31ef02b
+fine grained commits ('df6aba2488383539cb75ed014288a51cf741060f', '227eb7eea762ab4364d28a9ccd91bf2afe97f6bd', '577e1087fb603504c375c0643688f62eae9318e4', '465a450e94c8e8d266a3364f8949b0dae35fc173')
+Generation
+Rename Parameterzuul-core/src/main/java/com/netflix/zuul/ExperimentalFilterProcessor2.java@defaultFilterResultChooser : Func1<ZuulMessage,ZuulMessage>zuul-core/src/main/java/com/netflix/zuul/FilterProcessorImpl.java@shouldSendErrorResponse : booleanzuul-core/src/main/java/com/netflix/zuul/ExperimentalFilterProcessor2.java 66:66
+Generation
+Change Parameter Typezuul-core/src/main/java/com/netflix/zuul/ExperimentalFilterProcessor2.java@defaultFilterResultChooser : Func1<ZuulMessage,ZuulMessage>zuul-core/src/main/java/com/netflix/zuul/FilterProcessorImpl.java@shouldSendErrorResponse : booleanzuul-core/src/main/java/com/netflix/zuul/ExperimentalFilterProcessor2.java 66:66
+******************************
+******************************
+coarse grained commits 31c16f973515e9a0d50e88d17dfe2ac289b3c677
+fine grained commits ('e299dc17d7ff8b2605c593afc5a160ab0a07a3ad', 'e01113accc474ef887b91488fc0737468046cf54', '7260634d98f82bb19172301767524592f4933419', 'd63b05e83ea8d0a171d41a7082de3d7deead5214')
+Generation
+Move And Rename Classzuul-core/src/main/java/com/netflix/zuul/context/HttpResponseMessage.java@com.netflix.zuul.context.HttpResponseMessagezuul-core/src/main/java/com/netflix/zuul/message/http/HttpResponseInfo.java@com.netflix.zuul.message.http.HttpResponseInfozuul-core/src/main/java/com/netflix/zuul/context/HttpResponseMessage.java 7:36
+Generation
+Move Methodzuul-core/src/main/java/com/netflix/zuul/context/HttpResponseMessage.java@public setStatus(status int) : voidzuul-core/src/main/java/com/netflix/zuul/message/http/HttpResponseMessage.java@public setStatus(status int) : voidzuul-core/src/main/java/com/netflix/zuul/context/HttpResponseMessage.java 13:13
+Generation
+Move Methodzuul-core/src/main/java/com/netflix/zuul/context/HttpResponseMessage.java@public getMaxBodySize() : intzuul-core/src/main/java/com/netflix/zuul/message/http/HttpResponseMessage.java@public getMaxBodySize() : intzuul-core/src/main/java/com/netflix/zuul/context/HttpResponseMessage.java 15:16
+Generation
+Move Methodzuul-core/src/main/java/com/netflix/zuul/context/HttpResponseMessage.java@public bufferBody() : Observable<byte[]>zuul-core/src/main/java/com/netflix/zuul/message/http/HttpResponseMessage.java@public bufferBody() : Observable<byte[]>zuul-core/src/main/java/com/netflix/zuul/context/HttpResponseMessage.java 18:19
+Generation
+Move Methodzuul-core/src/main/java/com/netflix/zuul/context/HttpResponseMessage.java@public addSetCookie(cookie Cookie) : voidzuul-core/src/main/java/com/netflix/zuul/message/http/HttpResponseMessage.java@public addSetCookie(cookie Cookie) : voidzuul-core/src/main/java/com/netflix/zuul/context/HttpResponseMessage.java 25:25
+******************************
+******************************
+coarse grained commits a393f9ae2b61073f5d076488be527c2b6cfb3adf
+fine grained commits ('79163dbfb5e4e38a95678a3295255cb52be86139', '487191370c5e3f55091d3a28de0e364a7e31fc19', 'dd3ee6b4cbbf10324ffbce70e93e2f0c582a5132', '8f32886acb124a233762f43191f5040c28518c9c')
+Generation
+Extract Methodzuul-core/src/main/java/com/netflix/zuul/FilterProcessor.java@public applyEndpointFilter(chain Observable<ZuulMessage>) : Observable<ZuulMessage>zuul-core/src/main/java/com/netflix/zuul/FilterProcessor.java@public applyErrorFilterIfNeeded(chain Observable<ZuulMessage>) : Observable<ZuulMessage>zuul-core/src/main/java/com/netflix/zuul/FilterProcessor.java 63:78
+******************************
+******************************
+coarse grained commits bbf0deb9df18bfe67ac24b4eb62113e9a78a1791
+fine grained commits ('f72dbb1f0f0281af219ec5a7b5d38edbc499531c', 'f80d91800f3de3319dedef1e8043d04381ae47cd', '789a510b228567b1b7eacbf93608f926a5215047', '96a1d2149c64104346332acb1064bfdb6f06a103')
+Generation
+Move Classzuul-core/src/main/java/com/netflix/zuul/netty/insights/PassportStateServerHandler.java@com.netflix.zuul.netty.insights.PassportStateServerHandler.OutboundHandlerzuul-core/src/main/java/com/netflix/zuul/netty/insights/ServerStateHandler.java@com.netflix.zuul.netty.insights.ServerStateHandler.OutboundHandlerzuul-core/src/main/java/com/netflix/zuul/netty/insights/PassportStateServerHandler.java 87:114
+Generation
+Move Methodzuul-core/src/main/java/com/netflix/zuul/netty/insights/PassportStateServerHandler.java@private passport(ctx ChannelHandlerContext) : CurrentPassportzuul-core/src/main/java/com/netflix/zuul/netty/insights/ServerStateHandler.java@private passport(ctx ChannelHandlerContext) : CurrentPassportzuul-core/src/main/java/com/netflix/zuul/netty/insights/PassportStateServerHandler.java 25:28
+******************************
+******************************
+coarse grained commits 26654a54122a30d0b2e1688b8dcc291ef0aa3ebc
+fine grained commits ('c2ad899b11a38e5a0af81876848ac0938beb78d9', 'fde3f273ced92a86c6bf4e71dd5821d48489871c', '820f1871ea29e5d00be696b423034ecd50f7a108', '21643f8599167467615dc8bd062f7c2246b0176c')
+Generation
+Inline Variablezuul-core/src/main/java/com/netflix/zuul/http/HttpServletRequestWrapper.java@is : InputStreamzuul-core/src/main/java/com/netflix/zuul/http/HttpServletRequestWrapper.java@private parseRequest() : voidzuul-core/src/main/java/com/netflix/zuul/http/HttpServletRequestWrapper.java 95:95
+******************************
+******************************
+coarse grained commits 9f5b988354d11ca4b4ebb5039a5f1d0c0faf58c3
+fine grained commits ('0a37c12ea258390a03b1bfafd5ab91939bb920e3', 'ec3ac70d1931bb819ea8c5c42716c5ef1807f75b', 'b8cfd299ae952168ea51181c92df46874c377fbb', 'ee60b3ae84685cdd76890a45698f88ded7d28d03')
+Generation
+Change Variable Typezuul-core/src/test/java/com/netflix/zuul/netty/connectionpool/DefaultClientChannelManagerTest.java@s : Serverzuul-core/src/test/java/com/netflix/zuul/netty/connectionpool/DefaultClientChannelManagerTest.java@s : DiscoveryResultzuul-core/src/test/java/com/netflix/zuul/netty/connectionpool/DefaultClientChannelManagerTest.java 51:51
+Generation
+Change Variable Typezuul-core/src/test/java/com/netflix/zuul/netty/connectionpool/DefaultClientChannelManagerTest.java@s : Serverzuul-core/src/test/java/com/netflix/zuul/netty/connectionpool/DefaultClientChannelManagerTest.java@s : DiscoveryResultzuul-core/src/test/java/com/netflix/zuul/netty/connectionpool/DefaultClientChannelManagerTest.java 65:65
+Generation
+Change Variable Typezuul-core/src/test/java/com/netflix/zuul/netty/connectionpool/DefaultClientChannelManagerTest.java@s : Serverzuul-core/src/test/java/com/netflix/zuul/netty/connectionpool/DefaultClientChannelManagerTest.java@s : NonDiscoveryServerzuul-core/src/test/java/com/netflix/zuul/netty/connectionpool/DefaultClientChannelManagerTest.java 78:78
+Generation
+Change Variable Typezuul-core/src/test/java/com/netflix/zuul/netty/connectionpool/DefaultClientChannelManagerTest.java@s : Serverzuul-core/src/test/java/com/netflix/zuul/netty/connectionpool/DefaultClientChannelManagerTest.java@s : NonDiscoveryServerzuul-core/src/test/java/com/netflix/zuul/netty/connectionpool/DefaultClientChannelManagerTest.java 90:90
+******************************
+******************************
+coarse grained commits addd5591799bb5bbcfc2c5de8f91fecaa1039da8
+fine grained commits ('cabdee30b325c7b1938aa21769227e918b6efc45', '01ee2efbe98d957a2c65701ff1d519859aa33b4e', '15ca83fa34fbdb25d1cee8476630ef77ca813a61', 'f362e2b9ce2b3a02d1f74f70d18a55b1bfc08c50', 'e4947255f561a406fd88e162bd7e3ba0eedf5856')
+Generation
+Move And Rename Classzuul-core/src/main/java/com/netflix/zuul/filters/TestSyncFilter.java@com.netflix.zuul.filters.TestSyncFilterzuul-sample/src/main/java/com/netflix/zuul/sample/filters/Debug.java@com.netflix.zuul.sample.filters.Debugzuul-core/src/main/java/com/netflix/zuul/filters/TestSyncFilter.java 5:26
+Generation
+Add Class Annotationzuul-core/src/main/java/com/netflix/zuul/filters/TestSyncFilter.java@com.netflix.zuul.filters.TestSyncFilterzuul-sample/src/main/java/com/netflix/zuul/sample/filters/Debug.java@@Filter(order = 20)zuul-core/src/main/java/com/netflix/zuul/filters/TestSyncFilter.java 5:26
+Generation
+Rename Parameterzuul-core/src/main/java/com/netflix/zuul/filters/TestSyncFilter.java@input : HttpRequestMessagezuul-sample/src/main/java/com/netflix/zuul/sample/filters/Debug.java@request : HttpRequestMessagezuul-core/src/main/java/com/netflix/zuul/filters/TestSyncFilter.java 8:8
+Generation
+Rename Parameterzuul-core/src/main/java/com/netflix/zuul/filters/TestSyncFilter.java@msg : HttpRequestMessagezuul-sample/src/main/java/com/netflix/zuul/sample/filters/Debug.java@request : HttpRequestMessagezuul-core/src/main/java/com/netflix/zuul/filters/TestSyncFilter.java 23:23
+******************************
+******************************
+coarse grained commits 16e93673d6e71d82e63902b844a680aff7f5bbb1
+fine grained commits ('9c6ed6d0b95b0293bc978c7f31832e1cef6179ee', '79163dbfb5e4e38a95678a3295255cb52be86139', '487191370c5e3f55091d3a28de0e364a7e31fc19', 'dd3ee6b4cbbf10324ffbce70e93e2f0c582a5132', '8f32886acb124a233762f43191f5040c28518c9c')
+Generation
+Rename Methodzuul-core/src/main/java/com/netflix/zuul/context/Attributes.java@public setShouldProxy(bSend boolean) : voidzuul-core/src/main/java/com/netflix/zuul/context/Attributes.java@public setErrorResponseSent(should boolean) : voidzuul-core/src/main/java/com/netflix/zuul/context/Attributes.java 136:138
+Generation
+Rename Parameterzuul-core/src/main/java/com/netflix/zuul/context/Attributes.java@bSend : booleanzuul-core/src/main/java/com/netflix/zuul/context/Attributes.java@should : booleanzuul-core/src/main/java/com/netflix/zuul/context/Attributes.java 136:136
+******************************
+******************************
+coarse grained commits e7fcca70c2811830a52774fe5699b39d6424598c
+fine grained commits ('50d057a798354231abd12f87c15258a846f52436', 'f72dbb1f0f0281af219ec5a7b5d38edbc499531c', 'f80d91800f3de3319dedef1e8043d04381ae47cd', '789a510b228567b1b7eacbf93608f926a5215047', '96a1d2149c64104346332acb1064bfdb6f06a103')
+Generation
+Change Attribute Typezuul-core/src/main/java/com/netflix/netty/common/metrics/ServerChannelMetrics.java@ATTR_CURRENT_CONNS : AttributeKey<AtomicInteger>zuul-core/src/main/java/com/netflix/zuul/netty/insights/ServerStateHandler.java@ATTR_CURRENT_CONNS : AttributeKey<Double>zuul-core/src/main/java/com/netflix/netty/common/metrics/ServerChannelMetrics.java 23:24
+Generation
+Change Variable Typezuul-core/src/main/java/com/netflix/netty/common/metrics/ServerChannelMetrics.java@count : AtomicIntegerzuul-core/src/main/java/com/netflix/zuul/netty/insights/ServerStateHandler.java@count : Doublezuul-core/src/main/java/com/netflix/netty/common/metrics/ServerChannelMetrics.java 41:41
+Generation
+Change Return Typezuul-core/src/main/java/com/netflix/netty/common/metrics/ServerChannelMetrics.java@intzuul-core/src/main/java/com/netflix/zuul/netty/insights/ServerStateHandler.java@doublezuul-core/src/main/java/com/netflix/netty/common/metrics/ServerChannelMetrics.java 40:40
+******************************
+******************************
+coarse grained commits ecf85b529776c2e1ca17f8a4ff062d994edc1649
+fine grained commits ('4688bd808d1a1bd4e3cf6836fac68cb0c64f177f', '4ae1db4349c306f6e2abff82b3be2504d09b44db', 'f8ee2a206e6b97a39b25281b0a6b98dcd63b6ffa', 'f73b86d325f11deb15ef923bf58c5d60821ee938', '47b7edc48fad2da9628d13e52d37f0a3213e76d2')
+Generation
+Add Parameterzuul-servlet-api/src/main/java/com/netflix/zuul/ZuulRunner.java@public getContext() : SessionContextzuul-netty-sample/src/main/java/com/netflix/zuul/context/SampleSessionContextDecorator.java@ctx : SessionContextzuul-servlet-api/src/main/java/com/netflix/zuul/ZuulRunner.java 15:17
+Generation
+Add Method Annotationzuul-servlet-api/src/main/java/com/netflix/zuul/ZuulRunner.java@public getContext() : SessionContextzuul-netty-sample/src/main/java/com/netflix/zuul/context/SampleSessionContextDecorator.java@@Overridezuul-servlet-api/src/main/java/com/netflix/zuul/ZuulRunner.java 15:17
+Generation
+Move And Rename Methodzuul-servlet-api/src/main/java/com/netflix/zuul/ZuulRunner.java@public getContext() : SessionContextzuul-netty-sample/src/main/java/com/netflix/zuul/context/SampleSessionContextDecorator.java@public decorate(ctx SessionContext) : SessionContextzuul-servlet-api/src/main/java/com/netflix/zuul/ZuulRunner.java 15:17
+******************************
+******************************
+coarse grained commits c80e8ebd62b53cd32c0fc66ede0a40d767fcd4cd
+fine grained commits ('634ac2728e8d17f284e2b1d421cec14882d822a5', '6e5146bd9bb0562786dd994ded00686d276c3a2c', '5789448c93048f9fe46e5dc9af544b2cf331b194', 'b0d2ee8dce4c10f4fe2f5c61b45295b5f198d839', 'a74099c4107dfb7258e13776a0ea324dfa8f67a5')
+Generation
+Move Attributezuul-servlet-api/src/main/java/com/netflix/zuul/servlet/ZuulServletFilter.java@package filterChain : FilterChainzuul-servlet-api/src/main/java/com/netflix/zuul/servlet/ZuulServlet.java@package filterChain : FilterChainzuul-servlet-api/src/main/java/com/netflix/zuul/servlet/ZuulServletFilter.java 115:115
+Generation
+Move Attributezuul-servlet-api/src/main/java/com/netflix/zuul/servlet/ZuulServletFilter.java@package zuulRunner : ZuulRunnerzuul-servlet-api/src/main/java/com/netflix/zuul/servlet/ZuulServlet.java@package zuulRunner : ZuulRunnerzuul-servlet-api/src/main/java/com/netflix/zuul/servlet/ZuulServletFilter.java 117:117
+******************************
+******************************
+coarse grained commits 2b20cb7c91dc1bc77fd2f9b1af74b2c9fc5bc4e9
+fine grained commits ('789a510b228567b1b7eacbf93608f926a5215047', '96a1d2149c64104346332acb1064bfdb6f06a103', '63066ff420118170797d6bf429903f07f6714dc2', '5b7588c48372b7ccdd7f769dad2ae178e8fa8d8a', '2a9af0928bb6c3c1e50e041df166dd512edc6af6')
+Generation
+Remove Attribute Annotationzuul-core/src/test/java/com/netflix/netty/common/throttle/MaxInboundConnectionsHandlerTest.java@@Mockzuul-core/src/test/java/com/netflix/netty/common/throttle/MaxInboundConnectionsHandlerTest.java@private registry : Registryzuul-core/src/test/java/com/netflix/netty/common/throttle/MaxInboundConnectionsHandlerTest.java 21:21
+Generation
+Remove Attribute Modifierzuul-core/src/test/java/com/netflix/netty/common/throttle/MaxInboundConnectionsHandlerTest.java@private listener : Stringzuul-core/src/test/java/com/netflix/netty/common/throttle/MaxInboundConnectionsHandlerTest.java@private listener : Stringzuul-core/src/test/java/com/netflix/netty/common/throttle/MaxInboundConnectionsHandlerTest.java 26:26
+******************************
+******************************
+coarse grained commits 99ccc217fe1d4545e677ca0fc58dd2dda160213d
+fine grained commits ('6e5146bd9bb0562786dd994ded00686d276c3a2c', '5789448c93048f9fe46e5dc9af544b2cf331b194', 'b0d2ee8dce4c10f4fe2f5c61b45295b5f198d839', 'a74099c4107dfb7258e13776a0ea324dfa8f67a5', '1240ebc83afd39e7dbc8f654a60b9f3df4c34144')
+Generation
+Split Parameterzuul-core/src/main/java/com/netflix/zuul/context/HttpRequestMessage.java@uri : Stringzuul-core/src/main/java/com/netflix/zuul/context/HttpRequestMessage.java@path : Stringzuul-core/src/main/java/com/netflix/zuul/context/HttpRequestMessage.java 20:20
+******************************

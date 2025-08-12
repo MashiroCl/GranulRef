@@ -1,0 +1,816 @@
+******************************
+coarse grained commits 93eb1dbb0ae95b212f4a73358594b67d007b7060
+fine grained commits ('69e36b1b47d4152fd9c4b8ac93861857391c613d', 'cf7e92d7d35d95307e3c81582d88d2fc7dc81a37')
+Generation
+Add Attribute Modifierblueflood-elasticsearch/src/test/java/com/rackspacecloud/blueflood/io/BaseElasticTest.java@protected esSetup : EsSetupblueflood-elasticsearch/src/test/java/com/rackspacecloud/blueflood/io/BaseElasticTest.java@protected esSetup : EsSetupblueflood-elasticsearch/src/test/java/com/rackspacecloud/blueflood/io/BaseElasticTest.java 27:27
+Generation
+Add Attribute Modifierblueflood-elasticsearch/src/test/java/com/rackspacecloud/blueflood/io/EventElasticSearchIOTest.java@private esSetup : EsSetupblueflood-elasticsearch/src/test/java/com/rackspacecloud/blueflood/io/EventElasticSearchIOTest.java@private esSetup : EsSetupblueflood-elasticsearch/src/test/java/com/rackspacecloud/blueflood/io/EventElasticSearchIOTest.java 16:16
+Generation
+Move Attributeblueflood-elasticsearch/src/main/java/com/rackspacecloud/blueflood/io/AbstractElasticIO.java@public MAX_RESULT_LIMIT : intblueflood-elasticsearch/src/main/java/com/rackspacecloud/blueflood/io/ElasticsearchRestHelper.java@private MAX_RESULT_LIMIT : intblueflood-elasticsearch/src/main/java/com/rackspacecloud/blueflood/io/AbstractElasticIO.java 50:50
+Generation
+Change Attribute Access Modifierblueflood-elasticsearch/src/main/java/com/rackspacecloud/blueflood/io/AbstractElasticIO.java@public MAX_RESULT_LIMIT : intblueflood-elasticsearch/src/main/java/com/rackspacecloud/blueflood/io/ElasticsearchRestHelper.java@private MAX_RESULT_LIMIT : intblueflood-elasticsearch/src/main/java/com/rackspacecloud/blueflood/io/AbstractElasticIO.java 50:50
+Generation
+Move Methodblueflood-elasticsearch/src/main/java/com/rackspacecloud/blueflood/io/ElasticIO.java@private getUnit(metric Metric) : Stringblueflood-elasticsearch/src/main/java/com/rackspacecloud/blueflood/io/ElasticsearchRestHelper.java@private getUnit(metric Metric) : Stringblueflood-elasticsearch/src/main/java/com/rackspacecloud/blueflood/io/ElasticIO.java 67:69
+******************************
+******************************
+coarse grained commits 1598706cca7f5fad18ee0d8c546fe8a4955e5b9d
+fine grained commits ('3e2b32c7b09a2f43f34fc95e161da136149e8217', 'd904fb142be89620c5c91da00ad694a9fcf3b618')
+Generation
+Extract Methodblueflood-http/src/integration-test/java/com/rackspacecloud/blueflood/http/HttpIntegrationTestBase.java@private getHttpPost(tenantId String, urlPath String, json String) : HttpPostblueflood-http/src/integration-test/java/com/rackspacecloud/blueflood/http/HttpIntegrationTestBase.java@private getHttpPost(tenantId String, urlPath String, content String, contentType ContentType) : HttpPostblueflood-http/src/integration-test/java/com/rackspacecloud/blueflood/http/HttpIntegrationTestBase.java 232:239
+******************************
+******************************
+coarse grained commits d0c483f9fe12d378818d77c6a2f4af1602630edd
+fine grained commits ('98511546abfecd094ca9c06cdbdfec01007c162c', '3c4b25fd8e99c9fec4e418085b9f47b9bcb1a3f5')
+Generation
+Rename Variableblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/datastax/DAbstractMetricIO.java@stat : Statementblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/datastax/DAbstractMetricIO.java@oneStatement : Statementblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/datastax/DAbstractMetricIO.java 42:42
+******************************
+******************************
+coarse grained commits 3d09890f7b2e9d5b0e0d659856fab10bb7bf857b
+fine grained commits ('513bdc1e144620f9d7f96b132832a33a35421a79', 'eb79d2eee2231425ba729e14cccaeb0624bb4ff6')
+Generation
+Extract Variableblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AbstractMetricsRW.java@blueflood-core/src/main/java/com/rackspacecloud/blueflood/io/datastax/DAbstractMetricsRW.java@metadataCache : MetadataCacheblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AbstractMetricsRW.java 50:50
+******************************
+******************************
+coarse grained commits 9c34d8d3d0c4b85ab552fd2133eeea3114c050b9
+fine grained commits ('c80b6208727d4f8331cf2ad6332de750fe24a026', 'd83fec4f7293152d46b37b002e9450b6383cfb1a')
+Generation
+Extract Variableblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/datastax/DPreaggregatedMetricsRW.java@blueflood-core/src/main/java/com/rackspacecloud/blueflood/io/datastax/DAbstractMetricsRW.java@tsRollupMap : Map<Long,Object>blueflood-core/src/main/java/com/rackspacecloud/blueflood/io/datastax/DPreaggregatedMetricsRW.java 231:231
+Generation
+Change Parameter Typeblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/datastax/DPreaggregatedMetricsRW.java@locatorRollupType : Map<Locator,RollupType>blueflood-core/src/main/java/com/rackspacecloud/blueflood/io/datastax/DAbstractMetricsRW.java@locatorIO : Map<Locator,DAbstractMetricIO>blueflood-core/src/main/java/com/rackspacecloud/blueflood/io/datastax/DPreaggregatedMetricsRW.java 216:216
+Generation
+Change Variable Typeblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/datastax/DPreaggregatedMetricsRW.java@locatorTimestampRollup : Table<Locator,Long,Rollup>blueflood-core/src/main/java/com/rackspacecloud/blueflood/io/datastax/DAbstractMetricsRW.java@locatorTimestampRollup : Table<Locator,Long,Object>blueflood-core/src/main/java/com/rackspacecloud/blueflood/io/datastax/DPreaggregatedMetricsRW.java 229:229
+Generation
+Change Variable Typeblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/datastax/DPreaggregatedMetricsRW.java@points : Points<Rollup>blueflood-core/src/main/java/com/rackspacecloud/blueflood/io/datastax/DAbstractMetricsRW.java@points : Pointsblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/datastax/DPreaggregatedMetricsRW.java 231:231
+Generation
+Rename Parameterblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/datastax/DPreaggregatedMetricsRW.java@locatorRollupType : Map<Locator,RollupType>blueflood-core/src/main/java/com/rackspacecloud/blueflood/io/datastax/DAbstractMetricsRW.java@locatorIO : Map<Locator,DAbstractMetricIO>blueflood-core/src/main/java/com/rackspacecloud/blueflood/io/datastax/DPreaggregatedMetricsRW.java 216:216
+Generation
+Move Methodblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/datastax/DPreaggregatedMetricsRW.java@protected resultSetsToMetricData(resultSets Map<Locator,List<ResultSetFuture>>, locatorRollupType Map<Locator,RollupType>, granularity Granularity) : Map<Locator,MetricData>blueflood-core/src/main/java/com/rackspacecloud/blueflood/io/datastax/DAbstractMetricsRW.java@protected resultSetsToMetricData(resultSets Map<Locator,List<ResultSetFuture>>, locatorIO Map<Locator,DAbstractMetricIO>, granularity Granularity) : Map<Locator,MetricData>blueflood-core/src/main/java/com/rackspacecloud/blueflood/io/datastax/DPreaggregatedMetricsRW.java 214:246
+******************************
+******************************
+coarse grained commits a32c421f9f83dcee8cc202c227c56f63810d17c4
+fine grained commits ('a1dcae0bb28c2a593688ad6b0a7390b42d267bf2', '4db5d6d0eb7e42fac13d77210dc102e5ef11178b')
+Generation
+Replace Attribute With Variableblueflood-core/src/main/java/com/rackspacecloud/blueflood/service/RollupService.java@locatorFetchExecutors : ThreadPoolExecutorblueflood-core/src/main/java/com/rackspacecloud/blueflood/service/RollupService.java@_locatorFetchExecutors : ThreadPoolExecutorblueflood-core/src/main/java/com/rackspacecloud/blueflood/service/RollupService.java 31:31
+Generation
+Replace Attribute With Variableblueflood-core/src/main/java/com/rackspacecloud/blueflood/service/RollupService.java@rollupReadExecutors : ThreadPoolExecutorblueflood-core/src/main/java/com/rackspacecloud/blueflood/service/RollupService.java@_rollupReadExecutors : ThreadPoolExecutorblueflood-core/src/main/java/com/rackspacecloud/blueflood/service/RollupService.java 32:32
+Generation
+Replace Attribute With Variableblueflood-core/src/main/java/com/rackspacecloud/blueflood/service/RollupService.java@rollupWriteExecutors : ThreadPoolExecutorblueflood-core/src/main/java/com/rackspacecloud/blueflood/service/RollupService.java@_rollupWriteExecutors : ThreadPoolExecutorblueflood-core/src/main/java/com/rackspacecloud/blueflood/service/RollupService.java 33:33
+******************************
+******************************
+coarse grained commits 886b33ebcb1c6de3dcf49c3fa2718c32318e6ea0
+fine grained commits ('ab3078aabd1e22231efdb1f2178e196ce522aafb', '3f35aa885239b25e9a6511a806a6318488aa7278')
+Generation
+Parameterize Variableblueflood-core/src/test/java/com/rackspacecloud/blueflood/service/ScheduleContextUpdateTest.java@now : longblueflood-core/src/test/java/com/rackspacecloud/blueflood/service/ScheduleContextUpdateTest.java@timestamp : longblueflood-core/src/test/java/com/rackspacecloud/blueflood/service/ScheduleContextUpdateTest.java 24:24
+Generation
+Parameterize Variableblueflood-core/src/test/java/com/rackspacecloud/blueflood/service/ScheduleContextUpdateTest.java@now : longblueflood-core/src/test/java/com/rackspacecloud/blueflood/service/ScheduleContextUpdateTest.java@timestamp : longblueflood-core/src/test/java/com/rackspacecloud/blueflood/service/ScheduleContextUpdateTest.java 45:45
+******************************
+******************************
+coarse grained commits bf620f45db54a4638053a5b1d959193aa46e3f6e
+fine grained commits ('304e621ea246e9c0dd1dd79cec69c0e21dc59025', 'c6a51e33c53840ef42cb7eb823542a0d0bd9db9c')
+Generation
+Move Methodblueflood-core/src/test/java/com/rackspacecloud/blueflood/service/ScheduleContextScheduleSlotsOlderThanTest.java@public setUp() : voidblueflood-core/src/test/java/com/rackspacecloud/blueflood/service/ScheduleContextGetNextScheduledTest.java@public setUp() : voidblueflood-core/src/test/java/com/rackspacecloud/blueflood/service/ScheduleContextScheduleSlotsOlderThanTest.java 17:20
+******************************
+******************************
+coarse grained commits a9edb564b75784e16eb52cc6ecde587056ba5cc1
+fine grained commits ('c787799c797f6b0b0a0102397f342a85e848d238', '7f3f2218bd5ec9caf9dcd328e0fe756db9b2058e')
+Generation
+Rename Methodblueflood-core/src/test/java/com/rackspacecloud/blueflood/service/ScheduleContextTest.java@public testScheduleSlotsOlderThanSmallestGranularityOnlyAddsOneToScheduledCount() : voidblueflood-core/src/test/java/com/rackspacecloud/blueflood/service/ScheduleContextTest.java@public testGetNextScheduledDecrementsScheduledCount() : voidblueflood-core/src/test/java/com/rackspacecloud/blueflood/service/ScheduleContextTest.java 433:447
+Generation
+Extract Variableblueflood-core/src/test/java/com/rackspacecloud/blueflood/service/ScheduleContextTest.java@blueflood-core/src/test/java/com/rackspacecloud/blueflood/service/ScheduleContextTest.java@shard : intblueflood-core/src/test/java/com/rackspacecloud/blueflood/service/ScheduleContextTest.java 440:440
+******************************
+******************************
+coarse grained commits eac9c0610b1d21f2a7f8bbbbdc3baf3a5ca65d87
+fine grained commits ('84c77feda4cf72a8e45c281569db02ebf05a3a6c', 'a4c41d1c543bf284302752697902ba70db24d448')
+Generation
+Change Method Access Modifierblueflood-elasticsearch/src/main/java/com/rackspacecloud/blueflood/io/AbstractElasticIO.java@private regexforNextNLevels(prefix String, level int) : Stringblueflood-elasticsearch/src/main/java/com/rackspacecloud/blueflood/io/AbstractElasticIO.java@protected regexForNextNLevels(prefix String, level int) : Stringblueflood-elasticsearch/src/main/java/com/rackspacecloud/blueflood/io/AbstractElasticIO.java 302:322
+******************************
+******************************
+coarse grained commits bf34d4f4608277e7b02c5aead83e5b44a59368e7
+fine grained commits ('6fa91d59a7d050698d5cbf0c22dcc87c57ae41f1', 'bb3d158c3fa27bcf74eae138af67e7735090d24c')
+Generation
+Add Parameterblueflood-http/src/integration-test/java/com/rackspacecloud/blueflood/http/HttpEnumIntegrationTest.java@private postAggregatedMetric(tenantId String, payloadFilePath String) : HttpResponseblueflood-http/src/integration-test/java/com/rackspacecloud/blueflood/http/HttpIntegrationTestBase.java@urlPath : Stringblueflood-http/src/integration-test/java/com/rackspacecloud/blueflood/http/HttpEnumIntegrationTest.java 110:127
+******************************
+******************************
+coarse grained commits 6d037fa0f6c0b718816afb540e9374ec51b058cb
+fine grained commits ('5c489a17ed809c3b311b2e17638738b56790cf9f', '336826b8fe44a4fb93f716c276f866faffb16302')
+Generation
+Add Variable Modifierblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java@CF : ColumnFamily<Locator,Long>blueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java@CF : ColumnFamily<Locator,Long>blueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java 385:385
+******************************
+******************************
+coarse grained commits 583f09c50f580fb450259f10b579af12fe7fc649
+fine grained commits ('c6cc8e053f7d02a4f3342d4482b382aafa645eeb', '3f14f596ff960a9a688879b1b04393b9f9f04447')
+Generation
+Rename Methodblueflood-elasticsearch/src/main/java/com/rackspacecloud/blueflood/io/ElasticIO.java@public getAnnotation() : Map<String,Object>blueflood-elasticsearch/src/main/java/com/rackspacecloud/blueflood/io/Discovery.java@public getFields() : Map<String,Object>blueflood-elasticsearch/src/main/java/com/rackspacecloud/blueflood/io/ElasticIO.java 194:196
+Generation
+Rename Methodblueflood-elasticsearch/src/main/java/com/rackspacecloud/blueflood/io/ElasticIO.java@public withAnnotation(annotation Map<String,Object>) : Discoveryblueflood-elasticsearch/src/main/java/com/rackspacecloud/blueflood/io/Discovery.java@public withSourceFields(fields Map<String,Object>) : Discoveryblueflood-elasticsearch/src/main/java/com/rackspacecloud/blueflood/io/ElasticIO.java 216:219
+Generation
+Rename Parameterblueflood-elasticsearch/src/main/java/com/rackspacecloud/blueflood/io/ElasticIO.java@annotation : Map<String,Object>blueflood-elasticsearch/src/main/java/com/rackspacecloud/blueflood/io/Discovery.java@fields : Map<String,Object>blueflood-elasticsearch/src/main/java/com/rackspacecloud/blueflood/io/ElasticIO.java 216:216
+Generation
+Rename Attributeblueflood-elasticsearch/src/main/java/com/rackspacecloud/blueflood/io/ElasticIO.java@annotation : Map<String,Object>blueflood-elasticsearch/src/main/java/com/rackspacecloud/blueflood/io/Discovery.java@fields : Map<String,Object>blueflood-elasticsearch/src/main/java/com/rackspacecloud/blueflood/io/ElasticIO.java 186:186
+******************************
+******************************
+coarse grained commits f40ef0c882bd09882ba7908bee0404d4b94c9820
+fine grained commits ('609ed1452a0c0a799a58d0d9dae0d8176140b5d7', '475471fad626e24b5e8dcf7c9c23eef9c991b465')
+Generation
+Extract And Move Methodblueflood-http/src/main/java/com/rackspacecloud/blueflood/inputs/handlers/HttpAggregatedIngestionHandler.java@public handle(ctx ChannelHandlerContext, request HttpRequest) : voidblueflood-http/src/main/java/com/rackspacecloud/blueflood/http/DefaultHandler.java@public sendResponse(channel ChannelHandlerContext, request HttpRequest, messageBody String, status HttpResponseStatus) : voidblueflood-http/src/main/java/com/rackspacecloud/blueflood/inputs/handlers/HttpAggregatedIngestionHandler.java 49:88
+Generation
+Extract And Move Methodblueflood-http/src/main/java/com/rackspacecloud/blueflood/inputs/handlers/HttpAggregatedMultiIngestionHandler.java@public handle(ctx ChannelHandlerContext, request HttpRequest) : voidblueflood-http/src/main/java/com/rackspacecloud/blueflood/http/DefaultHandler.java@public sendResponse(channel ChannelHandlerContext, request HttpRequest, messageBody String, status HttpResponseStatus) : voidblueflood-http/src/main/java/com/rackspacecloud/blueflood/inputs/handlers/HttpAggregatedMultiIngestionHandler.java 42:87
+Generation
+Extract And Move Methodblueflood-http/src/main/java/com/rackspacecloud/blueflood/inputs/handlers/HttpEventsIngestionHandler.java@public handle(ctx ChannelHandlerContext, request HttpRequest) : voidblueflood-http/src/main/java/com/rackspacecloud/blueflood/http/DefaultHandler.java@public sendResponse(channel ChannelHandlerContext, request HttpRequest, messageBody String, status HttpResponseStatus) : voidblueflood-http/src/main/java/com/rackspacecloud/blueflood/inputs/handlers/HttpEventsIngestionHandler.java 38:75
+Generation
+Extract And Move Methodblueflood-http/src/main/java/com/rackspacecloud/blueflood/inputs/handlers/HttpMetricsIngestionHandler.java@public handle(ctx ChannelHandlerContext, request HttpRequest) : voidblueflood-http/src/main/java/com/rackspacecloud/blueflood/http/DefaultHandler.java@public sendResponse(channel ChannelHandlerContext, request HttpRequest, messageBody String, status HttpResponseStatus) : voidblueflood-http/src/main/java/com/rackspacecloud/blueflood/inputs/handlers/HttpMetricsIngestionHandler.java 65:152
+******************************
+******************************
+coarse grained commits aa54a668c13ad2e09cddea2c3e44dea6847ab3d3
+fine grained commits ('e14d7185539d125b5e5c922ec3305f392e05d44e', '125a580889da56d132bde1560ac806f06980f04f')
+Generation
+Remove Thrown Exception Typeblueflood-core/src/main/java/com/rackspacecloud/blueflood/cache/ConfigTtlProvider.java@Exceptionblueflood-core/src/main/java/com/rackspacecloud/blueflood/cache/SafetyTtlProvider.java@public getFinalTTL(tenantid String, g Granularity) : longblueflood-core/src/main/java/com/rackspacecloud/blueflood/cache/ConfigTtlProvider.java 121:121
+Generation
+Move And Rename Methodblueflood-core/src/main/java/com/rackspacecloud/blueflood/cache/ConfigTtlProvider.java@public getTTLForGranularityAndTenant(tenantid String, g Granularity) : longblueflood-core/src/main/java/com/rackspacecloud/blueflood/cache/SafetyTtlProvider.java@public getFinalTTL(tenantid String, g Granularity) : longblueflood-core/src/main/java/com/rackspacecloud/blueflood/cache/ConfigTtlProvider.java 121:130
+******************************
+******************************
+coarse grained commits b6a0c9ff9c840df7df3da08db6f03b31ba97e879
+fine grained commits ('0fe7702ef3893205cf402e74d25a52ecd11ac7ea', 'e8412ca8bf36606b0f9a2015c717fa28f480402f')
+Generation
+Remove Parameterblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/DiscoveryIO.java@locators : List<Locator>blueflood-core/src/main/java/com/rackspacecloud/blueflood/io/DiscoveryIO.java@public search(tenant String, queries List<String>) : List<SearchResult>blueflood-core/src/main/java/com/rackspacecloud/blueflood/io/DiscoveryIO.java 11:11
+******************************
+******************************
+coarse grained commits 737725adbc9f2b74ea5ad4ae7ca043a7f6fae0bd
+fine grained commits ('6ecaded1e34f74acc1395bbb43ce69a1ee48e358', '1d5fe64277e0c4fc7405da5d2af3cb89efc5cee7')
+Generation
+Rename Methodblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/serializers/NumericSerializer.java@private sizeOfV1(o Object, type byte) : intblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/serializers/NumericSerializer.java@private sizeOf(o Object, type byte, timerVersion byte) : intblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/serializers/NumericSerializer.java 177:280
+Generation
+Add Parameterblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/serializers/NumericSerializer.java@private sizeOfV1(o Object, type byte) : intblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/serializers/NumericSerializer.java@timerVersion : byteblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/serializers/NumericSerializer.java 177:280
+Generation
+Remove Method Annotationblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/serializers/NumericSerializer.java@@VisibleForTestingblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/serializers/NumericSerializer.java@private sizeOf(o Object, type byte, timerVersion byte) : intblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/serializers/NumericSerializer.java 177:177
+******************************
+******************************
+coarse grained commits 758e60bcbfc9cf2ae052fbb97168f1b4a2571ef2
+fine grained commits ('c3fe698f08428cbb4e4924b446fa968a0c3673a8', '7dc98c43e2a76048ba0adb49b51573d773179fe8')
+Generation
+Move And Rename Classblueflood-http/src/main/java/com/rackspacecloud/blueflood/outputs/utils/DiscoveryModuleLoader.java@com.rackspacecloud.blueflood.outputs.utils.DiscoveryModuleLoaderblueflood-core/src/main/java/com/rackspacecloud/blueflood/utils/QueryDiscoveryModuleLoader.java@com.rackspacecloud.blueflood.utils.QueryDiscoveryModuleLoaderblueflood-http/src/main/java/com/rackspacecloud/blueflood/outputs/utils/DiscoveryModuleLoader.java 12:53
+******************************
+******************************
+coarse grained commits 0e73213961dc3f6107f94f25cf2d7491c3a36505
+fine grained commits ('002c02d23d0e201badd3611927b1dfd09330c98d', '1081d1533d7b9ed76c31b26dd5286c71f5936230')
+Generation
+Change Variable Typeblueflood-core/src/main/java/com/rackspacecloud/blueflood/service/ScheduleContext.java@badKey : Stringblueflood-core/src/main/java/com/rackspacecloud/blueflood/service/ScheduleContext.java@childrenKey : SlotKeyblueflood-core/src/main/java/com/rackspacecloud/blueflood/service/ScheduleContext.java 115:115
+Generation
+Change Variable Typeblueflood-core/src/main/java/com/rackspacecloud/blueflood/service/ScheduleContext.java@ineligibleKeys : Collection<String>blueflood-core/src/main/java/com/rackspacecloud/blueflood/service/ScheduleContext.java@ineligibleKeys : Collection<SlotKey>blueflood-core/src/main/java/com/rackspacecloud/blueflood/service/ScheduleContext.java 113:113
+Generation
+Rename Variableblueflood-core/src/main/java/com/rackspacecloud/blueflood/service/ScheduleContext.java@badKey : Stringblueflood-core/src/main/java/com/rackspacecloud/blueflood/service/ScheduleContext.java@childrenKey : SlotKeyblueflood-core/src/main/java/com/rackspacecloud/blueflood/service/ScheduleContext.java 115:115
+Generation
+Add Parameterblueflood-core/src/main/java/com/rackspacecloud/blueflood/service/ScheduleContext.java@private areChildKeysOrSelfKeyScheduledOrRunning(shard int, g Granularity, slot int) : booleanblueflood-core/src/main/java/com/rackspacecloud/blueflood/service/ScheduleContext.java@slotKey : SlotKeyblueflood-core/src/main/java/com/rackspacecloud/blueflood/service/ScheduleContext.java 112:120
+Generation
+Remove Parameterblueflood-core/src/main/java/com/rackspacecloud/blueflood/service/ScheduleContext.java@shard : intblueflood-core/src/main/java/com/rackspacecloud/blueflood/service/ScheduleContext.java@private areChildKeysOrSelfKeyScheduledOrRunning(slotKey SlotKey) : booleanblueflood-core/src/main/java/com/rackspacecloud/blueflood/service/ScheduleContext.java 112:112
+Generation
+Remove Parameterblueflood-core/src/main/java/com/rackspacecloud/blueflood/service/ScheduleContext.java@g : Granularityblueflood-core/src/main/java/com/rackspacecloud/blueflood/service/ScheduleContext.java@private areChildKeysOrSelfKeyScheduledOrRunning(slotKey SlotKey) : booleanblueflood-core/src/main/java/com/rackspacecloud/blueflood/service/ScheduleContext.java 112:112
+Generation
+Remove Parameterblueflood-core/src/main/java/com/rackspacecloud/blueflood/service/ScheduleContext.java@slot : intblueflood-core/src/main/java/com/rackspacecloud/blueflood/service/ScheduleContext.java@private areChildKeysOrSelfKeyScheduledOrRunning(slotKey SlotKey) : booleanblueflood-core/src/main/java/com/rackspacecloud/blueflood/service/ScheduleContext.java 112:112
+Generation
+Move Attributeblueflood-core/src/test/java/com/rackspacecloud/blueflood/rollup/SlotTest.java@private shard : intblueflood-core/src/main/java/com/rackspacecloud/blueflood/rollup/SlotKey.java@private shard : intblueflood-core/src/test/java/com/rackspacecloud/blueflood/rollup/SlotTest.java 14:14
+Generation
+Remove Attribute Modifierblueflood-core/src/test/java/com/rackspacecloud/blueflood/rollup/SlotTest.java@private shard : intblueflood-core/src/main/java/com/rackspacecloud/blueflood/rollup/SlotKey.java@private shard : intblueflood-core/src/test/java/com/rackspacecloud/blueflood/rollup/SlotTest.java 14:14
+Generation
+Remove Parameterblueflood-core/src/main/java/com/rackspacecloud/blueflood/rollup/Granularity.java@slot : intblueflood-core/src/main/java/com/rackspacecloud/blueflood/rollup/SlotKey.java@public toString() : Stringblueflood-core/src/main/java/com/rackspacecloud/blueflood/rollup/Granularity.java 257:257
+Generation
+Remove Parameterblueflood-core/src/main/java/com/rackspacecloud/blueflood/rollup/Granularity.java@shard : intblueflood-core/src/main/java/com/rackspacecloud/blueflood/rollup/SlotKey.java@public toString() : Stringblueflood-core/src/main/java/com/rackspacecloud/blueflood/rollup/Granularity.java 257:257
+Generation
+Add Method Annotationblueflood-core/src/main/java/com/rackspacecloud/blueflood/rollup/Granularity.java@public formatLocatorKey(slot int, shard int) : Stringblueflood-core/src/main/java/com/rackspacecloud/blueflood/rollup/SlotKey.java@@Overrideblueflood-core/src/main/java/com/rackspacecloud/blueflood/rollup/Granularity.java 257:259
+Generation
+Move And Rename Methodblueflood-core/src/main/java/com/rackspacecloud/blueflood/rollup/Granularity.java@public formatLocatorKey(slot int, shard int) : Stringblueflood-core/src/main/java/com/rackspacecloud/blueflood/rollup/SlotKey.java@public toString() : Stringblueflood-core/src/main/java/com/rackspacecloud/blueflood/rollup/Granularity.java 257:259
+******************************
+******************************
+coarse grained commits 6b94c03eab08d04cd957230910087f8e9708b7a8
+fine grained commits ('0bc117fd820ba583b5dd48f4c73c8b840143ea07', '76e71ebb3e3e50fcfc55df166884a1108ac5efab')
+Generation
+Replace Variable With Attributeblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxWriter.java@keptTenantIds : Set<String>blueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxWriter.java@keptTenantIdsSet : Set<String>blueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxWriter.java 55:55
+******************************
+******************************
+coarse grained commits c1c6ad23833e2467b191083e38348b0e47b4138a
+fine grained commits ('6cee31ed05c49a65364dd4625c364fe2984611c7', '1d80bdc144ebbd9ab4437f235514072b2bfc39d8')
+Generation
+Move Methodblueflood-core/src/integration-test/java/com/rackspacecloud/blueflood/tools/RollupToolTest.java@public setUp() : voidblueflood-core/src/integration-test/java/com/rackspacecloud/blueflood/tools/RollupToolIntegrationTest.java@public setUp() : voidblueflood-core/src/integration-test/java/com/rackspacecloud/blueflood/tools/RollupToolTest.java 29:44
+Generation
+Move Methodblueflood-core/src/integration-test/java/com/rackspacecloud/blueflood/tools/RollupToolTest.java@public testRollupTool() : voidblueflood-core/src/integration-test/java/com/rackspacecloud/blueflood/tools/RollupToolIntegrationTest.java@public testRollupTool() : voidblueflood-core/src/integration-test/java/com/rackspacecloud/blueflood/tools/RollupToolTest.java 46:54
+Generation
+Move And Rename Methodblueflood-core/src/integration-test/java/com/rackspacecloud/blueflood/tools/RollupToolTest.java@private test5mRollups() : voidblueflood-core/src/integration-test/java/com/rackspacecloud/blueflood/tools/RollupToolIntegrationTest.java@private assert5mRollups() : voidblueflood-core/src/integration-test/java/com/rackspacecloud/blueflood/tools/RollupToolTest.java 56:68
+Generation
+Move And Rename Methodblueflood-core/src/integration-test/java/com/rackspacecloud/blueflood/tools/RollupToolTest.java@private test20mRollups() : voidblueflood-core/src/integration-test/java/com/rackspacecloud/blueflood/tools/RollupToolIntegrationTest.java@private assert20mRollups() : voidblueflood-core/src/integration-test/java/com/rackspacecloud/blueflood/tools/RollupToolTest.java 70:82
+Generation
+Move And Rename Methodblueflood-core/src/integration-test/java/com/rackspacecloud/blueflood/tools/RollupToolTest.java@private test60mRollups() : voidblueflood-core/src/integration-test/java/com/rackspacecloud/blueflood/tools/RollupToolIntegrationTest.java@private assert60mRollups() : voidblueflood-core/src/integration-test/java/com/rackspacecloud/blueflood/tools/RollupToolTest.java 84:96
+Generation
+Move And Rename Methodblueflood-core/src/integration-test/java/com/rackspacecloud/blueflood/tools/RollupToolTest.java@private test240mRollups() : voidblueflood-core/src/integration-test/java/com/rackspacecloud/blueflood/tools/RollupToolIntegrationTest.java@private assert240mRollups() : voidblueflood-core/src/integration-test/java/com/rackspacecloud/blueflood/tools/RollupToolTest.java 98:110
+Generation
+Move And Rename Methodblueflood-core/src/integration-test/java/com/rackspacecloud/blueflood/tools/RollupToolTest.java@private test1440mRollups() : voidblueflood-core/src/integration-test/java/com/rackspacecloud/blueflood/tools/RollupToolIntegrationTest.java@private assert1440mRollups() : voidblueflood-core/src/integration-test/java/com/rackspacecloud/blueflood/tools/RollupToolTest.java 112:124
+******************************
+******************************
+coarse grained commits c42e4467d337d1f8d2c8743058486fd16047c900
+fine grained commits ('c36846b942e8e6760e726069e08b6af6664907e2', 'a7e6e7cf2d2fb1aaefe82825193cccecf261016a')
+Generation
+Extract Methodblueflood-core/src/main/java/com/rackspacecloud/blueflood/service/ShardState.java@public toString() : Stringblueflood-core/src/main/java/com/rackspacecloud/blueflood/service/ShardState.java@public getTimestamp() : longblueflood-core/src/main/java/com/rackspacecloud/blueflood/service/ShardState.java 36:38
+Generation
+Extract And Move Methodblueflood-core/src/main/java/com/rackspacecloud/blueflood/service/RollupService.java@public getOldestUnrolledSlotPerGranularity(shard int) : Collection<String>blueflood-core/src/main/java/com/rackspacecloud/blueflood/service/ShardState.java@public withTimestamp(timestamp long) : ShardStateblueflood-core/src/main/java/com/rackspacecloud/blueflood/service/RollupService.java 294:319
+******************************
+******************************
+coarse grained commits 42be73a13f7de9bc9d1d202fa600b54070e508d8
+fine grained commits ('75594271651739e0bc82feb80797df5a31d25578', '9b3455597c75bb22ab1f5faa20f1c38b6cf5c823')
+Generation
+Change Variable Typeblueflood-core/src/main/java/com/rackspacecloud/blueflood/types/CounterRollup.java@numSamples : intblueflood-core/src/main/java/com/rackspacecloud/blueflood/types/CounterRollup.java@seconds : doubleblueflood-core/src/main/java/com/rackspacecloud/blueflood/types/CounterRollup.java 37:37
+Generation
+Rename Variableblueflood-core/src/main/java/com/rackspacecloud/blueflood/types/CounterRollup.java@numSamples : intblueflood-core/src/main/java/com/rackspacecloud/blueflood/types/CounterRollup.java@seconds : doubleblueflood-core/src/main/java/com/rackspacecloud/blueflood/types/CounterRollup.java 37:37
+******************************
+******************************
+coarse grained commits d2de965d4a35f289662dcfd77b5ebe65ab35c392
+fine grained commits ('b24ba7d0f36f52238990e96e3c04bb0f7735592d', '9e65c4caf0d6ca7827c232d17ef76c580a95dead')
+Generation
+Move Packageblueflood-kafka/src/main/java/com/rackspacecloud/blueflood/kafkaserializers/RollupEventSerializer.java@com.rackspacecloud.blueflood.kafkaserializers.RollupEventSerializerblueflood-kafka/src/main/java/com/rackspacecloud/blueflood/outputs/serializers/RollupEventSerializer.java@com.rackspacecloud.blueflood.outputs.serializers.RollupEventSerializerblueflood-kafka/src/main/java/com/rackspacecloud/blueflood/kafkaserializers/RollupEventSerializer.java 15:52
+******************************
+******************************
+coarse grained commits d5e96a052c963a1be0ab0ffc8081e05e44150f54
+fine grained commits ('5667be3cc033b2ce5d75421a7ce1eba3c5f7cf84', '26f4cc8b7426557246135325a9523afba4d324fa')
+Generation
+Move Classblueflood-udp/src/main/java/com/rackspacecloud/blueflood/service/udp/ShardStateServices.java@com.rackspacecloud.blueflood.service.udp.ShardStateServicesblueflood-core/src/main/java/com/rackspacecloud/blueflood/service/ShardStateServices.java@com.rackspacecloud.blueflood.service.ShardStateServicesblueflood-udp/src/main/java/com/rackspacecloud/blueflood/service/udp/ShardStateServices.java 15:60
+******************************
+******************************
+coarse grained commits df6084636b3ae42c2889b186f0cc19ac2598b351
+fine grained commits ('d5906eb0c5c14d1764406925889b308cf7ef3e37', 'd133fbc60070a46ef2c89382c4751ddf6ff5c493')
+Generation
+Rename Methodblueflood-core/src/main/java/com/rackspacecloud/blueflood/service/Configuration.java@public init(defaultPropFileName String) : voidblueflood-core/src/main/java/com/rackspacecloud/blueflood/service/Configuration.java@public loadDefaultsFromResourceFile(defaultPropFileName String) : voidblueflood-core/src/main/java/com/rackspacecloud/blueflood/service/Configuration.java 26:31
+Generation
+Remove Thrown Exception Typeblueflood-core/src/main/java/com/rackspacecloud/blueflood/service/Configuration.java@IOExceptionblueflood-core/src/main/java/com/rackspacecloud/blueflood/service/Configuration.java@public loadDefaultsFromResourceFile(defaultPropFileName String) : voidblueflood-core/src/main/java/com/rackspacecloud/blueflood/service/Configuration.java 26:26
+******************************
+******************************
+coarse grained commits b00e8078f0eeb403a534a206b475057fb2c96cf0
+fine grained commits ('b1e2fedcfdcc1c76dbf7cc107acdd2f2d18e46e0', '3e8ebe2fe267f7a88e490ff676eb133329b5b888')
+Generation
+Change Variable Typeblueflood-core/src/test/java/com/rackspacecloud/blueflood/service/ConfigurationTest.java@properties : Map<Object,Object>blueflood-core/src/test/java/com/rackspacecloud/blueflood/service/ConfigurationTest.java@config : CoreConfigurationblueflood-core/src/test/java/com/rackspacecloud/blueflood/service/ConfigurationTest.java 31:31
+Generation
+Rename Variableblueflood-core/src/test/java/com/rackspacecloud/blueflood/service/ConfigurationTest.java@properties : Map<Object,Object>blueflood-core/src/test/java/com/rackspacecloud/blueflood/service/ConfigurationTest.java@config : CoreConfigurationblueflood-core/src/test/java/com/rackspacecloud/blueflood/service/ConfigurationTest.java 31:31
+******************************
+******************************
+coarse grained commits 44eb607d7a0648e90a72d09fe7982fa6907740df
+fine grained commits ('cf7e92d7d35d95307e3c81582d88d2fc7dc81a37', '59d83456778beed137f8f88ae315667d0e03ad8c')
+Generation
+Change Variable Typeblueflood-elasticsearch/src/main/java/com/rackspacecloud/blueflood/io/EventElasticSearchIO.java@events : List<Map<String,Object>>blueflood-elasticsearch/src/main/java/com/rackspacecloud/blueflood/io/EventElasticSearchIO.java@searchResults : ArrayList<Map<String,Object>>blueflood-elasticsearch/src/main/java/com/rackspacecloud/blueflood/io/EventElasticSearchIO.java 77:77
+Generation
+Rename Variableblueflood-elasticsearch/src/main/java/com/rackspacecloud/blueflood/io/EventElasticSearchIO.java@events : List<Map<String,Object>>blueflood-elasticsearch/src/main/java/com/rackspacecloud/blueflood/io/EventElasticSearchIO.java@searchResults : ArrayList<Map<String,Object>>blueflood-elasticsearch/src/main/java/com/rackspacecloud/blueflood/io/EventElasticSearchIO.java 77:77
+Generation
+Extract Classblueflood-elasticsearch/src/main/java/com/rackspacecloud/blueflood/io/EventElasticSearchIO.java@com.rackspacecloud.blueflood.io.EventElasticSearchIOblueflood-elasticsearch/src/main/java/com/rackspacecloud/blueflood/io/EventElasticSearchIO.java@com.rackspacecloud.blueflood.io.EventElasticSearchIOblueflood-elasticsearch/src/main/java/com/rackspacecloud/blueflood/io/EventElasticSearchIO.java 22:118
+Generation
+Move And Rename Attributeblueflood-elasticsearch/src/main/java/com/rackspacecloud/blueflood/io/ElasticTokensIO.java@public ES_DOCUMENT_TYPE : Stringblueflood-elasticsearch/src/main/java/com/rackspacecloud/blueflood/io/AbstractElasticIO.java@protected ELASTICSEARCH_DOCUMENT_TYPE : Stringblueflood-elasticsearch/src/main/java/com/rackspacecloud/blueflood/io/ElasticTokensIO.java 40:40
+Generation
+Change Attribute Access Modifierblueflood-elasticsearch/src/main/java/com/rackspacecloud/blueflood/io/ElasticTokensIO.java@public ES_DOCUMENT_TYPE : Stringblueflood-elasticsearch/src/main/java/com/rackspacecloud/blueflood/io/AbstractElasticIO.java@protected ELASTICSEARCH_DOCUMENT_TYPE : Stringblueflood-elasticsearch/src/main/java/com/rackspacecloud/blueflood/io/ElasticTokensIO.java 40:40
+Generation
+Move Methodblueflood-elasticsearch/src/main/java/com/rackspacecloud/blueflood/io/EventElasticSearchIO.java@private extractFieldFromQuery(name String, query Map<String,List<String>>) : Stringblueflood-elasticsearch/src/main/java/com/rackspacecloud/blueflood/io/ElasticsearchRestHelper.java@private extractFieldFromQuery(name String, query Map<String,List<String>>) : Stringblueflood-elasticsearch/src/main/java/com/rackspacecloud/blueflood/io/EventElasticSearchIO.java 106:117
+Generation
+Extract Variableblueflood-elasticsearch/src/main/java/com/rackspacecloud/blueflood/io/EventElasticSearchIO.java@blueflood-elasticsearch/src/main/java/com/rackspacecloud/blueflood/io/ElasticsearchRestHelper.java@temp : List<String>blueflood-elasticsearch/src/main/java/com/rackspacecloud/blueflood/io/EventElasticSearchIO.java 110:110
+******************************
+******************************
+coarse grained commits c8cbd8a1e9d00353570fe5abd31ea46b9482657c
+fine grained commits ('8a4256d1a64d852c2467bf6b0bcad5dd2d98158d', '3e2b32c7b09a2f43f34fc95e161da136149e8217')
+Generation
+Move Attributeblueflood-http/src/main/java/com/rackspacecloud/blueflood/outputs/handlers/HttpMetricTokensHandler.java@private mediaTypeChecker : MediaTypeCheckerblueflood-http/src/main/java/com/rackspacecloud/blueflood/http/QueryStringDecoderAndRouter.java@private mediaTypeChecker : MediaTypeCheckerblueflood-http/src/main/java/com/rackspacecloud/blueflood/outputs/handlers/HttpMetricTokensHandler.java 24:24
+Generation
+Move Attributeblueflood-http/src/main/java/com/rackspacecloud/blueflood/outputs/handlers/HttpMetricsIndexHandler.java@private mediaTypeChecker : MediaTypeCheckerblueflood-http/src/main/java/com/rackspacecloud/blueflood/http/QueryStringDecoderAndRouter.java@private mediaTypeChecker : MediaTypeCheckerblueflood-http/src/main/java/com/rackspacecloud/blueflood/outputs/handlers/HttpMetricsIndexHandler.java 24:24
+Generation
+Move Attributeblueflood-http/src/main/java/com/rackspacecloud/blueflood/outputs/handlers/HttpMultiRollupsQueryHandler.java@private mediaTypeChecker : MediaTypeCheckerblueflood-http/src/main/java/com/rackspacecloud/blueflood/http/QueryStringDecoderAndRouter.java@private mediaTypeChecker : MediaTypeCheckerblueflood-http/src/main/java/com/rackspacecloud/blueflood/outputs/handlers/HttpMultiRollupsQueryHandler.java 35:35
+Generation
+Move Attributeblueflood-http/src/main/java/com/rackspacecloud/blueflood/outputs/handlers/HttpRollupsQueryHandler.java@private mediaTypeChecker : MediaTypeCheckerblueflood-http/src/main/java/com/rackspacecloud/blueflood/http/QueryStringDecoderAndRouter.java@private mediaTypeChecker : MediaTypeCheckerblueflood-http/src/main/java/com/rackspacecloud/blueflood/outputs/handlers/HttpRollupsQueryHandler.java 35:35
+Generation
+Remove Attribute Modifierblueflood-http/src/main/java/com/rackspacecloud/blueflood/outputs/handlers/HttpMetricTokensHandler.java@private mediaTypeChecker : MediaTypeCheckerblueflood-http/src/main/java/com/rackspacecloud/blueflood/http/QueryStringDecoderAndRouter.java@private mediaTypeChecker : MediaTypeCheckerblueflood-http/src/main/java/com/rackspacecloud/blueflood/outputs/handlers/HttpMetricTokensHandler.java 24:24
+Generation
+Remove Attribute Modifierblueflood-http/src/main/java/com/rackspacecloud/blueflood/outputs/handlers/HttpMetricsIndexHandler.java@private mediaTypeChecker : MediaTypeCheckerblueflood-http/src/main/java/com/rackspacecloud/blueflood/http/QueryStringDecoderAndRouter.java@private mediaTypeChecker : MediaTypeCheckerblueflood-http/src/main/java/com/rackspacecloud/blueflood/outputs/handlers/HttpMetricsIndexHandler.java 24:24
+Generation
+Remove Attribute Modifierblueflood-http/src/main/java/com/rackspacecloud/blueflood/outputs/handlers/HttpMultiRollupsQueryHandler.java@private mediaTypeChecker : MediaTypeCheckerblueflood-http/src/main/java/com/rackspacecloud/blueflood/http/QueryStringDecoderAndRouter.java@private mediaTypeChecker : MediaTypeCheckerblueflood-http/src/main/java/com/rackspacecloud/blueflood/outputs/handlers/HttpMultiRollupsQueryHandler.java 35:35
+Generation
+Remove Attribute Modifierblueflood-http/src/main/java/com/rackspacecloud/blueflood/outputs/handlers/HttpRollupsQueryHandler.java@private mediaTypeChecker : MediaTypeCheckerblueflood-http/src/main/java/com/rackspacecloud/blueflood/http/QueryStringDecoderAndRouter.java@private mediaTypeChecker : MediaTypeCheckerblueflood-http/src/main/java/com/rackspacecloud/blueflood/outputs/handlers/HttpRollupsQueryHandler.java 35:35
+******************************
+******************************
+coarse grained commits 163bf5e4a25d185c7d36b5aff1d1845d98abfff4
+fine grained commits ('b6c658f1dcbbefd2e8b0d5cb587753ac08129e97', 'd2a458d05ac73a36d294f2f415095c5091c1dbdb')
+Generation
+Change Parameter Typeblueflood-core/src/main/java/com/rackspacecloud/blueflood/rollup/Granularity.java@checkTtl : booleanblueflood-core/src/main/java/com/rackspacecloud/blueflood/rollup/Granularity.java@ttlComparisonClock : Clockblueflood-core/src/main/java/com/rackspacecloud/blueflood/rollup/Granularity.java 114:114
+Generation
+Rename Parameterblueflood-core/src/main/java/com/rackspacecloud/blueflood/rollup/Granularity.java@checkTtl : booleanblueflood-core/src/main/java/com/rackspacecloud/blueflood/rollup/Granularity.java@ttlComparisonClock : Clockblueflood-core/src/main/java/com/rackspacecloud/blueflood/rollup/Granularity.java 114:114
+Generation
+Rename Parameterblueflood-core/src/main/java/com/rackspacecloud/blueflood/rollup/Granularity.java@checkTtl : booleanblueflood-core/src/main/java/com/rackspacecloud/blueflood/rollup/Granularity.java@ttlComparisonSource : Clockblueflood-core/src/main/java/com/rackspacecloud/blueflood/rollup/Granularity.java 167:167
+Generation
+Change Parameter Typeblueflood-core/src/main/java/com/rackspacecloud/blueflood/rollup/Granularity.java@checkTtl : booleanblueflood-core/src/main/java/com/rackspacecloud/blueflood/rollup/Granularity.java@ttlComparisonSource : Clockblueflood-core/src/main/java/com/rackspacecloud/blueflood/rollup/Granularity.java 167:167
+******************************
+******************************
+coarse grained commits 8c7fc78c2613321889127fd175a4a6c03d1304c7
+fine grained commits ('ac7a0d2838e6bcc92c4f7dfccc0a60be424d135a', '051684468f3a154509706adc49ba4ef9260fbf74')
+Generation
+Add Parameterblueflood-core/src/main/java/com/rackspacecloud/blueflood/service/LocatorFetchRunnable.java@package LocatorFetchRunnable(scheduleCtx ScheduleContext, destSlotKey SlotKey, rollupReadExecutor ThreadPoolExecutor, rollupWriteExecutor ThreadPoolExecutor, enumValidatorExecutor ThreadPoolExecutor)blueflood-core/src/main/java/com/rackspacecloud/blueflood/service/LocatorFetchRunnable.java@astyanaxReader : AstyanaxReaderblueflood-core/src/main/java/com/rackspacecloud/blueflood/service/LocatorFetchRunnable.java 36:48
+******************************
+******************************
+coarse grained commits 2f5d68b81504f75f1ff3035d64762fc41045ba63
+fine grained commits ('cf7c3c3dfff48ec4c1e2d6f67179abeb4a2df304', '814925c0f085bc59925fb5e5416d9c309274c71e')
+Generation
+Move Classblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/serializers/NumericSerializer.java@com.rackspacecloud.blueflood.io.serializers.NumericSerializer.Typeblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/serializers/Serializers.java@com.rackspacecloud.blueflood.io.serializers.Serializers.Typeblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/serializers/NumericSerializer.java 45:54
+Generation
+Move Classblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/serializers/NumericSerializer.java@com.rackspacecloud.blueflood.io.serializers.NumericSerializer.SimpleNumberSerializerblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/serializers/Serializers.java@com.rackspacecloud.blueflood.io.serializers.Serializers.SimpleNumberSerializerblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/serializers/NumericSerializer.java 591:603
+Generation
+Move Classblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/serializers/NumericSerializer.java@com.rackspacecloud.blueflood.io.serializers.NumericSerializer.RawSerializerblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/serializers/Serializers.java@com.rackspacecloud.blueflood.io.serializers.Serializers.RawSerializerblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/serializers/NumericSerializer.java 558:589
+Generation
+Move Classblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/serializers/NumericSerializer.java@com.rackspacecloud.blueflood.io.serializers.NumericSerializer.BasicRollupSerializerblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/serializers/Serializers.java@com.rackspacecloud.blueflood.io.serializers.Serializers.BasicRollupSerializerblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/serializers/NumericSerializer.java 605:632
+Generation
+Move Classblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/serializers/NumericSerializer.java@com.rackspacecloud.blueflood.io.serializers.NumericSerializer.TimerRollupSerializerblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/serializers/Serializers.java@com.rackspacecloud.blueflood.io.serializers.Serializers.TimerRollupSerializerblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/serializers/NumericSerializer.java 634:669
+Generation
+Move Classblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/serializers/NumericSerializer.java@com.rackspacecloud.blueflood.io.serializers.NumericSerializer.SetRollupSerializerblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/serializers/Serializers.java@com.rackspacecloud.blueflood.io.serializers.Serializers.SetRollupSerializerblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/serializers/NumericSerializer.java 671:697
+Generation
+Move Classblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/serializers/NumericSerializer.java@com.rackspacecloud.blueflood.io.serializers.NumericSerializer.GaugeRollupSerializerblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/serializers/Serializers.java@com.rackspacecloud.blueflood.io.serializers.Serializers.GaugeRollupSerializerblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/serializers/NumericSerializer.java 699:724
+Generation
+Move Classblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/serializers/NumericSerializer.java@com.rackspacecloud.blueflood.io.serializers.NumericSerializer.EnumRollupSerializerblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/serializers/Serializers.java@com.rackspacecloud.blueflood.io.serializers.Serializers.EnumRollupSerializerblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/serializers/NumericSerializer.java 726:751
+Generation
+Move Classblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/serializers/NumericSerializer.java@com.rackspacecloud.blueflood.io.serializers.NumericSerializer.CounterRollupSerializerblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/serializers/Serializers.java@com.rackspacecloud.blueflood.io.serializers.Serializers.CounterRollupSerializerblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/serializers/NumericSerializer.java 753:778
+Generation
+Move Methodblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/serializers/NumericSerializer.java@public serializerFor(type Class<T>) : AbstractSerializer<T>blueflood-core/src/main/java/com/rackspacecloud/blueflood/io/serializers/Serializers.java@public serializerFor(type Class<T>) : AbstractSerializer<T>blueflood-core/src/main/java/com/rackspacecloud/blueflood/io/serializers/NumericSerializer.java 56:94
+Generation
+Localize Parameterblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/serializers/NumericSerializer.java@in : CodedInputStreamblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/serializers/metrics/BasicRollupSerDes.java@in : CodedInputStreamblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/serializers/NumericSerializer.java 478:478
+Generation
+Rename Variableblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/serializers/NumericSerializer.java@statType : byteblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/serializers/metrics/BasicRollupSerDes.java@version : byteblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/serializers/NumericSerializer.java 488:488
+Generation
+Add Parameterblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/serializers/NumericSerializer.java@private deserializeV1Rollup(in CodedInputStream) : BasicRollupblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/serializers/metrics/BasicRollupSerDes.java@byteBuffer : ByteBufferblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/serializers/NumericSerializer.java 478:496
+Generation
+Remove Thrown Exception Typeblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/serializers/NumericSerializer.java@IOExceptionblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/serializers/metrics/BasicRollupSerDes.java@public deserialize(byteBuffer ByteBuffer) : BasicRollupblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/serializers/NumericSerializer.java 478:478
+Generation
+Move And Rename Methodblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/serializers/NumericSerializer.java@private deserializeV1Rollup(in CodedInputStream) : BasicRollupblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/serializers/metrics/BasicRollupSerDes.java@public deserialize(byteBuffer ByteBuffer) : BasicRollupblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/serializers/NumericSerializer.java 478:496
+******************************
+******************************
+coarse grained commits 88fbcf19f689a54f637292e90d7211f95535cf43
+fine grained commits ('3f35aa885239b25e9a6511a806a6318488aa7278', '304e621ea246e9c0dd1dd79cec69c0e21dc59025')
+Generation
+Move Methodblueflood-core/src/test/java/com/rackspacecloud/blueflood/service/ScheduleContextScheduleSlotsOlderThanTest.java@public setUp() : voidblueflood-core/src/test/java/com/rackspacecloud/blueflood/service/ScheduleContextGetNextScheduledTest.java@public setUp() : voidblueflood-core/src/test/java/com/rackspacecloud/blueflood/service/ScheduleContextScheduleSlotsOlderThanTest.java 18:20
+Generation
+Add Thrown Exception Typeblueflood-core/src/test/java/com/rackspacecloud/blueflood/service/ScheduleContextScheduleSlotsOlderThanTest.java@public setUp() : voidblueflood-core/src/test/java/com/rackspacecloud/blueflood/service/ScheduleContextGetNextScheduledTest.java@GranularityExceptionblueflood-core/src/test/java/com/rackspacecloud/blueflood/service/ScheduleContextScheduleSlotsOlderThanTest.java 18:20
+******************************
+******************************
+coarse grained commits 65116d3c3fa139a02fb71521314d8a6fbea24631
+fine grained commits ('c6a51e33c53840ef42cb7eb823542a0d0bd9db9c', '0b08e7769f1d032fc3e4dd35784be74a6888d5e7')
+Generation
+Move Methodblueflood-core/src/test/java/com/rackspacecloud/blueflood/service/ScheduleContextTest.java@public setUp() : voidblueflood-core/src/test/java/com/rackspacecloud/blueflood/service/ScheduleContextClearFromRunningTest.java@public setUp() : voidblueflood-core/src/test/java/com/rackspacecloud/blueflood/service/ScheduleContextTest.java 31:34
+******************************
+******************************
+coarse grained commits 31101cb904cbbbd8d54143d314ae2392bc16333b
+fine grained commits ('fd228ac07afa23a798b1775f2136536f5b803582', '84c77feda4cf72a8e45c281569db02ebf05a3a6c')
+Generation
+Rename Methodblueflood-elasticsearch/src/test/java/com/rackspacecloud/blueflood/io/EnumElasticIOTest.java@public testWithEnumMetricAtSameLevel1() : voidblueflood-elasticsearch/src/test/java/com/rackspacecloud/blueflood/io/EnumElasticIOTest.java@public testWithEnumMetricAtSameLevelWithWildCard() : voidblueflood-elasticsearch/src/test/java/com/rackspacecloud/blueflood/io/EnumElasticIOTest.java 529:560
+******************************
+******************************
+coarse grained commits cacfc7627ea703ddfdb713b572bfe2a9842e3234
+fine grained commits ('676e3b0b4f52d6e386586535a8d1ac62a87e45de', '64f0d9384be2b1268c5bb84ef49bbc6592841c65')
+Generation
+Add Variable Modifierblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java@CF : ColumnFamily<Locator,Long>blueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java@CF : ColumnFamily<Locator,Long>blueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java 385:385
+******************************
+******************************
+coarse grained commits 08ff972e9fed53a728b9a36430c40d192d9a7e58
+fine grained commits ('6c363cc18f936e52758a22114dcf160e4182ebad', 'f9ce0c44430af75be804c7a8c31461e2ec36aeb6')
+Generation
+Rename Methodblueflood-elasticsearch/src/main/java/com/rackspacecloud/blueflood/io/ElasticIO.java@public getAnnotation() : Map<String,Object>blueflood-elasticsearch/src/main/java/com/rackspacecloud/blueflood/io/Discovery.java@public getFields() : Map<String,Object>blueflood-elasticsearch/src/main/java/com/rackspacecloud/blueflood/io/ElasticIO.java 194:196
+Generation
+Rename Methodblueflood-elasticsearch/src/main/java/com/rackspacecloud/blueflood/io/ElasticIO.java@public withAnnotation(annotation Map<String,Object>) : Discoveryblueflood-elasticsearch/src/main/java/com/rackspacecloud/blueflood/io/Discovery.java@public withSourceFields(fields Map<String,Object>) : Discoveryblueflood-elasticsearch/src/main/java/com/rackspacecloud/blueflood/io/ElasticIO.java 216:219
+Generation
+Rename Parameterblueflood-elasticsearch/src/main/java/com/rackspacecloud/blueflood/io/ElasticIO.java@annotation : Map<String,Object>blueflood-elasticsearch/src/main/java/com/rackspacecloud/blueflood/io/Discovery.java@fields : Map<String,Object>blueflood-elasticsearch/src/main/java/com/rackspacecloud/blueflood/io/ElasticIO.java 216:216
+Generation
+Rename Attributeblueflood-elasticsearch/src/main/java/com/rackspacecloud/blueflood/io/ElasticIO.java@annotation : Map<String,Object>blueflood-elasticsearch/src/main/java/com/rackspacecloud/blueflood/io/Discovery.java@fields : Map<String,Object>blueflood-elasticsearch/src/main/java/com/rackspacecloud/blueflood/io/ElasticIO.java 186:186
+******************************
+******************************
+coarse grained commits f46e47969136c9791aafb07f81e72c0eed347bec
+fine grained commits ('475471fad626e24b5e8dcf7c9c23eef9c991b465', 'e79e441b939415c3a01091cf784213efa87c54a9')
+Generation
+Extract And Move Methodblueflood-http/src/main/java/com/rackspacecloud/blueflood/outputs/handlers/HttpEventsQueryHandler.java@public handle(ctx ChannelHandlerContext, request HttpRequest) : voidblueflood-http/src/main/java/com/rackspacecloud/blueflood/http/DefaultHandler.java@public sendResponse(channel ChannelHandlerContext, request HttpRequest, messageBody String, status HttpResponseStatus, headers Map<String,String>) : voidblueflood-http/src/main/java/com/rackspacecloud/blueflood/outputs/handlers/HttpEventsQueryHandler.java 29:72
+******************************
+******************************
+coarse grained commits 7d140ed0ecbf08184ed330ef96b3b44274d01e69
+fine grained commits ('e7a7f8c162d60a524dcd4021652eda58af6f652b', '2e3e7657f4514c09ee036b72d10ea02fd697c58e')
+Generation
+Move And Rename Classblueflood-http/src/main/java/com/rackspacecloud/blueflood/inputs/handlers/wrappers/AggregatedPayload.java@com.rackspacecloud.blueflood.inputs.handlers.wrappers.AggregatedPayload.Gaugeblueflood-core/src/main/java/com/rackspacecloud/blueflood/types/BluefloodGauge.java@com.rackspacecloud.blueflood.types.BluefloodGaugeblueflood-http/src/main/java/com/rackspacecloud/blueflood/inputs/handlers/wrappers/AggregatedPayload.java 40:46
+Generation
+Move And Rename Classblueflood-http/src/main/java/com/rackspacecloud/blueflood/inputs/handlers/wrappers/AggregatedPayload.java@com.rackspacecloud.blueflood.inputs.handlers.wrappers.AggregatedPayload.Counterblueflood-core/src/main/java/com/rackspacecloud/blueflood/types/BluefloodCounter.java@com.rackspacecloud.blueflood.types.BluefloodCounterblueflood-http/src/main/java/com/rackspacecloud/blueflood/inputs/handlers/wrappers/AggregatedPayload.java 48:56
+Generation
+Move And Rename Classblueflood-http/src/main/java/com/rackspacecloud/blueflood/inputs/handlers/wrappers/AggregatedPayload.java@com.rackspacecloud.blueflood.inputs.handlers.wrappers.AggregatedPayload.AggregatedSetblueflood-core/src/main/java/com/rackspacecloud/blueflood/types/BluefloodSet.java@com.rackspacecloud.blueflood.types.BluefloodSetblueflood-http/src/main/java/com/rackspacecloud/blueflood/inputs/handlers/wrappers/AggregatedPayload.java 58:64
+Generation
+Move And Rename Classblueflood-http/src/main/java/com/rackspacecloud/blueflood/inputs/handlers/wrappers/AggregatedPayload.java@com.rackspacecloud.blueflood.inputs.handlers.wrappers.AggregatedPayload.Timerblueflood-core/src/main/java/com/rackspacecloud/blueflood/types/BluefloodTimer.java@com.rackspacecloud.blueflood.types.BluefloodTimerblueflood-http/src/main/java/com/rackspacecloud/blueflood/inputs/handlers/wrappers/AggregatedPayload.java 66:90
+******************************
+******************************
+coarse grained commits 21353de3f8f9d190b121a46da685e92a9fe52fd3
+fine grained commits ('68755c107d5e7d624a8564df24711b6bc958c425', '829f461c109b7cdea08379f86972b22a1b8d765a')
+Generation
+Rename Attributeblueflood-elasticsearch/src/main/java/com/rackspacecloud/blueflood/io/ElasticIO.java@INDEX_NAME : Stringblueflood-elasticsearch/src/main/java/com/rackspacecloud/blueflood/io/ElasticIO.java@INDEX_NAME_WRITE : Stringblueflood-elasticsearch/src/main/java/com/rackspacecloud/blueflood/io/ElasticIO.java 37:37
+******************************
+******************************
+coarse grained commits 7f8a26a1eedf2dd8ebc0765ef412a1ebae1283a9
+fine grained commits ('33f776b34b8ae84dc63bd369aa0e16468f5f0218', '0fe7702ef3893205cf402e74d25a52ecd11ac7ea')
+Generation
+Rename Parameterblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/DiscoveryIO.java@locators : List<String>blueflood-core/src/main/java/com/rackspacecloud/blueflood/io/DiscoveryIO.java@queries : List<String>blueflood-core/src/main/java/com/rackspacecloud/blueflood/io/DiscoveryIO.java 11:11
+******************************
+******************************
+coarse grained commits 5b97d99d7a868d948af6fc1c1630ae0d71fc2116
+fine grained commits ('d513cb781a3a629a91145deab2e11b4e0ae5accf', '440eabd775484d88337a29a3e4df3850296d3b91')
+Generation
+Extract Variableblueflood-http/src/main/java/com/rackspacecloud/blueflood/outputs/handlers/HttpMetricsIndexHandler.java@blueflood-http/src/main/java/com/rackspacecloud/blueflood/outputs/handlers/HttpMetricsIndexHandler.java@unit : Stringblueflood-http/src/main/java/com/rackspacecloud/blueflood/outputs/handlers/HttpMetricsIndexHandler.java 99:99
+******************************
+******************************
+coarse grained commits 3d76ea801282a0ca3d14f3e1729d672a75692caa
+fine grained commits ('af95d31af54dffe725afa16d76e73c0f94a4cdd3', '97c19fe1a2324ab472aca39b5a78286f5228d866')
+Generation
+Add Parameterblueflood-dropwizard/src/main/java/com/rackspacecloud/blueflood/dw/ingest/LegacyBasicIngestResource.java@public LegacyBasicIngestResource(configuration IngestConfiguration, context ScheduleContext, writer IMetricsWriter)blueflood-dropwizard/src/main/java/com/rackspacecloud/blueflood/dw/ingest/BasicIngestResource.java@cache : MetadataCacheblueflood-dropwizard/src/main/java/com/rackspacecloud/blueflood/dw/ingest/LegacyBasicIngestResource.java 35:38
+Generation
+Pull Up Methodblueflood-dropwizard/src/main/java/com/rackspacecloud/blueflood/dw/ingest/LegacyBasicIngestResource.java@public LegacyBasicIngestResource(configuration IngestConfiguration, context ScheduleContext, writer IMetricsWriter)blueflood-dropwizard/src/main/java/com/rackspacecloud/blueflood/dw/ingest/BasicIngestResource.java@public BasicIngestResource(configuration IngestConfiguration, context ScheduleContext, writer IMetricsWriter, cache MetadataCache)blueflood-dropwizard/src/main/java/com/rackspacecloud/blueflood/dw/ingest/LegacyBasicIngestResource.java 35:38
+Generation
+Pull Up Methodblueflood-dropwizard/src/main/java/com/rackspacecloud/blueflood/dw/ingest/BasicIngestResource.java@public BasicIngestResource(configuration IngestConfiguration, context ScheduleContext, writer IMetricsWriter)blueflood-dropwizard/src/main/java/com/rackspacecloud/blueflood/dw/ingest/AbstractIngestResource.java@public AbstractIngestResource(configuration IngestConfiguration, context ScheduleContext, writer IMetricsWriter, cache MetadataCache)blueflood-dropwizard/src/main/java/com/rackspacecloud/blueflood/dw/ingest/BasicIngestResource.java 40:44
+******************************
+******************************
+coarse grained commits 5256e3984801b6e4b4b714660ca154a4d0b8f944
+fine grained commits ('4fe425734ebc3872d21f807e08abb652f51557ff', '516c33730fba74e559b12f04d06e23733b2eb6e5')
+Generation
+Change Variable Typeblueflood-cloudfiles/src/main/java/com/rackspacecloud/blueflood/outputs/cloudfiles/RollupFile.java@time : Dateblueflood-cloudfiles/src/main/java/com/rackspacecloud/blueflood/outputs/cloudfiles/RollupFile.java@time : Dateblueflood-cloudfiles/src/main/java/com/rackspacecloud/blueflood/outputs/cloudfiles/RollupFile.java 37:37
+Generation
+Rename Variableblueflood-cloudfiles/src/main/java/com/rackspacecloud/blueflood/outputs/cloudfiles/RollupFile.java@str : Stringblueflood-cloudfiles/src/main/java/com/rackspacecloud/blueflood/outputs/cloudfiles/RollupFile.java@formattedTime : Stringblueflood-cloudfiles/src/main/java/com/rackspacecloud/blueflood/outputs/cloudfiles/RollupFile.java 38:38
+******************************
+******************************
+coarse grained commits 6fe178727cb64f101d9f9bb48c630d17e78ae112
+fine grained commits ('47ace5d07331afbbc1421c8927ce3a999b60c38d', 'a40a60b3d3a8f9885111b355c4697888a8c396ed')
+Generation
+Split Classblueflood-core/src/test/java/com/rackspacecloud/blueflood/service/ShardStateTest.java@com.rackspacecloud.blueflood.service.ShardStateTestblueflood-core/src/test/java/com/rackspacecloud/blueflood/io/serializers/SlotStateSerializerTest.java@com.rackspacecloud.blueflood.io.serializers.SlotStateSerializerTestblueflood-core/src/test/java/com/rackspacecloud/blueflood/service/ShardStateTest.java 8:69
+Generation
+Change Method Access Modifierblueflood-core/src/main/java/com/rackspacecloud/blueflood/service/ShardState.java@protected granularityFromStateCol(s String) : Granularityblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/serializers/SlotStateSerializer.java@public granularityFromStateCol(s String) : Granularityblueflood-core/src/main/java/com/rackspacecloud/blueflood/service/ShardState.java 78:84
+Generation
+Move Methodblueflood-core/src/main/java/com/rackspacecloud/blueflood/service/ShardState.java@protected granularityFromStateCol(s String) : Granularityblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/serializers/SlotStateSerializer.java@public granularityFromStateCol(s String) : Granularityblueflood-core/src/main/java/com/rackspacecloud/blueflood/service/ShardState.java 78:84
+Generation
+Move Methodblueflood-core/src/main/java/com/rackspacecloud/blueflood/service/ShardState.java@protected slotFromStateCol(s String) : intblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/serializers/SlotStateSerializer.java@protected slotFromStateCol(s String) : intblueflood-core/src/main/java/com/rackspacecloud/blueflood/service/ShardState.java 86:86
+Generation
+Move Methodblueflood-core/src/main/java/com/rackspacecloud/blueflood/service/ShardState.java@protected stateCodeFromStateCol(s String) : Stringblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/serializers/SlotStateSerializer.java@protected stateCodeFromStateCol(s String) : Stringblueflood-core/src/main/java/com/rackspacecloud/blueflood/service/ShardState.java 87:87
+Generation
+Move Methodblueflood-core/src/main/java/com/rackspacecloud/blueflood/service/ShardState.java@protected stateFromCode(stateCode String) : UpdateStamp.Stateblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/serializers/SlotStateSerializer.java@protected stateFromCode(stateCode String) : UpdateStamp.Stateblueflood-core/src/main/java/com/rackspacecloud/blueflood/service/ShardState.java 89:95
+******************************
+******************************
+coarse grained commits c9096fc19bb1153262cc904820317bc64ec26901
+fine grained commits ('1840caa575a5da3d241c71b7b7390d6cdcf36cfc', 'ded3511459c65c6c4d03254793e715063496c566')
+Generation
+Move Methodblueflood-core/src/main/java/com/rackspacecloud/blueflood/types/SetRollup.java@public equals(obj Object) : booleanblueflood-core/src/main/java/com/rackspacecloud/blueflood/types/Points.java@public equals(obj Object) : booleanblueflood-core/src/main/java/com/rackspacecloud/blueflood/types/SetRollup.java 10:16
+******************************
+******************************
+coarse grained commits 98afa13c79020006c8ed54b21f9e8f5b6fc97172
+fine grained commits ('d9e2255bf0cf61b4e696383de5810a84cb902be9', '332d2c395439bef62bd3b0d57de85a667b3a2322')
+Generation
+Move Classblueflood-udp/src/main/java/com/rackspacecloud/blueflood/service/udp/ShardStateServices.java@com.rackspacecloud.blueflood.service.udp.ShardStateServicesblueflood-core/src/main/java/com/rackspacecloud/blueflood/service/ShardStateServices.java@com.rackspacecloud.blueflood.service.ShardStateServicesblueflood-udp/src/main/java/com/rackspacecloud/blueflood/service/udp/ShardStateServices.java 15:60
+******************************
+******************************
+coarse grained commits 78ab5c51ccdf15dc03f563de208b723e492d4127
+fine grained commits ('fe171e0d21ef22dfe8a6ff956443f56debcc267d', 'aa8d99a708621ea9c20ae94286e2c7907c734f80')
+Generation
+Move Attributeblueflood-core/src/main/java/com/rackspacecloud/blueflood/concurrent/ThreadPoolBuilder.java@private workQueueSize : Gauge<Integer>blueflood-core/src/main/java/com/rackspacecloud/blueflood/concurrent/ThreadPoolBuilder.java@private workQueueSize : Gauge<Integer>blueflood-core/src/main/java/com/rackspacecloud/blueflood/concurrent/ThreadPoolBuilder.java 19:19
+Generation
+Add Attribute Modifierblueflood-core/src/main/java/com/rackspacecloud/blueflood/concurrent/ThreadPoolBuilder.java@private workQueueSize : Gauge<Integer>blueflood-core/src/main/java/com/rackspacecloud/blueflood/concurrent/ThreadPoolBuilder.java@private workQueueSize : Gauge<Integer>blueflood-core/src/main/java/com/rackspacecloud/blueflood/concurrent/ThreadPoolBuilder.java 19:19
+******************************
+******************************
+coarse grained commits c13269e361a3f76baf76bced5d7ed0816a8ab939
+fine grained commits ('54cc8ac08b7a51730ed5f3d08b5add145925e134', 'de263ca9c19af6bae4f40f1b1c07f605c9dd7704', 'c80b6208727d4f8331cf2ad6332de750fe24a026')
+Generation
+Change Variable Typeblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/datastax/DAbstractMetricsRW.java@rollupType : RollupTypeblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/datastax/DAbstractMetricsRW.java@io : DAbstractMetricIOblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/datastax/DAbstractMetricsRW.java 160:161
+Generation
+Rename Variableblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/datastax/DAbstractMetricsRW.java@rollupType : RollupTypeblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/datastax/DAbstractMetricsRW.java@io : DAbstractMetricIOblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/datastax/DAbstractMetricsRW.java 160:161
+******************************
+******************************
+coarse grained commits addf56f8bfd3a57d748951dc9121d22d5c4cb4e2
+fine grained commits ('2db938e3270278a192c7dd8d56e22a822655d7f5', '55f1085bfc8165977ec2da16552bd21702defc1f', 'b4fd684b5fbe375b4bd851a39b08a6856785fa08')
+Generation
+Split Classblueflood-core/src/test/java/com/rackspacecloud/blueflood/io/IOFactoriesTest.java@com.rackspacecloud.blueflood.io.IOFactoriesTestblueflood-core/src/test/java/com/rackspacecloud/blueflood/io/IOContainerTest.java@com.rackspacecloud.blueflood.io.IOContainerTestblueflood-core/src/test/java/com/rackspacecloud/blueflood/io/IOFactoriesTest.java 20:105
+******************************
+******************************
+coarse grained commits 8312852a4772c1f98a1dd5121981ec0f911e672d
+fine grained commits ('5c489a17ed809c3b311b2e17638738b56790cf9f', '336826b8fe44a4fb93f716c276f866faffb16302', '869be2d474fff1c224c0900952c91b8366f87838')
+Generation
+Rename Methodblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java@private getEnumMetricDataForRange(locator Locator, range Range, gran Granularity, rollupType RollupType, dataType DataType) : MetricDatablueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java@public getEnumMetricDataForRangeForLocatorList(locator List<Locator>, range Range, gran Granularity) : Map<Locator,MetricData>blueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java 403:423
+Generation
+Change Return Typeblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java@MetricDatablueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java@Map<Locator,MetricData>blueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java 403:403
+Generation
+Change Parameter Typeblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java@locator : Locatorblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java@locator : List<Locator>blueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java 403:403
+******************************
+******************************
+coarse grained commits 31412e7b57104cbf0da8d0468907ee3a2efb0072
+fine grained commits ('6ecaded1e34f74acc1395bbb43ce69a1ee48e358', '1d5fe64277e0c4fc7405da5d2af3cb89efc5cee7', '1a29199d6bd466714bd5194a68ab341fdfe0f074')
+Generation
+Extract Methodblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/serializers/NumericSerializer.java@private sizeOf(o Object, type byte) : intblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/serializers/NumericSerializer.java@private sizeOf(o Object, type byte, timerVersion byte) : intblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/serializers/NumericSerializer.java 177:279
+******************************
+******************************
+coarse grained commits 129a5e011deef3b0139a811d63a7e42715fadd54
+fine grained commits ('7c67ac885abdbaaabd11b1afb3e7218d872fe204', 'ac5ede1aa437f604e970d77d154f3e1b02a00905', '7bb8eb9df0975d6b42cdaba19807e3f4352e92f7')
+Generation
+Extract And Move Methodblueflood-core/src/integration-test/java/com/rackspacecloud/blueflood/service/ShardStateIntegrationTest.java@public testShardOperationsConcurrency() : voidblueflood-core/src/main/java/com/rackspacecloud/blueflood/service/ShardStatePusher.java@public setIO(io ShardStateIO) : voidblueflood-core/src/integration-test/java/com/rackspacecloud/blueflood/service/ShardStateIntegrationTest.java 184:233
+******************************
+******************************
+coarse grained commits 9fd6ff6cd450ef4f1bc927f03bf8e85ca1228e24
+fine grained commits ('d1de2e0b62ebbfeea9ab417c8679cd556817ebb1', '7029bde3b8e3eeadedbc07a77962525bd1abe6ef', '2548928374dd605c14b2b333367778ca52e0f55a')
+Generation
+Extract And Move Methodblueflood-core/src/main/java/com/rackspacecloud/blueflood/types/Metric.java@public toString() : Stringblueflood-core/src/main/java/com/rackspacecloud/blueflood/types/SingleValueRollup.java@public toString() : Stringblueflood-core/src/main/java/com/rackspacecloud/blueflood/types/Metric.java 79:82
+******************************
+******************************
+coarse grained commits 3c26122a9ff6e2d2101fe145420ddb09fe7034a9
+fine grained commits ('36c167afa515f0f420be8e1e02d75e038e861453', 'c6ac1240a627aaa6c25e08181a99f2d91519363e', '0a3d1a4ec762996d78b4dbb3c8e75b53c65ae98d')
+Generation
+Inline Variableblueflood-http/src/main/java/com/rackspacecloud/blueflood/inputs/handlers/HttpEventsIngestionHandler.java@status : HttpResponseStatusblueflood-http/src/main/java/com/rackspacecloud/blueflood/inputs/handlers/HttpEventsIngestionHandler.java@blueflood-http/src/main/java/com/rackspacecloud/blueflood/inputs/handlers/HttpEventsIngestionHandler.java 43:43
+******************************
+******************************
+coarse grained commits e3151beef34fa98a0a09630e82583da39d3dcc8e
+fine grained commits ('f0aa9abadf9f535f20506269035ad515c3f7584f', '45f089c4cc98fcecd103bcbf9ebd956d5a0f9be2', '840831837f7a627d03aff6f187f55ddb2e5d671c')
+Generation
+Move Methodblueflood-core/src/test/java/com/rackspacecloud/blueflood/types/BluefloodEnumRollupTest.java@public asPoints(type Class<T>, initialTime long, timeDelta long, values T...) : Points<T>blueflood-core/src/test/java/com/rackspacecloud/blueflood/io/serializers/BaseRollupSerializerTest.java@protected asPoints(type Class<T>, initialTime long, timeDelta long, values T...) : Points<T>blueflood-core/src/test/java/com/rackspacecloud/blueflood/types/BluefloodEnumRollupTest.java 98:106
+******************************
+******************************
+coarse grained commits 3dbcdef28099c4f32cce5ee7edb41f8c7c47327d
+fine grained commits ('47ace5d07331afbbc1421c8927ce3a999b60c38d', 'a40a60b3d3a8f9885111b355c4697888a8c396ed', 'ad41402b31247fbac954a42d2a72ea1dbf309368')
+Generation
+Move Methodblueflood-core/src/test/java/com/rackspacecloud/blueflood/rollup/UtilTest.java@public testGranularityFromStateCol() : voidblueflood-core/src/test/java/com/rackspacecloud/blueflood/io/serializers/SlotStateSerializerTest.java@public testGranularityFromStateCol() : voidblueflood-core/src/test/java/com/rackspacecloud/blueflood/rollup/UtilTest.java 71:79
+Generation
+Move Methodblueflood-core/src/main/java/com/rackspacecloud/blueflood/service/ShardState.java@private stateFromCode(stateCode String) : UpdateStamp.Stateblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/serializers/SlotStateSerializer.java@protected stateFromCode(stateCode String) : UpdateStamp.Stateblueflood-core/src/main/java/com/rackspacecloud/blueflood/service/ShardState.java 35:41
+******************************
+******************************
+coarse grained commits 38b1a4b518c9f34f9fcfb3e265f4421c6904baf4
+fine grained commits ('69e36b1b47d4152fd9c4b8ac93861857391c613d', 'cf7e92d7d35d95307e3c81582d88d2fc7dc81a37', '59d83456778beed137f8f88ae315667d0e03ad8c')
+Generation
+Extract Classblueflood-elasticsearch/src/main/java/com/rackspacecloud/blueflood/io/AbstractElasticIO.java@com.rackspacecloud.blueflood.io.AbstractElasticIOblueflood-elasticsearch/src/main/java/com/rackspacecloud/blueflood/io/AbstractElasticIO.java@com.rackspacecloud.blueflood.io.AbstractElasticIOblueflood-elasticsearch/src/main/java/com/rackspacecloud/blueflood/io/AbstractElasticIO.java 27:220
+******************************
+******************************
+coarse grained commits a7219e693603beed7a24443de1834fbde7848245
+fine grained commits ('676e3b0b4f52d6e386586535a8d1ac62a87e45de', '64f0d9384be2b1268c5bb84ef49bbc6592841c65', '34c845943fe574ebd646e53e3b4e8967862eec9c')
+Generation
+Rename Methodblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java@private getEnumMetricDataForRange(locator Locator, range Range, gran Granularity, rollupType RollupType, dataType DataType) : MetricDatablueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java@public getEnumMetricDataForRangeForLocatorList(locator List<Locator>, range Range, gran Granularity) : Map<Locator,MetricData>blueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java 403:423
+Generation
+Change Return Typeblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java@MetricDatablueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java@Map<Locator,MetricData>blueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java 403:403
+Generation
+Change Parameter Typeblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java@locator : Locatorblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java@locator : List<Locator>blueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java 403:403
+******************************
+******************************
+coarse grained commits aa564adc6aee060f61e57b2b77d409f44e185bd4
+fine grained commits ('1f829abe8fadd85c912e6eb59a0e58114535ad79', 'd5906eb0c5c14d1764406925889b308cf7ef3e37', 'd133fbc60070a46ef2c89382c4751ddf6ff5c493')
+Generation
+Inline Methodblueflood-core/src/main/java/com/rackspacecloud/blueflood/service/Configuration.java@public init(defaultPropFileName String) : voidblueflood-core/src/main/java/com/rackspacecloud/blueflood/service/Configuration.java@private Configuration()blueflood-core/src/main/java/com/rackspacecloud/blueflood/service/Configuration.java 26:31
+Generation
+Remove Parameterblueflood-core/src/main/java/com/rackspacecloud/blueflood/service/Configuration.java@defaultPropFileName : Stringblueflood-core/src/main/java/com/rackspacecloud/blueflood/service/Configuration.java@private Configuration()blueflood-core/src/main/java/com/rackspacecloud/blueflood/service/Configuration.java 19:19
+Generation
+Change Method Access Modifierblueflood-core/src/main/java/com/rackspacecloud/blueflood/service/Configuration.java@protected Configuration(defaultPropFileName String)blueflood-core/src/main/java/com/rackspacecloud/blueflood/service/Configuration.java@private Configuration()blueflood-core/src/main/java/com/rackspacecloud/blueflood/service/Configuration.java 19:25
+******************************
+******************************
+coarse grained commits 638bb80e8d100f9eafe6de59da910cf826eab82e
+fine grained commits ('52df4fead2b0968db9bfc42da916ba754d867326', '228c65a13b4b3ac38412aec73fe91bc714fa95a4', '9fd1ceec151ee4096d99599b7cb79b2eb948e5f4', '45da158da658f0bb90ea4aa918968f8e27855af9')
+Generation
+Extract Methodblueflood-elasticsearch/src/main/java/com/rackspacecloud/blueflood/io/ElasticsearchRestHelper.java@public fetchEvents(tenantId String, query Map<String,List<String>>) : Stringblueflood-elasticsearch/src/main/java/com/rackspacecloud/blueflood/io/ElasticsearchRestHelper.java@private getNextBaseUrl() : Stringblueflood-elasticsearch/src/main/java/com/rackspacecloud/blueflood/io/ElasticsearchRestHelper.java 82:128
+Generation
+Extract Methodblueflood-elasticsearch/src/main/java/com/rackspacecloud/blueflood/io/ElasticsearchRestHelper.java@private fetchDocs(queryDslString String, urlFormat String) : Stringblueflood-elasticsearch/src/main/java/com/rackspacecloud/blueflood/io/ElasticsearchRestHelper.java@private getNextBaseUrl() : Stringblueflood-elasticsearch/src/main/java/com/rackspacecloud/blueflood/io/ElasticsearchRestHelper.java 206:248
+******************************
+******************************
+coarse grained commits 384cba9694a3270c5398b8b861c9bddbc27b7662
+fine grained commits ('050774581a926590c69947111b9fad907e563def', 'ac7fcf5283d10cfb476ff9ef20c9d955c720bbda', '4b608912f24ccd2b8a3fb6d7e3f6744e1c306e86', 'ad71760d925ac8ae96302e301d45eb8318b25bbb')
+Generation
+Rename Methodblueflood-core/src/main/java/com/rackspacecloud/blueflood/service/LocatorFetchRunnable.java@package LocatorFetchRunnable(scheduleCtx ScheduleContext, destSlotKey SlotKey, rollupReadExecutor ExecutorService, rollupWriteExecutor SizedExecutorService, enumValidatorExecutor ExecutorService, astyanaxReader AstyanaxReader)blueflood-core/src/main/java/com/rackspacecloud/blueflood/service/LocatorFetchRunnable.java@public initialize(scheduleCtx ScheduleContext, destSlotKey SlotKey, rollupReadExecutor ExecutorService, rollupWriteExecutor ThreadPoolExecutor, enumValidatorExecutor ExecutorService, astyanaxReader AstyanaxReader) : voidblueflood-core/src/main/java/com/rackspacecloud/blueflood/service/LocatorFetchRunnable.java 54:69
+Generation
+Add Method Annotationblueflood-core/src/main/java/com/rackspacecloud/blueflood/service/LocatorFetchRunnable.java@package LocatorFetchRunnable(scheduleCtx ScheduleContext, destSlotKey SlotKey, rollupReadExecutor ExecutorService, rollupWriteExecutor SizedExecutorService, enumValidatorExecutor ExecutorService, astyanaxReader AstyanaxReader)blueflood-core/src/main/java/com/rackspacecloud/blueflood/service/LocatorFetchRunnable.java@@VisibleForTestingblueflood-core/src/main/java/com/rackspacecloud/blueflood/service/LocatorFetchRunnable.java 54:69
+Generation
+Change Method Access Modifierblueflood-core/src/main/java/com/rackspacecloud/blueflood/service/LocatorFetchRunnable.java@package LocatorFetchRunnable(scheduleCtx ScheduleContext, destSlotKey SlotKey, rollupReadExecutor ExecutorService, rollupWriteExecutor SizedExecutorService, enumValidatorExecutor ExecutorService, astyanaxReader AstyanaxReader)blueflood-core/src/main/java/com/rackspacecloud/blueflood/service/LocatorFetchRunnable.java@public initialize(scheduleCtx ScheduleContext, destSlotKey SlotKey, rollupReadExecutor ExecutorService, rollupWriteExecutor ThreadPoolExecutor, enumValidatorExecutor ExecutorService, astyanaxReader AstyanaxReader) : voidblueflood-core/src/main/java/com/rackspacecloud/blueflood/service/LocatorFetchRunnable.java 54:69
+******************************
+******************************
+coarse grained commits 4304905649542a6326fbd0e1e6edbdcc00eedb40
+fine grained commits ('b631c5c9ac616fb161f55bf5b40a8ac1d044658c', '15664fee594bc0b901c4a6c09c4acd47e1e77384', 'd057561289e4b36e0746309ec86a64516661f263', '505704246d79ebf610c9a1bd96b05bfa3d6baa1a')
+Generation
+Extract Variableblueflood-http/src/main/java/com/rackspacecloud/blueflood/inputs/handlers/HttpMetricsIngestionServer.java@blueflood-http/src/main/java/com/rackspacecloud/blueflood/inputs/handlers/HttpMetricsIngestionServer.java@channelFactory : ChannelFactoryblueflood-http/src/main/java/com/rackspacecloud/blueflood/inputs/handlers/HttpMetricsIngestionServer.java 88:91
+******************************
+******************************
+coarse grained commits ac401668d2339e5da1d205a5aaf97fd74cb53a4a
+fine grained commits ('41867c74d030054a85e3f3a266383dae6a011f5e', 'cc51d92b16ec7cd3fc41892ef24c974006509397', '0a07bcfb66dc7e165e818fc64a1f564263569e8d', '8cbab698deb162e03e1504a24f1e74e6aa907ade')
+Generation
+Extract And Move Methodblueflood-core/src/main/java/com/rackspacecloud/blueflood/service/ShardStatePuller.java@public performOperation() : voidblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java@public getAndUpdateShardState(shardStateManager ShardStateManager, shard int) : voidblueflood-core/src/main/java/com/rackspacecloud/blueflood/service/ShardStatePuller.java 21:31
+******************************
+******************************
+coarse grained commits 4100d95b417e3ef57e68e7f9685d35d52a37d951
+fine grained commits ('686f5c06e0b27c855f3d3b453630b5aaf954c78b', '143288dcbf5b7fc595c13fee96aeb313a9b49678', '05c206a4cef40520588cd9a34e5d111b243ea897', '76626bcb35476624941979848138ecc742c24a8c')
+Generation
+Move And Inline Methodblueflood-core/src/main/java/com/rackspacecloud/blueflood/types/SimpleNumber.java@public getCount() : longblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/NumericSerializer.java@private sizeOf(o Object, type byte) : intblueflood-core/src/main/java/com/rackspacecloud/blueflood/types/SimpleNumber.java 51:54
+Generation
+Move And Inline Methodblueflood-core/src/main/java/com/rackspacecloud/blueflood/types/SimpleNumber.java@public getCount() : longblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/NumericSerializer.java@private sizeOf(o Object, type byte) : intblueflood-core/src/main/java/com/rackspacecloud/blueflood/types/SimpleNumber.java 51:54
+******************************
+******************************
+coarse grained commits b8bf7b6b4b2dfced33739c97d65e69c6b3ef1f50
+fine grained commits ('3fa7167c3b29bd204a9192acb31847d54804555a', 'b842b7cae2d613e454fb35357d2567212e597af8', 'b7e02eda040c6e3028083709d079d2b8f77a8a25', 'a4efc375a0aeb0ef1a11170d91c2d3b8a8377aee')
+Generation
+Move And Rename Methodblueflood-core/src/test/java/com/rackspacecloud/blueflood/inputs/processors/TokenDiscoveryWriterTest.java@public testGetTokens() : voidblueflood-core/src/test/java/com/rackspacecloud/blueflood/types/TokenTest.java@public testGetTokensHappyCase() : voidblueflood-core/src/test/java/com/rackspacecloud/blueflood/inputs/processors/TokenDiscoveryWriterTest.java 37:62
+******************************
+******************************
+coarse grained commits 8d07a94a951a2993f6f825242ef33a7fa3ea668d
+fine grained commits ('71afcf34f1249abfe558dc872f6c87f546469321', '8fe184b42da8f8c4957ced852c729e1fcb1468cd', 'e3fb346c3db6283556326d4675ba1ad3f14d5aa6', '7420a549f5cc5a952ed196b26fbf9abe94d85a2f')
+Generation
+Move Methodblueflood-core/src/test/java/com/rackspacecloud/blueflood/io/MetadataSerializerTest.java@public testString() : voidblueflood-core/src/test/java/com/rackspacecloud/blueflood/io/StringMetadataSerializerTest.java@public testString() : voidblueflood-core/src/test/java/com/rackspacecloud/blueflood/io/MetadataSerializerTest.java 16:24
+******************************
+******************************
+coarse grained commits dcd885d0a3852022548ba23fe5762016a95d946c
+fine grained commits ('869be2d474fff1c224c0900952c91b8366f87838', '226fea950bdb5270b715f38f65155b3588e0f2f8', '7e72afc8ca30e5cc115479218c847737ba97de2e', '593f2cd5080e68412d6e5634c8bca51359c7da06')
+Generation
+Remove Parameterblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java@locator : Locatorblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java@public call() : Pointsblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java 581:581
+Generation
+Remove Parameterblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java@range : Rangeblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java@public call() : Pointsblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java 581:581
+Generation
+Remove Parameterblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java@gran : Granularityblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java@public call() : Pointsblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java 581:581
+Generation
+Remove Parameterblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java@rollupType : RollupTypeblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java@public call() : Pointsblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java 581:581
+Generation
+Remove Parameterblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java@dataType : DataTypeblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java@public call() : Pointsblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java 581:581
+Generation
+Add Method Annotationblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java@private getEnumPoints(locator Locator, range Range, gran Granularity, rollupType RollupType, dataType DataType) : Pointsblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java@@Overrideblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java 581:597
+Generation
+Add Thrown Exception Typeblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java@private getEnumPoints(locator Locator, range Range, gran Granularity, rollupType RollupType, dataType DataType) : Pointsblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java@ScriptExceptionblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java 581:597
+Generation
+Change Method Access Modifierblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java@private getEnumPoints(locator Locator, range Range, gran Granularity, rollupType RollupType, dataType DataType) : Pointsblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java@public call() : Pointsblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java 581:597
+Generation
+Move And Rename Methodblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java@private getEnumPoints(locator Locator, range Range, gran Granularity, rollupType RollupType, dataType DataType) : Pointsblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java@public call() : Pointsblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java 581:597
+******************************
+******************************
+coarse grained commits f9f204e430f17dc28ef825f280385d6b65c13940
+fine grained commits ('99b86179e75fd04242b288a97369ccd44fece2f5', '9f3d8280942684883ad3aad995cfec8f2838c8a7', 'e74c592e806b573c9868b6b1f61b087ec18d35c0', 'b10ff67439989ed69a7a38cd52e1157f5bd7b86d')
+Generation
+Move Attributeblueflood-core/src/main/java/com/rackspacecloud/blueflood/types/EnumRollup.java@private name : Stringblueflood-core/src/main/java/com/rackspacecloud/blueflood/types/BluefloodEnum.java@private name : Stringblueflood-core/src/main/java/com/rackspacecloud/blueflood/types/EnumRollup.java 7:7
+******************************
+******************************
+coarse grained commits 63080ac76c0c53924932d358d039d537411e3ac2
+fine grained commits ('a40a60b3d3a8f9885111b355c4697888a8c396ed', 'ad41402b31247fbac954a42d2a72ea1dbf309368', 'c36846b942e8e6760e726069e08b6af6664907e2', 'a7e6e7cf2d2fb1aaefe82825193cccecf261016a')
+Generation
+Extract Classblueflood-core/src/main/java/com/rackspacecloud/blueflood/utils/Util.java@com.rackspacecloud.blueflood.utils.Utilblueflood-core/src/main/java/com/rackspacecloud/blueflood/utils/Util.java@com.rackspacecloud.blueflood.utils.Utilblueflood-core/src/main/java/com/rackspacecloud/blueflood/utils/Util.java 14:69
+Generation
+Move Methodblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/serializers/ShardStateSerializer.java@public toByteBuffer(state ShardState) : ByteBufferblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/serializers/SlotStateSerializer.java@public toByteBuffer(state SlotState) : ByteBufferblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/serializers/ShardStateSerializer.java 11:14
+******************************
+******************************
+coarse grained commits 2ed59c0eb7751c00d112791a9bd8682ed27431ce
+fine grained commits ('1638313c1ec276fc56a74ef6e9d7095aceca0a00', 'f4fa7d93ebaf30e14987226a73c537632a05707a', '324667df8986dff58eb609e079d18ce65c86b889', '7ac68634d22d95d15d9364ec165b003261e26e8f')
+Generation
+Rename Methodblueflood-core/src/test/java/com/rackspacecloud/blueflood/rollup/GranularityTest.java@public testIsCoarser() : voidblueflood-core/src/test/java/com/rackspacecloud/blueflood/rollup/GranularityTest.java@public equalsWithSameValueReturnsTrue() : voidblueflood-core/src/test/java/com/rackspacecloud/blueflood/rollup/GranularityTest.java 257:270
+******************************
+******************************
+coarse grained commits 4a6d4c42a1503bd03ffad28e274bd8474fa88e48
+fine grained commits ('e3e5916dfc7ac7e783843f523473ba893fdc1e72', '0467e9b515f7c80ae1e1a9df1911b8a5cb260a4a', '019c72e0f564bc8722a436c4540c69b3571a7115', '69b84804622a26cd8ae3265e69d153d3cc7b05ab')
+Generation
+Add Attribute Modifierblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/datastax/DatastaxEnumIO.java@private insertToMetricsPreaggrFullStatement : PreparedStatementblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/datastax/DAbstractPreaggregatedIO.java@protected insertToMetricsPreaggrFullStatement : PreparedStatementblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/datastax/DatastaxEnumIO.java 29:29
+Generation
+Add Attribute Modifierblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/datastax/DatastaxEnumIO.java@private insertToMetricsPreaggr5MStatement : PreparedStatementblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/datastax/DAbstractPreaggregatedIO.java@protected insertToMetricsPreaggr5MStatement : PreparedStatementblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/datastax/DatastaxEnumIO.java 30:30
+Generation
+Add Attribute Modifierblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/datastax/DatastaxEnumIO.java@private insertToMetricsPreaggr20MStatement : PreparedStatementblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/datastax/DAbstractPreaggregatedIO.java@protected insertToMetricsPreaggr20MStatement : PreparedStatementblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/datastax/DatastaxEnumIO.java 31:31
+Generation
+Add Attribute Modifierblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/datastax/DatastaxEnumIO.java@private insertToMetricsPreaggr60MStatement : PreparedStatementblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/datastax/DAbstractPreaggregatedIO.java@protected insertToMetricsPreaggr60MStatement : PreparedStatementblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/datastax/DatastaxEnumIO.java 32:32
+Generation
+Add Attribute Modifierblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/datastax/DatastaxEnumIO.java@private insertToMetricsPreaggr240MStatement : PreparedStatementblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/datastax/DAbstractPreaggregatedIO.java@protected insertToMetricsPreaggr240MStatement : PreparedStatementblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/datastax/DatastaxEnumIO.java 33:33
+Generation
+Add Attribute Modifierblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/datastax/DatastaxEnumIO.java@private insertToMetricsPreaggr1440MStatement : PreparedStatementblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/datastax/DAbstractPreaggregatedIO.java@protected insertToMetricsPreaggr1440MStatement : PreparedStatementblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/datastax/DatastaxEnumIO.java 34:34
+Generation
+Add Attribute Modifierblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/datastax/DatastaxEnumIO.java@private selectFromMetricsPreaggrFullForRangeStatement : PreparedStatementblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/datastax/DAbstractPreaggregatedIO.java@private selectFromMetricsPreaggrFullForRangeStatement : PreparedStatementblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/datastax/DatastaxEnumIO.java 37:37
+Generation
+Add Attribute Modifierblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/datastax/DatastaxEnumIO.java@private selectFromMetricsPreaggr5MForRangeStatement : PreparedStatementblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/datastax/DAbstractPreaggregatedIO.java@private selectFromMetricsPreaggr5MForRangeStatement : PreparedStatementblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/datastax/DatastaxEnumIO.java 38:38
+Generation
+Add Attribute Modifierblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/datastax/DatastaxEnumIO.java@private selectFromMetricsPreaggr20MForRangeStatement : PreparedStatementblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/datastax/DAbstractPreaggregatedIO.java@private selectFromMetricsPreaggr20MForRangeStatement : PreparedStatementblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/datastax/DatastaxEnumIO.java 39:39
+Generation
+Add Attribute Modifierblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/datastax/DatastaxEnumIO.java@private selectFromMetricsPreaggr60MForRangeStatement : PreparedStatementblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/datastax/DAbstractPreaggregatedIO.java@private selectFromMetricsPreaggr60MForRangeStatement : PreparedStatementblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/datastax/DatastaxEnumIO.java 40:40
+Generation
+Add Attribute Modifierblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/datastax/DatastaxEnumIO.java@private selectFromMetricsPreaggr240MForRangeStatement : PreparedStatementblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/datastax/DAbstractPreaggregatedIO.java@private selectFromMetricsPreaggr240MForRangeStatement : PreparedStatementblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/datastax/DatastaxEnumIO.java 41:41
+Generation
+Add Attribute Modifierblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/datastax/DatastaxEnumIO.java@private selectFromMetricsPreaggr1440MForRangeStatement : PreparedStatementblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/datastax/DAbstractPreaggregatedIO.java@private selectFromMetricsPreaggr1440MForRangeStatement : PreparedStatementblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/datastax/DatastaxEnumIO.java 42:42
+******************************
+******************************
+coarse grained commits e27f09e734e29fef40f89ff8130df1e92ae5105e
+fine grained commits ('3f35aa885239b25e9a6511a806a6318488aa7278', '304e621ea246e9c0dd1dd79cec69c0e21dc59025', 'c6a51e33c53840ef42cb7eb823542a0d0bd9db9c', '0b08e7769f1d032fc3e4dd35784be74a6888d5e7')
+Generation
+Add Thrown Exception Typeblueflood-core/src/test/java/com/rackspacecloud/blueflood/service/ScheduleContextTest.java@public setUp() : voidblueflood-core/src/test/java/com/rackspacecloud/blueflood/service/ScheduleContextClearFromRunningTest.java@GranularityExceptionblueflood-core/src/test/java/com/rackspacecloud/blueflood/service/ScheduleContextTest.java 31:34
+******************************
+******************************
+coarse grained commits 08175fa62828f2025ac3b40e529d2e9966edb17e
+fine grained commits ('34c845943fe574ebd646e53e3b4e8967862eec9c', '66f424629c16352adbc62143fdcde988c22beee2', 'b8586abcec293b39303bdd88fc9e269332de10f4', '4ebd46a3afc3016d1dc6d9753a6e8a1055036227')
+Generation
+Remove Parameterblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java@locator : Locatorblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java@public call() : Pointsblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java 581:581
+Generation
+Remove Parameterblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java@range : Rangeblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java@public call() : Pointsblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java 581:581
+Generation
+Remove Parameterblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java@gran : Granularityblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java@public call() : Pointsblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java 581:581
+Generation
+Remove Parameterblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java@rollupType : RollupTypeblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java@public call() : Pointsblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java 581:581
+Generation
+Remove Parameterblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java@dataType : DataTypeblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java@public call() : Pointsblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java 581:581
+Generation
+Add Method Annotationblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java@private getEnumPoints(locator Locator, range Range, gran Granularity, rollupType RollupType, dataType DataType) : Pointsblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java@@Overrideblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java 581:597
+Generation
+Add Thrown Exception Typeblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java@private getEnumPoints(locator Locator, range Range, gran Granularity, rollupType RollupType, dataType DataType) : Pointsblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java@ScriptExceptionblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java 581:597
+Generation
+Change Method Access Modifierblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java@private getEnumPoints(locator Locator, range Range, gran Granularity, rollupType RollupType, dataType DataType) : Pointsblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java@public call() : Pointsblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java 581:597
+Generation
+Move And Rename Methodblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java@private getEnumPoints(locator Locator, range Range, gran Granularity, rollupType RollupType, dataType DataType) : Pointsblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java@public call() : Pointsblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java 581:597
+******************************
+******************************
+coarse grained commits 2ca79df8f6cf90e81ef6581c83e727ef5079f855
+fine grained commits ('4fc61361137a1cc9e855d8a4b7df199698e54217', '8decb663e4e9a951481b36f89a35267494b90a4f', 'ffbfe14ae9b21b852895d01ae1dd6f4b29dfa01f', 'fa0ebffd69fcd975440535c578a35a496a1897fa')
+Generation
+Move Attributeblueflood-core/src/main/java/com/rackspacecloud/blueflood/types/EnumRollup.java@private name : Stringblueflood-core/src/main/java/com/rackspacecloud/blueflood/types/BluefloodEnum.java@private name : Stringblueflood-core/src/main/java/com/rackspacecloud/blueflood/types/EnumRollup.java 7:7
+******************************
+******************************
+coarse grained commits 4e2edb55ffefedae9e2150b4db65263e84f0c6c0
+fine grained commits ('33f776b34b8ae84dc63bd369aa0e16468f5f0218', '0fe7702ef3893205cf402e74d25a52ecd11ac7ea', 'e8412ca8bf36606b0f9a2015c717fa28f480402f', '21b774016622b468799e341955c2b795feda5f2a')
+Generation
+Extract Methodblueflood-elasticsearch/src/main/java/com/rackspacecloud/blueflood/io/ElasticIO.java@public search(tenant String, query String) : List<SearchResult>blueflood-elasticsearch/src/main/java/com/rackspacecloud/blueflood/io/ElasticIO.java@public search(tenant String, queries List<String>) : List<SearchResult>blueflood-elasticsearch/src/main/java/com/rackspacecloud/blueflood/io/ElasticIO.java 128:156
+Generation
+Rename Variableblueflood-elasticsearch/src/main/java/com/rackspacecloud/blueflood/io/ElasticIO.java@searchTimerCtx : Timer.Contextblueflood-elasticsearch/src/main/java/com/rackspacecloud/blueflood/io/ElasticIO.java@multiSearchCtx : Timer.Contextblueflood-elasticsearch/src/main/java/com/rackspacecloud/blueflood/io/ElasticIO.java 134:134
+******************************
+******************************
+coarse grained commits 96135fd640b4477bc593206ed2b73bbf19b30033
+fine grained commits ('ad41402b31247fbac954a42d2a72ea1dbf309368', 'c36846b942e8e6760e726069e08b6af6664907e2', 'a7e6e7cf2d2fb1aaefe82825193cccecf261016a', '8ed119feb0100e814a8fd6e94d0843ff21075d6f')
+Generation
+Extract Classblueflood-core/src/main/java/com/rackspacecloud/blueflood/utils/Util.java@com.rackspacecloud.blueflood.utils.Utilblueflood-core/src/main/java/com/rackspacecloud/blueflood/utils/Util.java@com.rackspacecloud.blueflood.utils.Utilblueflood-core/src/main/java/com/rackspacecloud/blueflood/utils/Util.java 14:69
+******************************
+******************************
+coarse grained commits 8650bd8252b607e50ead0eeac8dfba59101eda5d
+fine grained commits ('c0e18239a4aae0f08231be240d1382d5d1d2fbcd', '0782901f5be3232d972446e921042ee3cc52e519', '83e6faa86b240aebf3c0a147395fa680f4e516d6', 'a9fc5eb96d7670d31d9f1e6eb00f88db178409d3', '6e16bc6163d33ed46ead69631e3478eaa7be9126')
+Generation
+Rename Methodblueflood-core/src/test/java/com/rackspacecloud/blueflood/service/ConfigurationTest.java@public testGetListProperty() : voidblueflood-core/src/test/java/com/rackspacecloud/blueflood/service/ConfigurationTest.java@public testGettingValuesCreatesOriginals() : voidblueflood-core/src/test/java/com/rackspacecloud/blueflood/service/ConfigurationTest.java 43:52
+******************************
+******************************
+coarse grained commits 7433c19379c7127f2cbe866da2f27a21b2da963a
+fine grained commits ('469376bef3a928dc75da2ce14f7ef41096ad22f0', 'daaa07a2133d015bd57221a93130a5487e8e95b5', '7e89d760d19ad877e7893654e29595fe3e78efd3', '5885cf0364e83224f6d613bc16caeb1bcb26a096', '53785125995f3917bcc2aa8e6be24cd2943b6e95')
+Generation
+Change Variable Typeblueflood-http/src/integration-test/java/com/rackspacecloud/blueflood/inputs/handlers/HttpAggregatedMultiIntegrationTest.java@points : Points<GaugeRollup>blueflood-http/src/integration-test/java/com/rackspacecloud/blueflood/inputs/handlers/HttpHandlerIntegrationTest.java@points : Points<BluefloodGaugeRollup>blueflood-http/src/integration-test/java/com/rackspacecloud/blueflood/inputs/handlers/HttpAggregatedMultiIntegrationTest.java 71:72
+Generation
+Change Variable Typeblueflood-http/src/integration-test/java/com/rackspacecloud/blueflood/inputs/handlers/HttpAggregatedMultiIntegrationTest.java@points1 : Points<CounterRollup>blueflood-http/src/integration-test/java/com/rackspacecloud/blueflood/inputs/handlers/HttpHandlerIntegrationTest.java@points1 : Points<BluefloodCounterRollup>blueflood-http/src/integration-test/java/com/rackspacecloud/blueflood/inputs/handlers/HttpAggregatedMultiIntegrationTest.java 76:77
+******************************
+******************************
+coarse grained commits 91adb9e8700be4e51327c7572144fb86e076f031
+fine grained commits ('ea0451c1e12f7676b5078d6c6b8a8536ade8bbc9', '47ace5d07331afbbc1421c8927ce3a999b60c38d', 'a40a60b3d3a8f9885111b355c4697888a8c396ed', 'ad41402b31247fbac954a42d2a72ea1dbf309368', 'c36846b942e8e6760e726069e08b6af6664907e2')
+Generation
+Extract Variableblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/serializers/ShardStateSerializer.java@blueflood-core/src/main/java/com/rackspacecloud/blueflood/io/serializers/SlotStateSerializer.java@stringRep : Stringblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/serializers/ShardStateSerializer.java 19:19
+******************************
+******************************
+coarse grained commits 4abdf5b7e5ecf2b8ff9c899344cb996dfcd48e20
+fine grained commits ('47ace5d07331afbbc1421c8927ce3a999b60c38d', 'a40a60b3d3a8f9885111b355c4697888a8c396ed', 'ad41402b31247fbac954a42d2a72ea1dbf309368', 'c36846b942e8e6760e726069e08b6af6664907e2', 'a7e6e7cf2d2fb1aaefe82825193cccecf261016a')
+Generation
+Move Methodblueflood-core/src/main/java/com/rackspacecloud/blueflood/service/ShardState.java@private calculateStringRep() : Stringblueflood-core/src/main/java/com/rackspacecloud/blueflood/service/SlotState.java@private calculateStringRep() : Stringblueflood-core/src/main/java/com/rackspacecloud/blueflood/service/ShardState.java 28:34
+Generation
+Move And Rename Methodblueflood-core/src/main/java/com/rackspacecloud/blueflood/service/ShardState.java@public toString() : Stringblueflood-core/src/main/java/com/rackspacecloud/blueflood/service/SlotState.java@public getStringRep() : Stringblueflood-core/src/main/java/com/rackspacecloud/blueflood/service/ShardState.java 36:38
+******************************
+******************************
+coarse grained commits d38d017c3b6197a787dcdad8a3baf479045cffeb
+fine grained commits ('ab3078aabd1e22231efdb1f2178e196ce522aafb', '3f35aa885239b25e9a6511a806a6318488aa7278', '304e621ea246e9c0dd1dd79cec69c0e21dc59025', 'c6a51e33c53840ef42cb7eb823542a0d0bd9db9c', '0b08e7769f1d032fc3e4dd35784be74a6888d5e7')
+Generation
+Extract Methodblueflood-core/src/test/java/com/rackspacecloud/blueflood/service/ScheduleContextTest.java@public testUpdateCreatesActiveDirtyStamp() : voidblueflood-core/src/test/java/com/rackspacecloud/blueflood/service/ScheduleContextUpdateTest.java@private assertStampStateAndTimestampAndDirtyFlag(stamp UpdateStamp, state UpdateStamp.State, timestamp long, dirty boolean) : voidblueflood-core/src/test/java/com/rackspacecloud/blueflood/service/ScheduleContextTest.java 343:362
+Generation
+Extract Methodblueflood-core/src/test/java/com/rackspacecloud/blueflood/service/ScheduleContextTest.java@public testUpdateMarksSlotsDirtyAtAllGranularities() : voidblueflood-core/src/test/java/com/rackspacecloud/blueflood/service/ScheduleContextUpdateTest.java@private assertStampStateAndTimestampAndDirtyFlag(stamp UpdateStamp, state UpdateStamp.State, timestamp long, dirty boolean) : voidblueflood-core/src/test/java/com/rackspacecloud/blueflood/service/ScheduleContextTest.java 364:418
+Generation
+Extract Methodblueflood-core/src/test/java/com/rackspacecloud/blueflood/service/ScheduleContextTest.java@public testUpdateMarksSlotsDirtyAtAllGranularities() : voidblueflood-core/src/test/java/com/rackspacecloud/blueflood/service/ScheduleContextUpdateTest.java@private assertStampStateAndTimestampAndDirtyFlag(stamp UpdateStamp, state UpdateStamp.State, timestamp long, dirty boolean) : voidblueflood-core/src/test/java/com/rackspacecloud/blueflood/service/ScheduleContextTest.java 364:418
+Generation
+Extract Methodblueflood-core/src/test/java/com/rackspacecloud/blueflood/service/ScheduleContextTest.java@public testUpdateMarksSlotsDirtyAtAllGranularities() : voidblueflood-core/src/test/java/com/rackspacecloud/blueflood/service/ScheduleContextUpdateTest.java@private assertStampStateAndTimestampAndDirtyFlag(stamp UpdateStamp, state UpdateStamp.State, timestamp long, dirty boolean) : voidblueflood-core/src/test/java/com/rackspacecloud/blueflood/service/ScheduleContextTest.java 364:418
+Generation
+Extract Methodblueflood-core/src/test/java/com/rackspacecloud/blueflood/service/ScheduleContextTest.java@public testUpdateMarksSlotsDirtyAtAllGranularities() : voidblueflood-core/src/test/java/com/rackspacecloud/blueflood/service/ScheduleContextUpdateTest.java@private assertStampStateAndTimestampAndDirtyFlag(stamp UpdateStamp, state UpdateStamp.State, timestamp long, dirty boolean) : voidblueflood-core/src/test/java/com/rackspacecloud/blueflood/service/ScheduleContextTest.java 364:418
+Generation
+Extract Methodblueflood-core/src/test/java/com/rackspacecloud/blueflood/service/ScheduleContextTest.java@public testUpdateMarksSlotsDirtyAtAllGranularities() : voidblueflood-core/src/test/java/com/rackspacecloud/blueflood/service/ScheduleContextUpdateTest.java@private assertStampStateAndTimestampAndDirtyFlag(stamp UpdateStamp, state UpdateStamp.State, timestamp long, dirty boolean) : voidblueflood-core/src/test/java/com/rackspacecloud/blueflood/service/ScheduleContextTest.java 364:418
+******************************
+******************************
+coarse grained commits b3e8d30597b6ac4c632f2eeb80060a9edc3f1707
+fine grained commits ('4ebd46a3afc3016d1dc6d9753a6e8a1055036227', '32172a199b19a6be9659cbad0f91736c51ace2f4', 'ced7e6ee8cd4074a4ccd7d1c11d278d416f5d7ae', 'cf9f4ad41f39537989eaea67d37297cf16571c2b', '288b14a4cc08af72335f9337a9778893c62d01df')
+Generation
+Extract Methodblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java@public getDataToRoll(type Class<T>, locator Locator, range Range, cf ColumnFamily<Locator,Long>) : Points<T>blueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java@private getEnumStringValuesFromHashes(points Points<T>, enumvalues ColumnList<Long>) : Points<T>blueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java 218:250
+Generation
+Change Variable Typeblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java@col : Column<Long>blueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java@hash : Longblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java 242:242
+Generation
+Rename Variableblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java@points : Points<T>blueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java@pointsEnum : Points<T>blueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java 240:240
+Generation
+Rename Variableblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java@col : Column<Long>blueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java@hash : Longblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java 242:242
+Generation
+Change Variable Typeblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java@ex : RuntimeExceptionblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java@e : ExecutionExceptionblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java 245:245
+Generation
+Rename Variableblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java@ex : RuntimeExceptionblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java@e : ExecutionExceptionblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java 245:245
+******************************
+******************************
+coarse grained commits 93398badd22660b090b15448375e6e970addedb7
+fine grained commits ('83225ddb298305cf45e21d086be7c6f515633266', '135ea990a5e9bea345720bd141564184230f937c', 'ac37c8562407352576f53dd55b5f5dc4906a5c05', 'b0fe648f0cee2043041f3da9af08f16743a0520e', '8acd61225e33573c4ce8d5acd807dbe5c2c916aa')
+Generation
+Rename Classblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/Instrumentation.java@com.rackspacecloud.blueflood.io.Instrumentation.QueryTimersblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/Instrumentation.java@com.rackspacecloud.blueflood.io.Instrumentation.ReadTimersblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/Instrumentation.java 82:95
+Generation
+Rename Attributeblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/Instrumentation.java@histograms : Map<ColumnFamily,Timer>blueflood-core/src/main/java/com/rackspacecloud/blueflood/io/Instrumentation.java@cfTimers : Map<ColumnFamily,Timer>blueflood-core/src/main/java/com/rackspacecloud/blueflood/io/Instrumentation.java 83:83
+******************************
+******************************
+coarse grained commits cf37e6ca01d4218a4f341fc1631569f488d33b4d
+fine grained commits ('593f2cd5080e68412d6e5634c8bca51359c7da06', '0ddf15f9bdf2ebcfca4152c86aba89643d28b20e', '09de6db2ef5fce2982baf925048b8ef472443007', '1330c8e4159ff2d0fdb8b7ddb3266546b8b5a8da', '6278c9d14cf099552e23d8ca1e1e34abe7a7878a')
+Generation
+Extract Methodblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java@public getDataToRoll(type Class<T>, locator Locator, range Range, cf ColumnFamily<Locator,Long>) : Points<T>blueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java@private getEnumStringValuesFromHashes(points Points<T>, enumvalues ColumnList<Long>) : Points<T>blueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java 218:250
+Generation
+Change Variable Typeblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java@col : Column<Long>blueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java@hash : Longblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java 242:242
+Generation
+Rename Variableblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java@points : Points<T>blueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java@pointsEnum : Points<T>blueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java 240:240
+Generation
+Rename Variableblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java@col : Column<Long>blueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java@hash : Longblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java 242:242
+Generation
+Change Variable Typeblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java@ex : RuntimeExceptionblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java@e : ExecutionExceptionblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java 245:245
+Generation
+Rename Variableblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java@ex : RuntimeExceptionblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java@e : ExecutionExceptionblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java 245:245
+******************************
+******************************
+coarse grained commits 6f7938fef3c1f926e2477ba27ed5f54761808b72
+fine grained commits ('ea845f6690de2a3feb8c8262d821ecd764ee0d1d', '560f97e6607ef858a7e8077f493b674a9136916f', 'fbd835418cc315faca1eae4c572a9e7bfd821244', 'd77f486a8bf57efa793bc07d7071e336ceff0ff1', '1999cd45229af2dd304e84796a56c57f4bfb504b')
+Generation
+Extract Methodblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java@private transformColumnsToMetricData(locator Locator, columns ColumnList<Long>, gran Granularity) : MetricDatablueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java@private getDataType(locator Locator, dataTypeCacheKey String) : DataTypeblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java 408:421
+Generation
+Extract Variableblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java@blueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java@meta : Stringblueflood-core/src/main/java/com/rackspacecloud/blueflood/io/AstyanaxReader.java 412:412
+******************************

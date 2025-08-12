@@ -6,7 +6,7 @@ import shutil
 from typing import Union
 from ROExtract.extractRO import extractRO
 from logger import logger_config
-from utils import get_config
+from utils import get_config, load_coarse_normal_commit_map
 from repository import Repository
 from refactoring_operation.commit import Commit
 from line_trace import load_commit_pairs, get_parent_commit
@@ -37,10 +37,10 @@ def make_directories(output: str, repo_name: str, cluster_num: int):
     return snapshot_folder, squashed_git_p, refs
 
 
-def run(repo_path, output, cluster_num, platform):
+def run(repo_path, output, cluster_num):
     data = get_config()
-    RMPath = data[platform]["RMPath"]
-    git_stein = data[platform]["git_stein"]
+    RMPath = data["RMPath"]
+    git_stein = data["git_stein"]
 
     repo_name = repo_path.split("/")[-1]
 
@@ -57,37 +57,56 @@ def run(repo_path, output, cluster_num, platform):
               recipe=recipe, git_stein=git_stein,
               squashedOutput=squashed_git_p,
               clusterNum=cluster_num, jsonOutputDirectory=refs, logger=logger,
-              steinOuput=snapshot_folder)
+              stein_output=snapshot_folder)
     logger.info("finish squash " + str(cluster_num) + "by" + str(cluster_num))
 
     os.system("rm -rf " + squashed_git_p)
 
 
-def trace_and_dump(cs: list[Commit], process_idx, repo_temp_p: pathlib.Path, repo: Repository, dump_des) -> None:
+def trace_and_dump(cs: list[Commit], process_idx, repo_temp_p: pathlib.Path, repo: Repository, dump_des,
+                   lpairs: list[tuple[str, list[Commit]]]) -> None:
     """
     1. copy .git of the target file
     2. trace in the copied .git
     3. dump the ref traced commits into files
     4. remove the copied file
+    :param pairs:
     :param repo:
     :param process_idx:
     :param repo_temp_p:
     :param cs:
     :return:
     """
-    process_p = repo_temp_p.joinpath(process_idx)
-    process_p.mkdir()
-    shutil.copytree(pathlib.Path(repo.repoPath).joinpath(".git"), process_p.joinpath(".git"))
-    temp_repo = Repository(str(process_p))
-    for c in cs:
-        c_parent = get_parent_commit(c.sha1, temp_repo)
-        if c_parent:
-            c.trace_refs_source_locations(
-                parent_commit_sha1=c_parent,
-                repo=temp_repo
-            )
-            c.dump_refs(dump_des)
-    shutil.rmtree(process_p)
+    # 2023/11/16 use git blame with checkout command to replace the git checkout command
+    # process_p = repo_temp_p.joinpath(process_idx)
+    # process_p.mkdir()
+    # shutil.copytree(pathlib.Path(repo.repoPath).joinpath(".git"), process_p.joinpath(".git"))
+    # temp_repo = Repository(str(process_p))
+    for pair in lpairs:
+        coarse_grained_commit_sha1 = pair[0]
+        normal_grained_commits = pair[1]
+        for ngc in normal_grained_commits:
+            ngc_parent = get_parent_commit(ngc.sha1, repo)
+            if ngc_parent:
+                ngc.trace_refs_source_locations(
+                    parent_commit_sha1=ngc_parent,
+                    repo=repo,
+                    ignore_commits=normal_grained_commits
+                )
+                if len(ngc.refs):  # dump refs only if they exist
+                    ngc.dump_refs(dump_des + "/" + coarse_grained_commit_sha1 + "/")
+    # shutil.rmtree(process_p)
+
+    # for c in cs:
+    #     c_parent = get_parent_commit(c.sha1, temp_repo)
+    #     if c_parent:
+    #         c.trace_refs_source_locations(
+    #             parent_commit_sha1=c_parent,
+    #             repo=temp_repo,
+    #             # ignore_commits=
+    #         )
+    #         c.dump_refs(dump_des)
+    # shutil.rmtree(process_p)
 
 
 def trace_and_dump_n(cs: list[Commit], process_idx, repo_temp_p: pathlib.Path, repo: Repository, dump_des,
@@ -102,10 +121,13 @@ def trace_and_dump_n(cs: list[Commit], process_idx, repo_temp_p: pathlib.Path, r
     :param pairs:
     :return:
     """
-    process_p = repo_temp_p.joinpath(process_idx)
-    process_p.mkdir()
-    shutil.copytree(pathlib.Path(repo.repoPath).joinpath(".git"), process_p.joinpath(".git"))
-    temp_repo = Repository(str(process_p))
+
+    # 2023/11/16 use git blame with checkout command to replace the git checkout command
+    # process_p = repo_temp_p.joinpath(process_idx)
+    # process_p.mkdir()
+    # shutil.copytree(pathlib.Path(repo.repoPath).joinpath(".git"), process_p.joinpath(".git"))
+    # temp_repo = Repository(str(process_p))
+    temp_repo = repo
     for coarse_grained_commit in cs:
         coarse_c_parent = get_parent_commit(pairs[coarse_grained_commit.sha1][-1], temp_repo)
         if coarse_c_parent:
@@ -114,9 +136,10 @@ def trace_and_dump_n(cs: list[Commit], process_idx, repo_temp_p: pathlib.Path, r
                 repo=temp_repo
             )
             coarse_grained_commit.dump_refs(dump_des)
-    shutil.rmtree(process_p)
+    # shutil.rmtree(process_p)
 
-def attach_source_locations(repo_path: str, squash_res_d: str, squash_num_start=1, squash_num_end=5) -> None:
+
+def attach_source_locations(repo_path: str, squash_res_d: str, squash_num_start=2, squash_num_end=5) -> None:
     '''
     trace source locations for refs in commits in squash_log_d and dump the refs into json files
     Note that only commits contains refactorings will be traced and write into json file.
@@ -139,26 +162,40 @@ def attach_source_locations(repo_path: str, squash_res_d: str, squash_num_start=
         p.mkdir(exist_ok=True)
         return p
 
-    def commits_trace_1(commits: list[Commit]) -> None:
+    def commits_trace_1(commits: list[Commit], pairs: dict[str, list[str]], output_directory) -> None:
         """
-        trace for non-squash commits, trace from their parent commits
+        trace for non-squashed commits, trace from their parent commits. A group of non-squashed commits will be squsahed
+        into one commit, the trace of non-squashed commits should ignore the commits in the group where it is in.
         :param commits:
         :return:
         """
+
+        def strPairsDict_to_commit():
+            com_dict = {}
+            for c in commits:
+                com_dict[c.sha1] = c
+            cpairs = {}
+            for cgc in pairs.keys():
+                cpairs[cgc] = [com_dict[each] for each in pairs[cgc]]
+            return cpairs
+
         cpu_num = os.cpu_count() / 2
         processes = []
         step = int(len(commits) / cpu_num) + 1
+        cpairs = strPairsDict_to_commit()
+        lpairs = list(cpairs.items())
         for i in range(0, len(commits), step):
             processes.append(Process(target=trace_and_dump,
-                                     args=(commits[i:i + step], f"1_{i}", repo_temp_p, repo, output_directory)))
+                                     args=(commits[i:i + step], f"1_{i}", repo_temp_p, repo, output_directory,
+                                           lpairs[i:i + step])))
         for process in processes:
             process.start()
         for process in processes:
             process.join()
 
-    def commits_trace_n(commits: list[Commit], pairs: dict[str, list[str]]):
+    def commits_trace_n(commits: list[Commit], pairs: dict[str, list[str]], output_directory):
         """
-        trace for squashed commits (coarse-granied commits). For each coarse-grained commit, in the fine-grained commits
+        trace for squashed commits (coarse-grained commits). For each coarse-grained commit, in the fine-grained commits
         which squashed into it, find the most early fine-grained one in terms of chronological order. Trace is conduct
         on the fine-grained commit's parent commit.
         :param commits: coarse-grained commits list
@@ -173,7 +210,9 @@ def attach_source_locations(repo_path: str, squash_res_d: str, squash_num_start=
             break
         for i in range(0, len(commits), step):
             processes.append(Process(target=trace_and_dump_n,
-                                     args=(commits[i:i + step], f"{squash_num}_{i}", repo_temp_p, repo, output_directory,pairs)))
+                                     args=(
+                                         commits[i:i + step], f"{squash_num}_{i}", repo_temp_p, repo, output_directory,
+                                         pairs)))
         for process in processes:
             process.start()
         for process in processes:
@@ -188,18 +227,26 @@ def attach_source_locations(repo_path: str, squash_res_d: str, squash_num_start=
 
     repo_temp_p = build_directory()
 
-    for squash_num in range(squash_num_start, squash_num_end + 1):
-        squash_log_p = squash_res_d.joinpath(str(squash_num)).joinpath(f"log{squash_num}.txt")
-        refs_dir = squash_log_p.parent.joinpath("refs")
-        output_directory = squash_res_d.joinpath(f"o{squash_num}").__str__()
+    normal_grained_commit = [Commit(file) for file in get_json_files_under_directory(
+        squash_res_d.joinpath(str(1)).joinpath("refs")
+    )]
 
-        if squash_num == 1:
-            cs = [Commit(file) for file in get_json_files_under_directory(refs_dir)]
-            commits_trace_1(cs)
-        else:
-            pairs = load_commit_pairs(squash_log_p.__str__())
-            coarse_grained_commits = [Commit(refs_dir.joinpath(c + ".json")) for c in pairs.keys()]
-            commits_trace_n(coarse_grained_commits, pairs)
+    logger = logger_config(log_path=squash_res_d.joinpath(str(1), 'reflog.txt'))
+    logger.info(f"Number of normal-grained-refactorings: {sum([len(c.refs) for c in normal_grained_commit])}")
+
+    for squash_num in range(squash_num_start, squash_num_end + 1):
+        squash_num_folder = squash_res_d.joinpath(str(squash_num))
+        coarse_normal_commit_map = load_coarse_normal_commit_map(squash_num_folder.joinpath("coarse_normal_commit_map.json"))
+
+
+        refs_dir = squash_num_folder.joinpath("refs")
+        output_directory = str(squash_res_d.joinpath(f"o{squash_num}"))
+
+        # normal grained
+        commits_trace_1(normal_grained_commit, coarse_normal_commit_map, output_directory)
+        # coarse grained
+        coarse_grained_commits = [Commit(refs_dir.joinpath(c + ".json")) for c in coarse_normal_commit_map.keys()]
+        commits_trace_n(coarse_grained_commits, coarse_normal_commit_map, output_directory)
 
 
 def get_json_files_under_directory(directory: Union[str, pathlib.Path]) -> list[str]:

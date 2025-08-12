@@ -1,0 +1,510 @@
+******************************
+coarse grained commits 891ba123a103fa092724fd17a7c94248f758731f
+fine grained commits ('899dce369f4884cc72ec6f440c3a5f928a757ea3', '7beb8885d2e9f38e7de02182f442948cb7455237')
+Generation
+Extract Variablespring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/json/DomainObjectReader.java@spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/json/DomainObjectReader.java@collection : Collection<Object>spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/json/DomainObjectReader.java 185:185
+Generation
+Rename Variablespring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/json/DomainObjectReader.java@value : Iterator<Object>spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/json/DomainObjectReader.java@iterator : Iterator<Object>spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/json/DomainObjectReader.java 173:173
+******************************
+******************************
+coarse grained commits a0597f0652eb62bf547be6b1c7b749c7ebacfc30
+fine grained commits ('49de72882224cf5302d9fc0e5a78902aa635e6d6', 'ce9d73af2185e65b817a21e0dbdd946884163561')
+Generation
+Rename Attributespring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/json/PersistentEntityJackson2Module.java@associationLinks : AssociationLinksspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/json/PersistentEntityJackson2Module.java@associations : Associationsspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/json/PersistentEntityJackson2Module.java 140:140
+Generation
+Change Variable Typespring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/json/PersistentEntityToJsonSchemaConverter.java@associationLinks : AssociationLinksspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/json/PersistentEntityToJsonSchemaConverter.java@associations : Associationsspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/json/PersistentEntityToJsonSchemaConverter.java 113:113
+Generation
+Split Parameterspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/mapping/LinkCollectingAssociationHandler.java@associationLinks : AssociationLinksspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/mapping/LinkCollectingAssociationHandler.java@associations : Associationsspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/mapping/LinkCollectingAssociationHandler.java 27:27
+Generation
+Change Method Access Modifierspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/mapping/LinkCollectingAssociationHandler.java@public LinkCollectingAssociationHandler(entities PersistentEntities, path Path, associationLinks AssociationLinks)spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/mapping/LinkCollectingAssociationHandler.java@private LinkCollectingAssociationHandler(entities PersistentEntities, path Path, associations Associations, nested boolean)spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/mapping/LinkCollectingAssociationHandler.java 27:38
+Generation
+Split Attributespring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/mapping/LinkCollectingAssociationHandler.java@associationLinks : AssociationLinksspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/mapping/LinkCollectingAssociationHandler.java@associations : Associationsspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/mapping/LinkCollectingAssociationHandler.java 22:22
+Generation
+Change Attribute Typespring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/json/PersistentEntityJackson2Module.java@associationLinks : AssociationLinksspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/mapping/LinkCollector.java@associationLinks : Associationsspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/json/PersistentEntityJackson2Module.java 420:420
+Generation
+Change Parameter Typespring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/json/PersistentEntityJackson2Module.java@associationLinks : AssociationLinksspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/mapping/LinkCollector.java@associationLinks : Associationsspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/json/PersistentEntityJackson2Module.java 424:424
+******************************
+******************************
+coarse grained commits 8975e4b30b85d277b21a136983ecbaea2105d37d
+fine grained commits ('04e582c4f96cdfe21d6efa938e7eb1a3d5eb74f9', '07d98fc33a435c0b5b433d792898f00347ec74d0')
+Generation
+Extract Classspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/alps/AlpsController.java@org.springframework.data.rest.webmvc.alps.AlpsControllerspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/alps/AlpsController.java@org.springframework.data.rest.webmvc.alps.AlpsControllerspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/alps/AlpsController.java 29:103
+Generation
+Move Attributespring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/alps/AlpsController.java@private repositories : Repositoriesspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/ProfileController.java@private repositories : Repositoriesspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/alps/AlpsController.java 35:35
+******************************
+******************************
+coarse grained commits ef146fda2b2c560042f4d948023c2b2c4c0efced
+fine grained commits ('e3ddb6f117dbdf02f0e5cdda9a0fa624c09dc4a5', '79610da7f70aa87644471a424bdf374771fc8563')
+Generation
+Move And Rename Classspring-data-rest-webmvc/src/test/java/org/springframework/data/rest/webmvc/alps/AlpsControllerWithExposedIdIntegrationTests.java@org.springframework.data.rest.webmvc.alps.AlpsControllerWithExposedIdIntegrationTests.Configspring-data-rest-webmvc/src/test/java/org/springframework/data/rest/webmvc/json/PersistentEntityToJsonSchemaConverterWithExposedIdUnitTests.java@org.springframework.data.rest.webmvc.json.PersistentEntityToJsonSchemaConverterWithExposedIdUnitTests.TestConfigurationspring-data-rest-webmvc/src/test/java/org/springframework/data/rest/webmvc/alps/AlpsControllerWithExposedIdIntegrationTests.java 40:53
+Generation
+Add Class Annotationspring-data-rest-webmvc/src/test/java/org/springframework/data/rest/webmvc/alps/AlpsControllerWithExposedIdIntegrationTests.java@org.springframework.data.rest.webmvc.alps.AlpsControllerWithExposedIdIntegrationTests.Configspring-data-rest-webmvc/src/test/java/org/springframework/data/rest/webmvc/json/PersistentEntityToJsonSchemaConverterWithExposedIdUnitTests.java@@Import(RepositoryRestMvcConfiguration.class)spring-data-rest-webmvc/src/test/java/org/springframework/data/rest/webmvc/alps/AlpsControllerWithExposedIdIntegrationTests.java 40:53
+******************************
+******************************
+coarse grained commits a55b047fb47292151bc106427e03755c99a85edb
+fine grained commits ('5281b713ec3a2a49a6e1af167cc803fa2b653ffc', '3c19a3906e4f96fd73871621e453cd11e0c7a6e3')
+Generation
+Inline Variablespring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryEntityController.java@selfLink : Linkspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryEntityController.java@spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryEntityController.java 206:206
+******************************
+******************************
+coarse grained commits 3fad95b4d777da305ac7f93ab39a0da41718b14c
+fine grained commits ('b2c784fb556791faf18907b2d2fa2c0d9cdae23a', '47c5a07fca7957c56aa732475d6cbd91bd476f4b')
+Generation
+Rename Parameterspring-data-rest-core/src/main/java/org/springframework/data/rest/core/support/DomainObjectMerger.java@property : PersistentProperty<?>spring-data-rest-core/src/main/java/org/springframework/data/rest/core/support/DomainObjectMerger.java@persistentProperty : PersistentProperty<?>spring-data-rest-core/src/main/java/org/springframework/data/rest/core/support/DomainObjectMerger.java 43:43
+******************************
+******************************
+coarse grained commits 6a4181b25a303c618d5d4e071a09f8baafc34b5f
+fine grained commits ('5598007fd212aef1a2eec05bd74fc20958c52626', 'ca15a2575c38f47129d88dee1f88570b20e8b364')
+Generation
+Change Variable Typespring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositorySearchController.java@repoMethod : RepositoryMethodspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositorySearchController.java@mappedMethod : Methodspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositorySearchController.java 97:97
+******************************
+******************************
+coarse grained commits 05f39d3cb86d7363d741307167e350162b390437
+fine grained commits ('e6822f1170b582ec181b9b6a15bde598e2e64934', '7d5250ef8adb85447ea8440a905ee02cb9b3b23a')
+Generation
+Rename Methodspring-data-rest-repository/src/test/java/org/springframework/data/rest/config/ResourceMappingUnitTests.java@public shouldDetectAnnotatedRelAndPathOnMethod() : voidspring-data-rest-repository/src/test/java/org/springframework/data/rest/config/ResourceMappingUnitTests.java@public shouldDetectPathAndRemoveLeadingSlashIfAnyOnMethod() : voidspring-data-rest-repository/src/test/java/org/springframework/data/rest/config/ResourceMappingUnitTests.java 43:55
+******************************
+******************************
+coarse grained commits bccc7b0a0bd112b8ae781bebad0e15a140215250
+fine grained commits ('9cff67e2f26d257fb5ee0b2328d7b1479030ec8d', '5e8208c03b92711c774bffea07a4bccfed3e71f7')
+Generation
+Inline Methodspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestController.java@private createResource(repoRel String, entity Object, entityMetadata EntityMetadata<AttributeMetadata>, baseUri URI) : MapResourcespring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestController.java@public propertyOfEntity(request ServletServerHttpRequest, uriBuilder UriComponentsBuilder, repository String, id String, property String) : ResponseEntity<?>spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestController.java 1368:1390
+Generation
+Change Variable Typespring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestController.java@val : Objectspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestController.java@r : Resourcespring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestController.java 1377:1377
+Generation
+Rename Variablespring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestController.java@val : Objectspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestController.java@r : Resourcespring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestController.java 1377:1377
+Generation
+Inline Variablespring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestController.java@selfUri : URIspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestController.java@public listEntities(request ServletServerHttpRequest, pageSort PagingAndSorting, uriBuilder UriComponentsBuilder, repository String) : ResponseEntity<?>spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestController.java 343:343
+Generation
+Change Variable Typespring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestController.java@body : Objectspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestController.java@r : Resourcespring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestController.java 851:851
+Generation
+Rename Variablespring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestController.java@body : Objectspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestController.java@r : Resourcespring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestController.java 851:851
+Generation
+Change Method Access Modifierspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryAwareMappingHttpMessageConverter.java@private buildUri(baseUri URI, pathSegments String...) : URIspring-data-rest-core/src/main/java/org/springframework/data/rest/core/util/UriUtils.java@public buildUri(baseUri URI, pathSegments String...) : URIspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryAwareMappingHttpMessageConverter.java 186:188
+Generation
+Add Method Modifierspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryAwareMappingHttpMessageConverter.java@private buildUri(baseUri URI, pathSegments String...) : URIspring-data-rest-core/src/main/java/org/springframework/data/rest/core/util/UriUtils.java@public buildUri(baseUri URI, pathSegments String...) : URIspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryAwareMappingHttpMessageConverter.java 186:188
+Generation
+Move Methodspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryAwareMappingHttpMessageConverter.java@private buildUri(baseUri URI, pathSegments String...) : URIspring-data-rest-core/src/main/java/org/springframework/data/rest/core/util/UriUtils.java@public buildUri(baseUri URI, pathSegments String...) : URIspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryAwareMappingHttpMessageConverter.java 186:188
+******************************
+******************************
+coarse grained commits 2358c710009bdb5255799d13b4625eb925297cd0
+fine grained commits ('b5a389c7a339dc726f84b5a9ab2c67fcb9d99a98', '4223e389f642a920dd6baeaff7432b30a8190b69')
+Generation
+Rename Parameterwebmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestController.java@pathComponents : String...webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestController.java@pathSegments : String...webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestController.java 710:710
+Generation
+Rename Parameterwebmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestController.java@pathComponents : String...webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestController.java@pathSegments : String...webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestController.java 844:844
+Generation
+Add Parameterwebmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestController.java@private addSelfLink(model Map<String,Object>, pathComponents String...) : voidwebmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestController.java@baseUri : URIwebmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestController.java 709:721
+******************************
+******************************
+coarse grained commits 1e15f053b05781f8c118e58e8f075124368edbc8
+fine grained commits ('a5ecebd3bb7168c289ced98c57cb27d277e6fe7d', '358133ad8bb7669468e07631a0acc16579a51f51')
+Generation
+Rename Methodspring-data-rest-webmvc/src/test/java/org/springframework/data/rest/webmvc/json/DomainObjectReaderUnitTests.java@public testname() : voidspring-data-rest-webmvc/src/test/java/org/springframework/data/rest/webmvc/json/DomainObjectReaderUnitTests.java@public readsComplexMap() : voidspring-data-rest-webmvc/src/test/java/org/springframework/data/rest/webmvc/json/DomainObjectReaderUnitTests.java 367:374
+******************************
+******************************
+coarse grained commits 1760ee4011a1be24f4613c95a21c90a739bfd2f4
+fine grained commits ('59a83bc5c04d5dee0790e075a03930df62c1852f', '2263e9fcbc910ae903b8ee174577a93bb3a42eb7')
+Generation
+Move Attributespring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/json/JacksonMappingAwareSortTranslator.java@private objectMapper : ObjectMapperspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/json/JacksonMappingAwareSortTranslator.java@private objectMapper : ObjectMapperspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/json/JacksonMappingAwareSortTranslator.java 24:24
+******************************
+******************************
+coarse grained commits 2ada28b8f74c6ad2f949c2854020dea9f3674a61
+fine grained commits ('164a3b497ee38e6292e868d0470773c07cac58a5', '49de72882224cf5302d9fc0e5a78902aa635e6d6')
+Generation
+Move Classspring-data-rest-webmvc/src/test/java/org/springframework/data/rest/webmvc/mongodb/User.java@org.springframework.data.rest.webmvc.mongodb.User.Genderspring-data-rest-tests/spring-data-rest-tests-shop/src/main/java/org/springframework/data/rest/tests/shop/Customer.java@org.springframework.data.rest.tests.shop.Customer.Genderspring-data-rest-webmvc/src/test/java/org/springframework/data/rest/webmvc/mongodb/User.java 17:19
+Generation
+Change Class Access Modifierspring-data-rest-webmvc/src/test/java/org/springframework/data/rest/webmvc/mongodb/User.java@org.springframework.data.rest.webmvc.mongodb.User.Genderspring-data-rest-tests/spring-data-rest-tests-shop/src/main/java/org/springframework/data/rest/tests/shop/Customer.java@org.springframework.data.rest.tests.shop.Customer.Genderspring-data-rest-webmvc/src/test/java/org/springframework/data/rest/webmvc/mongodb/User.java 17:19
+******************************
+******************************
+coarse grained commits cfc168db9b8cf8c035eae8c417933f1d54a42eea
+fine grained commits ('4907d7c94de6a65ab2533fc36b8bdfa85c566345', 'bb58a008af5bcb981871e234661e83a671844080')
+Generation
+Extract Variablespring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/json/PersistentEntityToJsonSchemaConverter.java@spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/json/PersistentEntityToJsonSchemaConverter.java@primaryMember : AnnotatedMemberspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/json/PersistentEntityToJsonSchemaConverter.java 139:141
+******************************
+******************************
+coarse grained commits 5cab8e0d8d7f313dd735f5c91f97b73467d4b54f
+fine grained commits ('b3dbc9e12efc4e4441dc5e0e8fac29981cc68381', '68a3f6f1fac9d16b8f7b9813e80c54a146491a6f')
+Generation
+Rename Parameterspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/AbstractRepositoryRestController.java@e : HttpMessageNotReadableExceptionspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestExceptionHandler.java@o_O : HttpMessageNotReadableExceptionspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/AbstractRepositoryRestController.java 72:72
+Generation
+Remove Method Annotationspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/AbstractRepositoryRestController.java@@ResponseBodyspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestExceptionHandler.java@package handleNotReadable(o_O HttpMessageNotReadableException) : ResponseEntity<ExceptionMessage>spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/AbstractRepositoryRestController.java 71:71
+Generation
+Modify Method Annotationspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/AbstractRepositoryRestController.java@@ExceptionHandler({HttpMessageNotReadableException.class})spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestExceptionHandler.java@@ExceptionHandlerspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/AbstractRepositoryRestController.java 70:70
+Generation
+Change Method Access Modifierspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/AbstractRepositoryRestController.java@public handleNotReadable(e HttpMessageNotReadableException) : ResponseEntity<ExceptionMessage>spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestExceptionHandler.java@package handleNotReadable(o_O HttpMessageNotReadableException) : ResponseEntity<ExceptionMessage>spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/AbstractRepositoryRestController.java 70:74
+Generation
+Change Method Access Modifierspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/AbstractRepositoryRestController.java@public handle(o_O HttpRequestMethodNotSupportedException) : ResponseEntity<Void>spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestExceptionHandler.java@package handle(o_O HttpRequestMethodNotSupportedException) : ResponseEntity<Void>spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/AbstractRepositoryRestController.java 100:107
+Generation
+Change Method Access Modifierspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/AbstractRepositoryRestController.java@public handle(o_O ETagDoesntMatchException) : ResponseEntity<Void>spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestExceptionHandler.java@package handle(o_O ETagDoesntMatchException) : ResponseEntity<Void>spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/AbstractRepositoryRestController.java 109:114
+Generation
+Change Method Access Modifierspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/AbstractRepositoryRestController.java@protected notFound() : ResponseEntity<T>spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestExceptionHandler.java@private notFound() : ResponseEntity<T>spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/AbstractRepositoryRestController.java 116:118
+Generation
+Change Method Access Modifierspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/AbstractRepositoryRestController.java@protected notFound(headers HttpHeaders, body T) : ResponseEntity<T>spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestExceptionHandler.java@private notFound(headers HttpHeaders, body T) : ResponseEntity<T>spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/AbstractRepositoryRestController.java 120:122
+Generation
+Move Attributespring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/AbstractRepositoryRestController.java@private LOG : Loggerspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestExceptionHandler.java@private LOG : Loggerspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/AbstractRepositoryRestController.java 42:42
+Generation
+Add Attribute Modifierspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/AbstractRepositoryRestController.java@private messageSourceAccessor : MessageSourceAccessorspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestExceptionHandler.java@private messageSourceAccessor : MessageSourceAccessorspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/AbstractRepositoryRestController.java 45:45
+Generation
+Add Parameterspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/AbstractRepositoryRestController.java@public handleNotFound() : ResponseEntity<?>spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestExceptionHandler.java@o_O : ResourceNotFoundExceptionspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/AbstractRepositoryRestController.java 64:68
+Generation
+Remove Method Annotationspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/AbstractRepositoryRestController.java@@ResponseBodyspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestExceptionHandler.java@package handleNotFound(o_O ResourceNotFoundException) : ResponseEntity<?>spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/AbstractRepositoryRestController.java 65:65
+Generation
+Modify Method Annotationspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/AbstractRepositoryRestController.java@@ExceptionHandler({ResourceNotFoundException.class})spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestExceptionHandler.java@@ExceptionHandlerspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/AbstractRepositoryRestController.java 64:64
+Generation
+Change Method Access Modifierspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/AbstractRepositoryRestController.java@public handleNotFound() : ResponseEntity<?>spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestExceptionHandler.java@package handleNotFound(o_O ResourceNotFoundException) : ResponseEntity<?>spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/AbstractRepositoryRestController.java 64:68
+Generation
+Rename Parameterspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/AbstractRepositoryRestController.java@ex : Exceptionspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestExceptionHandler.java@o_O : Exceptionspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/AbstractRepositoryRestController.java 96:96
+Generation
+Change Return Typespring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/AbstractRepositoryRestController.java@ResponseEntityspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestExceptionHandler.java@ResponseEntity<ExceptionMessage>spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/AbstractRepositoryRestController.java 96:96
+Generation
+Change Method Access Modifierspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/AbstractRepositoryRestController.java@public handleConflict(ex Exception) : ResponseEntityspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestExceptionHandler.java@package handleConflict(o_O Exception) : ResponseEntity<ExceptionMessage>spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/AbstractRepositoryRestController.java 95:98
+******************************
+******************************
+coarse grained commits c32fd146bce59a788be86e96d0b8117851514de8
+fine grained commits ('94e03c0f39821e015476f26c959cef2b27dadaa8', '63ba389674d7f0701e4938c21df25fadead62ded')
+Generation
+Move Methodspring-data-rest-webmvc/src/test/java/org/springframework/data/rest/webmvc/WebTestUtils.java@public initWebTest() : voidspring-data-rest-webmvc/src/test/java/org/springframework/data/rest/webmvc/TestMvcClient.java@public initWebTest() : voidspring-data-rest-webmvc/src/test/java/org/springframework/data/rest/webmvc/WebTestUtils.java 15:20
+Generation
+Move Methodspring-data-rest-webmvc/src/test/java/org/springframework/data/rest/webmvc/WebTestUtils.java@public assertAllowHeaders(response HttpEntity<?>, methods HttpMethod...) : voidspring-data-rest-webmvc/src/test/java/org/springframework/data/rest/webmvc/TestMvcClient.java@public assertAllowHeaders(response HttpEntity<?>, methods HttpMethod...) : voidspring-data-rest-webmvc/src/test/java/org/springframework/data/rest/webmvc/WebTestUtils.java 22:28
+******************************
+******************************
+coarse grained commits 9defbb7e0078e8c34b610c4e0986bcc8516c621c
+fine grained commits ('ca15a2575c38f47129d88dee1f88570b20e8b364', '2fe5db41495bf8f7e5e1e85ee9c3cc25312771ff')
+Generation
+Move Attributespring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositorySearchController.java@private repositories : Repositoriesspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/json/PersistentEntityToJsonSchemaConverter.java@private repositories : Repositoriesspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositorySearchController.java 42:42
+******************************
+******************************
+coarse grained commits 86e03d8b0f0b3377e13256990372a5de3109949e
+fine grained commits ('0bb41781d8d9030416425b7a9b1ad96523b67d37', 'd66aed1e0f078d92b6226686f6e88187b5a18ebc')
+Generation
+Modify Attribute Annotationspring-data-rest-webmvc/src/test/java/org/springframework/data/rest/test/webmvc/Profile.java@@ManyToOnespring-data-rest-webmvc/src/test/java/org/springframework/data/rest/test/webmvc/Profile.java@@ManyToOne(optional = false)spring-data-rest-webmvc/src/test/java/org/springframework/data/rest/test/webmvc/Profile.java 17:17
+******************************
+******************************
+coarse grained commits fcfd808c2441ff6131045e3f2ad8753745aa8b9d
+fine grained commits ('e550b011eafb8506c14646cb9cc8a3ed49c5dfa5', 'f0c3f3f82e8a0200b8f2fa8118604ab10a7c0dc8', 'a6a68b25eb86caf7541bf5a0845495535df9e9ce')
+Generation
+Move And Rename Classspring-data-rest-example/src/main/java/org/springframework/data/rest/example/jpa/Person.java@org.springframework.data.rest.example.jpa.Personspring-data-rest-webmvc/src/test/java/org/springframework/data/rest/webmvc/cassandra/Employee.java@org.springframework.data.rest.webmvc.cassandra.Employeespring-data-rest-example/src/main/java/org/springframework/data/rest/example/jpa/Person.java 22:109
+Generation
+Move Packagespring-data-rest-example/src/main/java/org/springframework/data/rest/example/jpa/Person.java@org.springframework.data.rest.example.jpa.Personspring-data-rest-webmvc/src/test/java/org/springframework/data/rest/webmvc/cassandra/Employee.java@org.springframework.data.rest.webmvc.cassandra.Employeespring-data-rest-example/src/main/java/org/springframework/data/rest/example/jpa/Person.java 22:109
+Generation
+Add Class Annotationspring-data-rest-example/src/main/java/org/springframework/data/rest/example/jpa/Person.java@org.springframework.data.rest.example.jpa.Personspring-data-rest-webmvc/src/test/java/org/springframework/data/rest/webmvc/cassandra/Employee.java@@Tablespring-data-rest-example/src/main/java/org/springframework/data/rest/example/jpa/Person.java 22:109
+Generation
+Add Class Annotationspring-data-rest-example/src/main/java/org/springframework/data/rest/example/jpa/Person.java@org.springframework.data.rest.example.jpa.Personspring-data-rest-webmvc/src/test/java/org/springframework/data/rest/webmvc/cassandra/Employee.java@@JsonIgnoreProperties(ignoreUnknown = true)spring-data-rest-example/src/main/java/org/springframework/data/rest/example/jpa/Person.java 22:109
+Generation
+Remove Class Annotationspring-data-rest-example/src/main/java/org/springframework/data/rest/example/jpa/Person.java@@Entityspring-data-rest-webmvc/src/test/java/org/springframework/data/rest/webmvc/cassandra/Employee.java@org.springframework.data.rest.webmvc.cassandra.Employeespring-data-rest-example/src/main/java/org/springframework/data/rest/example/jpa/Person.java 22:22
+Generation
+Rename Methodspring-data-rest-example/src/main/java/org/springframework/data/rest/example/jpa/Person.java@private prePersist() : voidspring-data-rest-webmvc/src/test/java/org/springframework/data/rest/webmvc/cassandra/Employee.java@public setTitle(title String) : voidspring-data-rest-example/src/main/java/org/springframework/data/rest/example/jpa/Person.java 98:101
+Generation
+Change Attribute Typespring-data-rest-example/src/main/java/org/springframework/data/rest/example/jpa/Person.java@id : Longspring-data-rest-webmvc/src/test/java/org/springframework/data/rest/webmvc/cassandra/Employee.java@id : Stringspring-data-rest-example/src/main/java/org/springframework/data/rest/example/jpa/Person.java 25:25
+Generation
+Add Attribute Annotationspring-data-rest-example/src/main/java/org/springframework/data/rest/example/jpa/Person.java@private id : Longspring-data-rest-webmvc/src/test/java/org/springframework/data/rest/webmvc/cassandra/Employee.java@@PrimaryKeyspring-data-rest-example/src/main/java/org/springframework/data/rest/example/jpa/Person.java 25:25
+Generation
+Remove Attribute Annotationspring-data-rest-example/src/main/java/org/springframework/data/rest/example/jpa/Person.java@@Description("A person's first name")spring-data-rest-webmvc/src/test/java/org/springframework/data/rest/webmvc/cassandra/Employee.java@private firstName : Stringspring-data-rest-example/src/main/java/org/springframework/data/rest/example/jpa/Person.java 26:26
+Generation
+Remove Attribute Annotationspring-data-rest-example/src/main/java/org/springframework/data/rest/example/jpa/Person.java@@Description("A person's last name")spring-data-rest-webmvc/src/test/java/org/springframework/data/rest/webmvc/cassandra/Employee.java@private lastName : Stringspring-data-rest-example/src/main/java/org/springframework/data/rest/example/jpa/Person.java 27:27
+Generation
+Remove Attribute Annotationspring-data-rest-example/src/main/java/org/springframework/data/rest/example/jpa/Person.java@@NotNullspring-data-rest-webmvc/src/test/java/org/springframework/data/rest/webmvc/cassandra/Employee.java@private lastName : Stringspring-data-rest-example/src/main/java/org/springframework/data/rest/example/jpa/Person.java 27:27
+Generation
+Change Return Typespring-data-rest-example/src/main/java/org/springframework/data/rest/example/jpa/Person.java@Longspring-data-rest-webmvc/src/test/java/org/springframework/data/rest/webmvc/cassandra/Employee.java@Stringspring-data-rest-example/src/main/java/org/springframework/data/rest/example/jpa/Person.java 42:42
+Generation
+Remove Method Annotationspring-data-rest-example/src/main/java/org/springframework/data/rest/example/jpa/Person.java@@Idspring-data-rest-webmvc/src/test/java/org/springframework/data/rest/webmvc/cassandra/Employee.java@public getId() : Stringspring-data-rest-example/src/main/java/org/springframework/data/rest/example/jpa/Person.java 40:40
+Generation
+Remove Method Annotationspring-data-rest-example/src/main/java/org/springframework/data/rest/example/jpa/Person.java@@GeneratedValue(strategy = GenerationType.IDENTITY)spring-data-rest-webmvc/src/test/java/org/springframework/data/rest/webmvc/cassandra/Employee.java@public getId() : Stringspring-data-rest-example/src/main/java/org/springframework/data/rest/example/jpa/Person.java 41:41
+Generation
+Change Parameter Typespring-data-rest-example/src/main/java/org/springframework/data/rest/example/jpa/Person.java@id : Longspring-data-rest-webmvc/src/test/java/org/springframework/data/rest/webmvc/cassandra/Employee.java@id : Stringspring-data-rest-example/src/main/java/org/springframework/data/rest/example/jpa/Person.java 46:46
+Generation
+Add Parameterspring-data-rest-example/src/main/java/org/springframework/data/rest/example/jpa/Person.java@private prePersist() : voidspring-data-rest-webmvc/src/test/java/org/springframework/data/rest/webmvc/cassandra/Employee.java@title : Stringspring-data-rest-example/src/main/java/org/springframework/data/rest/example/jpa/Person.java 98:101
+Generation
+Remove Method Annotationspring-data-rest-example/src/main/java/org/springframework/data/rest/example/jpa/Person.java@@PrePersistspring-data-rest-webmvc/src/test/java/org/springframework/data/rest/webmvc/cassandra/Employee.java@public setTitle(title String) : voidspring-data-rest-example/src/main/java/org/springframework/data/rest/example/jpa/Person.java 98:98
+Generation
+Change Method Access Modifierspring-data-rest-example/src/main/java/org/springframework/data/rest/example/jpa/Person.java@private prePersist() : voidspring-data-rest-webmvc/src/test/java/org/springframework/data/rest/webmvc/cassandra/Employee.java@public setTitle(title String) : voidspring-data-rest-example/src/main/java/org/springframework/data/rest/example/jpa/Person.java 98:101
+Generation
+Rename Attributespring-data-rest-example/src/main/java/org/springframework/data/rest/example/jpa/Person.java@created : Datespring-data-rest-webmvc/src/test/java/org/springframework/data/rest/webmvc/cassandra/Employee.java@title : Stringspring-data-rest-example/src/main/java/org/springframework/data/rest/example/jpa/Person.java 28:28
+Generation
+Change Attribute Typespring-data-rest-example/src/main/java/org/springframework/data/rest/example/jpa/Person.java@created : Datespring-data-rest-webmvc/src/test/java/org/springframework/data/rest/webmvc/cassandra/Employee.java@title : Stringspring-data-rest-example/src/main/java/org/springframework/data/rest/example/jpa/Person.java 28:28
+Generation
+Remove Attribute Annotationspring-data-rest-example/src/main/java/org/springframework/data/rest/example/jpa/Person.java@@Description("Timestamp this person object was created")spring-data-rest-webmvc/src/test/java/org/springframework/data/rest/webmvc/cassandra/Employee.java@private title : Stringspring-data-rest-example/src/main/java/org/springframework/data/rest/example/jpa/Person.java 28:28
+******************************
+******************************
+coarse grained commits 05e4ab23ad46c1339caa471757e6068de0d8478d
+fine grained commits ('9bf77f0613301611135e89b51535d5f2f5e545dd', 'f901e9cba9b70b7ff90cc43a8054601b0c0e1d6d', 'b993d2968aca0812a126090e2747faca6be354b7')
+Generation
+Remove Parameter Modifierspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestController.java@entity : Objectspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestController.java@entity : Objectspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestController.java 998:998
+Generation
+Remove Parameter Modifierspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestController.java@baseUri : URIspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestController.java@baseUri : URIspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestController.java 1000:1000
+Generation
+Change Parameter Typespring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestController.java@entityMetadata : JpaEntityMetadataspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestController.java@entityMetadata : EntityMetadata<AttributeMetadata>spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestController.java 999:999
+Generation
+Remove Parameter Modifierspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestController.java@entityMetadata : JpaEntityMetadataspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestController.java@entityMetadata : EntityMetadata<AttributeMetadata>spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestController.java 999:999
+******************************
+******************************
+coarse grained commits 3850a3693d2e2431d357282129d6bbcc9d010811
+fine grained commits ('3de1b3583de23d33126045726c3f1c3575a33054', '4745182817fcd7ac44de0c812f28711b9ec190d4', '83ba9344a1d44a416228a3ab50d1ebe94b9b768d')
+Generation
+Extract Variablespring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/json/PersistentEntityJackson2Module.java@spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/json/PersistentEntityJackson2Module.java@baseUri : URIspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/json/PersistentEntityJackson2Module.java 102:102
+Generation
+Remove Variable Modifierspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/json/PersistentEntityJackson2Module.java@entity : PersistentEntity<?,?>spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/json/PersistentEntityJackson2Module.java@entity : PersistentEntity<?,?>spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/json/PersistentEntityJackson2Module.java 98:98
+Generation
+Remove Variable Modifierspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/json/PersistentEntityJackson2Module.java@wrapper : BeanWrapper<PersistentEntity<Object,?>,Object>spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/json/PersistentEntityJackson2Module.java@wrapper : BeanWrapper<PersistentEntity<Object,?>,Object>spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/json/PersistentEntityJackson2Module.java 99:99
+Generation
+Remove Variable Modifierspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/json/PersistentEntityJackson2Module.java@entityId : Objectspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/json/PersistentEntityJackson2Module.java@entityId : Objectspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/json/PersistentEntityJackson2Module.java 100:100
+Generation
+Remove Variable Modifierspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/json/PersistentEntityJackson2Module.java@metadata : ResourceMetadataspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/json/PersistentEntityJackson2Module.java@metadata : ResourceMetadataspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/json/PersistentEntityJackson2Module.java 101:101
+Generation
+Move Methodspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/json/PersistentEntityJackson2Module.java@public serialize(resource PersistentEntityResource<?>, jgen JsonGenerator, provider SerializerProvider) : voidspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/json/PersistentEntityJackson2Module.java@public serialize(resource PersistentEntityResource<?>, jgen JsonGenerator, provider SerializerProvider) : voidspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/json/PersistentEntityJackson2Module.java 88:151
+******************************
+******************************
+coarse grained commits c428584d2cf74ef9c64754e6424177051aa0b503
+fine grained commits ('5598007fd212aef1a2eec05bd74fc20958c52626', 'ca15a2575c38f47129d88dee1f88570b20e8b364', '2fe5db41495bf8f7e5e1e85ee9c3cc25312771ff')
+Generation
+Remove Class Annotationspring-data-rest-repository/src/main/java/org/springframework/data/rest/repository/invoke/RepositoryMethodInvoker.java@@SuppressWarnings("deprecation")spring-data-rest-repository/src/main/java/org/springframework/data/rest/repository/invoke/RepositoryInvoker.java@org.springframework.data.rest.repository.invoke.RepositoryInvokerspring-data-rest-repository/src/main/java/org/springframework/data/rest/repository/invoke/RepositoryMethodInvoker.java 21:21
+Generation
+Change Type Declaration Kindspring-data-rest-repository/src/main/java/org/springframework/data/rest/repository/invoke/RepositoryMethodInvoker.java@org.springframework.data.rest.repository.invoke.RepositoryMethodInvokerspring-data-rest-repository/src/main/java/org/springframework/data/rest/repository/invoke/RepositoryInvoker.java@org.springframework.data.rest.repository.invoke.RepositoryInvokerspring-data-rest-repository/src/main/java/org/springframework/data/rest/repository/invoke/RepositoryMethodInvoker.java 21:280
+Generation
+Rename Classspring-data-rest-repository/src/main/java/org/springframework/data/rest/repository/invoke/RepositoryMethodInvoker.java@org.springframework.data.rest.repository.invoke.RepositoryMethodInvokerspring-data-rest-repository/src/main/java/org/springframework/data/rest/repository/invoke/RepositoryInvoker.java@org.springframework.data.rest.repository.invoke.RepositoryInvokerspring-data-rest-repository/src/main/java/org/springframework/data/rest/repository/invoke/RepositoryMethodInvoker.java 21:280
+Generation
+Extract Classspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestRequestHandlerMethodArgumentResolver.java@org.springframework.data.rest.webmvc.RepositoryRestRequestHandlerMethodArgumentResolverspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestRequestHandlerMethodArgumentResolver.java@org.springframework.data.rest.webmvc.RepositoryRestRequestHandlerMethodArgumentResolverspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestRequestHandlerMethodArgumentResolver.java 17:46
+Generation
+Extract Subclassspring-data-rest-repository/src/main/java/org/springframework/data/rest/repository/invoke/RepositoryMethodInvoker.java@org.springframework.data.rest.repository.invoke.RepositoryMethodInvokerspring-data-rest-repository/src/main/java/org/springframework/data/rest/repository/invoke/RepositoryInvoker.java@org.springframework.data.rest.repository.invoke.RepositoryInvokerspring-data-rest-repository/src/main/java/org/springframework/data/rest/repository/invoke/RepositoryMethodInvoker.java 21:280
+Generation
+Push Down Attributespring-data-rest-repository/src/main/java/org/springframework/data/rest/repository/invoke/RepositoryMethodInvoker.java@private repository : Objectspring-data-rest-repository/src/main/java/org/springframework/data/rest/repository/invoke/ReflectionRepositoryInvoker.java@private repository : Objectspring-data-rest-repository/src/main/java/org/springframework/data/rest/repository/invoke/RepositoryMethodInvoker.java 24:24
+Generation
+Push Down Attributespring-data-rest-repository/src/main/java/org/springframework/data/rest/repository/invoke/RepositoryMethodInvoker.java@private conversionService : ConversionServicespring-data-rest-repository/src/main/java/org/springframework/data/rest/repository/invoke/ReflectionRepositoryInvoker.java@private conversionService : ConversionServicespring-data-rest-repository/src/main/java/org/springframework/data/rest/repository/invoke/RepositoryMethodInvoker.java 26:26
+******************************
+******************************
+coarse grained commits 970a3aefc33447dd99bb889d7369ba1da1365f37
+fine grained commits ('de17a9bf92b4e0d8e1d1ce990df55d134ac62ad3', '5693a1223934beabe46abb2a038f1596146beb35', '11b5526d8c4c4d56b5954570f1a0c3ea517aed88')
+Generation
+Rename Methodspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestMvcConfiguration.java@package handlerMapping() : RequestMappingHandlerMappingspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestMvcConfiguration.java@package persistenceAnnotationBeanPostProcessor() : PersistenceAnnotationBeanPostProcessorspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestMvcConfiguration.java 65:67
+Generation
+Change Return Typespring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestMvcConfiguration.java@RequestMappingHandlerMappingspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestMvcConfiguration.java@PersistenceAnnotationBeanPostProcessorspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestMvcConfiguration.java 65:65
+******************************
+******************************
+coarse grained commits 58de75625d102c4b59747bd68458952389ec0f6d
+fine grained commits ('63adb4cd35161b30107390c7735460a032ba709c', '663aab1f283bf38c38a4aef9747587c2feef6fed', '5f7aeeb73ec1498c9b584c159408f5d49032ee5e')
+Generation
+Change Parameter Typespring-data-rest-repository/src/main/java/org/springframework/data/rest/repository/jpa/JpaRepositoryExporter.java@entityInfo : EntityInformationspring-data-rest-repository/src/main/java/org/springframework/data/rest/repository/jpa/JpaRepositoryExporter.java@repositories : Repositoriesspring-data-rest-repository/src/main/java/org/springframework/data/rest/repository/jpa/JpaRepositoryExporter.java 21:21
+Generation
+Rename Parameterspring-data-rest-repository/src/main/java/org/springframework/data/rest/repository/jpa/JpaRepositoryExporter.java@entityInfo : EntityInformationspring-data-rest-repository/src/main/java/org/springframework/data/rest/repository/jpa/JpaRepositoryExporter.java@repositories : Repositoriesspring-data-rest-repository/src/main/java/org/springframework/data/rest/repository/jpa/JpaRepositoryExporter.java 21:21
+Generation
+Move Attributespring-data-rest-repository/src/main/java/org/springframework/data/rest/repository/RepositoryExporter.java@protected entityManager : EntityManagerspring-data-rest-repository/src/main/java/org/springframework/data/rest/repository/jpa/JpaRepositoryExporter.java@protected entityManager : EntityManagerspring-data-rest-repository/src/main/java/org/springframework/data/rest/repository/RepositoryExporter.java 30:30
+Generation
+Move Methodspring-data-rest-repository/src/main/java/org/springframework/data/rest/repository/RepositoryExporter.java@public setEntityManager(entityManager EntityManager) : voidspring-data-rest-repository/src/main/java/org/springframework/data/rest/repository/jpa/JpaRepositoryExporter.java@public setEntityManager(entityManager EntityManager) : voidspring-data-rest-repository/src/main/java/org/springframework/data/rest/repository/RepositoryExporter.java 33:36
+******************************
+******************************
+coarse grained commits 8bfda96846f9c8a6cf8dc9f754b789bdec99a3b0
+fine grained commits ('aeb7089f41439e65723900a11fc4610c543c0450', '9cc7b08e09ebe31d3db84be4564ce5e1d6553e4a', 'a5ecebd3bb7168c289ced98c57cb27d277e6fe7d')
+Generation
+Rename Methodspring-data-rest-webmvc/src/test/java/org/springframework/data/rest/webmvc/json/DomainObjectReaderUnitTests.java@public testname() : voidspring-data-rest-webmvc/src/test/java/org/springframework/data/rest/webmvc/json/DomainObjectReaderUnitTests.java@public handlesTransientPropertyWithoutFieldProperly() : voidspring-data-rest-webmvc/src/test/java/org/springframework/data/rest/webmvc/json/DomainObjectReaderUnitTests.java 370:377
+******************************
+******************************
+coarse grained commits 9e21ec00b42f75dac91c935846e79b7dba44152a
+fine grained commits ('d66aed1e0f078d92b6226686f6e88187b5a18ebc', 'cb0f84ab49622e65f45b23fb24212d585362b26c', '61f537f541896bcae334dcdb8fff911a04e502c7')
+Generation
+Add Attribute Annotationspring-data-rest-webmvc/src/test/java/org/springframework/data/rest/test/webmvc/Address.java@private person : Personspring-data-rest-webmvc/src/test/java/org/springframework/data/rest/test/webmvc/Address.java@@OneToOne(cascade = CascadeType.REMOVE)spring-data-rest-webmvc/src/test/java/org/springframework/data/rest/test/webmvc/Address.java 21:21
+Generation
+Remove Attribute Annotationspring-data-rest-webmvc/src/test/java/org/springframework/data/rest/test/webmvc/Address.java@@ManyToOne(optional = false, cascade = CascadeType.REFRESH)spring-data-rest-webmvc/src/test/java/org/springframework/data/rest/test/webmvc/Address.java@private person : Personspring-data-rest-webmvc/src/test/java/org/springframework/data/rest/test/webmvc/Address.java 20:20
+******************************
+******************************
+coarse grained commits 109a2fda2fe329ffdddb57de0545e09ce92f1cf8
+fine grained commits ('8f18256be2bb125e76a65577053ee2b3edc1f934', '6d8bc406996b069448f375d04af8ee091325d6d9', '9cff67e2f26d257fb5ee0b2328d7b1479030ec8d')
+Generation
+Change Variable Typespring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryAwareMappingHttpMessageConverter.java@sId : Stringspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/json/RepositoryAwareJacksonModule.java@entityConversionSvc : ConversionServicespring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryAwareMappingHttpMessageConverter.java 296:296
+Generation
+Rename Variablespring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryAwareMappingHttpMessageConverter.java@sId : Stringspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/json/RepositoryAwareJacksonModule.java@entityConversionSvc : ConversionServicespring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryAwareMappingHttpMessageConverter.java 296:296
+******************************
+******************************
+coarse grained commits c3ad3878ad14c91938ceaffeefe9792652e83535
+fine grained commits ('395a1dbe2d024934a366d2915f61dcf5ed46e0a9', '56dcbb85f3ddde92ef174aff8bc2f79368afb2a9', 'bb5206f0276dfab00731a0e5ac76e5310785f112', '438c4cf3f43b379ac24470d5c22a62948bc2f9f8')
+Generation
+Inline Variablespring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestController.java@headers : HttpHeadersspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestController.java@public query(request ServletServerHttpRequest, pageSort PagingAndSorting, uriBuilder UriComponentsBuilder, repository String, query String) : ResponseEntity<?>spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestController.java 445:445
+******************************
+******************************
+coarse grained commits 212e96524f65244315ecdf16caa0872269052661
+fine grained commits ('5da1e7e5d263f0d80a01a4d29c923b56406d14e8', '0cd6899800ba19c367bb992fb7f9702f35733bfd', '164a3b497ee38e6292e868d0470773c07cac58a5', '49de72882224cf5302d9fc0e5a78902aa635e6d6')
+Generation
+Move Methodspring-data-rest-core/src/test/java/org/springframework/data/rest/core/domain/mongodb/Profile.java@public getName() : Stringspring-data-rest-webmvc/src/test/java/org/springframework/data/rest/webmvc/json/patch/TodoList.java@public getName() : Stringspring-data-rest-core/src/test/java/org/springframework/data/rest/core/domain/mongodb/Profile.java 25:27
+Generation
+Change Return Typespring-data-rest-core/src/test/java/org/springframework/data/rest/core/domain/mongodb/Profile.java@Profilespring-data-rest-webmvc/src/test/java/org/springframework/data/rest/webmvc/json/patch/TodoList.java@voidspring-data-rest-core/src/test/java/org/springframework/data/rest/core/domain/mongodb/Profile.java 29:29
+Generation
+Move Methodspring-data-rest-core/src/test/java/org/springframework/data/rest/core/domain/mongodb/Profile.java@public setName(name String) : Profilespring-data-rest-webmvc/src/test/java/org/springframework/data/rest/webmvc/json/patch/TodoList.java@public setName(name String) : voidspring-data-rest-core/src/test/java/org/springframework/data/rest/core/domain/mongodb/Profile.java 29:32
+******************************
+******************************
+coarse grained commits 815ae2e8e873bf822e49c0a7ec06ad25dd7acd9f
+fine grained commits ('a774c9995c32e029408f37ae64e3edbaae941948', '3d4bb23dedd6e12ac84ff4532ec93a7b166b0cc7', '7a1c8b0c70e2fb3ec76b19072746e95767c9f557', '5598007fd212aef1a2eec05bd74fc20958c52626')
+Generation
+Move And Rename Classspring-data-rest-repository/src/main/java/org/springframework/data/rest/repository/invoke/RepositoryInvoker.java@org.springframework.data.rest.repository.invoke.RepositoryInvokerspring-data-rest-core/src/test/java/org/springframework/data/rest/core/domain/jpa/OrderRepository.java@org.springframework.data.rest.core.domain.jpa.OrderRepositoryspring-data-rest-repository/src/main/java/org/springframework/data/rest/repository/invoke/RepositoryInvoker.java 7:10
+Generation
+Move Packagespring-data-rest-repository/src/main/java/org/springframework/data/rest/repository/invoke/RepositoryInvoker.java@org.springframework.data.rest.repository.invoke.RepositoryInvokerspring-data-rest-core/src/test/java/org/springframework/data/rest/core/domain/jpa/OrderRepository.java@org.springframework.data.rest.core.domain.jpa.OrderRepositoryspring-data-rest-repository/src/main/java/org/springframework/data/rest/repository/invoke/RepositoryInvoker.java 7:10
+Generation
+Rename Parameterspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestRequest.java@baseUri : URIspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestRequest.java@invoker : RepositoryInvokerspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestRequest.java 26:26
+Generation
+Rename Attributespring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestRequestHandlerMethodArgumentResolver.java@baseUriResolver : BaseUriMethodArgumentResolverspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestRequestHandlerMethodArgumentResolver.java@resourceMetadataResolver : ResourceMetadataHandlerMethodArgumentResolverspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestRequestHandlerMethodArgumentResolver.java 25:25
+Generation
+Change Attribute Typespring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestRequestHandlerMethodArgumentResolver.java@baseUriResolver : BaseUriMethodArgumentResolverspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestRequestHandlerMethodArgumentResolver.java@resourceMetadataResolver : ResourceMetadataHandlerMethodArgumentResolverspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestRequestHandlerMethodArgumentResolver.java 25:25
+Generation
+Remove Class Annotationspring-data-rest-repository/src/main/java/org/springframework/data/rest/repository/invoke/RepositoryMethodInvoker.java@@SuppressWarnings("deprecation")spring-data-rest-core/src/main/java/org/springframework/data/rest/core/invoke/RepositoryInvoker.java@org.springframework.data.rest.core.invoke.RepositoryInvokerspring-data-rest-repository/src/main/java/org/springframework/data/rest/repository/invoke/RepositoryMethodInvoker.java 20:20
+Generation
+Change Type Declaration Kindspring-data-rest-repository/src/main/java/org/springframework/data/rest/repository/invoke/RepositoryMethodInvoker.java@org.springframework.data.rest.repository.invoke.RepositoryMethodInvokerspring-data-rest-core/src/main/java/org/springframework/data/rest/core/invoke/RepositoryInvoker.java@org.springframework.data.rest.core.invoke.RepositoryInvokerspring-data-rest-repository/src/main/java/org/springframework/data/rest/repository/invoke/RepositoryMethodInvoker.java 20:279
+Generation
+Move And Rename Classspring-data-rest-repository/src/main/java/org/springframework/data/rest/repository/invoke/RepositoryMethodInvoker.java@org.springframework.data.rest.repository.invoke.RepositoryMethodInvokerspring-data-rest-core/src/main/java/org/springframework/data/rest/core/invoke/RepositoryInvoker.java@org.springframework.data.rest.core.invoke.RepositoryInvokerspring-data-rest-repository/src/main/java/org/springframework/data/rest/repository/invoke/RepositoryMethodInvoker.java 20:279
+Generation
+Extract Subclassspring-data-rest-repository/src/main/java/org/springframework/data/rest/repository/invoke/RepositoryMethodInvoker.java@org.springframework.data.rest.repository.invoke.RepositoryMethodInvokerspring-data-rest-core/src/main/java/org/springframework/data/rest/core/invoke/RepositoryInvoker.java@org.springframework.data.rest.core.invoke.RepositoryInvokerspring-data-rest-repository/src/main/java/org/springframework/data/rest/repository/invoke/RepositoryMethodInvoker.java 20:279
+Generation
+Push Down Attributespring-data-rest-repository/src/main/java/org/springframework/data/rest/repository/invoke/RepositoryMethodInvoker.java@private repository : Objectspring-data-rest-core/src/main/java/org/springframework/data/rest/core/invoke/ReflectionRepositoryInvoker.java@private repository : Objectspring-data-rest-repository/src/main/java/org/springframework/data/rest/repository/invoke/RepositoryMethodInvoker.java 23:23
+Generation
+Push Down Attributespring-data-rest-repository/src/main/java/org/springframework/data/rest/repository/invoke/RepositoryMethodInvoker.java@private conversionService : ConversionServicespring-data-rest-core/src/main/java/org/springframework/data/rest/core/invoke/ReflectionRepositoryInvoker.java@private conversionService : ConversionServicespring-data-rest-repository/src/main/java/org/springframework/data/rest/repository/invoke/RepositoryMethodInvoker.java 25:25
+Generation
+Change Variable Typespring-data-rest-repository/src/main/java/org/springframework/data/rest/repository/invoke/RepositoryMethodInvoker.java@paramName : Stringspring-data-rest-core/src/main/java/org/springframework/data/rest/core/invoke/ReflectionRepositoryInvoker.java@parameterValue : String[]spring-data-rest-repository/src/main/java/org/springframework/data/rest/repository/invoke/RepositoryMethodInvoker.java 261:261
+Generation
+Rename Variablespring-data-rest-repository/src/main/java/org/springframework/data/rest/repository/invoke/RepositoryMethodInvoker.java@paramName : Stringspring-data-rest-core/src/main/java/org/springframework/data/rest/core/invoke/ReflectionRepositoryInvoker.java@parameterValue : String[]spring-data-rest-repository/src/main/java/org/springframework/data/rest/repository/invoke/RepositoryMethodInvoker.java 261:261
+Generation
+Rename Methodspring-data-rest-repository/src/main/java/org/springframework/data/rest/repository/invoke/RepositoryMethodInvoker.java@public findOne(serializable Serializable) : Objectspring-data-rest-core/src/main/java/org/springframework/data/rest/core/invoke/RepositoryInvoker.java@public invokeFindOne(id Serializable) : Objectspring-data-rest-repository/src/main/java/org/springframework/data/rest/repository/invoke/RepositoryMethodInvoker.java 116:119
+Generation
+Rename Parameterspring-data-rest-repository/src/main/java/org/springframework/data/rest/repository/invoke/RepositoryMethodInvoker.java@serializable : Serializablespring-data-rest-core/src/main/java/org/springframework/data/rest/core/invoke/RepositoryInvoker.java@id : Serializablespring-data-rest-repository/src/main/java/org/springframework/data/rest/repository/invoke/RepositoryMethodInvoker.java 117:117
+Generation
+Remove Method Annotationspring-data-rest-repository/src/main/java/org/springframework/data/rest/repository/invoke/RepositoryMethodInvoker.java@@Overridespring-data-rest-core/src/main/java/org/springframework/data/rest/core/invoke/RepositoryInvoker.java@public invokeFindOne(id Serializable) : Objectspring-data-rest-repository/src/main/java/org/springframework/data/rest/repository/invoke/RepositoryMethodInvoker.java 116:116
+Generation
+Rename Methodspring-data-rest-repository/src/main/java/org/springframework/data/rest/repository/invoke/RepositoryMethodInvoker.java@public findAll(sort Sort) : Iterable<Object>spring-data-rest-core/src/main/java/org/springframework/data/rest/core/invoke/RepositoryInvoker.java@public invokeFindAll(pageable Sort) : Iterable<Object>spring-data-rest-repository/src/main/java/org/springframework/data/rest/repository/invoke/RepositoryMethodInvoker.java 154:158
+Generation
+Rename Parameterspring-data-rest-repository/src/main/java/org/springframework/data/rest/repository/invoke/RepositoryMethodInvoker.java@sort : Sortspring-data-rest-core/src/main/java/org/springframework/data/rest/core/invoke/RepositoryInvoker.java@pageable : Sortspring-data-rest-repository/src/main/java/org/springframework/data/rest/repository/invoke/RepositoryMethodInvoker.java 156:156
+Generation
+Remove Method Annotationspring-data-rest-repository/src/main/java/org/springframework/data/rest/repository/invoke/RepositoryMethodInvoker.java@@SuppressWarnings({"unchecked"})spring-data-rest-core/src/main/java/org/springframework/data/rest/core/invoke/RepositoryInvoker.java@public invokeFindAll(pageable Sort) : Iterable<Object>spring-data-rest-repository/src/main/java/org/springframework/data/rest/repository/invoke/RepositoryMethodInvoker.java 154:154
+Generation
+Remove Method Annotationspring-data-rest-repository/src/main/java/org/springframework/data/rest/repository/invoke/RepositoryMethodInvoker.java@@Overridespring-data-rest-core/src/main/java/org/springframework/data/rest/core/invoke/RepositoryInvoker.java@public invokeFindAll(pageable Sort) : Iterable<Object>spring-data-rest-repository/src/main/java/org/springframework/data/rest/repository/invoke/RepositoryMethodInvoker.java 155:155
+Generation
+Rename Methodspring-data-rest-repository/src/main/java/org/springframework/data/rest/repository/invoke/RepositoryMethodInvoker.java@public findAll(pageable Pageable) : Page<Object>spring-data-rest-core/src/main/java/org/springframework/data/rest/core/invoke/RepositoryInvoker.java@public invokeFindAll(pageable Pageable) : Iterable<Object>spring-data-rest-repository/src/main/java/org/springframework/data/rest/repository/invoke/RepositoryMethodInvoker.java 164:168
+Generation
+Change Return Typespring-data-rest-repository/src/main/java/org/springframework/data/rest/repository/invoke/RepositoryMethodInvoker.java@Page<Object>spring-data-rest-core/src/main/java/org/springframework/data/rest/core/invoke/RepositoryInvoker.java@Iterable<Object>spring-data-rest-repository/src/main/java/org/springframework/data/rest/repository/invoke/RepositoryMethodInvoker.java 166:166
+Generation
+Remove Method Annotationspring-data-rest-repository/src/main/java/org/springframework/data/rest/repository/invoke/RepositoryMethodInvoker.java@@SuppressWarnings({"unchecked"})spring-data-rest-core/src/main/java/org/springframework/data/rest/core/invoke/RepositoryInvoker.java@public invokeFindAll(pageable Pageable) : Iterable<Object>spring-data-rest-repository/src/main/java/org/springframework/data/rest/repository/invoke/RepositoryMethodInvoker.java 164:164
+Generation
+Remove Method Annotationspring-data-rest-repository/src/main/java/org/springframework/data/rest/repository/invoke/RepositoryMethodInvoker.java@@Overridespring-data-rest-core/src/main/java/org/springframework/data/rest/core/invoke/RepositoryInvoker.java@public invokeFindAll(pageable Pageable) : Iterable<Object>spring-data-rest-repository/src/main/java/org/springframework/data/rest/repository/invoke/RepositoryMethodInvoker.java 165:165
+Generation
+Rename Methodspring-data-rest-repository/src/main/java/org/springframework/data/rest/repository/invoke/RepositoryMethodInvoker.java@public delete(serializable Serializable) : voidspring-data-rest-core/src/main/java/org/springframework/data/rest/core/invoke/RepositoryInvoker.java@public invokeDelete(serializable Serializable) : voidspring-data-rest-repository/src/main/java/org/springframework/data/rest/repository/invoke/RepositoryMethodInvoker.java 174:177
+Generation
+Remove Method Annotationspring-data-rest-repository/src/main/java/org/springframework/data/rest/repository/invoke/RepositoryMethodInvoker.java@@Overridespring-data-rest-core/src/main/java/org/springframework/data/rest/core/invoke/RepositoryInvoker.java@public invokeDelete(serializable Serializable) : voidspring-data-rest-repository/src/main/java/org/springframework/data/rest/repository/invoke/RepositoryMethodInvoker.java 174:174
+******************************
+******************************
+coarse grained commits 584bc4666f3ffcf848ec0c34556daa7ea5891532
+fine grained commits ('7d5250ef8adb85447ea8440a905ee02cb9b3b23a', '8055c8f630c19c6243f20090ca11486388f60da4', '1c74b7cae9e0dea08aa403d76c1434fefdd71969', '877dad49e3d767b582f080ce250f59d70443c748')
+Generation
+Change Parameter Typespring-data-rest-repository/src/main/java/org/springframework/data/rest/repository/PersistentEntityResource.java@persistentEntity : PersistentEntity<T,?>spring-data-rest-repository/src/main/java/org/springframework/data/rest/repository/PersistentEntityResource.java@entity : PersistentEntity<?,?>spring-data-rest-repository/src/main/java/org/springframework/data/rest/repository/PersistentEntityResource.java 28:28
+Generation
+Change Parameter Typespring-data-rest-repository/src/main/java/org/springframework/data/rest/repository/PersistentEntityResource.java@links : Link...spring-data-rest-repository/src/main/java/org/springframework/data/rest/repository/PersistentEntityResource.java@links : Iterable<Link>spring-data-rest-repository/src/main/java/org/springframework/data/rest/repository/PersistentEntityResource.java 30:30
+Generation
+Rename Parameterspring-data-rest-repository/src/main/java/org/springframework/data/rest/repository/PersistentEntityResource.java@persistentEntity : PersistentEntity<T,?>spring-data-rest-repository/src/main/java/org/springframework/data/rest/repository/PersistentEntityResource.java@entity : PersistentEntity<?,?>spring-data-rest-repository/src/main/java/org/springframework/data/rest/repository/PersistentEntityResource.java 28:28
+Generation
+Change Method Access Modifierspring-data-rest-repository/src/main/java/org/springframework/data/rest/repository/PersistentEntityResource.java@public PersistentEntityResource(persistentEntity PersistentEntity<T,?>, content T, links Link...)spring-data-rest-repository/src/main/java/org/springframework/data/rest/repository/PersistentEntityResource.java@private PersistentEntityResource(entity PersistentEntity<?,?>, content T, links Iterable<Link>)spring-data-rest-repository/src/main/java/org/springframework/data/rest/repository/PersistentEntityResource.java 28:33
+Generation
+Move And Inline Methodspring-data-rest-repository/src/main/java/org/springframework/data/rest/repository/PersistentEntityResource.java@public wrap(persistentEntity PersistentEntity, obj T, baseUri URI) : PersistentEntityResource<T>spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryPropertyReferenceController.java@public followPropertyReference(repoRequest RepositoryRestRequest, id String, property String) : ResponseEntity<Resource<?>>spring-data-rest-repository/src/main/java/org/springframework/data/rest/repository/PersistentEntityResource.java 15:22
+******************************
+******************************
+coarse grained commits cfb862e6ad8f90936d890f0ebac12e5d85f315be
+fine grained commits ('4223e389f642a920dd6baeaff7432b30a8190b69', 'cf97fc5c9c3c8c8de6c98dff698039a2394e4238', 'f42b013f425a3483870d69ffcb1f409037e52ae9', 'f402dfc23f8dd33d5468995d0e173aac9fc6352f')
+Generation
+Rename Packagerest/src/test/java/org/springframework/data/rest/test/mvc/AddressRepository.java@org.springframework.data.rest.test.mvc.AddressRepositorywebmvc/src/test/java/org/springframework/data/rest/test/webmvc/AddressRepository.java@org.springframework.data.rest.test.webmvc.AddressRepositoryrest/src/test/java/org/springframework/data/rest/test/mvc/AddressRepository.java 5:6
+******************************
+******************************
+coarse grained commits 696d4d7d1df5f125b505181927d26dec9c16a3df
+fine grained commits ('a57901f6b0bf299af2e79682d0373361ab2846b6', '7f12cafc1d7b8c4812e947b7f7ac353dc1f009c8', 'c9d2cb33b293efc1ff9b80703ad26cb868f01894', 'b73f15531bac5d7ce83e83272ccac73dd48b499f')
+Generation
+Change Class Access Modifierspring-data-rest-repository/src/test/java/org/springframework/data/rest/repository/mapping/ResourceMappingFactoryUnitTests.java@org.springframework.data.rest.repository.mapping.ResourceMappingFactoryUnitTests.Personspring-data-rest-repository/src/test/java/org/springframework/data/rest/repository/mapping/RepositoryCollectionResourceMappingUnitTests.java@org.springframework.data.rest.repository.mapping.RepositoryCollectionResourceMappingUnitTests.Personspring-data-rest-repository/src/test/java/org/springframework/data/rest/repository/mapping/ResourceMappingFactoryUnitTests.java 54:56
+Generation
+Change Class Access Modifierspring-data-rest-repository/src/test/java/org/springframework/data/rest/repository/mapping/ResourceMappingFactoryUnitTests.java@org.springframework.data.rest.repository.mapping.ResourceMappingFactoryUnitTests.PersonRepositoryspring-data-rest-repository/src/test/java/org/springframework/data/rest/repository/mapping/RepositoryCollectionResourceMappingUnitTests.java@org.springframework.data.rest.repository.mapping.RepositoryCollectionResourceMappingUnitTests.PersonRepositoryspring-data-rest-repository/src/test/java/org/springframework/data/rest/repository/mapping/ResourceMappingFactoryUnitTests.java 63:65
+******************************
+******************************
+coarse grained commits 53c6d05384b3132f1eee2c95ca4261afac762f5c
+fine grained commits ('850a6bc3ca263df596655fdc6037c8198957a933', '7d2e8e6aceb4ec2e6f8de0304a659ef562016bde', 'bc5b5e782c85bb0b96484432858a31e286de7ab4', '258ff1bb4b243db6a5898d1fb2bbf0b4fa950445')
+Generation
+Move And Rename Classspring-data-rest-webmvc/src/test/java/org/springframework/data/rest/webmvc/cassandra/EmployeeRepository.java@org.springframework.data.rest.webmvc.cassandra.EmployeeRepositoryspring-data-rest-core/src/test/java/org/springframework/data/rest/core/config/ProjectionDefinitionConfigurationUnitTests.java@org.springframework.data.rest.core.config.ProjectionDefinitionConfigurationUnitTests.ChildProjectionspring-data-rest-webmvc/src/test/java/org/springframework/data/rest/webmvc/cassandra/EmployeeRepository.java 5:7
+Generation
+Move Packagespring-data-rest-webmvc/src/test/java/org/springframework/data/rest/webmvc/cassandra/EmployeeRepository.java@org.springframework.data.rest.webmvc.cassandra.EmployeeRepositoryspring-data-rest-core/src/test/java/org/springframework/data/rest/core/config/ProjectionDefinitionConfigurationUnitTests.java@org.springframework.data.rest.core.config.ProjectionDefinitionConfigurationUnitTests.ChildProjectionspring-data-rest-webmvc/src/test/java/org/springframework/data/rest/webmvc/cassandra/EmployeeRepository.java 5:7
+Generation
+Change Class Access Modifierspring-data-rest-webmvc/src/test/java/org/springframework/data/rest/webmvc/cassandra/EmployeeRepository.java@org.springframework.data.rest.webmvc.cassandra.EmployeeRepositoryspring-data-rest-core/src/test/java/org/springframework/data/rest/core/config/ProjectionDefinitionConfigurationUnitTests.java@org.springframework.data.rest.core.config.ProjectionDefinitionConfigurationUnitTests.ChildProjectionspring-data-rest-webmvc/src/test/java/org/springframework/data/rest/webmvc/cassandra/EmployeeRepository.java 5:7
+Generation
+Add Class Annotationspring-data-rest-webmvc/src/test/java/org/springframework/data/rest/webmvc/cassandra/EmployeeRepository.java@org.springframework.data.rest.webmvc.cassandra.EmployeeRepositoryspring-data-rest-core/src/test/java/org/springframework/data/rest/core/config/ProjectionDefinitionConfigurationUnitTests.java@@Projection(name = "summary", types = Child.class)spring-data-rest-webmvc/src/test/java/org/springframework/data/rest/webmvc/cassandra/EmployeeRepository.java 5:7
+******************************
+******************************
+coarse grained commits ce5f8d6a471184f73ccc3464162ab70ed872bb98
+fine grained commits ('18d130d16e275ff954ca01617fc17a527dd01b7c', 'fd13c1cf8b4b33af223dd9199678491f13383116', '1a49256f7f19d3bc06d712630dd22fa177572eb5', '6d4a44cb5e9b03ce60f35f40925aa9b13d2d5391')
+Generation
+Merge Parameterspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/json/PersistentEntityJackson2Module.java@mappings : ResourceMappingsspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/json/PersistentEntityJackson2Module.java@entities : PersistentEntitiesspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/json/PersistentEntityJackson2Module.java 102:102
+Generation
+Rename Attributespring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/json/PersistentEntityJackson2Module.java@configuration : RepositoryRestConfigurationspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/json/PersistentEntityJackson2Module.java@associationLinks : AssociationLinksspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/json/PersistentEntityJackson2Module.java 99:99
+Generation
+Change Attribute Typespring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/json/PersistentEntityJackson2Module.java@configuration : RepositoryRestConfigurationspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/json/PersistentEntityJackson2Module.java@associationLinks : AssociationLinksspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/json/PersistentEntityJackson2Module.java 99:99
+Generation
+Remove Parameterspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/json/PersistentEntityToJsonSchemaConverter.java@repositories : Repositoriesspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/json/PersistentEntityToJsonSchemaConverter.java@public PersistentEntityToJsonSchemaConverter(entities PersistentEntities, mappings ResourceMappings, accessor MessageSourceAccessor, entityLinks EntityLinks)spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/json/PersistentEntityToJsonSchemaConverter.java 42:42
+******************************
+******************************
+coarse grained commits b7a9ac78951d7f05587969fc526bd2e4b7432758
+fine grained commits ('0a855b231314bc779654023259652f624ccc1a88', 'de17a9bf92b4e0d8e1d1ce990df55d134ac62ad3', '5693a1223934beabe46abb2a038f1596146beb35', '11b5526d8c4c4d56b5954570f1a0c3ea517aed88')
+Generation
+Extract Variablespring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestController.java@spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestController.java@l : Linkspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestController.java 1055:1056
+******************************
+******************************
+coarse grained commits 2af6d23946ab8e0dbb7c72c993ebae2ff7530cd0
+fine grained commits ('769e3f56de657569d5ea707004c6fd8af4f54074', '99bab86031847f68739eb588229e21a757c94f36', 'c6e56adb723060fd044f5f418f7e071e0d703991', '280cdbde10543b34929111a52503afe7c6c15475', '18361477072d95d2e450c3dba3beac36fd2a6e49')
+Generation
+Extract Variablespring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestHandlerMapping.java@spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestHandlerMapping.java@uri : Stringspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestHandlerMapping.java 88:88
+******************************
+******************************
+coarse grained commits 3b77d9a7773e2179824acc4de6069ccf1b4b6a31
+fine grained commits ('7153a92e1803b6da17a2a25846e0936b8bef312f', '94e03c0f39821e015476f26c959cef2b27dadaa8', '63ba389674d7f0701e4938c21df25fadead62ded', '2a749d9cf651bf749038763bf34b8b5a423db4c5', '8dd77ef561d22c822bf976297e0a46841b9721f3')
+Generation
+Add Class Annotationspring-data-rest-core/src/test/java/org/springframework/data/rest/core/invoke/ReflectionRepositoryInvokerIntegrationTests.java@org.springframework.data.rest.core.invoke.ReflectionRepositoryInvokerIntegrationTests.MyRepospring-data-rest-core/src/test/java/org/springframework/data/rest/core/config/ProjectionDefinitionConfigurationUnitTests.java@@Projection(types = Parent.class)spring-data-rest-core/src/test/java/org/springframework/data/rest/core/invoke/ReflectionRepositoryInvokerIntegrationTests.java 153:153
+******************************
+******************************
+coarse grained commits e0997123eb2e44d07d0d30064a6a0a55b45749c9
+fine grained commits ('f96e5b9d151ad27b3d2428954e33ff4390337c5e', '353e832064fbf22756427032ec64f1c8a4083a64', '00f793ba7d917f94f9972c689cfa22f36c180904', '412c4906cb78758e1e8919d60fa10a962bfbcb19', 'e9ed7235b03f397413918de79c3058a3fb5c3be4')
+Generation
+Extract Variablespring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestController.java@spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestController.java@body : Objectspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestController.java 1029:1029
+******************************
+******************************
+coarse grained commits 390467f2895f12ec20da4c3901b5a6968144a5ca
+fine grained commits ('5281b713ec3a2a49a6e1af167cc803fa2b653ffc', '3c19a3906e4f96fd73871621e453cd11e0c7a6e3', '4b3cfd03d6c2c641664f8e7503f0708721a3f253', 'bb11cbddcd3cd4f20d9e97c20955d44957132490', '9749de949871ef9bba60b4faf1aaf53e70842ba9')
+Generation
+Move Attributespring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/json/PersistentEntityJackson2Module.java@private conversionService : ConversionServicespring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryPropertyReferenceController.java@private conversionService : ConversionServicespring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/json/PersistentEntityJackson2Module.java 60:60
+******************************
+******************************
+coarse grained commits 3d11e6c40c79f22cab4549dc45dd0fbe3b37c753
+fine grained commits ('a774c9995c32e029408f37ae64e3edbaae941948', '3d4bb23dedd6e12ac84ff4532ec93a7b166b0cc7', '7a1c8b0c70e2fb3ec76b19072746e95767c9f557', '5598007fd212aef1a2eec05bd74fc20958c52626', 'ca15a2575c38f47129d88dee1f88570b20e8b364')
+Generation
+Replace Variable With Attributespring-data-rest-repository/src/main/java/org/springframework/data/rest/repository/mapping/RepositoryMethodResourceMapping.java@toAppend : Stringspring-data-rest-core/src/main/java/org/springframework/data/rest/core/mapping/RepositoryMethodResourceMapping.java@path : Pathspring-data-rest-repository/src/main/java/org/springframework/data/rest/repository/mapping/RepositoryMethodResourceMapping.java 24:25
+Generation
+Change Variable Typespring-data-rest-repository/src/main/java/org/springframework/data/rest/repository/mapping/RepositoryMethodResourceMapping.java@toAppend : Stringspring-data-rest-core/src/main/java/org/springframework/data/rest/core/mapping/RepositoryMethodResourceMapping.java@path : Pathspring-data-rest-repository/src/main/java/org/springframework/data/rest/repository/mapping/RepositoryMethodResourceMapping.java 24:25
+Generation
+Move Attributespring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositorySearchController.java@private repositories : Repositoriesspring-data-rest-webmvc/src/test/java/org/springframework/data/rest/webmvc/AbstractControllerIntegrationTests.java@package repositories : Repositoriesspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositorySearchController.java 42:42
+Generation
+Change Attribute Access Modifierspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositorySearchController.java@private repositories : Repositoriesspring-data-rest-webmvc/src/test/java/org/springframework/data/rest/webmvc/AbstractControllerIntegrationTests.java@package repositories : Repositoriesspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositorySearchController.java 42:42
+Generation
+Remove Attribute Modifierspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositorySearchController.java@private repositories : Repositoriesspring-data-rest-webmvc/src/test/java/org/springframework/data/rest/webmvc/AbstractControllerIntegrationTests.java@package repositories : Repositoriesspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositorySearchController.java 42:42
+Generation
+Add Attribute Annotationspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositorySearchController.java@private repositories : Repositoriesspring-data-rest-webmvc/src/test/java/org/springframework/data/rest/webmvc/AbstractControllerIntegrationTests.java@@Autowiredspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositorySearchController.java 42:42
+******************************
+******************************
+coarse grained commits 4ca3ac05f80e47a1a544649d7bc0cb4d2460956e
+fine grained commits ('564c30be53aa6f3055cbd3ca345d3e588ec93932', 'fb28979ae4b0e64c8213af0c635fc62df90bb9be', 'd4fbe03a067d404a0de43464f9a9c35488fc9f5e', '5838d3d3856567e14c8c99791db79609dc76e1f9', 'babad4bc577dd6cebc54f1f62eeeef5802051756')
+Generation
+Rename Methodspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/config/RepositoryRestMvcConfiguration.java@public persistenceAnnotationBeanPostProcessor() : PersistenceAnnotationBeanPostProcessorspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/config/RepositoryRestMvcConfiguration.java@public jpaHelper() : JpaHelperspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/config/RepositoryRestMvcConfiguration.java 87:89
+Generation
+Change Return Typespring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/config/RepositoryRestMvcConfiguration.java@PersistenceAnnotationBeanPostProcessorspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/config/RepositoryRestMvcConfiguration.java@JpaHelperspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/config/RepositoryRestMvcConfiguration.java 87:87
+Generation
+Add Method Annotationspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/config/RepositoryRestMvcConfiguration.java@public persistenceAnnotationBeanPostProcessor() : PersistenceAnnotationBeanPostProcessorspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/config/RepositoryRestMvcConfiguration.java@@Lazyspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/config/RepositoryRestMvcConfiguration.java 87:89
+******************************
+******************************
+coarse grained commits 3b7c76a3b6cdc8b1d06eadcfc0a747d1fd060877
+fine grained commits ('dfcf60943148cdc126de0831b969aa9f9dd27faf', '2b3cfdd39ff1880360005b4aca73b22f10844fc7', '99b54c25569648a5bf32308ff4bfba0b9951d272', 'b5a389c7a339dc726f84b5a9ab2c67fcb9d99a98', '4223e389f642a920dd6baeaff7432b30a8190b69')
+Generation
+Rename Parameterspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestController.java@pathComponents : String...spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestController.java@pathSegments : String...spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestController.java 854:854
+******************************
+******************************
+coarse grained commits 28ffaef42088e12060384b4f3c77a878533e31bc
+fine grained commits ('b73f15531bac5d7ce83e83272ccac73dd48b499f', '2291653edf2c4b7b245f19cefdcfd5db5050a68d', '13042e5d019da72a33bcdc2476e4b0bd60d2684a', 'e6822f1170b582ec181b9b6a15bde598e2e64934', '7d5250ef8adb85447ea8440a905ee02cb9b3b23a')
+Generation
+Push Down Attributespring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/AbstractRepositoryRestController.java@protected config : RepositoryRestConfigurationspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryPropertyReferenceController.java@private config : RepositoryRestConfigurationspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/AbstractRepositoryRestController.java 64:64
+Generation
+Push Down Attributespring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/AbstractRepositoryRestController.java@protected config : RepositoryRestConfigurationspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositorySearchController.java@private config : RepositoryRestConfigurationspring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/AbstractRepositoryRestController.java 64:64
+******************************

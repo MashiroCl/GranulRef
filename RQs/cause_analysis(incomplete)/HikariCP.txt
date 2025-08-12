@@ -1,0 +1,364 @@
+******************************
+coarse grained commits 4b85e7690064f05711af2daf1cf3c9288b1ac905
+fine grained commits ('82b4eb9390fb16631e7b9cc832745726a846b9d6', '0f4aa98ff8cdfada65ce7bbfa122c46037ac8c17')
+Generation
+Inline Variablesrc/main/java/com/zaxxer/hikari/pool/PoolBase.java@originalTimeout : intsrc/main/java/com/zaxxer/hikari/pool/PoolBase.java@src/main/java/com/zaxxer/hikari/pool/PoolBase.java 123:123
+******************************
+******************************
+coarse grained commits 2c25fcfee1706881dca46f10ed97434af658af70
+fine grained commits ('b2ab057b37da197223712fb8ff8313e4b303770a', '6b155d0696db25bac1596c6fce5fc540ad59cd6d')
+Generation
+Remove Variable Modifiersrc/main/java/com/zaxxer/hikari/pool/PoolElf.java@defaultLevel : intsrc/main/java/com/zaxxer/hikari/pool/PoolElf.java@defaultTILevel : intsrc/main/java/com/zaxxer/hikari/pool/PoolElf.java 161:161
+Generation
+Rename Variablesrc/main/java/com/zaxxer/hikari/pool/PoolElf.java@defaultLevel : intsrc/main/java/com/zaxxer/hikari/pool/PoolElf.java@defaultTILevel : intsrc/main/java/com/zaxxer/hikari/pool/PoolElf.java 161:161
+******************************
+******************************
+coarse grained commits b34aba49739a30d786a2838190963fcc2c79266a
+fine grained commits ('78c6156d9fc5576453ce941541b599cdc19a2a81', 'daaaefcbc5deaf7fd837edea4f818060fabbe46e')
+Generation
+Change Method Access Modifiersrc/main/java/com/zaxxer/hikari/util/ClassLoaderUtils.java@public getAllInterfaces(clazz Class<?>) : Set<Class<?>>src/main/java/com/zaxxer/hikari/proxy/JavassistProxyFactory.java@private getAllInterfaces(clazz Class<?>) : Set<Class<?>>src/main/java/com/zaxxer/hikari/util/ClassLoaderUtils.java 10:28
+Generation
+Move Methodsrc/main/java/com/zaxxer/hikari/util/ClassLoaderUtils.java@public getAllInterfaces(clazz Class<?>) : Set<Class<?>>src/main/java/com/zaxxer/hikari/proxy/JavassistProxyFactory.java@private getAllInterfaces(clazz Class<?>) : Set<Class<?>>src/main/java/com/zaxxer/hikari/util/ClassLoaderUtils.java 10:28
+******************************
+******************************
+coarse grained commits 8e410f2f5252b8969d015e7b618c85dac47dc735
+fine grained commits ('782726ca41ba26ef67719bf316b06f96a11d8fdc', 'e29c52f7ee0e16ef8680dfdcf4a94eca23a836eb')
+Generation
+Add Method Modifierhikaricp-java6/src/main/java/com/zaxxer/hikari/pool/HikariPool.java@public getConnection() : Connectionhikaricp-common/src/main/java/com/zaxxer/hikari/pool/BaseHikariPool.java@public getConnection() : Connectionhikaricp-java6/src/main/java/com/zaxxer/hikari/pool/HikariPool.java 136:172
+Generation
+Add Method Modifierhikaricp-java6/src/main/java/com/zaxxer/hikari/pool/HikariPool.java@public releaseConnection(bagEntry PoolBagEntry, isBroken boolean) : voidhikaricp-common/src/main/java/com/zaxxer/hikari/pool/BaseHikariPool.java@public releaseConnection(bagEntry PoolBagEntry, isBroken boolean) : voidhikaricp-java6/src/main/java/com/zaxxer/hikari/pool/HikariPool.java 174:186
+Generation
+Add Method Modifierhikaricp-java6/src/main/java/com/zaxxer/hikari/pool/HikariPool.java@public shutdown() : voidhikaricp-common/src/main/java/com/zaxxer/hikari/pool/BaseHikariPool.java@public shutdown() : voidhikaricp-java6/src/main/java/com/zaxxer/hikari/pool/HikariPool.java 188:213
+Generation
+Add Method Modifierhikaricp-java6/src/main/java/com/zaxxer/hikari/pool/HikariPool.java@public evictConnection(proxyConnection IHikariConnectionProxy) : voidhikaricp-common/src/main/java/com/zaxxer/hikari/pool/BaseHikariPool.java@public evictConnection(proxyConnection IHikariConnectionProxy) : voidhikaricp-java6/src/main/java/com/zaxxer/hikari/pool/HikariPool.java 215:218
+Generation
+Add Method Modifierhikaricp-java6/src/main/java/com/zaxxer/hikari/pool/HikariPool.java@public getDataSource() : DataSourcehikaricp-common/src/main/java/com/zaxxer/hikari/pool/BaseHikariPool.java@public getDataSource() : DataSourcehikaricp-java6/src/main/java/com/zaxxer/hikari/pool/HikariPool.java 220:223
+Generation
+Add Method Modifierhikaricp-java6/src/main/java/com/zaxxer/hikari/pool/HikariPool.java@public getConfiguration() : HikariConfighikaricp-common/src/main/java/com/zaxxer/hikari/pool/BaseHikariPool.java@public getConfiguration() : HikariConfighikaricp-java6/src/main/java/com/zaxxer/hikari/pool/HikariPool.java 225:228
+Generation
+Add Method Modifierhikaricp-java6/src/main/java/com/zaxxer/hikari/pool/HikariPool.java@public getActiveConnections() : inthikaricp-common/src/main/java/com/zaxxer/hikari/pool/BaseHikariPool.java@public getActiveConnections() : inthikaricp-java6/src/main/java/com/zaxxer/hikari/pool/HikariPool.java 269:273
+Generation
+Add Method Modifierhikaricp-java6/src/main/java/com/zaxxer/hikari/pool/HikariPool.java@public getIdleConnections() : inthikaricp-common/src/main/java/com/zaxxer/hikari/pool/BaseHikariPool.java@public getIdleConnections() : inthikaricp-java6/src/main/java/com/zaxxer/hikari/pool/HikariPool.java 275:279
+Generation
+Add Method Modifierhikaricp-java6/src/main/java/com/zaxxer/hikari/pool/HikariPool.java@public getTotalConnections() : inthikaricp-common/src/main/java/com/zaxxer/hikari/pool/BaseHikariPool.java@public getTotalConnections() : inthikaricp-java6/src/main/java/com/zaxxer/hikari/pool/HikariPool.java 281:285
+Generation
+Add Method Modifierhikaricp-java6/src/main/java/com/zaxxer/hikari/pool/HikariPool.java@public getThreadsAwaitingConnection() : inthikaricp-common/src/main/java/com/zaxxer/hikari/pool/BaseHikariPool.java@public getThreadsAwaitingConnection() : inthikaricp-java6/src/main/java/com/zaxxer/hikari/pool/HikariPool.java 287:291
+Generation
+Add Method Modifierhikaricp-java6/src/main/java/com/zaxxer/hikari/pool/HikariPool.java@public suspendPool() : voidhikaricp-common/src/main/java/com/zaxxer/hikari/pool/BaseHikariPool.java@public suspendPool() : voidhikaricp-java6/src/main/java/com/zaxxer/hikari/pool/HikariPool.java 307:314
+Generation
+Add Method Modifierhikaricp-java6/src/main/java/com/zaxxer/hikari/pool/HikariPool.java@public resumePool() : voidhikaricp-common/src/main/java/com/zaxxer/hikari/pool/BaseHikariPool.java@public resumePool() : voidhikaricp-java6/src/main/java/com/zaxxer/hikari/pool/HikariPool.java 316:324
+Generation
+Add Method Modifierhikaricp-java6/src/main/java/com/zaxxer/hikari/pool/HikariPool.java@private addConnection() : booleanhikaricp-common/src/main/java/com/zaxxer/hikari/pool/BaseHikariPool.java@protected addConnection() : booleanhikaricp-java6/src/main/java/com/zaxxer/hikari/pool/HikariPool.java 342:380
+Generation
+Add Method Modifierhikaricp-java6/src/main/java/com/zaxxer/hikari/pool/HikariPool.java@public logPoolState(prefix String...) : voidhikaricp-common/src/main/java/com/zaxxer/hikari/pool/BaseHikariPool.java@public logPoolState(prefix String...) : voidhikaricp-java6/src/main/java/com/zaxxer/hikari/pool/HikariPool.java 465:472
+******************************
+******************************
+coarse grained commits 6023cf2916b1c60b96b300d2f5a7168e391f5561
+fine grained commits ('d1d31ebd61bf3e97d9edcfe72a06f74f916e56b5', 'b7c069f90b0c9bbd77a4182b38b04d85ac8b4403')
+Generation
+Change Attribute Typesrc/main/java/com/zaxxer/hikari/util/FastStatementList.java@elementData : Statement[]src/main/java/com/zaxxer/hikari/util/FastList.java@elementData : T[]src/main/java/com/zaxxer/hikari/util/FastStatementList.java 9:9
+Generation
+Change Parameter Typesrc/main/java/com/zaxxer/hikari/util/FastStatementList.java@element : Statementsrc/main/java/com/zaxxer/hikari/util/FastList.java@element : Tsrc/main/java/com/zaxxer/hikari/util/FastStatementList.java 23:23
+Generation
+Change Variable Typesrc/main/java/com/zaxxer/hikari/util/FastStatementList.java@newElementData : Statement[]src/main/java/com/zaxxer/hikari/util/FastList.java@newElementData : T[]src/main/java/com/zaxxer/hikari/util/FastStatementList.java 33:33
+Generation
+Add Variable Annotationsrc/main/java/com/zaxxer/hikari/util/FastStatementList.java@newElementData : Statement[]src/main/java/com/zaxxer/hikari/util/FastList.java@@SuppressWarnings("unchecked")src/main/java/com/zaxxer/hikari/util/FastStatementList.java 33:33
+Generation
+Change Return Typesrc/main/java/com/zaxxer/hikari/util/FastStatementList.java@Statementsrc/main/java/com/zaxxer/hikari/util/FastList.java@Tsrc/main/java/com/zaxxer/hikari/util/FastStatementList.java 40:40
+Generation
+Change Parameter Typesrc/main/java/com/zaxxer/hikari/util/FastStatementList.java@element : Objectsrc/main/java/com/zaxxer/hikari/util/FastList.java@element : Tsrc/main/java/com/zaxxer/hikari/util/FastStatementList.java 45:45
+Generation
+Rename Classsrc/main/java/com/zaxxer/hikari/util/FastStatementList.java@com.zaxxer.hikari.util.FastStatementListsrc/main/java/com/zaxxer/hikari/util/FastList.java@com.zaxxer.hikari.util.FastListsrc/main/java/com/zaxxer/hikari/util/FastStatementList.java 7:77
+******************************
+******************************
+coarse grained commits dba3a378e71dd90b0a0db3725a16b407f0212ffd
+fine grained commits ('cdc20deae4b9199cc828cc2d0839d2dcf9af1b6c', '9a9d1e9fa87653062dfe3b71622a23f0ff04fb3b')
+Generation
+Move Classsrc/main/java/com/zaxxer/hikari/pool/PoolInitializationException.java@com.zaxxer.hikari.pool.PoolInitializationExceptionsrc/main/java/com/zaxxer/hikari/pool/HikariPool.java@com.zaxxer.hikari.pool.HikariPool.PoolInitializationExceptionsrc/main/java/com/zaxxer/hikari/pool/PoolInitializationException.java 4:12
+Generation
+Move Classsrc/main/java/com/zaxxer/hikari/proxy/ClosedConnection.java@com.zaxxer.hikari.proxy.ClosedConnectionsrc/main/java/com/zaxxer/hikari/pool/ProxyConnection.java@com.zaxxer.hikari.pool.ProxyConnection.ClosedConnectionsrc/main/java/com/zaxxer/hikari/proxy/ClosedConnection.java 10:40
+Generation
+Rename Packagesrc/main/java/com/zaxxer/hikari/proxy/CallableStatementProxy.java@com.zaxxer.hikari.proxy.CallableStatementProxysrc/main/java/com/zaxxer/hikari/pool/ProxyCallableStatement.java@com.zaxxer.hikari.pool.ProxyCallableStatementsrc/main/java/com/zaxxer/hikari/proxy/CallableStatementProxy.java 6:14
+Generation
+Split Packagesrc/main/java/com/zaxxer/hikari/proxy/ProxyFactory.java@com.zaxxer.hikari.proxy.ProxyFactorysrc/main/java/com/zaxxer/hikari/pool/ProxyFactory.java@com.zaxxer.hikari.pool.ProxyFactorysrc/main/java/com/zaxxer/hikari/proxy/ProxyFactory.java 14:44
+Generation
+Add Class Modifiersrc/main/java/com/zaxxer/hikari/pool/PoolInitializationException.java@com.zaxxer.hikari.pool.PoolInitializationExceptionsrc/main/java/com/zaxxer/hikari/pool/HikariPool.java@com.zaxxer.hikari.pool.HikariPool.PoolInitializationExceptionsrc/main/java/com/zaxxer/hikari/pool/PoolInitializationException.java 4:12
+Generation
+Change Class Access Modifiersrc/main/java/com/zaxxer/hikari/proxy/ClosedConnection.java@com.zaxxer.hikari.proxy.ClosedConnectionsrc/main/java/com/zaxxer/hikari/pool/ProxyConnection.java@com.zaxxer.hikari.pool.ProxyConnection.ClosedConnectionsrc/main/java/com/zaxxer/hikari/proxy/ClosedConnection.java 10:40
+Generation
+Add Class Modifiersrc/main/java/com/zaxxer/hikari/proxy/ClosedConnection.java@com.zaxxer.hikari.proxy.ClosedConnectionsrc/main/java/com/zaxxer/hikari/pool/ProxyConnection.java@com.zaxxer.hikari.pool.ProxyConnection.ClosedConnectionsrc/main/java/com/zaxxer/hikari/proxy/ClosedConnection.java 10:40
+Generation
+Change Attribute Access Modifiersrc/main/java/com/zaxxer/hikari/proxy/ClosedConnection.java@public CLOSED_CONNECTION : Connectionsrc/main/java/com/zaxxer/hikari/pool/ProxyConnection.java@package CLOSED_CONNECTION : Connectionsrc/main/java/com/zaxxer/hikari/proxy/ClosedConnection.java 12:12
+******************************
+******************************
+coarse grained commits 65ba03a8e3aa92ff051f0202cf243ea4d22dcc0e
+fine grained commits ('a65c5f32d75c6dcf8b9c67577c1823478527e2c5', '26180ba4c403a6edc9234eea384be1863199dec6')
+Generation
+Remove Variable Modifiersrc/main/java/com/zaxxer/hikari/pool/PoolElf.java@defaultLevel : intsrc/main/java/com/zaxxer/hikari/pool/PoolElf.java@defaultTILevel : intsrc/main/java/com/zaxxer/hikari/pool/PoolElf.java 161:161
+Generation
+Rename Variablesrc/main/java/com/zaxxer/hikari/pool/PoolElf.java@defaultLevel : intsrc/main/java/com/zaxxer/hikari/pool/PoolElf.java@defaultTILevel : intsrc/main/java/com/zaxxer/hikari/pool/PoolElf.java 161:161
+******************************
+******************************
+coarse grained commits e5fbb402440c1b384349d30084f9ca5828e6bdfa
+fine grained commits ('b818e902f6ef88f423b883b3ee6601a0293a7468', '2ee06867ef4d19930e947b72f0e2667d8a810f59')
+Generation
+Extract Variablesrc/main/java/com/zaxxer/hikari/pool/PoolElf.java@src/main/java/com/zaxxer/hikari/pool/PoolElf.java@upperName : Stringsrc/main/java/com/zaxxer/hikari/pool/PoolElf.java 112:112
+******************************
+******************************
+coarse grained commits 5ba712d3d66bd1f68391a179876b683e7afe7d6d
+fine grained commits ('5eef10c395bffd1fd276e1a7fd42a37414d01e56', 'fe1757acdc935124ffee94c4b81b5baa218cc584')
+Generation
+Rename Variablehikaricp/src/main/java/com/zaxxer/hikari/pool/HikariPool.java@p : nullsrc/main/java/com/zaxxer/hikari/pool/HikariPool.java@bagEntry : PoolBagEntryhikaricp/src/main/java/com/zaxxer/hikari/pool/HikariPool.java 143:143
+Generation
+Remove Method Modifierhikaricp-common/src/main/java/com/zaxxer/hikari/pool/BaseHikariPool.java@protected abstract closeConnection(bagEntry PoolBagEntry) : voidsrc/main/java/com/zaxxer/hikari/pool/HikariPool.java@protected closeConnection(bagEntry PoolBagEntry, closureReason String) : voidhikaricp-common/src/main/java/com/zaxxer/hikari/pool/BaseHikariPool.java 368:368
+******************************
+******************************
+coarse grained commits 53afe89602a83367d97031729ddebad83566e044
+fine grained commits ('2af75237265f0ac27859d6c0c02b945e84a6c989', '60b3607fbcf153d43e5d05fab665e4aa186c05fb')
+Generation
+Remove Attribute Modifierhikaricp-java6/src/main/java/com/zaxxer/hikari/util/PoolUtilities.java@private IS_JDBC40 : booleanhikaricp-common/src/main/java/com/zaxxer/hikari/util/PoolUtilities.java@private IS_JDBC40 : booleanhikaricp-java6/src/main/java/com/zaxxer/hikari/util/PoolUtilities.java 27:27
+Generation
+Remove Attribute Modifierhikaricp-java6/src/main/java/com/zaxxer/hikari/util/PoolUtilities.java@private IS_JDBC41 : booleanhikaricp-common/src/main/java/com/zaxxer/hikari/util/PoolUtilities.java@private IS_JDBC41 : booleanhikaricp-java6/src/main/java/com/zaxxer/hikari/util/PoolUtilities.java 28:28
+Generation
+Remove Attribute Modifierhikaricp-java6/src/main/java/com/zaxxer/hikari/util/PoolUtilities.java@private jdbc40checked : booleanhikaricp-common/src/main/java/com/zaxxer/hikari/util/PoolUtilities.java@private jdbc40checked : booleanhikaricp-java6/src/main/java/com/zaxxer/hikari/util/PoolUtilities.java 29:29
+Generation
+Remove Attribute Modifierhikaricp-java6/src/main/java/com/zaxxer/hikari/util/PoolUtilities.java@private jdbc41checked : booleanhikaricp-common/src/main/java/com/zaxxer/hikari/util/PoolUtilities.java@private jdbc41checked : booleanhikaricp-java6/src/main/java/com/zaxxer/hikari/util/PoolUtilities.java 30:30
+Generation
+Remove Attribute Modifierhikaricp-java6/src/main/java/com/zaxxer/hikari/util/PoolUtilities.java@private queryTimeoutSupported : booleanhikaricp-common/src/main/java/com/zaxxer/hikari/util/PoolUtilities.java@private queryTimeoutSupported : booleanhikaricp-java6/src/main/java/com/zaxxer/hikari/util/PoolUtilities.java 31:31
+******************************
+******************************
+coarse grained commits 97d3f814edcd7553ca18f8fd92065fa93b59deb5
+fine grained commits ('e29c52f7ee0e16ef8680dfdcf4a94eca23a836eb', '3afd4791c2e84b315591343cd55a1cbc704cd5b6')
+Generation
+Extract Classhikaricp/src/main/java/com/zaxxer/hikari/pool/HikariPool.java@com.zaxxer.hikari.pool.HikariPoolhikaricp/src/main/java/com/zaxxer/hikari/pool/HikariPool.java@com.zaxxer.hikari.pool.HikariPoolhikaricp/src/main/java/com/zaxxer/hikari/pool/HikariPool.java 52:472
+Generation
+Extract Classhikaricp/src/main/java/com/zaxxer/hikari/HikariConfig.java@com.zaxxer.hikari.HikariConfighikaricp/src/main/java/com/zaxxer/hikari/HikariConfig.java@com.zaxxer.hikari.HikariConfighikaricp/src/main/java/com/zaxxer/hikari/HikariConfig.java 28:590
+Generation
+Change Attribute Access Modifierhikaricp/src/main/java/com/zaxxer/hikari/HikariConfig.java@private LOGGER : Loggerhikaricp-common/src/main/java/com/zaxxer/hikari/pool/BaseHikariPool.java@protected LOGGER : Loggerhikaricp/src/main/java/com/zaxxer/hikari/HikariConfig.java 30:30
+Generation
+Change Attribute Access Modifierhikaricp/src/main/java/com/zaxxer/hikari/HikariConfig.java@private isIsolateInternalQueries : booleanhikaricp-common/src/main/java/com/zaxxer/hikari/pool/BaseHikariPool.java@protected isIsolateInternalQueries : booleanhikaricp/src/main/java/com/zaxxer/hikari/HikariConfig.java 61:61
+Generation
+Change Attribute Access Modifierhikaricp/src/main/java/com/zaxxer/hikari/HikariConfig.java@private connectionTimeout : longhikaricp-common/src/main/java/com/zaxxer/hikari/pool/BaseHikariPool.java@protected connectionTimeout : longhikaricp/src/main/java/com/zaxxer/hikari/HikariConfig.java 39:39
+Generation
+Move Methodhikaricp/src/main/java/com/zaxxer/hikari/pool/HikariPool.java@public getDataSource() : DataSourcehikaricp-common/src/main/java/com/zaxxer/hikari/AbstractHikariConfig.java@public getDataSource() : DataSourcehikaricp/src/main/java/com/zaxxer/hikari/pool/HikariPool.java 217:220
+Generation
+Move Attributehikaricp/src/main/java/com/zaxxer/hikari/pool/HikariPool.java@private LOGGER : Loggerhikaricp-common/src/main/java/com/zaxxer/hikari/AbstractHikariConfig.java@private LOGGER : Loggerhikaricp/src/main/java/com/zaxxer/hikari/pool/HikariPool.java 54:54
+Generation
+Move Attributehikaricp/src/main/java/com/zaxxer/hikari/pool/HikariPool.java@private connectionTimeout : longhikaricp-common/src/main/java/com/zaxxer/hikari/AbstractHikariConfig.java@private connectionTimeout : longhikaricp/src/main/java/com/zaxxer/hikari/pool/HikariPool.java 84:84
+Generation
+Move Attributehikaricp/src/main/java/com/zaxxer/hikari/pool/HikariPool.java@public catalog : Stringhikaricp-common/src/main/java/com/zaxxer/hikari/AbstractHikariConfig.java@private catalog : Stringhikaricp/src/main/java/com/zaxxer/hikari/pool/HikariPool.java 57:57
+Generation
+Change Attribute Access Modifierhikaricp/src/main/java/com/zaxxer/hikari/pool/HikariPool.java@public catalog : Stringhikaricp-common/src/main/java/com/zaxxer/hikari/AbstractHikariConfig.java@private catalog : Stringhikaricp/src/main/java/com/zaxxer/hikari/pool/HikariPool.java 57:57
+Generation
+Remove Attribute Modifierhikaricp/src/main/java/com/zaxxer/hikari/pool/HikariPool.java@public catalog : Stringhikaricp-common/src/main/java/com/zaxxer/hikari/AbstractHikariConfig.java@private catalog : Stringhikaricp/src/main/java/com/zaxxer/hikari/pool/HikariPool.java 57:57
+Generation
+Move Attributehikaricp/src/main/java/com/zaxxer/hikari/pool/HikariPool.java@private password : Stringhikaricp-common/src/main/java/com/zaxxer/hikari/AbstractHikariConfig.java@private password : Stringhikaricp/src/main/java/com/zaxxer/hikari/pool/HikariPool.java 78:78
+Generation
+Remove Attribute Modifierhikaricp/src/main/java/com/zaxxer/hikari/pool/HikariPool.java@private password : Stringhikaricp-common/src/main/java/com/zaxxer/hikari/AbstractHikariConfig.java@private password : Stringhikaricp/src/main/java/com/zaxxer/hikari/pool/HikariPool.java 78:78
+Generation
+Move Attributehikaricp/src/main/java/com/zaxxer/hikari/pool/HikariPool.java@private username : Stringhikaricp-common/src/main/java/com/zaxxer/hikari/AbstractHikariConfig.java@private username : Stringhikaricp/src/main/java/com/zaxxer/hikari/pool/HikariPool.java 77:77
+Generation
+Remove Attribute Modifierhikaricp/src/main/java/com/zaxxer/hikari/pool/HikariPool.java@private username : Stringhikaricp-common/src/main/java/com/zaxxer/hikari/AbstractHikariConfig.java@private username : Stringhikaricp/src/main/java/com/zaxxer/hikari/pool/HikariPool.java 77:77
+Generation
+Move Attributehikaricp/src/main/java/com/zaxxer/hikari/pool/HikariPool.java@public isAutoCommit : booleanhikaricp-common/src/main/java/com/zaxxer/hikari/AbstractHikariConfig.java@private isAutoCommit : booleanhikaricp/src/main/java/com/zaxxer/hikari/pool/HikariPool.java 59:59
+Generation
+Change Attribute Access Modifierhikaricp/src/main/java/com/zaxxer/hikari/pool/HikariPool.java@public isAutoCommit : booleanhikaricp-common/src/main/java/com/zaxxer/hikari/AbstractHikariConfig.java@private isAutoCommit : booleanhikaricp/src/main/java/com/zaxxer/hikari/pool/HikariPool.java 59:59
+Generation
+Remove Attribute Modifierhikaricp/src/main/java/com/zaxxer/hikari/pool/HikariPool.java@public isAutoCommit : booleanhikaricp-common/src/main/java/com/zaxxer/hikari/AbstractHikariConfig.java@private isAutoCommit : booleanhikaricp/src/main/java/com/zaxxer/hikari/pool/HikariPool.java 59:59
+Generation
+Move Attributehikaricp/src/main/java/com/zaxxer/hikari/pool/HikariPool.java@public isReadOnly : booleanhikaricp-common/src/main/java/com/zaxxer/hikari/AbstractHikariConfig.java@private isReadOnly : booleanhikaricp/src/main/java/com/zaxxer/hikari/pool/HikariPool.java 58:58
+Generation
+Change Attribute Access Modifierhikaricp/src/main/java/com/zaxxer/hikari/pool/HikariPool.java@public isReadOnly : booleanhikaricp-common/src/main/java/com/zaxxer/hikari/AbstractHikariConfig.java@private isReadOnly : booleanhikaricp/src/main/java/com/zaxxer/hikari/pool/HikariPool.java 58:58
+Generation
+Remove Attribute Modifierhikaricp/src/main/java/com/zaxxer/hikari/pool/HikariPool.java@public isReadOnly : booleanhikaricp-common/src/main/java/com/zaxxer/hikari/AbstractHikariConfig.java@private isReadOnly : booleanhikaricp/src/main/java/com/zaxxer/hikari/pool/HikariPool.java 58:58
+Generation
+Move Attributehikaricp/src/main/java/com/zaxxer/hikari/pool/HikariPool.java@private isIsolateInternalQueries : booleanhikaricp-common/src/main/java/com/zaxxer/hikari/AbstractHikariConfig.java@private isIsolateInternalQueries : booleanhikaricp/src/main/java/com/zaxxer/hikari/pool/HikariPool.java 81:81
+Generation
+Remove Attribute Modifierhikaricp/src/main/java/com/zaxxer/hikari/pool/HikariPool.java@private isIsolateInternalQueries : booleanhikaricp-common/src/main/java/com/zaxxer/hikari/AbstractHikariConfig.java@private isIsolateInternalQueries : booleanhikaricp/src/main/java/com/zaxxer/hikari/pool/HikariPool.java 81:81
+Generation
+Move Attributehikaricp/src/main/java/com/zaxxer/hikari/pool/HikariPool.java@private dataSource : DataSourcehikaricp-common/src/main/java/com/zaxxer/hikari/AbstractHikariConfig.java@private dataSource : DataSourcehikaricp/src/main/java/com/zaxxer/hikari/pool/HikariPool.java 62:62
+Generation
+Remove Attribute Modifierhikaricp/src/main/java/com/zaxxer/hikari/pool/HikariPool.java@private dataSource : DataSourcehikaricp-common/src/main/java/com/zaxxer/hikari/AbstractHikariConfig.java@private dataSource : DataSourcehikaricp/src/main/java/com/zaxxer/hikari/pool/HikariPool.java 62:62
+Generation
+Move Methodhikaricp/src/main/java/com/zaxxer/hikari/HikariConfig.java@public getDataSource() : DataSourcehikaricp-common/src/main/java/com/zaxxer/hikari/pool/BaseHikariPool.java@public getDataSource() : DataSourcehikaricp/src/main/java/com/zaxxer/hikari/HikariConfig.java 182:185
+Generation
+Move Attributehikaricp/src/main/java/com/zaxxer/hikari/HikariConfig.java@private LOGGER : Loggerhikaricp-common/src/main/java/com/zaxxer/hikari/pool/BaseHikariPool.java@protected LOGGER : Loggerhikaricp/src/main/java/com/zaxxer/hikari/HikariConfig.java 30:30
+Generation
+Move Attributehikaricp/src/main/java/com/zaxxer/hikari/HikariConfig.java@private catalog : Stringhikaricp-common/src/main/java/com/zaxxer/hikari/pool/BaseHikariPool.java@public catalog : Stringhikaricp/src/main/java/com/zaxxer/hikari/HikariConfig.java 46:46
+Generation
+Change Attribute Access Modifierhikaricp/src/main/java/com/zaxxer/hikari/HikariConfig.java@private catalog : Stringhikaricp-common/src/main/java/com/zaxxer/hikari/pool/BaseHikariPool.java@public catalog : Stringhikaricp/src/main/java/com/zaxxer/hikari/HikariConfig.java 46:46
+Generation
+Add Attribute Modifierhikaricp/src/main/java/com/zaxxer/hikari/HikariConfig.java@private catalog : Stringhikaricp-common/src/main/java/com/zaxxer/hikari/pool/BaseHikariPool.java@public catalog : Stringhikaricp/src/main/java/com/zaxxer/hikari/HikariConfig.java 46:46
+Generation
+Move Attributehikaricp/src/main/java/com/zaxxer/hikari/HikariConfig.java@private isReadOnly : booleanhikaricp-common/src/main/java/com/zaxxer/hikari/pool/BaseHikariPool.java@public isReadOnly : booleanhikaricp/src/main/java/com/zaxxer/hikari/HikariConfig.java 59:59
+Generation
+Change Attribute Access Modifierhikaricp/src/main/java/com/zaxxer/hikari/HikariConfig.java@private isReadOnly : booleanhikaricp-common/src/main/java/com/zaxxer/hikari/pool/BaseHikariPool.java@public isReadOnly : booleanhikaricp/src/main/java/com/zaxxer/hikari/HikariConfig.java 59:59
+Generation
+Add Attribute Modifierhikaricp/src/main/java/com/zaxxer/hikari/HikariConfig.java@private isReadOnly : booleanhikaricp-common/src/main/java/com/zaxxer/hikari/pool/BaseHikariPool.java@public isReadOnly : booleanhikaricp/src/main/java/com/zaxxer/hikari/HikariConfig.java 59:59
+Generation
+Move Attributehikaricp/src/main/java/com/zaxxer/hikari/HikariConfig.java@private isAutoCommit : booleanhikaricp-common/src/main/java/com/zaxxer/hikari/pool/BaseHikariPool.java@public isAutoCommit : booleanhikaricp/src/main/java/com/zaxxer/hikari/HikariConfig.java 58:58
+Generation
+Change Attribute Access Modifierhikaricp/src/main/java/com/zaxxer/hikari/HikariConfig.java@private isAutoCommit : booleanhikaricp-common/src/main/java/com/zaxxer/hikari/pool/BaseHikariPool.java@public isAutoCommit : booleanhikaricp/src/main/java/com/zaxxer/hikari/HikariConfig.java 58:58
+Generation
+Add Attribute Modifierhikaricp/src/main/java/com/zaxxer/hikari/HikariConfig.java@private isAutoCommit : booleanhikaricp-common/src/main/java/com/zaxxer/hikari/pool/BaseHikariPool.java@public isAutoCommit : booleanhikaricp/src/main/java/com/zaxxer/hikari/HikariConfig.java 58:58
+Generation
+Move Attributehikaricp/src/main/java/com/zaxxer/hikari/HikariConfig.java@private isIsolateInternalQueries : booleanhikaricp-common/src/main/java/com/zaxxer/hikari/pool/BaseHikariPool.java@protected isIsolateInternalQueries : booleanhikaricp/src/main/java/com/zaxxer/hikari/HikariConfig.java 61:61
+Generation
+Add Attribute Modifierhikaricp/src/main/java/com/zaxxer/hikari/HikariConfig.java@private isIsolateInternalQueries : booleanhikaricp-common/src/main/java/com/zaxxer/hikari/pool/BaseHikariPool.java@protected isIsolateInternalQueries : booleanhikaricp/src/main/java/com/zaxxer/hikari/HikariConfig.java 61:61
+Generation
+Move Attributehikaricp/src/main/java/com/zaxxer/hikari/HikariConfig.java@private connectionTimeout : longhikaricp-common/src/main/java/com/zaxxer/hikari/pool/BaseHikariPool.java@protected connectionTimeout : longhikaricp/src/main/java/com/zaxxer/hikari/HikariConfig.java 39:39
+Generation
+Move Attributehikaricp/src/main/java/com/zaxxer/hikari/HikariConfig.java@private dataSource : DataSourcehikaricp-common/src/main/java/com/zaxxer/hikari/pool/BaseHikariPool.java@private dataSource : DataSourcehikaricp/src/main/java/com/zaxxer/hikari/HikariConfig.java 64:64
+Generation
+Add Attribute Modifierhikaricp/src/main/java/com/zaxxer/hikari/HikariConfig.java@private dataSource : DataSourcehikaricp-common/src/main/java/com/zaxxer/hikari/pool/BaseHikariPool.java@private dataSource : DataSourcehikaricp/src/main/java/com/zaxxer/hikari/HikariConfig.java 64:64
+Generation
+Move Attributehikaricp/src/main/java/com/zaxxer/hikari/HikariConfig.java@private username : Stringhikaricp-common/src/main/java/com/zaxxer/hikari/pool/BaseHikariPool.java@private username : Stringhikaricp/src/main/java/com/zaxxer/hikari/HikariConfig.java 57:57
+Generation
+Add Attribute Modifierhikaricp/src/main/java/com/zaxxer/hikari/HikariConfig.java@private username : Stringhikaricp-common/src/main/java/com/zaxxer/hikari/pool/BaseHikariPool.java@private username : Stringhikaricp/src/main/java/com/zaxxer/hikari/HikariConfig.java 57:57
+Generation
+Move Attributehikaricp/src/main/java/com/zaxxer/hikari/HikariConfig.java@private password : Stringhikaricp-common/src/main/java/com/zaxxer/hikari/pool/BaseHikariPool.java@private password : Stringhikaricp/src/main/java/com/zaxxer/hikari/HikariConfig.java 54:54
+Generation
+Add Attribute Modifierhikaricp/src/main/java/com/zaxxer/hikari/HikariConfig.java@private password : Stringhikaricp-common/src/main/java/com/zaxxer/hikari/pool/BaseHikariPool.java@private password : Stringhikaricp/src/main/java/com/zaxxer/hikari/HikariConfig.java 54:54
+******************************
+******************************
+coarse grained commits c51af8e72967df33cb087720b3428fccfcada5a9
+fine grained commits ('451900cbd7c383497d159099346aab43906b6122', '2844fa1a0b06187323c21813c7e0d7b72dd8607a')
+Generation
+Change Return Typehikaricp-java6/src/main/java/com/zaxxer/hikari/proxy/StatementProxy.java@voidhikaricp-java6/src/main/java/com/zaxxer/hikari/proxy/StatementProxy.java@SQLExceptionhikaricp-java6/src/main/java/com/zaxxer/hikari/proxy/StatementProxy.java 23:23
+******************************
+******************************
+coarse grained commits 997a9cde315a1bfb65ae554d167749f74df33f7b
+fine grained commits ('89602d60ed30f78852ffeae2d19a543e56e71270', '6b95dc3381ef77f7f6d76c6a5c5bc89a04560172')
+Generation
+Add Class Modifiersrc/main/java/com/zaxxer/hikari/SpecializedConcurrentBag.java@com.zaxxer.hikari.SpecializedConcurrentBag.Synchronizersrc/main/java/com/zaxxer/hikari/util/SpecializedConcurrentBag.java@com.zaxxer.hikari.util.SpecializedConcurrentBag.Synchronizersrc/main/java/com/zaxxer/hikari/SpecializedConcurrentBag.java 137:174
+******************************
+******************************
+coarse grained commits 8d79a18e99b62276e32be1bb5594d0b529be03c8
+fine grained commits ('23654c52237b51bcdcc3544965f9349c5bdd230a', '04ea8aa779237fe026c5c5038f057dba3caa3b8b')
+Generation
+Move And Rename Methodsrc/main/java/com/zaxxer/hikari/javassist/HikariInstrumentationAgent.java@private searchInstrumentableJar(searchPath String) : booleansrc/main/java/com/zaxxer/hikari/javassist/HikariClassScanner.java@private scanInstrumentableJar(searchPath String) : booleansrc/main/java/com/zaxxer/hikari/javassist/HikariInstrumentationAgent.java 123:154
+******************************
+******************************
+coarse grained commits 1702af6f60c216c9cd9af6feda60a0f5d2e56b28
+fine grained commits ('874780d9fdc3c5b80d230790cec5894673dfcb78', '39a97a1603451aebdf12870b717ad09274906ff2', 'cd99c2ac14d963e024febd66cc84ef02f8d844f5')
+Generation
+Change Variable Typesrc/test/java/com/zaxxer/hikari/pool/ConnectionPoolSizeVsThreadsTest.java@maxTotal : intsrc/test/java/com/zaxxer/hikari/pool/ConnectionPoolSizeVsThreadsTest.java@clockSource : ClockSourcesrc/test/java/com/zaxxer/hikari/pool/ConnectionPoolSizeVsThreadsTest.java 77:77
+Generation
+Rename Variablesrc/test/java/com/zaxxer/hikari/pool/ConnectionPoolSizeVsThreadsTest.java@maxTotal : intsrc/test/java/com/zaxxer/hikari/pool/ConnectionPoolSizeVsThreadsTest.java@clockSource : ClockSourcesrc/test/java/com/zaxxer/hikari/pool/ConnectionPoolSizeVsThreadsTest.java 77:77
+******************************
+******************************
+coarse grained commits ac6181de795b4312e670841eb54a114df8c8b8bd
+fine grained commits ('d1d31ebd61bf3e97d9edcfe72a06f74f916e56b5', 'b7c069f90b0c9bbd77a4182b38b04d85ac8b4403', 'd787d105334ea86540842770397da087af40efaf')
+Generation
+Rename Variablesrc/main/java/com/zaxxer/hikari/util/FastStatementList.java@oob : ArrayIndexOutOfBoundsExceptionsrc/main/java/com/zaxxer/hikari/util/FastList.java@e : ArrayIndexOutOfBoundsExceptionsrc/main/java/com/zaxxer/hikari/util/FastStatementList.java 30:30
+******************************
+******************************
+coarse grained commits d9ca25b5618df46f82cf8b01cbbbfe69f8a2286f
+fine grained commits ('c6a556f825779b418a94b2b920c4afa027110661', '8578783b126080131ff7e51f307064e791cab008', '7a7f32a845111b08d0046dd5088343a6e22acd3f')
+Generation
+Rename Variablesrc/main/java/com/zaxxer/hikari/pool/HikariPool.java@variance : longsrc/main/java/com/zaxxer/hikari/pool/HikariPool.java@randomIntervalInMillis : longsrc/main/java/com/zaxxer/hikari/pool/HikariPool.java 356:356
+******************************
+******************************
+coarse grained commits 005980c9d03e4d1aaf7d2234ccd0f10cb100456b
+fine grained commits ('782726ca41ba26ef67719bf316b06f96a11d8fdc', 'e29c52f7ee0e16ef8680dfdcf4a94eca23a836eb', '3afd4791c2e84b315591343cd55a1cbc704cd5b6')
+Generation
+Add Method Modifierhikaricp/src/main/java/com/zaxxer/hikari/HikariConfig.java@public getDataSource() : DataSourcehikaricp-common/src/main/java/com/zaxxer/hikari/pool/BaseHikariPool.java@public getDataSource() : DataSourcehikaricp/src/main/java/com/zaxxer/hikari/HikariConfig.java 182:185
+******************************
+******************************
+coarse grained commits be883b259174e82d4f21a488bc4e7181dfee053d
+fine grained commits ('b71245ea2c4b468ccabf743b53028ae4d6150b5f', '0fe067703957829a21e54555257e772253c4064e', '45934542ca931768f7181920585d3b8acc38abb6')
+Generation
+Replace Variable With Attributehikaricp-java6/src/main/java/com/zaxxer/hikari/util/LeakTask.java@e : LeakExceptionhikaricp-java6/src/main/java/com/zaxxer/hikari/util/LeakTask.java@exception : Exceptionhikaricp-java6/src/main/java/com/zaxxer/hikari/util/LeakTask.java 36:36
+Generation
+Replace Variable With Attributehikaricp/src/main/java/com/zaxxer/hikari/util/LeakTask.java@e : LeakExceptionhikaricp/src/main/java/com/zaxxer/hikari/util/LeakTask.java@exception : Exceptionhikaricp/src/main/java/com/zaxxer/hikari/util/LeakTask.java 36:36
+Generation
+Change Variable Typehikaricp-java6/src/main/java/com/zaxxer/hikari/util/LeakTask.java@e : LeakExceptionhikaricp-java6/src/main/java/com/zaxxer/hikari/util/LeakTask.java@exception : Exceptionhikaricp-java6/src/main/java/com/zaxxer/hikari/util/LeakTask.java 36:36
+Generation
+Change Variable Typehikaricp/src/main/java/com/zaxxer/hikari/util/LeakTask.java@e : LeakExceptionhikaricp/src/main/java/com/zaxxer/hikari/util/LeakTask.java@exception : Exceptionhikaricp/src/main/java/com/zaxxer/hikari/util/LeakTask.java 36:36
+******************************
+******************************
+coarse grained commits 1099ee122d2821600faa714c622fe67755d468f3
+fine grained commits ('3b908a4888dd93662866ad059b28580f46cf681a', 'cb642e027f06257af94d88f57331dae986f4047d', '2acf469601502f0670dfeb746b848597d5ef4039')
+Generation
+Move Attributesrc/test/java/com/zaxxer/hikari/metrics/prometheus/PrometheusMetricsTrackerTest.java@private collectorRegistry : CollectorRegistrysrc/main/java/com/zaxxer/hikari/metrics/prometheus/PrometheusHistogramMetricsTrackerFactory.java@private collectorRegistry : CollectorRegistrysrc/test/java/com/zaxxer/hikari/metrics/prometheus/PrometheusMetricsTrackerTest.java 20:20
+Generation
+Move Attributesrc/test/java/com/zaxxer/hikari/metrics/prometheus/PrometheusMetricsTrackerTest.java@private collectorRegistry : CollectorRegistrysrc/test/java/com/zaxxer/hikari/metrics/prometheus/PrometheusHistogramMetricsTrackerTest.java@private collectorRegistry : CollectorRegistrysrc/test/java/com/zaxxer/hikari/metrics/prometheus/PrometheusMetricsTrackerTest.java 20:20
+Generation
+Move Methodsrc/main/java/com/zaxxer/hikari/metrics/prometheus/PrometheusMetricsTrackerFactory.java@private getCollector() : HikariCPCollectorsrc/main/java/com/zaxxer/hikari/metrics/prometheus/PrometheusHistogramMetricsTrackerFactory.java@private getCollector() : HikariCPCollectorsrc/main/java/com/zaxxer/hikari/metrics/prometheus/PrometheusMetricsTrackerFactory.java 29:34
+Generation
+Move Methodsrc/test/java/com/zaxxer/hikari/metrics/dropwizard/CodaHaleMetricsTrackerTest.java@private poolStats() : PoolStatssrc/test/java/com/zaxxer/hikari/metrics/prometheus/PrometheusHistogramMetricsTrackerFactoryTest.java@private poolStats() : PoolStatssrc/test/java/com/zaxxer/hikari/metrics/dropwizard/CodaHaleMetricsTrackerTest.java 43:49
+Generation
+Move Methodsrc/test/java/com/zaxxer/hikari/metrics/prometheus/PrometheusMetricsTrackerFactoryTest.java@private poolStats() : PoolStatssrc/test/java/com/zaxxer/hikari/metrics/prometheus/PrometheusHistogramMetricsTrackerFactoryTest.java@private poolStats() : PoolStatssrc/test/java/com/zaxxer/hikari/metrics/prometheus/PrometheusMetricsTrackerFactoryTest.java 67:73
+******************************
+******************************
+coarse grained commits 030015df51fd99216043a28c9978c2b142f6008d
+fine grained commits ('41e3aa56d151bca7b781548e983fc5d8d3ab9966', '4124117dfefbcc79ff9b24df92fe846162ffe8d7', '9fd1eb34987b771f6fd478ca95254b8cfcd28ddc')
+Generation
+Change Variable Typesrc/main/java/com/zaxxer/hikari/util/ConcurrentBag.java@list : ArrayList<WeakReference<IConcurrentBagEntry>>src/main/java/com/zaxxer/hikari/util/ConcurrentBag.java@threadLocalList : Listsrc/main/java/com/zaxxer/hikari/util/ConcurrentBag.java 92:92
+Generation
+Rename Variablesrc/main/java/com/zaxxer/hikari/util/ConcurrentBag.java@list : ArrayList<WeakReference<IConcurrentBagEntry>>src/main/java/com/zaxxer/hikari/util/ConcurrentBag.java@threadLocalList : Listsrc/main/java/com/zaxxer/hikari/util/ConcurrentBag.java 92:92
+******************************
+******************************
+coarse grained commits 6e2139853dafd037538fc516752ee46bdc62a599
+fine grained commits ('8745ca1c6d1ca03b4f11e01e30906be86ebd9b0e', '03ecfdce3ac7fce9689cdd5cdd329797f109d7cd', '3837112dac3a5c1f05bcb3650a10c09a2c3ba722', '56112225d7a1857d805d70f6c50fe852bd6dbada')
+Generation
+Rename Variablesrc/main/java/com/zaxxer/hikari/HikariPool.java@startMs : longsrc/main/java/com/zaxxer/hikari/HikariPool.java@now : longsrc/main/java/com/zaxxer/hikari/HikariPool.java 280:280
+******************************
+******************************
+coarse grained commits a8f7b156e22887b8e18c29166188959c0c177525
+fine grained commits ('ec64658a5b999828b1f3ed598a20db1665aa4f36', 'f5f3e711d1cea5e32b2348bfbc3de6a32f5557db', '56f807d6f5e8a48705373a35237652f6e0863f2e', 'e0b5f65fa3d79a0ca83e914a7748daf35c471f7f')
+Generation
+Add Method Modifiersrc/main/java/com/zaxxer/hikari/proxy/ConnectionProxy.java@public setAutoCommit(autoCommit boolean) : voidsrc/main/java/com/zaxxer/hikari/proxy/ConnectionProxy.java@public setAutoCommit(autoCommit boolean) : voidsrc/main/java/com/zaxxer/hikari/proxy/ConnectionProxy.java 453:458
+******************************
+******************************
+coarse grained commits 3e395b3e2fba91f0be780b43da2629274a356471
+fine grained commits ('8208d67dd8e566b80ec95d7183eb9758589de3b7', '10cf6127777cde488e278674d1f1301b7a56f214', 'dc2b9a3c7a85ee517af272c0c6e038b58d07b559', '289e4df34e53a37d4ec32561f71ff5e198c91b2b')
+Generation
+Remove Method Annotationhikaricp/src/main/java/com/zaxxer/hikari/pool/HikariPool.java@@Overridehikaricp-common/src/main/java/com/zaxxer/hikari/pool/BaseHikariPool.java@private isConnectionAlive(connection Connection) : booleanhikaricp/src/main/java/com/zaxxer/hikari/pool/HikariPool.java 67:67
+Generation
+Change Method Access Modifierhikaricp/src/main/java/com/zaxxer/hikari/pool/HikariPool.java@protected isConnectionAlive(connection Connection) : booleanhikaricp-common/src/main/java/com/zaxxer/hikari/pool/BaseHikariPool.java@private isConnectionAlive(connection Connection) : booleanhikaricp/src/main/java/com/zaxxer/hikari/pool/HikariPool.java 67:96
+Generation
+Pull Up Methodhikaricp/src/main/java/com/zaxxer/hikari/pool/HikariPool.java@protected isConnectionAlive(connection Connection) : booleanhikaricp-common/src/main/java/com/zaxxer/hikari/pool/BaseHikariPool.java@private isConnectionAlive(connection Connection) : booleanhikaricp/src/main/java/com/zaxxer/hikari/pool/HikariPool.java 67:96
+******************************
+******************************
+coarse grained commits baf625d6ca84f5f345d7ad2f9a38b19f89b5829c
+fine grained commits ('906654ee1f56e29771b588455779246e45656b43', 'd05ea858c968ab50b3467ac3e96dc715b8a7e35e', '5bdd81260cac545b2968884cf45776e5e60c813b', '2b05768f08643c9da6992358114a5bf5eeacf155')
+Generation
+Parameterize Variablesrc/main/java/com/zaxxer/hikari/pool/HikariPool.java@throwable : Throwablesrc/main/java/com/zaxxer/hikari/pool/HikariPool.java@t : Throwablesrc/main/java/com/zaxxer/hikari/pool/HikariPool.java 394:394
+******************************
+******************************
+coarse grained commits 730b037e700ab161b665b996252f8ba2aa93644b
+fine grained commits ('653f4107b370cc3051c0f35c0f8b3fcfe0d72c95', '542316d02690c0c2e4efe234db6b0d4785e9f25c', 'ea7ea6372bbe62ee71390a5d10d0b3cfe549869c', '9aca509daa0092579f85374ea605bf998973c474', 'a100775797b9c6cfac38a894b0cddfec5182b5da')
+Generation
+Extract Variablesrc/main/java/com/zaxxer/hikari/pool/PoolBase.java@src/main/java/com/zaxxer/hikari/pool/PoolBase.java@threadFactory : ThreadFactorysrc/main/java/com/zaxxer/hikari/pool/PoolBase.java 418:418
+******************************
+******************************
+coarse grained commits 9b88601db8792c1446ac339ec87de8308207414b
+fine grained commits ('c3964f1962e9d4711a136089992d27551f108c80', '84e24ff62002fb865dfe8ff4226cddbace879b97', '17acf5c9b50f4e110474de4f23076d2335ebc6d9', '092976a804a18788612b357a93ab41f18a8f6bd3', '9afe119cf6f26c9b0ee5c5417ab9adfe3fab0ffa')
+Generation
+Extract And Move Methodsrc/main/java/com/zaxxer/hikari/pool/HikariPool.java@public releaseConnection(connectionProxy IHikariConnectionProxy) : voidsrc/main/java/com/zaxxer/hikari/util/PoolUtilities.java@public elapsedTimeMs(start long) : longsrc/main/java/com/zaxxer/hikari/pool/HikariPool.java 159:175
+******************************
+******************************
+coarse grained commits 3a09258117b41015a506151e4ec1c42869dbecbd
+fine grained commits ('81acb25e508824ec3fe6d28af1b8da0404fcf621', '5e884916b0dc69f06839c609573c4ffca68b6d77', '734ba72a8f11401c6145480192ac99802b09c744', 'dd38f74d985058b654b5b56af827668f20027588', '5eed31a3781e59ef2b1ba101db56beb4ec777f9f')
+Generation
+Rename Classsrc/test/java/com/zaxxer/hikari/performance/Benchmarks.java@com.zaxxer.hikari.performance.Benchmarks.Runnersrc/test/java/com/zaxxer/hikari/performance/Benchmarks.java@com.zaxxer.hikari.performance.Benchmarks.SillyRunnersrc/test/java/com/zaxxer/hikari/performance/Benchmarks.java 85:138
+******************************
+******************************
+coarse grained commits a6ce34f6aa3bb731ceb9a177cb3dc864c21f9d6c
+fine grained commits ('88513d40ecc63b6d89ec1b522e5d84fb872b623c', '2841d0c04d1df6411c501decc712d6e47432ad63', 'b8661c98513ab7e0ee91bf9ddad50577439f591f', '14a891f23d987fb0958ce69a74b40f61e8519c6a', '16ab24faf9d8cb2adb3241c1162e91a40b7db803')
+Generation
+Change Attribute Access Modifiercore/src/main/java/com/zaxxer/hikari/proxy/ConnectionProxy.java@protected _isClosed : ThreadLocal<Boolean>core/src/main/java/com/zaxxer/hikari/proxy/ConnectionProxy.java@private isClosed : ThreadLocal<Boolean>core/src/main/java/com/zaxxer/hikari/proxy/ConnectionProxy.java 25:25
+******************************
+******************************
+coarse grained commits 72d6dba63608ca36c464ed5b3666405821d32de6
+fine grained commits ('321fc3796f11e5b36a90e8c9c10bbe3fd4bd9cda', 'bc24254c5e5b771570c27a68da0c486a87545ba8', '86156e076886b091e5986db116facaae8179b782', '82987a7b29519a9487a4cb4de1fd44eca83cea9f', '72640df39b67ed07a44955c27d838fa0ae727cdf')
+Generation
+Encapsulate Attributesrc/main/java/com/zaxxer/hikari/proxy/StatementProxy.java@protected connection : ConnectionProxysrc/main/java/com/zaxxer/hikari/proxy/StatementProxy.java@protected _connection : IHikariConnectionProxysrc/main/java/com/zaxxer/hikari/proxy/StatementProxy.java 12:12
+******************************
+******************************
+coarse grained commits ac2756edac58c7295dc3ccc9e1d6a52af19d5d62
+fine grained commits ('ae61b04c845da7f275bf476f2e02bbaae23de1a4', 'de91ca5aff6d6828c17bb628d6bf9146b1feacd4', '006d29d220755894893fc34ed70130029ba80aa5', '532e6054afa49d5e4f603c4e599fc7ac6bf6c862', '2ce7a46126ccbd342ff82d74250c633f270498b1')
+Generation
+Inline Variablesrc/test/java/com/zaxxer/hikari/ShutdownTest.java@threadCountStart : intsrc/test/java/com/zaxxer/hikari/ShutdownTest.java@src/test/java/com/zaxxer/hikari/ShutdownTest.java 140:140
+******************************

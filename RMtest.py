@@ -55,6 +55,7 @@ def squashTest():
                 if temp[0].strip() == eachList[0].strip():
                     result.append(temp[1].strip())
     print(result)
+
 if __name__ == "__main__":
     squashTest()
     # test = "Rewrite commit: c32db1a20e5b81133f8980360931eec02749215e -> 94e8e4b563528ebc9832d5cc687c9e2271a8e8e0"
@@ -66,5 +67,3 @@ if __name__ == "__main__":
     # if temp[0].strip() == eachList[0].strip():
     #     result.append(temp[1].strip())
     # print(result)
-
-

@@ -3,7 +3,7 @@ logger config
 '''
 
 import logging
-def logger_config(log_path, logging_name):
+def logger_config(log_path, logging_name=None):
     logger = logging.getLogger(logging_name)
     logger.setLevel(level=logging.DEBUG)
     handler = logging.FileHandler(log_path, encoding='UTF-8')

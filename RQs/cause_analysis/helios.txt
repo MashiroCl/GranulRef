@@ -1,0 +1,396 @@
+******************************
+coarse grained commits efcc1f2bf5209a6afc784ea66fe9ef93002278c6
+fine grained commits ('8a301556981c4319203bb6e8ee9e01fc358dc191', '226166567ca2065b5ea801def903163591ebb9f0')
+Generation
+Extract Methodhelios-services/src/main/java/com/spotify/helios/master/ZooKeeperMasterModel.java@public updateDeploymentGroupHosts(groupName String, hosts List<String>) : voidhelios-services/src/main/java/com/spotify/helios/master/ZooKeeperMasterModel.java@private allowHostChange(status DeploymentGroupStatus) : booleanhelios-services/src/main/java/com/spotify/helios/master/ZooKeeperMasterModel.java 341:388
+Generation
+Rename Variablehelios-services/src/main/java/com/spotify/helios/master/ZooKeeperMasterModel.java@deploymentGroupStatus : DeploymentGroupStatushelios-services/src/main/java/com/spotify/helios/master/ZooKeeperMasterModel.java@status : DeploymentGroupStatushelios-services/src/main/java/com/spotify/helios/master/ZooKeeperMasterModel.java 367:367
+******************************
+******************************
+coarse grained commits e387713e4e2fb1fa89a83944827804fc9083c08e
+fine grained commits ('68fbec834d0f96b7133d7a3a475e95f04a1ccaea', '9746a9e0799165d5009468329981c95789a7fcab')
+Generation
+Add Attribute Modifierhelios-integration-tests/src/test/java/com/spotify/helios/HeliosSoloHealthchecksIT.java@public solo : HeliosDeploymentResourcehelios-integration-tests/src/test/java/com/spotify/helios/HeliosSoloIT.java@public solo : HeliosDeploymentResourcehelios-integration-tests/src/test/java/com/spotify/helios/HeliosSoloHealthchecksIT.java 17:23
+Generation
+Add Attribute Annotationhelios-integration-tests/src/test/java/com/spotify/helios/HeliosSoloHealthchecksIT.java@public solo : HeliosDeploymentResourcehelios-integration-tests/src/test/java/com/spotify/helios/HeliosSoloIT.java@@ClassRulehelios-integration-tests/src/test/java/com/spotify/helios/HeliosSoloHealthchecksIT.java 17:23
+Generation
+Remove Attribute Annotationhelios-integration-tests/src/test/java/com/spotify/helios/HeliosSoloHealthchecksIT.java@@Rulehelios-integration-tests/src/test/java/com/spotify/helios/HeliosSoloIT.java@public solo : HeliosDeploymentResourcehelios-integration-tests/src/test/java/com/spotify/helios/HeliosSoloHealthchecksIT.java 16:16
+******************************
+******************************
+coarse grained commits 44e23a06eb0f5aceeb2e48d00569a315042c8233
+fine grained commits ('f2ffa007258a51e144e39f67b2c91c8f9e004975', 'b24d98ab1d89bd5bf2c00db7f0499964c4a1d3a2')
+Generation
+Move And Rename Methodhelios-integration-tests/src/test/java/com/spotify/helios/HeliosSoloIT.java@public test() : voidhelios-integration-tests/src/test/java/com/spotify/helios/HeliosSoloServiceDiscoveryIT.java@public testServiceDiscovery() : voidhelios-integration-tests/src/test/java/com/spotify/helios/HeliosSoloIT.java 165:173
+******************************
+******************************
+coarse grained commits 9fa277fe4a52a3503ca5caaad594ec8dbd788273
+fine grained commits ('45e0f38a6ddb36edca2098c15f6b3d2033223f20', '1425e10921c628b88249f97ed5ba029236186622')
+Generation
+Move Classhelios-authentication/src/test/java/com/spotify/helios/auth/basic/BasicServerAuthenticationTest.java@com.spotify.helios.auth.basic.BasicServerAuthenticationTest.StatusCodeMatcherhelios-authentication/src/test/java/com/spotify/helios/auth/AuthInjectableProviderTest.java@com.spotify.helios.auth.AuthInjectableProviderTest.StatusCodeMatcherhelios-authentication/src/test/java/com/spotify/helios/auth/basic/BasicServerAuthenticationTest.java 100:114
+Generation
+Merge Classhelios-authentication/src/test/java/com/spotify/helios/auth/basic/BasicServerAuthenticationTest.java@com.spotify.helios.auth.basic.BasicServerAuthenticationTesthelios-authentication/src/test/java/com/spotify/helios/auth/AuthInjectableProviderTest.java@com.spotify.helios.auth.AuthInjectableProviderTesthelios-authentication/src/test/java/com/spotify/helios/auth/basic/BasicServerAuthenticationTest.java 33:157
+Generation
+Move Methodhelios-authentication/src/test/java/com/spotify/helios/auth/basic/BasicServerAuthenticationTest.java@public authenticationNotRequired_NoCredentials() : voidhelios-authentication/src/test/java/com/spotify/helios/auth/AuthInjectableProviderTest.java@public authenticationNotRequired_NoCredentials() : voidhelios-authentication/src/test/java/com/spotify/helios/auth/basic/BasicServerAuthenticationTest.java 71:78
+Generation
+Remove Thrown Exception Typehelios-authentication/src/test/java/com/spotify/helios/auth/basic/BasicServerAuthenticationTest.java@Exceptionhelios-authentication/src/test/java/com/spotify/helios/auth/AuthInjectableProviderTest.java@public authenticationNotRequired_NoCredentials() : voidhelios-authentication/src/test/java/com/spotify/helios/auth/basic/BasicServerAuthenticationTest.java 72:72
+Generation
+Move Methodhelios-authentication/src/test/java/com/spotify/helios/auth/basic/BasicServerAuthenticationTest.java@public authenticationNotRequired_BadCredentials() : voidhelios-authentication/src/test/java/com/spotify/helios/auth/AuthInjectableProviderTest.java@public authenticationNotRequired_BadCredentials() : voidhelios-authentication/src/test/java/com/spotify/helios/auth/basic/BasicServerAuthenticationTest.java 80:87
+Generation
+Move Methodhelios-authentication/src/test/java/com/spotify/helios/auth/basic/BasicServerAuthenticationTest.java@private hasStatus(sc int) : StatusCodeMatcherhelios-authentication/src/test/java/com/spotify/helios/auth/AuthInjectableProviderTest.java@private hasStatus(sc int) : StatusCodeMatcherhelios-authentication/src/test/java/com/spotify/helios/auth/basic/BasicServerAuthenticationTest.java 116:118
+Generation
+Move Methodhelios-authentication/src/test/java/com/spotify/helios/auth/basic/BasicServerAuthenticationTest.java@public authenticationRequired_NoCredentials() : voidhelios-authentication/src/test/java/com/spotify/helios/auth/AuthInjectableProviderTest.java@public authenticationRequired_NoCredentials() : voidhelios-authentication/src/test/java/com/spotify/helios/auth/basic/BasicServerAuthenticationTest.java 121:130
+Generation
+Move Methodhelios-authentication/src/test/java/com/spotify/helios/auth/basic/BasicServerAuthenticationTest.java@public authenticationRequired_BadCredentials() : voidhelios-authentication/src/test/java/com/spotify/helios/auth/AuthInjectableProviderTest.java@public authenticationRequired_BadCredentials() : voidhelios-authentication/src/test/java/com/spotify/helios/auth/basic/BasicServerAuthenticationTest.java 133:143
+Generation
+Move Attributehelios-authentication/src/test/java/com/spotify/helios/auth/basic/BasicServerAuthenticationTest.java@public exception : ExpectedExceptionhelios-authentication/src/test/java/com/spotify/helios/auth/AuthInjectableProviderTest.java@public exception : ExpectedExceptionhelios-authentication/src/test/java/com/spotify/helios/auth/basic/BasicServerAuthenticationTest.java 36:36
+Generation
+Move Methodhelios-crtauth/src/test/java/com/spotify/helios/auth/crt/CrtAuthProviderTest.java@public authenticationNotRequired_NoCredentials() : voidhelios-authentication/src/test/java/com/spotify/helios/auth/AuthInjectableProviderTest.java@public authenticationNotRequired_NoCredentials() : voidhelios-crtauth/src/test/java/com/spotify/helios/auth/crt/CrtAuthProviderTest.java 68:75
+Generation
+Move Methodhelios-crtauth/src/test/java/com/spotify/helios/auth/crt/CrtAuthProviderTest.java@public authenticationNotRequired_BadCredentials() : voidhelios-authentication/src/test/java/com/spotify/helios/auth/AuthInjectableProviderTest.java@public authenticationNotRequired_BadCredentials() : voidhelios-crtauth/src/test/java/com/spotify/helios/auth/crt/CrtAuthProviderTest.java 77:87
+Generation
+Move Methodhelios-crtauth/src/test/java/com/spotify/helios/auth/crt/CrtAuthProviderTest.java@private hasStatus(sc int) : StatusCodeMatcherhelios-authentication/src/test/java/com/spotify/helios/auth/AuthInjectableProviderTest.java@private hasStatus(sc int) : StatusCodeMatcherhelios-crtauth/src/test/java/com/spotify/helios/auth/crt/CrtAuthProviderTest.java 105:107
+Generation
+Move Methodhelios-crtauth/src/test/java/com/spotify/helios/auth/crt/CrtAuthProviderTest.java@public authenticationRequired_NoCredentials() : voidhelios-authentication/src/test/java/com/spotify/helios/auth/AuthInjectableProviderTest.java@public authenticationRequired_NoCredentials() : voidhelios-crtauth/src/test/java/com/spotify/helios/auth/crt/CrtAuthProviderTest.java 110:119
+Generation
+Move Methodhelios-crtauth/src/test/java/com/spotify/helios/auth/crt/CrtAuthProviderTest.java@public authenticationRequired_BadCredentials() : voidhelios-authentication/src/test/java/com/spotify/helios/auth/AuthInjectableProviderTest.java@public authenticationRequired_BadCredentials() : voidhelios-crtauth/src/test/java/com/spotify/helios/auth/crt/CrtAuthProviderTest.java 122:134
+Generation
+Move Attributehelios-crtauth/src/test/java/com/spotify/helios/auth/crt/CrtAuthProviderTest.java@public exception : ExpectedExceptionhelios-authentication/src/test/java/com/spotify/helios/auth/AuthInjectableProviderTest.java@public exception : ExpectedExceptionhelios-crtauth/src/test/java/com/spotify/helios/auth/crt/CrtAuthProviderTest.java 33:33
+******************************
+******************************
+coarse grained commits e4deac4caf7be3e983465af75d002bc8d427f8d6
+fine grained commits ('29d3378f2b9b3dafad32185ae2e8437d164847c9', '8301991f0ec348b5297193bcab8d229ec42a68f6')
+Generation
+Extract Methodhelios-services/src/main/java/com/spotify/helios/master/ZooKeeperMasterModel.java@public removeJob(id JobId) : Jobhelios-services/src/main/java/com/spotify/helios/master/ZooKeeperMasterModel.java@public removeJob(id JobId, token String) : Jobhelios-services/src/main/java/com/spotify/helios/master/ZooKeeperMasterModel.java 389:417
+Generation
+Extract Methodhelios-services/src/main/java/com/spotify/helios/master/ZooKeeperMasterModel.java@public deployJob(host String, deployment Deployment) : voidhelios-services/src/main/java/com/spotify/helios/master/ZooKeeperMasterModel.java@public deployJob(host String, deployment Deployment, token String) : voidhelios-services/src/main/java/com/spotify/helios/master/ZooKeeperMasterModel.java 431:437
+Generation
+Extract Methodhelios-services/src/main/java/com/spotify/helios/master/ZooKeeperMasterModel.java@public updateDeployment(host String, deployment Deployment) : voidhelios-services/src/main/java/com/spotify/helios/master/ZooKeeperMasterModel.java@public updateDeployment(host String, deployment Deployment, token String) : voidhelios-services/src/main/java/com/spotify/helios/master/ZooKeeperMasterModel.java 550:575
+Generation
+Extract Methodhelios-services/src/main/java/com/spotify/helios/master/ZooKeeperMasterModel.java@public undeployJob(host String, jobId JobId) : Deploymenthelios-services/src/main/java/com/spotify/helios/master/ZooKeeperMasterModel.java@public undeployJob(host String, jobId JobId, token String) : Deploymenthelios-services/src/main/java/com/spotify/helios/master/ZooKeeperMasterModel.java 755:788
+Generation
+Rename Parameterhelios-services/src/main/java/com/spotify/helios/master/ZooKeeperMasterModel.java@id : JobIdhelios-services/src/main/java/com/spotify/helios/master/ZooKeeperMasterModel.java@jobId : JobIdhelios-services/src/main/java/com/spotify/helios/master/ZooKeeperMasterModel.java 390:390
+Generation
+Remove Parameter Modifierhelios-services/src/main/java/com/spotify/helios/master/ZooKeeperMasterModel.java@id : JobIdhelios-services/src/main/java/com/spotify/helios/master/ZooKeeperMasterModel.java@jobId : JobIdhelios-services/src/main/java/com/spotify/helios/master/ZooKeeperMasterModel.java 390:390
+Generation
+Remove Parameter Modifierhelios-services/src/main/java/com/spotify/helios/master/ZooKeeperMasterModel.java@host : Stringhelios-services/src/main/java/com/spotify/helios/master/ZooKeeperMasterModel.java@host : Stringhelios-services/src/main/java/com/spotify/helios/master/ZooKeeperMasterModel.java 432:432
+Generation
+Rename Parameterhelios-services/src/main/java/com/spotify/helios/master/ZooKeeperMasterModel.java@deployment : Deploymenthelios-services/src/main/java/com/spotify/helios/master/ZooKeeperMasterModel.java@job : Deploymenthelios-services/src/main/java/com/spotify/helios/master/ZooKeeperMasterModel.java 432:432
+Generation
+Remove Parameter Modifierhelios-services/src/main/java/com/spotify/helios/master/ZooKeeperMasterModel.java@deployment : Deploymenthelios-services/src/main/java/com/spotify/helios/master/ZooKeeperMasterModel.java@job : Deploymenthelios-services/src/main/java/com/spotify/helios/master/ZooKeeperMasterModel.java 432:432
+Generation
+Remove Parameter Modifierhelios-services/src/main/java/com/spotify/helios/master/ZooKeeperMasterModel.java@host : Stringhelios-services/src/main/java/com/spotify/helios/master/ZooKeeperMasterModel.java@host : Stringhelios-services/src/main/java/com/spotify/helios/master/ZooKeeperMasterModel.java 551:551
+Generation
+Remove Parameter Modifierhelios-services/src/main/java/com/spotify/helios/master/ZooKeeperMasterModel.java@deployment : Deploymenthelios-services/src/main/java/com/spotify/helios/master/ZooKeeperMasterModel.java@deployment : Deploymenthelios-services/src/main/java/com/spotify/helios/master/ZooKeeperMasterModel.java 551:551
+Generation
+Remove Parameter Modifierhelios-services/src/main/java/com/spotify/helios/master/ZooKeeperMasterModel.java@host : Stringhelios-services/src/main/java/com/spotify/helios/master/ZooKeeperMasterModel.java@host : Stringhelios-services/src/main/java/com/spotify/helios/master/ZooKeeperMasterModel.java 756:756
+Generation
+Remove Parameter Modifierhelios-services/src/main/java/com/spotify/helios/master/ZooKeeperMasterModel.java@jobId : JobIdhelios-services/src/main/java/com/spotify/helios/master/ZooKeeperMasterModel.java@jobId : JobIdhelios-services/src/main/java/com/spotify/helios/master/ZooKeeperMasterModel.java 756:756
+******************************
+******************************
+coarse grained commits 3ad85408ce66d31aa17154f0d38a2ae32b8df5cb
+fine grained commits ('53cb164bcd9b09c7ab5c3c339547b8b51f46f950', '7132dac25b7f2168108453866e2f7a5f7df55d5e')
+Generation
+Rename Variablehelios-system-tests/src/main/java/com/spotify/helios/system/VolumeTest.java@foo : byte[]helios-system-tests/src/main/java/com/spotify/helios/system/VolumeTest.java@bytes : byte[]helios-system-tests/src/main/java/com/spotify/helios/system/VolumeTest.java 73:73
+******************************
+******************************
+coarse grained commits ed46c16a2f8d8133965c2b71a696e28caf39040b
+fine grained commits ('8f52a05a01aa646d19340926ee721ffc0a2d0732', 'dbac7a502a516ea9c2093ce45f7a24966916c818')
+Generation
+Add Parameterhelios-services/src/main/java/com/spotify/helios/agent/SyslogRedirectingContainerDecorator.java@public decorateHostConfig(dockerVersion Optional<String>, hostConfig HostConfig.Builder) : voidhelios-services/src/main/java/com/spotify/helios/agent/SyslogRedirectingContainerDecorator.java@job : Jobhelios-services/src/main/java/com/spotify/helios/agent/SyslogRedirectingContainerDecorator.java 24:32
+******************************
+******************************
+coarse grained commits d1a1539fb062c0429046a515c8b5f47d9fba12c1
+fine grained commits ('c56e8849c4258d88f87fd2b666ebd16c91d0659f', '1ccae6e241ece58e10135ccc9fdb11c03b732628')
+Generation
+Add Parameterhelios-services/src/main/java/com/spotify/helios/master/DeadAgentReaper.java@public DeadAgentReaper(masterModel MasterModel, timeout long, timeUnit TimeUnit)helios-services/src/main/java/com/spotify/helios/master/DeadAgentReaper.java@clock : Clockhelios-services/src/main/java/com/spotify/helios/master/DeadAgentReaper.java 32:37
+******************************
+******************************
+coarse grained commits c0a211d04c05411423de0ad4614f06ad08d97e02
+fine grained commits ('32ffc7ff70d497ee9952c4bf9df49129ed94a941', 'f823d152e4272bdc0353a4f08450ad638386ab7f')
+Generation
+Pull Up Attributehelios-client/src/main/java/com/spotify/helios/client/HttpsHandlers.java@private log : Loggerhelios-client/src/main/java/com/spotify/helios/client/HttpsHandlers.java@private log : Loggerhelios-client/src/main/java/com/spotify/helios/client/HttpsHandlers.java 44:44
+******************************
+******************************
+coarse grained commits f781760da039dc7e868243d6b439acfc986655c1
+fine grained commits ('a8c02429427bf8c27e150fee3aa1d49595f1ecc5', 'b84ff56c77c1ffe3d7c8d20701778aa5734c3751')
+Generation
+Change Attribute Access Modifierhelios-testing/src/main/java/com/spotify/helios/testing/HeliosSoloDeployment.java@package dockerHost : DockerHosthelios-testing/src/main/java/com/spotify/helios/testing/HeliosSoloDeployment.java@private dockerHost : DockerHosthelios-testing/src/main/java/com/spotify/helios/testing/HeliosSoloDeployment.java 48:48
+******************************
+******************************
+coarse grained commits 2ccc9fc703b845d3340bea187573fd043dd2922f
+fine grained commits ('cede1cfa99adefde799865da9d55f1b3fad76525', '243c5dc3693032661eebde00e3b640e30bda9f5b')
+Generation
+Remove Parameterhelios-client/src/main/java/com/spotify/helios/client/AuthenticatingHttpConnector.java@identity : Identityhelios-client/src/main/java/com/spotify/helios/client/DefaultHttpConnector.java@private handleHttps(connection HttpURLConnection, hostname String) : voidhelios-client/src/main/java/com/spotify/helios/client/AuthenticatingHttpConnector.java 123:123
+Generation
+Move Methodhelios-client/src/main/java/com/spotify/helios/client/AuthenticatingHttpConnector.java@private handleHttps(connection HttpURLConnection, hostname String, identity Identity) : voidhelios-client/src/main/java/com/spotify/helios/client/DefaultHttpConnector.java@private handleHttps(connection HttpURLConnection, hostname String) : voidhelios-client/src/main/java/com/spotify/helios/client/AuthenticatingHttpConnector.java 122:146
+******************************
+******************************
+coarse grained commits 5215c9a4ae569db552ba664dd753b94d54d52d6d
+fine grained commits ('0d07c745ab0bbcba929b71ca30fa205a26564480', '62882fd35ee30bf59b77d0a3df026f9574cd7d32')
+Generation
+Add Parameterhelios-client/src/main/java/com/spotify/helios/client/DefaultRequestDispatcher.java@package DefaultRequestDispatcher(endpoints List<Endpoint>, user String, executorService ListeningExecutorService, sslHostnameVerificationEnabled boolean)helios-client/src/main/java/com/spotify/helios/client/DefaultRequestDispatcher.java@httpConnector : HttpConnectorhelios-client/src/main/java/com/spotify/helios/client/DefaultRequestDispatcher.java 63:72
+Generation
+Remove Parameterhelios-client/src/main/java/com/spotify/helios/client/DefaultRequestDispatcher.java@endpoints : List<Endpoint>helios-client/src/main/java/com/spotify/helios/client/DefaultRequestDispatcher.java@package DefaultRequestDispatcher(httpConnector HttpConnector, executorService ListeningExecutorService, sslHostnameVerificationEnabled boolean)helios-client/src/main/java/com/spotify/helios/client/DefaultRequestDispatcher.java 63:63
+Generation
+Remove Parameterhelios-client/src/main/java/com/spotify/helios/client/DefaultRequestDispatcher.java@user : Stringhelios-client/src/main/java/com/spotify/helios/client/DefaultRequestDispatcher.java@package DefaultRequestDispatcher(httpConnector HttpConnector, executorService ListeningExecutorService, sslHostnameVerificationEnabled boolean)helios-client/src/main/java/com/spotify/helios/client/DefaultRequestDispatcher.java 64:64
+Generation
+Rename Attributehelios-client/src/main/java/com/spotify/helios/client/DefaultRequestDispatcher.java@endpointIterator : EndpointIteratorhelios-client/src/main/java/com/spotify/helios/client/DefaultRequestDispatcher.java@httpConnector : HttpConnectorhelios-client/src/main/java/com/spotify/helios/client/DefaultRequestDispatcher.java 58:58
+Generation
+Change Attribute Typehelios-client/src/main/java/com/spotify/helios/client/DefaultRequestDispatcher.java@endpointIterator : EndpointIteratorhelios-client/src/main/java/com/spotify/helios/client/DefaultRequestDispatcher.java@httpConnector : HttpConnectorhelios-client/src/main/java/com/spotify/helios/client/DefaultRequestDispatcher.java 58:58
+******************************
+******************************
+coarse grained commits d338d04bfc97c17c1d45167c60e99ae599458003
+fine grained commits ('811ce23fb29a7b2cba9a2429755c8b3654c3df6d', '87257dac4937b277e84b8d1759f6774cf1d50572')
+Generation
+Move Classhelios-services/src/main/java/com/spotify/helios/agent/Clock.java@com.spotify.helios.agent.Clockhelios-client/src/main/java/com/spotify/helios/common/Clock.java@com.spotify.helios.common.Clockhelios-services/src/main/java/com/spotify/helios/agent/Clock.java 6:8
+Generation
+Move Classhelios-services/src/main/java/com/spotify/helios/agent/SystemClock.java@com.spotify.helios.agent.SystemClockhelios-client/src/main/java/com/spotify/helios/common/SystemClock.java@com.spotify.helios.common.SystemClockhelios-services/src/main/java/com/spotify/helios/agent/SystemClock.java 6:12
+******************************
+******************************
+coarse grained commits 6641539acbca5bb89839aa6e661039efbee2865c
+fine grained commits ('623b5d3e5c9d74ca03082fe728dea52fbadc4a93', '8d38927f3621cebf232805bd74b25ea79203814a')
+Generation
+Rename Methodhelios-client/src/main/java/com/spotify/helios/client/HeliosClient.java@private checkprotocolVersionStatus(connection HttpURLConnection) : voidhelios-client/src/main/java/com/spotify/helios/client/HeliosClient.java@private checkProtocolVersionStatus(response Response) : voidhelios-client/src/main/java/com/spotify/helios/client/HeliosClient.java 248:263
+Generation
+Change Parameter Typehelios-client/src/main/java/com/spotify/helios/client/HeliosClient.java@connection : HttpURLConnectionhelios-client/src/main/java/com/spotify/helios/client/HeliosClient.java@response : Responsehelios-client/src/main/java/com/spotify/helios/client/HeliosClient.java 248:248
+Generation
+Rename Parameterhelios-client/src/main/java/com/spotify/helios/client/HeliosClient.java@connection : HttpURLConnectionhelios-client/src/main/java/com/spotify/helios/client/HeliosClient.java@response : Responsehelios-client/src/main/java/com/spotify/helios/client/HeliosClient.java 248:248
+******************************
+******************************
+coarse grained commits 3a845749d5df5fca6e6a810926a866ff2c722815
+fine grained commits ('9395f16b731d33bdfacaef64e0d8397c8f4f58eb', 'cede1cfa99adefde799865da9d55f1b3fad76525', '243c5dc3693032661eebde00e3b640e30bda9f5b')
+Generation
+Add Parameterhelios-client/src/main/java/com/spotify/helios/client/AuthenticatingHttpConnector.java@private handleHttps(connection HttpURLConnection, hostname String, identity Identity) : voidhelios-client/src/main/java/com/spotify/helios/client/DefaultHttpConnector.java@hostnameVerifierProvider : HostnameVerifierProviderhelios-client/src/main/java/com/spotify/helios/client/AuthenticatingHttpConnector.java 122:146
+Generation
+Add Parameterhelios-client/src/main/java/com/spotify/helios/client/AuthenticatingHttpConnector.java@private handleHttps(connection HttpURLConnection, hostname String, identity Identity) : voidhelios-client/src/main/java/com/spotify/helios/client/DefaultHttpConnector.java@extraHttpsHandler : HttpsHandlerhelios-client/src/main/java/com/spotify/helios/client/AuthenticatingHttpConnector.java 122:146
+Generation
+Add Method Modifierhelios-client/src/main/java/com/spotify/helios/client/AuthenticatingHttpConnector.java@private handleHttps(connection HttpURLConnection, hostname String, identity Identity) : voidhelios-client/src/main/java/com/spotify/helios/client/DefaultHttpConnector.java@private handleHttps(connection HttpURLConnection, hostname String, hostnameVerifierProvider HostnameVerifierProvider, extraHttpsHandler HttpsHandler) : voidhelios-client/src/main/java/com/spotify/helios/client/AuthenticatingHttpConnector.java 122:146
+******************************
+******************************
+coarse grained commits 8ea16ccdf212f16828c67c666e0365fce408656d
+fine grained commits ('a54f2417130d3601cb03eb3828ffd18f74fb696e', '5ac5d1d3d2ba6e114d171b2435cc4cc972bfb63f', '917eb06b99bb85f55833dd35cb5187802f85110d')
+Generation
+Rename Variablehelios-client/src/main/java/com/spotify/helios/client/DefaultRequestDispatcher.java@ipEndpoint : URIhelios-client/src/main/java/com/spotify/helios/client/DefaultRequestDispatcher.java@endpointUri : URIhelios-client/src/main/java/com/spotify/helios/client/DefaultRequestDispatcher.java 182:182
+******************************
+******************************
+coarse grained commits 2e3b6556b9d95441d805470d680066301aaf4a3b
+fine grained commits ('e247c717f8af7238875a9aefd9cfad53e5b111b1', 'cb68343d14d68fe26283dab1d6e49bd900b70442', '6f00f813309932ee8cdbe9be427d4c2c44a42eac')
+Generation
+Extract Classhelios-services/src/main/java/com/spotify/helios/agent/FlapController.java@com.spotify.helios.agent.FlapControllerhelios-services/src/main/java/com/spotify/helios/agent/FlapController.java@com.spotify.helios.agent.FlapControllerhelios-services/src/main/java/com/spotify/helios/agent/FlapController.java 19:152
+Generation
+Extract Classhelios-services/src/main/java/com/spotify/helios/agent/Supervisor.java@com.spotify.helios.agent.Supervisorhelios-services/src/main/java/com/spotify/helios/agent/Supervisor.java@com.spotify.helios.agent.Supervisorhelios-services/src/main/java/com/spotify/helios/agent/Supervisor.java 35:374
+Generation
+Move Attributehelios-services/src/main/java/com/spotify/helios/agent/FlapController.java@private jobId : JobIdhelios-services/src/main/java/com/spotify/helios/agent/TaskMonitor.java@private jobId : JobIdhelios-services/src/main/java/com/spotify/helios/agent/FlapController.java 115:115
+Generation
+Move Attributehelios-services/src/test/java/com/spotify/helios/agent/FlapControllerTest.java@private JOB_ID : JobIdhelios-services/src/test/java/com/spotify/helios/agent/TaskMonitorTest.java@package JOB_ID : JobIdhelios-services/src/test/java/com/spotify/helios/agent/FlapControllerTest.java 59:59
+Generation
+Add Attribute Modifierhelios-services/src/main/java/com/spotify/helios/agent/FlapController.java@private jobId : JobIdhelios-services/src/main/java/com/spotify/helios/agent/TaskMonitor.java@private jobId : JobIdhelios-services/src/main/java/com/spotify/helios/agent/FlapController.java 115:115
+Generation
+Change Attribute Access Modifierhelios-services/src/main/java/com/spotify/helios/agent/TaskRunnerFactory.java@private flapController : FlapControllerhelios-services/src/test/java/com/spotify/helios/agent/TaskMonitorTest.java@package flapController : FlapControllerhelios-services/src/main/java/com/spotify/helios/agent/TaskRunnerFactory.java 70:70
+Generation
+Change Attribute Access Modifierhelios-services/src/main/java/com/spotify/helios/agent/TaskRunnerFactory.java@private flapController : FlapControllerhelios-services/src/test/java/com/spotify/helios/agent/TaskMonitorTest.java@package flapController : FlapControllerhelios-services/src/main/java/com/spotify/helios/agent/TaskRunnerFactory.java 22:22
+Generation
+Add Attribute Annotationhelios-services/src/main/java/com/spotify/helios/agent/TaskRunnerFactory.java@private flapController : FlapControllerhelios-services/src/test/java/com/spotify/helios/agent/TaskMonitorTest.java@@Mockhelios-services/src/main/java/com/spotify/helios/agent/TaskRunnerFactory.java 70:70
+Generation
+Add Attribute Annotationhelios-services/src/main/java/com/spotify/helios/agent/TaskRunnerFactory.java@private flapController : FlapControllerhelios-services/src/test/java/com/spotify/helios/agent/TaskMonitorTest.java@@Mockhelios-services/src/main/java/com/spotify/helios/agent/TaskRunnerFactory.java 22:22
+Generation
+Remove Attribute Modifierhelios-services/src/main/java/com/spotify/helios/agent/TaskRunnerFactory.java@private flapController : FlapControllerhelios-services/src/test/java/com/spotify/helios/agent/TaskMonitorTest.java@package flapController : FlapControllerhelios-services/src/main/java/com/spotify/helios/agent/TaskRunnerFactory.java 22:22
+Generation
+Change Attribute Access Modifierhelios-services/src/test/java/com/spotify/helios/agent/FlapControllerTest.java@private JOB_ID : JobIdhelios-services/src/test/java/com/spotify/helios/agent/TaskMonitorTest.java@package JOB_ID : JobIdhelios-services/src/test/java/com/spotify/helios/agent/FlapControllerTest.java 59:59
+Generation
+Move Attributehelios-services/src/main/java/com/spotify/helios/agent/FlapController.java@private log : Loggerhelios-services/src/main/java/com/spotify/helios/agent/TaskMonitor.java@private log : Loggerhelios-services/src/main/java/com/spotify/helios/agent/FlapController.java 20:20
+Generation
+Move Attributehelios-services/src/main/java/com/spotify/helios/agent/FlapController.java@private jobId : JobIdhelios-services/src/main/java/com/spotify/helios/agent/TaskMonitor.java@private jobId : JobIdhelios-services/src/main/java/com/spotify/helios/agent/FlapController.java 27:27
+******************************
+******************************
+coarse grained commits 325b4936724fa719cfbc6f4f5211e1bfa95aaed7
+fine grained commits ('c9f09f6a73e00d26acac315c95375834870d4346', '06b5288ad9b5fd2a528ba1cce445c45ecefe2728', '4793472309272d269924de4b53c47139e199778e')
+Generation
+Extract Superclasshelios-services/src/main/java/com/spotify/helios/master/DeadAgentReaper.java@com.spotify.helios.master.DeadAgentReaperhelios-services/src/main/java/com/spotify/helios/master/reaper/DeadAgentReaper.java@com.spotify.helios.master.reaper.DeadAgentReaperhelios-services/src/main/java/com/spotify/helios/master/DeadAgentReaper.java 21:86
+Generation
+Pull Up Methodhelios-services/src/main/java/com/spotify/helios/master/OldJobReaper.java@protected schedule(runnable Runnable, executorService ScheduledExecutorService) : ScheduledFuture<?>helios-services/src/main/java/com/spotify/helios/master/reaper/RateLimitedService.java@protected schedule(runnable Runnable, executorService ScheduledExecutorService) : ScheduledFuture<?>helios-services/src/main/java/com/spotify/helios/master/OldJobReaper.java 123:127
+******************************
+******************************
+coarse grained commits 4dcccd7303575c8ae5d9ceec3b4cd89bcad9b27a
+fine grained commits ('6a4ca6ae861b709089ed3aefab8152d1f3967e62', 'ab78d6365b29ce799b9ab90047d86bdd3af2445d', '0d07c745ab0bbcba929b71ca30fa205a26564480')
+Generation
+Remove Parameterhelios-client/src/main/java/com/spotify/helios/client/DefaultRequestDispatcher.java@agentProxy : AgentProxyhelios-client/src/main/java/com/spotify/helios/client/DefaultHttpConnector.java@private connect0(ipUri URI, method String, entity byte[], headers Map<String,List<String>>, hostname String, identity Identity) : HttpURLConnectionhelios-client/src/main/java/com/spotify/helios/client/DefaultRequestDispatcher.java 208:208
+******************************
+******************************
+coarse grained commits 875cc216c9d9a0a157d8cd322283e8d187da62bd
+fine grained commits ('7407956fd8332769242c216e17075cbd1b5c1cb6', '34616bfe8ae54b898ac4fe40f458beb635383650', 'a48a15e034b337d9d9fc71ae13617843ad18abc8')
+Generation
+Extract Methodhelios-services/src/main/java/com/spotify/helios/rollingupdate/RollingUpdateOpFactory.java@public error(e Exception, host String) : RollingUpdateOphelios-services/src/main/java/com/spotify/helios/rollingupdate/RollingUpdateOpFactory.java@public error(msg String, host String, errorCode RollingUpdateError) : RollingUpdateOphelios-services/src/main/java/com/spotify/helios/rollingupdate/RollingUpdateOpFactory.java 97:99
+******************************
+******************************
+coarse grained commits 7c7b9e918d16234f1c31930a0d7bad6f3039f06a
+fine grained commits ('1e1d9bbbd6273da86b7e4a9b1787a40369dd9527', '851c0d0a5fbdcf978c27cb2375cae4647e3e20d1', 'b42f3d65264419a72201112e13688d443a93b197')
+Generation
+Extract Variablehelios-services/src/test/java/com/spotify/helios/master/DeploymentGroupTest.java@helios-services/src/test/java/com/spotify/helios/master/DeploymentGroupTest.java@oldHost : Stringhelios-services/src/test/java/com/spotify/helios/master/DeploymentGroupTest.java 116:118
+******************************
+******************************
+coarse grained commits 2c8273684865909618f2d2d1b0ac448a044dc89c
+fine grained commits ('200589ead4c05c77e7b14a4c6f10f88de11aa9a4', '02c9ff0336c109d2f714d55a00e668bd510cc8ee', '4b30fa73a50bc39e9b724859826f787e625f1b14')
+Generation
+Extract Classhelios-services/src/main/java/com/spotify/helios/servicescommon/ZooKeeperAclProviders.java@com.spotify.helios.servicescommon.ZooKeeperAclProvidershelios-services/src/main/java/com/spotify/helios/servicescommon/ZooKeeperAclProviders.java@com.spotify.helios.servicescommon.ZooKeeperAclProvidershelios-services/src/main/java/com/spotify/helios/servicescommon/ZooKeeperAclProviders.java 15:49
+Generation
+Move Attributehelios-services/src/main/java/com/spotify/helios/servicescommon/ZooKeeperAclProviders.java@public AGENT_USER : Stringhelios-services/src/test/java/com/spotify/helios/servicescommon/ZooKeeperAclProvidersTest.java@private AGENT_USER : Stringhelios-services/src/main/java/com/spotify/helios/servicescommon/ZooKeeperAclProviders.java 20:20
+Generation
+Change Attribute Access Modifierhelios-services/src/main/java/com/spotify/helios/servicescommon/ZooKeeperAclProviders.java@public AGENT_USER : Stringhelios-services/src/test/java/com/spotify/helios/servicescommon/ZooKeeperAclProvidersTest.java@private AGENT_USER : Stringhelios-services/src/main/java/com/spotify/helios/servicescommon/ZooKeeperAclProviders.java 20:20
+Generation
+Move Attributehelios-services/src/main/java/com/spotify/helios/servicescommon/ZooKeeperAclProviders.java@public MASTER_USER : Stringhelios-services/src/test/java/com/spotify/helios/servicescommon/ZooKeeperAclProvidersTest.java@private MASTER_USER : Stringhelios-services/src/main/java/com/spotify/helios/servicescommon/ZooKeeperAclProviders.java 19:19
+Generation
+Change Attribute Access Modifierhelios-services/src/main/java/com/spotify/helios/servicescommon/ZooKeeperAclProviders.java@public MASTER_USER : Stringhelios-services/src/test/java/com/spotify/helios/servicescommon/ZooKeeperAclProvidersTest.java@private MASTER_USER : Stringhelios-services/src/main/java/com/spotify/helios/servicescommon/ZooKeeperAclProviders.java 19:19
+******************************
+******************************
+coarse grained commits deda3565c065efe76ff0923c9b2046b600a3231b
+fine grained commits ('05a3184d3cf3485cde4d49751c4ed73a451ea0ac', 'a54f2417130d3601cb03eb3828ffd18f74fb696e', '5ac5d1d3d2ba6e114d171b2435cc4cc972bfb63f')
+Generation
+Extract Classhelios-client/src/main/java/com/spotify/helios/client/DefaultRequestDispatcher.java@com.spotify.helios.client.DefaultRequestDispatcherhelios-client/src/main/java/com/spotify/helios/client/DefaultRequestDispatcher.java@com.spotify.helios.client.DefaultRequestDispatcherhelios-client/src/main/java/com/spotify/helios/client/DefaultRequestDispatcher.java 60:339
+******************************
+******************************
+coarse grained commits 84775d2e81df4ae7b41b3a8015e1511383221472
+fine grained commits ('45e0f38a6ddb36edca2098c15f6b3d2033223f20', '1425e10921c628b88249f97ed5ba029236186622', 'a3ac999d75786d222955268eaf77b1b156922bcd')
+Generation
+Move And Rename Classhelios-authentication/src/test/java/com/spotify/helios/auth/basic/BasicServerAuthenticationTest.java@com.spotify.helios.auth.basic.BasicServerAuthenticationTesthelios-authentication/src/test/java/com/spotify/helios/auth/AuthInjectableProviderTest.java@com.spotify.helios.auth.AuthInjectableProviderTesthelios-authentication/src/test/java/com/spotify/helios/auth/basic/BasicServerAuthenticationTest.java 33:157
+Generation
+Rename Methodhelios-authentication/src/test/java/com/spotify/helios/auth/basic/BasicServerAuthenticationTest.java@public canAuthenticate() : voidhelios-authentication/src/test/java/com/spotify/helios/auth/AuthInjectableProviderTest.java@public successfulAuthentication() : voidhelios-authentication/src/test/java/com/spotify/helios/auth/basic/BasicServerAuthenticationTest.java 58:69
+Generation
+Add Parameterhelios-authentication/src/test/java/com/spotify/helios/auth/basic/BasicServerAuthenticationTest.java@private invokeAuthentication() : Objecthelios-authentication/src/test/java/com/spotify/helios/auth/AuthInjectableProviderTest.java@provider : AuthInjectableProvider<String>helios-authentication/src/test/java/com/spotify/helios/auth/basic/BasicServerAuthenticationTest.java 45:56
+Generation
+Rename Variablehelios-authentication/src/test/java/com/spotify/helios/auth/basic/BasicServerAuthenticationTest.java@value : Objecthelios-authentication/src/test/java/com/spotify/helios/auth/AuthInjectableProviderTest.java@result : Objecthelios-authentication/src/test/java/com/spotify/helios/auth/basic/BasicServerAuthenticationTest.java 65:65
+Generation
+Rename Attributehelios-authentication/src/test/java/com/spotify/helios/auth/basic/BasicServerAuthenticationTest.java@requestContext : HttpRequestContexthelios-authentication/src/test/java/com/spotify/helios/auth/AuthInjectableProviderTest.java@httpHeaders : HttpRequestContexthelios-authentication/src/test/java/com/spotify/helios/auth/basic/BasicServerAuthenticationTest.java 39:39
+Generation
+Move Attributehelios-crtauth/src/main/java/com/spotify/helios/auth/crt/CrtAuthProvider.java@private authenticator : CrtTokenAuthenticatorhelios-crtauth/src/test/java/com/spotify/helios/auth/crt/CrtTokenAuthenticatorTest.java@private authenticator : CrtTokenAuthenticatorhelios-crtauth/src/main/java/com/spotify/helios/auth/crt/CrtAuthProvider.java 49:49
+Generation
+Move Attributehelios-crtauth/src/test/java/com/spotify/helios/auth/crt/CrtAuthProviderTest.java@private authenticator : CrtTokenAuthenticatorhelios-crtauth/src/test/java/com/spotify/helios/auth/crt/CrtTokenAuthenticatorTest.java@private authenticator : CrtTokenAuthenticatorhelios-crtauth/src/test/java/com/spotify/helios/auth/crt/CrtAuthProviderTest.java 11:11
+******************************
+******************************
+coarse grained commits 391b88d1dcd733810c7bf48cd34402028c136d61
+fine grained commits ('974eb5a31ac6e72c8cf64e5bc4bc6859f46173fc', 'c43db59bf106b6eb9d2768081449ad59db19c900', '88167b375312d6ebae5310c5c6d9ebbe5448b05f')
+Generation
+Extract And Move Methodhelios-system-tests/src/main/java/com/spotify/helios/system/AgentRestartTest.java@public test() : voidhelios-system-tests/src/main/java/com/spotify/helios/system/SystemTestBase.java@protected getNewDockerClient() : DockerClienthelios-system-tests/src/main/java/com/spotify/helios/system/AgentRestartTest.java 37:177
+Generation
+Extract And Move Methodhelios-system-tests/src/main/java/com/spotify/helios/system/AgentZooKeeperDownTolerationTest.java@public test() : voidhelios-system-tests/src/main/java/com/spotify/helios/system/SystemTestBase.java@protected getNewDockerClient() : DockerClienthelios-system-tests/src/main/java/com/spotify/helios/system/AgentZooKeeperDownTolerationTest.java 35:126
+Generation
+Extract And Move Methodhelios-system-tests/src/main/java/com/spotify/helios/system/TerminationTest.java@public setup() : voidhelios-system-tests/src/main/java/com/spotify/helios/system/SystemTestBase.java@protected getNewDockerClient() : DockerClienthelios-system-tests/src/main/java/com/spotify/helios/system/TerminationTest.java 30:34
+******************************
+******************************
+coarse grained commits 443bfd302c7f837eec209deec625585dbc87c865
+fine grained commits ('53cb164bcd9b09c7ab5c3c339547b8b51f46f950', '7132dac25b7f2168108453866e2f7a5f7df55d5e', '845812957b69e4a7de0f616607d3893ef0ce1b7e')
+Generation
+Parameterize Attributehelios-system-tests/src/main/java/com/spotify/helios/system/VolumeTest.java@externalPort : inthelios-system-tests/src/main/java/com/spotify/helios/system/VolumeTest.java@port : inthelios-system-tests/src/main/java/com/spotify/helios/system/VolumeTest.java 32:32
+******************************
+******************************
+coarse grained commits 6c13a553b1dec4d941c93f0e60cc07a0ebb01c3d
+fine grained commits ('200589ead4c05c77e7b14a4c6f10f88de11aa9a4', '02c9ff0336c109d2f714d55a00e668bd510cc8ee', '4b30fa73a50bc39e9b724859826f787e625f1b14', 'cda1c1472da04a33fd3cc34dab3a11fd40a94639')
+Generation
+Change Attribute Access Modifierhelios-services/src/main/java/com/spotify/helios/servicescommon/ZooKeeperAclProvider.java@public AGENT_USER : Stringhelios-services/src/test/java/com/spotify/helios/servicescommon/ZooKeeperAclProvidersTest.java@private AGENT_USER : Stringhelios-services/src/main/java/com/spotify/helios/servicescommon/ZooKeeperAclProvider.java 29:29
+Generation
+Change Attribute Access Modifierhelios-services/src/main/java/com/spotify/helios/servicescommon/ZooKeeperAclProvider.java@public MASTER_USER : Stringhelios-services/src/test/java/com/spotify/helios/servicescommon/ZooKeeperAclProvidersTest.java@private MASTER_USER : Stringhelios-services/src/main/java/com/spotify/helios/servicescommon/ZooKeeperAclProvider.java 28:28
+******************************
+******************************
+coarse grained commits 289ca97c1554d493224ac5a3a98f01ce3f04e85f
+fine grained commits ('47367c54d4e603ee123fc7f8268832d3b350d25a', '17812b70f64cd438195e28bf14014150214b21be', 'aaed716da9709f48fffc71d6a213372ed2f22d98', '6a4ca6ae861b709089ed3aefab8152d1f3967e62')
+Generation
+Change Parameter Typehelios-client/src/main/java/com/spotify/helios/client/DefaultHttpConnector.java@identities : List<Identity>helios-client/src/main/java/com/spotify/helios/client/DefaultHttpConnector.java@httpTimeoutMillis : inthelios-client/src/main/java/com/spotify/helios/client/DefaultHttpConnector.java 50:50
+Generation
+Rename Parameterhelios-client/src/main/java/com/spotify/helios/client/DefaultHttpConnector.java@identities : List<Identity>helios-client/src/main/java/com/spotify/helios/client/DefaultHttpConnector.java@httpTimeoutMillis : inthelios-client/src/main/java/com/spotify/helios/client/DefaultHttpConnector.java 50:50
+******************************
+******************************
+coarse grained commits a459f85fdecbfa1c6c104ec39a80dbf9eb7e71f4
+fine grained commits ('b5a777a81d7d439738e3f7c4fce781bf2e9f8d89', 'a4937e422ed4324473c4f0c7e64d04642fec285d', '021d54ea14369e4dcca521f99ce355e84c334229', '9395f16b731d33bdfacaef64e0d8397c8f4f58eb')
+Generation
+Move And Rename Classhelios-client/src/main/java/com/spotify/helios/client/AuthenticatingHttpConnector.java@com.spotify.helios.client.AuthenticatingHttpConnector.AuthenticatingHttpsHandlerhelios-client/src/main/java/com/spotify/helios/client/HttpsHandlers.java@com.spotify.helios.client.HttpsHandlers.SshAgentHttpsHandlerhelios-client/src/main/java/com/spotify/helios/client/AuthenticatingHttpConnector.java 155:186
+******************************
+******************************
+coarse grained commits 46ecd301aa6d18cf6b7aa199795f7d616740ae5e
+fine grained commits ('cede1cfa99adefde799865da9d55f1b3fad76525', '243c5dc3693032661eebde00e3b640e30bda9f5b', 'b1f33363dec7db48bb9220d9ef8cff20ea3b426b', '47367c54d4e603ee123fc7f8268832d3b350d25a')
+Generation
+Rename Attributehelios-client/src/main/java/com/spotify/helios/client/DefaultHttpConnector.java@user : Stringhelios-client/src/main/java/com/spotify/helios/client/DefaultHttpConnector.java@httpsHandler : HttpsHandlerhelios-client/src/main/java/com/spotify/helios/client/DefaultHttpConnector.java 44:44
+Generation
+Change Attribute Typehelios-client/src/main/java/com/spotify/helios/client/DefaultHttpConnector.java@user : Stringhelios-client/src/main/java/com/spotify/helios/client/DefaultHttpConnector.java@httpsHandler : HttpsHandlerhelios-client/src/main/java/com/spotify/helios/client/DefaultHttpConnector.java 44:44
+Generation
+Encapsulate Attributehelios-client/src/main/java/com/spotify/helios/client/DefaultHttpConnector.java@private user : Stringhelios-client/src/main/java/com/spotify/helios/client/DefaultHttpConnector.java@private httpsHandler : HttpsHandlerhelios-client/src/main/java/com/spotify/helios/client/DefaultHttpConnector.java 44:44
+Generation
+Remove Attribute Modifierhelios-client/src/main/java/com/spotify/helios/client/DefaultHttpConnector.java@private user : Stringhelios-client/src/main/java/com/spotify/helios/client/DefaultHttpConnector.java@private httpsHandler : HttpsHandlerhelios-client/src/main/java/com/spotify/helios/client/DefaultHttpConnector.java 44:44
+Generation
+Extract Classhelios-client/src/main/java/com/spotify/helios/client/DefaultHttpConnector.java@com.spotify.helios.client.DefaultHttpConnectorhelios-client/src/main/java/com/spotify/helios/client/DefaultHttpConnector.java@com.spotify.helios.client.DefaultHttpConnectorhelios-client/src/main/java/com/spotify/helios/client/DefaultHttpConnector.java 39:206
+******************************
+******************************
+coarse grained commits dcaa23cb225777ff2ab33447a476bb331f84f45a
+fine grained commits ('0a3a6986955e48d1ee922e36ab86bcd0b9f60afb', '888197a7744a5139495236496d6c812fd93764aa', '61e4b8ab3e921c886def2508f7cc9c0b930fc9bc', '45e0f38a6ddb36edca2098c15f6b3d2033223f20')
+Generation
+Move Classhelios-authentication/src/test/java/com/spotify/helios/auth/AuthInjectableProviderTest.java@com.spotify.helios.auth.AuthInjectableProviderTest.StatusCodeMatcherhelios-authentication/src/test/java/com/spotify/helios/auth/AuthenticationRequestFilterTest.java@com.spotify.helios.auth.AuthenticationRequestFilterTest.StatusCodeMatcherhelios-authentication/src/test/java/com/spotify/helios/auth/AuthInjectableProviderTest.java 114:128
+Generation
+Merge Classhelios-authentication/src/test/java/com/spotify/helios/auth/AuthInjectableProviderTest.java@com.spotify.helios.auth.AuthInjectableProviderTesthelios-authentication/src/test/java/com/spotify/helios/auth/AuthenticationRequestFilterTest.java@com.spotify.helios.auth.AuthenticationRequestFilterTesthelios-authentication/src/test/java/com/spotify/helios/auth/AuthInjectableProviderTest.java 33:165
+Generation
+Move Methodhelios-authentication/src/test/java/com/spotify/helios/auth/AuthInjectableProviderTest.java@public successfulAuthentication() : voidhelios-authentication/src/test/java/com/spotify/helios/auth/AuthenticationRequestFilterTest.java@public successfulAuthentication() : voidhelios-authentication/src/test/java/com/spotify/helios/auth/AuthInjectableProviderTest.java 66:86
+Generation
+Move Methodhelios-authentication/src/test/java/com/spotify/helios/auth/AuthInjectableProviderTest.java@public authenticationNotRequired_NoCredentials() : voidhelios-authentication/src/test/java/com/spotify/helios/auth/AuthenticationRequestFilterTest.java@public authenticationNotRequired_NoCredentials() : voidhelios-authentication/src/test/java/com/spotify/helios/auth/AuthInjectableProviderTest.java 88:96
+Generation
+Move Methodhelios-authentication/src/test/java/com/spotify/helios/auth/AuthInjectableProviderTest.java@public authenticationNotRequired_BadCredentials() : voidhelios-authentication/src/test/java/com/spotify/helios/auth/AuthenticationRequestFilterTest.java@public authenticationNotRequired_BadCredentials() : voidhelios-authentication/src/test/java/com/spotify/helios/auth/AuthInjectableProviderTest.java 98:112
+Generation
+Move Methodhelios-authentication/src/test/java/com/spotify/helios/auth/AuthInjectableProviderTest.java@private hasStatus(sc int) : StatusCodeMatcherhelios-authentication/src/test/java/com/spotify/helios/auth/AuthenticationRequestFilterTest.java@private hasStatus(sc int) : StatusCodeMatcherhelios-authentication/src/test/java/com/spotify/helios/auth/AuthInjectableProviderTest.java 130:132
+Generation
+Move Methodhelios-authentication/src/test/java/com/spotify/helios/auth/AuthInjectableProviderTest.java@public authenticationRequired_NoCredentials() : voidhelios-authentication/src/test/java/com/spotify/helios/auth/AuthenticationRequestFilterTest.java@public authenticationRequired_NoCredentials() : voidhelios-authentication/src/test/java/com/spotify/helios/auth/AuthInjectableProviderTest.java 135:146
+Generation
+Move Methodhelios-authentication/src/test/java/com/spotify/helios/auth/AuthInjectableProviderTest.java@public authenticationRequired_BadCredentials() : voidhelios-authentication/src/test/java/com/spotify/helios/auth/AuthenticationRequestFilterTest.java@public authenticationRequired_BadCredentials() : voidhelios-authentication/src/test/java/com/spotify/helios/auth/AuthInjectableProviderTest.java 149:164
+Generation
+Move Attributehelios-authentication/src/test/java/com/spotify/helios/auth/AuthInjectableProviderTest.java@public exception : ExpectedExceptionhelios-authentication/src/test/java/com/spotify/helios/auth/AuthenticationRequestFilterTest.java@public exception : ExpectedExceptionhelios-authentication/src/test/java/com/spotify/helios/auth/AuthInjectableProviderTest.java 36:36
+Generation
+Move Attributehelios-authentication/src/test/java/com/spotify/helios/auth/AuthInjectableProviderTest.java@private authenticator : Authenticator<String>helios-authentication/src/test/java/com/spotify/helios/auth/AuthenticationRequestFilterTest.java@private authenticator : Authenticator<String>helios-authentication/src/test/java/com/spotify/helios/auth/AuthInjectableProviderTest.java 41:41
+Generation
+Move Methodhelios-authentication/src/test/java/com/spotify/helios/auth/basic/BasicServerAuthenticationTest.java@public authenticationNotRequired_NoCredentials() : voidhelios-authentication/src/test/java/com/spotify/helios/auth/AuthenticationRequestFilterTest.java@public authenticationNotRequired_NoCredentials() : voidhelios-authentication/src/test/java/com/spotify/helios/auth/basic/BasicServerAuthenticationTest.java 71:78
+Generation
+Remove Thrown Exception Typehelios-authentication/src/test/java/com/spotify/helios/auth/basic/BasicServerAuthenticationTest.java@Exceptionhelios-authentication/src/test/java/com/spotify/helios/auth/AuthenticationRequestFilterTest.java@public authenticationNotRequired_NoCredentials() : voidhelios-authentication/src/test/java/com/spotify/helios/auth/basic/BasicServerAuthenticationTest.java 72:72
+Generation
+Move Methodhelios-authentication/src/test/java/com/spotify/helios/auth/basic/BasicServerAuthenticationTest.java@public authenticationNotRequired_BadCredentials() : voidhelios-authentication/src/test/java/com/spotify/helios/auth/AuthenticationRequestFilterTest.java@public authenticationNotRequired_BadCredentials() : voidhelios-authentication/src/test/java/com/spotify/helios/auth/basic/BasicServerAuthenticationTest.java 80:87
+Generation
+Move Methodhelios-authentication/src/test/java/com/spotify/helios/auth/basic/BasicServerAuthenticationTest.java@private hasStatus(sc int) : StatusCodeMatcherhelios-authentication/src/test/java/com/spotify/helios/auth/AuthenticationRequestFilterTest.java@private hasStatus(sc int) : StatusCodeMatcherhelios-authentication/src/test/java/com/spotify/helios/auth/basic/BasicServerAuthenticationTest.java 116:118
+Generation
+Move Methodhelios-authentication/src/test/java/com/spotify/helios/auth/basic/BasicServerAuthenticationTest.java@public authenticationRequired_NoCredentials() : voidhelios-authentication/src/test/java/com/spotify/helios/auth/AuthenticationRequestFilterTest.java@public authenticationRequired_NoCredentials() : voidhelios-authentication/src/test/java/com/spotify/helios/auth/basic/BasicServerAuthenticationTest.java 121:130
+Generation
+Move Methodhelios-authentication/src/test/java/com/spotify/helios/auth/basic/BasicServerAuthenticationTest.java@public authenticationRequired_BadCredentials() : voidhelios-authentication/src/test/java/com/spotify/helios/auth/AuthenticationRequestFilterTest.java@public authenticationRequired_BadCredentials() : voidhelios-authentication/src/test/java/com/spotify/helios/auth/basic/BasicServerAuthenticationTest.java 133:143
+Generation
+Move Attributehelios-authentication/src/test/java/com/spotify/helios/auth/basic/BasicServerAuthenticationTest.java@public exception : ExpectedExceptionhelios-authentication/src/test/java/com/spotify/helios/auth/AuthenticationRequestFilterTest.java@public exception : ExpectedExceptionhelios-authentication/src/test/java/com/spotify/helios/auth/basic/BasicServerAuthenticationTest.java 36:36
+Generation
+Move Methodhelios-crtauth/src/test/java/com/spotify/helios/auth/crt/CrtAuthProviderTest.java@public authenticationNotRequired_NoCredentials() : voidhelios-authentication/src/test/java/com/spotify/helios/auth/AuthenticationRequestFilterTest.java@public authenticationNotRequired_NoCredentials() : voidhelios-crtauth/src/test/java/com/spotify/helios/auth/crt/CrtAuthProviderTest.java 68:75
+Generation
+Move Methodhelios-crtauth/src/test/java/com/spotify/helios/auth/crt/CrtAuthProviderTest.java@public authenticationNotRequired_BadCredentials() : voidhelios-authentication/src/test/java/com/spotify/helios/auth/AuthenticationRequestFilterTest.java@public authenticationNotRequired_BadCredentials() : voidhelios-crtauth/src/test/java/com/spotify/helios/auth/crt/CrtAuthProviderTest.java 77:87
+Generation
+Move Methodhelios-crtauth/src/test/java/com/spotify/helios/auth/crt/CrtAuthProviderTest.java@private hasStatus(sc int) : StatusCodeMatcherhelios-authentication/src/test/java/com/spotify/helios/auth/AuthenticationRequestFilterTest.java@private hasStatus(sc int) : StatusCodeMatcherhelios-crtauth/src/test/java/com/spotify/helios/auth/crt/CrtAuthProviderTest.java 105:107
+Generation
+Move Methodhelios-crtauth/src/test/java/com/spotify/helios/auth/crt/CrtAuthProviderTest.java@public authenticationRequired_NoCredentials() : voidhelios-authentication/src/test/java/com/spotify/helios/auth/AuthenticationRequestFilterTest.java@public authenticationRequired_NoCredentials() : voidhelios-crtauth/src/test/java/com/spotify/helios/auth/crt/CrtAuthProviderTest.java 110:119
+Generation
+Move Methodhelios-crtauth/src/test/java/com/spotify/helios/auth/crt/CrtAuthProviderTest.java@public authenticationRequired_BadCredentials() : voidhelios-authentication/src/test/java/com/spotify/helios/auth/AuthenticationRequestFilterTest.java@public authenticationRequired_BadCredentials() : voidhelios-crtauth/src/test/java/com/spotify/helios/auth/crt/CrtAuthProviderTest.java 122:134
+Generation
+Move Attributehelios-crtauth/src/test/java/com/spotify/helios/auth/crt/CrtAuthProviderTest.java@public exception : ExpectedExceptionhelios-authentication/src/test/java/com/spotify/helios/auth/AuthenticationRequestFilterTest.java@public exception : ExpectedExceptionhelios-crtauth/src/test/java/com/spotify/helios/auth/crt/CrtAuthProviderTest.java 33:33
+******************************
+******************************
+coarse grained commits 31d436b315fb289712cc8d4a7b011f7004624764
+fine grained commits ('b80c740aa40556f791835c0862ce42bc3864b4a3', '6f80a555dc770c83e03399b4ad8f88ceb8baddf3', '68e7e5fa63625b2f9694366a18fcdd96da38274c', 'e7675899e7f85864242fe775ba7d10dae3389324', '022b889e90034666dabdb8db05a52d52dd686f17')
+Generation
+Change Variable Typehelios-services/src/main/java/com/spotify/helios/servicescommon/coordination/DefaultZooKeeperClient.java@builder : ImmutableList.Builder<String>helios-services/src/main/java/com/spotify/helios/servicescommon/coordination/DefaultZooKeeperClient.java@queue : Deque<String>helios-services/src/main/java/com/spotify/helios/servicescommon/coordination/DefaultZooKeeperClient.java 228:228
+Generation
+Rename Variablehelios-services/src/main/java/com/spotify/helios/servicescommon/coordination/DefaultZooKeeperClient.java@builder : ImmutableList.Builder<String>helios-services/src/main/java/com/spotify/helios/servicescommon/coordination/DefaultZooKeeperClient.java@queue : Deque<String>helios-services/src/main/java/com/spotify/helios/servicescommon/coordination/DefaultZooKeeperClient.java 228:228
+******************************
+******************************
+coarse grained commits d4e82996cac2cd7d8e282dd04f209767a4c685fc
+fine grained commits ('9395f16b731d33bdfacaef64e0d8397c8f4f58eb', 'cede1cfa99adefde799865da9d55f1b3fad76525', '243c5dc3693032661eebde00e3b640e30bda9f5b', 'b1f33363dec7db48bb9220d9ef8cff20ea3b426b', '47367c54d4e603ee123fc7f8268832d3b350d25a')
+Generation
+Rename Classhelios-client/src/main/java/com/spotify/helios/client/HttpRequest.java@com.spotify.helios.client.HttpRequesthelios-client/src/main/java/com/spotify/helios/client/HttpsHandlers.java@com.spotify.helios.client.HttpsHandlershelios-client/src/main/java/com/spotify/helios/client/HttpRequest.java 4:6
+Generation
+Change Class Access Modifierhelios-client/src/main/java/com/spotify/helios/client/HttpRequest.java@com.spotify.helios.client.HttpRequesthelios-client/src/main/java/com/spotify/helios/client/HttpsHandlers.java@com.spotify.helios.client.HttpsHandlershelios-client/src/main/java/com/spotify/helios/client/HttpRequest.java 4:6
+******************************
+******************************
+coarse grained commits 5283b49ff076d634f11357db118cde4ee8605c6c
+fine grained commits ('b5a777a81d7d439738e3f7c4fce781bf2e9f8d89', 'a4937e422ed4324473c4f0c7e64d04642fec285d', '021d54ea14369e4dcca521f99ce355e84c334229', '9395f16b731d33bdfacaef64e0d8397c8f4f58eb', 'cede1cfa99adefde799865da9d55f1b3fad76525')
+Generation
+Change Variable Typehelios-client/src/main/java/com/spotify/helios/client/HeliosClient.java@identities : List<Identity>helios-client/src/main/java/com/spotify/helios/client/HeliosClient.java@clientCertificatePath : Optional<Path>helios-client/src/main/java/com/spotify/helios/client/HeliosClient.java 555:555
+Generation
+Remove Variable Modifierhelios-client/src/main/java/com/spotify/helios/client/HeliosClient.java@identities : List<Identity>helios-client/src/main/java/com/spotify/helios/client/HeliosClient.java@clientCertificatePath : Optional<Path>helios-client/src/main/java/com/spotify/helios/client/HeliosClient.java 555:555
+Generation
+Rename Variablehelios-client/src/main/java/com/spotify/helios/client/HeliosClient.java@identities : List<Identity>helios-client/src/main/java/com/spotify/helios/client/HeliosClient.java@clientCertificatePath : Optional<Path>helios-client/src/main/java/com/spotify/helios/client/HeliosClient.java 555:555
+******************************

@@ -1,0 +1,574 @@
+******************************
+coarse grained commits e070767a206eac10e2a22b649a9788f5b0ec89af
+fine grained commits ('fc2412dd86d298949bc6ea74b52871873ac5542f', '9e98bbba6f91f6f3aca71fa660b9465c8b6079a9')
+Generation
+Move And Inline Methodextensions/proto/src/main/java/com/google/common/truth/extensions/proto/FluentEqualityConfig.java@public validate(rootDescriptor Descriptor) : voidextensions/proto/src/main/java/com/google/common/truth/extensions/proto/FieldScopeLogic.java@public validate(rootDescriptor Descriptor, fieldDescriptorValidator FieldDescriptorValidator) : voidextensions/proto/src/main/java/com/google/common/truth/extensions/proto/FluentEqualityConfig.java 180:183
+******************************
+******************************
+coarse grained commits 5c1c5324dc131fd0186f32406c3e28895d0dfef5
+fine grained commits ('07d89f608226af3a55d6bd943359f6abd17559fc', '37241c662482486cbb4641d22696f1da4b61acd3')
+Generation
+Extract And Move Methodcore/src/test/java/com/google/common/truth/DoubleSubjectTest.java@private assertThatIsZeroFails(value Double) : voidcore/src/test/java/com/google/common/truth/FloatSubjectTest.java@private expectFailureWithMessage(callback ExpectFailure.DelegatedAssertionCallback<FloatSubject,Float>, failureMessage String) : voidcore/src/test/java/com/google/common/truth/DoubleSubjectTest.java 357:367
+Generation
+Extract And Move Methodcore/src/test/java/com/google/common/truth/DoubleSubjectTest.java@private assertThatIsNonZeroFails(value Double) : voidcore/src/test/java/com/google/common/truth/FloatSubjectTest.java@private expectFailureWithMessage(callback ExpectFailure.DelegatedAssertionCallback<FloatSubject,Float>, failureMessage String) : voidcore/src/test/java/com/google/common/truth/DoubleSubjectTest.java 380:390
+Generation
+Extract And Move Methodcore/src/test/java/com/google/common/truth/DoubleSubjectTest.java@private assertThatIsPositiveInfinityFails(value Double) : voidcore/src/test/java/com/google/common/truth/FloatSubjectTest.java@private expectFailureWithMessage(callback ExpectFailure.DelegatedAssertionCallback<FloatSubject,Float>, failureMessage String) : voidcore/src/test/java/com/google/common/truth/DoubleSubjectTest.java 401:416
+Generation
+Extract And Move Methodcore/src/test/java/com/google/common/truth/DoubleSubjectTest.java@private assertThatIsNegativeInfinityFails(value Double) : voidcore/src/test/java/com/google/common/truth/FloatSubjectTest.java@private expectFailureWithMessage(callback ExpectFailure.DelegatedAssertionCallback<FloatSubject,Float>, failureMessage String) : voidcore/src/test/java/com/google/common/truth/DoubleSubjectTest.java 427:442
+Generation
+Extract And Move Methodcore/src/test/java/com/google/common/truth/DoubleSubjectTest.java@private assertThatIsNaNFails(value Double) : voidcore/src/test/java/com/google/common/truth/FloatSubjectTest.java@private expectFailureWithMessage(callback ExpectFailure.DelegatedAssertionCallback<FloatSubject,Float>, failureMessage String) : voidcore/src/test/java/com/google/common/truth/DoubleSubjectTest.java 453:463
+Generation
+Extract And Move Methodcore/src/test/java/com/google/common/truth/DoubleSubjectTest.java@private assertThatIsFiniteFails(value Double) : voidcore/src/test/java/com/google/common/truth/FloatSubjectTest.java@private expectFailureWithMessage(callback ExpectFailure.DelegatedAssertionCallback<FloatSubject,Float>, failureMessage String) : voidcore/src/test/java/com/google/common/truth/DoubleSubjectTest.java 476:486
+Generation
+Extract And Move Methodcore/src/test/java/com/google/common/truth/DoubleSubjectTest.java@private assertThatIsNotNaNFails(value Double) : voidcore/src/test/java/com/google/common/truth/FloatSubjectTest.java@private expectFailureWithMessage(callback ExpectFailure.DelegatedAssertionCallback<FloatSubject,Float>, failureMessage String) : voidcore/src/test/java/com/google/common/truth/DoubleSubjectTest.java 499:509
+Generation
+Extract And Move Methodcore/src/test/java/com/google/common/truth/DoubleSubjectTest.java@private assertThatIsZeroFails(value Double) : voidcore/src/test/java/com/google/common/truth/IntegerSubjectTest.java@private expectFailureWithMessage(callback ExpectFailure.DelegatedAssertionCallback<DefaultSubject,Object>, failureMessage String) : voidcore/src/test/java/com/google/common/truth/DoubleSubjectTest.java 357:367
+Generation
+Extract And Move Methodcore/src/test/java/com/google/common/truth/DoubleSubjectTest.java@private assertThatIsNonZeroFails(value Double) : voidcore/src/test/java/com/google/common/truth/IntegerSubjectTest.java@private expectFailureWithMessage(callback ExpectFailure.DelegatedAssertionCallback<DefaultSubject,Object>, failureMessage String) : voidcore/src/test/java/com/google/common/truth/DoubleSubjectTest.java 380:390
+Generation
+Extract And Move Methodcore/src/test/java/com/google/common/truth/DoubleSubjectTest.java@private assertThatIsPositiveInfinityFails(value Double) : voidcore/src/test/java/com/google/common/truth/IntegerSubjectTest.java@private expectFailureWithMessage(callback ExpectFailure.DelegatedAssertionCallback<DefaultSubject,Object>, failureMessage String) : voidcore/src/test/java/com/google/common/truth/DoubleSubjectTest.java 401:416
+Generation
+Extract And Move Methodcore/src/test/java/com/google/common/truth/DoubleSubjectTest.java@private assertThatIsNegativeInfinityFails(value Double) : voidcore/src/test/java/com/google/common/truth/IntegerSubjectTest.java@private expectFailureWithMessage(callback ExpectFailure.DelegatedAssertionCallback<DefaultSubject,Object>, failureMessage String) : voidcore/src/test/java/com/google/common/truth/DoubleSubjectTest.java 427:442
+Generation
+Extract And Move Methodcore/src/test/java/com/google/common/truth/DoubleSubjectTest.java@private assertThatIsNaNFails(value Double) : voidcore/src/test/java/com/google/common/truth/IntegerSubjectTest.java@private expectFailureWithMessage(callback ExpectFailure.DelegatedAssertionCallback<DefaultSubject,Object>, failureMessage String) : voidcore/src/test/java/com/google/common/truth/DoubleSubjectTest.java 453:463
+Generation
+Extract And Move Methodcore/src/test/java/com/google/common/truth/DoubleSubjectTest.java@private assertThatIsFiniteFails(value Double) : voidcore/src/test/java/com/google/common/truth/IntegerSubjectTest.java@private expectFailureWithMessage(callback ExpectFailure.DelegatedAssertionCallback<DefaultSubject,Object>, failureMessage String) : voidcore/src/test/java/com/google/common/truth/DoubleSubjectTest.java 476:486
+Generation
+Extract And Move Methodcore/src/test/java/com/google/common/truth/DoubleSubjectTest.java@private assertThatIsNotNaNFails(value Double) : voidcore/src/test/java/com/google/common/truth/IntegerSubjectTest.java@private expectFailureWithMessage(callback ExpectFailure.DelegatedAssertionCallback<DefaultSubject,Object>, failureMessage String) : voidcore/src/test/java/com/google/common/truth/DoubleSubjectTest.java 499:509
+******************************
+******************************
+coarse grained commits 9a2b9cc4817631af55d465e8188617d0e50e95a1
+fine grained commits ('10b58cd64b0d196d99f2bdfa977f68de9c52cf41', '72f486dbcd9b6e6fad714aca908b892e7c61080f')
+Generation
+Extract Classcore/src/test/java/org/truth0/subjects/ObjectArraySubjectTest.java@org.truth0.subjects.ObjectArraySubjectTestcore/src/test/java/org/truth0/subjects/ObjectArraySubjectTest.java@org.truth0.subjects.ObjectArraySubjectTestcore/src/test/java/org/truth0/subjects/ObjectArraySubjectTest.java 15:152
+Generation
+Move Methodcore/src/test/java/org/truth0/subjects/ObjectArraySubjectTest.java@public compressType_JavaLang() : voidcore/src/test/java/org/truth0/subjects/AbstractArraySubjectTest.java@public compressType_JavaLang() : voidcore/src/test/java/org/truth0/subjects/ObjectArraySubjectTest.java 124:126
+Generation
+Move Methodcore/src/test/java/org/truth0/subjects/ObjectArraySubjectTest.java@public compressType_JavaUtil() : voidcore/src/test/java/org/truth0/subjects/AbstractArraySubjectTest.java@public compressType_JavaUtil() : voidcore/src/test/java/org/truth0/subjects/ObjectArraySubjectTest.java 128:130
+Generation
+Move Methodcore/src/test/java/org/truth0/subjects/ObjectArraySubjectTest.java@public compressType_Generic() : voidcore/src/test/java/org/truth0/subjects/AbstractArraySubjectTest.java@public compressType_Generic() : voidcore/src/test/java/org/truth0/subjects/ObjectArraySubjectTest.java 132:135
+Generation
+Move Methodcore/src/test/java/org/truth0/subjects/ObjectArraySubjectTest.java@public compressType_Uncompressed() : voidcore/src/test/java/org/truth0/subjects/AbstractArraySubjectTest.java@public compressType_Uncompressed() : voidcore/src/test/java/org/truth0/subjects/ObjectArraySubjectTest.java 137:140
+Generation
+Move Methodcore/src/test/java/org/truth0/subjects/ObjectArraySubjectTest.java@public compressType_GenericWithPartialUncompress() : voidcore/src/test/java/org/truth0/subjects/AbstractArraySubjectTest.java@public compressType_GenericWithPartialUncompress() : voidcore/src/test/java/org/truth0/subjects/ObjectArraySubjectTest.java 142:145
+Generation
+Move Methodcore/src/test/java/org/truth0/subjects/ObjectArraySubjectTest.java@public compressType_Primitive() : voidcore/src/test/java/org/truth0/subjects/AbstractArraySubjectTest.java@public compressType_Primitive() : voidcore/src/test/java/org/truth0/subjects/ObjectArraySubjectTest.java 147:149
+******************************
+******************************
+coarse grained commits 5123c03e0e9538770399120d8962a440cca1fd63
+fine grained commits ('6156d91e07f55ef19f2ee5e8a1b9a7b0473eaa71', '10d3908e105dba7dfb7af6c27f48f6019478c2de')
+Generation
+Inline Methodcore/src/main/java/com/google/common/truth/Correspondence.java@private firstExceptionFact() : Factcore/src/main/java/com/google/common/truth/Correspondence.java@package describeAsAdditionalInfo() : Factscore/src/main/java/com/google/common/truth/Correspondence.java 100:108
+******************************
+******************************
+coarse grained commits 007e08120d0e836a3709f99a10e7f8dcb575b292
+fine grained commits ('e53a6058b64f7710ba057b93442fc2d236aa3560', '111b5b1db171b44703cb95dd768d400862741cb3')
+Generation
+Extract And Move Methodcore/src/main/java/com/google/common/truth/IterableSubject.java@private failIfCandidateMappingHasMissingOrExtra(actual List<? extends A>, expected List<? extends E>, mapping ImmutableSetMultimap<Integer,Integer>, compareExceptions Correspondence.ExceptionStore) : booleancore/src/main/java/com/google/common/truth/Subject.java@package failWithoutActual(facts Facts) : voidcore/src/main/java/com/google/common/truth/IterableSubject.java 785:814
+Generation
+Extract And Move Methodcore/src/main/java/com/google/common/truth/IterableSubject.java@private failIfCandidateMappingHasMissing(actual List<? extends A>, expected List<? extends E>, mapping ImmutableSetMultimap<Integer,Integer>, compareExceptions Correspondence.ExceptionStore) : booleancore/src/main/java/com/google/common/truth/Subject.java@package failWithoutActual(facts Facts) : voidcore/src/main/java/com/google/common/truth/IterableSubject.java 1025:1054
+******************************
+******************************
+coarse grained commits aacde202f50d2b0047356a094f37a4edeebab6d2
+fine grained commits ('22eb447274d626866a81c02223db806a92e6baa0', 'cf191f92cdef0df79766bb99834fd7887decf027')
+Generation
+Parameterize Attributeextensions/proto/src/main/java/com/google/common/truth/extensions/proto/ProtoTruthMessageDifferencer.java@config : FluentEqualityConfigextensions/proto/src/main/java/com/google/common/truth/extensions/proto/ProtoTruthMessageDifferencer.java@mapConfig : FluentEqualityConfigextensions/proto/src/main/java/com/google/common/truth/extensions/proto/ProtoTruthMessageDifferencer.java 72:72
+******************************
+******************************
+coarse grained commits d4ae0b9c077027070244acbce8094866ab80eb3b
+fine grained commits ('5c895c31c1deb9d81127209e4261fdf688656812', '61dbafa847d505018670de5ab8781f36b5839be0')
+Generation
+Change Attribute Access Modifiercore/src/test/java/com/google/common/truth/BooleanSubjectTest.java@public expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/BaseSubjectTestCase.java@package expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/BooleanSubjectTest.java 12:12
+Generation
+Change Attribute Access Modifiercore/src/test/java/com/google/common/truth/ComparableSubjectTest.java@public expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/BaseSubjectTestCase.java@package expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/ComparableSubjectTest.java 15:15
+Generation
+Change Attribute Access Modifiercore/src/test/java/com/google/common/truth/CorrespondenceTest.java@public expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/BaseSubjectTestCase.java@package expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/CorrespondenceTest.java 15:15
+Generation
+Change Attribute Access Modifiercore/src/test/java/com/google/common/truth/GuavaOptionalSubjectTest.java@public expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/BaseSubjectTestCase.java@package expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/GuavaOptionalSubjectTest.java 14:14
+Generation
+Change Attribute Access Modifiercore/src/test/java/com/google/common/truth/IntegerSubjectTest.java@public expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/BaseSubjectTestCase.java@package expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/IntegerSubjectTest.java 15:15
+Generation
+Change Attribute Access Modifiercore/src/test/java/com/google/common/truth/IterableSubjectTest.java@public expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/BaseSubjectTestCase.java@package expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/IterableSubjectTest.java 24:24
+Generation
+Change Attribute Access Modifiercore/src/test/java/com/google/common/truth/LongSubjectTest.java@public expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/BaseSubjectTestCase.java@package expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/LongSubjectTest.java 12:12
+Generation
+Change Attribute Access Modifiercore/src/test/java/com/google/common/truth/MapSubjectTest.java@public expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/BaseSubjectTestCase.java@package expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/MapSubjectTest.java 20:20
+Generation
+Change Attribute Access Modifiercore/src/test/java/com/google/common/truth/MultimapSubjectTest.java@public expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/BaseSubjectTestCase.java@package expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/MultimapSubjectTest.java 23:23
+Generation
+Change Attribute Access Modifiercore/src/test/java/com/google/common/truth/MultisetSubjectTest.java@public expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/BaseSubjectTestCase.java@package expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/MultisetSubjectTest.java 16:16
+Generation
+Change Attribute Access Modifiercore/src/test/java/com/google/common/truth/PrimitiveCharArraySubjectTest.java@public expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/BaseSubjectTestCase.java@package expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/PrimitiveCharArraySubjectTest.java 12:12
+Generation
+Change Attribute Access Modifiercore/src/test/java/com/google/common/truth/PrimitiveLongArraySubjectTest.java@public expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/BaseSubjectTestCase.java@package expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/PrimitiveLongArraySubjectTest.java 12:12
+Generation
+Change Attribute Access Modifiercore/src/test/java/com/google/common/truth/RelabeledSubjectsTest.java@public expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/BaseSubjectTestCase.java@package expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/RelabeledSubjectsTest.java 13:13
+Generation
+Change Attribute Access Modifiercore/src/test/java/com/google/common/truth/SortedMapSubjectTest.java@public expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/BaseSubjectTestCase.java@package expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/SortedMapSubjectTest.java 19:19
+Generation
+Change Attribute Access Modifiercore/src/test/java/com/google/common/truth/SortedSetSubjectTest.java@public expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/BaseSubjectTestCase.java@package expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/SortedSetSubjectTest.java 19:19
+Generation
+Change Attribute Access Modifiercore/src/test/java/com/google/common/truth/StackTraceCleanerTest.java@public expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/BaseSubjectTestCase.java@package expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/StackTraceCleanerTest.java 12:12
+Generation
+Change Attribute Access Modifiercore/src/test/java/com/google/common/truth/StringSubjectTest.java@public expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/BaseSubjectTestCase.java@package expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/StringSubjectTest.java 15:15
+Generation
+Change Attribute Access Modifiercore/src/test/java/com/google/common/truth/TableSubjectTest.java@public expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/BaseSubjectTestCase.java@package expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/TableSubjectTest.java 16:16
+Generation
+Change Attribute Access Modifiercore/src/test/java/com/google/common/truth/ThrowableSubjectTest.java@public expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/BaseSubjectTestCase.java@package expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/ThrowableSubjectTest.java 13:13
+Generation
+Pull Up Attributecore/src/test/java/com/google/common/truth/BooleanSubjectTest.java@public expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/BaseSubjectTestCase.java@package expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/BooleanSubjectTest.java 12:12
+Generation
+Remove Attribute Annotationcore/src/test/java/com/google/common/truth/BooleanSubjectTest.java@@Rulecore/src/test/java/com/google/common/truth/BaseSubjectTestCase.java@package expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/BooleanSubjectTest.java 12:12
+Generation
+Pull Up Attributecore/src/test/java/com/google/common/truth/ComparableSubjectTest.java@public expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/BaseSubjectTestCase.java@package expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/ComparableSubjectTest.java 15:15
+Generation
+Remove Attribute Annotationcore/src/test/java/com/google/common/truth/ComparableSubjectTest.java@@Rulecore/src/test/java/com/google/common/truth/BaseSubjectTestCase.java@package expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/ComparableSubjectTest.java 15:15
+Generation
+Pull Up Attributecore/src/test/java/com/google/common/truth/CorrespondenceTest.java@public expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/BaseSubjectTestCase.java@package expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/CorrespondenceTest.java 15:15
+Generation
+Remove Attribute Annotationcore/src/test/java/com/google/common/truth/CorrespondenceTest.java@@Rulecore/src/test/java/com/google/common/truth/BaseSubjectTestCase.java@package expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/CorrespondenceTest.java 15:15
+Generation
+Pull Up Attributecore/src/test/java/com/google/common/truth/GuavaOptionalSubjectTest.java@public expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/BaseSubjectTestCase.java@package expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/GuavaOptionalSubjectTest.java 14:14
+Generation
+Add Attribute Modifiercore/src/test/java/com/google/common/truth/GuavaOptionalSubjectTest.java@public expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/BaseSubjectTestCase.java@package expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/GuavaOptionalSubjectTest.java 14:14
+Generation
+Remove Attribute Annotationcore/src/test/java/com/google/common/truth/GuavaOptionalSubjectTest.java@@Rulecore/src/test/java/com/google/common/truth/BaseSubjectTestCase.java@package expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/GuavaOptionalSubjectTest.java 14:14
+Generation
+Pull Up Attributecore/src/test/java/com/google/common/truth/IntegerSubjectTest.java@public expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/BaseSubjectTestCase.java@package expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/IntegerSubjectTest.java 15:15
+Generation
+Remove Attribute Annotationcore/src/test/java/com/google/common/truth/IntegerSubjectTest.java@@Rulecore/src/test/java/com/google/common/truth/BaseSubjectTestCase.java@package expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/IntegerSubjectTest.java 15:15
+Generation
+Pull Up Attributecore/src/test/java/com/google/common/truth/IterableSubjectTest.java@public expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/BaseSubjectTestCase.java@package expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/IterableSubjectTest.java 24:24
+Generation
+Remove Attribute Annotationcore/src/test/java/com/google/common/truth/IterableSubjectTest.java@@Rulecore/src/test/java/com/google/common/truth/BaseSubjectTestCase.java@package expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/IterableSubjectTest.java 24:24
+Generation
+Pull Up Attributecore/src/test/java/com/google/common/truth/LongSubjectTest.java@public expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/BaseSubjectTestCase.java@package expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/LongSubjectTest.java 12:12
+Generation
+Remove Attribute Annotationcore/src/test/java/com/google/common/truth/LongSubjectTest.java@@Rulecore/src/test/java/com/google/common/truth/BaseSubjectTestCase.java@package expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/LongSubjectTest.java 12:12
+Generation
+Pull Up Attributecore/src/test/java/com/google/common/truth/MapSubjectTest.java@public expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/BaseSubjectTestCase.java@package expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/MapSubjectTest.java 20:20
+Generation
+Remove Attribute Annotationcore/src/test/java/com/google/common/truth/MapSubjectTest.java@@Rulecore/src/test/java/com/google/common/truth/BaseSubjectTestCase.java@package expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/MapSubjectTest.java 20:20
+Generation
+Pull Up Attributecore/src/test/java/com/google/common/truth/MultimapSubjectTest.java@public expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/BaseSubjectTestCase.java@package expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/MultimapSubjectTest.java 23:23
+Generation
+Remove Attribute Annotationcore/src/test/java/com/google/common/truth/MultimapSubjectTest.java@@Rulecore/src/test/java/com/google/common/truth/BaseSubjectTestCase.java@package expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/MultimapSubjectTest.java 23:23
+Generation
+Pull Up Attributecore/src/test/java/com/google/common/truth/MultisetSubjectTest.java@public expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/BaseSubjectTestCase.java@package expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/MultisetSubjectTest.java 16:16
+Generation
+Remove Attribute Annotationcore/src/test/java/com/google/common/truth/MultisetSubjectTest.java@@Rulecore/src/test/java/com/google/common/truth/BaseSubjectTestCase.java@package expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/MultisetSubjectTest.java 16:16
+Generation
+Pull Up Attributecore/src/test/java/com/google/common/truth/PrimitiveCharArraySubjectTest.java@public expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/BaseSubjectTestCase.java@package expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/PrimitiveCharArraySubjectTest.java 12:12
+Generation
+Remove Attribute Annotationcore/src/test/java/com/google/common/truth/PrimitiveCharArraySubjectTest.java@@Rulecore/src/test/java/com/google/common/truth/BaseSubjectTestCase.java@package expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/PrimitiveCharArraySubjectTest.java 12:12
+Generation
+Pull Up Attributecore/src/test/java/com/google/common/truth/PrimitiveLongArraySubjectTest.java@public expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/BaseSubjectTestCase.java@package expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/PrimitiveLongArraySubjectTest.java 12:12
+Generation
+Remove Attribute Annotationcore/src/test/java/com/google/common/truth/PrimitiveLongArraySubjectTest.java@@Rulecore/src/test/java/com/google/common/truth/BaseSubjectTestCase.java@package expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/PrimitiveLongArraySubjectTest.java 12:12
+Generation
+Pull Up Attributecore/src/test/java/com/google/common/truth/RelabeledSubjectsTest.java@public expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/BaseSubjectTestCase.java@package expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/RelabeledSubjectsTest.java 13:13
+Generation
+Remove Attribute Annotationcore/src/test/java/com/google/common/truth/RelabeledSubjectsTest.java@@Rulecore/src/test/java/com/google/common/truth/BaseSubjectTestCase.java@package expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/RelabeledSubjectsTest.java 13:13
+Generation
+Pull Up Attributecore/src/test/java/com/google/common/truth/SortedMapSubjectTest.java@public expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/BaseSubjectTestCase.java@package expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/SortedMapSubjectTest.java 19:19
+Generation
+Remove Attribute Annotationcore/src/test/java/com/google/common/truth/SortedMapSubjectTest.java@@Rulecore/src/test/java/com/google/common/truth/BaseSubjectTestCase.java@package expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/SortedMapSubjectTest.java 19:19
+Generation
+Pull Up Attributecore/src/test/java/com/google/common/truth/SortedSetSubjectTest.java@public expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/BaseSubjectTestCase.java@package expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/SortedSetSubjectTest.java 19:19
+Generation
+Remove Attribute Annotationcore/src/test/java/com/google/common/truth/SortedSetSubjectTest.java@@Rulecore/src/test/java/com/google/common/truth/BaseSubjectTestCase.java@package expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/SortedSetSubjectTest.java 19:19
+Generation
+Pull Up Attributecore/src/test/java/com/google/common/truth/StackTraceCleanerTest.java@public expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/BaseSubjectTestCase.java@package expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/StackTraceCleanerTest.java 12:12
+Generation
+Remove Attribute Annotationcore/src/test/java/com/google/common/truth/StackTraceCleanerTest.java@@Rulecore/src/test/java/com/google/common/truth/BaseSubjectTestCase.java@package expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/StackTraceCleanerTest.java 12:12
+Generation
+Pull Up Attributecore/src/test/java/com/google/common/truth/StringSubjectTest.java@public expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/BaseSubjectTestCase.java@package expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/StringSubjectTest.java 15:15
+Generation
+Remove Attribute Annotationcore/src/test/java/com/google/common/truth/StringSubjectTest.java@@Rulecore/src/test/java/com/google/common/truth/BaseSubjectTestCase.java@package expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/StringSubjectTest.java 15:15
+Generation
+Pull Up Attributecore/src/test/java/com/google/common/truth/TableSubjectTest.java@public expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/BaseSubjectTestCase.java@package expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/TableSubjectTest.java 16:16
+Generation
+Remove Attribute Annotationcore/src/test/java/com/google/common/truth/TableSubjectTest.java@@Rulecore/src/test/java/com/google/common/truth/BaseSubjectTestCase.java@package expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/TableSubjectTest.java 16:16
+Generation
+Pull Up Attributecore/src/test/java/com/google/common/truth/ThrowableSubjectTest.java@public expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/BaseSubjectTestCase.java@package expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/ThrowableSubjectTest.java 13:13
+Generation
+Remove Attribute Annotationcore/src/test/java/com/google/common/truth/ThrowableSubjectTest.java@@Rulecore/src/test/java/com/google/common/truth/BaseSubjectTestCase.java@package expectFailure : ExpectFailurecore/src/test/java/com/google/common/truth/ThrowableSubjectTest.java 13:13
+Generation
+Change Method Access Modifiercore/src/test/java/com/google/common/truth/GraphMatchingTest.java@private isAndroid() : booleancore/src/main/java/com/google/common/truth/Platform.java@package isAndroid() : booleancore/src/test/java/com/google/common/truth/GraphMatchingTest.java 333:335
+Generation
+Change Method Access Modifiercore/src/test/java/com/google/common/truth/StackTraceCleanerTest.java@private isAndroid() : booleancore/src/main/java/com/google/common/truth/Platform.java@package isAndroid() : booleancore/src/test/java/com/google/common/truth/StackTraceCleanerTest.java 300:302
+Generation
+Move Methodcore/src/test/java/com/google/common/truth/GraphMatchingTest.java@private isAndroid() : booleancore/src/main/java/com/google/common/truth/Platform.java@package isAndroid() : booleancore/src/test/java/com/google/common/truth/GraphMatchingTest.java 333:335
+Generation
+Move Methodcore/src/test/java/com/google/common/truth/StackTraceCleanerTest.java@private isAndroid() : booleancore/src/main/java/com/google/common/truth/Platform.java@package isAndroid() : booleancore/src/test/java/com/google/common/truth/StackTraceCleanerTest.java 300:302
+******************************
+******************************
+coarse grained commits b20e2e909cd765058fc7d1763bf97f9a689a8a6f
+fine grained commits ('7e535f32519c6ae7a63f1e53e42b165907df9814', '638a874571fca1c74b84f03e2f59a120d81ef528')
+Generation
+Change Parameter Typeextensions/proto/src/main/java/com/google/common/truth/extensions/proto/ProtoTruthDelegatedVerb.java@map : Multimap<K,M>extensions/proto/src/main/java/com/google/common/truth/extensions/proto/ProtoSubjectBuilder.java@map : Map<K,M>extensions/proto/src/main/java/com/google/common/truth/extensions/proto/ProtoTruthDelegatedVerb.java 57:57
+Generation
+Change Return Typeextensions/proto/src/main/java/com/google/common/truth/extensions/proto/ProtoTruthDelegatedVerb.java@MultimapWithProtoValuesSubject<?,K,M,Multimap<K,M>>extensions/proto/src/main/java/com/google/common/truth/extensions/proto/ProtoSubjectBuilder.java@MapWithProtoValuesSubject<?,K,M,Map<K,M>>extensions/proto/src/main/java/com/google/common/truth/extensions/proto/ProtoTruthDelegatedVerb.java 56:56
+Generation
+Change Parameter Typeextensions/proto/src/main/java/com/google/common/truth/extensions/proto/ProtoTruthDelegatedVerb.java@map : SetMultimap<K,M>extensions/proto/src/main/java/com/google/common/truth/extensions/proto/ProtoSubjectBuilder.java@map : Map<K,M>extensions/proto/src/main/java/com/google/common/truth/extensions/proto/ProtoTruthDelegatedVerb.java 70:70
+Generation
+Change Return Typeextensions/proto/src/main/java/com/google/common/truth/extensions/proto/ProtoTruthDelegatedVerb.java@SetMultimapWithProtoValuesSubject<?,K,M,SetMultimap<K,M>>extensions/proto/src/main/java/com/google/common/truth/extensions/proto/ProtoSubjectBuilder.java@MapWithProtoValuesSubject<?,K,M,Map<K,M>>extensions/proto/src/main/java/com/google/common/truth/extensions/proto/ProtoTruthDelegatedVerb.java 69:69
+Generation
+Change Parameter Typeextensions/proto/src/main/java/com/google/common/truth/extensions/proto/ProtoTruthDelegatedVerb.java@map : ListMultimap<K,M>extensions/proto/src/main/java/com/google/common/truth/extensions/proto/ProtoSubjectBuilder.java@map : Map<K,M>extensions/proto/src/main/java/com/google/common/truth/extensions/proto/ProtoTruthDelegatedVerb.java 64:64
+Generation
+Change Return Typeextensions/proto/src/main/java/com/google/common/truth/extensions/proto/ProtoTruthDelegatedVerb.java@ListMultimapWithProtoValuesSubject<?,K,M,ListMultimap<K,M>>extensions/proto/src/main/java/com/google/common/truth/extensions/proto/ProtoSubjectBuilder.java@MapWithProtoValuesSubject<?,K,M,Map<K,M>>extensions/proto/src/main/java/com/google/common/truth/extensions/proto/ProtoTruthDelegatedVerb.java 63:63
+******************************
+******************************
+coarse grained commits ce78155a17acefffade71bd33db73ba0fc69b5a9
+fine grained commits ('f49346c893a4ef798e221ae12fd3eb9b24b6744b', '15e6eb09c46d583780136378e66633b6fae4afe9')
+Generation
+Change Variable Typecore/src/main/java/com/google/common/truth/Expect.java@e : AssumptionViolatedExceptioncore/src/main/java/com/google/common/truth/Expect.java@t : Throwablecore/src/main/java/com/google/common/truth/Expect.java 154:154
+Generation
+Rename Variablecore/src/main/java/com/google/common/truth/Expect.java@e : AssumptionViolatedExceptioncore/src/main/java/com/google/common/truth/Expect.java@t : Throwablecore/src/main/java/com/google/common/truth/Expect.java 154:154
+******************************
+******************************
+coarse grained commits 5f7afce0674d34d2c974ad7e132836ab022784ab
+fine grained commits ('031ac4777780a73a95a8eccf8d887b6997138c73', '631cd572c799b097bbb865fed40bd2c03a792dca')
+Generation
+Rename Methodcore/src/test/java/com/google/common/truth/ThrowableSubjectTest.java@public hasMessage_null() : voidcore/src/test/java/com/google/common/truth/ThrowableSubjectTest.java@public hasMessageThat_null() : voidcore/src/test/java/com/google/common/truth/ThrowableSubjectTest.java 18:22
+Generation
+Rename Methodcore/src/test/java/com/google/common/truth/ThrowableSubjectTest.java@public hasMessage_failure() : voidcore/src/test/java/com/google/common/truth/ThrowableSubjectTest.java@public hasMessageThat_failure() : voidcore/src/test/java/com/google/common/truth/ThrowableSubjectTest.java 24:37
+Generation
+Extract Methodcore/src/test/java/com/google/common/truth/ThrowableSubjectTest.java@public hasMessage_null() : voidcore/src/test/java/com/google/common/truth/ThrowableSubjectTest.java@public hasMessageThat() : voidcore/src/test/java/com/google/common/truth/ThrowableSubjectTest.java 18:22
+Generation
+Extract Methodcore/src/test/java/com/google/common/truth/ThrowableSubjectTest.java@public hasMessage_MessageHasNullMessage_failure() : voidcore/src/test/java/com/google/common/truth/ThrowableSubjectTest.java@public hasMessageThat() : voidcore/src/test/java/com/google/common/truth/ThrowableSubjectTest.java 39:48
+Generation
+Extract Variablecore/src/test/java/com/google/common/truth/ThrowableSubjectTest.java@core/src/test/java/com/google/common/truth/ThrowableSubjectTest.java@npe : NullPointerExceptioncore/src/test/java/com/google/common/truth/ThrowableSubjectTest.java 42:42
+Generation
+Extract Methodcore/src/test/java/com/google/common/truth/ThrowableSubjectTest.java@public hasMessage_NullMessageHasMessage_failure() : voidcore/src/test/java/com/google/common/truth/ThrowableSubjectTest.java@public hasMessageThat() : voidcore/src/test/java/com/google/common/truth/ThrowableSubjectTest.java 50:59
+******************************
+******************************
+coarse grained commits 346e143716e7088bf4616c92ae68fe33a64c2b99
+fine grained commits ('7c931b25728716bae3d52960e68a0543347db9a0', 'd2695d0bfa98efa823638bb108bc9dbcc457aa96')
+Generation
+Remove Parametercore/src/main/java/com/google/common/truth/Subject.java@part : Objectcore/src/main/java/com/google/common/truth/Subject.java@private failComparingToStrings(verb String, subject Object, other Object, displayOther Object, compareToStrings boolean) : voidcore/src/main/java/com/google/common/truth/Subject.java 155:155
+******************************
+******************************
+coarse grained commits 441e1e6f2bef811b539e305c734a79d9c844c042
+fine grained commits ('3526ad2eda4d1e158f05c5c560033ffd7aea3853', '7186c2b171b40c67fae951ef404a8084783116df')
+Generation
+Rename Methodcore/src/main/java/com/google/common/truth/MapSubject.java@public hasValue(key V) : voidcore/src/main/java/com/google/common/truth/MapSubject.java@public containsKey(key Object) : voidcore/src/main/java/com/google/common/truth/MapSubject.java 47:51
+Generation
+Rename Methodcore/src/main/java/com/google/common/truth/MapSubject.java@public lacksValue(key V) : voidcore/src/main/java/com/google/common/truth/MapSubject.java@public doesNotContainKey(key Object) : voidcore/src/main/java/com/google/common/truth/MapSubject.java 53:57
+Generation
+Change Parameter Typecore/src/main/java/com/google/common/truth/MapSubject.java@key : Vcore/src/main/java/com/google/common/truth/MapSubject.java@key : Objectcore/src/main/java/com/google/common/truth/MapSubject.java 47:47
+Generation
+Change Parameter Typecore/src/main/java/com/google/common/truth/MapSubject.java@key : Vcore/src/main/java/com/google/common/truth/MapSubject.java@key : Objectcore/src/main/java/com/google/common/truth/MapSubject.java 53:53
+******************************
+******************************
+coarse grained commits 2ce142e6b916c59626f38ef820ca3970fb5c3076
+fine grained commits ('9a36c3e04ccc1f9e42d483c651c6b83013b3cd65', 'd26eeedaf7f938532c77b376468504f16958ada8')
+Generation
+Extract And Move Methodsrc/test/java/org/junit/contrib/truth/extensiontest/MySubject.java@public matches(object MyType) : And<MySubject>src/main/java/org/junit/contrib/truth/subjects/Subject.java@protected nextChain() : And<S>src/test/java/org/junit/contrib/truth/extensiontest/MySubject.java 14:19
+******************************
+******************************
+coarse grained commits 1672ef5ebd3824e71b2e203b53ae32fb147b9f33
+fine grained commits ('6a3d3706d26572a65962ada1a8a233f72fb2edfe', '35a85a82c205af458fe584bd755ac35458883cc0')
+Generation
+Move And Rename Classsrc/test/java/test/org/junit/contrib/truth/IntegerTests.java@test.org.junit.contrib.truth.IntegerTestssrc/test/java/org/junit/contrib/truth/IntegerTest.java@org.junit.contrib.truth.IntegerTestsrc/test/java/test/org/junit/contrib/truth/IntegerTests.java 12:74
+Generation
+Move Packagesrc/test/java/test/org/junit/contrib/truth/IntegerTests.java@test.org.junit.contrib.truth.IntegerTestssrc/test/java/org/junit/contrib/truth/IntegerTest.java@org.junit.contrib.truth.IntegerTestsrc/test/java/test/org/junit/contrib/truth/IntegerTests.java 12:74
+******************************
+******************************
+coarse grained commits fb2f6e93e0624a96c9cdf37945085ffe4af95b02
+fine grained commits ('5ef2e9d72808e868a43c2024d5e7acc3721d5c7e', '5e7ab8cc531cde2acb31c7d3e950e341ec45473d', 'a0c87ab23ae764e8ba9f69add436bd0c53dd538c')
+Generation
+Extract Methodextensions/proto/src/main/java/com/google/common/truth/extensions/proto/IterableOfProtosSubject.java@public containsAllIn(expected Object[]) : Orderedextensions/proto/src/main/java/com/google/common/truth/extensions/proto/IterableOfProtosSubject.java@public containsAtLeastElementsIn(expected Object[]) : Orderedextensions/proto/src/main/java/com/google/common/truth/extensions/proto/IterableOfProtosSubject.java 124:127
+******************************
+******************************
+coarse grained commits 999d2f800c1767c1479161d40e5b2c46025ed7e9
+fine grained commits ('2bd02174abba9a5084171981675923640dc89c8b', '25f3d73e5c79725178548a9751244839845e7375', '031ac4777780a73a95a8eccf8d887b6997138c73')
+Generation
+Rename Methodcore/src/test/java/com/google/common/truth/ThrowableSubjectTest.java@public hasMessage_failure() : voidcore/src/test/java/com/google/common/truth/ThrowableSubjectTest.java@public hasMessageThat_Named_failure() : voidcore/src/test/java/com/google/common/truth/ThrowableSubjectTest.java 24:37
+Generation
+Extract Methodcore/src/test/java/com/google/common/truth/ThrowableSubjectTest.java@public hasMessage_Named_failure() : voidcore/src/test/java/com/google/common/truth/ThrowableSubjectTest.java@private assertErrorHasActualAsCause(actual Throwable, failure AssertionError) : voidcore/src/test/java/com/google/common/truth/ThrowableSubjectTest.java 77:88
+Generation
+Parameterize Variablecore/src/test/java/com/google/common/truth/ThrowableSubjectTest.java@expected : AssertionErrorcore/src/test/java/com/google/common/truth/ThrowableSubjectTest.java@failure : AssertionErrorcore/src/test/java/com/google/common/truth/ThrowableSubjectTest.java 82:82
+Generation
+Inline Variablecore/src/test/java/com/google/common/truth/ThrowableSubjectTest.java@subject : NullPointerExceptioncore/src/test/java/com/google/common/truth/ThrowableSubjectTest.java@public hasMessageThat_Named_failure() : voidcore/src/test/java/com/google/common/truth/ThrowableSubjectTest.java 26:26
+Generation
+Change Variable Typecore/src/test/java/com/google/common/truth/ThrowableSubjectTest.java@expected : ComparisonFailurecore/src/test/java/com/google/common/truth/ThrowableSubjectTest.java@expected : AssertionErrorcore/src/test/java/com/google/common/truth/ThrowableSubjectTest.java 30:30
+Generation
+Extract Variablecore/src/test/java/com/google/common/truth/ThrowableSubjectTest.java@core/src/test/java/com/google/common/truth/ThrowableSubjectTest.java@actual : Exceptioncore/src/test/java/com/google/common/truth/ThrowableSubjectTest.java 80:80
+******************************
+******************************
+coarse grained commits d7218bc56d0052969467b21fca5d4c977ecf8808
+fine grained commits ('7adbe580ca6e02da60b095a5ad94007b7c8a6cbd', '98510e30b1d3535c2ce5e52b741580d7e39aa5c7', '24ee3f4c518533c1f8be80759d8a65143f1747fe')
+Generation
+Rename Methodcore/src/test/java/com/google/common/truth/DoubleTest.java@private assertThatNaNFailsWithin(tolerance double, expected double) : voidcore/src/test/java/com/google/common/truth/DoubleTest.java@public isFinite() : voidcore/src/test/java/com/google/common/truth/DoubleTest.java 162:170
+Generation
+Extract Methodcore/src/test/java/com/google/common/truth/DoubleTest.java@private assertThatNaNFailsWithin(tolerance double, expected double) : voidcore/src/test/java/com/google/common/truth/DoubleTest.java@private assertThatIsFiniteFails(value Double) : voidcore/src/test/java/com/google/common/truth/DoubleTest.java 162:170
+Generation
+Remove Parametercore/src/test/java/com/google/common/truth/DoubleTest.java@tolerance : doublecore/src/test/java/com/google/common/truth/DoubleTest.java@public isFinite() : voidcore/src/test/java/com/google/common/truth/DoubleTest.java 162:162
+Generation
+Remove Parametercore/src/test/java/com/google/common/truth/DoubleTest.java@expected : doublecore/src/test/java/com/google/common/truth/DoubleTest.java@public isFinite() : voidcore/src/test/java/com/google/common/truth/DoubleTest.java 162:162
+Generation
+Add Method Annotationcore/src/test/java/com/google/common/truth/DoubleTest.java@private assertThatNaNFailsWithin(tolerance double, expected double) : voidcore/src/test/java/com/google/common/truth/DoubleTest.java@@Testcore/src/test/java/com/google/common/truth/DoubleTest.java 162:170
+Generation
+Change Method Access Modifiercore/src/test/java/com/google/common/truth/DoubleTest.java@private assertThatNaNFailsWithin(tolerance double, expected double) : voidcore/src/test/java/com/google/common/truth/DoubleTest.java@public isFinite() : voidcore/src/test/java/com/google/common/truth/DoubleTest.java 162:170
+Generation
+Remove Method Modifiercore/src/test/java/com/google/common/truth/DoubleTest.java@private assertThatNaNFailsWithin(tolerance double, expected double) : voidcore/src/test/java/com/google/common/truth/DoubleTest.java@public isFinite() : voidcore/src/test/java/com/google/common/truth/DoubleTest.java 162:170
+******************************
+******************************
+coarse grained commits 3befbe3f2637b05f96856f6eb2a3ef27bfe1e55b
+fine grained commits ('8875a68ca44cf53dc64b46fc7879332b4bc94b5f', 'eeac2e1a8049f5248e62bc53d9dc8e581151e091', '7adbe580ca6e02da60b095a5ad94007b7c8a6cbd')
+Generation
+Change Parameter Typecore/src/test/java/com/google/common/truth/DoubleTest.java@tolerance : doublecore/src/test/java/com/google/common/truth/FloatTest.java@tolerance : floatcore/src/test/java/com/google/common/truth/DoubleTest.java 162:162
+Generation
+Change Parameter Typecore/src/test/java/com/google/common/truth/DoubleTest.java@expected : doublecore/src/test/java/com/google/common/truth/FloatTest.java@expected : floatcore/src/test/java/com/google/common/truth/DoubleTest.java 162:162
+Generation
+Add Parametercore/src/test/java/com/google/common/truth/DoubleTest.java@private assertThatNaNFailsWithin(tolerance double, expected double) : voidcore/src/test/java/com/google/common/truth/FloatTest.java@actual : floatcore/src/test/java/com/google/common/truth/DoubleTest.java 162:170
+Generation
+Move And Rename Methodcore/src/test/java/com/google/common/truth/DoubleTest.java@private assertThatNaNFailsWithin(tolerance double, expected double) : voidcore/src/test/java/com/google/common/truth/FloatTest.java@private assertThatIsWithinFails(actual float, tolerance float, expected float) : voidcore/src/test/java/com/google/common/truth/DoubleTest.java 162:170
+Generation
+Change Parameter Typecore/src/test/java/com/google/common/truth/DoubleTest.java@tolerance : doublecore/src/test/java/com/google/common/truth/FloatTest.java@tolerance : floatcore/src/test/java/com/google/common/truth/DoubleTest.java 172:172
+Generation
+Change Parameter Typecore/src/test/java/com/google/common/truth/DoubleTest.java@expected : doublecore/src/test/java/com/google/common/truth/FloatTest.java@expected : floatcore/src/test/java/com/google/common/truth/DoubleTest.java 172:172
+Generation
+Add Parametercore/src/test/java/com/google/common/truth/DoubleTest.java@private assertThatNaNFailsNotWithin(tolerance double, expected double) : voidcore/src/test/java/com/google/common/truth/FloatTest.java@actual : floatcore/src/test/java/com/google/common/truth/DoubleTest.java 172:180
+Generation
+Move And Rename Methodcore/src/test/java/com/google/common/truth/DoubleTest.java@private assertThatNaNFailsNotWithin(tolerance double, expected double) : voidcore/src/test/java/com/google/common/truth/FloatTest.java@private assertThatIsNotWithinFails(actual float, tolerance float, expected float) : voidcore/src/test/java/com/google/common/truth/DoubleTest.java 172:180
+******************************
+******************************
+coarse grained commits 6cddf0d16e77f90515347011a71bc695de9f3147
+fine grained commits ('a90a0a050abfe537676441a8cb1aaa38601812c6', '5d5e6f1ee4f1c9a57aba01e2559f4f0421588450', '0eb26afbfdefb1ef6286d40e3972774e8484efeb')
+Generation
+Extract And Move Methodcore/src/test/java/com/google/common/truth/CustomFailureMessageTest.java@public customMessage() : voidcore/src/main/java/com/google/common/truth/Truth.java@public assertThat(target byte[]) : PrimitiveByteArraySubjectcore/src/test/java/com/google/common/truth/CustomFailureMessageTest.java 16:23
+Generation
+Extract And Move Methodcore/src/test/java/com/google/common/truth/CustomFailureMessageTest.java@public customMessageOnDelegate() : voidcore/src/main/java/com/google/common/truth/Truth.java@public assertThat(target byte[]) : PrimitiveByteArraySubjectcore/src/test/java/com/google/common/truth/CustomFailureMessageTest.java 25:33
+Generation
+Extract And Move Methodcore/src/test/java/com/google/common/truth/CustomFailureMessageTest.java@public customMessageOnForEach() : voidcore/src/main/java/com/google/common/truth/Truth.java@public assertThat(target byte[]) : PrimitiveByteArraySubjectcore/src/test/java/com/google/common/truth/CustomFailureMessageTest.java 35:43
+******************************
+******************************
+coarse grained commits bda38d28d8f6bf38e8afa5bd6b9ba517851824f8
+fine grained commits ('7bd936ccb62f935ac1b0814fcc0e31ccf6688169', '22eb447274d626866a81c02223db806a92e6baa0', 'cf191f92cdef0df79766bb99834fd7887decf027')
+Generation
+Move Methodextensions/proto/src/main/java/com/google/common/truth/extensions/proto/FluentEqualityConfig.java@package abstract fieldScopeLogic() : FieldScopeLogicextensions/proto/src/main/java/com/google/common/truth/extensions/proto/FieldScopeLogicMap.java@package abstract fieldScopeLogic() : FieldScopeLogicextensions/proto/src/main/java/com/google/common/truth/extensions/proto/FluentEqualityConfig.java 66:66
+******************************
+******************************
+coarse grained commits 9a6564e8d8bf51aa3fef22b31e7edc8ddc241d69
+fine grained commits ('3084f0a4ad49aaebfa8b0ce79b3b53fb63b896e8', '0722e957a2d54d50169bb2f7d0c9fff20070337c', 'e61b8e0071e92769ac1133dc5b75b20345e5b05f')
+Generation
+Add Parametercore/src/main/java/com/google/common/truth/IterableSubject.java@private failExactly(required Iterable<?>, addElementsInWarning boolean, missing Collection<?>, extra Collection<?>) : Orderedcore/src/main/java/com/google/common/truth/IterableSubject.java@missingRawObjects : Collection<?>core/src/main/java/com/google/common/truth/IterableSubject.java 323:361
+Generation
+Add Parametercore/src/main/java/com/google/common/truth/IterableSubject.java@private failExactly(required Iterable<?>, addElementsInWarning boolean, missing Collection<?>, extra Collection<?>) : Orderedcore/src/main/java/com/google/common/truth/IterableSubject.java@extraRawObjects : Collection<?>core/src/main/java/com/google/common/truth/IterableSubject.java 323:361
+Generation
+Remove Parametercore/src/main/java/com/google/common/truth/IterableSubject.java@missing : Collection<?>core/src/main/java/com/google/common/truth/IterableSubject.java@private failExactly(required Iterable<?>, addElementsInWarning boolean, missingRawObjects Collection<?>, extraRawObjects Collection<?>) : Orderedcore/src/main/java/com/google/common/truth/IterableSubject.java 326:326
+Generation
+Remove Parametercore/src/main/java/com/google/common/truth/IterableSubject.java@extra : Collection<?>core/src/main/java/com/google/common/truth/IterableSubject.java@private failExactly(required Iterable<?>, addElementsInWarning boolean, missingRawObjects Collection<?>, extraRawObjects Collection<?>) : Orderedcore/src/main/java/com/google/common/truth/IterableSubject.java 327:327
+******************************
+******************************
+coarse grained commits 605da58f70d43e9388e379dd8522d4c3c100f8aa
+fine grained commits ('5dd3941812b01fc50e22cd1d39af3c612a1ce72a', 'b6faa798ba0c7a585f0a51e0c42f788a03dbe37c', 'd8b2885608cbf6fe3e4b001fb6978441cfa7c795')
+Generation
+Move And Rename Methodcore/src/test/java/com/google/common/truth/ListTest.java@public isPartiallyOrderedFailure() : voidcore/src/test/java/com/google/common/truth/IterableTest.java@public isOrderedFailure() : voidcore/src/test/java/com/google/common/truth/ListTest.java 50:59
+Generation
+Move And Rename Methodcore/src/test/java/com/google/common/truth/ListTest.java@public isPartiallyOrderedWithNonComparableElementsFailure() : voidcore/src/test/java/com/google/common/truth/IterableTest.java@public isOrderedWithNonComparableElementsFailure() : voidcore/src/test/java/com/google/common/truth/ListTest.java 61:68
+******************************
+******************************
+coarse grained commits a2c898066bcf30ed2753981e018ef132daf67800
+fine grained commits ('fc2412dd86d298949bc6ea74b52871873ac5542f', '9e98bbba6f91f6f3aca71fa660b9465c8b6079a9', '7bd936ccb62f935ac1b0814fcc0e31ccf6688169', '22eb447274d626866a81c02223db806a92e6baa0')
+Generation
+Add Parameterextensions/proto/src/main/java/com/google/common/truth/extensions/proto/FieldScopeLogic.java@package validate(descriptor Descriptor) : voidextensions/proto/src/main/java/com/google/common/truth/extensions/proto/FieldScopeLogic.java@fieldDescriptorValidator : FieldDescriptorValidatorextensions/proto/src/main/java/com/google/common/truth/extensions/proto/FieldScopeLogic.java 47:47
+******************************
+******************************
+coarse grained commits 1173a85edc0d916f79844b735b649621f9e1cbca
+fine grained commits ('e88edfef0b64faa07c3c2310192515124f61942d', 'a15f891e2499cf00a9745a01f66dcf637bdfa4b7', '56cefc3b7441694cbe873be2f86fe14019984b74', '85bfc78485ddf728e2875f53529d6fc9f40d3be8')
+Generation
+Move Methodextensions/proto/src/main/java/com/google/common/truth/extensions/proto/FieldNumberTree.java@package abstract fieldNumber() : intextensions/proto/src/main/java/com/google/common/truth/extensions/proto/ProtoTruthMessageDifferencer.java@package abstract fieldNumber() : intextensions/proto/src/main/java/com/google/common/truth/extensions/proto/FieldNumberTree.java 23:23
+******************************
+******************************
+coarse grained commits eb3c0651356c8a0a751f3dc2faa82bc5b6321991
+fine grained commits ('c3dbe43f6893eb599ea6b168eeb86d0c6085826b', '3d3a75c2fd412e551bdd78d41ae855020973d168', 'ed9ce66f1b6de0929258e223784e03ce7b0c30cb', '6a3d3706d26572a65962ada1a8a233f72fb2edfe')
+Generation
+Move And Rename Classsrc/test/java/test/org/junit/contrib/truth/ExtensionTest.java@test.org.junit.contrib.truth.ExtensionTestsrc/test/java/org/junit/contrib/truth/CollectionTest.java@org.junit.contrib.truth.CollectionTestsrc/test/java/test/org/junit/contrib/truth/ExtensionTest.java 10:16
+Generation
+Move Packagesrc/test/java/test/org/junit/contrib/truth/ExtensionTest.java@test.org.junit.contrib.truth.ExtensionTestsrc/test/java/org/junit/contrib/truth/CollectionTest.java@org.junit.contrib.truth.CollectionTestsrc/test/java/test/org/junit/contrib/truth/ExtensionTest.java 10:16
+******************************
+******************************
+coarse grained commits d74766e042f02cc04b6dd0a4c3fa5710c6a2b18f
+fine grained commits ('2b19166277354cb25ea2b05e14803dec8c2ac77a', '712c283d7587bb9fecd3cb81c48d394a97af266d', '569d12a0ae078d72b9d9061072e327bececfbb71', 'a9ebc02c0722159c52e24e2472aece5f560fe6ef')
+Generation
+Rename Methodcore/src/main/java/com/google/common/truth/FailureMetadata.java@private prepend(messages ImmutableList<Message>, message Message) : ImmutableList<Message>core/src/main/java/com/google/common/truth/FailureMetadata.java@private append(list ImmutableList<? extends E>, object E) : ImmutableList<E>core/src/main/java/com/google/common/truth/FailureMetadata.java 105:107
+******************************
+******************************
+coarse grained commits b96d156f494cad04c6fda76532f34fbb13b2ac2f
+fine grained commits ('67946242e58740f6c0ce5bac87f5c0fb48d66b7d', 'f2d0bfa3d09f30611731b4cd52ea040493e6cad5', '8a36296db9d6e88b3bdc0d6a7a00b233071ce46e', '5a2eb6a654650c831346180136d3f753051dcb33')
+Generation
+Extract Methodcore/src/main/java/com/google/common/truth/PrimitiveDoubleArraySubject.java@public usingTolerance(tolerance double) : DoubleArrayAsIterablecore/src/main/java/com/google/common/truth/PrimitiveDoubleArraySubject.java@private iterableSubject() : IterableSubjectcore/src/main/java/com/google/common/truth/PrimitiveDoubleArraySubject.java 204:206
+Generation
+Extract Methodcore/src/main/java/com/google/common/truth/PrimitiveDoubleArraySubject.java@public usingExactEquality() : DoubleArrayAsIterablecore/src/main/java/com/google/common/truth/PrimitiveDoubleArraySubject.java@private iterableSubject() : IterableSubjectcore/src/main/java/com/google/common/truth/PrimitiveDoubleArraySubject.java 242:245
+Generation
+Extract Methodcore/src/main/java/com/google/common/truth/PrimitiveFloatArraySubject.java@public usingTolerance(tolerance double) : FloatArrayAsIterablecore/src/main/java/com/google/common/truth/PrimitiveFloatArraySubject.java@private iterableSubject() : IterableSubjectcore/src/main/java/com/google/common/truth/PrimitiveFloatArraySubject.java 204:206
+Generation
+Extract Methodcore/src/main/java/com/google/common/truth/PrimitiveFloatArraySubject.java@public usingExactEquality() : FloatArrayAsIterablecore/src/main/java/com/google/common/truth/PrimitiveFloatArraySubject.java@private iterableSubject() : IterableSubjectcore/src/main/java/com/google/common/truth/PrimitiveFloatArraySubject.java 250:253
+******************************
+******************************
+coarse grained commits 02e201a96199e86d9b4c38225780b06fd7d4a215
+fine grained commits ('62bb595c6dfa9607e6d017550352c42971f24b74', 'f71904d09a9696eefdc61cafa470bee368b6ec72', 'a1b20d82a6d57781260db3ee88f7f16e93120618', 'f07240573e0beb5384d957560a0aa298d66c33de')
+Generation
+Extract Superclasssrc/main/java/org/junit/contrib/truth/subjects/IntegerSubject.java@org.junit.contrib.truth.subjects.IntegerSubjectcore/src/main/java/org/truth/subjects/IntegerSubject.java@org.truth.subjects.IntegerSubjectsrc/main/java/org/junit/contrib/truth/subjects/IntegerSubject.java 7:95
+******************************
+******************************
+coarse grained commits f979bbe87cb6ba1bd96121d14142a4a31eca4d74
+fine grained commits ('06b0eec463b54ae32788ffd124725ed3b0f925f7', 'c16b8449c5c17fea26a92cd287bfa7c3ed2e38a5', '99199c1bd22e1b2e9969ce71682349360b92d42a', 'fa9d891709386bcf1f5f55eafcbae6733bf75a6f')
+Generation
+Move Methodsrc/main/java/org/junit/contrib/truth/IntSubject.java@public IntSubject(failureStrategy FailureStrategy, i int)src/main/java/org/junit/contrib/truth/subjects/IntSubject.java@public IntSubject(failureStrategy FailureStrategy, i int)src/main/java/org/junit/contrib/truth/IntSubject.java 4:6
+******************************
+******************************
+coarse grained commits b4c392ccd72aa537b91af4cd8ea87f2c8c9abb0e
+fine grained commits ('3e3043e6e3d4f8fa1610e5160cb40e82748b5045', '09eb1719bf18435054b219443327a74653723912', 'bd264880909ed0ad0c0a10b91f4097be77323e60', 'e53a6058b64f7710ba057b93442fc2d236aa3560')
+Generation
+Extract And Move Methodcore/src/main/java/com/google/common/truth/MapSubject.java@public containsEntry(expectedKey Object, expectedValue E) : voidcore/src/main/java/com/google/common/truth/Subject.java@package failWithoutActual(facts Facts) : voidcore/src/main/java/com/google/common/truth/MapSubject.java 399:448
+Generation
+Extract And Move Methodcore/src/main/java/com/google/common/truth/MapSubject.java@public containsExactlyEntriesIn(expectedMap Map<K,V>) : Orderedcore/src/main/java/com/google/common/truth/Subject.java@package failWithoutActual(facts Facts) : voidcore/src/main/java/com/google/common/truth/MapSubject.java 472:510
+******************************
+******************************
+coarse grained commits ddd3c8128ab017e9b2556cebd20e4281e6985129
+fine grained commits ('05e32ce12d75a17c5078576666652e85b6642991', 'c81dce70740bc451eb87632f8a0b09b253114349', 'b705d8e215752a14232b88ef8b53b58b011fcd17', '2b19166277354cb25ea2b05e14803dec8c2ac77a')
+Generation
+Rename Methodcore/src/main/java/com/google/common/truth/FailureMetadata.java@private prepend(messages ImmutableList<Message>, message Message) : ImmutableList<Message>core/src/main/java/com/google/common/truth/FailureMetadata.java@private append(list ImmutableList<? extends E>, object E) : ImmutableList<E>core/src/main/java/com/google/common/truth/FailureMetadata.java 126:128
+Generation
+Change Return Typecore/src/main/java/com/google/common/truth/FailureMetadata.java@ImmutableList<Message>core/src/main/java/com/google/common/truth/FailureMetadata.java@ImmutableList<E>core/src/main/java/com/google/common/truth/FailureMetadata.java 126:126
+******************************
+******************************
+coarse grained commits 39d65fd32fd97bcda89edbaddfd5540fda872468
+fine grained commits ('aa4351b8536fc143c156ef0e1f2b6f2c547946be', '9a409a673e69753177088caf389bc84dc7d70a17', '9a09931be33f73c5244a2ea717a62c75fdf270dd', '12a5ba5bcaf4f46ccb7ed934fdcf61535c2d706d')
+Generation
+Move And Rename Methodcore/src/main/java/com/google/common/truth/IterableSubject.java@private getHomogeneousClass(items Iterable<?>) : Optional<Class<?>>core/src/main/java/com/google/common/truth/SubjectUtils.java@private getHomogeneousTypeName(items Iterable<?>) : Optional<String>core/src/main/java/com/google/common/truth/IterableSubject.java 340:352
+******************************
+******************************
+coarse grained commits 76a3577195113e404aac796a3daa970329aa17dc
+fine grained commits ('daee4d930e5b6e4ecb82a3abf9b9ab5d0736be09', '81a24bf8f962314573e7f040b17d43a483d11862', 'e7f9151a162ce4f16495ad716942836954b10666', 'a7ac0ca5ecebc35e769c80cf6949012221c12d4a')
+Generation
+Add Method Annotationcore/src/main/java/com/google/common/truth/IterableSubject.java@private containsAnyOf(first E, second E, rest E...) : voidcore/src/main/java/com/google/common/truth/IterableSubject.java@@SafeVarargscore/src/main/java/com/google/common/truth/IterableSubject.java 545:548
+Generation
+Add Method Modifiercore/src/main/java/com/google/common/truth/IterableSubject.java@private containsAnyOf(first E, second E, rest E...) : voidcore/src/main/java/com/google/common/truth/IterableSubject.java@public containsAnyOf(first E, second E, rest E...) : voidcore/src/main/java/com/google/common/truth/IterableSubject.java 545:548
+Generation
+Add Method Annotationcore/src/main/java/com/google/common/truth/IterableSubject.java@private containsNoneOf(first E, second E, rest E...) : voidcore/src/main/java/com/google/common/truth/IterableSubject.java@@SafeVarargscore/src/main/java/com/google/common/truth/IterableSubject.java 555:558
+Generation
+Add Method Modifiercore/src/main/java/com/google/common/truth/IterableSubject.java@private containsNoneOf(first E, second E, rest E...) : voidcore/src/main/java/com/google/common/truth/IterableSubject.java@public containsNoneOf(firstExcluded E, secondExcluded E, restOfExcluded E...) : voidcore/src/main/java/com/google/common/truth/IterableSubject.java 555:558
+******************************
+******************************
+coarse grained commits 46efce8ee21190d4738845dd0aaea29d9e6e154a
+fine grained commits ('774c2e99431c0e529fe249f23468acf5df35fd44', '2a6c48a4b962dd43b446e5c51f8fccad867046c2', '210c8724ffcd69434e8ff73124e06986b0d7bf86', '942cd47c3de10678f2d39e37440bb015ec77b245')
+Generation
+Rename Methodextensions/proto/src/main/java/com/google/common/truth/extensions/proto/FieldScopeImpl.java@package includesField(context Context, cache Cache<M>) : booleanextensions/proto/src/main/java/com/google/common/truth/extensions/proto/FieldScopeImpl.java@package matchesFieldPath(context Context, cache Cache) : booleanextensions/proto/src/main/java/com/google/common/truth/extensions/proto/FieldScopeImpl.java 186:189
+Generation
+Rename Methodextensions/proto/src/main/java/com/google/common/truth/extensions/proto/FieldScopeImpl.java@package none() : FieldScope<M>extensions/proto/src/main/java/com/google/common/truth/extensions/proto/FieldScopeImpl.java@package all() : FieldScopeextensions/proto/src/main/java/com/google/common/truth/extensions/proto/FieldScopeImpl.java 174:177
+Generation
+Encapsulate Attributeextensions/proto/src/main/java/com/google/common/truth/extensions/proto/FieldScopeImpl.java@private NONE : FieldScope<Message>extensions/proto/src/main/java/com/google/common/truth/extensions/proto/FieldScopeImpl.java@private NONE : FieldScopeextensions/proto/src/main/java/com/google/common/truth/extensions/proto/FieldScopeImpl.java 161:167
+******************************
+******************************
+coarse grained commits b151d0431f2b2e219e510d23355cd63587beafe8
+fine grained commits ('2bd02174abba9a5084171981675923640dc89c8b', '25f3d73e5c79725178548a9751244839845e7375', '031ac4777780a73a95a8eccf8d887b6997138c73', '631cd572c799b097bbb865fed40bd2c03a792dca')
+Generation
+Extract Methodcore/src/test/java/com/google/common/truth/ThrowableSubjectTest.java@public hasMessage_failure() : voidcore/src/test/java/com/google/common/truth/ThrowableSubjectTest.java@public hasMessageThat() : voidcore/src/test/java/com/google/common/truth/ThrowableSubjectTest.java 24:37
+******************************
+******************************
+coarse grained commits 71244c0fed125dcc7f28ec5ab8921e10107493aa
+fine grained commits ('2af6077212d6519dd96855d0619776a224612d40', 'f1875d5976077ae5960264b5d74f202bf05b19c7', '99ecc79348216bf8e2d80b7974ca9a69a7e759df', '0bdb5825a9eaf23e738b64bb3e8fbd10bfd8260f')
+Generation
+Move Attributecore/src/main/java/com/google/common/truth/IteratingVerb.java@private failureStrategy : FailureStrategycore/src/test/java/com/google/common/truth/gwt/Inventory.java@package failureStrategy : FailureStrategycore/src/main/java/com/google/common/truth/IteratingVerb.java 33:33
+Generation
+Change Attribute Access Modifiercore/src/main/java/com/google/common/truth/IteratingVerb.java@private failureStrategy : FailureStrategycore/src/test/java/com/google/common/truth/gwt/Inventory.java@package failureStrategy : FailureStrategycore/src/main/java/com/google/common/truth/IteratingVerb.java 33:33
+Generation
+Remove Attribute Modifiercore/src/main/java/com/google/common/truth/IteratingVerb.java@private failureStrategy : FailureStrategycore/src/test/java/com/google/common/truth/gwt/Inventory.java@package failureStrategy : FailureStrategycore/src/main/java/com/google/common/truth/IteratingVerb.java 33:33
+******************************
+******************************
+coarse grained commits b9af22e00009a54d326ffff41f887f90874bdd49
+fine grained commits ('32f142a6656455295b0b05ebdbf86d4617d71f30', '72da59af72b0d92d59c6a2569fcc7b765c7f4fb4', '313961780760ab407ac749b31d395405da960294', '8dd8897397f040ae9294323315598a811e1f2261', '8e9342acd63594292af18d37ef5c15c7b786e7c0')
+Generation
+Inline Variableextensions/proto/src/main/java/com/google/common/truth/extensions/proto/ProtoTruthMessageDifferencer.java@typeRegistry : TypeRegistryextensions/proto/src/main/java/com/google/common/truth/extensions/proto/ProtoTruthMessageDifferencer.java@private diffAnyMessages(actual Message, expected Message, config FluentEqualityConfig) : DiffResultextensions/proto/src/main/java/com/google/common/truth/extensions/proto/ProtoTruthMessageDifferencer.java 202:202
+Generation
+Inline Variableextensions/proto/src/main/java/com/google/common/truth/extensions/proto/ProtoTruthMessageDifferencer.java@extensionRegistry : ExtensionRegistryextensions/proto/src/main/java/com/google/common/truth/extensions/proto/ProtoTruthMessageDifferencer.java@private diffAnyMessages(actual Message, expected Message, config FluentEqualityConfig) : DiffResultextensions/proto/src/main/java/com/google/common/truth/extensions/proto/ProtoTruthMessageDifferencer.java 203:203
+Generation
+Change Method Access Modifierextensions/proto/src/main/java/com/google/common/truth/extensions/proto/ProtoTruthMessageDifferencer.java@private unpackAny(any Message, typeRegistry TypeRegistry, extensionRegistry ExtensionRegistry) : Optional<Message>extensions/proto/src/main/java/com/google/common/truth/extensions/proto/AnyUtils.java@package unpack(any Message, typeRegistry TypeRegistry, extensionRegistry ExtensionRegistry) : Optional<Message>extensions/proto/src/main/java/com/google/common/truth/extensions/proto/ProtoTruthMessageDifferencer.java 250:266
+Generation
+Move And Rename Methodextensions/proto/src/main/java/com/google/common/truth/extensions/proto/ProtoTruthMessageDifferencer.java@private unpackAny(any Message, typeRegistry TypeRegistry, extensionRegistry ExtensionRegistry) : Optional<Message>extensions/proto/src/main/java/com/google/common/truth/extensions/proto/AnyUtils.java@package unpack(any Message, typeRegistry TypeRegistry, extensionRegistry ExtensionRegistry) : Optional<Message>extensions/proto/src/main/java/com/google/common/truth/extensions/proto/ProtoTruthMessageDifferencer.java 250:266
+******************************
+******************************
+coarse grained commits 6b543eb1e2ceb72a51e21c1eb374d597049bafb6
+fine grained commits ('ed308efadb707ba169b45677916d38d88c4127ea', 'b47844bd7d061d7065b299475aa68f52f69d9a39', '8b7ff85e58078d7d88ba419b71d69811e36a4cc6', '76667e37be4ab986316a2af37a16aeee824ffd65', '388cae6694c6e45d8c7027b0992de89dacad9bd8')
+Generation
+Add Parameter Annotationcore/src/main/java/com/google/common/truth/ComparisonFailureWithFields.java@cause : Throwablecore/src/main/java/com/google/common/truth/ComparisonFailureWithFields.java@@Nullablecore/src/main/java/com/google/common/truth/ComparisonFailureWithFields.java 7:7
+Generation
+Change Method Access Modifiercore/src/main/java/com/google/common/truth/ComparisonFailureWithFields.java@package ComparisonFailureWithFields(message String, expected String, actual String, cause Throwable)core/src/main/java/com/google/common/truth/ComparisonFailureWithFields.java@private ComparisonFailureWithFields(messages ImmutableList<String>, fields ImmutableList<Field>, expected String, actual String, cause Throwable)core/src/main/java/com/google/common/truth/ComparisonFailureWithFields.java 7:9
+******************************
+******************************
+coarse grained commits f1f07be849d33a660f6f02039a489aaffe207ca1
+fine grained commits ('f2d0bfa3d09f30611731b4cd52ea040493e6cad5', '8a36296db9d6e88b3bdc0d6a7a00b233071ce46e', '5a2eb6a654650c831346180136d3f753051dcb33', 'c6341449e5c6cf0eed53c007c30171fa40b9084f', '509cdc11060a018a030a98caa8b1000a1b6d16d0')
+Generation
+Extract And Move Methodcore/src/main/java/com/google/common/truth/ObjectArraySubject.java@public asList() : IterableSubjectextensions/proto/src/main/java/com/google/common/truth/extensions/proto/ProtoTruthDelegatedVerb.java@public that(map Multimap<K,M>) : MultimapWithProtoValuesSubject<?,K,M,Multimap<K,M>>core/src/main/java/com/google/common/truth/ObjectArraySubject.java 177:179
+Generation
+Extract And Move Methodcore/src/main/java/com/google/common/truth/PrimitiveBooleanArraySubject.java@public asList() : IterableSubjectextensions/proto/src/main/java/com/google/common/truth/extensions/proto/ProtoTruthDelegatedVerb.java@public that(map Multimap<K,M>) : MultimapWithProtoValuesSubject<?,K,M,Multimap<K,M>>core/src/main/java/com/google/common/truth/PrimitiveBooleanArraySubject.java 53:55
+Generation
+Extract And Move Methodcore/src/main/java/com/google/common/truth/PrimitiveByteArraySubject.java@public asList() : IterableSubjectextensions/proto/src/main/java/com/google/common/truth/extensions/proto/ProtoTruthDelegatedVerb.java@public that(map Multimap<K,M>) : MultimapWithProtoValuesSubject<?,K,M,Multimap<K,M>>core/src/main/java/com/google/common/truth/PrimitiveByteArraySubject.java 53:55
+Generation
+Extract And Move Methodcore/src/main/java/com/google/common/truth/PrimitiveCharArraySubject.java@public asList() : IterableSubjectextensions/proto/src/main/java/com/google/common/truth/extensions/proto/ProtoTruthDelegatedVerb.java@public that(map Multimap<K,M>) : MultimapWithProtoValuesSubject<?,K,M,Multimap<K,M>>core/src/main/java/com/google/common/truth/PrimitiveCharArraySubject.java 53:55
+Generation
+Extract And Move Methodcore/src/main/java/com/google/common/truth/PrimitiveIntArraySubject.java@public asList() : IterableSubjectextensions/proto/src/main/java/com/google/common/truth/extensions/proto/ProtoTruthDelegatedVerb.java@public that(map Multimap<K,M>) : MultimapWithProtoValuesSubject<?,K,M,Multimap<K,M>>core/src/main/java/com/google/common/truth/PrimitiveIntArraySubject.java 53:55
+Generation
+Extract And Move Methodcore/src/main/java/com/google/common/truth/PrimitiveLongArraySubject.java@public asList() : IterableSubjectextensions/proto/src/main/java/com/google/common/truth/extensions/proto/ProtoTruthDelegatedVerb.java@public that(map Multimap<K,M>) : MultimapWithProtoValuesSubject<?,K,M,Multimap<K,M>>core/src/main/java/com/google/common/truth/PrimitiveLongArraySubject.java 53:55
+Generation
+Extract And Move Methodcore/src/main/java/com/google/common/truth/PrimitiveShortArraySubject.java@public asList() : IterableSubjectextensions/proto/src/main/java/com/google/common/truth/extensions/proto/ProtoTruthDelegatedVerb.java@public that(map Multimap<K,M>) : MultimapWithProtoValuesSubject<?,K,M,Multimap<K,M>>core/src/main/java/com/google/common/truth/PrimitiveShortArraySubject.java 53:55
+******************************
+******************************
+coarse grained commits f67fd1fd9072eb6f6f6c90036088e167fdeac5a6
+fine grained commits ('aa2601576b6c1d15c8b551c0255da03cac21d14d', '9635f6edf2f1fc97e58eb20f6a9eb32a59c657a8', '368d57a41553e5233f20984295cb085139cf021a', 'f5b459801c50aaf0ddbeaf762a82a47d27fd1e2a', 'e9689f9a1d3b6ae15189ab7a5ca1a29ae81264b7')
+Generation
+Rename Classcore/src/main/java/com/google/common/truth/IterableSubject.java@com.google.common.truth.IterableSubject.AllOfInOrdercore/src/main/java/com/google/common/truth/IterableSubject.java@com.google.common.truth.IterableSubject.NotInOrdercore/src/main/java/com/google/common/truth/IterableSubject.java 200:223
+Generation
+Rename Methodcore/src/test/java/com/google/common/truth/IterableTest.java@private validateHackedFailure(ordered Ordered) : voidcore/src/test/java/com/google/common/truth/IterableTest.java@public iterableHasExactlyInOrderWithOneShotIterableWrongOrder() : voidcore/src/test/java/com/google/common/truth/IterableTest.java 508:516
+Generation
+Remove Parametercore/src/test/java/com/google/common/truth/IterableTest.java@ordered : Orderedcore/src/test/java/com/google/common/truth/IterableTest.java@public iterableHasExactlyInOrderWithOneShotIterableWrongOrder() : voidcore/src/test/java/com/google/common/truth/IterableTest.java 508:508
+Generation
+Add Method Annotationcore/src/test/java/com/google/common/truth/IterableTest.java@private validateHackedFailure(ordered Ordered) : voidcore/src/test/java/com/google/common/truth/IterableTest.java@@Testcore/src/test/java/com/google/common/truth/IterableTest.java 508:516
+Generation
+Change Method Access Modifiercore/src/test/java/com/google/common/truth/IterableTest.java@private validateHackedFailure(ordered Ordered) : voidcore/src/test/java/com/google/common/truth/IterableTest.java@public iterableHasExactlyInOrderWithOneShotIterableWrongOrder() : voidcore/src/test/java/com/google/common/truth/IterableTest.java 508:516
+******************************
+******************************
+coarse grained commits a4655e308eb65a6c59c6e9ada7f254d8d4b818a6
+fine grained commits ('ad1ab373bb2b23376a850a40893910256cc31bc4', '4553a53b1010c497736170939bfb58e5e0e9954e', '96d762b4b5917dbd515d00303cbfa516d3fdee26', '55da14b563b96c970daf4ce312f59fd5b9baa307', '0e14e8133e8ca16dac19799f506762737f18f3af')
+Generation
+Move Methodcore/src/main/java/com/google/common/truth/Expect.java@public hashCode() : intcore/src/main/java/com/google/common/truth/MapSubject.java@public hashCode() : intcore/src/main/java/com/google/common/truth/Expect.java 97:100
+******************************
+******************************
+coarse grained commits cf12cc46a31208dafb1b1fedbd798f76063783d8
+fine grained commits ('3357709b9d8dd0e8ae1de6635d388902de7e80dd', 'b99c7ad82ff6f5abc9d2360e49e3c452f0d40ca7', 'bb6846705d2aca2cb42c0d0e2ce0c8c0aa6aef03', '173eca7a02e7f120c1ecffc9b3c69997395d5c09', 'dde7e150bb2dd63240a6fdb7f0d084991e599d92')
+Generation
+Move And Rename Classcore/src/main/java/com/google/common/truth/FailureContext.java@com.google.common.truth.FailureContextcore/src/main/java/com/google/common/truth/FailureMetadata.java@com.google.common.truth.FailureMetadata.Messagecore/src/main/java/com/google/common/truth/FailureContext.java 7:46
+Generation
+Change Class Access Modifiercore/src/main/java/com/google/common/truth/FailureContext.java@com.google.common.truth.FailureContextcore/src/main/java/com/google/common/truth/FailureMetadata.java@com.google.common.truth.FailureMetadata.Messagecore/src/main/java/com/google/common/truth/FailureContext.java 7:46
+Generation
+Add Class Modifiercore/src/main/java/com/google/common/truth/FailureContext.java@com.google.common.truth.FailureContextcore/src/main/java/com/google/common/truth/FailureMetadata.java@com.google.common.truth.FailureMetadata.Messagecore/src/main/java/com/google/common/truth/FailureContext.java 7:46
+Generation
+Add Class Modifiercore/src/main/java/com/google/common/truth/FailureContext.java@com.google.common.truth.FailureContextcore/src/main/java/com/google/common/truth/FailureMetadata.java@com.google.common.truth.FailureMetadata.Messagecore/src/main/java/com/google/common/truth/FailureContext.java 7:46
+Generation
+Remove Class Annotationcore/src/main/java/com/google/common/truth/FailureContext.java@@Deprecatedcore/src/main/java/com/google/common/truth/FailureMetadata.java@com.google.common.truth.FailureMetadata.Messagecore/src/main/java/com/google/common/truth/FailureContext.java 7:7
+Generation
+Rename Methodcore/src/main/java/com/google/common/truth/FailureContext.java@protected getFailureMessage() : Stringcore/src/main/java/com/google/common/truth/FailureMetadata.java@public toString() : Stringcore/src/main/java/com/google/common/truth/FailureContext.java 21:24
+Generation
+Change Method Access Modifiercore/src/main/java/com/google/common/truth/FailureContext.java@public FailureContext(format String, args Object...)core/src/main/java/com/google/common/truth/FailureMetadata.java@package Message(format String, args Object...)core/src/main/java/com/google/common/truth/FailureContext.java 14:19
+Generation
+Add Method Annotationcore/src/main/java/com/google/common/truth/FailureContext.java@protected getFailureMessage() : Stringcore/src/main/java/com/google/common/truth/FailureMetadata.java@@Overridecore/src/main/java/com/google/common/truth/FailureContext.java 21:24
+Generation
+Remove Method Annotationcore/src/main/java/com/google/common/truth/FailureContext.java@@Nullablecore/src/main/java/com/google/common/truth/FailureMetadata.java@public toString() : Stringcore/src/main/java/com/google/common/truth/FailureContext.java 21:21
+Generation
+Change Method Access Modifiercore/src/main/java/com/google/common/truth/FailureContext.java@protected getFailureMessage() : Stringcore/src/main/java/com/google/common/truth/FailureMetadata.java@public toString() : Stringcore/src/main/java/com/google/common/truth/FailureContext.java 21:24
+Generation
+Add Method Annotationcore/src/main/java/com/google/common/truth/FailureContext.java@package countPlaceholders(template String) : intcore/src/main/java/com/google/common/truth/FailureMetadata.java@@VisibleForTestingcore/src/main/java/com/google/common/truth/FailureContext.java 30:45
+Generation
+Move Methodcore/src/main/java/com/google/common/truth/FailureContext.java@package countPlaceholders(template String) : intcore/src/main/java/com/google/common/truth/FailureMetadata.java@package countPlaceholders(template String) : intcore/src/main/java/com/google/common/truth/FailureContext.java 30:45
+******************************
+******************************
+coarse grained commits 056b9e6976f8d71799d54c054917e1dd7b591f58
+fine grained commits ('4ac7cb59fb59644df181623e56835f09c0650088', 'ff945ffe6d051046ea9fc36656c84f42afad7ff3', '4f858dae8423d78b154f0a46021a6c3d352d584e', '7b3b4388f89f4773216423df040191b19cc1aa8d', 'be00844cdd708e7991018ef1f1f669d764de2381')
+Generation
+Move And Inline Methodcore/src/main/java/com/google/common/truth/IterableSubject.java@public isOrdered() : voidcore/src/test/java/com/google/common/truth/MultimapTest.java@public valuesForKeyListMultimap() : voidcore/src/main/java/com/google/common/truth/IterableSubject.java 294:296
+******************************

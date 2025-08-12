@@ -1,0 +1,270 @@
+******************************
+coarse grained commits d5ecea49874ab7455f4f83c73a6e7f32b2c44249
+fine grained commits ('d3cb9eafac41b7724bab63e975db6e22e6b4fbb3', '055d09bdd16db42e2f8ac8eb492c84c819829b33')
+Generation
+Inline Methodretrolambda-maven-plugin/src/main/java/net/orfjackal/retrolambda/maven/ProcessClassesMojo.java@private processClassesInCurrentProcess() : voidretrolambda-maven-plugin/src/main/java/net/orfjackal/retrolambda/maven/ProcessClassesMojo.java@public execute() : voidretrolambda-maven-plugin/src/main/java/net/orfjackal/retrolambda/maven/ProcessClassesMojo.java 88:102
+Generation
+Rename Variableretrolambda-maven-plugin/src/main/java/net/orfjackal/retrolambda/maven/ProcessClassesMojo.java@p : Propertiesretrolambda-maven-plugin/src/main/java/net/orfjackal/retrolambda/maven/ProcessClassesMojo.java@config : Propertiesretrolambda-maven-plugin/src/main/java/net/orfjackal/retrolambda/maven/ProcessClassesMojo.java 91:91
+******************************
+******************************
+coarse grained commits e3ceab4d9ee1e4193a64b91493859270919c625a
+fine grained commits ('ef0cb3aaf0d0a684ab27de714c3ff82a5f6e430d', '4e28d90e2e83adff6c9eec43cd21a85f5d9c8e9a')
+Generation
+Change Type Declaration Kindretrolambda/src/main/java/net/orfjackal/retrolambda/Config.java@net.orfjackal.retrolambda.Configretrolambda/src/main/java/net/orfjackal/retrolambda/Config.java@net.orfjackal.retrolambda.Configretrolambda/src/main/java/net/orfjackal/retrolambda/Config.java 11:231
+Generation
+Extract Subclassretrolambda/src/main/java/net/orfjackal/retrolambda/Config.java@net.orfjackal.retrolambda.Configretrolambda/src/main/java/net/orfjackal/retrolambda/Config.java@net.orfjackal.retrolambda.Configretrolambda/src/main/java/net/orfjackal/retrolambda/Config.java 11:231
+Generation
+Push Down Methodretrolambda/src/main/java/net/orfjackal/retrolambda/Config.java@public isFullyConfigured() : booleanretrolambda/src/main/java/net/orfjackal/retrolambda/SystemPropertiesConfig.java@public isFullyConfigured() : booleanretrolambda/src/main/java/net/orfjackal/retrolambda/Config.java 45:47
+Generation
+Push Down Methodretrolambda/src/main/java/net/orfjackal/retrolambda/Config.java@private hasAllRequiredProperties() : booleanretrolambda/src/main/java/net/orfjackal/retrolambda/SystemPropertiesConfig.java@private hasAllRequiredProperties() : booleanretrolambda/src/main/java/net/orfjackal/retrolambda/Config.java 49:56
+Generation
+Push Down Methodretrolambda/src/main/java/net/orfjackal/retrolambda/Config.java@private isConfigured(parameter String) : booleanretrolambda/src/main/java/net/orfjackal/retrolambda/SystemPropertiesConfig.java@private isConfigured(parameter String) : booleanretrolambda/src/main/java/net/orfjackal/retrolambda/Config.java 58:69
+Generation
+Push Down Methodretrolambda/src/main/java/net/orfjackal/retrolambda/Config.java@public getBytecodeVersion() : intretrolambda/src/main/java/net/orfjackal/retrolambda/SystemPropertiesConfig.java@public getBytecodeVersion() : intretrolambda/src/main/java/net/orfjackal/retrolambda/Config.java 80:82
+Generation
+Push Down Methodretrolambda/src/main/java/net/orfjackal/retrolambda/Config.java@public getJavaVersion() : Stringretrolambda/src/main/java/net/orfjackal/retrolambda/SystemPropertiesConfig.java@public getJavaVersion() : Stringretrolambda/src/main/java/net/orfjackal/retrolambda/Config.java 84:86
+Generation
+Push Down Methodretrolambda/src/main/java/net/orfjackal/retrolambda/Config.java@public isDefaultMethodsEnabled() : booleanretrolambda/src/main/java/net/orfjackal/retrolambda/SystemPropertiesConfig.java@public isDefaultMethodsEnabled() : booleanretrolambda/src/main/java/net/orfjackal/retrolambda/Config.java 100:102
+Generation
+Push Down Methodretrolambda/src/main/java/net/orfjackal/retrolambda/Config.java@public getInputDir() : Pathretrolambda/src/main/java/net/orfjackal/retrolambda/SystemPropertiesConfig.java@public getInputDir() : Pathretrolambda/src/main/java/net/orfjackal/retrolambda/Config.java 111:117
+Generation
+Push Down Methodretrolambda/src/main/java/net/orfjackal/retrolambda/Config.java@public getOutputDir() : Pathretrolambda/src/main/java/net/orfjackal/retrolambda/SystemPropertiesConfig.java@public getOutputDir() : Pathretrolambda/src/main/java/net/orfjackal/retrolambda/Config.java 127:133
+Generation
+Push Down Methodretrolambda/src/main/java/net/orfjackal/retrolambda/Config.java@public getClasspath() : List<Path>retrolambda/src/main/java/net/orfjackal/retrolambda/SystemPropertiesConfig.java@public getClasspath() : List<Path>retrolambda/src/main/java/net/orfjackal/retrolambda/Config.java 147:157
+Generation
+Push Down Methodretrolambda/src/main/java/net/orfjackal/retrolambda/Config.java@private parsePathList(paths String) : List<Path>retrolambda/src/main/java/net/orfjackal/retrolambda/SystemPropertiesConfig.java@private parsePathList(paths String) : List<Path>retrolambda/src/main/java/net/orfjackal/retrolambda/Config.java 159:164
+Generation
+Push Down Methodretrolambda/src/main/java/net/orfjackal/retrolambda/Config.java@private readPathList(file Path) : List<Path>retrolambda/src/main/java/net/orfjackal/retrolambda/SystemPropertiesConfig.java@private readPathList(file Path) : List<Path>retrolambda/src/main/java/net/orfjackal/retrolambda/Config.java 166:175
+Generation
+Push Down Methodretrolambda/src/main/java/net/orfjackal/retrolambda/Config.java@public getIncludedFiles() : List<Path>retrolambda/src/main/java/net/orfjackal/retrolambda/SystemPropertiesConfig.java@public getIncludedFiles() : List<Path>retrolambda/src/main/java/net/orfjackal/retrolambda/Config.java 190:200
+Generation
+Push Down Methodretrolambda/src/main/java/net/orfjackal/retrolambda/Config.java@public getHelp() : Stringretrolambda/src/main/java/net/orfjackal/retrolambda/SystemPropertiesConfig.java@public getHelp() : Stringretrolambda/src/main/java/net/orfjackal/retrolambda/Config.java 204:209
+Generation
+Push Down Methodretrolambda/src/main/java/net/orfjackal/retrolambda/Config.java@private requiredParameterHelp(key String, lines String...) : voidretrolambda/src/main/java/net/orfjackal/retrolambda/SystemPropertiesConfig.java@private requiredParameterHelp(key String, lines String...) : voidretrolambda/src/main/java/net/orfjackal/retrolambda/Config.java 211:214
+Generation
+Push Down Methodretrolambda/src/main/java/net/orfjackal/retrolambda/Config.java@private alternativeParameterHelp(key String, replaces String, lines String...) : voidretrolambda/src/main/java/net/orfjackal/retrolambda/SystemPropertiesConfig.java@private alternativeParameterHelp(key String, replaces String, lines String...) : voidretrolambda/src/main/java/net/orfjackal/retrolambda/Config.java 216:219
+Generation
+Push Down Methodretrolambda/src/main/java/net/orfjackal/retrolambda/Config.java@private optionalParameterHelp(key String, lines String...) : voidretrolambda/src/main/java/net/orfjackal/retrolambda/SystemPropertiesConfig.java@private optionalParameterHelp(key String, lines String...) : voidretrolambda/src/main/java/net/orfjackal/retrolambda/Config.java 221:223
+Generation
+Push Down Methodretrolambda/src/main/java/net/orfjackal/retrolambda/Config.java@private formatPropertyHelp(key String, tag String, lines String...) : Stringretrolambda/src/main/java/net/orfjackal/retrolambda/SystemPropertiesConfig.java@private formatPropertyHelp(key String, tag String, lines String...) : Stringretrolambda/src/main/java/net/orfjackal/retrolambda/Config.java 225:230
+Generation
+Push Down Attributeretrolambda/src/main/java/net/orfjackal/retrolambda/Config.java@private PREFIX : Stringretrolambda/src/main/java/net/orfjackal/retrolambda/SystemPropertiesConfig.java@private PREFIX : Stringretrolambda/src/main/java/net/orfjackal/retrolambda/Config.java 13:13
+Generation
+Push Down Attributeretrolambda/src/main/java/net/orfjackal/retrolambda/Config.java@public BYTECODE_VERSION : Stringretrolambda/src/main/java/net/orfjackal/retrolambda/SystemPropertiesConfig.java@public BYTECODE_VERSION : Stringretrolambda/src/main/java/net/orfjackal/retrolambda/Config.java 14:14
+Generation
+Push Down Attributeretrolambda/src/main/java/net/orfjackal/retrolambda/Config.java@public DEFAULT_METHODS : Stringretrolambda/src/main/java/net/orfjackal/retrolambda/SystemPropertiesConfig.java@public DEFAULT_METHODS : Stringretrolambda/src/main/java/net/orfjackal/retrolambda/Config.java 15:15
+Generation
+Push Down Attributeretrolambda/src/main/java/net/orfjackal/retrolambda/Config.java@public INPUT_DIR : Stringretrolambda/src/main/java/net/orfjackal/retrolambda/SystemPropertiesConfig.java@public INPUT_DIR : Stringretrolambda/src/main/java/net/orfjackal/retrolambda/Config.java 16:16
+Generation
+Push Down Attributeretrolambda/src/main/java/net/orfjackal/retrolambda/Config.java@public OUTPUT_DIR : Stringretrolambda/src/main/java/net/orfjackal/retrolambda/SystemPropertiesConfig.java@public OUTPUT_DIR : Stringretrolambda/src/main/java/net/orfjackal/retrolambda/Config.java 17:17
+Generation
+Push Down Attributeretrolambda/src/main/java/net/orfjackal/retrolambda/Config.java@public CLASSPATH : Stringretrolambda/src/main/java/net/orfjackal/retrolambda/SystemPropertiesConfig.java@public CLASSPATH : Stringretrolambda/src/main/java/net/orfjackal/retrolambda/Config.java 18:18
+Generation
+Push Down Attributeretrolambda/src/main/java/net/orfjackal/retrolambda/Config.java@public CLASSPATH_FILE : Stringretrolambda/src/main/java/net/orfjackal/retrolambda/SystemPropertiesConfig.java@public CLASSPATH_FILE : Stringretrolambda/src/main/java/net/orfjackal/retrolambda/Config.java 19:19
+Generation
+Push Down Attributeretrolambda/src/main/java/net/orfjackal/retrolambda/Config.java@public INCLUDED_FILES : Stringretrolambda/src/main/java/net/orfjackal/retrolambda/SystemPropertiesConfig.java@public INCLUDED_FILES : Stringretrolambda/src/main/java/net/orfjackal/retrolambda/Config.java 20:20
+Generation
+Push Down Attributeretrolambda/src/main/java/net/orfjackal/retrolambda/Config.java@public INCLUDED_FILES_FILE : Stringretrolambda/src/main/java/net/orfjackal/retrolambda/SystemPropertiesConfig.java@public INCLUDED_FILES_FILE : Stringretrolambda/src/main/java/net/orfjackal/retrolambda/Config.java 21:21
+Generation
+Push Down Attributeretrolambda/src/main/java/net/orfjackal/retrolambda/Config.java@private requiredProperties : List<String>retrolambda/src/main/java/net/orfjackal/retrolambda/SystemPropertiesConfig.java@private requiredProperties : List<String>retrolambda/src/main/java/net/orfjackal/retrolambda/Config.java 23:23
+Generation
+Push Down Attributeretrolambda/src/main/java/net/orfjackal/retrolambda/Config.java@private alternativeProperties : Map<String,String>retrolambda/src/main/java/net/orfjackal/retrolambda/SystemPropertiesConfig.java@private alternativeProperties : Map<String,String>retrolambda/src/main/java/net/orfjackal/retrolambda/Config.java 24:24
+Generation
+Push Down Attributeretrolambda/src/main/java/net/orfjackal/retrolambda/Config.java@private propertiesHelp : List<String>retrolambda/src/main/java/net/orfjackal/retrolambda/SystemPropertiesConfig.java@private propertiesHelp : List<String>retrolambda/src/main/java/net/orfjackal/retrolambda/Config.java 25:25
+Generation
+Push Down Attributeretrolambda/src/main/java/net/orfjackal/retrolambda/Config.java@private bytecodeVersionNames : Map<Integer,String>retrolambda/src/main/java/net/orfjackal/retrolambda/SystemPropertiesConfig.java@private bytecodeVersionNames : Map<Integer,String>retrolambda/src/main/java/net/orfjackal/retrolambda/Config.java 26:26
+Generation
+Push Down Attributeretrolambda/src/main/java/net/orfjackal/retrolambda/Config.java@private p : Propertiesretrolambda/src/main/java/net/orfjackal/retrolambda/SystemPropertiesConfig.java@private p : Propertiesretrolambda/src/main/java/net/orfjackal/retrolambda/Config.java 39:39
+Generation
+Push Down Methodretrolambda/src/main/java/net/orfjackal/retrolambda/Config.java@public Config(p Properties)retrolambda/src/main/java/net/orfjackal/retrolambda/SystemPropertiesConfig.java@public SystemPropertiesConfig(p Properties)retrolambda/src/main/java/net/orfjackal/retrolambda/Config.java 41:43
+******************************
+******************************
+coarse grained commits d660508dcb8a115353e445ae6a62d632e6f0a909
+fine grained commits ('56d250c20e36eaa2df62fcfdefb0c1b1487c864d', '6a24c585347c7d86ed04823ffe176d6850c4d034')
+Generation
+Move Methodretrolambda/src/main/java/net/orfjackal/retrolambda/files/BytecodeFileVisitor.java@private isJavaClass(file Path) : booleanretrolambda/src/main/java/net/orfjackal/retrolambda/files/ClasspathVisitor.java@private isJavaClass(file Path) : booleanretrolambda/src/main/java/net/orfjackal/retrolambda/files/BytecodeFileVisitor.java 20:22
+******************************
+******************************
+coarse grained commits 5f5b5010216df3cc9c4a2c341641667fa4fd6bd1
+fine grained commits ('5a8eee2a3817819e9ba6773ce228a3f0c50f485e', '5620cd7bb97508ff2863fa4130394c02ff903808')
+Generation
+Move And Rename Classretrolambda/src/main/java/net/orfjackal/retrolambda/InvokeStaticInterfaceMethodConverter.java@net.orfjackal.retrolambda.InvokeStaticInterfaceMethodConverterretrolambda/src/main/java/net/orfjackal/retrolambda/interfaces/FixInvokeStaticOnInterfaceMethod.java@net.orfjackal.retrolambda.interfaces.FixInvokeStaticOnInterfaceMethodretrolambda/src/main/java/net/orfjackal/retrolambda/InvokeStaticInterfaceMethodConverter.java 8:34
+Generation
+Move And Rename Classretrolambda/src/main/java/net/orfjackal/retrolambda/ApplyMethodRelocations.java@net.orfjackal.retrolambda.ApplyMethodRelocationsretrolambda/src/main/java/net/orfjackal/retrolambda/interfaces/UpdateRelocatedMethodInvocations.java@net.orfjackal.retrolambda.interfaces.UpdateRelocatedMethodInvocationsretrolambda/src/main/java/net/orfjackal/retrolambda/ApplyMethodRelocations.java 9:41
+Generation
+Move And Rename Classretrolambda/src/main/java/net/orfjackal/retrolambda/LambdaSavingClassFileTransformer.java@net.orfjackal.retrolambda.LambdaSavingClassFileTransformerretrolambda/src/main/java/net/orfjackal/retrolambda/lambdas/LambdaClassSaverAgent.java@net.orfjackal.retrolambda.lambdas.LambdaClassSaverAgentretrolambda/src/main/java/net/orfjackal/retrolambda/LambdaSavingClassFileTransformer.java 9:25
+******************************
+******************************
+coarse grained commits 528abcaff26af58571d8c383fde9705db3530a97
+fine grained commits ('4664a51765d91c19719632290b26aef9bded46dc', '9e89e869ebf1dc32bf00a6cb717ed40f76bda165')
+Generation
+Move Methodretrolambda/src/main/java/net/orfjackal/retrolambda/LambdaClassBackporter.java@public visitMethod(access int, name String, desc String, signature String, exceptions String[]) : MethodVisitorretrolambda/src/main/java/net/orfjackal/retrolambda/LambdaClassBackporter.java@public visitMethod(access int, name String, desc String, signature String, exceptions String[]) : MethodVisitorretrolambda/src/main/java/net/orfjackal/retrolambda/LambdaClassBackporter.java 38:45
+Generation
+Move Methodretrolambda/src/main/java/net/orfjackal/retrolambda/LambdaUsageBackporter.java@public visitEnd() : voidretrolambda/src/main/java/net/orfjackal/retrolambda/LambdaClassBackporter.java@public visitEnd() : voidretrolambda/src/main/java/net/orfjackal/retrolambda/LambdaUsageBackporter.java 86:92
+******************************
+******************************
+coarse grained commits 8f298d07ceac3b231f2554e09ee6eaa8ee317b78
+fine grained commits ('74e2c432cc7132a6e22248b567ef650b56ed835b', '052c0b0ab182867f99d9eba00922b12ed5720963', '525bfff66315b8151459babb33f6f3b4dcff9a04')
+Generation
+Move Methodretrolambda/src/main/java/net/orfjackal/retrolambda/RemoveDefaultMethods.java@public visitMethod(access int, name String, desc String, signature String, exceptions String[]) : MethodVisitorretrolambda/src/main/java/net/orfjackal/retrolambda/RemoveStaticMethods.java@public visitMethod(access int, name String, desc String, signature String, exceptions String[]) : MethodVisitorretrolambda/src/main/java/net/orfjackal/retrolambda/RemoveDefaultMethods.java 22:29
+******************************
+******************************
+coarse grained commits 17a703ff8a57948c1a803886d53b8bd478cdc338
+fine grained commits ('15996e31e4202b00ac592dede3d657df23bee062', '88c682827465e2ae0878d31aae208923055b0408', '437009d5aada11ff56641d88183a7a19e8fd9ef1')
+Generation
+Extract Methodend-to-end-tests/src/test/java/net/orfjackal/retrolambda/test/LambdaClassesTest.java@private getDeclaredMethodNames(clazz Class<?>) : Set<String>end-to-end-tests/src/test/java/net/orfjackal/retrolambda/test/LambdaClassesTest.java@private getMethodsNames(clazz Class<?>) : Set<String>end-to-end-tests/src/test/java/net/orfjackal/retrolambda/test/LambdaClassesTest.java 91:99
+Generation
+Change Return Typeend-to-end-tests/src/test/java/net/orfjackal/retrolambda/test/LambdaClassesTest.java@Set<String>end-to-end-tests/src/test/java/net/orfjackal/retrolambda/test/LambdaClassesTest.java@voidend-to-end-tests/src/test/java/net/orfjackal/retrolambda/test/LambdaClassesTest.java 91:91
+Generation
+Remove Parameterend-to-end-tests/src/test/java/net/orfjackal/retrolambda/test/LambdaClassesTest.java@clazz : Class<?>end-to-end-tests/src/test/java/net/orfjackal/retrolambda/test/LambdaClassesTest.java@public enclosing_classes_contain_no_unnecessary_methods_in_addition_to_the_lambda_body() : voidend-to-end-tests/src/test/java/net/orfjackal/retrolambda/test/LambdaClassesTest.java 91:91
+Generation
+Add Method Annotationend-to-end-tests/src/test/java/net/orfjackal/retrolambda/test/LambdaClassesTest.java@private getDeclaredMethodNames(clazz Class<?>) : Set<String>end-to-end-tests/src/test/java/net/orfjackal/retrolambda/test/LambdaClassesTest.java@@Testend-to-end-tests/src/test/java/net/orfjackal/retrolambda/test/LambdaClassesTest.java 91:99
+Generation
+Add Thrown Exception Typeend-to-end-tests/src/test/java/net/orfjackal/retrolambda/test/LambdaClassesTest.java@private getDeclaredMethodNames(clazz Class<?>) : Set<String>end-to-end-tests/src/test/java/net/orfjackal/retrolambda/test/LambdaClassesTest.java@ClassNotFoundExceptionend-to-end-tests/src/test/java/net/orfjackal/retrolambda/test/LambdaClassesTest.java 91:99
+Generation
+Change Method Access Modifierend-to-end-tests/src/test/java/net/orfjackal/retrolambda/test/LambdaClassesTest.java@private getDeclaredMethodNames(clazz Class<?>) : Set<String>end-to-end-tests/src/test/java/net/orfjackal/retrolambda/test/LambdaClassesTest.java@public enclosing_classes_contain_no_unnecessary_methods_in_addition_to_the_lambda_body() : voidend-to-end-tests/src/test/java/net/orfjackal/retrolambda/test/LambdaClassesTest.java 91:99
+Generation
+Remove Method Modifierend-to-end-tests/src/test/java/net/orfjackal/retrolambda/test/LambdaClassesTest.java@private getDeclaredMethodNames(clazz Class<?>) : Set<String>end-to-end-tests/src/test/java/net/orfjackal/retrolambda/test/LambdaClassesTest.java@public enclosing_classes_contain_no_unnecessary_methods_in_addition_to_the_lambda_body() : voidend-to-end-tests/src/test/java/net/orfjackal/retrolambda/test/LambdaClassesTest.java 91:99
+******************************
+******************************
+coarse grained commits f2a061c2e43030f2f1348a6ad1f412324224df6a
+fine grained commits ('2dbd804bee9edcb3e77bea2c294b06679c827012', '151a36c8753ea5f94004aa81516337e1fce372a3', '95fbf37c316ec3a1b48d1a15b9ad78e6066603df')
+Generation
+Move Attributeretrolambda/src/main/java/net/orfjackal/retrolambda/BytecodeTransformingFileVisitor.java@private saver : ClassSaverretrolambda/src/main/java/net/orfjackal/retrolambda/LambdaClassSaver.java@private saver : ClassSaverretrolambda/src/main/java/net/orfjackal/retrolambda/BytecodeTransformingFileVisitor.java 10:10
+******************************
+******************************
+coarse grained commits 91200a06b13a776a00f5a1bac633bdff8838b77b
+fine grained commits ('76f713e9f2bbaf7b84b178f29104f03f87712953', 'ed529511f3c78151df4dfb4eb9f75dce7b1ee1c8', '2dbd804bee9edcb3e77bea2c294b06679c827012')
+Generation
+Split Parameterretrolambda/src/main/java/net/orfjackal/retrolambda/LambdaClassSaver.java@outputDir : Pathretrolambda/src/main/java/net/orfjackal/retrolambda/LambdaClassSaver.java@saver : ClassSaverretrolambda/src/main/java/net/orfjackal/retrolambda/LambdaClassSaver.java 11:11
+Generation
+Split Attributeretrolambda/src/main/java/net/orfjackal/retrolambda/LambdaClassSaver.java@outputDir : Pathretrolambda/src/main/java/net/orfjackal/retrolambda/LambdaClassSaver.java@saver : ClassSaverretrolambda/src/main/java/net/orfjackal/retrolambda/LambdaClassSaver.java 8:8
+******************************
+******************************
+coarse grained commits 8767301357ec12827259d4c56e89b5595d552692
+fine grained commits ('13d461f4204ec937b4b6c01276183f28e24a8ebb', '28e7aa910e3edb4dfbd6e9b29bd1ca5f624d91e8', '6382656592c76cdebb20e584e285360921d9eaff')
+Generation
+Rename Methodend-to-end-tests/src/test/java/net/orfjackal/retrolambda/test/DefaultMethodsTest.java@public test_override_primitive() : voidend-to-end-tests/src/test/java/net/orfjackal/retrolambda/test/DefaultMethodsTest.java@public default_method_argument_type_refined_in_child_interface() : voidend-to-end-tests/src/test/java/net/orfjackal/retrolambda/test/DefaultMethodsTest.java 128:141
+Generation
+Change Variable Typeend-to-end-tests/src/test/java/net/orfjackal/retrolambda/test/DefaultMethodsTest.java@d1 : DeepChildend-to-end-tests/src/test/java/net/orfjackal/retrolambda/test/DefaultMethodsTest.java@child : RefineArgChildend-to-end-tests/src/test/java/net/orfjackal/retrolambda/test/DefaultMethodsTest.java 130:132
+Generation
+Rename Variableend-to-end-tests/src/test/java/net/orfjackal/retrolambda/test/DefaultMethodsTest.java@d1 : DeepChildend-to-end-tests/src/test/java/net/orfjackal/retrolambda/test/DefaultMethodsTest.java@child : RefineArgChildend-to-end-tests/src/test/java/net/orfjackal/retrolambda/test/DefaultMethodsTest.java 130:132
+******************************
+******************************
+coarse grained commits 08951f06d4f6ca0d2a0f0258e43ef7feebcf01b0
+fine grained commits ('76a490e7859a3fff8af7a1a4f436c36903a2790d', 'b9c2b6450bdb7a5fa8a548f79381f2bccd205dbf', '4664a51765d91c19719632290b26aef9bded46dc')
+Generation
+Rename Variableretrolambda/src/main/java/net/orfjackal/retrolambda/LambdaUsageBackporter.java@factoryMethod : LambdaFactoryMethodretrolambda/src/main/java/net/orfjackal/retrolambda/LambdaUsageBackporter.java@factory : LambdaFactoryMethodretrolambda/src/main/java/net/orfjackal/retrolambda/LambdaUsageBackporter.java 124:124
+Generation
+Move Methodretrolambda/src/main/java/net/orfjackal/retrolambda/LambdaUsageBackporter.java@public visitEnd() : voidretrolambda/src/main/java/net/orfjackal/retrolambda/LambdaClassBackporter.java@public visitEnd() : voidretrolambda/src/main/java/net/orfjackal/retrolambda/LambdaUsageBackporter.java 86:92
+Generation
+Move And Rename Methodretrolambda/src/main/java/net/orfjackal/retrolambda/LambdaUsageBackporter.java@private asmToInvokerType(arg Object, classLoader ClassLoader, caller MethodHandles.Lookup) : Objectretrolambda/src/main/java/net/orfjackal/retrolambda/LambdaReifier.java@private asmToJdkType(arg Object, classLoader ClassLoader, caller MethodHandles.Lookup) : Objectretrolambda/src/main/java/net/orfjackal/retrolambda/LambdaUsageBackporter.java 151:159
+******************************
+******************************
+coarse grained commits 811bb36d4aa1bdf5b14745c3635c39fe65e8bef1
+fine grained commits ('809397f24ba57e80bc80540b39dd238c40148f8a', '3f2604ed6fa0feb20814df6c1cf95ce0f8b04f2b', '73e7be4c36fb693d50bce33224dd5d5ee8b70e00', '62aa4e2d67e453b69b13d5c0ff9eb6368c69e96b')
+Generation
+Rename Variableretrolambda/src/main/java/net/orfjackal/retrolambda/Config.java@s : nullretrolambda/src/main/java/net/orfjackal/retrolambda/Config.java@line : nullretrolambda/src/main/java/net/orfjackal/retrolambda/Config.java 153:153
+******************************
+******************************
+coarse grained commits 0925d8ae97eb8293e3a66526106841451da4a18f
+fine grained commits ('27e429a2953c5db2c470ce688a8d498d1899fe0b', 'ee270a845ddd581765fd743e56cd1adda7896b6a', '544fd4e734c8ca5328746a67aac1753f3df1c9a8', '35fc9717a85c944bc613f488771343aacb48a526')
+Generation
+Move And Rename Classend-to-end-tests/src/test/java/net/orfjackal/retrolambda/test/DefaultMethodsTest.java@net.orfjackal.retrolambda.test.DefaultMethodsTest.ABretrolambda/src/test/java/net/orfjackal/retrolambda/ClassHierarchyAnalyzerTest.java@net.orfjackal.retrolambda.ClassHierarchyAnalyzerTest.ChildClassend-to-end-tests/src/test/java/net/orfjackal/retrolambda/test/DefaultMethodsTest.java 146:147
+Generation
+Move And Rename Classend-to-end-tests/src/test/java/net/orfjackal/retrolambda/test/DefaultMethodsTest.java@net.orfjackal.retrolambda.test.DefaultMethodsTest.BAretrolambda/src/test/java/net/orfjackal/retrolambda/ClassHierarchyAnalyzerTest.java@net.orfjackal.retrolambda.ClassHierarchyAnalyzerTest.InheritsDefaultend-to-end-tests/src/test/java/net/orfjackal/retrolambda/test/DefaultMethodsTest.java 149:150
+Generation
+Extract Superclassend-to-end-tests/src/test/java/net/orfjackal/retrolambda/test/DefaultMethodsTest.java@net.orfjackal.retrolambda.test.DefaultMethodsTest.ABretrolambda/src/test/java/net/orfjackal/retrolambda/ClassHierarchyAnalyzerTest.java@net.orfjackal.retrolambda.ClassHierarchyAnalyzerTest.ChildClassend-to-end-tests/src/test/java/net/orfjackal/retrolambda/test/DefaultMethodsTest.java 146:147
+******************************
+******************************
+coarse grained commits e4898b6e19a2daf11d4667d679e445a1a1fc837b
+fine grained commits ('2dbd804bee9edcb3e77bea2c294b06679c827012', '151a36c8753ea5f94004aa81516337e1fce372a3', '95fbf37c316ec3a1b48d1a15b9ad78e6066603df', '160e754ebc08c2b8cd69fd80bb2a22615e8c769a')
+Generation
+Extract Variableretrolambda/src/main/java/net/orfjackal/retrolambda/Retrolambda.java@retrolambda/src/main/java/net/orfjackal/retrolambda/Retrolambda.java@saver : ClassSaverretrolambda/src/main/java/net/orfjackal/retrolambda/Retrolambda.java 32:42
+Generation
+Extract Classretrolambda/src/main/java/net/orfjackal/retrolambda/LambdaClassSaver.java@net.orfjackal.retrolambda.LambdaClassSaverretrolambda/src/main/java/net/orfjackal/retrolambda/LambdaClassSaver.java@net.orfjackal.retrolambda.LambdaClassSaverretrolambda/src/main/java/net/orfjackal/retrolambda/LambdaClassSaver.java 6:35
+Generation
+Move Attributeretrolambda/src/main/java/net/orfjackal/retrolambda/LambdaClassSaver.java@private outputDir : Pathretrolambda/src/main/java/net/orfjackal/retrolambda/ClassSaver.java@private outputDir : Pathretrolambda/src/main/java/net/orfjackal/retrolambda/LambdaClassSaver.java 8:8
+******************************
+******************************
+coarse grained commits c14b288e83df74176958bbe0c1372fc9383eba15
+fine grained commits ('183df2d1670ca8cf1ae4b9cf2bea2c88d982f24d', '064006507169deec51d66487646fbb4f55edfc10', '27e429a2953c5db2c470ce688a8d498d1899fe0b', 'ee270a845ddd581765fd743e56cd1adda7896b6a')
+Generation
+Rename Methodretrolambda/src/main/java/net/orfjackal/retrolambda/interfaces/ClassHierarchyAnalyzer.java@public getInterfaceMethods(type Type) : List<MethodRef>retrolambda/src/main/java/net/orfjackal/retrolambda/interfaces/ClassHierarchyAnalyzer.java@private getAllInterfaces(interfaceType Type) : Set<Type>retrolambda/src/main/java/net/orfjackal/retrolambda/interfaces/ClassHierarchyAnalyzer.java 157:167
+Generation
+Change Variable Typeretrolambda/src/main/java/net/orfjackal/retrolambda/interfaces/ClassHierarchyAnalyzer.java@results : Set<MethodRef>retrolambda/src/main/java/net/orfjackal/retrolambda/interfaces/ClassHierarchyAnalyzer.java@results : HashSet<Type>retrolambda/src/main/java/net/orfjackal/retrolambda/interfaces/ClassHierarchyAnalyzer.java 159:159
+Generation
+Change Return Typeretrolambda/src/main/java/net/orfjackal/retrolambda/interfaces/ClassHierarchyAnalyzer.java@List<MethodRef>retrolambda/src/main/java/net/orfjackal/retrolambda/interfaces/ClassHierarchyAnalyzer.java@Set<Type>retrolambda/src/main/java/net/orfjackal/retrolambda/interfaces/ClassHierarchyAnalyzer.java 158:158
+Generation
+Rename Parameterretrolambda/src/main/java/net/orfjackal/retrolambda/interfaces/ClassHierarchyAnalyzer.java@type : Typeretrolambda/src/main/java/net/orfjackal/retrolambda/interfaces/ClassHierarchyAnalyzer.java@interfaceType : Typeretrolambda/src/main/java/net/orfjackal/retrolambda/interfaces/ClassHierarchyAnalyzer.java 158:158
+Generation
+Remove Method Annotationretrolambda/src/main/java/net/orfjackal/retrolambda/interfaces/ClassHierarchyAnalyzer.java@@Overrideretrolambda/src/main/java/net/orfjackal/retrolambda/interfaces/ClassHierarchyAnalyzer.java@private getAllInterfaces(interfaceType Type) : Set<Type>retrolambda/src/main/java/net/orfjackal/retrolambda/interfaces/ClassHierarchyAnalyzer.java 157:157
+Generation
+Change Method Access Modifierretrolambda/src/main/java/net/orfjackal/retrolambda/interfaces/ClassHierarchyAnalyzer.java@public getInterfaceMethods(type Type) : List<MethodRef>retrolambda/src/main/java/net/orfjackal/retrolambda/interfaces/ClassHierarchyAnalyzer.java@private getAllInterfaces(interfaceType Type) : Set<Type>retrolambda/src/main/java/net/orfjackal/retrolambda/interfaces/ClassHierarchyAnalyzer.java 157:167
+******************************
+******************************
+coarse grained commits ebcd14a601260cd9158bb6fc8f3f1afae1d4bf43
+fine grained commits ('ee1569e939f858606fefcaa3b2d25aca9863f37b', '76a490e7859a3fff8af7a1a4f436c36903a2790d', 'b9c2b6450bdb7a5fa8a548f79381f2bccd205dbf', '4664a51765d91c19719632290b26aef9bded46dc')
+Generation
+Rename Classretrolambda/src/main/java/net/orfjackal/retrolambda/LambdaClassBackporter.java@net.orfjackal.retrolambda.LambdaClassBackporter.MyClassVisitorretrolambda/src/main/java/net/orfjackal/retrolambda/LambdaClassBackporter.java@net.orfjackal.retrolambda.LambdaClassBackporter.LambdaClassVisitorretrolambda/src/main/java/net/orfjackal/retrolambda/LambdaClassBackporter.java 19:78
+Generation
+Rename Attributeretrolambda/src/main/java/net/orfjackal/retrolambda/LambdaClassBackporter.java@className : Stringretrolambda/src/main/java/net/orfjackal/retrolambda/LambdaClassBackporter.java@lambdaClass : Stringretrolambda/src/main/java/net/orfjackal/retrolambda/LambdaClassBackporter.java 21:21
+Generation
+Reorder Parameterretrolambda/src/main/java/net/orfjackal/retrolambda/LambdaUsageBackporter.java@invokedType : Typeretrolambda/src/main/java/net/orfjackal/retrolambda/LambdaFactoryMethod.java@lambdaClass : Stringretrolambda/src/main/java/net/orfjackal/retrolambda/LambdaUsageBackporter.java 193:193
+Generation
+Move Methodretrolambda/src/main/java/net/orfjackal/retrolambda/LambdaUsageBackporter.java@public LambdaFactoryMethod(invokedType Type, lambdaClass String)retrolambda/src/main/java/net/orfjackal/retrolambda/LambdaFactoryMethod.java@public LambdaFactoryMethod(lambdaClass String, invokedType Type)retrolambda/src/main/java/net/orfjackal/retrolambda/LambdaUsageBackporter.java 193:196
+******************************
+******************************
+coarse grained commits 7fef6c2eb9da1ce803d9524f154f4f929becb938
+fine grained commits ('5620cd7bb97508ff2863fa4130394c02ff903808', 'eb714b1b68aaa731b642e943b1e12da999b2e82d', '903b68d083a4e56498868d720aea1d7733de8ba2', '3185f5e13d6d624383037352d5e0e7b351fb7854', '74e2c432cc7132a6e22248b567ef650b56ed835b')
+Generation
+Remove Class Modifierretrolambda/src/main/java/net/orfjackal/retrolambda/LambdaClassBackporter.java@net.orfjackal.retrolambda.LambdaClassBackporter.MagicLambdaRemovingMethodVisitorretrolambda/src/main/java/net/orfjackal/retrolambda/UpdateRelocatedMethodInvocations.java@net.orfjackal.retrolambda.UpdateRelocatedMethodInvocations.UpdateMethodCallsretrolambda/src/main/java/net/orfjackal/retrolambda/LambdaClassBackporter.java 123:139
+Generation
+Add Parameterretrolambda/src/main/java/net/orfjackal/retrolambda/LambdaUsageBackporter.java@public transform(reader ClassReader, targetVersion int, methodRelocations MethodRelocations) : byte[]retrolambda/src/main/java/net/orfjackal/retrolambda/Transformers.java@chain : ClassVisitorChainretrolambda/src/main/java/net/orfjackal/retrolambda/LambdaUsageBackporter.java 15:33
+Generation
+Change Method Access Modifierretrolambda/src/main/java/net/orfjackal/retrolambda/LambdaUsageBackporter.java@public transform(reader ClassReader, targetVersion int, methodRelocations MethodRelocations) : byte[]retrolambda/src/main/java/net/orfjackal/retrolambda/Transformers.java@private transform(reader ClassReader, chain ClassVisitorChain) : byte[]retrolambda/src/main/java/net/orfjackal/retrolambda/LambdaUsageBackporter.java 15:33
+Generation
+Move Methodretrolambda/src/main/java/net/orfjackal/retrolambda/LambdaUsageBackporter.java@public transform(reader ClassReader, targetVersion int, methodRelocations MethodRelocations) : byte[]retrolambda/src/main/java/net/orfjackal/retrolambda/Transformers.java@private transform(reader ClassReader, chain ClassVisitorChain) : byte[]retrolambda/src/main/java/net/orfjackal/retrolambda/LambdaUsageBackporter.java 15:33
+******************************
+******************************
+coarse grained commits 8be2527b5ec2c04ccba6fa26c6508b97e246c8b5
+fine grained commits ('d59dd79fcf86829aa73594adeb80f8345c92196f', '81cdee73204dd20fc76353431e26dbfdfc1da8e6', '2fce3776f1a1788ea21d2062daa835818f84680e', '310ccb673d6751964129c405f6ba9e992dba4aed', '32af4b7a0a49af4c50a74ca14928d402ed55082b')
+Generation
+Move Classretrolambda/src/main/java/net/orfjackal/retrolambda/LambdaBackporter.java@net.orfjackal.retrolambda.LambdaBackporter.MyClassVisitorretrolambda/src/main/java/net/orfjackal/retrolambda/LambdaClassBackporter.java@net.orfjackal.retrolambda.LambdaClassBackporter.MyClassVisitorretrolambda/src/main/java/net/orfjackal/retrolambda/LambdaBackporter.java 32:37
+******************************
+******************************
+coarse grained commits 536e98a149f6c30bb118ba94e42127362ed883dc
+fine grained commits ('27e429a2953c5db2c470ce688a8d498d1899fe0b', 'ee270a845ddd581765fd743e56cd1adda7896b6a', '544fd4e734c8ca5328746a67aac1753f3df1c9a8', '35fc9717a85c944bc613f488771343aacb48a526', '6ceaf6e7c61c1a405e72e4fd9559c4d183022c6e')
+Generation
+Change Class Access Modifierend-to-end-tests/src/test/java/net/orfjackal/retrolambda/test/DefaultMethodsTest.java@net.orfjackal.retrolambda.test.DefaultMethodsTest.ABretrolambda/src/main/java/net/orfjackal/retrolambda/interfaces/MethodKind.java@net.orfjackal.retrolambda.interfaces.MethodKind.Abstractend-to-end-tests/src/test/java/net/orfjackal/retrolambda/test/DefaultMethodsTest.java 146:147
+Generation
+Add Class Modifierend-to-end-tests/src/test/java/net/orfjackal/retrolambda/test/DefaultMethodsTest.java@net.orfjackal.retrolambda.test.DefaultMethodsTest.ABretrolambda/src/main/java/net/orfjackal/retrolambda/interfaces/MethodKind.java@net.orfjackal.retrolambda.interfaces.MethodKind.Abstractend-to-end-tests/src/test/java/net/orfjackal/retrolambda/test/DefaultMethodsTest.java 146:147
+Generation
+Extract Superclassend-to-end-tests/src/test/java/net/orfjackal/retrolambda/test/DefaultMethodsTest.java@net.orfjackal.retrolambda.test.DefaultMethodsTest.BAretrolambda/src/test/java/net/orfjackal/retrolambda/ClassHierarchyAnalyzerTest.java@net.orfjackal.retrolambda.ClassHierarchyAnalyzerTest.ChildClassend-to-end-tests/src/test/java/net/orfjackal/retrolambda/test/DefaultMethodsTest.java 149:150
+******************************
+******************************
+coarse grained commits 7b846f43730e64f82786751c58d74ea41325f22a
+fine grained commits ('b4f3efe33e34b49134f9e37100bf68ad7fe475a5', '56e008aeb9efdbbbe819daaf340e62f13f291a0b', 'c8b763121afb7a10091d231b9f08e772103d4358', 'ee2aa3db73afbab7a4b651e9b8165434f5b509bf', '98c01453ae9b44fd9b8b5c3398346a3e48a5cafe')
+Generation
+Change Method Access Modifierretrolambda/src/main/java/net/orfjackal/retrolambda/interfaces/RemoveStaticMethods.java@private isStaticMethod(access int) : booleanretrolambda/src/main/java/net/orfjackal/retrolambda/util/Flags.java@public isStaticMethod(access int) : booleanretrolambda/src/main/java/net/orfjackal/retrolambda/interfaces/RemoveStaticMethods.java 24:26
+Generation
+Move Methodretrolambda/src/main/java/net/orfjackal/retrolambda/interfaces/RemoveStaticMethods.java@private isStaticMethod(access int) : booleanretrolambda/src/main/java/net/orfjackal/retrolambda/util/Flags.java@public isStaticMethod(access int) : booleanretrolambda/src/main/java/net/orfjackal/retrolambda/interfaces/RemoveStaticMethods.java 24:26
+******************************
+******************************
+coarse grained commits fd893f7e5a56ad1a63c7aea0da9bdac816a3d73b
+fine grained commits ('a0ede57bbdffd06c75ca7a7bb1a691e23890b02b', '2fa9f07775241fb9bce3f379f1a0441c1c2b3de9', '183df2d1670ca8cf1ae4b9cf2bea2c88d982f24d', '064006507169deec51d66487646fbb4f55edfc10', '27e429a2953c5db2c470ce688a8d498d1899fe0b')
+Generation
+Move And Rename Classend-to-end-tests/src/test/java/net/orfjackal/retrolambda/test/DefaultMethodsTest.java@net.orfjackal.retrolambda.test.DefaultMethodsTest.BAretrolambda/src/test/java/net/orfjackal/retrolambda/ClassHierarchyAnalyzerTest.java@net.orfjackal.retrolambda.ClassHierarchyAnalyzerTest.ImplementsOriginalend-to-end-tests/src/test/java/net/orfjackal/retrolambda/test/DefaultMethodsTest.java 149:150
+******************************
+******************************
+coarse grained commits edbafc9decbf0c8989ad298c6136ee40bc1f7443
+fine grained commits ('76f713e9f2bbaf7b84b178f29104f03f87712953', 'ed529511f3c78151df4dfb4eb9f75dce7b1ee1c8', '2dbd804bee9edcb3e77bea2c294b06679c827012', '151a36c8753ea5f94004aa81516337e1fce372a3', '95fbf37c316ec3a1b48d1a15b9ad78e6066603df')
+Generation
+Remove Parameterretrolambda/src/main/java/net/orfjackal/retrolambda/LambdaUsageBackporter.java@bytecode : byte[]retrolambda/src/main/java/net/orfjackal/retrolambda/LambdaUsageBackporter.java@public transform(reader ClassReader, targetVersion int, methodRelocations MethodRelocations) : byte[]retrolambda/src/main/java/net/orfjackal/retrolambda/LambdaUsageBackporter.java 15:15
+******************************
+******************************
+coarse grained commits d1d0627d3d3170cbdb3e0c3ffeaba93b64a8b5a0
+fine grained commits ('6382656592c76cdebb20e584e285360921d9eaff', '586c91d645003728f40757a4fa399ea165299a2c', '4d950874c42e71d86f0a4d40bca8f79f0b0500c6', '72d273d5ef358c19d19c6bdb625ef76121c1282a', 'd4ef374a1522f0e750a2a8210c423c267ac950ff')
+Generation
+Rename Methodend-to-end-tests/src/test/java/net/orfjackal/retrolambda/test/DefaultMethodsTest.java@public primitives_run() : voidend-to-end-tests/src/test/java/net/orfjackal/retrolambda/test/DefaultMethodsTest.java@public default_methods_of_primitive_type() : voidend-to-end-tests/src/test/java/net/orfjackal/retrolambda/test/DefaultMethodsTest.java 77:88
+******************************

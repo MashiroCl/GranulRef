@@ -1,0 +1,1216 @@
+******************************
+coarse grained commits 6c79fa8b9f7f343513f8033a9f270057ad5249d6
+fine grained commits ('263974726602aea47265eff9a5a672fbdab00c0b', '3f649e2ac8e66fe790ada9ae4d7d4f6cdb4b6725')
+Generation
+Change Method Access Modifierredisson/src/main/java/org/redisson/RedissonRemoteService.java@private getBlockingQueue(name String, codec Codec) : RBlockingQueue<V>redisson/src/main/java/org/redisson/remote/BaseRemoteService.java@protected getBlockingQueue(name String, codec Codec) : RBlockingQueue<V>redisson/src/main/java/org/redisson/RedissonRemoteService.java 127:129
+Generation
+Pull Up Methodredisson/src/main/java/org/redisson/RedissonRemoteService.java@private getBlockingQueue(name String, codec Codec) : RBlockingQueue<V>redisson/src/main/java/org/redisson/remote/BaseRemoteService.java@protected getBlockingQueue(name String, codec Codec) : RBlockingQueue<V>redisson/src/main/java/org/redisson/RedissonRemoteService.java 127:129
+******************************
+******************************
+coarse grained commits ea7cd363a34d7238a1f5f3d90bab17cf3c8a5945
+fine grained commits ('ee8fc44f5e75ccfe53a39a8640906ec12e4bead7', '23a3e3dc9d8d57f003c9b61370f669810120d9a7')
+Generation
+Extract Methodredisson/src/main/java/org/redisson/RedissonBloomFilter.java@public contains(object T) : booleanredisson/src/main/java/org/redisson/RedissonBloomFilter.java@private index(objects Collection<T>) : List<Long>redisson/src/main/java/org/redisson/RedissonBloomFilter.java 116:152
+Generation
+Extract Methodredisson/src/main/java/org/redisson/RedissonBloomFilter.java@public contains(object T) : booleanredisson/src/main/java/org/redisson/RedissonBloomFilter.java@public contains(objects Collection<T>) : longredisson/src/main/java/org/redisson/RedissonBloomFilter.java 116:152
+******************************
+******************************
+coarse grained commits 422815d5fc9c39b158f2321ee03c60616626d067
+fine grained commits ('3363fbd4957a05ea020f5457dadd89d3e54acb98', 'f414cbf9d82e64f0ff4b31b7cb2ebeead8d23996')
+Generation
+Add Parameterredisson/src/main/java/org/redisson/RedissonPermitExpirableSemaphore.java@protected generateId() : byte[]redisson/src/main/java/org/redisson/connection/ServiceManager.java@size : intredisson/src/main/java/org/redisson/RedissonPermitExpirableSemaphore.java 317:321
+Generation
+Add Parameterredisson/src/main/java/org/redisson/cache/LocalCacheListener.java@public generateId() : byte[]redisson/src/main/java/org/redisson/connection/ServiceManager.java@size : intredisson/src/main/java/org/redisson/cache/LocalCacheListener.java 69:73
+******************************
+******************************
+coarse grained commits c9b645ddb602c8653cab8bc627048541a61b9e9d
+fine grained commits ('31edb4b85d63f04f4891cca09a93453ccdea6279', '20cf65dc57e21933026c6f1b1ec3027c25ed749a')
+Generation
+Extract Methodredisson/src/main/java/org/redisson/RedissonMapCache.java@public clear() : voidredisson/src/main/java/org/redisson/RedissonMapCache.java@public clearAsync() : RFuture<Boolean>redisson/src/main/java/org/redisson/RedissonMapCache.java 2322:2326
+******************************
+******************************
+coarse grained commits 78be821996fbfd6c3fa0854ba091698023ba2f3f
+fine grained commits ('7b7a41cfc34d5039a74fd2f31a68f3efd434e213', 'f640cec6ec3e4ad912a8863dbb36415673d4932a')
+Generation
+Extract Classredisson/src/main/java/org/redisson/RedisNodes.java@org.redisson.RedisNodesredisson/src/main/java/org/redisson/RedisNodes.java@org.redisson.RedisNodesredisson/src/main/java/org/redisson/RedisNodes.java 21:162
+Generation
+Extract Classredisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@org.redisson.connection.MasterSlaveConnectionManagerredisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@org.redisson.connection.MasterSlaveConnectionManagerredisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java 45:732
+Generation
+Move Attributeredisson/src/main/java/org/redisson/Redisson.java@private connectionEventsHub : ConnectionEventsHubredisson/src/main/java/org/redisson/connection/ServiceManager.java@private connectionEventsHub : ConnectionEventsHubredisson/src/main/java/org/redisson/Redisson.java 32:32
+Generation
+Move Attributeredisson/src/main/java/org/redisson/RedissonReactive.java@private connectionEventsHub : ConnectionEventsHubredisson/src/main/java/org/redisson/connection/ServiceManager.java@private connectionEventsHub : ConnectionEventsHubredisson/src/main/java/org/redisson/RedissonReactive.java 23:23
+Generation
+Move Attributeredisson/src/main/java/org/redisson/RedisNodes.java@package connectionEventsHub : ConnectionEventsHubredisson/src/main/java/org/redisson/connection/ServiceManager.java@private connectionEventsHub : ConnectionEventsHubredisson/src/main/java/org/redisson/RedisNodes.java 27:27
+Generation
+Change Attribute Access Modifierredisson/src/main/java/org/redisson/RedisNodes.java@package connectionEventsHub : ConnectionEventsHubredisson/src/main/java/org/redisson/connection/ServiceManager.java@private connectionEventsHub : ConnectionEventsHubredisson/src/main/java/org/redisson/RedisNodes.java 27:27
+Generation
+Move Methodredisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@public newTimeout(task TimerTask, delay long, unit TimeUnit) : Timeoutredisson/src/main/java/org/redisson/connection/ServiceManager.java@public newTimeout(task TimerTask, delay long, unit TimeUnit) : Timeoutredisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java 641:652
+Generation
+Remove Method Annotationredisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@@Overrideredisson/src/main/java/org/redisson/connection/ServiceManager.java@public newTimeout(task TimerTask, delay long, unit TimeUnit) : Timeoutredisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java 641:641
+Generation
+Move Methodredisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@public isShuttingDown() : booleanredisson/src/main/java/org/redisson/connection/ServiceManager.java@public isShuttingDown() : booleanredisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java 626:629
+Generation
+Remove Method Annotationredisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@@Overrideredisson/src/main/java/org/redisson/connection/ServiceManager.java@public isShuttingDown() : booleanredisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java 626:626
+Generation
+Move Methodredisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@public isShutdown() : booleanredisson/src/main/java/org/redisson/connection/ServiceManager.java@public isShutdown() : booleanredisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java 631:634
+Generation
+Remove Method Annotationredisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@@Overrideredisson/src/main/java/org/redisson/connection/ServiceManager.java@public isShutdown() : booleanredisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java 631:631
+Generation
+Move Methodredisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@public getId() : Stringredisson/src/main/java/org/redisson/connection/ServiceManager.java@public getId() : Stringredisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java 252:255
+Generation
+Remove Method Annotationredisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@@Overrideredisson/src/main/java/org/redisson/connection/ServiceManager.java@public getId() : Stringredisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java 252:252
+Generation
+Move Methodredisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@public getGroup() : EventLoopGroupredisson/src/main/java/org/redisson/connection/ServiceManager.java@public getGroup() : EventLoopGroupredisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java 636:639
+Generation
+Remove Method Annotationredisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@@Overrideredisson/src/main/java/org/redisson/connection/ServiceManager.java@public getGroup() : EventLoopGroupredisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java 636:636
+Generation
+Move Methodredisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@public getExecutor() : ExecutorServiceredisson/src/main/java/org/redisson/connection/ServiceManager.java@public getExecutor() : ExecutorServiceredisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java 676:678
+Generation
+Move Methodredisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@public getCfg() : Configredisson/src/main/java/org/redisson/connection/ServiceManager.java@public getCfg() : Configredisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java 262:265
+Generation
+Remove Method Annotationredisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@@Overrideredisson/src/main/java/org/redisson/connection/ServiceManager.java@public getCfg() : Configredisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java 262:262
+Generation
+Move Methodredisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@public getShutdownLatch() : InfinitySemaphoreLatchredisson/src/main/java/org/redisson/connection/ServiceManager.java@public getShutdownLatch() : InfinitySemaphoreLatchredisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java 654:657
+Generation
+Remove Method Annotationredisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@@Overrideredisson/src/main/java/org/redisson/connection/ServiceManager.java@public getShutdownLatch() : InfinitySemaphoreLatchredisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java 654:654
+Generation
+Move Methodredisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@public createNodeNotFoundException(source NodeSource) : RedisNodeNotFoundExceptionredisson/src/main/java/org/redisson/connection/ServiceManager.java@public createNodeNotFoundException(source NodeSource) : RedisNodeNotFoundExceptionredisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java 550:558
+Generation
+Move Methodredisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@public getConfig() : MasterSlaveServersConfigredisson/src/main/java/org/redisson/connection/ServiceManager.java@public getConfig() : MasterSlaveServersConfigredisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java 267:270
+Generation
+Remove Method Annotationredisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@@Overrideredisson/src/main/java/org/redisson/connection/ServiceManager.java@public getConfig() : MasterSlaveServersConfigredisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java 267:267
+Generation
+Move Methodredisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@public getElementsSubscribeService() : ElementsSubscribeServiceredisson/src/main/java/org/redisson/connection/ServiceManager.java@public getElementsSubscribeService() : ElementsSubscribeServiceredisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java 672:674
+Generation
+Move Methodredisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@public resolveIP(address RedisURI) : CompletableFuture<RedisURI>redisson/src/main/java/org/redisson/connection/ServiceManager.java@public resolveIP(address RedisURI) : CompletableFuture<RedisURI>redisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java 689:692
+Generation
+Remove Method Annotationredisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@@Overrideredisson/src/main/java/org/redisson/connection/ServiceManager.java@public resolveIP(address RedisURI) : CompletableFuture<RedisURI>redisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java 689:689
+Generation
+Move Methodredisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@protected resolveIP(scheme String, address RedisURI) : CompletableFuture<RedisURI>redisson/src/main/java/org/redisson/connection/ServiceManager.java@public resolveIP(scheme String, address RedisURI) : CompletableFuture<RedisURI>redisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java 694:716
+Generation
+Change Method Access Modifierredisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@protected resolveIP(scheme String, address RedisURI) : CompletableFuture<RedisURI>redisson/src/main/java/org/redisson/connection/ServiceManager.java@public resolveIP(scheme String, address RedisURI) : CompletableFuture<RedisURI>redisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java 694:716
+Generation
+Remove Method Modifierredisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@protected resolveIP(scheme String, address RedisURI) : CompletableFuture<RedisURI>redisson/src/main/java/org/redisson/connection/ServiceManager.java@public resolveIP(scheme String, address RedisURI) : CompletableFuture<RedisURI>redisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java 694:716
+Generation
+Move Methodredisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@protected toURI(scheme String, host String, port String) : RedisURIredisson/src/main/java/org/redisson/connection/ServiceManager.java@public toURI(scheme String, host String, port String) : RedisURIredisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java 718:730
+Generation
+Change Method Access Modifierredisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@protected toURI(scheme String, host String, port String) : RedisURIredisson/src/main/java/org/redisson/connection/ServiceManager.java@public toURI(scheme String, host String, port String) : RedisURIredisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java 718:730
+Generation
+Remove Method Modifierredisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@protected toURI(scheme String, host String, port String) : RedisURIredisson/src/main/java/org/redisson/connection/ServiceManager.java@public toURI(scheme String, host String, port String) : RedisURIredisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java 718:730
+Generation
+Move Attributeredisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@public DUMMY_TIMEOUT : Timeoutredisson/src/main/java/org/redisson/connection/ServiceManager.java@public DUMMY_TIMEOUT : Timeoutredisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java 47:72
+Generation
+Move Attributeredisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@private connectionEventsHub : ConnectionEventsHubredisson/src/main/java/org/redisson/connection/ServiceManager.java@private connectionEventsHub : ConnectionEventsHubredisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java 102:102
+Generation
+Move Attributeredisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@protected id : Stringredisson/src/main/java/org/redisson/connection/ServiceManager.java@private id : Stringredisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java 74:74
+Generation
+Change Attribute Access Modifierredisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@protected id : Stringredisson/src/main/java/org/redisson/connection/ServiceManager.java@private id : Stringredisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java 74:74
+Generation
+Move Attributeredisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@protected group : EventLoopGroupredisson/src/main/java/org/redisson/connection/ServiceManager.java@private group : EventLoopGroupredisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java 86:86
+Generation
+Change Attribute Access Modifierredisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@protected group : EventLoopGroupredisson/src/main/java/org/redisson/connection/ServiceManager.java@private group : EventLoopGroupredisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java 86:86
+Generation
+Move Attributeredisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@protected socketChannelClass : Class<? extends SocketChannel>redisson/src/main/java/org/redisson/connection/ServiceManager.java@private socketChannelClass : Class<? extends SocketChannel>redisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java 88:88
+Generation
+Change Attribute Access Modifierredisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@protected socketChannelClass : Class<? extends SocketChannel>redisson/src/main/java/org/redisson/connection/ServiceManager.java@private socketChannelClass : Class<? extends SocketChannel>redisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java 88:88
+Generation
+Move Attributeredisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@protected resolverGroup : AddressResolverGroup<InetSocketAddress>redisson/src/main/java/org/redisson/connection/ServiceManager.java@private resolverGroup : AddressResolverGroup<InetSocketAddress>redisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java 108:108
+Generation
+Change Attribute Access Modifierredisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@protected resolverGroup : AddressResolverGroup<InetSocketAddress>redisson/src/main/java/org/redisson/connection/ServiceManager.java@private resolverGroup : AddressResolverGroup<InetSocketAddress>redisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java 108:108
+Generation
+Move Attributeredisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@private executor : ExecutorServiceredisson/src/main/java/org/redisson/connection/ServiceManager.java@private executor : ExecutorServiceredisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java 104:104
+Generation
+Move Attributeredisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@private cfg : Configredisson/src/main/java/org/redisson/connection/ServiceManager.java@private cfg : Configredisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java 106:106
+Generation
+Move Attributeredisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@private timer : HashedWheelTimerredisson/src/main/java/org/redisson/connection/ServiceManager.java@private timer : HashedWheelTimerredisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java 82:82
+Generation
+Move Attributeredisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@protected connectionWatcher : IdleConnectionWatcherredisson/src/main/java/org/redisson/connection/ServiceManager.java@private connectionWatcher : IdleConnectionWatcherredisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java 100:100
+Generation
+Change Attribute Access Modifierredisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@protected connectionWatcher : IdleConnectionWatcherredisson/src/main/java/org/redisson/connection/ServiceManager.java@private connectionWatcher : IdleConnectionWatcherredisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java 100:100
+Generation
+Move Attributeredisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@private shutdownPromise : Promise<Void>redisson/src/main/java/org/redisson/connection/ServiceManager.java@private shutdownPromise : Promise<Void>redisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java 96:96
+Generation
+Move Attributeredisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@private shutdownLatch : InfinitySemaphoreLatchredisson/src/main/java/org/redisson/connection/ServiceManager.java@private shutdownLatch : InfinitySemaphoreLatchredisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java 98:98
+Generation
+Move Attributeredisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@private elementsSubscribeService : ElementsSubscribeServiceredisson/src/main/java/org/redisson/connection/ServiceManager.java@private elementsSubscribeService : ElementsSubscribeServiceredisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java 110:110
+******************************
+******************************
+coarse grained commits 69c20351215d897bf5681c604c4e8dbd0e8f3b55
+fine grained commits ('7770e20d3145c75629b32d593b561cf9d95f7fb0', '62736250b340d977c2167060641941fab8dc8f41')
+Generation
+Move Attributeredisson/src/main/java/org/redisson/client/handler/CommandsQueue.java@public CURRENT_COMMAND : AttributeKey<QueueCommand>redisson/src/main/java/org/redisson/client/handler/CommandsQueuePubSub.java@public CURRENT_COMMAND : AttributeKey<QueueCommand>redisson/src/main/java/org/redisson/client/handler/CommandsQueue.java 18:18
+Generation
+Move Attributeredisson/src/main/java/org/redisson/client/handler/CommandsQueue.java@private queue : Queue<QueueCommandHolder>redisson/src/main/java/org/redisson/client/handler/CommandsQueuePubSub.java@private queue : Queue<QueueCommandHolder>redisson/src/main/java/org/redisson/client/handler/CommandsQueue.java 20:20
+Generation
+Move Attributeredisson/src/main/java/org/redisson/client/handler/CommandsQueue.java@private listener : ChannelFutureListenerredisson/src/main/java/org/redisson/client/handler/CommandsQueuePubSub.java@private listener : ChannelFutureListenerredisson/src/main/java/org/redisson/client/handler/CommandsQueue.java 22:26
+Generation
+Move Methodredisson/src/main/java/org/redisson/client/handler/CommandsQueue.java@public sendNextCommand(channel Channel) : voidredisson/src/main/java/org/redisson/client/handler/CommandsQueuePubSub.java@public sendNextCommand(channel Channel) : voidredisson/src/main/java/org/redisson/client/handler/CommandsQueue.java 28:43
+Generation
+Move Methodredisson/src/main/java/org/redisson/client/handler/CommandsQueue.java@private sendData(ch Channel) : voidredisson/src/main/java/org/redisson/client/handler/CommandsQueuePubSub.java@private sendData(ch Channel) : voidredisson/src/main/java/org/redisson/client/handler/CommandsQueue.java 77:95
+******************************
+******************************
+coarse grained commits 46cdbb6f06326a73c57243f903147466dbfb1685
+fine grained commits ('bd1f2d10bb54d4b48fa2650f74abcfec947df8f9', '0910fb00b6cc80975fd0c6b97ceb7d4c0d0949a1')
+Generation
+Move And Rename Classredisson/src/main/java/org/redisson/RedissonSpinLock.java@org.redisson.RedissonSpinLock.BackOffOptionsredisson/src/main/java/org/redisson/api/LockOptions.java@org.redisson.api.LockOptions.BackOffredisson/src/main/java/org/redisson/RedissonSpinLock.java 19:21
+Generation
+Move And Rename Classredisson/src/main/java/org/redisson/RedissonSpinLock.java@org.redisson.RedissonSpinLock.ExponentialBackOffOptionsredisson/src/main/java/org/redisson/api/LockOptions.java@org.redisson.api.LockOptions.ExponentialBackOffredisson/src/main/java/org/redisson/RedissonSpinLock.java 28:73
+Generation
+Move And Rename Classredisson/src/main/java/org/redisson/RedissonSpinLock.java@org.redisson.RedissonSpinLock.ConstantBackOffOptionsredisson/src/main/java/org/redisson/api/LockOptions.java@org.redisson.api.LockOptions.ConstantBackOffredisson/src/main/java/org/redisson/RedissonSpinLock.java 100:119
+Generation
+Change Return Typeredisson/src/main/java/org/redisson/RedissonSpinLock.java@ExponentialBackOffOptionsredisson/src/main/java/org/redisson/api/LockOptions.java@ExponentialBackOffredisson/src/main/java/org/redisson/RedissonSpinLock.java 42:42
+Generation
+Change Return Typeredisson/src/main/java/org/redisson/RedissonSpinLock.java@ExponentialBackOffOptionsredisson/src/main/java/org/redisson/api/LockOptions.java@ExponentialBackOffredisson/src/main/java/org/redisson/RedissonSpinLock.java 54:54
+Generation
+Change Return Typeredisson/src/main/java/org/redisson/RedissonSpinLock.java@ExponentialBackOffOptionsredisson/src/main/java/org/redisson/api/LockOptions.java@ExponentialBackOffredisson/src/main/java/org/redisson/RedissonSpinLock.java 66:66
+Generation
+Change Return Typeredisson/src/main/java/org/redisson/RedissonSpinLock.java@ConstantBackOffOptionsredisson/src/main/java/org/redisson/api/LockOptions.java@ConstantBackOffredisson/src/main/java/org/redisson/RedissonSpinLock.java 112:112
+******************************
+******************************
+coarse grained commits 0048492d294d397e99a4b74e0703463241113a9e
+fine grained commits ('e45408af83ff3c0b0173d50e3a6ae9c49e63f60b', '0953754b5cec3448fe9e98ea799f3d2b74c72238')
+Generation
+Remove Method Annotationredisson/src/main/java/org/redisson/RedissonReactive.java@@Overrideredisson/src/main/java/org/redisson/liveobject/core/RedissonObjectBuilder.java@public getReferenceCodecProvider() : ReferenceCodecProviderredisson/src/main/java/org/redisson/RedissonReactive.java 409:409
+Generation
+Move And Rename Methodredisson/src/main/java/org/redisson/RedissonReactive.java@public getCodecProvider() : ReferenceCodecProviderredisson/src/main/java/org/redisson/liveobject/core/RedissonObjectBuilder.java@public getReferenceCodecProvider() : ReferenceCodecProviderredisson/src/main/java/org/redisson/RedissonReactive.java 409:412
+Generation
+Remove Method Annotationredisson/src/main/java/org/redisson/RedissonRx.java@@Overrideredisson/src/main/java/org/redisson/liveobject/core/RedissonObjectBuilder.java@public getReferenceCodecProvider() : ReferenceCodecProviderredisson/src/main/java/org/redisson/RedissonRx.java 385:385
+Generation
+Move And Rename Methodredisson/src/main/java/org/redisson/RedissonRx.java@public getCodecProvider() : ReferenceCodecProviderredisson/src/main/java/org/redisson/liveobject/core/RedissonObjectBuilder.java@public getReferenceCodecProvider() : ReferenceCodecProviderredisson/src/main/java/org/redisson/RedissonRx.java 385:388
+******************************
+******************************
+coarse grained commits c637f2a8189f4b4e9c49838f5e58e404c0c42e50
+fine grained commits ('61d9ecddcfe65132fb804e28e0b6c730521b6e2a', '009f7ccc811fe3e59aaf91f80e8c1e7d33302e71')
+Generation
+Change Return Typeredisson/src/main/java/org/redisson/api/RedissonClient.java@RPatternTopic<M>redisson/src/main/java/org/redisson/api/RedissonClient.java@RPatternTopicredisson/src/main/java/org/redisson/api/RedissonClient.java 106:106
+Generation
+Change Return Typeredisson/src/main/java/org/redisson/api/RedissonClient.java@RPatternTopic<M>redisson/src/main/java/org/redisson/api/RedissonClient.java@RPatternTopicredisson/src/main/java/org/redisson/api/RedissonClient.java 108:108
+Generation
+Change Return Typeredisson/src/main/java/org/redisson/api/RedissonReactiveClient.java@RPatternTopicReactive<M>redisson/src/main/java/org/redisson/api/RedissonReactiveClient.java@RPatternTopicReactiveredisson/src/main/java/org/redisson/api/RedissonReactiveClient.java 88:88
+Generation
+Change Return Typeredisson/src/main/java/org/redisson/api/RedissonReactiveClient.java@RPatternTopicReactive<M>redisson/src/main/java/org/redisson/api/RedissonReactiveClient.java@RPatternTopicReactiveredisson/src/main/java/org/redisson/api/RedissonReactiveClient.java 90:90
+Generation
+Change Return Typeredisson/src/main/java/org/redisson/api/RedissonRxClient.java@RPatternTopicRx<M>redisson/src/main/java/org/redisson/api/RedissonRxClient.java@RPatternTopicRxredisson/src/main/java/org/redisson/api/RedissonRxClient.java 83:83
+Generation
+Change Return Typeredisson/src/main/java/org/redisson/api/RedissonRxClient.java@RPatternTopicRx<M>redisson/src/main/java/org/redisson/api/RedissonRxClient.java@RPatternTopicRxredisson/src/main/java/org/redisson/api/RedissonRxClient.java 85:85
+******************************
+******************************
+coarse grained commits 641340acf9a524d6f1bdf4d48f608e9371115480
+fine grained commits ('ee92fa3b0df464113e9840fa827c0a1106a9e6c0', '0fb0809b1168a0d47fbb6b002fab1b0cde098140')
+Generation
+Replace Variable With Attributeredisson/src/test/java/org/redisson/spring/data/connection/BaseConnectionTest.java@jedis : Jedisredisson-spring-data/redisson-spring-data-20/src/main/java/org/redisson/spring/data/connection/RedissonConnection.java@redisson : Redissonredisson/src/test/java/org/redisson/spring/data/connection/BaseConnectionTest.java 17:17
+******************************
+******************************
+coarse grained commits e01b40522e2ddd5ec4934152bf99397cbb0d4076
+fine grained commits ('f00ebe7603ce6b21dd54b00573fdca58bb02dadf', '5740cc7139bd45f035d2e1f85179afc3cd64bf22')
+Generation
+Move Methodredisson/src/main/java/org/redisson/reactive/RedissonSemaphoreReactive.java@protected createLock(connectionManager CommandAsyncExecutor, name String) : RLockAsyncredisson/src/main/java/org/redisson/reactive/RedissonPermitExpirableSemaphoreReactive.java@protected createLock(connectionManager CommandAsyncExecutor, name String) : RLockAsyncredisson/src/main/java/org/redisson/reactive/RedissonSemaphoreReactive.java 28:30
+******************************
+******************************
+coarse grained commits a5c5ec5f2b8b6d68f99b42a9f3f80a5432fb96d8
+fine grained commits ('da37c6746926428e11da1511728e640e50a8e00e', '31a35ec79c5404b447513910903413ce9b778197')
+Generation
+Move Classredisson/src/main/java/org/redisson/RedissonLocalCachedMap.java@org.redisson.RedissonLocalCachedMap.CacheKeyredisson/src/main/java/org/redisson/cache/CacheKey.java@org.redisson.cache.CacheKeyredisson/src/main/java/org/redisson/RedissonLocalCachedMap.java 64:104
+Generation
+Remove Class Modifierredisson/src/main/java/org/redisson/RedissonLocalCachedMap.java@org.redisson.RedissonLocalCachedMap.CacheKeyredisson/src/main/java/org/redisson/cache/CacheKey.java@org.redisson.cache.CacheKeyredisson/src/main/java/org/redisson/RedissonLocalCachedMap.java 64:104
+******************************
+******************************
+coarse grained commits b76739cfbdab47f0240b026bd36d0ba969d7b8d9
+fine grained commits ('3870902d5ad13b3b2b8b515b5c839b8f69454d6a', '6c370507075e9fcaaf8f7d699389fbf386723652')
+Generation
+Extract And Move Methodredisson/src/main/java/org/redisson/RedissonBaseAdder.java@public sumAsync() : RFuture<T>redisson/src/main/java/org/redisson/RedissonAtomicDouble.java@public getAndDeleteAsync() : RFuture<Double>redisson/src/main/java/org/redisson/RedissonBaseAdder.java 89:131
+******************************
+******************************
+coarse grained commits 0b2adab507844b5f413a34f6c6fcecf389a27870
+fine grained commits ('4c23e2cdf1c74f55185eb431f14dfc164a4f8a8d', '5fb458bb6139252393de21d40e657b816f7d9655')
+Generation
+Extract And Move Methodredisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@protected initEntry(config MasterSlaveServersConfig) : voidredisson/src/main/java/org/redisson/config/BaseMasterSlaveServersConfig.java@public checkSkipSlavesInit() : booleanredisson/src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java 250:266
+Generation
+Extract And Move Methodredisson/src/main/java/org/redisson/connection/SentinelConnectionManager.java@protected onSlaveAdded(addr URI, msg String) : voidredisson/src/main/java/org/redisson/config/BaseMasterSlaveServersConfig.java@public checkSkipSlavesInit() : booleanredisson/src/main/java/org/redisson/connection/SentinelConnectionManager.java 207:247
+******************************
+******************************
+coarse grained commits e45e6fc2fc38bf80f30f7bfb8c64a0f23f351359
+fine grained commits ('0ec85984c4a22c8f6d275c97ee5e3c616fe86007', 'bf5cd39bfd7a0f8817890397096691cd87807320')
+Generation
+Extract Superclassredisson/src/test/java/org/redisson/RedissonLocalCachedMapTest.java@org.redisson.RedissonLocalCachedMapTestredisson/src/test/java/org/redisson/RedissonLocalCachedMapTest.java@org.redisson.RedissonLocalCachedMapTestredisson/src/test/java/org/redisson/RedissonLocalCachedMapTest.java 27:607
+******************************
+******************************
+coarse grained commits efaa5c9c0d31d2b43f05a4efb81d340caf78a34b
+fine grained commits ('927f216fa9b555870b34980c7970cdb32d282761', '17a5681127b4d8fdb7319716331eaade702d623d')
+Generation
+Add Parameterredisson/src/main/java/org/redisson/client/handler/CommandDecoder.java@public CommandDecoder(executor ExecutorService)redisson/src/main/java/org/redisson/client/handler/CommandPubSubDecoder.java@keepOrder : booleanredisson/src/main/java/org/redisson/client/handler/CommandDecoder.java 59:61
+******************************
+******************************
+coarse grained commits 00eabb52b19abdc8daaac9d4d927b8ba056249b2
+fine grained commits ('9e32dc5a8e2e3ebd9ed1a517df84de31fc692b55', '4d67e34af22cb579efc150d2663422314b839a7f')
+Generation
+Change Parameter Typeredisson/src/main/java/org/redisson/liveobject/misc/RedissonObjectFactory.java@redisson : RedissonClientredisson/src/main/java/org/redisson/liveobject/misc/RedissonObjectFactory.java@redisson : RedissonReactiveClientredisson/src/main/java/org/redisson/liveobject/misc/RedissonObjectFactory.java 54:54
+Generation
+Localize Parameterredisson/src/main/java/org/redisson/liveobject/misc/RedissonObjectFactory.java@codecProvider : CodecProviderredisson/src/main/java/org/redisson/liveobject/misc/RedissonObjectFactory.java@codecProvider : CodecProviderredisson/src/main/java/org/redisson/liveobject/misc/RedissonObjectFactory.java 54:54
+Generation
+Remove Parameterredisson/src/main/java/org/redisson/liveobject/misc/RedissonObjectFactory.java@resolverProvider : ResolverProviderredisson/src/main/java/org/redisson/liveobject/misc/RedissonObjectFactory.java@public fromReference(redisson RedissonReactiveClient, rr RedissonReference, expected Class<?>) : Tredisson/src/main/java/org/redisson/liveobject/misc/RedissonObjectFactory.java 54:54
+******************************
+******************************
+coarse grained commits 532ba5654b840f708ec391545762796d5ef9430d
+fine grained commits ('993c14c18b1647c8b8f4145469eefa8eaff1beaa', 'ccb6f60bb4fb1fa5893896547d5e900bf807eadf')
+Generation
+Rename Parametersrc/main/java/org/redisson/liveobject/RLiveObject.java@LiveObjectId : Objectsrc/main/java/org/redisson/liveobject/RLiveObject.java@liveObjectId : Objectsrc/main/java/org/redisson/liveobject/RLiveObject.java 13:13
+******************************
+******************************
+coarse grained commits d924faaee354204f667cde7411c0dc9690dc9d9b
+fine grained commits ('93f6558fbec042ec24bdc8f458f46cf35362ac54', '6c23bb8c60c3bd6ceaf60beb6842c792260ee1d5')
+Generation
+Add Parametersrc/main/java/org/redisson/core/RemoteInvocationOptions.java@private RemoteInvocationOptions(ackTimeoutInMillis Long, executionTimeoutInMillis Long)src/main/java/org/redisson/core/RemoteInvocationOptions.java@copy : RemoteInvocationOptionssrc/main/java/org/redisson/core/RemoteInvocationOptions.java 10:13
+Generation
+Remove Parametersrc/main/java/org/redisson/core/RemoteInvocationOptions.java@ackTimeoutInMillis : Longsrc/main/java/org/redisson/core/RemoteInvocationOptions.java@public RemoteInvocationOptions(copy RemoteInvocationOptions)src/main/java/org/redisson/core/RemoteInvocationOptions.java 10:10
+Generation
+Remove Parametersrc/main/java/org/redisson/core/RemoteInvocationOptions.java@executionTimeoutInMillis : Longsrc/main/java/org/redisson/core/RemoteInvocationOptions.java@public RemoteInvocationOptions(copy RemoteInvocationOptions)src/main/java/org/redisson/core/RemoteInvocationOptions.java 10:10
+Generation
+Change Method Access Modifiersrc/main/java/org/redisson/core/RemoteInvocationOptions.java@private RemoteInvocationOptions(ackTimeoutInMillis Long, executionTimeoutInMillis Long)src/main/java/org/redisson/core/RemoteInvocationOptions.java@public RemoteInvocationOptions(copy RemoteInvocationOptions)src/main/java/org/redisson/core/RemoteInvocationOptions.java 10:13
+******************************
+******************************
+coarse grained commits d8d8a4d69103903f4a41c9396e04a3f1d00a056c
+fine grained commits ('80877dc86125654533a72d3b1d61fe2dd31e6b44', '2fdb11038ca64812bddbbea8d2ee6ab2d46581e7')
+Generation
+Change Variable Typesrc/main/java/org/redisson/connection/MasterSlaveEntry.java@conns : Collection<RedisPubSubConnection>src/main/java/org/redisson/connection/MasterSlaveEntry.java@entry : ClientConnectionsEntrysrc/main/java/org/redisson/connection/MasterSlaveEntry.java 74:74
+Generation
+Rename Variablesrc/main/java/org/redisson/connection/MasterSlaveEntry.java@conns : Collection<RedisPubSubConnection>src/main/java/org/redisson/connection/MasterSlaveEntry.java@entry : ClientConnectionsEntrysrc/main/java/org/redisson/connection/MasterSlaveEntry.java 74:74
+******************************
+******************************
+coarse grained commits e362c0411cb8ce842bf7579a7b8527c19cf8536f
+fine grained commits ('cebe3d02936e053e357a6ebf022c83a717e43170', '9608813c5215ebff6bf3352f5ac2dc0e212ba212')
+Generation
+Push Down Methodsrc/main/java/org/redisson/misc/ConnectionPool.java@protected getMinimumIdleSize(entry ClientConnectionsEntry) : intsrc/main/java/org/redisson/connection/pool/SlaveConnectionPool.java@protected getMinimumIdleSize(entry ClientConnectionsEntry) : intsrc/main/java/org/redisson/misc/ConnectionPool.java 95:97
+******************************
+******************************
+coarse grained commits 982ebafd6efc31aceb0d2b77afb945865f491f15
+fine grained commits ('ef773b03a84e008e703639631cdde558439a7224', '68e44e6e6058737cd7e0d99bcb0c362a79294eaf')
+Generation
+Rename Attributesrc/main/java/org/redisson/RedissonCache.java@EVAL_CONTAINS : RedisCommand<Boolean>src/main/java/org/redisson/RedissonCache.java@EVAL_CONTAINS_KEY : RedisCommand<List<Object>>src/main/java/org/redisson/RedissonCache.java 39:39
+******************************
+******************************
+coarse grained commits f02301b580ff13b7ba2cd78410cdf5b46c27d4c5
+fine grained commits ('2ead52824cceea70df49da1b5bc2127330848c55', '417bb3f02f7da12ecae5c5a55b48a5fa1cc9405d')
+Generation
+Pull Up Methodsrc/main/java/org/redisson/core/RBitSet.java@public getAsync(bitIndex int) : Future<Boolean>src/main/java/org/redisson/core/RBitSetAsync.java@public getAsync(bitIndex int) : Future<Boolean>src/main/java/org/redisson/core/RBitSet.java 25:25
+Generation
+Pull Up Methodsrc/main/java/org/redisson/core/RBitSet.java@public setAsync(bitIndex int, value boolean) : Future<Void>src/main/java/org/redisson/core/RBitSetAsync.java@public setAsync(bitIndex int, value boolean) : Future<Void>src/main/java/org/redisson/core/RBitSet.java 31:31
+******************************
+******************************
+coarse grained commits 26de4b819996ed36c0100befdd2c85b339e32239
+fine grained commits ('8fbe896f2cf02443e5163505ab7c4d35439eaf2c', '01eb75d70b290ebd4cdce870d7a8cd922c4297b8')
+Generation
+Remove Parametersrc/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@slot : intsrc/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@public connectionWriteOp(source NodeSource, command RedisCommand<?>) : Future<RedisConnection>src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java 536:536
+Generation
+Remove Parametersrc/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@slot : intsrc/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@public connectionReadOp(source NodeSource, command RedisCommand<?>) : Future<RedisConnection>src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java 545:545
+Generation
+Remove Parametersrc/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@slot : intsrc/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@public connectionReadOp(source NodeSource, command RedisCommand<?>, client RedisClient) : Future<RedisConnection>src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java 554:554
+Generation
+Remove Parametersrc/main/java/org/redisson/connection/ConnectionManager.java@slot : intsrc/main/java/org/redisson/connection/ConnectionManager.java@public connectionReadOp(source NodeSource, command RedisCommand<?>) : Future<RedisConnection>src/main/java/org/redisson/connection/ConnectionManager.java 45:45
+Generation
+Remove Parametersrc/main/java/org/redisson/connection/ConnectionManager.java@slot : intsrc/main/java/org/redisson/connection/ConnectionManager.java@public connectionReadOp(source NodeSource, command RedisCommand<?>, client RedisClient) : Future<RedisConnection>src/main/java/org/redisson/connection/ConnectionManager.java 47:47
+Generation
+Remove Parametersrc/main/java/org/redisson/connection/ConnectionManager.java@slot : intsrc/main/java/org/redisson/connection/ConnectionManager.java@public connectionWriteOp(source NodeSource, command RedisCommand<?>) : Future<RedisConnection>src/main/java/org/redisson/connection/ConnectionManager.java 49:49
+******************************
+******************************
+coarse grained commits b5fd97e01fbf0c6bc02b1d0bffcfafe7623ef0f7
+fine grained commits ('66d905c269f1a7f34a4a9b619f1a1345e7f61581', 'c7ba444080cfc8724c37c6dc4cf062054233933a')
+Generation
+Rename Methodsrc/test/java/org/redisson/RedissonScoredSortedSetTest.java@public testLexRangeTail() : voidsrc/test/java/org/redisson/RedissonScoredSortedSetTest.java@public testRemoveRangeByRank() : voidsrc/test/java/org/redisson/RedissonScoredSortedSetTest.java 24:37
+******************************
+******************************
+coarse grained commits dcc768bb2d4445a0549a1928636a727d7d41af75
+fine grained commits ('90b38e4e54b0b3a2f1bc2585f877dd9a317f9556', 'aee11ab398a3934f4e61fd2fadc258597af47baf')
+Generation
+Change Variable Typesrc/main/java/org/redisson/connection/SentinelConnectionManager.java@addedSlaves : Set<String>src/main/java/org/redisson/connection/SentinelConnectionManager.java@disconnectedSlaves : List<String>src/main/java/org/redisson/connection/SentinelConnectionManager.java 49:49
+Generation
+Remove Variable Modifiersrc/main/java/org/redisson/connection/SentinelConnectionManager.java@addedSlaves : Set<String>src/main/java/org/redisson/connection/SentinelConnectionManager.java@disconnectedSlaves : List<String>src/main/java/org/redisson/connection/SentinelConnectionManager.java 49:49
+Generation
+Rename Variablesrc/main/java/org/redisson/connection/SentinelConnectionManager.java@addedSlaves : Set<String>src/main/java/org/redisson/connection/SentinelConnectionManager.java@disconnectedSlaves : List<String>src/main/java/org/redisson/connection/SentinelConnectionManager.java 49:49
+******************************
+******************************
+coarse grained commits b44903b7f9736e7e3b158bd19d5e5ef7ba70786b
+fine grained commits ('cd361993686c0081b60e79426c1fa9d767dbb791', '23fe00d2ace2f4e461fd694367acf8aa3435952b')
+Generation
+Add Parametersrc/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@public evalAsync(codec Codec, evalCommandType RedisCommand<T>, script String, keys List<Object>, params Object...) : Future<R>src/main/java/org/redisson/CommandExecutorService.java@key : Stringsrc/main/java/org/redisson/connection/MasterSlaveConnectionManager.java 337:346
+Generation
+Move And Rename Methodsrc/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@public evalAsync(codec Codec, evalCommandType RedisCommand<T>, script String, keys List<Object>, params Object...) : Future<R>src/main/java/org/redisson/CommandExecutorService.java@public evalWriteAsync(key String, codec Codec, evalCommandType RedisCommand<T>, script String, keys List<Object>, params Object...) : Future<R>src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java 337:346
+Generation
+Change Parameter Typesrc/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@codec : Codecsrc/main/java/org/redisson/CommandExecutorService.java@key : Stringsrc/main/java/org/redisson/connection/MasterSlaveConnectionManager.java 368:368
+Generation
+Rename Parametersrc/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@codec : Codecsrc/main/java/org/redisson/CommandExecutorService.java@key : Stringsrc/main/java/org/redisson/connection/MasterSlaveConnectionManager.java 368:368
+Generation
+Move Methodsrc/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@public write(codec Codec, command RedisCommand<T>, params Object...) : Rsrc/main/java/org/redisson/CommandExecutorService.java@public write(key String, command RedisCommand<T>, params Object...) : Rsrc/main/java/org/redisson/connection/MasterSlaveConnectionManager.java 368:371
+Generation
+Add Parametersrc/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@public writeAsync(command RedisCommand<T>, params Object...) : Future<R>src/main/java/org/redisson/CommandExecutorService.java@key : Stringsrc/main/java/org/redisson/connection/MasterSlaveConnectionManager.java 373:375
+Generation
+Move Methodsrc/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@public writeAsync(command RedisCommand<T>, params Object...) : Future<R>src/main/java/org/redisson/CommandExecutorService.java@public writeAsync(key String, command RedisCommand<T>, params Object...) : Future<R>src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java 373:375
+Generation
+Change Variable Typesrc/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@slot : Integersrc/main/java/org/redisson/CommandExecutorService.java@slot : intsrc/main/java/org/redisson/connection/MasterSlaveConnectionManager.java 380:380
+Generation
+Add Parametersrc/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@public writeAsync(codec Codec, command RedisCommand<T>, params Object...) : Future<R>src/main/java/org/redisson/CommandExecutorService.java@key : Stringsrc/main/java/org/redisson/connection/MasterSlaveConnectionManager.java 377:385
+Generation
+Move Methodsrc/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@public writeAsync(codec Codec, command RedisCommand<T>, params Object...) : Future<R>src/main/java/org/redisson/CommandExecutorService.java@public writeAsync(key String, codec Codec, command RedisCommand<T>, params Object...) : Future<R>src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java 377:385
+Generation
+Extract And Move Methodsrc/main/java/org/redisson/RedissonScript.java@public scriptExists(shaDigests String...) : List<Boolean>src/main/java/org/redisson/RedissonObject.java@protected get(future Future<V>) : Vsrc/main/java/org/redisson/RedissonScript.java 71:74
+******************************
+******************************
+coarse grained commits 28de9acb148be347c4ce19d11227949d200946b5
+fine grained commits ('2df8589351c8ffc3138f8c5294dccaf831cdf32b', '0a5f784b0705c8e620564508c9849bb63dd1a9df')
+Generation
+Rename Parametersrc/main/java/org/redisson/core/RSet.java@value : Vsrc/main/java/org/redisson/core/RCollectionAsync.java@e : Vsrc/main/java/org/redisson/core/RSet.java 9:9
+Generation
+Pull Up Methodsrc/main/java/org/redisson/core/RSet.java@public addAsync(value V) : Future<Boolean>src/main/java/org/redisson/core/RCollectionAsync.java@public addAsync(e V) : Future<Boolean>src/main/java/org/redisson/core/RSet.java 9:9
+******************************
+******************************
+coarse grained commits 6968f59bc2069f74f6c569844684c3e5cc7d8a96
+fine grained commits ('e272360ea46fe4f38b2ac43bbcac6905a1e7d8bf', '319893d6343b0646994a32cfb0f8d4c64860fa5b')
+Generation
+Rename Classsrc/main/java/org/redisson/client/protocol/decoder/MapScanResultReplayDecoder2.java@org.redisson.client.protocol.decoder.MapScanResultReplayDecoder2src/main/java/org/redisson/client/protocol/decoder/ListScanResultReplayDecoder.java@org.redisson.client.protocol.decoder.ListScanResultReplayDecodersrc/main/java/org/redisson/client/protocol/decoder/MapScanResultReplayDecoder2.java 11:32
+Generation
+Change Return Typesrc/main/java/org/redisson/client/protocol/decoder/MapScanResultReplayDecoder2.java@MapScanResult<Object,Object>src/main/java/org/redisson/client/protocol/decoder/ListScanResultReplayDecoder.java@ListScanResult<Object>src/main/java/org/redisson/client/protocol/decoder/MapScanResultReplayDecoder2.java 23:23
+******************************
+******************************
+coarse grained commits 55cab167e57ed4bd3a66082542d11209494ed4ed
+fine grained commits ('e879ae0ac10f039f27c16abdffdb1140d34e6020', '68254b2fa6d9d60a69808cfb346ff7e938a591ce')
+Generation
+Remove Parametersrc/main/java/org/redisson/client/protocol/RedisStrictCommand.java@encodeParamIndexes : int...src/main/java/org/redisson/client/protocol/RedisStrictCommand.java@public RedisStrictCommand(name String, replayMultiDecoder MultiDecoder<T>)src/main/java/org/redisson/client/protocol/RedisStrictCommand.java 7:7
+Generation
+Merge Parametersrc/main/java/org/redisson/client/protocol/RedisStrictCommand.java@convertor : Convertor<T>src/main/java/org/redisson/client/protocol/RedisStrictCommand.java@reponseDecoder : Decoder<T>src/main/java/org/redisson/client/protocol/RedisStrictCommand.java 20:20
+******************************
+******************************
+coarse grained commits 998362230344ffbd0bfda54a6d36ac5ff33060b1
+fine grained commits ('d53daaa6961873e16452825daa818f7f02c9b3de', '86e7a0cd015350a918bc1a91443db8db1153c947')
+Generation
+Rename Parametersrc/main/java/org/redisson/client/RedisPubSubConnection.java@encoder : Codecsrc/main/java/org/redisson/client/RedisPubSubConnection.java@nextDecoder : MultiDecoder<Object>src/main/java/org/redisson/client/RedisPubSubConnection.java 34:34
+Generation
+Replace Variable With Attributesrc/main/java/org/redisson/client/handler/RedisDecoder.java@decoder : Decoder<Object>src/main/java/org/redisson/client/handler/RedisDecoder.java@nextDecoder : MultiDecoder<Object>src/main/java/org/redisson/client/handler/RedisDecoder.java 70:70
+Generation
+Change Variable Typesrc/main/java/org/redisson/client/handler/RedisDecoder.java@decoder : Decoder<Object>src/main/java/org/redisson/client/handler/RedisDecoder.java@nextDecoder : MultiDecoder<Object>src/main/java/org/redisson/client/handler/RedisDecoder.java 70:70
+******************************
+******************************
+coarse grained commits 61b80d2d76d60fe575610c35ffca4be9393cfe43
+fine grained commits ('29a56cf2b9122f2f834dda1eaa1f26741bfe5acc', '62431777105e4091d7d9f48f758fd43ede71a902')
+Generation
+Move Attributesrc/main/java/org/redisson/client/RedisClient.java@private channel : Channelsrc/main/java/org/redisson/client/RedisConnection.java@package channel : Channelsrc/main/java/org/redisson/client/RedisClient.java 32:32
+Generation
+Change Attribute Access Modifiersrc/main/java/org/redisson/client/RedisClient.java@private channel : Channelsrc/main/java/org/redisson/client/RedisConnection.java@package channel : Channelsrc/main/java/org/redisson/client/RedisClient.java 32:32
+Generation
+Add Attribute Modifiersrc/main/java/org/redisson/client/RedisClient.java@private channel : Channelsrc/main/java/org/redisson/client/RedisConnection.java@package channel : Channelsrc/main/java/org/redisson/client/RedisClient.java 32:32
+******************************
+******************************
+coarse grained commits cd37992ec83e8ef2c0cd86df8159f0523fb4358e
+fine grained commits ('bd05aa71979097e86bd4322bd5a56e21dccb7109', '1ac3f819e2ba58ac01bf3c87f9bc56cc829264d1')
+Generation
+Extract Superclasssrc/main/java/org/redisson/SentinelServersConfig.java@org.redisson.SentinelServersConfigsrc/main/java/org/redisson/SentinelServersConfig.java@org.redisson.SentinelServersConfigsrc/main/java/org/redisson/SentinelServersConfig.java 8:47
+******************************
+******************************
+coarse grained commits b326eb53f6d590d01b30e38c61d6ab8c3bdff32c
+fine grained commits ('bde23f55d375e1790a9b52c95e08664a905fda1f', '3f40cf8ec44668a5d5d762c936105254c950e9e7')
+Generation
+Change Parameter Typeredisson/src/main/java/org/redisson/RedissonBaseLock.java@supplier : Supplier<RFuture<T>>redisson/src/main/java/org/redisson/connection/ServiceManager.java@supplier : Supplier<CompletionStage<T>>redisson/src/main/java/org/redisson/RedissonBaseLock.java 298:298
+Generation
+Change Variable Typeredisson/src/main/java/org/redisson/RedissonBaseLock.java@future : RFuture<T>redisson/src/main/java/org/redisson/connection/ServiceManager.java@future : CompletionStage<T>redisson/src/main/java/org/redisson/RedissonBaseLock.java 307:307
+Generation
+Change Parameter Typeredisson/src/main/java/org/redisson/RedissonBaseLock.java@supplier : Supplier<RFuture<T>>redisson/src/main/java/org/redisson/connection/ServiceManager.java@supplier : Supplier<CompletionStage<T>>redisson/src/main/java/org/redisson/RedissonBaseLock.java 306:306
+******************************
+******************************
+coarse grained commits bf4543374250f364b7f5b5e3da0bc754dfc00c92
+fine grained commits ('c08867502a8f045e7946715bd465872c73595ff6', '5ce8cf6c8b075a466de91528980cde3fe3160127')
+Generation
+Rename Variableredisson/src/main/java/org/redisson/pubsub/PublishSubscribeService.java@promise : CompletableFuture<Void>redisson/src/main/java/org/redisson/pubsub/PublishSubscribeService.java@f : CompletableFuture<Void>redisson/src/main/java/org/redisson/pubsub/PublishSubscribeService.java 619:619
+Generation
+Rename Variableredisson/src/main/java/org/redisson/pubsub/PublishSubscribeService.java@promise : CompletableFuture<Void>redisson/src/main/java/org/redisson/pubsub/PublishSubscribeService.java@f : CompletableFuture<Void>redisson/src/main/java/org/redisson/pubsub/PublishSubscribeService.java 659:659
+******************************
+******************************
+coarse grained commits 7b42bf908833d3c8623ebe30c00ebc8610208c20
+fine grained commits ('dc516a50e5396b4c0536373f56dff9d2b85959aa', '9fb6fc6959ecb84e23f40ef5f1e28a94d45ed9b8')
+Generation
+Rename Variableredisson/src/main/java/org/redisson/pubsub/PublishSubscribeService.java@lockTimeout : Timeoutredisson/src/main/java/org/redisson/pubsub/PublishSubscribeService.java@task : Timeoutredisson/src/main/java/org/redisson/pubsub/PublishSubscribeService.java 214:218
+Generation
+Extract And Move Methodredisson/src/main/java/org/redisson/RedissonSemaphore.java@public tryAcquireAsync(permits int, waitTime long, unit TimeUnit) : RFuture<Boolean>redisson/src/main/java/org/redisson/pubsub/PublishSubscribeService.java@public timeout(promise CompletableFuture<?>, timeout long) : voidredisson/src/main/java/org/redisson/RedissonSemaphore.java 320:385
+******************************
+******************************
+coarse grained commits 3e46424b822a1c51cea329fef9d91c873173cb47
+fine grained commits ('a0177b203e82bef913b82faec8c2cc57a9a8dc22', '313b3174bb3fc1a28534101073bcdaa2d8bfc51a')
+Generation
+Replace Anonymous With Lambdaredisson/src/main/java/org/redisson/transaction/RedissonTransaction.java@org.redisson.transaction.RedissonTransaction.disableLocalCacheAsync.onComplete.whenComplete.onComplete.newTimeout.new TimerTaskredisson/src/main/java/org/redisson/transaction/RedissonTransaction.java@timeout -> result.completeExceptionally(new TransactionTimeoutException("Unable to execute transaction within " + options.getResponseTimeout() + "ms"))redisson/src/main/java/org/redisson/transaction/RedissonTransaction.java 486:491
+******************************
+******************************
+coarse grained commits b19be11cfaf2e93630d2db13607f333296df476a
+fine grained commits ('80fe875724de585142a4361b2a9fe9f4ec12c82e', '7c0541152373a9524fe8c7c6d23263bb0de8dc0b')
+Generation
+Move Methodredisson/src/main/java/org/redisson/RedissonBaseLock.java@public isExistsAsync() : RFuture<Boolean>redisson/src/main/java/org/redisson/RedissonBloomFilter.java@public isExistsAsync() : RFuture<Boolean>redisson/src/main/java/org/redisson/RedissonBaseLock.java 239:242
+******************************
+******************************
+coarse grained commits 12ca9f327f0c381ef02044819a4a98ef1adbdd1a
+fine grained commits ('61181fe90875b46471d81c1ace2bcf92bc165765', '1defb6c19e5f6e377572e29278c793b9bb7cd807')
+Generation
+Merge Parameterredisson/src/main/java/org/redisson/client/handler/CommandDecoder.java@executor : ExecutorServiceredisson/src/main/java/org/redisson/client/handler/CommandDecoder.java@scheme : Stringredisson/src/main/java/org/redisson/client/handler/CommandDecoder.java 36:36
+Generation
+Merge Attributeredisson/src/main/java/org/redisson/client/handler/CommandDecoder.java@executor : ExecutorServiceredisson/src/main/java/org/redisson/client/handler/CommandDecoder.java@scheme : Stringredisson/src/main/java/org/redisson/client/handler/CommandDecoder.java 33:33
+******************************
+******************************
+coarse grained commits 1c9364edb2f301ee6e8f0bdf44bec4cee76895a7
+fine grained commits ('6d1debca4db78d51da6fd27b028152b08435e3cf', 'ebba8a412b9ac3bac04d80a21f36354dc5d3d591')
+Generation
+Extract Methodredisson/src/main/java/org/redisson/pubsub/PublishSubscribeService.java@public reattachPubSub(redisPubSubConnection RedisPubSubConnection) : voidredisson/src/main/java/org/redisson/pubsub/PublishSubscribeService.java@public remove(entry MasterSlaveEntry) : voidredisson/src/main/java/org/redisson/pubsub/PublishSubscribeService.java 478:503
+******************************
+******************************
+coarse grained commits 526782315f0ca48b822a71db650436112577bbff
+fine grained commits ('8dc736ed418fe2aab2c43d585334071a0a060653', '900f47ddb183bbe608d6b64d136f52f34a902c7c')
+Generation
+Add Parameterredisson/src/main/java/org/redisson/RedissonMultimap.java@private getLockName(key Object) : Stringredisson/src/main/java/org/redisson/RedissonObject.java@suffix : Stringredisson/src/main/java/org/redisson/RedissonMultimap.java 60:67
+Generation
+Change Method Access Modifierredisson/src/main/java/org/redisson/RedissonMultimap.java@private getLockName(key Object) : Stringredisson/src/main/java/org/redisson/RedissonObject.java@public getLockByMapKey(key Object, suffix String) : Stringredisson/src/main/java/org/redisson/RedissonMultimap.java 60:67
+Generation
+Move And Rename Methodredisson/src/main/java/org/redisson/RedissonMultimap.java@private getLockName(key Object) : Stringredisson/src/main/java/org/redisson/RedissonObject.java@public getLockByMapKey(key Object, suffix String) : Stringredisson/src/main/java/org/redisson/RedissonMultimap.java 60:67
+Generation
+Rename Variableredisson/src/main/java/org/redisson/RedissonSet.java@state : ByteBufredisson/src/main/java/org/redisson/RedissonObject.java@keyState : ByteBufredisson/src/main/java/org/redisson/RedissonSet.java 590:590
+Generation
+Rename Parameterredisson/src/main/java/org/redisson/RedissonSet.java@value : Objectredisson/src/main/java/org/redisson/RedissonObject.java@key : Objectredisson/src/main/java/org/redisson/RedissonSet.java 589:589
+Generation
+Move And Rename Methodredisson/src/main/java/org/redisson/RedissonSet.java@public getLockName(value Object, suffix String) : Stringredisson/src/main/java/org/redisson/RedissonObject.java@public getLockByValue(key Object, suffix String) : Stringredisson/src/main/java/org/redisson/RedissonSet.java 589:596
+Generation
+Rename Variableredisson/src/main/java/org/redisson/RedissonSetCache.java@state : ByteBufredisson/src/main/java/org/redisson/RedissonObject.java@keyState : ByteBufredisson/src/main/java/org/redisson/RedissonSetCache.java 342:342
+Generation
+Rename Parameterredisson/src/main/java/org/redisson/RedissonSetCache.java@value : Objectredisson/src/main/java/org/redisson/RedissonObject.java@key : Objectredisson/src/main/java/org/redisson/RedissonSetCache.java 341:341
+Generation
+Move And Rename Methodredisson/src/main/java/org/redisson/RedissonSetCache.java@public getLockName(value Object, suffix String) : Stringredisson/src/main/java/org/redisson/RedissonObject.java@public getLockByMapKey(key Object, suffix String) : Stringredisson/src/main/java/org/redisson/RedissonSetCache.java 341:348
+******************************
+******************************
+coarse grained commits 26519310ac8f2b5828fdf89062cad9a103c622ef
+fine grained commits ('0953754b5cec3448fe9e98ea799f3d2b74c72238', 'd7eed04b3957d4e11eb598be951d9b1f64445b03')
+Generation
+Move And Rename Classredisson/src/main/java/org/redisson/misc/RedissonObjectFactory.java@org.redisson.misc.RedissonObjectFactory.RedissonObjectBuilderredisson/src/main/java/org/redisson/liveobject/core/RedissonObjectBuilder.java@org.redisson.liveobject.core.RedissonObjectBuilder.CodecMethodRefredisson/src/main/java/org/redisson/misc/RedissonObjectFactory.java 30:41
+******************************
+******************************
+coarse grained commits 1b6255f818c8d166efdb690c9326f023405e5bc3
+fine grained commits ('7f7d1339fafefe42c56370b8ec1e7df0c45f26f9', 'e8bc069b372d6acb243511c0e4129d0c6b74c000')
+Generation
+Move Classredisson/src/main/java/org/redisson/liveobject/misc/RedissonObjectFactory.java@org.redisson.liveobject.misc.RedissonObjectFactoryredisson/src/main/java/org/redisson/misc/RedissonObjectFactory.java@org.redisson.misc.RedissonObjectFactoryredisson/src/main/java/org/redisson/liveobject/misc/RedissonObjectFactory.java 21:179
+Generation
+Change Attribute Typeredisson/src/main/java/org/redisson/liveobject/misc/RedissonObjectFactory.java@builders : HashMap<Class,HashMap<Boolean,Method>>redisson/src/main/java/org/redisson/misc/RedissonObjectFactory.java@builders : Map<Class,RedissonObjectBuilder>redisson/src/main/java/org/redisson/liveobject/misc/RedissonObjectFactory.java 23:23
+Generation
+Change Variable Typeredisson/src/main/java/org/redisson/liveobject/misc/RedissonObjectFactory.java@builder : HashMap<Boolean,Method>redisson/src/main/java/org/redisson/misc/RedissonObjectFactory.java@builder : RedissonObjectBuilderredisson/src/main/java/org/redisson/liveobject/misc/RedissonObjectFactory.java 35:35
+Generation
+Change Variable Typeredisson/src/main/java/org/redisson/liveobject/misc/RedissonObjectFactory.java@builder : HashMap<Boolean,Method>redisson/src/main/java/org/redisson/misc/RedissonObjectFactory.java@builder : RedissonObjectBuilderredisson/src/main/java/org/redisson/liveobject/misc/RedissonObjectFactory.java 53:53
+******************************
+******************************
+coarse grained commits 21b59d9cb203b6f169e3960dfc72a243d61c48cb
+fine grained commits ('dfa72ca60610c55209c2a64729748a80d1885344', 'a13c966da7ed66fb2a308aea216c9ce92573ac44')
+Generation
+Reorder Parametersrc/main/java/org/redisson/liveobject/core/AccessorInterceptor.java@redisson : RedissonClientsrc/main/java/org/redisson/liveobject/core/AccessorInterceptor.java@redisson : RedissonClientsrc/main/java/org/redisson/liveobject/core/AccessorInterceptor.java 31:31
+******************************
+******************************
+coarse grained commits 89546910670253862aa9906a920d6026a32c018c
+fine grained commits ('75cb62be38a5991660f71cbfea98d8a8372e93f5', '301ab51a7a9e6f777a2589a128c3accc791ced50')
+Generation
+Change Variable Typesrc/main/java/org/redisson/connection/ConnectionEntry.java@conn : RedisPubSubConnectionsrc/main/java/org/redisson/connection/SubscribesConnectionEntry.java@conn : RedisConnectionsrc/main/java/org/redisson/connection/ConnectionEntry.java 153:153
+Generation
+Change Variable Typesrc/main/java/org/redisson/connection/ConnectionEntry.java@listener : FutureConnectionListener<RedisPubSubConnection>src/main/java/org/redisson/connection/SubscribesConnectionEntry.java@listener : FutureConnectionListener<RedisConnection>src/main/java/org/redisson/connection/ConnectionEntry.java 156:156
+Generation
+Change Parameter Typesrc/main/java/org/redisson/connection/ConnectionEntry.java@future : Future<RedisPubSubConnection>src/main/java/org/redisson/connection/SubscribesConnectionEntry.java@future : Future<RedisConnection>src/main/java/org/redisson/connection/ConnectionEntry.java 148:148
+Generation
+Change Variable Typesrc/main/java/org/redisson/connection/ConnectionEntry.java@connectionFuture : Promise<RedisPubSubConnection>src/main/java/org/redisson/connection/SubscribesConnectionEntry.java@connectionFuture : Promise<RedisConnection>src/main/java/org/redisson/connection/ConnectionEntry.java 144:144
+Generation
+Change Variable Typesrc/main/java/org/redisson/connection/ConnectionEntry.java@future : Future<RedisPubSubConnection>src/main/java/org/redisson/connection/SubscribesConnectionEntry.java@future : Future<RedisConnection>src/main/java/org/redisson/connection/ConnectionEntry.java 145:145
+Generation
+Change Return Typesrc/main/java/org/redisson/connection/ConnectionEntry.java@Future<RedisPubSubConnection>src/main/java/org/redisson/connection/SubscribesConnectionEntry.java@Future<RedisConnection>src/main/java/org/redisson/connection/ConnectionEntry.java 143:143
+Generation
+Move And Rename Methodsrc/main/java/org/redisson/connection/ConnectionEntry.java@public connectPubSub(config MasterSlaveServersConfig) : Future<RedisPubSubConnection>src/main/java/org/redisson/connection/SubscribesConnectionEntry.java@public connect(config MasterSlaveServersConfig) : Future<RedisConnection>src/main/java/org/redisson/connection/ConnectionEntry.java 143:164
+******************************
+******************************
+coarse grained commits a4c21ef63ad7af358ea6dfff89f427fac321b748
+fine grained commits ('a43a334a867217d43425fd579460e0be0361030c', 'c26183b3bb6a840f158c41b675dcc1a69ab7ad1d')
+Generation
+Move Methodsrc/main/java/org/redisson/client/handler/DecoderState.java@public getIndex() : intsrc/main/java/org/redisson/client/handler/State.java@public getIndex() : intsrc/main/java/org/redisson/client/handler/DecoderState.java 12:14
+******************************
+******************************
+coarse grained commits 80af6c639ff7e9118da4304d2895242c68486009
+fine grained commits ('ea1cc7c1132597dd08ab0dd938c66e0bdcfcaf78', 'd53daaa6961873e16452825daa818f7f02c9b3de')
+Generation
+Extract Interfacesrc/main/java/org/redisson/client/protocol/PubSubStatusDecoder.java@org.redisson.client.protocol.PubSubStatusDecodersrc/main/java/org/redisson/client/protocol/pubsub/PubSubStatusDecoder.java@org.redisson.client.protocol.pubsub.PubSubStatusDecodersrc/main/java/org/redisson/client/protocol/PubSubStatusDecoder.java 10:37
+******************************
+******************************
+coarse grained commits 60741350fc1f259cd72b15ba39dd64ac4bd79030
+fine grained commits ('c8c7c91427c3cc7cd640b688f60f294355584f2c', '29a56cf2b9122f2f834dda1eaa1f26741bfe5acc')
+Generation
+Encapsulate Attributesrc/main/java/org/redisson/client/RedisConnection.java@package bootstrap : Bootstrapsrc/main/java/org/redisson/client/RedisConnection.java@package redisClient : RedisClientsrc/main/java/org/redisson/client/RedisConnection.java 14:14
+******************************
+******************************
+coarse grained commits 31786a924c6cb6209e0cec915de3218f8645e88b
+fine grained commits ('62431777105e4091d7d9f48f758fd43ede71a902', '0a27d5fc2f020366840e39b6624682df9aaae5de')
+Generation
+Rename Variablesrc/main/java/org/redisson/client/RedisClient.java@res : Future<String>src/main/java/org/redisson/client/RedisClient.java@res2 : Stringsrc/main/java/org/redisson/client/RedisClient.java 66:66
+******************************
+******************************
+coarse grained commits 4a370e6e0d497ec621a9b1bd388b312cf7ca8903
+fine grained commits ('f7a5849e55d15e2d6ea75e22541da93e157d2643', '62d641b5147f1f010414c2ed13c18d902b5753ae')
+Generation
+Extract Subclasssrc/main/java/org/redisson/connection/ConnectionEntry.java@org.redisson.connection.ConnectionEntrysrc/main/java/org/redisson/connection/ConnectionEntry.java@org.redisson.connection.ConnectionEntrysrc/main/java/org/redisson/connection/ConnectionEntry.java 11:65
+Generation
+Push Down Methodsrc/main/java/org/redisson/connection/ConnectionEntry.java@public getSubscribeConnections() : Queue<RedisPubSubConnection>src/main/java/org/redisson/connection/SlaveConnectionEntry.java@public getSubscribeConnections() : Queue<RedisPubSubConnection>src/main/java/org/redisson/connection/ConnectionEntry.java 57:59
+Generation
+Push Down Methodsrc/main/java/org/redisson/connection/ConnectionEntry.java@public getSubscribeConnectionsSemaphore() : Semaphoresrc/main/java/org/redisson/connection/SlaveConnectionEntry.java@public getSubscribeConnectionsSemaphore() : Semaphoresrc/main/java/org/redisson/connection/ConnectionEntry.java 49:51
+Generation
+Push Down Attributesrc/main/java/org/redisson/connection/ConnectionEntry.java@private subscribeConnectionsSemaphore : Semaphoresrc/main/java/org/redisson/connection/SlaveConnectionEntry.java@private subscribeConnectionsSemaphore : Semaphoresrc/main/java/org/redisson/connection/ConnectionEntry.java 16:16
+Generation
+Push Down Attributesrc/main/java/org/redisson/connection/ConnectionEntry.java@private subscribeConnections : Queue<RedisPubSubConnection>src/main/java/org/redisson/connection/SlaveConnectionEntry.java@private subscribeConnections : Queue<RedisPubSubConnection>src/main/java/org/redisson/connection/ConnectionEntry.java 19:19
+Generation
+Push Down Methodsrc/main/java/org/redisson/connection/ConnectionEntry.java@public ConnectionEntry(client RedisClient, poolSize int, subscribePoolSize int)src/main/java/org/redisson/connection/SlaveConnectionEntry.java@public SlaveConnectionEntry(client RedisClient, poolSize int, subscribePoolSize int)src/main/java/org/redisson/connection/ConnectionEntry.java 24:30
+******************************
+******************************
+coarse grained commits 49e48d5dff924973798771bb0253c041ac2b49f2
+fine grained commits ('d79a6810bda96d3713009a6fe6fbf16cf9d9e259', 'a65b8f029855452f1458193b4bd7b7123162a82e')
+Generation
+Rename Attributesrc/main/java/org/redisson/RedissonTopic.java@pubSubConnection : RedisPubSubConnection<String,M>src/main/java/org/redisson/RedissonTopic.java@pubSubEntry : PubSubEntrysrc/main/java/org/redisson/RedissonTopic.java 18:18
+Generation
+Change Attribute Typesrc/main/java/org/redisson/RedissonTopic.java@pubSubConnection : RedisPubSubConnection<String,M>src/main/java/org/redisson/RedissonTopic.java@pubSubEntry : PubSubEntrysrc/main/java/org/redisson/RedissonTopic.java 18:18
+Generation
+Rename Attributesrc/main/java/org/redisson/ConnectionManager.java@semaphore : Semaphoresrc/main/java/org/redisson/connection/ConnectionManager.java@activeConnections : Semaphoresrc/main/java/org/redisson/ConnectionManager.java 20:20
+******************************
+******************************
+coarse grained commits 3953f99108f636bb22a65d185b440a0aeeb729ac
+fine grained commits ('f5dc0fe74e4beb3bc72c7743cc76e0add261f68e', '3363fbd4957a05ea020f5457dadd89d3e54acb98', 'f414cbf9d82e64f0ff4b31b7cb2ebeead8d23996')
+Generation
+Extract And Move Methodredisson/src/main/java/org/redisson/RedissonBaseLock.java@public RedissonBaseLock(commandExecutor CommandAsyncExecutor, name String)redisson/src/main/java/org/redisson/RedissonObject.java@public getServiceManager() : ServiceManagerredisson/src/main/java/org/redisson/RedissonBaseLock.java 82:88
+Generation
+Extract And Move Methodredisson/src/main/java/org/redisson/RedissonBaseLock.java@private renewExpiration() : voidredisson/src/main/java/org/redisson/RedissonObject.java@public getServiceManager() : ServiceManagerredisson/src/main/java/org/redisson/RedissonBaseLock.java 98:134
+Generation
+Extract And Move Methodredisson/src/main/java/org/redisson/RedissonBaseLock.java@public unlockAsync(threadId long) : RFuture<Void>redisson/src/main/java/org/redisson/RedissonObject.java@public getServiceManager() : ServiceManagerredisson/src/main/java/org/redisson/RedissonBaseLock.java 253:256
+Generation
+Extract And Move Methodredisson/src/main/java/org/redisson/RedissonLock.java@private tryAcquireAsync0(waitTime long, leaseTime long, unit TimeUnit, threadId long) : RFuture<Long>redisson/src/main/java/org/redisson/RedissonObject.java@public getServiceManager() : ServiceManagerredisson/src/main/java/org/redisson/RedissonLock.java 117:119
+Generation
+Extract And Move Methodredisson/src/main/java/org/redisson/RedissonLock.java@private lockAsync(leaseTime long, unit TimeUnit, entry RedissonLockEntry, result CompletableFuture<Void>, currentThreadId long) : voidredisson/src/main/java/org/redisson/RedissonObject.java@public getServiceManager() : ServiceManagerredisson/src/main/java/org/redisson/RedissonLock.java 345:386
+Generation
+Extract And Move Methodredisson/src/main/java/org/redisson/RedissonLock.java@public tryLockAsync(threadId long) : RFuture<Boolean>redisson/src/main/java/org/redisson/RedissonObject.java@public getServiceManager() : ServiceManagerredisson/src/main/java/org/redisson/RedissonLock.java 388:391
+Generation
+Extract And Move Methodredisson/src/main/java/org/redisson/RedissonLock.java@public tryLockAsync(waitTime long, leaseTime long, unit TimeUnit, currentThreadId long) : RFuture<Boolean>redisson/src/main/java/org/redisson/RedissonObject.java@public getServiceManager() : ServiceManagerredisson/src/main/java/org/redisson/RedissonLock.java 393:454
+Generation
+Extract And Move Methodredisson/src/main/java/org/redisson/RedissonLock.java@private tryLockAsync(time AtomicLong, waitTime long, leaseTime long, unit TimeUnit, entry RedissonLockEntry, result CompletableFuture<Boolean>, currentThreadId long) : voidredisson/src/main/java/org/redisson/RedissonObject.java@public getServiceManager() : ServiceManagerredisson/src/main/java/org/redisson/RedissonLock.java 456:531
+Generation
+Extract And Move Methodredisson/src/main/java/org/redisson/RedissonPermitExpirableSemaphore.java@private tryAcquireAsync(time AtomicLong, permits int, entry RedissonLockEntry, result CompletableFuture<String>, ttl long, timeUnit TimeUnit) : voidredisson/src/main/java/org/redisson/RedissonObject.java@public getServiceManager() : ServiceManagerredisson/src/main/java/org/redisson/RedissonPermitExpirableSemaphore.java 119:227
+Generation
+Extract And Move Methodredisson/src/main/java/org/redisson/RedissonPermitExpirableSemaphore.java@private acquireAsync(permits int, entry RedissonLockEntry, ttl long, timeUnit TimeUnit) : CompletableFuture<String>redisson/src/main/java/org/redisson/RedissonObject.java@public getServiceManager() : ServiceManagerredisson/src/main/java/org/redisson/RedissonPermitExpirableSemaphore.java 229:275
+Generation
+Extract And Move Methodredisson/src/main/java/org/redisson/RedissonPermitExpirableSemaphore.java@private tryAcquireAsync(permits int, timeoutDate long) : RFuture<String>redisson/src/main/java/org/redisson/RedissonObject.java@public getServiceManager() : ServiceManagerredisson/src/main/java/org/redisson/RedissonPermitExpirableSemaphore.java 323:333
+Generation
+Extract And Move Methodredisson/src/main/java/org/redisson/RedissonPermitExpirableSemaphore.java@private tryAcquireAsync(permits int, waitTime long, ttl long, timeUnit TimeUnit) : RFuture<String>redisson/src/main/java/org/redisson/RedissonObject.java@public getServiceManager() : ServiceManagerredisson/src/main/java/org/redisson/RedissonPermitExpirableSemaphore.java 448:508
+Generation
+Extract And Move Methodredisson/src/main/java/org/redisson/RedissonRateLimiter.java@package getClientPermitsName() : Stringredisson/src/main/java/org/redisson/RedissonObject.java@public getServiceManager() : ServiceManagerredisson/src/main/java/org/redisson/RedissonRateLimiter.java 30:32
+Generation
+Extract And Move Methodredisson/src/main/java/org/redisson/RedissonRateLimiter.java@package getClientValueName() : Stringredisson/src/main/java/org/redisson/RedissonObject.java@public getServiceManager() : ServiceManagerredisson/src/main/java/org/redisson/RedissonRateLimiter.java 38:40
+Generation
+Extract And Move Methodredisson/src/main/java/org/redisson/RedissonReliableTopic.java@public addListenerAsync(type Class<M>, listener MessageListener<M>) : RFuture<String>redisson/src/main/java/org/redisson/RedissonObject.java@public getServiceManager() : ServiceManagerredisson/src/main/java/org/redisson/RedissonReliableTopic.java 131:161
+Generation
+Extract And Move Methodredisson/src/main/java/org/redisson/RedissonReliableTopic.java@private poll(id String, startId StreamMessageId) : voidredisson/src/main/java/org/redisson/RedissonObject.java@public getServiceManager() : ServiceManagerredisson/src/main/java/org/redisson/RedissonReliableTopic.java 163:243
+Generation
+Extract And Move Methodredisson/src/main/java/org/redisson/RedissonReliableTopic.java@private renewExpiration() : voidredisson/src/main/java/org/redisson/RedissonObject.java@public getServiceManager() : ServiceManagerredisson/src/main/java/org/redisson/RedissonReliableTopic.java 304:325
+Generation
+Extract And Move Methodredisson/src/main/java/org/redisson/RedissonSpinLock.java@private lockAsync(leaseTime long, unit TimeUnit, currentThreadId long, result CompletableFuture<Void>, backOffPolicy LockOptions.BackOffPolicy) : voidredisson/src/main/java/org/redisson/RedissonObject.java@public getServiceManager() : ServiceManagerredisson/src/main/java/org/redisson/RedissonSpinLock.java 200:221
+Generation
+Extract And Move Methodredisson/src/main/java/org/redisson/RedissonSpinLock.java@private tryLock(leaseTime long, unit TimeUnit, currentThreadId long, result CompletableFuture<Boolean>, time AtomicLong, backOffPolicy LockOptions.BackOffPolicy) : voidredisson/src/main/java/org/redisson/RedissonObject.java@public getServiceManager() : ServiceManagerredisson/src/main/java/org/redisson/RedissonSpinLock.java 242:272
+Generation
+Extract And Move Methodredisson/src/main/java/org/redisson/RedissonTransferQueue.java@public tryTransferAsync(v V, timeout long, unit TimeUnit) : RFuture<Boolean>redisson/src/main/java/org/redisson/RedissonObject.java@public getServiceManager() : ServiceManagerredisson/src/main/java/org/redisson/RedissonTransferQueue.java 168:241
+******************************
+******************************
+coarse grained commits 49882ae0d597783af32203323e785ffc450d2825
+fine grained commits ('49a9b2a34c0994bfe96afe755a27febb8151a84c', 'ba01d8249c7d0ffec061d01e27f6bc5a1d8d8edb', '4b42a288ec50a605d05881847bdeffb1341bf6ab')
+Generation
+Extract And Move Methodredisson/src/main/java/org/redisson/RedissonSemaphore.java@public availablePermits() : intredisson/src/main/java/org/redisson/RedissonRateLimiter.java@public availablePermitsAsync() : RFuture<Long>redisson/src/main/java/org/redisson/RedissonSemaphore.java 435:439
+******************************
+******************************
+coarse grained commits 94caa077f2fb953dfde79844d60cfd9198c28987
+fine grained commits ('e776d5e663220d9b7606fb28e58832fccea24ae3', '2f189e01f59e1549f1e6146e332dc13af5776bc8', '2089ac12ec28cfd3b0a455782290e339d0cdd28b')
+Generation
+Move Attributeredisson/src/main/java/org/redisson/RedissonLiveObjectService.java@private redisson : RedissonClientredisson-spring-data/redisson-spring-data-22/src/main/java/org/redisson/spring/data/connection/RedissonConnectionFactory.java@private redisson : RedissonClientredisson/src/main/java/org/redisson/RedissonLiveObjectService.java 75:75
+Generation
+Move Attributeredisson/src/main/java/org/redisson/RedissonLiveObjectService.java@private redisson : RedissonClientredisson-spring-data/redisson-spring-data-22/src/test/java/org/redisson/BaseTest.java@protected redisson : RedissonClientredisson/src/main/java/org/redisson/RedissonLiveObjectService.java 75:75
+Generation
+Move Attributeredisson/src/main/java/org/redisson/RedissonLiveObjectService.java@private redisson : RedissonClientredisson-spring-data/redisson-spring-data-22/src/test/java/org/redisson/spring/data/connection/RedissonClusterConnectionTest.java@package redisson : RedissonClientredisson/src/main/java/org/redisson/RedissonLiveObjectService.java 75:75
+Generation
+Move Attributeredisson/src/main/java/org/redisson/RedissonLiveObjectService.java@private redisson : RedissonClientredisson-spring-data/redisson-spring-data-22/src/test/java/org/redisson/spring/data/connection/RedissonSentinelConnectionTest.java@package redisson : RedissonClientredisson/src/main/java/org/redisson/RedissonLiveObjectService.java 75:75
+Generation
+Move Attributeredisson/src/main/java/org/redisson/liveobject/LiveObjectSearch.java@private redisson : RedissonClientredisson-spring-data/redisson-spring-data-22/src/test/java/org/redisson/BaseTest.java@protected redisson : RedissonClientredisson/src/main/java/org/redisson/liveobject/LiveObjectSearch.java 31:31
+Generation
+Move Attributeredisson/src/main/java/org/redisson/liveobject/core/AccessorInterceptor.java@private redisson : RedissonClientredisson-spring-data/redisson-spring-data-22/src/test/java/org/redisson/BaseTest.java@protected redisson : RedissonClientredisson/src/main/java/org/redisson/liveobject/core/AccessorInterceptor.java 33:33
+Generation
+Move Attributeredisson/src/main/java/org/redisson/liveobject/core/LiveObjectInterceptor.java@private redisson : RedissonClientredisson-spring-data/redisson-spring-data-22/src/test/java/org/redisson/BaseTest.java@protected redisson : RedissonClientredisson/src/main/java/org/redisson/liveobject/core/LiveObjectInterceptor.java 39:39
+Generation
+Remove Attribute Modifierredisson/src/main/java/org/redisson/RedissonLiveObjectService.java@private redisson : RedissonClientredisson-spring-data/redisson-spring-data-22/src/main/java/org/redisson/spring/data/connection/RedissonConnectionFactory.java@private redisson : RedissonClientredisson/src/main/java/org/redisson/RedissonLiveObjectService.java 75:75
+Generation
+Remove Attribute Modifierredisson/src/main/java/org/redisson/RedissonLiveObjectService.java@private redisson : RedissonClientredisson-spring-data/redisson-spring-data-22/src/test/java/org/redisson/spring/data/connection/RedissonClusterConnectionTest.java@package redisson : RedissonClientredisson/src/main/java/org/redisson/RedissonLiveObjectService.java 75:75
+Generation
+Remove Attribute Modifierredisson/src/main/java/org/redisson/RedissonLiveObjectService.java@private redisson : RedissonClientredisson-spring-data/redisson-spring-data-22/src/test/java/org/redisson/spring/data/connection/RedissonSentinelConnectionTest.java@package redisson : RedissonClientredisson/src/main/java/org/redisson/RedissonLiveObjectService.java 75:75
+Generation
+Change Attribute Access Modifierredisson/src/main/java/org/redisson/RedissonLiveObjectService.java@private redisson : RedissonClientredisson-spring-data/redisson-spring-data-22/src/test/java/org/redisson/spring/data/connection/RedissonClusterConnectionTest.java@package redisson : RedissonClientredisson/src/main/java/org/redisson/RedissonLiveObjectService.java 75:75
+Generation
+Add Attribute Modifierredisson/src/main/java/org/redisson/RedissonLiveObjectService.java@private redisson : RedissonClientredisson-spring-data/redisson-spring-data-22/src/test/java/org/redisson/spring/data/connection/RedissonClusterConnectionTest.java@package redisson : RedissonClientredisson/src/main/java/org/redisson/RedissonLiveObjectService.java 75:75
+Generation
+Change Attribute Access Modifierredisson/src/main/java/org/redisson/RedissonLiveObjectService.java@private redisson : RedissonClientredisson-spring-data/redisson-spring-data-22/src/test/java/org/redisson/spring/data/connection/RedissonSentinelConnectionTest.java@package redisson : RedissonClientredisson/src/main/java/org/redisson/RedissonLiveObjectService.java 75:75
+Generation
+Change Attribute Access Modifierredisson/src/main/java/org/redisson/liveobject/core/LiveObjectInterceptor.java@private redisson : RedissonClientredisson-spring-data/redisson-spring-data-22/src/test/java/org/redisson/BaseTest.java@protected redisson : RedissonClientredisson/src/main/java/org/redisson/liveobject/core/LiveObjectInterceptor.java 39:39
+Generation
+Remove Attribute Modifierredisson/src/main/java/org/redisson/liveobject/core/LiveObjectInterceptor.java@private redisson : RedissonClientredisson-spring-data/redisson-spring-data-22/src/test/java/org/redisson/BaseTest.java@protected redisson : RedissonClientredisson/src/main/java/org/redisson/liveobject/core/LiveObjectInterceptor.java 39:39
+******************************
+******************************
+coarse grained commits dbf79995ae04c892824e5809b536ca8e96f284d9
+fine grained commits ('ee92fa3b0df464113e9840fa827c0a1106a9e6c0', '0fb0809b1168a0d47fbb6b002fab1b0cde098140', 'b49843b08f275ba01fa5273a07a84303cafdfd36')
+Generation
+Move And Rename Classredisson/src/main/java/org/redisson/spring/data/connection/TimeObjectDecoder.java@org.redisson.spring.data.connection.TimeObjectDecoderredisson/src/main/java/org/redisson/client/protocol/decoder/TimeLongObjectDecoder.java@org.redisson.client.protocol.decoder.TimeLongObjectDecoderredisson/src/main/java/org/redisson/spring/data/connection/TimeObjectDecoder.java 10:22
+Generation
+Move Packageredisson/src/main/java/org/redisson/spring/data/connection/TimeObjectDecoder.java@org.redisson.spring.data.connection.TimeObjectDecoderredisson/src/main/java/org/redisson/client/protocol/decoder/TimeLongObjectDecoder.java@org.redisson.client.protocol.decoder.TimeLongObjectDecoderredisson/src/main/java/org/redisson/spring/data/connection/TimeObjectDecoder.java 10:22
+******************************
+******************************
+coarse grained commits f4a8c2c47d06d17a8c0fc90f1af224fdc7c6b367
+fine grained commits ('294fa0a76766e90139dcdd2ea7035eb0bec0575e', '45e7feff3ac003b0c4367248cf8943a55dd8ac69', '74a4bd4d874cef6c1047a7ce97adca70350021f4')
+Generation
+Change Variable Typeredisson/src/main/java/org/redisson/RedissonExecutorService.java@remoteService : ExecutorRemoteServiceredisson/src/main/java/org/redisson/RedissonExecutorService.java@executorRemoteService : TasksServiceredisson/src/main/java/org/redisson/RedissonExecutorService.java 120:120
+Generation
+Rename Variableredisson/src/main/java/org/redisson/RedissonExecutorService.java@remoteService : ExecutorRemoteServiceredisson/src/main/java/org/redisson/RedissonExecutorService.java@executorRemoteService : TasksServiceredisson/src/main/java/org/redisson/RedissonExecutorService.java 120:120
+Generation
+Extract And Move Methodredisson/src/main/java/org/redisson/RedissonExecutorService.java@public RedissonExecutorService(codec Codec, commandExecutor CommandExecutor, redisson Redisson, name String)redisson/src/main/java/org/redisson/executor/TasksService.java@public setTasksName(tasksName String) : voidredisson/src/main/java/org/redisson/RedissonExecutorService.java 95:136
+******************************
+******************************
+coarse grained commits cef1f1ea620b96ee8946eac8ddab0e645ecc9617
+fine grained commits ('c52d6e77b7d9f1ac52b546be24029bc0b64faaec', '239dc93fb5980fc2f36fdd4914939b7f85f876a0', '7cf59539827b6ef0485660373049c26f3fdb6ead')
+Generation
+Extract Methodredisson/src/main/java/org/redisson/mapreduce/BaseMapperTask.java@public call() : Objectredisson/src/main/java/org/redisson/mapreduce/CoordinatorTask.java@private cancelReduce(futures List<RFuture<?>>) : voidredisson/src/main/java/org/redisson/mapreduce/BaseMapperTask.java 54:113
+Generation
+Extract Methodredisson/src/main/java/org/redisson/mapreduce/BaseMapperTask.java@public call() : Objectredisson/src/main/java/org/redisson/mapreduce/CoordinatorTask.java@private executeCollator() : Objectredisson/src/main/java/org/redisson/mapreduce/BaseMapperTask.java 54:113
+******************************
+******************************
+coarse grained commits 2ad7eec28179aba238aefe3b1ad3375ae2cbf9c4
+fine grained commits ('ea1cc7c1132597dd08ab0dd938c66e0bdcfcaf78', 'd53daaa6961873e16452825daa818f7f02c9b3de', '86e7a0cd015350a918bc1a91443db8db1153c947')
+Generation
+Move And Rename Classsrc/main/java/org/redisson/client/protocol/BooleanReplayDecoder.java@org.redisson.client.protocol.BooleanReplayDecodersrc/main/java/org/redisson/client/protocol/pubsub/PubSubPatternMessageDecoder.java@org.redisson.client.protocol.pubsub.PubSubPatternMessageDecodersrc/main/java/org/redisson/client/protocol/BooleanReplayDecoder.java 8:22
+Generation
+Rename Attributesrc/main/java/org/redisson/client/protocol/PubSubMessage.java@type : Typesrc/main/java/org/redisson/client/protocol/pubsub/PubSubMessage.java@value : Objectsrc/main/java/org/redisson/client/protocol/PubSubMessage.java 7:7
+Generation
+Change Attribute Typesrc/main/java/org/redisson/client/protocol/PubSubMessage.java@type : Typesrc/main/java/org/redisson/client/protocol/pubsub/PubSubMessage.java@value : Objectsrc/main/java/org/redisson/client/protocol/PubSubMessage.java 7:7
+******************************
+******************************
+coarse grained commits 3100c0c8b8ef987214e028752ff91689630ad300
+fine grained commits ('2b795493276ea21c6d1fd63034b10abcef717d41', 'c8c7c91427c3cc7cd640b688f60f294355584f2c', '29a56cf2b9122f2f834dda1eaa1f26741bfe5acc')
+Generation
+Move Attributesrc/main/java/org/redisson/client/RedisClient.java@private channel : Channelsrc/main/java/org/redisson/client/RedisPubSubConnection.java@package channel : Channelsrc/main/java/org/redisson/client/RedisClient.java 28:28
+Generation
+Change Attribute Access Modifiersrc/main/java/org/redisson/client/RedisClient.java@private channel : Channelsrc/main/java/org/redisson/client/RedisPubSubConnection.java@package channel : Channelsrc/main/java/org/redisson/client/RedisClient.java 28:28
+******************************
+******************************
+coarse grained commits 8cb4770b224858ca027b6e3b5e7dab44163de257
+fine grained commits ('18b241b0b99df099905d328f716d114429c8fde5', 'a2dae04d4835594a5692a2af6de693b0fd0b24f8', 'bd24f3be9f579a46756829a6a2fa5fcbbebd6c74')
+Generation
+Add Parameterredisson-spring-boot-starter/src/main/java/org/redisson/spring/starter/RedissonAutoConfiguration.java@private convert(nodesObject List<String>) : String[]redisson-spring-boot-starter/src/main/java/org/redisson/spring/starter/RedissonAutoConfiguration.java@prefix : Stringredisson-spring-boot-starter/src/main/java/org/redisson/spring/starter/RedissonAutoConfiguration.java 231:241
+******************************
+******************************
+coarse grained commits e96203adec47c451f126875224c50571d6f97f7d
+fine grained commits ('911caaafdd32f9d583de64e56580d055a8ba3edf', '90154227030f0974d9630361e2872bc27f356fa0', '531d5bcb32cfdb6975566879228a62d1a3d913ce')
+Generation
+Rename Attributeredisson/src/main/java/org/redisson/client/RedisConnection.java@closed : booleanredisson/src/main/java/org/redisson/client/RedisConnection.java@status : Statusredisson/src/main/java/org/redisson/client/RedisConnection.java 35:35
+Generation
+Change Attribute Typeredisson/src/main/java/org/redisson/client/RedisConnection.java@closed : booleanredisson/src/main/java/org/redisson/client/RedisConnection.java@status : Statusredisson/src/main/java/org/redisson/client/RedisConnection.java 35:35
+******************************
+******************************
+coarse grained commits 7800c08520e3abcd32a0a0565470a345f47eaeba
+fine grained commits ('e858208f9199a73f3e8984bf315e43d88ba364f5', 'b3cb02e411c6d2c36fe8b7c449cd734f1f1ee9af', '77b4806fddd4f340a3724a8067166ea8e99f9904')
+Generation
+Move And Inline Methodredisson/src/main/java/org/redisson/QueueTransferTask.java@private addListener(startTimeFuture RFuture<Long>) : voidredisson/src/main/java/org/redisson/BaseRemoteService.java@private pollTasks(entry ResponseEntry, responseName String) : voidredisson/src/main/java/org/redisson/QueueTransferTask.java 100:118
+******************************
+******************************
+coarse grained commits ffdc5bd12724832fff1ae1f84bf3dd7dcf01a995
+fine grained commits ('06f66ce6efd8fec443ec66c8fbbe742f4f0e538e', '66d905c269f1a7f34a4a9b619f1a1345e7f61581', 'c7ba444080cfc8724c37c6dc4cf062054233933a')
+Generation
+Rename Methodsrc/test/java/org/redisson/RedissonScoredSortedSetTest.java@public testLexRange() : voidsrc/test/java/org/redisson/RedissonScoredSortedSetTest.java@public testRemoveRangeByRank() : voidsrc/test/java/org/redisson/RedissonScoredSortedSetTest.java 56:68
+******************************
+******************************
+coarse grained commits da01fbf235b04e78a8ecffbe37de951aa758dd77
+fine grained commits ('cd361993686c0081b60e79426c1fa9d767dbb791', '23fe00d2ace2f4e461fd694367acf8aa3435952b', 'ed5a53f27ad62d457d818bf94c4860533febb346')
+Generation
+Extract And Move Methodsrc/main/java/org/redisson/RedissonDeque.java@public getLast() : Vsrc/main/java/org/redisson/RedissonObject.java@protected get(future Future<V>) : Vsrc/main/java/org/redisson/RedissonDeque.java 63:70
+******************************
+******************************
+coarse grained commits 6c082ec4feae0cdace8c246b030c8df50201d88d
+fine grained commits ('53e70560add550a0e8ff691315aeb762991a7785', 'f8e6ad10ce3b6c3eaabdb6ea376a0e305616f8de', '58e3895fc21900d36a2c7f56150fca86394bb6ec')
+Generation
+Rename Parametersrc/main/java/org/redisson/core/RList.java@e : Vsrc/main/java/org/redisson/core/RHyperLogLogAsync.java@obj : Vsrc/main/java/org/redisson/core/RList.java 12:12
+Generation
+Move Methodsrc/main/java/org/redisson/core/RList.java@public addAsync(e V) : Future<Boolean>src/main/java/org/redisson/core/RHyperLogLogAsync.java@public addAsync(obj V) : Future<Boolean>src/main/java/org/redisson/core/RList.java 12:12
+******************************
+******************************
+coarse grained commits 02ee9b8550925723f1a3efd4b4ba90c9a494b450
+fine grained commits ('0a27d5fc2f020366840e39b6624682df9aaae5de', 'dba70125f94c44facf6df6e7191a3b6761520b97', '17cefcaf372546425e92e4217fc8ceb72f75c0ed')
+Generation
+Rename Variablesrc/main/java/org/redisson/client/RedisClient.java@res : Future<String>src/main/java/org/redisson/client/RedisClient.java@res1 : Future<String>src/main/java/org/redisson/client/RedisClient.java 65:65
+******************************
+******************************
+coarse grained commits cd78394ad6cbb0df86d444ec06a07d7ad46bcd42
+fine grained commits ('201ec000f935c19a8471f699bed7639643eb575e', '520a3e7348c1b725eaeca2717d1d8f6842d8bb0d', '0a11a075c8aa3ca8d7bc3a23e0453f62156a3b57')
+Generation
+Replace Variable With Attributesrc/main/java/org/redisson/RedissonMap.java@connection : RedisConnection<Object,Object>src/main/java/org/redisson/async/OperationListener.java@async : RedisAsyncConnection<Object,V>src/main/java/org/redisson/RedissonMap.java 41:41
+******************************
+******************************
+coarse grained commits 4c6dce890b745970a0f40a798e930ec98409f4f8
+fine grained commits ('0aebb48d70a427d72b8b9bf16304adc97bbd9339', '94d3aa729b501f48ce6edc376281745968c95bc4', '31d1ba8400faec88ce3482ac0234e214c6288fac')
+Generation
+Move And Rename Classsrc/main/java/com/lambdaworks/redis/codec/StreamCodec.java@com.lambdaworks.redis.codec.StreamCodecsrc/main/java/org/redisson/codec/SerializationCodec.java@org.redisson.codec.SerializationCodecsrc/main/java/com/lambdaworks/redis/codec/StreamCodec.java 9:49
+Generation
+Extract Interfacesrc/main/java/com/lambdaworks/redis/codec/JsonJacksonCodec.java@com.lambdaworks.redis.codec.JsonJacksonCodecsrc/main/java/org/redisson/codec/JsonJacksonCodec.java@org.redisson.codec.JsonJacksonCodecsrc/main/java/com/lambdaworks/redis/codec/JsonJacksonCodec.java 16:69
+******************************
+******************************
+coarse grained commits 7e20d910a18891aff3acf113badc30f4a420378c
+fine grained commits ('1aeb67b7a4e051212d0582065a11d05d998c068e', 'd74c39e42886758888a12d75f12b94d1e5829c69', '6964cc3d316d48b8f10106119d6349dc66ac80a7')
+Generation
+Move Attributeredisson/src/test/java/org/redisson/RedissonTest.java@protected redisson : RedissonClientredisson/src/main/java/org/redisson/RedissonBaseAdder.java@private redisson : RedissonClientredisson/src/test/java/org/redisson/RedissonTest.java 47:47
+Generation
+Move Attributeredisson/src/test/java/org/redisson/RedissonTest.java@protected redisson : RedissonClientredisson/src/main/java/org/redisson/RedissonDoubleAdder.java@private redisson : RedissonClientredisson/src/test/java/org/redisson/RedissonTest.java 47:47
+Generation
+Move Attributeredisson/src/test/java/org/redisson/RedissonTest.java@protected redisson : RedissonClientredisson/src/main/java/org/redisson/RedissonLongAdder.java@private redisson : RedissonClientredisson/src/test/java/org/redisson/RedissonTest.java 47:47
+Generation
+Change Attribute Access Modifierredisson/src/test/java/org/redisson/RedissonTest.java@protected redisson : RedissonClientredisson/src/main/java/org/redisson/RedissonLongAdder.java@private redisson : RedissonClientredisson/src/test/java/org/redisson/RedissonTest.java 47:47
+Generation
+Add Attribute Modifierredisson/src/test/java/org/redisson/RedissonTest.java@protected redisson : RedissonClientredisson/src/main/java/org/redisson/RedissonLongAdder.java@private redisson : RedissonClientredisson/src/test/java/org/redisson/RedissonTest.java 47:47
+Generation
+Change Attribute Access Modifierredisson/src/test/java/org/redisson/RedissonTest.java@protected redisson : RedissonClientredisson/src/main/java/org/redisson/RedissonBaseAdder.java@private redisson : RedissonClientredisson/src/test/java/org/redisson/RedissonTest.java 47:47
+Generation
+Add Attribute Modifierredisson/src/test/java/org/redisson/RedissonTest.java@protected redisson : RedissonClientredisson/src/main/java/org/redisson/RedissonBaseAdder.java@private redisson : RedissonClientredisson/src/test/java/org/redisson/RedissonTest.java 47:47
+Generation
+Change Attribute Access Modifierredisson/src/test/java/org/redisson/RedissonTest.java@protected redisson : RedissonClientredisson/src/main/java/org/redisson/RedissonDoubleAdder.java@private redisson : RedissonClientredisson/src/test/java/org/redisson/RedissonTest.java 47:47
+Generation
+Add Attribute Modifierredisson/src/test/java/org/redisson/RedissonTest.java@protected redisson : RedissonClientredisson/src/main/java/org/redisson/RedissonDoubleAdder.java@private redisson : RedissonClientredisson/src/test/java/org/redisson/RedissonTest.java 47:47
+******************************
+******************************
+coarse grained commits e28fbc1bfc7cddcc8e6edf2182e011c1daa7f115
+fine grained commits ('cb3e7a0d1cdb682c72476f434b8fec25de46f965', 'd3c42883269996f30140ad8421dbd8c2a8c3dc90', '61538f99a014ad1bafde52b3a81545a6ad8d04c0')
+Generation
+Remove Parameterredisson/src/main/java/org/redisson/RedissonPriorityDeque.java@e : Vredisson/src/main/java/org/redisson/RedissonObject.java@public unlinkAsync() : RFuture<Boolean>redisson/src/main/java/org/redisson/RedissonPriorityDeque.java 103:103
+Generation
+Add Method Annotationredisson/src/main/java/org/redisson/RedissonPriorityDeque.java@public offerFirstAsync(e V) : RFuture<Boolean>redisson/src/main/java/org/redisson/RedissonObject.java@@Overrideredisson/src/main/java/org/redisson/RedissonPriorityDeque.java 103:105
+Generation
+Move And Rename Methodredisson/src/main/java/org/redisson/RedissonPriorityDeque.java@public offerFirstAsync(e V) : RFuture<Boolean>redisson/src/main/java/org/redisson/RedissonObject.java@public unlinkAsync() : RFuture<Boolean>redisson/src/main/java/org/redisson/RedissonPriorityDeque.java 103:105
+******************************
+******************************
+coarse grained commits 437cbdeed18accf126ebb15b708716a058a22d3b
+fine grained commits ('7cf59539827b6ef0485660373049c26f3fdb6ead', 'a5155b9ef8920f2ddccce91a6dcfee7bdff01744', '9da6f9c7a0b3b9618a7738315533ed95a08497fb')
+Generation
+Change Return Typeredisson/src/main/java/org/redisson/mapreduce/RedissonCollectionMapReduce.java@CollectionMapperTask<VIn,KOut,VOut>redisson/src/main/java/org/redisson/mapreduce/RedissonCollectionMapReduce.java@Callable<Object>redisson/src/main/java/org/redisson/mapreduce/RedissonCollectionMapReduce.java 32:32
+Generation
+Add Parameterredisson/src/main/java/org/redisson/mapreduce/RedissonCollectionMapReduce.java@protected createTask(resultMapName String) : CollectionMapperTask<VIn,KOut,VOut>redisson/src/main/java/org/redisson/mapreduce/RedissonCollectionMapReduce.java@collator : RCollator<KOut,VOut,Object>redisson/src/main/java/org/redisson/mapreduce/RedissonCollectionMapReduce.java 31:34
+******************************
+******************************
+coarse grained commits 61c13c8de3ea3ab59173f5df5b931b089513c6d5
+fine grained commits ('c4fd097ba21b074644edfc5c6fefb006f05f733f', '6eb386895133b60d6ed41b50fd13da23cc97ad26', 'e167b9247cb0223a64d4bb2466ea918acc23e92b')
+Generation
+Rename Attributesrc/main/java/org/redisson/Redisson.java@liveObjectProxyCache : Map<Class,Class>src/main/java/org/redisson/Redisson.java@liveObjectDefaultCodecProvider : CodecProvidersrc/main/java/org/redisson/Redisson.java 74:75
+Generation
+Change Attribute Typesrc/main/java/org/redisson/Redisson.java@liveObjectProxyCache : Map<Class,Class>src/main/java/org/redisson/Redisson.java@liveObjectDefaultCodecProvider : CodecProvidersrc/main/java/org/redisson/Redisson.java 74:75
+Generation
+Merge Parametersrc/main/java/org/redisson/RedissonAttachedLiveObjectService.java@commandExecutor : CommandAsyncExecutorsrc/main/java/org/redisson/RedissonAttachedLiveObjectService.java@codecProvider : CodecProvidersrc/main/java/org/redisson/RedissonAttachedLiveObjectService.java 27:27
+Generation
+Merge Attributesrc/main/java/org/redisson/RedissonAttachedLiveObjectService.java@commandExecutor : CommandAsyncExecutorsrc/main/java/org/redisson/RedissonAttachedLiveObjectService.java@codecProvider : CodecProvidersrc/main/java/org/redisson/RedissonAttachedLiveObjectService.java 25:25
+******************************
+******************************
+coarse grained commits 13edae66cb2161f4f9a9d676615ecfe5b902866c
+fine grained commits ('9ac2601ebaf5f86e06b2314616579dfce0fca26f', 'fb7da8e5c49cbd110accbfef061227c521000c3a', 'aede7fec9df7b45e303f53a4686ddf592b41ebf6')
+Generation
+Move Classsrc/main/java/org/redisson/RedissonCacheEvictScheduler.java@org.redisson.RedissonCacheEvictScheduler.RedissonCacheTasksrc/main/java/org/redisson/RedissonEvictionScheduler.java@org.redisson.RedissonEvictionScheduler.RedissonCacheTasksrc/main/java/org/redisson/RedissonCacheEvictScheduler.java 18:83
+******************************
+******************************
+coarse grained commits 67a7aa583de6f902101b35f35121a671c7eb5170
+fine grained commits ('5b33ed1a35910dadf9685f3a7e78fdee21a62275', 'ef773b03a84e008e703639631cdde558439a7224', '68e44e6e6058737cd7e0d99bcb0c362a79294eaf')
+Generation
+Extract Methodsrc/main/java/org/redisson/RedissonCache.java@public getAllAsync(keys Set<K>) : Future<Map<K,V>>src/main/java/org/redisson/RedissonCache.java@private expireMap(currentDate long) : voidsrc/main/java/org/redisson/RedissonCache.java 106:129
+******************************
+******************************
+coarse grained commits 7e9b1026c1ace2b2857b23281aba2d46d97e8880
+fine grained commits ('01eb75d70b290ebd4cdce870d7a8cd922c4297b8', 'abb4ab3c9c818e140ac34d102966161cf7555f84', 'e98ba188efeaf2e54825314e738b79659e097d1b')
+Generation
+Rename Parametersrc/main/java/org/redisson/connection/ClusterConnectionManager.java@partitions : Map<Integer,ClusterPartition>src/main/java/org/redisson/cluster/ClusterConnectionManager.java@newPartitions : Collection<ClusterPartition>src/main/java/org/redisson/connection/ClusterConnectionManager.java 161:161
+Generation
+Move Methodsrc/main/java/org/redisson/connection/ClusterConnectionManager.java@private checkSlotsChange(cfg ClusterServersConfig, partitions Map<Integer,ClusterPartition>) : voidsrc/main/java/org/redisson/cluster/ClusterConnectionManager.java@private checkSlotsChange(cfg ClusterServersConfig, newPartitions Collection<ClusterPartition>) : voidsrc/main/java/org/redisson/connection/ClusterConnectionManager.java 161:190
+******************************
+******************************
+coarse grained commits 223cef8cc859148b197aa16deebe91638413dd75
+fine grained commits ('4b1a502c7b4111da83732aa528e6560806e21336', 'cac49fd774d9d432b01c55c428a5528e346f5eef', 'cd361993686c0081b60e79426c1fa9d767dbb791')
+Generation
+Change Variable Typesrc/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@connection : RedisConnectionsrc/main/java/org/redisson/CommandBatchExecutorService.java@entry : Entrysrc/main/java/org/redisson/connection/MasterSlaveConnectionManager.java 372:372
+Generation
+Remove Parameter Modifiersrc/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@readOnlyMode : booleansrc/main/java/org/redisson/CommandBatchExecutorService.java@readOnlyMode : booleansrc/main/java/org/redisson/connection/MasterSlaveConnectionManager.java 349:349
+Generation
+Remove Parameter Modifiersrc/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@slot : intsrc/main/java/org/redisson/CommandBatchExecutorService.java@slot : intsrc/main/java/org/redisson/connection/MasterSlaveConnectionManager.java 349:349
+Generation
+Remove Parameter Modifiersrc/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@messageDecoder : MultiDecoder<Object>src/main/java/org/redisson/CommandBatchExecutorService.java@messageDecoder : MultiDecoder<Object>src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java 349:349
+Generation
+Remove Parameter Modifiersrc/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@codec : Codecsrc/main/java/org/redisson/CommandBatchExecutorService.java@codec : Codecsrc/main/java/org/redisson/connection/MasterSlaveConnectionManager.java 349:349
+Generation
+Remove Parameter Modifiersrc/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@command : RedisCommand<V>src/main/java/org/redisson/CommandBatchExecutorService.java@command : RedisCommand<V>src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java 349:349
+Generation
+Remove Parameter Modifiersrc/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@params : Object[]src/main/java/org/redisson/CommandBatchExecutorService.java@params : Object[]src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java 350:350
+Generation
+Remove Parameter Modifiersrc/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@mainPromise : Promise<R>src/main/java/org/redisson/CommandBatchExecutorService.java@mainPromise : Promise<R>src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java 350:350
+Generation
+Remove Parameter Modifiersrc/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@attempt : intsrc/main/java/org/redisson/CommandBatchExecutorService.java@attempt : intsrc/main/java/org/redisson/connection/MasterSlaveConnectionManager.java 350:350
+Generation
+Rename Variablesrc/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@connection : RedisConnectionsrc/main/java/org/redisson/CommandBatchExecutorService.java@entry : Entrysrc/main/java/org/redisson/connection/MasterSlaveConnectionManager.java 372:372
+Generation
+Add Method Annotationsrc/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@private async(readOnlyMode boolean, slot int, messageDecoder MultiDecoder<Object>, codec Codec, command RedisCommand<V>, params Object[], mainPromise Promise<R>, attempt int) : voidsrc/main/java/org/redisson/CommandBatchExecutorService.java@@Overridesrc/main/java/org/redisson/connection/MasterSlaveConnectionManager.java 349:413
+Generation
+Change Method Access Modifiersrc/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@private async(readOnlyMode boolean, slot int, messageDecoder MultiDecoder<Object>, codec Codec, command RedisCommand<V>, params Object[], mainPromise Promise<R>, attempt int) : voidsrc/main/java/org/redisson/CommandBatchExecutorService.java@protected async(readOnlyMode boolean, slot int, messageDecoder MultiDecoder<Object>, codec Codec, command RedisCommand<V>, params Object[], mainPromise Promise<R>, attempt int) : voidsrc/main/java/org/redisson/connection/MasterSlaveConnectionManager.java 349:413
+Generation
+Add Method Annotationsrc/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@public evalRead(key String, evalCommandType RedisCommand<T>, script String, keys List<Object>, params Object...) : Rsrc/main/java/org/redisson/CommandBatchExecutorService.java@@Overridesrc/main/java/org/redisson/connection/MasterSlaveConnectionManager.java 294:296
+Generation
+Add Method Annotationsrc/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@public evalRead(key String, codec Codec, evalCommandType RedisCommand<T>, script String, keys List<Object>, params Object...) : Rsrc/main/java/org/redisson/CommandBatchExecutorService.java@@Overridesrc/main/java/org/redisson/connection/MasterSlaveConnectionManager.java 298:301
+Generation
+Add Method Annotationsrc/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@public evalWrite(key String, evalCommandType RedisCommand<T>, script String, keys List<Object>, params Object...) : Rsrc/main/java/org/redisson/CommandBatchExecutorService.java@@Overridesrc/main/java/org/redisson/connection/MasterSlaveConnectionManager.java 319:321
+Generation
+Add Method Annotationsrc/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@public evalWrite(key String, codec Codec, evalCommandType RedisCommand<T>, script String, keys List<Object>, params Object...) : Rsrc/main/java/org/redisson/CommandBatchExecutorService.java@@Overridesrc/main/java/org/redisson/connection/MasterSlaveConnectionManager.java 323:326
+Generation
+Add Method Annotationsrc/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@public read(key String, operation SyncOperation<R>) : Rsrc/main/java/org/redisson/CommandBatchExecutorService.java@@Overridesrc/main/java/org/redisson/connection/MasterSlaveConnectionManager.java 234:237
+Generation
+Add Method Annotationsrc/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@public write(key String, operation SyncOperation<R>) : Rsrc/main/java/org/redisson/CommandBatchExecutorService.java@@Overridesrc/main/java/org/redisson/connection/MasterSlaveConnectionManager.java 229:232
+Generation
+Add Method Annotationsrc/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@public read(key String, codec Codec, command RedisCommand<T>, params Object...) : Rsrc/main/java/org/redisson/CommandBatchExecutorService.java@@Overridesrc/main/java/org/redisson/connection/MasterSlaveConnectionManager.java 213:216
+Generation
+Add Method Annotationsrc/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@public read(key String, command RedisCommand<T>, params Object...) : Rsrc/main/java/org/redisson/CommandBatchExecutorService.java@@Overridesrc/main/java/org/redisson/connection/MasterSlaveConnectionManager.java 209:211
+Generation
+Add Method Annotationsrc/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@public write(key String, codec Codec, command RedisCommand<T>, params Object...) : Rsrc/main/java/org/redisson/CommandBatchExecutorService.java@@Overridesrc/main/java/org/redisson/connection/MasterSlaveConnectionManager.java 337:340
+Generation
+Add Method Annotationsrc/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@public write(key String, command RedisCommand<T>, params Object...) : Rsrc/main/java/org/redisson/CommandBatchExecutorService.java@@Overridesrc/main/java/org/redisson/connection/MasterSlaveConnectionManager.java 328:331
+******************************
+******************************
+coarse grained commits 94c572fab7515f2b1b702a4108770c256e1f1791
+fine grained commits ('0a5f784b0705c8e620564508c9849bb63dd1a9df', '021897025f13eeb2dc082d7cecdc39a67b6d6591', '53e70560add550a0e8ff691315aeb762991a7785')
+Generation
+Rename Parametersrc/main/java/org/redisson/core/RHyperLogLog.java@obj : Vsrc/main/java/org/redisson/core/RCollectionAsync.java@e : Vsrc/main/java/org/redisson/core/RHyperLogLog.java 19:19
+Generation
+Move Methodsrc/main/java/org/redisson/core/RHyperLogLog.java@public addAsync(obj V) : Future<Boolean>src/main/java/org/redisson/core/RCollectionAsync.java@public addAsync(e V) : Future<Boolean>src/main/java/org/redisson/core/RHyperLogLog.java 19:19
+******************************
+******************************
+coarse grained commits 8da67aa028c0e1e830cc0ff55a08a0555d1448ad
+fine grained commits ('e879ae0ac10f039f27c16abdffdb1140d34e6020', '68254b2fa6d9d60a69808cfb346ff7e938a591ce', '4f8ede0a18fbf5a02d2b0515fb97d7f12fc81709')
+Generation
+Split Classsrc/main/java/org/redisson/client/protocol/decoder/StringListObjectReplayDecoder.java@org.redisson.client.protocol.decoder.StringListObjectReplayDecodersrc/main/java/org/redisson/client/protocol/decoder/BooleanStatusReplayDecoder.java@org.redisson.client.protocol.decoder.BooleanStatusReplayDecodersrc/main/java/org/redisson/client/protocol/decoder/StringListObjectReplayDecoder.java 10:22
+******************************
+******************************
+coarse grained commits c6de522df8c324e33b0831370b74d09fa18c0dcc
+fine grained commits ('e602f25e940bd6949a3caebe2ae11294384115c1', '7b227c30f1a09bc536671bf320ba6a4da60d3da4', '3931bbc56e22cdd01ce626dc2cf36b36ffd4c140')
+Generation
+Extract Methodsrc/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@public changeMaster(host String, port int) : voidsrc/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@protected slaveDown(host String, port int) : voidsrc/main/java/org/redisson/connection/MasterSlaveConnectionManager.java 87:93
+******************************
+******************************
+coarse grained commits f4843c229eefcac7efe324c7f3fa55f5b91b6bcc
+fine grained commits ('af9bfce78716938daa9e3b5ff1487fd0e06fc7cb', 'ea0dc4a6bf3e6e0c7a8f4db07ae6e0f2ff165996', '310d2457d71f07406cf4c38d7f79ea3fed8169b2')
+Generation
+Move Attributesrc/main/java/org/redisson/Redisson.java@private connection : RedisConnection<Object,Object>src/main/java/org/redisson/RedissonLock.java@private connection : RedisConnection<Object,Object>src/main/java/org/redisson/Redisson.java 11:11
+******************************
+******************************
+coarse grained commits a21a5f9084301c1257dd52659c27e6909a9a983f
+fine grained commits ('251852919d5a0d9386af60ea5b51672d7cf08fde', '68699fbbebc041859e9c2ee4e695226b163ea690', 'd46edc490c7858f1f1fa5c15f19a77da8a2e009f', '648e4ac23fb4563138fa2c88f4cf55712a0bbd25')
+Generation
+Remove Method Annotationredisson/src/main/java/org/redisson/executor/ScheduledTasksService.java@@Overrideredisson/src/main/java/org/redisson/RedissonExecutorService.java@private generateId() : Stringredisson/src/main/java/org/redisson/executor/ScheduledTasksService.java 118:118
+Generation
+Change Method Access Modifierredisson/src/main/java/org/redisson/executor/ScheduledTasksService.java@protected generateRequestId() : Stringredisson/src/main/java/org/redisson/RedissonExecutorService.java@private generateId() : Stringredisson/src/main/java/org/redisson/executor/ScheduledTasksService.java 118:127
+Generation
+Change Method Access Modifierredisson/src/main/java/org/redisson/executor/TasksService.java@protected generateRequestId() : Stringredisson/src/main/java/org/redisson/RedissonExecutorService.java@private generateId() : Stringredisson/src/main/java/org/redisson/executor/TasksService.java 158:164
+Generation
+Move And Rename Methodredisson/src/main/java/org/redisson/executor/ScheduledTasksService.java@protected generateRequestId() : Stringredisson/src/main/java/org/redisson/RedissonExecutorService.java@private generateId() : Stringredisson/src/main/java/org/redisson/executor/ScheduledTasksService.java 118:127
+Generation
+Remove Method Annotationredisson/src/main/java/org/redisson/executor/TasksService.java@@Overrideredisson/src/main/java/org/redisson/RedissonExecutorService.java@private generateId() : Stringredisson/src/main/java/org/redisson/executor/TasksService.java 158:158
+Generation
+Move And Rename Methodredisson/src/main/java/org/redisson/executor/TasksService.java@protected generateRequestId() : Stringredisson/src/main/java/org/redisson/RedissonExecutorService.java@private generateId() : Stringredisson/src/main/java/org/redisson/executor/TasksService.java 158:164
+******************************
+******************************
+coarse grained commits 3dd90b886f29569436b1f63e1d00a3597e9ec30f
+fine grained commits ('67b891f3a1e1d08f39f5e1ad1a5310912fdc8d97', '3ac85db14ae1e2fb3b425c99732d2c1ddf4f039c', '2d3860be260a1c4de6cee8909b1d8dc262fe3347', 'd7d1d9d02f76c5b359f424e7465fc65aac94b6ca')
+Generation
+Split Attributeredisson/src/main/java/org/redisson/transaction/operation/TouchOperation.java@lockName : Stringredisson/src/main/java/org/redisson/transaction/operation/TouchOperation.java@transactionId : Stringredisson/src/main/java/org/redisson/transaction/operation/TouchOperation.java 10:10
+Generation
+Split Attributeredisson/src/main/java/org/redisson/transaction/operation/UnlinkOperation.java@lockName : Stringredisson/src/main/java/org/redisson/transaction/operation/UnlinkOperation.java@transactionId : Stringredisson/src/main/java/org/redisson/transaction/operation/UnlinkOperation.java 10:10
+******************************
+******************************
+coarse grained commits d12181a2cc952dafddd88efec8e4c62b9a2781bd
+fine grained commits ('03fbfd19ccb5dcfca48a366a70954acd6950465e', '4d515eecc0b9ca848ce98b0320aef1ff968fb928', 'f10bbd8bfcbfb240fb8ece83d2f5570a9856f3af', '0e9607ee82878523fd877522200ee15a3bedc740')
+Generation
+Rename Methodredisson/src/main/java/org/redisson/config/BaseConfig.java@public setPingTimeout(pingTimeout int) : Tredisson/src/main/java/org/redisson/config/BaseConfig.java@public setUsername(username String) : Tredisson/src/main/java/org/redisson/config/BaseConfig.java 127:131
+Generation
+Change Parameter Typeredisson/src/main/java/org/redisson/config/BaseConfig.java@pingTimeout : intredisson/src/main/java/org/redisson/config/BaseConfig.java@username : Stringredisson/src/main/java/org/redisson/config/BaseConfig.java 128:128
+Generation
+Rename Parameterredisson/src/main/java/org/redisson/config/BaseConfig.java@pingTimeout : intredisson/src/main/java/org/redisson/config/BaseConfig.java@username : Stringredisson/src/main/java/org/redisson/config/BaseConfig.java 128:128
+Generation
+Remove Method Annotationredisson/src/main/java/org/redisson/config/BaseConfig.java@@Deprecatedredisson/src/main/java/org/redisson/config/BaseConfig.java@public setUsername(username String) : Tredisson/src/main/java/org/redisson/config/BaseConfig.java 127:127
+Generation
+Rename Attributeredisson/src/main/java/org/redisson/config/BaseConfig.java@pingTimeout : intredisson/src/main/java/org/redisson/config/BaseConfig.java@username : Stringredisson/src/main/java/org/redisson/config/BaseConfig.java 14:14
+Generation
+Change Attribute Typeredisson/src/main/java/org/redisson/config/BaseConfig.java@pingTimeout : intredisson/src/main/java/org/redisson/config/BaseConfig.java@username : Stringredisson/src/main/java/org/redisson/config/BaseConfig.java 14:14
+******************************
+******************************
+coarse grained commits 86dc45cac7e88fedad6932d461aac6ccfe9cd417
+fine grained commits ('4f8ede0a18fbf5a02d2b0515fb97d7f12fc81709', '7868dac52bd1dcbd02f2c48257d58d419ae091a3', 'ff8413ba8cff1ead9fbfc750833e217d5e439836', 'e21088b98340d17d1336c146c551b1bc10c628ba')
+Generation
+Add Parametersrc/main/java/org/redisson/client/handler/RedisDecoder.java@private decoder(data RedisData<Object,Object>, isMulti boolean) : Decoder<Object>src/main/java/org/redisson/client/handler/RedisDecoder.java@parts : List<Object>src/main/java/org/redisson/client/handler/RedisDecoder.java 91:103
+Generation
+Add Parametersrc/main/java/org/redisson/client/handler/RedisDecoder.java@private decoder(data RedisData<Object,Object>, isMulti boolean) : Decoder<Object>src/main/java/org/redisson/client/handler/RedisDecoder.java@currentDecoder : Decoder<Object>src/main/java/org/redisson/client/handler/RedisDecoder.java 91:103
+Generation
+Remove Parametersrc/main/java/org/redisson/client/handler/RedisDecoder.java@isMulti : booleansrc/main/java/org/redisson/client/handler/RedisDecoder.java@private decoder(data RedisData<Object,Object>, parts List<Object>, currentDecoder Decoder<Object>) : Decoder<Object>src/main/java/org/redisson/client/handler/RedisDecoder.java 91:91
+******************************
+******************************
+coarse grained commits 85d923c82a1cbf0ed300b9e057bb29419bb247df
+fine grained commits ('afc5afb131f353aeb8aad579df1de1d8d3fb88cd', 'eaebf0b43d8bb9d73f4a7c9969cde4e228e976a0', '33dc92c6724f3608d8bb892a98d9961535774b13', '8d8b51234856c2f3f423f31f650fbfc218ac914f')
+Generation
+Extract Methodredisson/src/main/java/org/redisson/connection/MasterSlaveEntry.java@public nodeDown(entry ClientConnectionsEntry) : booleanredisson/src/main/java/org/redisson/connection/MasterSlaveEntry.java@private reattachPubSub(entry ClientConnectionsEntry) : voidredisson/src/main/java/org/redisson/connection/MasterSlaveEntry.java 223:251
+******************************
+******************************
+coarse grained commits 419a4b07dc88ab6511d6b318186258f98b0acc6f
+fine grained commits ('7399f9fea528a9abb97413ea54056e2aef25fe03', 'b0d4b7df3baea5fac5ea6b668ac60fb90c49578c', '84c42354f7b549de853b53d6e7f581db06e680f3', '51915f15cb61c7c0848b66036c9ad22d6af52082')
+Generation
+Remove Parameterredisson/src/main/java/org/redisson/liveobject/core/RedissonObjectBuilder.java@config : Configredisson/src/main/java/org/redisson/liveobject/core/RedissonObjectBuilder.java@public RedissonObjectBuilder(redisson RedissonClient)redisson/src/main/java/org/redisson/liveobject/core/RedissonObjectBuilder.java 63:63
+Generation
+Remove Parameterredisson/src/main/java/org/redisson/liveobject/core/RedissonObjectBuilder.java@redissonReactive : RedissonReactiveClientredisson/src/main/java/org/redisson/liveobject/core/RedissonObjectBuilder.java@public RedissonObjectBuilder(redisson RedissonClient)redisson/src/main/java/org/redisson/liveobject/core/RedissonObjectBuilder.java 64:64
+Generation
+Remove Parameterredisson/src/main/java/org/redisson/liveobject/core/RedissonObjectBuilder.java@redissonRx : RedissonRxClientredisson/src/main/java/org/redisson/liveobject/core/RedissonObjectBuilder.java@public RedissonObjectBuilder(redisson RedissonClient)redisson/src/main/java/org/redisson/liveobject/core/RedissonObjectBuilder.java 64:64
+******************************
+******************************
+coarse grained commits c85c1aadb1ca98e561704ca7895723b1765e3bd4
+fine grained commits ('76c01a92c5f54ed427b9b20de8927218d0795ad5', '89b6cbcf157a2feb00eb9c1d61b981a8051cd72b', 'fcce0cddeda2d1af959587c70a7d1557abb152d9', 'a5a3a3edfec7fa8ba79cd6a24942bb50a7bd5e57')
+Generation
+Move And Inline Methodredisson/src/main/java/org/redisson/client/protocol/decoder/GeoDistanceDecoder.java@public decode(buf ByteBuf, state State) : Objectredisson/src/main/java/org/redisson/client/protocol/decoder/GeoDistanceMapDecoder.java@public getDecoder(paramNum int, state State) : Decoder<Object>redisson/src/main/java/org/redisson/client/protocol/decoder/GeoDistanceDecoder.java 23:29
+Generation
+Move And Inline Methodredisson/src/main/java/org/redisson/client/protocol/decoder/GeoDistanceDecoder.java@public decode(buf ByteBuf, state State) : Objectredisson/src/main/java/org/redisson/client/protocol/decoder/GeoDistanceMapDecoder.java@public getDecoder(paramNum int, state State) : Decoder<Object>redisson/src/main/java/org/redisson/client/protocol/decoder/GeoDistanceDecoder.java 23:29
+Generation
+Rename Methodredisson/src/main/java/org/redisson/client/protocol/decoder/GeoDistanceDecoder.java@public isApplicable(paramNum int, state State) : booleanredisson/src/main/java/org/redisson/client/protocol/decoder/GeoDistanceDecoder.java@public getDecoder(paramNum int, state State) : Decoder<Object>redisson/src/main/java/org/redisson/client/protocol/decoder/GeoDistanceDecoder.java 31:35
+Generation
+Change Return Typeredisson/src/main/java/org/redisson/client/protocol/decoder/GeoDistanceDecoder.java@booleanredisson/src/main/java/org/redisson/client/protocol/decoder/GeoDistanceDecoder.java@Decoder<Object>redisson/src/main/java/org/redisson/client/protocol/decoder/GeoDistanceDecoder.java 32:32
+******************************
+******************************
+coarse grained commits 96d337b7b7da5ce50f2d0b9e7443dadca60da81c
+fine grained commits ('349a4123b3f58a55950459534e97d4aea9b5de17', 'f0e90e61f9f5f37250f3caac8ae9308233507219', 'c032925bd07f792cb7836e4d2f882df59a18b7d7', '80e9c90e156cef8b6d818a307cbda15f347b870a')
+Generation
+Inline Methodredisson/src/main/java/org/redisson/connection/pool/ConnectionPool.java@private createConnection(entry ClientConnectionsEntry) : RFuture<T>redisson/src/main/java/org/redisson/connection/pool/ConnectionPool.java@private createConnection(checkFreezed boolean, requests AtomicInteger, entry ClientConnectionsEntry, initPromise RPromise<Void>, minimumIdleSize int, initializedConnections AtomicInteger) : voidredisson/src/main/java/org/redisson/connection/pool/ConnectionPool.java 192:213
+Generation
+Inline Methodredisson/src/main/java/org/redisson/connection/pool/ConnectionPool.java@private promiseFailure(entry ClientConnectionsEntry, conn T) : RFuture<T>redisson/src/main/java/org/redisson/connection/pool/ConnectionPool.java@private connectTo(entry ClientConnectionsEntry, promise RPromise<T>) : voidredisson/src/main/java/org/redisson/connection/pool/ConnectionPool.java 255:270
+Generation
+Remove Variable Modifierredisson/src/main/java/org/redisson/connection/pool/ConnectionPool.java@promise : RPromise<T>redisson/src/main/java/org/redisson/connection/pool/ConnectionPool.java@promise : RPromise<T>redisson/src/main/java/org/redisson/connection/pool/ConnectionPool.java 193:193
+Generation
+Extract Methodredisson/src/main/java/org/redisson/connection/pool/ConnectionPool.java@private createConnection(checkFreezed boolean, requests AtomicInteger, entry ClientConnectionsEntry, initPromise RPromise<Void>, minimumIdleSize int, initializedConnections AtomicInteger) : voidredisson/src/main/java/org/redisson/connection/pool/ConnectionPool.java@private createConnection(entry ClientConnectionsEntry, promise RPromise<T>) : voidredisson/src/main/java/org/redisson/connection/pool/ConnectionPool.java 75:118
+Generation
+Extract Methodredisson/src/main/java/org/redisson/connection/pool/ConnectionPool.java@private connectTo(entry ClientConnectionsEntry) : RFuture<T>redisson/src/main/java/org/redisson/connection/pool/ConnectionPool.java@private createConnection(entry ClientConnectionsEntry, promise RPromise<T>) : voidredisson/src/main/java/org/redisson/connection/pool/ConnectionPool.java 179:190
+******************************
+******************************
+coarse grained commits 803698f14d18bcb9384332322fbd935961910b67
+fine grained commits ('3409bad906cce899a71970009f2e1da1bf708d31', '466805e8f7e7c17e26441222c89813b6a23244f2', 'b1adf6fb72264c969465c8a3aff3ca553489059d', 'c4b188dc953bab37eb76583d50523463ff6dd750')
+Generation
+Rename Methodsrc/main/java/org/redisson/core/RedissonMultiLock.java@private unlockInner() : voidsrc/main/java/org/redisson/core/RedissonMultiLock.java@protected sync(tryLockFutures Map<RLock,Future<Boolean>>) : booleansrc/main/java/org/redisson/core/RedissonMultiLock.java 164:173
+Generation
+Extract Methodsrc/main/java/org/redisson/core/RedissonMultiLock.java@private unlockInner() : voidsrc/main/java/org/redisson/core/RedissonMultiLock.java@protected unlockInner(locks Collection<RLock>) : voidsrc/main/java/org/redisson/core/RedissonMultiLock.java 164:173
+Generation
+Change Return Typesrc/main/java/org/redisson/core/RedissonMultiLock.java@voidsrc/main/java/org/redisson/core/RedissonMultiLock.java@booleansrc/main/java/org/redisson/core/RedissonMultiLock.java 164:164
+Generation
+Parameterize Attributesrc/main/java/org/redisson/core/RedissonMultiLock.java@locks : List<RLock>src/main/java/org/redisson/core/RedissonMultiLock.java@tryLockFutures : Map<RLock,Future<Boolean>>src/main/java/org/redisson/core/RedissonMultiLock.java 23:23
+******************************
+******************************
+coarse grained commits b2acfd4830af776cac1973804afd6bffda1e027c
+fine grained commits ('380bc7b4b7cba712aeb7f71e4d05c891da5833c4', '8fbe896f2cf02443e5163505ab7c4d35439eaf2c', '01eb75d70b290ebd4cdce870d7a8cd922c4297b8', 'abb4ab3c9c818e140ac34d102966161cf7555f84')
+Generation
+Rename Variablesrc/main/java/org/redisson/cluster/ClusterConnectionManager.java@addr : URIsrc/main/java/org/redisson/cluster/ClusterConnectionManager.java@uri : URIsrc/main/java/org/redisson/cluster/ClusterConnectionManager.java 121:121
+******************************
+******************************
+coarse grained commits a8acc3aa3a842cf7cc72a96786b51dd9c5c49da2
+fine grained commits ('ef98b1ef8a13b71e311bd6e5bf0d8b99bbc8594a', '94a33d0687b78984a2382fff53932ea301acb45a', '495b788bae262928f0d5f8844bd11c2761e0893a', '8cb881b81bbe59833f8c6b93d3270b1be276f5da')
+Generation
+Extract Subclasssrc/main/java/org/redisson/RedissonMap.java@org.redisson.RedissonMapsrc/main/java/org/redisson/RedissonMap.java@org.redisson.RedissonMapsrc/main/java/org/redisson/RedissonMap.java 31:416
+Generation
+Push Down Methodsrc/main/java/org/redisson/RedissonMap.java@public keySetAsync() : Future<Set<K>>src/main/java/org/redisson/RedissonCache.java@public keySetAsync() : Future<Set<K>>src/main/java/org/redisson/RedissonMap.java 153:156
+Generation
+Push Down Methodsrc/main/java/org/redisson/RedissonMap.java@public valuesAsync() : Future<Collection<V>>src/main/java/org/redisson/RedissonCache.java@public valuesAsync() : Future<Collection<V>>src/main/java/org/redisson/RedissonMap.java 163:166
+******************************
+******************************
+coarse grained commits 7837d2f0fd1b90a0b603096ed814d6884565df2a
+fine grained commits ('f37d4bf4998cf1b5046fe68cf1805d4459706e57', '37625b6b69a39335a0cf632cfc37de326fadf5d9', '5d1643869a557accbd582b557fe9921ce15b1d35', '9134c366d5d4b79dc9ea361c6176457f7ac3b9b4')
+Generation
+Move Attributeredisson/src/main/java/org/redisson/RedissonBoundedBlockingQueue.java@private commandExecutor : CommandAsyncExecutorredisson/src/main/java/org/redisson/RedissonFuction.java@private commandExecutor : CommandAsyncExecutorredisson/src/main/java/org/redisson/RedissonBoundedBlockingQueue.java 27:27
+******************************
+******************************
+coarse grained commits 3e4d0bbbebe9d3ba7913dcfd0c05566941f7dbb4
+fine grained commits ('8303e3da11d06344734d703aebbbdd91629b3d09', 'cff5d5646815b25badebe707db11c3b946055417', 'bc1f3c9f38abb1704657abd4cf8959969dbdab72', 'e442ea99bde78bea56a365ed44682e8dc1105147')
+Generation
+Split Variableredisson/src/main/java/org/redisson/jcache/JCache.java@params : List<Object>redisson/src/main/java/org/redisson/jcache/JCache.java@map : Map<? extends K,? extends V>redisson/src/main/java/org/redisson/jcache/JCache.java 500:500
+Generation
+Localize Parameterredisson/src/main/java/org/redisson/jcache/JCache.java@params : List<Object>redisson/src/main/java/org/redisson/jcache/JCache.java@params : List<Object>redisson/src/main/java/org/redisson/jcache/JCache.java 568:568
+Generation
+Rename Parameterredisson/src/main/java/org/redisson/jcache/JCache.java@entry : MasterSlaveEntryredisson/src/main/java/org/redisson/jcache/JCache.java@msEntry : MasterSlaveEntryredisson/src/main/java/org/redisson/jcache/JCache.java 568:568
+******************************
+******************************
+coarse grained commits 0d616e3b1c459b41bae53f0779426de66d6a6ee1
+fine grained commits ('4e979e5720efd008591710f32598fffbe1c7fa70', '13c4d6db51a85dc26f2ae228eba9263ddef8ba6e', 'da2dc748eba870314eab65eb075ead2ab2178a9c', '4c958d2e4ee3e76efb75095802588f91ab19c4f1')
+Generation
+Inline Methodredisson/src/main/java/org/redisson/connection/SentinelConnectionManager.java@private convert(ip String, port String) : RedisURIredisson/src/main/java/org/redisson/connection/SentinelConnectionManager.java@private updateState(cfg SentinelServersConfig, connection RedisConnection, iterator Iterator<RedisClient>) : voidredisson/src/main/java/org/redisson/connection/SentinelConnectionManager.java 570:574
+Generation
+Extract Methodredisson/src/main/java/org/redisson/connection/SentinelConnectionManager.java@private updateState(cfg SentinelServersConfig, connection RedisConnection, iterator Iterator<RedisClient>) : voidredisson/src/main/java/org/redisson/connection/SentinelConnectionManager.java@private toURI(host String, port String) : RedisURIredisson/src/main/java/org/redisson/connection/SentinelConnectionManager.java 321:457
+******************************
+******************************
+coarse grained commits 2a970727feea2c789e655318e5aa92cf092eae42
+fine grained commits ('68254b2fa6d9d60a69808cfb346ff7e938a591ce', '4f8ede0a18fbf5a02d2b0515fb97d7f12fc81709', '7868dac52bd1dcbd02f2c48257d58d419ae091a3', 'ff8413ba8cff1ead9fbfc750833e217d5e439836')
+Generation
+Merge Parametersrc/main/java/org/redisson/client/protocol/RedisCommand.java@subName : Stringsrc/main/java/org/redisson/client/protocol/RedisCommand.java@encodeParamIndex : intsrc/main/java/org/redisson/client/protocol/RedisCommand.java 16:16
+Generation
+Split Parametersrc/main/java/org/redisson/client/protocol/RedisCommand.java@encodeParamIndexes : int...src/main/java/org/redisson/client/protocol/RedisCommand.java@objectParamIndex : intsrc/main/java/org/redisson/client/protocol/RedisCommand.java 20:20
+Generation
+Remove Parametersrc/main/java/org/redisson/client/protocol/RedisCommand.java@encodeParamIndexes : int...src/main/java/org/redisson/client/protocol/RedisCommand.java@public RedisCommand(name String, subName String, replayMultiDecoder MultiDecoder<R>, reponseDecoder Decoder<R>, objectParamIndex int)src/main/java/org/redisson/client/protocol/RedisCommand.java 42:42
+Generation
+Remove Parametersrc/main/java/org/redisson/client/protocol/RedisStrictCommand.java@encodeParamIndexes : int...src/main/java/org/redisson/client/protocol/RedisStrictCommand.java@public RedisStrictCommand(name String, replayMultiDecoder MultiDecoder<T>)src/main/java/org/redisson/client/protocol/RedisStrictCommand.java 7:7
+Generation
+Merge Parametersrc/main/java/org/redisson/client/protocol/RedisStrictCommand.java@convertor : Convertor<T>src/main/java/org/redisson/client/protocol/RedisStrictCommand.java@reponseDecoder : Decoder<T>src/main/java/org/redisson/client/protocol/RedisStrictCommand.java 15:15
+Generation
+Move Methodsrc/main/java/org/redisson/client/protocol/StringCodec.java@public decode(buf ByteBuf) : Objectsrc/main/java/org/redisson/client/protocol/decoder/StringListReplayDecoder.java@public decode(buf ByteBuf) : Objectsrc/main/java/org/redisson/client/protocol/StringCodec.java 19:22
+******************************
+******************************
+coarse grained commits 2b15251603a57324d6d9699ee6c67d213f4e0b04
+fine grained commits ('f93cd147ddf5559b07d8894452e59e7567101f2f', 'e8e9eaa66c2431e4146edbc6f3bb1805e6f05278', '97326e40533bf3edfb11962fae46cf0dddc3a9a0', '4d7d0dca12cd4241364470e9dfef05ba0d5ecf00')
+Generation
+Extract And Move Methodsrc/main/java/org/redisson/RedissonAtomicLong.java@public compareAndSet(expect long, update long) : booleansrc/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@public write(operation SyncOperation<V,R>) : Rsrc/main/java/org/redisson/RedissonAtomicLong.java 34:54
+******************************
+******************************
+coarse grained commits e2790a75498741009ece2f26f05411bf1c540a56
+fine grained commits ('bf7487db7af3050cf0ae0dbe904fc76c7e644ab3', '4b37cc074f9c31511570caa1b53992b6ede0e3d9', 'd79a6810bda96d3713009a6fe6fbf16cf9d9e259', 'a65b8f029855452f1458193b4bd7b7123162a82e')
+Generation
+Change Variable Typesrc/main/java/org/redisson/ConnectionManager.java@address : Entry<String,Integer>src/main/java/org/redisson/connection/ConnectionManager.java@address : URIsrc/main/java/org/redisson/ConnectionManager.java 25:25
+******************************
+******************************
+coarse grained commits 0a7f2c5598c44bb053c9746b73b447f8d6e7f21e
+fine grained commits ('cc64727c82f70f43244020b78cd0858d6a064f92', '1e4a5ffcd0e24f7181dbebfb4656dbd505773baa', 'f3626c50e316ee6004c5805c9f89b49c72aa569f', '3561c86ad70815deaa9693ab04b331b475c61b7b')
+Generation
+Pull Up Methodsrc/test/java/org/redisson/RedissonMapTest.java@private clear(map Map<?,?>, redisson Redisson) : voidsrc/test/java/org/redisson/BaseTest.java@protected clear(map Map<?,?>, redisson Redisson) : voidsrc/test/java/org/redisson/RedissonMapTest.java 326:330
+******************************
+******************************
+coarse grained commits 50f1a7c9e3965f1e1bf97f7fe00e20d7fdebe4a4
+fine grained commits ('c52d6e77b7d9f1ac52b546be24029bc0b64faaec', '239dc93fb5980fc2f36fdd4914939b7f85f876a0', '7cf59539827b6ef0485660373049c26f3fdb6ead', 'a5155b9ef8920f2ddccce91a6dcfee7bdff01744', '9da6f9c7a0b3b9618a7738315533ed95a08497fb')
+Generation
+Rename Attributeredisson/src/main/java/org/redisson/mapreduce/ReducerTask.java@semaphoreName : Stringredisson/src/main/java/org/redisson/mapreduce/ReducerTask.java@timeout : longredisson/src/main/java/org/redisson/mapreduce/ReducerTask.java 22:22
+Generation
+Change Attribute Typeredisson/src/main/java/org/redisson/mapreduce/ReducerTask.java@semaphoreName : Stringredisson/src/main/java/org/redisson/mapreduce/ReducerTask.java@timeout : longredisson/src/main/java/org/redisson/mapreduce/ReducerTask.java 22:22
+******************************
+******************************
+coarse grained commits 809627dcc5c55dda7dd590094f58a9723348bd1f
+fine grained commits ('7b2b2f402fea6e228b15ebc1177a4cf5ca415255', '29959239dfa7334e8739757e04ab96d2eaf7e6aa', 'cecf41539de16d85c3d03330bd0b9d8a3020d2ff', '71afd55578d90a4a662ba45f230c1a44de1c2351', '565e8f967c1f81e526c262865b4bb76e1900ea1e')
+Generation
+Extract Classsrc/main/java/org/redisson/RedissonReactive.java@org.redisson.RedissonReactivesrc/main/java/org/redisson/RedissonReactive.java@org.redisson.RedissonReactivesrc/main/java/org/redisson/RedissonReactive.java 36:231
+******************************
+******************************
+coarse grained commits db5a2622084575ac8fe02c6f13e2ec8ea1dd5e05
+fine grained commits ('ff8413ba8cff1ead9fbfc750833e217d5e439836', 'e21088b98340d17d1336c146c551b1bc10c628ba', 'e82bb1458c116fa852f51e3aa83a102c5a37e7f1', 'ea1cc7c1132597dd08ab0dd938c66e0bdcfcaf78', 'd53daaa6961873e16452825daa818f7f02c9b3de')
+Generation
+Move And Rename Classsrc/main/java/org/redisson/client/protocol/StringReplayDecoder.java@org.redisson.client.protocol.StringReplayDecodersrc/main/java/org/redisson/client/protocol/decoder/StringMapReplayDecoder.java@org.redisson.client.protocol.decoder.StringMapReplayDecodersrc/main/java/org/redisson/client/protocol/StringReplayDecoder.java 8:22
+Generation
+Add Parametersrc/main/java/org/redisson/client/RedisPubSubConnection.java@public async(encoder Codec, nextDecoder Decoder<Object>, command RedisCommand<T>, params Object...) : Future<R>src/main/java/org/redisson/client/RedisPubSubConnection.java@messageDecoder : MultiDecoder<Object>src/main/java/org/redisson/client/RedisPubSubConnection.java 78:82
+Generation
+Change Return Typesrc/main/java/org/redisson/client/protocol/StringReplayDecoder.java@Stringsrc/main/java/org/redisson/client/protocol/decoder/StringMapReplayDecoder.java@Objectsrc/main/java/org/redisson/client/protocol/StringReplayDecoder.java 11:11
+Generation
+Change Return Typesrc/main/java/org/redisson/client/protocol/StringReplayDecoder.java@Stringsrc/main/java/org/redisson/client/protocol/decoder/StringMapReplayDecoder.java@List<Map<String,String>>src/main/java/org/redisson/client/protocol/StringReplayDecoder.java 18:18
+******************************
+******************************
+coarse grained commits cb619d6b9edce7c413813617f9c5ed1b06003f19
+fine grained commits ('b9fc40bbafd2a7711ab64d4cfe077ae6eecc827e', 'a0177b203e82bef913b82faec8c2cc57a9a8dc22', '313b3174bb3fc1a28534101073bcdaa2d8bfc51a', '209f8e11d10ef477bfaaee4727688df6079908d5', '816fca93605abb057dc616a92d9cc2d133a1ae98')
+Generation
+Move And Inline Methodredisson/src/main/java/org/redisson/transaction/BaseTransactionalMap.java@protected executeLocked(promise RPromise<R>, runnable Runnable, keys Collection<K>) : voidredisson/src/main/java/org/redisson/transaction/RedissonTransactionalBuckets.java@public trySetAsync(buckets Map<String,?>) : RFuture<Boolean>redisson/src/main/java/org/redisson/transaction/BaseTransactionalMap.java 975:991
+******************************
+******************************
+coarse grained commits 4277fe9fbe8d4f97ba8f01ed3a2edadf794af946
+fine grained commits ('69cd2a585a6cbd0d2b1ee9129c14448321160135', 'a099695f4944b042783cb267ac8e2607d6c8eb24', '626d6e2df733989e9494089f34bd3879fa1119b7', '390bfdca88b6be432b3eb05659638a3153df9f4a', '34a42b9739d506911b2dc16b99e202f255d55800')
+Generation
+Replace Anonymous With Lambdaredisson/src/main/java/org/redisson/connection/MasterSlaveEntry.java@org.redisson.connection.MasterSlaveEntry.reattachBlockingQueue.addListener.new FutureListener<RedisConnection>redisson/src/main/java/org/redisson/connection/MasterSlaveEntry.java@(newConnection, e) -> {if(e != null){log.error("Can't resubscribe blocking queue " + commandData,e);redisson/src/main/java/org/redisson/connection/MasterSlaveEntry.java 220:253
+******************************
+******************************
+coarse grained commits 177a997f05b9f7ffeebcda91dc2897f7a54aec33
+fine grained commits ('fcce0cddeda2d1af959587c70a7d1557abb152d9', 'a5a3a3edfec7fa8ba79cd6a24942bb50a7bd5e57', '996c08c75afb247e74eadee7f2c47d3fab329b20', '2eec67a29bcec712a8fe2c9fa45e87fe5e0f2ce8', '8d62201fd039211bdc90d0bf1f30e98929a3b5ee')
+Generation
+Extract Superclassredisson/src/main/java/org/redisson/reactive/RedissonListMultimapReactive.java@org.redisson.reactive.RedissonListMultimapReactiveredisson/src/main/java/org/redisson/reactive/RedissonListMultimapReactive.java@org.redisson.reactive.RedissonListMultimapReactiveredisson/src/main/java/org/redisson/reactive/RedissonListMultimapReactive.java 26:288
+Generation
+Pull Up Methodredisson/src/main/java/org/redisson/reactive/RedissonListMultimapReactive.java@public size() : Publisher<Integer>redisson/src/main/java/org/redisson/reactive/RedissonBaseMultimapReactive.java@public size() : Publisher<Integer>redisson/src/main/java/org/redisson/reactive/RedissonListMultimapReactive.java 40:48
+Generation
+Pull Up Methodredisson/src/main/java/org/redisson/reactive/RedissonListMultimapReactive.java@protected hash(objectState ByteBuf) : Stringredisson/src/main/java/org/redisson/reactive/RedissonBaseMultimapReactive.java@protected hash(objectState ByteBuf) : Stringredisson/src/main/java/org/redisson/reactive/RedissonListMultimapReactive.java 170:172
+Generation
+Pull Up Methodredisson/src/main/java/org/redisson/reactive/RedissonListMultimapReactive.java@protected hashAndRelease(objectState ByteBuf) : Stringredisson/src/main/java/org/redisson/reactive/RedissonBaseMultimapReactive.java@protected hashAndRelease(objectState ByteBuf) : Stringredisson/src/main/java/org/redisson/reactive/RedissonListMultimapReactive.java 174:180
+Generation
+Pull Up Methodredisson/src/main/java/org/redisson/reactive/RedissonListMultimapReactive.java@package getValuesName(hash String) : Stringredisson/src/main/java/org/redisson/reactive/RedissonBaseMultimapReactive.java@package getValuesName(hash String) : Stringredisson/src/main/java/org/redisson/reactive/RedissonListMultimapReactive.java 182:184
+Generation
+Pull Up Methodredisson/src/main/java/org/redisson/reactive/RedissonListMultimapReactive.java@protected fastRemove(mapKeys List<Object>, listKeys List<Object>, evalCommandType RedisCommand<T>) : Publisher<T>redisson/src/main/java/org/redisson/reactive/RedissonBaseMultimapReactive.java@protected fastRemove(mapKeys List<Object>, listKeys List<Object>, evalCommandType RedisCommand<T>) : Publisher<T>redisson/src/main/java/org/redisson/reactive/RedissonListMultimapReactive.java 186:194
+Generation
+Move And Rename Methodredisson/src/main/java/org/redisson/reactive/RedissonListMultimapReactive.java@public keySizeAsync() : Publisher<Integer>redisson/src/main/java/org/redisson/reactive/RedissonBaseMultimapReactive.java@public size() : Publisher<Integer>redisson/src/main/java/org/redisson/reactive/RedissonListMultimapReactive.java 140:148
+Generation
+Move And Rename Methodredisson/src/main/java/org/redisson/reactive/RedissonListMultimapReactive.java@public containsKeyAsync(key Object) : Publisher<Boolean>redisson/src/main/java/org/redisson/reactive/RedissonBaseMultimapReactive.java@public containsKey(key Object) : Publisher<Boolean>redisson/src/main/java/org/redisson/reactive/RedissonListMultimapReactive.java 50:58
+Generation
+Move And Rename Methodredisson/src/main/java/org/redisson/reactive/RedissonListMultimapReactive.java@public containsValueAsync(value Object) : Publisher<Boolean>redisson/src/main/java/org/redisson/reactive/RedissonBaseMultimapReactive.java@public containsValue(value Object) : Publisher<Boolean>redisson/src/main/java/org/redisson/reactive/RedissonListMultimapReactive.java 60:68
+Generation
+Move And Rename Methodredisson/src/main/java/org/redisson/reactive/RedissonListMultimapReactive.java@public containsEntryAsync(key Object, value Object) : Publisher<Boolean>redisson/src/main/java/org/redisson/reactive/RedissonBaseMultimapReactive.java@public containsEntry(key Object, value Object) : Publisher<Boolean>redisson/src/main/java/org/redisson/reactive/RedissonListMultimapReactive.java 70:78
+Generation
+Move And Rename Methodredisson/src/main/java/org/redisson/reactive/RedissonListMultimapReactive.java@public putAsync(key K, value V) : Publisher<Boolean>redisson/src/main/java/org/redisson/reactive/RedissonBaseMultimapReactive.java@public put(key K, value V) : Publisher<Boolean>redisson/src/main/java/org/redisson/reactive/RedissonListMultimapReactive.java 80:88
+Generation
+Move And Rename Methodredisson/src/main/java/org/redisson/reactive/RedissonListMultimapReactive.java@public removeAsync(key Object, value Object) : Publisher<Boolean>redisson/src/main/java/org/redisson/reactive/RedissonBaseMultimapReactive.java@public remove(key Object, value Object) : Publisher<Boolean>redisson/src/main/java/org/redisson/reactive/RedissonListMultimapReactive.java 90:98
+Generation
+Move And Rename Methodredisson/src/main/java/org/redisson/reactive/RedissonListMultimapReactive.java@public putAllAsync(key K, values Iterable<? extends V>) : Publisher<Boolean>redisson/src/main/java/org/redisson/reactive/RedissonBaseMultimapReactive.java@public putAll(key K, values Iterable<? extends V>) : Publisher<Boolean>redisson/src/main/java/org/redisson/reactive/RedissonListMultimapReactive.java 100:108
+Generation
+Move And Rename Methodredisson/src/main/java/org/redisson/reactive/RedissonListMultimapReactive.java@public fastRemoveAsync(keys K...) : Publisher<Long>redisson/src/main/java/org/redisson/reactive/RedissonBaseMultimapReactive.java@public fastRemove(keys K...) : Publisher<Long>redisson/src/main/java/org/redisson/reactive/RedissonListMultimapReactive.java 150:158
+Generation
+Move And Rename Methodredisson/src/main/java/org/redisson/reactive/RedissonListMultimapReactive.java@public readAllKeySetAsync() : Publisher<Set<K>>redisson/src/main/java/org/redisson/reactive/RedissonBaseMultimapReactive.java@public readAllKeySet() : Publisher<Set<K>>redisson/src/main/java/org/redisson/reactive/RedissonListMultimapReactive.java 160:168
+******************************
+******************************
+coarse grained commits 8f205310e778c20d90a997728151e126f95edcd1
+fine grained commits ('a87c5da142531599bb52c4bbb5557a141a62d398', 'c643953e6529b8bcc03deb509916178d2ff0042b', '6b82494e2a8dd0eb20610ba6e44bdb8606d24349', '7b7a41cfc34d5039a74fd2f31a68f3efd434e213', 'f640cec6ec3e4ad912a8863dbb36415673d4932a')
+Generation
+Extract And Move Methodredisson/src/main/java/org/redisson/RedissonExecutorService.java@public registerWorkers(options WorkerOptions) : voidredisson/src/main/java/org/redisson/Redisson.java@public getServiceManager() : ServiceManagerredisson/src/main/java/org/redisson/RedissonExecutorService.java 219:306
+Generation
+Extract And Move Methodredisson/src/main/java/org/redisson/RedissonExecutorService.java@public registerWorkers(options WorkerOptions) : voidredisson/src/main/java/org/redisson/command/CommandAsyncService.java@public getServiceManager() : ServiceManagerredisson/src/main/java/org/redisson/RedissonExecutorService.java 219:306
+******************************
+******************************
+coarse grained commits 0a32341e778d1252f4aa452deb25382795da0e94
+fine grained commits ('91c333dc051c52b2af942a4507a2e1f87885cbd4', '3d87bafcd5d3916ef638027192c1a8791433bd63', '7ef0db1c5ad1ff21c570975c2c97c3b9ec230d3b', '2a51b702b613c3f4605456533c2397d6e657937b', '9cfad77c7835bd6b9c33f451d18221c6997d00e2')
+Generation
+Move Methodredisson/src/main/java/org/redisson/api/RBatchReactive.java@public getDequeReactive(name String) : RDequeReactive<V>redisson/src/main/java/org/redisson/api/RBatchRx.java@public getDequeReactive(name String) : RDequeReactive<V>redisson/src/main/java/org/redisson/api/RBatchReactive.java 70:70
+Generation
+Move Methodredisson/src/main/java/org/redisson/api/RBatchReactive.java@public getDequeReactive(name String, codec Codec) : RDequeReactive<V>redisson/src/main/java/org/redisson/api/RBatchRx.java@public getDequeReactive(name String, codec Codec) : RDequeReactive<V>redisson/src/main/java/org/redisson/api/RBatchReactive.java 72:72
+Generation
+Move Methodredisson/src/main/java/org/redisson/api/RBatchReactive.java@public getAtomicLongReactive(name String) : RAtomicLongReactiveredisson/src/main/java/org/redisson/api/RBatchRx.java@public getAtomicLongReactive(name String) : RAtomicLongReactiveredisson/src/main/java/org/redisson/api/RBatchReactive.java 74:74
+Generation
+Move Methodredisson/src/main/java/org/redisson/reactive/RedissonLexSortedSetReactive.java@public getName() : Stringredisson/src/main/java/org/redisson/rx/RedissonScoredSortedSetRx.java@public getName() : Stringredisson/src/main/java/org/redisson/reactive/RedissonLexSortedSetReactive.java 36:38
+******************************
+******************************
+coarse grained commits f8cd877eee5a10f459a18bbfdd2c7b91d8d45cb9
+fine grained commits ('a55020f65291db8aaba836b82a521121d58397f1', '2edca54446beb89ef4badf01b6f86d57099ac297', '371adff0c07ef17ae1ec4319df77dc9c6e86d12d', '65c538fc32e0481a2ff9fff595a93295ac7d058a', '275fd0ead6d1c8f4a807331f5952412eb036b3e9')
+Generation
+Move And Inline Methodsrc/main/java/org/redisson/RedissonLockEntry.java@public equals(obj Object) : booleansrc/main/java/org/redisson/client/protocol/convertor/BooleanReplayConvertor.java@public convert(obj Object) : Booleansrc/main/java/org/redisson/RedissonLockEntry.java 50:62
+******************************
+******************************
+coarse grained commits c8bb871b1cd34a5dad4a2b1382ab74c12e724068
+fine grained commits ('4817f344d1c2f67eec9ac6c9c6ec402f738ef170', '5f821605c6bc9d65d9134b641e1f5c891654c8b8', '75bf34bbf33781c4adfcf76ea00884c887d13beb', 'd69757775e0e6408170fd6010489328e26dd1c62', 'b806e131da72ee78f1a14f53e09ec4a2859fa0fd')
+Generation
+Move Methodsrc/main/java/org/redisson/core/RTopicAsync.java@public removeListener(listenerId int) : voidsrc/main/java/org/redisson/core/RTopicReactive.java@public removeListener(listenerId int) : voidsrc/main/java/org/redisson/core/RTopicAsync.java 11:11
+******************************
+******************************
+coarse grained commits af2700bb2c7d39824a2f3ed4580cf13c2595ac3b
+fine grained commits ('05a6319f3f99ab6ed8f2b54457d978e53df1aa94', 'd2115937bb3520c19abaeb2014ff6514e7704a9e', '8ff6798175e1436bcce21a48e6868d22c497dd62', 'ed292b52683d30877ece08034ac3ac8e68e55f4c', '7164c7762d30a42fb6595e738d7edc8bcce4e3db')
+Generation
+Change Attribute Access Modifiersrc/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@private name2PubSubConnection : ConcurrentMap<String,PubSubConnectionEntry>src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@protected name2PubSubConnection : ConcurrentMap<String,PubSubConnectionEntry>src/main/java/org/redisson/connection/MasterSlaveConnectionManager.java 52:52
+Generation
+Split Attributesrc/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@config : MasterSlaveServersConfigsrc/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@group : EventLoopGroupsrc/main/java/org/redisson/connection/MasterSlaveConnectionManager.java 56:56
+Generation
+Change Attribute Typesrc/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@balancer : LoadBalancersrc/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@entry : MasterSlaveEntrysrc/main/java/org/redisson/connection/MasterSlaveConnectionManager.java 51:51
+Generation
+Extract Classsrc/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@org.redisson.connection.MasterSlaveConnectionManagersrc/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@org.redisson.connection.MasterSlaveConnectionManagersrc/main/java/org/redisson/connection/MasterSlaveConnectionManager.java 41:545
+Generation
+Move Methodsrc/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@protected setupMasterEntry(host String, port int) : voidsrc/main/java/org/redisson/connection/MasterSlaveEntry.java@public setupMasterEntry(host String, port int) : voidsrc/main/java/org/redisson/connection/MasterSlaveConnectionManager.java 89:92
+Generation
+Move Methodsrc/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@package acquireMasterConnection() : voidsrc/main/java/org/redisson/connection/MasterSlaveEntry.java@package acquireMasterConnection() : voidsrc/main/java/org/redisson/connection/MasterSlaveConnectionManager.java 483:491
+Generation
+Move Attributesrc/main/java/org/redisson/connection/MasterSlaveConnectionManager.java@protected masterEntry : ConnectionEntrysrc/main/java/org/redisson/connection/MasterSlaveEntry.java@package masterEntry : ConnectionEntrysrc/main/java/org/redisson/connection/MasterSlaveConnectionManager.java 54:54
+Generation
+Remove Method Annotationsrc/main/java/org/redisson/connection/SingleConnectionManager.java@@Overridesrc/main/java/org/redisson/connection/MasterSlaveEntry.java@public setupMasterEntry(host String, port int) : voidsrc/main/java/org/redisson/connection/SingleConnectionManager.java 30:30
+Generation
+Remove Method Annotationsrc/main/java/org/redisson/connection/SingleConnectionManager.java@@Overridesrc/main/java/org/redisson/connection/MasterSlaveEntry.java@public connectionReadOp() : RedisConnection<K,V>src/main/java/org/redisson/connection/SingleConnectionManager.java 73:73
+Generation
+Remove Method Annotationsrc/main/java/org/redisson/connection/SingleConnectionManager.java@@Overridesrc/main/java/org/redisson/connection/MasterSlaveEntry.java@package nextPubSubConnection() : RedisPubSubConnectionsrc/main/java/org/redisson/connection/SingleConnectionManager.java 46:46
+Generation
+Remove Method Annotationsrc/main/java/org/redisson/connection/SingleConnectionManager.java@@Overridesrc/main/java/org/redisson/connection/MasterSlaveEntry.java@public returnSubscribeConnection(entry PubSubConnectionEntry) : voidsrc/main/java/org/redisson/connection/SingleConnectionManager.java 67:67
+Generation
+Remove Method Annotationsrc/main/java/org/redisson/connection/SingleConnectionManager.java@@Overridesrc/main/java/org/redisson/connection/MasterSlaveEntry.java@public releaseRead(сonnection RedisConnection) : voidsrc/main/java/org/redisson/connection/SingleConnectionManager.java 78:78
+******************************

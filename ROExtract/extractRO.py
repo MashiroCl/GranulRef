@@ -1,16 +1,15 @@
 '''
 extract commits, squash commits and detect refactoring operations on both fine-grained and coarse-grained commits
 '''
-
+import json
 from jsonUtils import JsonUtils
 from commitProcess.CommitGraph import CommitGraph
 from repository import Repository, create_folder
 from refactoring_mining.miner import RefactoringMiner, RefDiff, remove_redundant_git_files
 import os
-from logger import logger_config
 
-from utils import squashWithRecipe, getConfig
-from multiprocessing import Process
+from utils import squashWithRecipe
+from multiprocessing import Pool
 
 
 def set_repository(repoPath: str):
@@ -20,7 +19,6 @@ def set_repository(repoPath: str):
     :return: repo:Repository
     '''
     repo = Repository(repoPath)
-    # repo.createWorkSpace()
     return repo
 
 
@@ -55,23 +53,28 @@ def list3dto2d(l: list[list[list[str]]]) -> list[list[str]]:
 
 def get_recipe_candidates(sc_possible_squashes: list[list[list[list[str]]]], cluster_num: int) -> list[
     list[list[list[str]]]]:
+    """
+    from the straight commit sequence generate the list of squash units list under different offset
+    :param sc_possible_squashes:
+    :param cluster_num:
+    :return:
+    """
     candidates = []
-    for bias in range(cluster_num):
-        # extract the squashable sequence for each bias from the straight commit sequences
-        bias_candidate = []
+    for offset in range(cluster_num):
+        # extract the squashable sequence for each offset from the straight commit sequences
+        offset_candidate = []
         for sc_possible_squash in sc_possible_squashes:
-            if len(sc_possible_squash) > bias:
-                bias_candidate.append(
-                    [squash_l for squash_l in sc_possible_squash[bias] if len(squash_l) == cluster_num])
-        candidates.append(bias_candidate)
+            if len(sc_possible_squash) > offset:
+                offset_candidate.append(
+                    [squash_l for squash_l in sc_possible_squash[offset] if len(squash_l) == cluster_num])
+        candidates.append(offset_candidate)
     return candidates
 
 
 def extractRO(RMPath: str, repoPath: str, recipe: str, git_stein: str, squashedOutput: str, clusterNum: int,
-              jsonOutputDirectory: str, logger, steinOuput):
+              jsonOutputDirectory: str, logger, stein_output):
     '''
     extract commits, squash commits and detect refactoring operations on both fine-grained and coarse-grained commits
-    :param steinOuput:
     :param jsonOutputDirectory:
     :param RMPath: path for refactoring miner
     :param repoPath: path for repo being squashed
@@ -79,15 +82,19 @@ def extractRO(RMPath: str, repoPath: str, recipe: str, git_stein: str, squashedO
     :param git_stein: path for git-stin
     :param squashedOutput: path for squashed repository output
     :param clusterNum: number of each cluster
+    :param jsonOutputDirectory:
+    :param logger: logger
+    :param stein_output:
     :return:
     '''
-
     '''Initialize workspace'''
     # set Repository
     repo = set_repository(repoPath)
 
     '''extract commits from repository'''
     commits = extract_commits(repo)
+
+    logger.info(f"Number of commits to be processed: {len(commits)}")
 
     # create commit graph
     cG = CommitGraph(commits)
@@ -96,6 +103,10 @@ def extractRO(RMPath: str, repoPath: str, recipe: str, git_stein: str, squashedO
     # Extract sc_lists
     sc_lists = cG.getSClist()
     sc_lists_str = cG.getSCListStr(sc_lists)
+
+    logger.info(f"Straight commit sequences: {sc_lists_str}")
+    logger.info(f"Number of straight sequences: {len(sc_lists)}")
+    logger.info(f"Number of commits involved in straight sequences: {sum([len(i) for i in sc_lists])}")
 
     # get RefactoringMiner entity
     rm = RefactoringMiner(RMPath)
@@ -115,19 +126,23 @@ def extractRO(RMPath: str, repoPath: str, recipe: str, git_stein: str, squashedO
             for eachCommit in each1:
                 origin_commits.append(eachCommit)
         'RM detect commits without squash'
-        RMDetectWithOutput_multiprocess(rm, origin_commits, repo, jsonOutputDirectory)
+
+        RMDetectWithOutput(rm, origin_commits, repo, jsonOutputDirectory, logger)
+        # RMDetectWithOutput_multiprocess(rm, origin_commits, repo, jsonOutputDirectory, logger)
+        # RMDetectRepository(rm, repo, jsonOutputDirectory, logger)
         remove_redundant_git_files(os.path.dirname(repo.repoPath))
+
         # RMDetectWithOutput(rm, origin_commits, repo, jsonOutputDirectory)
     else:
         sc_possible_squashes = []
+
         for each in sc_lists_str:
             commitNumBefore += len(each)
 
             # According to cluster num (x) to divide a sequence of commits into 'squash x by x' form
-            # For a length 5 sequence commit, squash 2 by 2 has 2 possible squashe way,{{1,2}{3,4},{5} & {{1}{2,3}{4,5}}}
+            # For a length 5 sequence commit, squash 2 by 2 has 2 possible squashe ways (offset=0 and offset=1),{{1,2}{3,4},{5} & {{1}{2,3}{4,5}}}
             # possibleSquashes are 3d lists
             possibleSquashes, commitNumAfterSquash = cG.clusterList(each, clusterNum)
-
             if commitNumAfterSquash == len(each):
                 # no squash occurs
                 commitNumAfter += len(each)
@@ -137,17 +152,22 @@ def extractRO(RMPath: str, repoPath: str, recipe: str, git_stein: str, squashedO
                 sc_possible_squashes.append(possibleSquashes)
 
         candidates = get_recipe_candidates(sc_possible_squashes, clusterNum)
+        logger.info(f"Candidates are : {candidates}")
 
+        coarse_normal_commit_map = {}
         for bias_candidate in candidates:
             squash_units = list3dto2d(bias_candidate)
             if len(squash_units) == 0:
                 break
             logger.info(f"squash units list {squash_units}")
+            logger.info(f"Number of squash units list {len(squash_units)}")
+            logger.info(f"Number of commits involved in squash units list {sum(len(each) for each in squash_units)}")
 
             # if squash output .git file is already exist, delete it to prohibit .git from becoming too big
             remove_file(squashedOutput)
 
-            afterSquashed = squashWithRecipe(repo, squash_units, recipe, git_stein, squashedOutput, steinOuput)
+            afterSquashed = squashWithRecipe(repo, squash_units, recipe, git_stein, squashedOutput, stein_output,
+                                             coarse_normal_commit_map)
 
             logger.info("coarse-grained commit list %s" % afterSquashed)
 
@@ -155,13 +175,16 @@ def extractRO(RMPath: str, repoPath: str, recipe: str, git_stein: str, squashedO
             repoNew.addRemote(repoNew.repoPath)
 
             'RM detect commits after squash'
-            # RMDetectWithOutput(rm, afterSquashed, repoNew, jsonOutputDirectory)
-            RMDetectWithOutput_multiprocess(rm, afterSquashed, repoNew, jsonOutputDirectory)
-
+            RMDetectWithOutput(rm, afterSquashed, repoNew, jsonOutputDirectory, logger)
+            # RMDetectWithOutput_multiprocess(rm, afterSquashed, repoNew, jsonOutputDirectory, logger)
+            # RMDetectRepository(rm, repoNew,jsonOutputDirectory, logger)
+        with open(stein_output + "/coarse_normal_commit_map.json", "w") as f:
+            json.dump(coarse_normal_commit_map, f)
     # RefDiff will generate .git-xxx folders, remove them if exist
     remove_redundant_git_files(os.path.dirname(jsonOutputDirectory))
 
-def RMDetectWithOutput(rm, commits: list, repo, output: str):
+
+def RMDetectWithOutput(rm, commits: list, repo, output: str, logger):
     '''
     detect refactorings with RM for a list of commits
     :param rm: RefactoringMiner entity
@@ -171,10 +194,24 @@ def RMDetectWithOutput(rm, commits: list, repo, output: str):
     :return:
     '''
     for each in commits:
-        rm.detect(repo.repoPath, output, each)
+        try:
+            rm.detect(repo.repoPath, output, each)
+        except Exception as e:
+            logger.error(f"Refactoring detection error for {each}, error {e}")
 
 
-def RMDetectWithOutput_multiprocess(rm, commits: list, repo, output: str):
+def RMDetectRepository(rm, repo, output: str, logger):
+    try:
+        rm.detectRepository(repo.repoPath, output, logger)
+    except Exception as e:
+        logger.error(f"Refactoring detection error for {repo.repoPath}, error {e}")
+
+def RMDetectWithOutput_wrapper(args):
+    rm, commits, repo, output, logger = args
+    RMDetectWithOutput(rm, commits, repo, output, logger)
+
+
+def RMDetectWithOutput_multiprocess(rm, commits: list, repo, output: str, logger):
     """
     Detect Refs with multi process
     :param rm:
@@ -183,13 +220,9 @@ def RMDetectWithOutput_multiprocess(rm, commits: list, repo, output: str):
     :param output:
     :return:
     """
-    process_num = int(os.cpu_count()/4*3)
-    step = int(len(commits) / process_num)+1
-    processes = []
-    for i in range(0, len(commits), step):
-        processes.append(Process(target=RMDetectWithOutput, args=(
-            rm, commits[i:i+step], repo, output)))
-    for p in processes:
-        p.start()
-    for p in processes:
-        p.join()
+    process_num = int(os.cpu_count() / 4 * 3)
+    step = int(len(commits) / process_num) + 1
+    args_list = [(rm, commits[i:i + step], repo, output, logger) for i in range(0, len(commits), step)]
+
+    with Pool(process_num) as pool:
+        pool.map(RMDetectWithOutput_wrapper, args_list)
