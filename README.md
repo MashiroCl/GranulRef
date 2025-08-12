@@ -1,4 +1,4 @@
-# SCRMDetection
+# GranulRef
 
 Tool to transform repository commit history into different granularities and detect refactorings.
 
