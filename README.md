@@ -13,7 +13,22 @@ Tool to transform repository commit history into different granularities and det
 Refactoring detection tool used is [RefactoringMiner3.0.4](https://github.com/tsantalis/RefactoringMiner)
 
 ## Usage
-TODO
+1. Remove Comment
+```shell
+python3 remove_comment.py -s <repo_path> -t <output_path_for_comment_removed_repo>
+```
+2. Detect Refactoring
+```shell
+python3 command.py -r  -c <path_for_comment_removed_repo> -o <output_dir_for_ref>
+```
+3. Trace Refactoring 
+```shell
+python3 trace.py -f <output_dir_for_ref> -r  <output_path_for_comment_removed_repo/.git>
+```
+4. Collect CGR & EPR for repository
+```shell
+python3 coarse_fine_ref_extractor.py -p <output_dir_for_ref> -c <output_path_for_comment_removed_repo> -r <repo_name>
+```
 
 
 ## Publications
