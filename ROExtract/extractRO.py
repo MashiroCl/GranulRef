@@ -7,8 +7,8 @@ from commitProcess.CommitGraph import CommitGraph
 from repository import Repository, create_folder
 from refactoring_mining.miner import RefactoringMiner, RefDiff, remove_redundant_git_files
 import os
-
-from utils import squashWithRecipe
+import time
+from utils import squashWithRecipe, log_execution_time
 from multiprocessing import Pool
 
 
@@ -125,9 +125,9 @@ def extractRO(RMPath: str, repoPath: str, recipe: str, git_stein: str, squashedO
                 continue
             for eachCommit in each1:
                 origin_commits.append(eachCommit)
-        'RM detect commits without squash'
-
-        RMDetectWithOutput(rm, origin_commits, repo, jsonOutputDirectory, logger)
+        with log_execution_time(logger=logger, label=f"RM detect without squash repo {repo.repoPath}"):
+            'RM detect commits without squash'        
+            RMDetectWithOutput(rm, origin_commits, repo, jsonOutputDirectory, logger)
         # RMDetectWithOutput_multiprocess(rm, origin_commits, repo, jsonOutputDirectory, logger)
         # RMDetectRepository(rm, repo, jsonOutputDirectory, logger)
         remove_redundant_git_files(os.path.dirname(repo.repoPath))
@@ -174,8 +174,9 @@ def extractRO(RMPath: str, repoPath: str, recipe: str, git_stein: str, squashedO
             repoNew = set_repository(squashedOutput)
             repoNew.addRemote(repoNew.repoPath)
 
-            'RM detect commits after squash'
-            RMDetectWithOutput(rm, afterSquashed, repoNew, jsonOutputDirectory, logger)
+            with log_execution_time(logger=logger, label=f"RM detect with squash unit size: {clusterNum} took"):
+                'RM detect commits after squash'
+                RMDetectWithOutput(rm, afterSquashed, repoNew, jsonOutputDirectory, logger)
             # RMDetectWithOutput_multiprocess(rm, afterSquashed, repoNew, jsonOutputDirectory, logger)
             # RMDetectRepository(rm, repoNew,jsonOutputDirectory, logger)
         with open(stein_output + "/coarse_normal_commit_map.json", "w") as f:

@@ -12,6 +12,7 @@ from jsonUtils import JsonUtils
 import json
 import time
 import subprocess
+from contextlib import contextmanager
 
 
 def RM_supported_type(RMSupportedREF):
@@ -173,3 +174,10 @@ def get_convertedCommit_origin_map(origin_git_path):
     except subprocess.CalledProcessError as e:
         print(f"Error: {e.stderr}")
         return {}
+
+@contextmanager
+def log_execution_time(logger, label):
+    start = time.perf_counter()
+    yield
+    end = time.perf_counter()
+    logger.info(f"{label} took {end-start:.6f} seconds")

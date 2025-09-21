@@ -13,7 +13,40 @@ Tool to transform repository commit history into different granularities and det
 Refactoring detection tool used is [RefactoringMiner3.0.4](https://github.com/tsantalis/RefactoringMiner)
 
 ## Usage
-TODO
+1. Remove Comment
+```shell
+python3 remove_comment.py -s <repo_path> -t <output_path_for_comment_removed_repo>
+```
+2. Detect Refactoring
+```shell
+python3 command.py -r  -r <path_for_comment_removed_repo> -c <granularity_level> -o <output_dir_for_ref>
+```
+3. Trace Refactoring 
+```shell
+python3 trace.py -f <output_dir_for_ref> -r  <output_path_for_comment_removed_repo/.git>
+```
+4. Collect CGR & EPR for repository
+```shell
+python3 coarse_fine_ref_extractor.py -p <output_dir_for_ref> -c <output_path_for_comment_removed_repo> -r <repo_name>
+```
+
+An example of extraction on repository (mbassador)[https://github.com/bennidi/mbassador]
+```shell
+# clone repository
+git clone git@github.com:bennidi/mbassador.git
+# remove comments
+python3 remove_comment.py -s ./mbassador -t ./mbassador_cr
+# detect refactorings from granularity level 1 to 5
+python3 command.py -r ./mbassador_cr -c 1 -o ./mbassador_refs
+python3 command.py -r ./mbassador_cr -c 2 -o ./mbassador_refs
+python3 command.py -r ./mbassador_cr -c 3 -o ./mbassador_refs
+python3 command.py -r ./mbassador_cr -c 4 -o ./mbassador_refs
+python3 command.py -r ./mbassador_cr -c 5 -o ./mbassador_refs
+# trace refactorings
+python3 trace.py -f ./mbassador_refs -r  ./mbassador_cr/.git
+# colect CGR & EPR for repository
+python3 coarse_fine_ref_extractor.py -p ./mbassador_refs -c ./mbassador_cr -r mbassador
+```
 
 
 ## Publications
