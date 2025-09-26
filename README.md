@@ -50,13 +50,27 @@ python3 coarse_fine_ref_extractor.py -p ./mbassador_refs -c ./mbassador_cr -r mb
 
 
 ## Publications
-The following articles include the details of CGR.
+The following articles include the details of CGR and EPR.
+
+Lei Chen, Shinpei Hayashi. [An Empirical Study on the Impact of Change Granularity in Refactoring Detection](https://doi.org/10.1016/j.jss.2025.112608). Journal of Systems and Software. 2025. 
+
 
 Lei Chen, Shinpei Hayashi. [Impact of Change Granularity in Refactoring Detection](https://dl.acm.org/doi/10.1145/3524610.3528386). In Proceedings of the 30th IEEE/ACM International Conference on Program Comprehension (ICPC 2022), Early Research Achievements (ERA) Track, pp. 565-569. Online, may, 2022
 
 📖 [Read on arXiv](https://arxiv.org/abs/2204.11276)
+🎥 [Watch video](https://www.youtube.com/watch?v=hBlns87cOfI)
 
 ```
+@article{
+  title={An Empirical Study on the Impact of Change Granularity in Refactoring Detection},
+  author={Chen, Lei and Hayashi, Shinpei},
+  journal={Journal of Systems and Software},
+  pages={565--569},
+  volume={231},
+  pages={112608},
+  year={2026},
+}
+
 @inproceedings{
   title={Impact of change granularity in refactoring detection},
   author={Chen, Lei and Hayashi, Shinpei},
