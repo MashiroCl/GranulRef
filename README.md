@@ -30,7 +30,7 @@ python3 trace.py -f <output_dir_for_ref> -r  <output_path_for_comment_removed_re
 python3 coarse_fine_ref_extractor.py -p <output_dir_for_ref> -c <output_path_for_comment_removed_repo> -r <repo_name>
 ```
 
-An example of extraction on repository (mbassador)[https://github.com/bennidi/mbassador]
+An example of extraction on repository [mbassador](https://github.com/bennidi/mbassador)
 ```shell
 # clone repository
 git clone git@github.com:bennidi/mbassador.git
